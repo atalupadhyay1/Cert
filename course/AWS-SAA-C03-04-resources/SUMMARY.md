@@ -38,7 +38,7 @@ python validate_csv.py ../AWS-SAA-C03-03-practice-sets/set-*/practice-set-*.csv
 | Set 2 | Domain 1 deep dive: Secure | ✅ Ready | 200 (40 multi-select) | Secure only |
 | Set 3 | Domain 2 deep dive: Resilient | ✅ Ready | 200 (40 multi-select) | Resilient only |
 | Set 4 | Domain 3 deep dive: High-Performing | ✅ Ready | 200 (40 multi-select) | High-Performing only |
-| Set 5 | Domain 4 deep dive: Cost-Optimized | ⏳ Coming | 200 | Heavy D4 |
+| Set 5 | Domain 4 deep dive: Cost-Optimized | ✅ Ready | 200 (40 multi-select) | Cost-Optimized only |
 | Set 6 | Full Exam Simulation (30/26/24/20) | ⏳ Coming | 200 | All 4 (exam weighting) |
 | **Total** | | | **1200** | |
 
