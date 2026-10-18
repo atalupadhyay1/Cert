@@ -35,7 +35,7 @@ python validate_csv.py ../AWS-SAA-C03-03-practice-sets/set-*/practice-set-*.csv
 | Set | Topic | Status | Questions | Domains |
 |---|---|---|---|---|
 | Set 1 | Diagnostic Mixed (~30/26/24/20) | ✅ Ready | 200 (38 multi-select) | All 4 |
-| Set 2 | Domain 1 deep dive: Secure | ⏳ Coming | 200 | Heavy D1 |
+| Set 2 | Domain 1 deep dive: Secure | ✅ Ready | 200 (40 multi-select) | Secure only |
 | Set 3 | Domain 2 deep dive: Resilient | ⏳ Coming | 200 | Heavy D2 |
 | Set 4 | Domain 3 deep dive: High-Performing | ⏳ Coming | 200 | Heavy D3 |
 | Set 5 | Domain 4 deep dive: Cost-Optimized | ⏳ Coming | 200 | Heavy D4 |
