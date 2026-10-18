@@ -63,7 +63,11 @@ course/
 ## ✅ What every question includes
 
 - Per-option inline explanations (one sentence for why correct, one for each distractor)
+<<<<<<< HEAD
 - Comprehensive Overall Explanation with a Microsoft Learn OR AWS documentation reference URL
+=======
+- Comprehensive Overall Explanation with a Microsoft Learn reference URL
+>>>>>>> main
 - Exact domain string from the official exam study guide
 - 1-based comma-separated Correct Answers
 - Mix of multiple-choice and multi-select (where the exam format requires)
