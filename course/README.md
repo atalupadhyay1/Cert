@@ -1,8 +1,17 @@
 # 🎓 Practice Test Course Packages
 
-This directory contains complete, production-ready Udemy Practice Test Course packages for Microsoft certifications.
+This directory contains complete, production-ready Udemy Practice Test Course packages for AWS and Microsoft certifications.
 
 ## 📦 Courses available
+
+### AWS Certified AI Practitioner (AIF-C01)
+
+- **Status:** Six 100-question sets generated; automated structural validation passed.
+- **Includes:** Udemy CSVs, offline review copies, explanations, AWS references, listing copy, curriculum, validator, and downloadable ZIP.
+- **Question mix:** 90 single-answer and 10 select-two per set; shared objectives deliberately recur with different scenarios.
+- **Domain weighting:** 20% / 24% / 28% / 14% / 14%.
+- **Location:** [`course/AIF-C01/`](AIF-C01/README.md)
+- **Publication:** Final editorial and Udemy account import review required; no platform upload performed.
 
 ### 1. **AB-100: Microsoft Certified Agentic AI Business Solutions Architect** *(in progress)*
 

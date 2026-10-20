@@ -1,11 +1,12 @@
 # Cert — Udemy Practice Test Course Packages
 
-This repository contains complete, production-ready Udemy practice-test course packages for Microsoft certifications.
+This repository contains complete, production-ready Udemy practice-test course packages for AWS and Microsoft certifications.
 
 ## 📦 Course packages
 
 | Course | Status | Sets | Total Qs |
 |---|---|---|---|
+| **AWS Certified AI Practitioner (AIF-C01)** | ✅ [6 sets generated and structurally validated](course/AIF-C01/README.md) | 6 | 600 |
 | **AB-900: Microsoft 365 Copilot and Agent Administration Fundamentals** | ✅ Set 1 ready (100 Q), Sets 2–6 coming | 6 | 600 (target) |
 | **AZ-900: Microsoft Azure Fundamentals** | ✅ All 6 sets at 100 Q | 6 | 600 |
 
