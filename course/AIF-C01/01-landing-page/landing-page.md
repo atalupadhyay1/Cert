@@ -1,7 +1,7 @@
 # Udemy Course Landing Page
 
 ## Course title
-AWS Certified AI Practitioner AIF-C01: 600 Practice Questions
+AWS AI Practitioner AIF-C01: 6 Tests, 600 Questions
 
 ## Course subtitle
 Prepare with 6 tests, scenario-based questions, detailed answer explanations, and coverage of all 5 AIF-C01 domains.
