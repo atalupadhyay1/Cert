@@ -4,6 +4,15 @@ This directory contains complete, production-ready Udemy Practice Test Course pa
 
 ## 📦 Courses available
 
+### AI-500: Designing and Implementing Multi-Agent AI Solutions
+
+- **Status:** Six 100-question sets generated, with answer explanations and Microsoft Learn references.
+- **Includes:** Udemy CSVs, offline review copies, reference-style landing page, curriculum, validation tools, and ZIP.
+- **Domain allocation per set:** 18 architecture / 33 development / 24 evaluation and monitoring / 25 security and deployment, within the official ranges.
+- **Audience:** Experienced practitioners working with Python, Microsoft Foundry, Azure, and agentic systems.
+- **Location:** [`course/AI-500/`](AI-500/README.md)
+- **Publication:** Final content review and Udemy account import preview required; no platform publication performed.
+
 ### AWS Certified AI Practitioner (AIF-C01)
 
 - **Status:** Six 100-question sets generated; automated structural validation passed.
