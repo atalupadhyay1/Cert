@@ -1,0 +1,123 @@
+{
+  "status": "PASS",
+  "sets": 6,
+  "total_questions": 600,
+  "checks": [
+    "17-column header",
+    "100 questions/set",
+    "domain weighting",
+    "question types",
+    "answer bounds/cardinality",
+    "unique options",
+    "option explanations",
+    "AWS references",
+    "source consistency",
+    "exact normalized duplicate wording",
+    "balanced single-answer slots"
+  ],
+  "limitations": [
+    "No independent factual certification",
+    "No live URL availability check",
+    "No semantic duplicate detector",
+    "Udemy account import not performed"
+  ],
+  "files": [
+    {
+      "file": "03-practice-sets/set-1/practice-set-1.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 90,
+        "multi-select": 10
+      },
+      "domains": {
+        "Fundamentals of AI and ML": 20,
+        "Guidelines for Responsible AI": 14,
+        "Fundamentals of GenAI": 24,
+        "Applications of Foundation Models": 28,
+        "Security, Compliance, and Governance for AI Solutions": 14
+      }
+    },
+    {
+      "file": "03-practice-sets/set-2/practice-set-2.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 90,
+        "multi-select": 10
+      },
+      "domains": {
+        "Fundamentals of GenAI": 24,
+        "Applications of Foundation Models": 28,
+        "Guidelines for Responsible AI": 14,
+        "Fundamentals of AI and ML": 20,
+        "Security, Compliance, and Governance for AI Solutions": 14
+      }
+    },
+    {
+      "file": "03-practice-sets/set-3/practice-set-3.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 90,
+        "multi-select": 10
+      },
+      "domains": {
+        "Guidelines for Responsible AI": 14,
+        "Security, Compliance, and Governance for AI Solutions": 14,
+        "Fundamentals of GenAI": 24,
+        "Fundamentals of AI and ML": 20,
+        "Applications of Foundation Models": 28
+      }
+    },
+    {
+      "file": "03-practice-sets/set-4/practice-set-4.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 90,
+        "multi-select": 10
+      },
+      "domains": {
+        "Guidelines for Responsible AI": 14,
+        "Fundamentals of AI and ML": 20,
+        "Fundamentals of GenAI": 24,
+        "Security, Compliance, and Governance for AI Solutions": 14,
+        "Applications of Foundation Models": 28
+      }
+    },
+    {
+      "file": "03-practice-sets/set-5/practice-set-5.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multi-select": 10,
+        "multiple-choice": 90
+      },
+      "domains": {
+        "Applications of Foundation Models": 28,
+        "Fundamentals of AI and ML": 20,
+        "Security, Compliance, and Governance for AI Solutions": 14,
+        "Fundamentals of GenAI": 24,
+        "Guidelines for Responsible AI": 14
+      }
+    },
+    {
+      "file": "03-practice-sets/set-6/practice-set-6.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 90,
+        "multi-select": 10
+      },
+      "domains": {
+        "Applications of Foundation Models": 28,
+        "Security, Compliance, and Governance for AI Solutions": 14,
+        "Guidelines for Responsible AI": 14,
+        "Fundamentals of AI and ML": 20,
+        "Fundamentals of GenAI": 24
+      }
+    }
+  ],
+  "errors": []
+}
