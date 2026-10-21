@@ -1,11 +1,12 @@
 # Cert — Udemy Practice Test Course Packages
 
-This repository contains complete, production-ready Udemy practice-test course packages for Google Cloud, AWS, and Microsoft certifications.
+This repository contains Udemy practice-test course packages for Claude/Anthropic, Google Cloud, AWS, and Microsoft certifications.
 
 ## 📦 Course packages
 
 | Course | Status | Sets | Total Qs |
 |---|---|---|---|
+| **Claude Certified Architect – Foundations (CCAR-F)** | ✅ [6 tests generated and structurally validated](course/CCAR-F/README.md) | 6 | 600 |
 | **Google Cloud Generative AI Leader** | ✅ [6 topical tests rewritten and structurally validated](course/Google-Gen-AI-Leader/README.md) | 6 | 600 |
 | **AI-500: Designing and Implementing Multi-Agent AI Solutions** | ✅ [6 sets generated and structurally validated](course/AI-500/README.md) | 6 | 600 |
 | **AWS Certified AI Practitioner (AIF-C01)** | ✅ [6 sets generated and structurally validated](course/AIF-C01/README.md) | 6 | 600 |

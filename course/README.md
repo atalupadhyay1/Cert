@@ -1,8 +1,18 @@
 # 🎓 Practice Test Course Packages
 
-This directory contains complete, production-ready Udemy Practice Test Course packages for Google Cloud, AWS, and Microsoft certifications.
+This directory contains Udemy Practice Test Course packages for Claude/Anthropic, Google Cloud, AWS, and Microsoft certifications.
 
 ## 📦 Courses available
+
+### Claude Certified Architect – Foundations (CCAR-F)
+
+- **Status:** Six original 100-question tests with per-option explanations and official guide objective references.
+- **Organization:** Five domain-focused tests plus one integrated review with 27/18/20/20/15 questions.
+- **Includes:** Udemy CSVs, offline reviews, comprehensive reference-style landing page, curriculum, source notes, validation tools, and ZIP.
+- **Format:** Four choices and ONE best answer; official exam multiple-response and scenario assembly are not reproduced.
+- **Scope:** Original architecture concept checks and production scenarios, not actual/recalled items or calibrated replicas. Concepts recur.
+- **Location:** [`course/CCAR-F/`](CCAR-F/README.md)
+- **Publication:** Final subject-matter and account-level import review required; no platform publication performed.
 
 ### Google Cloud Generative AI Leader
 
