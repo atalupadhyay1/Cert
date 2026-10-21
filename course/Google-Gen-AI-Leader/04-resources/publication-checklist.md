@@ -11,6 +11,7 @@ The files are prepared locally; the Udemy steps below have not been performed on
 - [ ] Keep financial examples explicitly illustrative rather than representing actual service prices.
 - [ ] Retain originality, no-endorsement, repeated-concept, and no-guarantee disclosures.
 - [ ] Do not advertise real exam questions or identical calibrated exam difficulty.
+- [ ] Clearly distinguish six topical tests from exam-weighted mocks and technical enrichment from guaranteed exam content.
 
 ## Listing
 
@@ -38,7 +39,7 @@ Upload each CSV separately, not the ZIP, Markdown files, or manifest.
 ## Preview checks for every test
 
 - [ ] Exactly 100 single-answer multiple-choice questions, four options each.
-- [ ] Section counts of **30 / 35 / 20 / 15**.
+- [ ] Correct topical title and source-derived domain counts; do not advertise per-test 30/35/20/15 weighting.
 - [ ] Exactly one correct selection, matching the offline review copy.
 - [ ] No empty fifth or sixth option appears after import.
 - [ ] Explanations, punctuation, and source links display correctly.
@@ -56,7 +57,7 @@ Upload each CSV separately, not the ZIP, Markdown files, or manifest.
 | Fewer questions imported | Resolve rejected rows before publication |
 | Corrupted characters | Keep UTF-8 encoding; prefer the original generated file |
 
-Edit `04-resources/bank.py`, then rebuild, validate, test, package, and preview the revised import. Do not independently edit shuffled keys.
+Edit `04-resources/questions/1.txt` through `6.txt` and shared term explanations, then rebuild, validate, test, package, and preview the revised import. Do not independently edit shuffled keys.
 
 ## Sign-off
 

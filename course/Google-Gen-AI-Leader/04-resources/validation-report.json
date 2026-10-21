@@ -5,7 +5,7 @@
   "checks": [
     "17-column header",
     "100 questions per set",
-    "30/35/20/15 domain counts",
+    "topical-source domain counts",
     "four unique options",
     "single-answer keys",
     "per-option explanations",
@@ -30,10 +30,10 @@
         "multiple-choice": 100
       },
       "domains": {
-        "Techniques to improve gen AI model output": 20,
-        "Fundamentals of gen AI": 30,
-        "Google Cloud\u2019s gen AI offerings": 35,
-        "Business strategies for a successful gen AI solution": 15
+        "Fundamentals of gen AI": 59,
+        "Techniques to improve gen AI model output": 31,
+        "Business strategies for a successful gen AI solution": 5,
+        "Google Cloud\u2019s gen AI offerings": 5
       }
     },
     {
@@ -44,10 +44,10 @@
         "multiple-choice": 100
       },
       "domains": {
-        "Fundamentals of gen AI": 30,
-        "Google Cloud\u2019s gen AI offerings": 35,
-        "Techniques to improve gen AI model output": 20,
-        "Business strategies for a successful gen AI solution": 15
+        "Fundamentals of gen AI": 7,
+        "Google Cloud\u2019s gen AI offerings": 62,
+        "Business strategies for a successful gen AI solution": 22,
+        "Techniques to improve gen AI model output": 9
       }
     },
     {
@@ -58,10 +58,10 @@
         "multiple-choice": 100
       },
       "domains": {
-        "Fundamentals of gen AI": 30,
-        "Google Cloud\u2019s gen AI offerings": 35,
-        "Techniques to improve gen AI model output": 20,
-        "Business strategies for a successful gen AI solution": 15
+        "Techniques to improve gen AI model output": 71,
+        "Google Cloud\u2019s gen AI offerings": 13,
+        "Business strategies for a successful gen AI solution": 10,
+        "Fundamentals of gen AI": 6
       }
     },
     {
@@ -72,10 +72,10 @@
         "multiple-choice": 100
       },
       "domains": {
-        "Google Cloud\u2019s gen AI offerings": 35,
-        "Business strategies for a successful gen AI solution": 15,
-        "Techniques to improve gen AI model output": 20,
-        "Fundamentals of gen AI": 30
+        "Business strategies for a successful gen AI solution": 40,
+        "Fundamentals of gen AI": 7,
+        "Google Cloud\u2019s gen AI offerings": 43,
+        "Techniques to improve gen AI model output": 10
       }
     },
     {
@@ -86,10 +86,9 @@
         "multiple-choice": 100
       },
       "domains": {
-        "Google Cloud\u2019s gen AI offerings": 35,
-        "Techniques to improve gen AI model output": 20,
-        "Business strategies for a successful gen AI solution": 15,
-        "Fundamentals of gen AI": 30
+        "Business strategies for a successful gen AI solution": 72,
+        "Techniques to improve gen AI model output": 16,
+        "Google Cloud\u2019s gen AI offerings": 12
       }
     },
     {
@@ -100,10 +99,10 @@
         "multiple-choice": 100
       },
       "domains": {
-        "Business strategies for a successful gen AI solution": 15,
-        "Google Cloud\u2019s gen AI offerings": 35,
-        "Fundamentals of gen AI": 30,
-        "Techniques to improve gen AI model output": 20
+        "Business strategies for a successful gen AI solution": 90,
+        "Fundamentals of gen AI": 3,
+        "Techniques to improve gen AI model output": 5,
+        "Google Cloud\u2019s gen AI offerings": 2
       }
     }
   ],

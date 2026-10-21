@@ -18,15 +18,15 @@ Question,Question Type,Answer Option 1,Explanation 1,Answer Option 2,Explanation
 - Overall explanations identify an official guide objective and include the exam-guide and study-guide URLs.
 - There is no partial-credit scheme or multi-select question in this package.
 
-## Exact domain strings and counts
+## Domain labels and topical organization
 
-| Domain | Questions per file |
-|---|---:|
-| Fundamentals of gen AI | 30 |
-| Google Cloud’s gen AI offerings | 35 |
-| Techniques to improve gen AI model output | 20 |
-| Business strategies for a successful gen AI solution | 15 |
+The `Domain` field retains the four official section labels, while each file has a distinct learning topic. Counts vary by file; inspect the generated set README or validation report. There is no per-test 30/35/20/15 assertion.
 
-The counts follow the guide's approximate weights; they do not assert exact real-exam section counts.
+- Fundamentals of gen AI
+- Google Cloud’s gen AI offerings
+- Techniques to improve gen AI model output
+- Business strategies for a successful gen AI solution
 
-Edit the source bank, rebuild, validate, run tests, and regenerate the ZIP. Upload each CSV separately. The platform does not need the Markdown files, source scripts, answer manifest, or ZIP as question imports.
+The answer manifest separately records topic, closest objective, item ID, option terms, and correct terms. Topic is not an extra CSV column.
+
+Edit `questions/1.txt` through `6.txt` and shared explanations, then rebuild, validate, test, and package. Upload each CSV separately, never the ZIP or Markdown. Do not reorder answer options by hand.

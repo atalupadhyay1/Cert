@@ -6,10 +6,10 @@ This directory contains complete, production-ready Udemy Practice Test Course pa
 
 ### Google Cloud Generative AI Leader
 
-- **Status:** Six 100-question multiple-choice practice sets, generated with explanations and official Google guide references.
+- **Status:** Six topical 100-question multiple-choice tests, rewritten with original concept checks, short scenarios, explanations, and closest official guide references.
 - **Includes:** Udemy CSVs, offline review copies, reference-style landing page, curriculum, validation tools, and ZIP.
-- **Domain allocation per set:** 30 fundamentals / 35 offerings / 20 output improvement / 15 business strategy.
-- **Scope:** Original business-level exam-style practice, not copied exam content or calibrated replicas; core concepts recur across sets.
+- **Organization:** Foundations; Google services; prompting/grounding; applications/agents; responsible AI/security; strategy/value. Topical learning tests, not 30/35/20/15 exam-weighted mocks.
+- **Scope:** Original business-oriented practice with technical concept enrichment, not copied commercial/exam content or calibrated replicas; related concepts recur across topics.
 - **Location:** [`course/Google-Gen-AI-Leader/`](Google-Gen-AI-Leader/README.md)
 - **Publication:** Final editorial and account-level import review required; no platform publication performed.
 

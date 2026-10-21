@@ -2,11 +2,11 @@
 
 > **Course Title:** **Google Cloud Generative AI Leader: 600 Practice Questions**
 >
-> **Course Subtitle:** **6 tests of 100 questions • Exam-guide-aligned scenarios • Google Cloud offerings • Detailed answer explanations**
+> **Course Subtitle:** **6 topical tests of 100 questions • Core concepts and scenarios • Gemini and Google Cloud • Detailed explanations**
 
 Prepare for the **Google Cloud Generative AI Leader Certification Exam** with **6 practice sets and 600 original questions**. Review the business decisions behind generative AI: when it creates value, which Google offerings fit a need, how to improve outputs, and how to adopt AI responsibly.
 
-These are independent exam-style learning questions—not actual, recalled, or copied Google exam items. Every question includes per-option feedback, an overall rationale, and official Google guide references.
+These are independent topic-focused learning questions—not actual, recalled, or copied Google exam items. Every question includes per-option feedback, an overall rationale, and official Google guide references.
 
 ---
 
@@ -23,7 +23,7 @@ Google Cloud Generative AI Leader: 600 Practice Questions
 ### 2. Course Subtitle
 
 ```text
-6 tests of 100 questions • Exam-guide-aligned scenarios • Google Cloud offerings • Detailed answer explanations
+6 topical tests of 100 questions • Core concepts and scenarios • Gemini and Google Cloud • Detailed explanations
 ```
 
 ### 3. Course Description
@@ -33,48 +33,44 @@ Can you connect generative AI capabilities to a real business need—and explain
 
 Prepare for the Google Cloud Generative AI Leader Certification Exam with 600 original multiple-choice questions across 6 practice tests of 100 questions each.
 
-This course focuses on business-level understanding rather than coding. Practice selecting appropriate Google Cloud offerings, recognizing foundation-model limitations, improving output quality, evaluating business value, and identifying responsible adoption practices.
+This course emphasizes business understanding rather than coding, with additional technical concept checks for enrichment. Practice selecting appropriate Google Cloud offerings, recognizing foundation-model limitations, improving output quality, evaluating business value, and identifying responsible adoption practices.
 
 WHAT YOU GET
-• 6 mixed-domain practice tests, with 100 questions per test
-• 600 distinct question texts covering the four official exam-guide sections
+• 6 topic-focused practice tests, with 100 questions per test
+• 600 original question texts: direct concept checks and short realistic scenarios
 • Four answer options and one best answer for every question
 • Feedback explaining every option, plus an overall rationale
 • References to the official Google exam guide and study guide
 • Business scenarios, product-selection decisions, concept checks, and selected illustrative financial calculations
 
-THE FOUR AREAS YOU WILL PRACTICE
+THE SIX TOPICAL TESTS
 
-1. FUNDAMENTALS OF GEN AI
-Review AI, machine learning, foundation models, learning approaches, data quality, the ML lifecycle, and the infrastructure-to-application landscape. Distinguish the use cases of Gemini, Gemma, Imagen, and Veo.
+1. GENERATIVE AI FOUNDATIONS, MODELS & CORE CONCEPTS — 100 questions
 
-2. GOOGLE CLOUD'S GEN AI OFFERINGS
-Choose among productivity assistance, enterprise knowledge experiences, customer-experience tools, model-development capabilities, and agent tooling. Review offerings such as Gemini for Google Workspace, Gemini Enterprise, Agent Search, Agent Assist, Model Garden, and relevant Google Cloud APIs.
+2. GOOGLE CLOUD SERVICES, GEMINI & AI ECOSYSTEM — 100 questions
 
-3. TECHNIQUES TO IMPROVE GEN AI MODEL OUTPUT
-Compare prompting, grounding, retrieval-augmented generation, fine-tuning, and human review. Recognize hallucinations, knowledge-cutoff limitations, sampling controls, prompt tuning, and the need for continuous evaluation.
+3. PROMPT ENGINEERING, GROUNDING & OUTPUT IMPROVEMENT — 100 questions
 
-4. BUSINESS STRATEGIES FOR A SUCCESSFUL GEN AI SOLUTION
-Prioritize feasible high-value use cases, plan pilots, choose meaningful measures, evaluate total cost and benefit, and support adoption. Review security, SAIF, privacy, fairness, transparency, and accountability.
+4. AI APPLICATIONS, AGENTS & BUSINESS USE CASES — 100 questions
 
-BALANCED COVERAGE IN EVERY SET
-Each 100-question test contains:
-• 30 questions — Fundamentals of gen AI
-• 35 questions — Google Cloud's gen AI offerings
-• 20 questions — Techniques to improve gen AI model output
-• 15 questions — Business strategies for a successful gen AI solution
+5. RESPONSIBLE AI, SECURITY, PRIVACY & RISK MANAGEMENT — 100 questions
 
-These counts reflect the approximate 30% / 35% / 20% / 15% weights in the retrieved official exam guide. They are a practice allocation, not published exact counts for an individual exam form.
+6. STRATEGY, ADOPTION, TRANSFORMATION & BUSINESS VALUE — 100 questions
+
+TEST ORGANIZATION AND OFFICIAL COVERAGE
+These are topical learning sets, not six mixed exam-weighted mocks. The official guide's approximate domain weights are 30% fundamentals, 35% Google offerings, 20% output improvement, and 15% business strategy. Our tests and overall question totals intentionally do not replicate that allocation.
+
+Each item carries a closest official objective reference for further study. Architecture, tokenization, adaptation methods, and technical metrics provide enrichment; their depth is not promised exam content.
 
 STUDY THE DISTINCTION, NOT JUST THE ANSWER LETTER
-Start with a baseline attempt. Review incorrect answers and correct guesses. Identify the requirement that makes one option suitable, read the source guidance, and explain the distinction in your own words before moving to the next set.
+Start with the foundations test. Review incorrect answers and correct guesses. Identify the requirement that makes one option suitable, read the source guidance, and explain the distinction in your own words before moving to the next set.
 
-Important concepts recur across the tests in different scenarios and wording. Some options and explanations intentionally repeat. Twenty-four set-specific decision and calculation cases broaden the shared objective coverage. These are learning sets, not six statistically independent predictions of exam performance.
+Important concepts recur across the tests in different scenarios and wording. Some options and explanations intentionally repeat. Applications, risk decisions, and illustrative calculations reinforce the concepts across topics. These are learning sets, not six statistically independent predictions of exam performance.
 
 HOW THESE TESTS COMPARE WITH THE EXAM
 The official certification page lists 50–60 multiple-choice questions and 90 minutes. These expanded 100-question tests are longer learning exercises. A suggested 160-minute duration is a custom practice setting, not the official exam duration.
 
-The questions resemble the exam's business-level scope and multiple-choice decision format. They are not copied from the exam, and the course does not claim identical difficulty, exact exam content, or a guaranteed result.
+The core questions use business-level decisions and a multiple-choice format; selected technical questions extend beyond guaranteed exam depth. They are not copied from the exam, and the course does not claim identical difficulty, exact exam content, or a guaranteed result.
 
 WHO THIS COURSE IS FOR
 Certification candidates, business leaders, managers, analysts, product owners, and professionals who want to understand generative AI opportunities and Google Cloud's offerings. No coding experience or paid Google Cloud account is required to answer the questions.
@@ -152,17 +148,17 @@ This is NOT the right course for:
 ```text
 Welcome to the Google Cloud Generative AI Leader practice-test course!
 
-You have 6 sets of 100 questions covering the four exam-guide areas. Here is how to use them effectively:
+You have 6 topical sets of 100 questions, progressing from foundations to strategy. Here is how to use them effectively:
 
-1) Take Set 1 as a baseline. Mark correct guesses as well as incorrect answers.
+1) Take Set 1 to check your foundations. Mark correct guesses as well as incorrect answers.
 
 2) Read every option explanation. Identify the business requirement that distinguishes the best choice.
 
 3) Review the official references and write a short rule for each concept you missed.
 
-4) Work through Sets 2–4 after targeted study. All sets cover all four sections, and important concepts recur through different scenarios.
+4) Work through Sets 2–4 after targeted study. These focus on Google services, output improvement, and applications respectively; important concepts recur across scenarios.
 
-5) Use Sets 5 and 6 for no-notes practice if useful. Allow about 160 minutes for a 100-question set. That is a custom learning setting, not the official 90-minute exam format.
+5) Study responsible AI in Set 5 and strategy in Set 6; use a no-notes attempt if useful. Allow about 160 minutes for a 100-question set. That is a custom learning setting, not the official 90-minute exam format.
 
 6) Before scheduling your exam, review the current official guide and certification page for any changes.
 
@@ -206,32 +202,34 @@ A leader needs to connect AI capabilities to outcomes—not just recognize produ
 ```text
 Google Cloud Generative AI Leader — 600 Questions
 │
-├── 🟦 SET 1 — Mixed-Domain Practice
-│   └── 100 Questions • Establish your baseline
-├── 🟩 SET 2 — Mixed-Domain Practice
-│   └── 100 Questions • Apply your first review
-├── 🟧 SET 3 — Mixed-Domain Practice
-│   └── 100 Questions • Explain product and technique choices
-├── 🟪 SET 4 — Mixed-Domain Practice
-│   └── 100 Questions • Reassess weak concepts
-├── 🟥 SET 5 — Mixed-Domain Practice
-│   └── 100 Questions • Optional no-notes attempt
-└── 🟫 SET 6 — Mixed-Domain Practice
-    └── 100 Questions • Consolidate your final review
+├── 🟦 TEST 1 — Foundations, Models & Core Concepts
+│   └── 100 Questions • Concepts plus technical enrichment
+├── 🟩 TEST 2 — Google Cloud Services, Gemini & Ecosystem
+│   └── 100 Questions • Product and service selection
+├── 🟧 TEST 3 — Prompting, Grounding & Output Improvement
+│   └── 100 Questions • Techniques and failure diagnosis
+├── 🟪 TEST 4 — Applications, Agents & Business Use Cases
+│   └── 100 Questions • Practical workflows and bounded actions
+├── 🟥 TEST 5 — Responsible AI, Security, Privacy & Risk
+│   └── 100 Questions • Controls and accountable oversight
+└── 🟫 TEST 6 — Strategy, Adoption & Business Value
+    └── 100 Questions • Pilots, economics, change, and scaling
 ```
 
-All six sets use the same domain allocation. These are suggested study roles, not calibrated difficulty levels or separate domain deep dives.
+Each test focuses on its named topic. These are learning deep dives, not exam-weighted forms or calibrated difficulty levels.
 
 ---
 
 ## 🧭 What you'll be tested on
 
-| Exam-guide section | Approximate weight | Questions per set | Examples practiced |
-|---|---:|---:|---|
-| Fundamentals of gen AI | **30%** | **30** | Concepts, data, lifecycle, landscape, model families |
-| Google Cloud's gen AI offerings | **35%** | **35** | Enterprise and productivity tools, customer experience, platforms, APIs |
-| Techniques to improve gen AI model output | **20%** | **20** | Limitations, prompting, grounding, adaptation, sampling, monitoring |
-| Business strategies for a successful gen AI solution | **15%** | **15** | Value, pilots, outcomes, adoption, security, responsible AI |
+| Official guide section | Approximate exam weight | Topical package total |
+|---|---:|---:|
+| Fundamentals of gen AI | 30% | 82 |
+| Google Cloud’s gen AI offerings | 35% | 137 |
+| Techniques to improve gen AI model output | 20% | 142 |
+| Business strategies for a successful gen AI solution | 15% | 239 |
+
+**The package totals are descriptive counts by closest objective, not a reproduction of official weights.**
 
 > ℹ️ **Source:** [Official exam guide](https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf), retrieved October 21, 2026. The certification page notes recent branding updates; the package uses the product names in the retrieved guide. Check the current guide before publication or exam registration.
 
@@ -239,14 +237,14 @@ All six sets use the same domain allocation. These are suggested study roles, no
 
 ## 🎓 How to use these 6 practice sets
 
-| Set | Suggested purpose | Custom practice duration |
+| Test | Topic focus | Custom practice duration |
 |---|---|---|
-| 1 | Baseline across all four sections | 160 minutes |
-| 2 | Apply your first targeted review | 160 minutes |
-| 3 | Explain decisions rather than memorize labels | 160 minutes |
-| 4 | Reassess weak areas | 160 minutes |
-| 5 | Complete a no-notes mixed-domain attempt | 160 minutes |
-| 6 | Identify remaining study gaps | 160 minutes |
+| 1 | Generative AI Foundations, Models & Core Concepts | 160 minutes |
+| 2 | Google Cloud Services, Gemini & AI Ecosystem | 160 minutes |
+| 3 | Prompt Engineering, Grounding & Output Improvement | 160 minutes |
+| 4 | AI Applications, Agents & Business Use Cases | 160 minutes |
+| 5 | Responsible AI, Security, Privacy & Risk Management | 160 minutes |
+| 6 | Strategy, Adoption, Transformation & Business Value | 160 minutes |
 
 Allow review time between attempts. An **80% practice target** is optional learning guidance, not an official passing threshold or readiness guarantee.
 
@@ -257,7 +255,7 @@ Allow review time between attempts. An **80% practice target** is optional learn
 - **Business-level scenarios:** choose an approach that meets the stated need.
 - **Per-option feedback:** distinguish the correct choice from alternatives.
 - **Official references:** connect each question to an exam-guide objective and further study.
-- **Balanced coverage:** review all four areas in every set.
+- **Topical progression:** study six focused areas with deliberate reinforcement across topics.
 - **Selected business calculations:** practice total-cost and benefit reasoning using clearly illustrative figures.
 - **Original content:** no copied or recalled exam items.
 
@@ -281,10 +279,10 @@ Certification candidates, business managers, analysts, product owners, consultan
 ## ❓ Frequently Asked Questions
 
 **Q: How many questions are included?**
-A: **600 questions across six sets**, with 100 in each. Core concepts recur in different scenarios; this does not mean 600 unrelated topics.
+A: **600 questions across six topical sets**, with 100 in each. Core concepts recur in different scenarios; this does not mean 600 unrelated topics.
 
 **Q: Do these tests resemble the actual exam?**
-A: They follow its business-level scope and multiple-choice decision format using original content. Difficulty has not been calibrated against the actual exam, and identical content or results are not promised.
+A: They use original concept checks and business scenarios in a multiple-choice format. Technical enrichment is included, and topical allocations differ from the official exam. Difficulty has not been calibrated against the actual exam, and identical content or results are not promised.
 
 **Q: What is the official exam length?**
 A: The retrieved certification page lists **50–60 multiple-choice questions in 90 minutes**. These expanded 100-question sets are longer study exercises. Check the current page for changes.
@@ -293,7 +291,7 @@ A: The retrieved certification page lists **50–60 multiple-choice questions in
 A: No. Practice percentages are study feedback, not official scores or guaranteed outcomes.
 
 **Q: Do I need coding skills or a paid cloud account?**
-A: No. These are business-level practice questions. This package does not include hands-on labs or cloud credits.
+A: No. The course is business-oriented with technical concept enrichment, not implementation labs. This package does not include hands-on labs or cloud credits.
 
 **Q: Why are some product names different from older training materials?**
 A: The official certification page notes branding updates. This package follows names in the retrieved current exam guide, while feature availability and account terms still need checking.

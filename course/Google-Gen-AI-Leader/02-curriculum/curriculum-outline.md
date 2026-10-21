@@ -1,54 +1,42 @@
-# Google Cloud Generative AI Leader — Curriculum
+# Google Cloud Generative AI Leader — Topical Curriculum
 
-## Six expanded practice tests
+| Test | Topic | Questions |
+|---|---|---:|
+| 1 | Generative AI Foundations, Models & Core Concepts | 100 |
+| 2 | Google Cloud Services, Gemini & AI Ecosystem | 100 |
+| 3 | Prompt Engineering, Grounding & Output Improvement | 100 |
+| 4 | AI Applications, Agents & Business Use Cases | 100 |
+| 5 | Responsible AI, Security, Privacy & Risk Management | 100 |
+| 6 | Strategy, Adoption, Transformation & Business Value | 100 |
 
-| Test | Suggested role | Questions | Custom practice time |
-|---|---|---:|---:|
-| 1 | Baseline | 100 | 160 minutes |
-| 2 | Apply initial review | 100 | 160 minutes |
-| 3 | Explain product and technique choices | 100 | 160 minutes |
-| 4 | Reassess weak areas | 100 | 160 minutes |
-| 5 | No-notes practice | 100 | 160 minutes |
-| 6 | Consolidate final review | 100 | 160 minutes |
+Every test contains 100 single-answer questions with four choices. Select ONE best answer. Optional duration: 160 minutes; optional target: 80%. Neither is an official exam setting or passing threshold.
 
-All six tests mix the same four sections: **30 fundamentals / 35 offerings / 20 output improvement / 15 business strategy**. The roles above are suggested learning uses, not different domain weights or calibrated difficulty levels.
+## Learning progression
 
-Every question has four choices and one best answer. The suggested 80% practice target is not an official passing threshold or a guarantee. Concepts intentionally recur across sets, so repeated scores are not independent readiness measurements.
+1. **Foundations:** AI versus ML versus generation; data and lifecycle; foundation models and model-family selection; tokens and context. Architecture, sampling, adaptation, and metrics include labeled technical enrichment beyond guaranteed exam depth.
+2. **Google ecosystem:** Gemini and Gemma; Imagen and Veo; productivity and enterprise knowledge tools; customer experience; development platforms, agent tooling, APIs, runtime, access, and data-term considerations.
+3. **Output improvement:** clear instructions, examples, decomposition, structured output, source choice, retrieval quality, grounding, evaluation, and failure diagnosis.
+4. **Applications:** match tasks to suitable methods; design agent tools and action boundaries; reliable workflows, knowledge assistants, contact centers, productivity, and practical business evaluation.
+5. **Responsible AI:** risk, accountable oversight, data privacy, identity, injection, misuse, source rights, output risks, incident response, and assurance limits.
+6. **Strategy:** prioritize feasible value, design measurable pilots, calculate simple economics, support adoption, govern data and operations, source solutions, scale responsibly, and retire failing investments.
 
-## Relationship to the real exam
+## Suggested three-week plan
 
-The official certification page retrieved on October 21, 2026 lists **50–60 multiple-choice questions in 90 minutes**. The 100-question tests in this package are expanded learning exercises; **160 minutes** is a custom practice duration, not an official timing claim. The question scope and selection format are exam-oriented, but actual-exam difficulty and exact content are not reproduced or certified.
+- **Week 1:** Read the official guide, then complete Tests 1 and 2. Record weak concepts and product distinctions. Review uncertain correct answers as well as errors.
+- **Week 2:** Complete Tests 3 and 4. For each mistake, identify the decisive requirement and explain why the alternatives do not fit. Work through a fresh example, not just an answer letter.
+- **Week 3:** Complete Tests 5 and 6. Revisit unresolved risks and business calculations, then compare your gaps with the complete current official outline. For final exam-oriented practice, sample across topics rather than treating one topical score as overall readiness.
 
-## Suggested two-to-three-week plan
+## How these tests differ from the official exam
 
-### Phase 1 — Establish the foundations
+These are topical learning tests, **not** six mixed-domain forms weighted 30/35/20/15. Closest guide objectives provide reference anchors; technical enrichment is not a guarantee of exam content. Concepts recur across topics, so repeated scores are not independent readiness measurements.
 
-1. Read the current official exam guide and take Set 1 without notes.
-2. Review AI terminology, data quality, lifecycle stages, and model-family distinctions.
-3. Map Google offerings to business needs rather than memorizing names alone.
-4. Take Set 2 after targeted review.
-
-### Phase 2 — Apply and compare
-
-1. Study enterprise knowledge, customer experience, agent tooling, and relevant APIs.
-2. Review grounding, RAG, prompting, fine-tuning, human review, and sampling controls.
-3. Take Set 3 and explain every uncertain choice.
-4. Review use-case prioritization, total cost, adoption, security, and responsible AI, then take Set 4.
-
-### Phase 3 — Consolidate
-
-1. Complete Set 5 without notes if timed practice is useful.
-2. Revisit mistakes and correct guesses using the official study guide.
-3. Complete Set 6 and compare your remaining gaps with the full official outline.
-4. Check current branding and exam delivery details before registration.
+The official page previously retrieved October 21, 2026 lists 50–60 multiple-choice questions in 90 minutes. This package is longer, uncalibrated independent practice, not actual or recalled exam content. Check current exam details before registering.
 
 ## Error log
 
-| Test / Q | Section | Why my choice failed | Distinguishing requirement | Source / new example |
+| Test / question | Topic | Why my choice failed | Decisive requirement | Reference / fresh example |
 |---|---|---|---|---|
 | | | | | |
-
-Useful categories: model/product confusion, wrong source of truth, unnecessary customization, ignored risk, cost-only selection, or missing adoption requirements.
 
 ## Official resources
 

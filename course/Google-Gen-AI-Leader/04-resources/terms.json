@@ -1,0 +1,466 @@
+{
+  "gen": [
+    "Generative AI",
+    "Creates new content from learned patterns; generated content still needs appropriate review."
+  ],
+  "classification": [
+    "Classification",
+    "Assigns inputs to predefined categories rather than generating open-ended content."
+  ],
+  "regression": [
+    "Regression",
+    "Predicts a numeric quantity rather than producing new prose, images, or video."
+  ],
+  "rules": [
+    "Deterministic rule-based processing",
+    "Applies explicit rules and is suitable when an exact prescribed result is required without probabilistic generation."
+  ],
+  "ml": [
+    "Machine learning",
+    "Learns useful patterns from data instead of requiring every decision rule to be manually programmed."
+  ],
+  "deep": [
+    "Deep learning",
+    "Is a subset of machine learning using neural networks with multiple layers to learn representations."
+  ],
+  "ai": [
+    "Artificial intelligence",
+    "Is the broad field of systems performing tasks associated with human intelligence; it includes more than generative models."
+  ],
+  "supervised": [
+    "Supervised learning",
+    "Learns from examples paired with known target labels or outcomes."
+  ],
+  "unsupervised": [
+    "Unsupervised learning",
+    "Finds patterns or groupings without supplied target labels."
+  ],
+  "reinforcement": [
+    "Reinforcement learning",
+    "Learns actions through interaction and reward or penalty feedback."
+  ],
+  "structured": [
+    "Structured data",
+    "Uses a predefined organization such as rows and typed columns in a relational table."
+  ],
+  "unstructured": [
+    "Unstructured data",
+    "Includes free-form content such as prose, audio, and images without a fixed tabular schema."
+  ],
+  "labeled": [
+    "Labeled data",
+    "Pairs examples with assigned tags, categories, or target outcomes; a structured file is not automatically labeled."
+  ],
+  "unlabeled": [
+    "Unlabeled data",
+    "Lacks supplied target annotations; it may still contain useful patterns and can be structured or unstructured."
+  ],
+  "quality": [
+    "Improve data accuracy, completeness, consistency, and relevance",
+    "Addresses defects in the source evidence; greater model capacity does not automatically repair incorrect data."
+  ],
+  "access": [
+    "Ensure authorized data is available in a usable format",
+    "Makes relevant evidence practically usable while retaining permissions and governance; accessibility does not mean public access."
+  ],
+  "ingest": [
+    "Data ingestion",
+    "Collects or brings source information into the data workflow before later processing."
+  ],
+  "prepare": [
+    "Data preparation",
+    "Cleans, transforms, and organizes collected data for its intended use."
+  ],
+  "train": [
+    "Model training",
+    "Learns model parameters from data; it is different from serving a trained model to users."
+  ],
+  "deploy": [
+    "Model deployment",
+    "Makes a trained or selected model available for application use."
+  ],
+  "manage": [
+    "Model management",
+    "Monitors, versions, maintains, and improves models after deployment as conditions change."
+  ],
+  "inference": [
+    "Inference",
+    "Uses a trained model to produce an output for new input without inherently updating its weights."
+  ],
+  "fm": [
+    "Foundation model",
+    "Is broadly pretrained and can support or be adapted to multiple downstream tasks."
+  ],
+  "llm": [
+    "Large language model",
+    "Is designed to process and generate language using learned patterns; fluency is not proof of truth."
+  ],
+  "multi": [
+    "Multimodal foundation model",
+    "Can work with multiple input or output modalities, subject to the selected model capabilities."
+  ],
+  "diffusion": [
+    "Diffusion model",
+    "Learns to reverse a noise process and is commonly used for image generation."
+  ],
+  "choose": [
+    "Evaluate model fit against business and operational requirements",
+    "Considers modality, quality, context, security, availability, customization, latency, and total cost."
+  ],
+  "largest": [
+    "Choose only the largest available model",
+    "Can increase cost or latency without establishing task suitability or meeting governance requirements."
+  ],
+  "cheapest": [
+    "Choose only the lowest token price",
+    "Ignores quality, retries, review effort, latency, and other costs of the full solution."
+  ],
+  "infra": [
+    "Infrastructure layer",
+    "Provides compute, accelerators, storage, networking, and supporting resources used to train and serve AI systems."
+  ],
+  "platform": [
+    "Platform layer",
+    "Provides APIs and services for developing, deploying, and managing models and AI applications."
+  ],
+  "agent": [
+    "Agent layer",
+    "Combines a model or decision logic with tools and a goal-oriented workflow to observe and act."
+  ],
+  "application": [
+    "Application layer",
+    "Provides the user-facing experience that embeds AI capabilities into a business workflow."
+  ],
+  "gemini": [
+    "Gemini model family",
+    "Supports broad multimodal and language tasks, with specific modalities and limits depending on the chosen model."
+  ],
+  "gemma": [
+    "Gemma model family",
+    "Offers open-weight model options for compatible customized or local deployments, subject to license and hardware requirements."
+  ],
+  "imagen": [
+    "Imagen model family",
+    "Focuses on generating and editing images from supported inputs, rather than serving as a video-generation family."
+  ],
+  "veo": [
+    "Veo model family",
+    "Focuses on video generation from supported prompts or image inputs, subject to model availability and capabilities."
+  ],
+  "draft": [
+    "Use generative AI to draft content with suitable review",
+    "Fits open-ended content creation when quality, rights, and risk controls are addressed."
+  ],
+  "biggerdata": [
+    "Add more data without checking its quality",
+    "Can amplify errors or irrelevant content and is not a substitute for data validation."
+  ],
+  "prompt": [
+    "Prompt engineering",
+    "Refines instructions, examples, and context at inference time without changing learned model weights."
+  ],
+  "tpu": [
+    "Google Tensor Processing Units (TPUs)",
+    "Are Google-designed accelerators optimized for supported machine-learning workloads; suitability still depends on the workload."
+  ],
+  "gpu": [
+    "Graphics processing units (GPUs)",
+    "Provide parallel acceleration widely used for compatible training and inference workloads."
+  ],
+  "cpu": [
+    "General-purpose CPUs",
+    "Handle general computation but do not denote a specialized parallel AI accelerator family."
+  ],
+  "managed": [
+    "Use managed cloud capacity with workload-aware scaling",
+    "Can reduce infrastructure operating burden while capacity, quotas, reliability, and cost still require planning."
+  ],
+  "open": [
+    "Evaluate model and framework choice through an open ecosystem",
+    "Supports flexibility across eligible first-party, third-party, and open models rather than assuming one model suits every use case."
+  ],
+  "controls": [
+    "Assess enterprise security, privacy, governance, and service controls",
+    "Checks the actual service, account, configuration, and terms instead of assuming all AI products handle data identically."
+  ],
+  "lowcode": [
+    "Use supported prebuilt APIs and low-code or no-code tools",
+    "Can lower development barriers for suitable tasks without eliminating testing, governance, or all technical work."
+  ],
+  "gems": [
+    "Gems in the Gemini app",
+    "Provide reusable personalized assistant instructions for supported tasks; they are not automatically a fully deployed enterprise agent platform."
+  ],
+  "geminiapp": [
+    "Gemini app",
+    "Provides a conversational user-facing assistant experience; its features and data terms depend on account and offering."
+  ],
+  "workspace": [
+    "Gemini for Google Workspace",
+    "Brings supported AI assistance into Workspace applications such as Gmail and Docs, subject to edition and availability."
+  ],
+  "enterprise": [
+    "Gemini Enterprise",
+    "Supports enterprise information discovery and custom agent experiences across authorized organizational sources, subject to configuration."
+  ],
+  "notebook": [
+    "Gemini Notebook source-grounded research capabilities",
+    "Help users work with selected source materials through summaries and source-oriented questions, subject to the available offering."
+  ],
+  "search": [
+    "Agent Search on Gemini Enterprise Agent Platform",
+    "Provides managed enterprise search and retrieval capabilities for supported business content and applications."
+  ],
+  "googlesearch": [
+    "Google Search and supported Search grounding",
+    "Provides access to public world information; it does not automatically grant access to confidential enterprise repositories."
+  ],
+  "conversational": [
+    "Conversational Agents",
+    "Supports customer-facing conversational experiences and task interactions, subject to configured capabilities and integrations."
+  ],
+  "assist": [
+    "Agent Assist",
+    "Provides supported guidance and assistance to human contact-center agents during their work."
+  ],
+  "insights": [
+    "Conversational Insights",
+    "Analyzes customer conversations to identify themes, patterns, and operational improvement opportunities."
+  ],
+  "ccaas": [
+    "Google Cloud Contact Center as a Service",
+    "Provides cloud-based contact-center capabilities rather than merely analyzing historical conversation text."
+  ],
+  "garden": [
+    "Model Garden on Agent Platform",
+    "Helps teams discover and evaluate supported Google, third-party, and open models, subject to model-specific terms and availability."
+  ],
+  "automl": [
+    "Agent Platform AutoML",
+    "Supports training suitable models with reduced manual model-development effort; it is not a general guarantee that every task can be automated."
+  ],
+  "customagents": [
+    "Use Agent Platform to build a controlled custom agent",
+    "Combines model capabilities, approved tools, knowledge, and orchestration for a purpose-specific business workflow."
+  ],
+  "ragapi": [
+    "Use supported RAG APIs for a custom retrieval workflow",
+    "Provides building blocks for retrieving and supplying external evidence when a team needs application-specific integration."
+  ],
+  "agentstudio": [
+    "Agent Studio",
+    "Is positioned in the retrieved guide for building production-oriented AI applications with cloud platform capabilities."
+  ],
+  "aistudio": [
+    "Google AI Studio",
+    "Supports rapid prototyping and experimentation with supported Gemini capabilities; a prototype alone does not establish production readiness."
+  ],
+  "storage": [
+    "Cloud Storage",
+    "Provides object storage for files and datasets rather than a complete conversation agent or a transactional relational database."
+  ],
+  "run": [
+    "Cloud Run",
+    "Provides managed hosting for compatible containerized applications and services, subject to runtime and service configuration."
+  ],
+  "functions": [
+    "Cloud Run functions / Cloud Functions",
+    "Supports suitable event-driven functions and tool implementations; naming varies across guide and service generations."
+  ],
+  "stt": [
+    "Speech-to-Text API",
+    "Converts supported speech audio into text rather than synthesizing spoken output."
+  ],
+  "tts": [
+    "Text-to-Speech API",
+    "Converts text into supported synthesized speech rather than transcribing input audio."
+  ],
+  "translation": [
+    "Translation API",
+    "Translates supported text between languages; it does not by itself constitute structured document extraction."
+  ],
+  "doctranslation": [
+    "Document Translation",
+    "Translates supported formatted documents while aiming to preserve document layout, subject to format limitations."
+  ],
+  "docai": [
+    "Document AI",
+    "Extracts and processes information from supported documents, including structured fields for suitable processors."
+  ],
+  "vision": [
+    "Cloud Vision API",
+    "Analyzes supported image content, such as objects, text, and landmarks; it is distinct from generating a new image."
+  ],
+  "video": [
+    "Cloud Video Intelligence API",
+    "Analyzes supported video content and extracts useful annotations rather than generating new video."
+  ],
+  "nlp": [
+    "Natural Language API",
+    "Analyzes existing text for supported tasks such as sentiment, entities, and classification."
+  ],
+  "database": [
+    "Use an authorized database lookup tool",
+    "Retrieves authoritative structured business records through enforced access rather than inventing live facts from model weights."
+  ],
+  "tool": [
+    "Use a validated function or extension to an external service",
+    "Lets trusted application code perform an authorized real-world operation; generated text claiming success is not proof of execution."
+  ],
+  "hallucination": [
+    "Hallucination",
+    "Is generated content that appears plausible but is factually wrong or unsupported by the available evidence."
+  ],
+  "cutoff": [
+    "Pretraining knowledge cutoff",
+    "Limits what facts could be learned during training; the model does not inherently know later events without additional evidence or tools."
+  ],
+  "rag": [
+    "Retrieval-augmented generation (RAG)",
+    "Retrieves external evidence, adds it to the request context, and generates an answer without inherently updating model weights."
+  ],
+  "tune": [
+    "Fine-tuning",
+    "Updates model parameters using suitable task-specific training data; it is not automatically the best way to supply frequently changing facts."
+  ],
+  "human": [
+    "Human-in-the-loop review",
+    "Uses qualified people to verify, approve, correct, or escalate outputs, especially where consequences are significant."
+  ],
+  "zero": [
+    "Zero-shot prompting",
+    "Gives task instructions without a worked example in the prompt."
+  ],
+  "one": [
+    "One-shot prompting",
+    "Provides one worked demonstration of the desired task behavior in the prompt."
+  ],
+  "few": [
+    "Few-shot prompting",
+    "Provides several worked demonstrations of the desired input-output behavior in the prompt."
+  ],
+  "role": [
+    "Role prompting",
+    "Specifies a perspective or function to guide response tone and focus; it does not grant expertise or authority."
+  ],
+  "chaining": [
+    "Prompt chaining",
+    "Uses linked prompt steps or exchanges so one stage informs later stages of a larger task."
+  ],
+  "cot": [
+    "Chain-of-thought-style prompting",
+    "Uses intermediate-step demonstrations or structured problem-solving guidance; it is not a guarantee of correctness or access to private internal reasoning."
+  ],
+  "react": [
+    "ReAct-style reasoning and action",
+    "Combines deciding a next step with permitted external actions and observations in a controlled loop."
+  ],
+  "firstparty": [
+    "Ground with authorized first-party enterprise data",
+    "Uses approved organizational evidence for private business facts, with appropriate access controls."
+  ],
+  "thirdparty": [
+    "Ground with a licensed or approved third-party source",
+    "Uses permitted information from an external provider when that source is authoritative for the requirement."
+  ],
+  "world": [
+    "Ground with relevant public world information",
+    "Uses appropriate public evidence, such as supported Search grounding, rather than assuming private records are publicly available."
+  ],
+  "temperature": [
+    "Adjust temperature to control sampling variability",
+    "Lower values generally make sampling more focused and higher values more varied; neither guarantees factual correctness."
+  ],
+  "topp": [
+    "Adjust top-p nucleus sampling",
+    "Restricts the candidate token set using cumulative probability mass rather than a fixed response length."
+  ],
+  "length": [
+    "Set an appropriate maximum output length",
+    "Caps generated output tokens within supported limits; too low a cap can truncate an answer."
+  ],
+  "context": [
+    "Context window",
+    "Bounds the information a model can consider within a request according to model-specific limits."
+  ],
+  "token": [
+    "Token",
+    "Is a model-dependent input or output unit that may represent a word fragment; token count is not always word count."
+  ],
+  "monitor": [
+    "Continuously evaluate, version, and monitor the solution",
+    "Tracks quality, usage, regressions, security updates, and changing conditions instead of assuming launch completes maintenance."
+  ],
+  "softprompt": [
+    "Prompt tuning",
+    "Learns task-specific prompt representations while keeping base model weights frozen in supported approaches; it differs from manually rewriting prompt text."
+  ],
+  "safety": [
+    "Configure and test appropriate safety controls",
+    "Can reduce supported harmful content but does not guarantee factual accuracy, authorization, or complete risk elimination."
+  ],
+  "priority": [
+    "Prioritize measurable business value with feasible data and manageable risk",
+    "Selects use cases using value, readiness, constraints, and consequences rather than novelty alone."
+  ],
+  "pilot": [
+    "Start with a bounded pilot and defined success criteria",
+    "Tests value and risk on a controlled scope before broad expansion."
+  ],
+  "roi": [
+    "Evaluate total benefits against total implementation and operating costs",
+    "Accounts for integration, model use, review, training, and maintenance rather than relying only on the price of a token."
+  ],
+  "kpi": [
+    "Define outcome-focused baseline and success metrics",
+    "Measures the business goal, such as verified resolution or handling time, alongside quality and safety measures."
+  ],
+  "adoption": [
+    "Plan training, workflow change, feedback, and ongoing support",
+    "Addresses the people and process changes required for useful adoption rather than treating deployment as automatic acceptance."
+  ],
+  "stakeholders": [
+    "Align business, technical, security, and affected-user stakeholders",
+    "Connects goals, feasibility, controls, and user needs before decisions become difficult to reverse."
+  ],
+  "saif": [
+    "Google Secure AI Framework (SAIF)",
+    "Provides a framework for securing AI systems and addressing AI-specific risks across their lifecycle; it is not a guarantee or an automatic certification."
+  ],
+  "iam": [
+    "Identity and Access Management (IAM)",
+    "Controls which principals may perform supported actions on resources through roles and policies."
+  ],
+  "scc": [
+    "Security Command Center",
+    "Helps identify and manage supported security findings and posture information; it is not a source-document quality evaluator."
+  ],
+  "securelife": [
+    "Apply security controls throughout the AI lifecycle",
+    "Addresses source data, development, deployment, access, monitoring, and updates rather than only the launch endpoint."
+  ],
+  "transparent": [
+    "Disclose AI use, relevant limits, and review pathways",
+    "Helps stakeholders understand the role of the system and limitations rather than treating generated answers as unquestionable authority."
+  ],
+  "privacy": [
+    "Minimize and protect personal data for the approved purpose",
+    "Limits unnecessary collection, use, retention, and disclosure according to applicable obligations."
+  ],
+  "pseudonym": [
+    "Pseudonymization",
+    "Replaces direct identifiers with aliases while a linkage or re-identification route may remain; it is not the same as irreversible anonymity."
+  ],
+  "anonym": [
+    "Anonymization",
+    "Aims to prevent identification under the relevant standard; simply removing names does not automatically achieve it."
+  ],
+  "fair": [
+    "Evaluate relevant subgroups and address inappropriate disparities",
+    "Checks uneven outcomes and representation with appropriate data and review; overall accuracy can conceal harmful differences."
+  ],
+  "accountable": [
+    "Assign decision ownership, explanations, and escalation responsibilities",
+    "Makes people or teams answerable for AI impacts and supports review of consequential outcomes."
+  ]
+}

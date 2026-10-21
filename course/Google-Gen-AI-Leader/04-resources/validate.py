@@ -6,7 +6,7 @@ import json
 import re
 from collections import Counter
 from pathlib import Path
-from build import ROOT,HEADER,DOMAINS,WEIGHTS,GUIDE,make_rows
+from build import ROOT,HEADER,DOMAINS,GUIDE,make_rows
 
 def normalize(text):
     return re.sub(r'\W+',' ',text.casefold()).strip()
@@ -14,8 +14,10 @@ def normalize(text):
 def validate_rows(rows,expected=None):
     errors=[]
     if len(rows)!=100: errors.append(f'Expected 100 rows, found {len(rows)}')
-    if Counter(r.get('Domain') for r in rows)!=Counter({DOMAINS[d]:n for d,n in WEIGHTS.items()}):
-        errors.append('Domain distribution differs from 30/35/20/15')
+    if any(r.get('Domain') not in DOMAINS.values() for r in rows):
+        errors.append('Unknown official domain label')
+    if expected is not None and Counter(r.get('Domain') for r in rows)!=Counter(r.get('Domain') for r in expected):
+        errors.append('Domain counts differ from topical source')
     if Counter(r.get('Question Type') for r in rows)!=Counter({'multiple-choice':100}):
         errors.append('Expected 100 single-answer multiple-choice questions')
     seen=set()
@@ -78,7 +80,7 @@ def main():
     if not args.files and len(paths)!=6: failures.append('Expected six CSV files')
     report=dict(status='FAIL' if failures else 'PASS',sets=len(paths),
         total_questions=sum(x['questions'] for x in summaries),
-        checks=['17-column header','100 questions per set','30/35/20/15 domain counts',
+        checks=['17-column header','100 questions per set','topical-source domain counts',
                 'four unique options','single-answer keys','per-option explanations',
                 'Google exam-guide references','source consistency','normalized duplicate wording',
                 '25 correct answers per slot'],

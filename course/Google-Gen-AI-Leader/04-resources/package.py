@@ -16,7 +16,13 @@ def check_companion_files():
         review = ROOT / f'03-practice-sets/set-{number}/practice-set-{number}.md'
         if review.read_text(encoding='utf-8') != render_test(number, rows):
             raise ValueError(f'Stale review copy for set {number}; run build.py')
+    csvs = sorted((ROOT / '03-practice-sets').glob('set-*/practice-set-*.csv'))
+    errors, summaries = validate_files(csvs)
+    if len(csvs) != 6 or errors:
+        raise ValueError('CSV content does not match current source')
     report = json.loads((ROOT / '04-resources/validation-report.json').read_text(encoding='utf-8'))
+    if report.get('files') != summaries:
+        raise ValueError('Stale validation report; rerun validate.py --report')
     if report.get('status') != 'PASS' or report.get('sets') != 6 or report.get('total_questions') != 600:
         raise ValueError('Expected a passing six-set validation report; run validate.py --report')
 
@@ -38,7 +44,7 @@ def main():
         for file in sorted(ROOT.rglob('*')):
             if not file.is_file() or file == target or '__pycache__' in file.parts:
                 continue
-            if file.suffix not in {'.md', '.csv', '.json', '.py'}:
+            if file.suffix not in {'.md', '.csv', '.json', '.py', '.txt'}:
                 continue
             info = zipfile.ZipInfo(file.relative_to(ROOT).as_posix(), date_time=(1980, 1, 1, 0, 0, 0))
             info.compress_type = zipfile.ZIP_DEFLATED

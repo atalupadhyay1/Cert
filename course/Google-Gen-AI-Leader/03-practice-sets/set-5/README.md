@@ -1,16 +1,15 @@
-# Google Cloud Generative AI Leader Practice Set 5
+# Practice Test 5: Responsible AI, Security, Privacy & Risk Management
 
-100 questions: 100 single-answer multiple-choice questions.
+100 original single-answer, four-option questions. Select ONE best answer.
 
-| Domain | Questions |
+Topical learning test, not an exam-weighted simulation. Concept checks and short scenarios; related concepts are reinforced across topics. Technical enrichment is not a promise of exam depth.
+
+| Closest official domain | Questions |
 |---|---:|
-| Fundamentals of gen AI | 30 |
-| Google Cloud’s gen AI offerings | 35 |
-| Techniques to improve gen AI model output | 20 |
-| Business strategies for a successful gen AI solution | 15 |
+| Business strategies for a successful gen AI solution | 72 |
+| Techniques to improve gen AI model output | 16 |
+| Google Cloud’s gen AI offerings | 12 |
 
-Upload `practice-set-5.csv`; review offline with `practice-set-5.md`.
+Upload `practice-set-5.csv`; use `practice-set-5.md` for offline review.
 
 Suggested duration: 160 minutes; practice target: 80%. These are custom learning settings, not official exam timing or scaled-score equivalents.
-
-Core objectives and explanations recur in different scenarios across sets. These are not independent psychometric exam forms.

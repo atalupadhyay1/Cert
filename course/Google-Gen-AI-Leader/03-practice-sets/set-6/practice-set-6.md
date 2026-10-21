@@ -1,6 +1,10 @@
 # Google Cloud Generative AI Leader — Practice Set 6
 
+Strategy, Adoption, Transformation & Business Value
+
 100 questions · Suggested practice duration: 160 minutes · Practice target: 80%
+
+Topical learning test, not an exam-weighted mock. Related concepts recur across topics.
 
 Select ONE best answer for every question. Answer key follows all questions.
 
@@ -8,1806 +12,1806 @@ Original educational content, not actual or recalled Google exam items.
 
 ## Questions
 
-### 1. A leader wants defined success criteria and comparison with pre-AI performance. Which practice fits?
+### 1. A company has many possible AI projects but limited delivery capacity. What should drive initial prioritization?
 
 Domain: Business strategies for a successful gen AI solution
 
-- A. Choose only the largest available model
-- B. Define outcome-focused baseline and success metrics
-- C. Token
-- D. Choose only the lowest token price
+- A. Assess data, skills, workflow, infrastructure, and control readiness
+- B. Provide role-specific training and approved-use guidance
+- C. Pretraining
+- D. Prioritize measurable business value with feasible data and manageable risk
 
-### 2. An organization wants managed search capabilities on Agent Platform for supported content. Which product fits?
-
-Domain: Google Cloud’s gen AI offerings
-
-- A. Model Garden on Agent Platform
-- B. Google Search and supported Search grounding
-- C. Agent Platform AutoML
-- D. Agent Search on Gemini Enterprise Agent Platform
-
-### 3. A developer evaluates Google's open-weight models for a local application. Which family should be considered?
-
-Domain: Fundamentals of gen AI
-
-- A. Gemma model family
-- B. Veo model family
-- C. Imagen model family
-- D. Gemini model family
-
-### 4. A marketing team seeks previously unknown clusters in purchase histories. Which approach fits?
-
-Domain: Fundamentals of gen AI
-
-- A. Supervised learning
-- B. Deterministic rule-based processing
-- C. Unsupervised learning
-- D. Reinforcement learning
-
-### 5. A business has resistance and confusion around a new AI process. Which adoption approach should address this?
+### 2. A leadership team wants to balance quick wins with longer-term strategic opportunities. What planning approach fits?
 
 Domain: Business strategies for a successful gen AI solution
 
-- A. Choose only the largest available model
-- B. Model deployment
-- C. Plan training, workflow change, feedback, and ongoing support
-- D. Add more data without checking its quality
+- A. Balance opportunities by value, feasibility, and risk
+- B. Compare a prebuilt solution with custom development against requirements
+- C. Scale only after operational, economic, and control criteria pass
+- D. Start with a bounded pilot and defined success criteria
 
-### 6. A team seeks lower infrastructure operating burden without assuming unlimited free capacity. Which strategy fits?
-
-Domain: Google Cloud’s gen AI offerings
-
-- A. Use managed cloud capacity with workload-aware scaling
-- B. Cloud Storage
-- C. Choose only the lowest token price
-- D. Choose only the largest available model
-
-### 7. An organization must define which principals may perform supported resource operations. Which capability fits?
+### 3. A promising use case has unclear data ownership, limited staff skills, and no support process. What should happen before scaling?
 
 Domain: Business strategies for a successful gen AI solution
 
-- A. Improve data accuracy, completeness, consistency, and relevance
-- B. Configure and test appropriate safety controls
-- C. Security Command Center
-- D. Identity and Access Management (IAM)
+- A. Assess data, skills, workflow, infrastructure, and control readiness
+- B. Provide role-specific training and approved-use guidance
+- C. Independent representative evaluation
+- D. Evaluate contractual, data, service, and exit terms
 
-### 8. A prompt specifies the task and format without showing any completed cases. Which technique fits?
+### 4. A team wants to claim that AI improves its approval process. What should it measure before changing the workflow?
 
-Domain: Techniques to improve gen AI model output
+Domain: Business strategies for a successful gen AI solution
 
-- A. Zero-shot prompting
-- B. Fine-tuning
-- C. Few-shot prompting
-- D. One-shot prompting
+- A. Establish pre-change business performance
+- B. Collect reviewed user feedback and verified outcomes
+- C. Define outcome-focused baseline and success metrics
+- D. Measure sustained appropriate use and task success
 
-### 9. A team uses stepwise worked examples to improve a complex response. Which technique is relevant?
+### 5. A document assistant is judged only by how many words it generates. What measurement approach should replace this?
 
-Domain: Techniques to improve gen AI model output
+Domain: Business strategies for a successful gen AI solution
 
-- A. ReAct-style reasoning and action
-- B. Role prompting
-- C. Adjust temperature to control sampling variability
-- D. Chain-of-thought-style prompting
+- A. Track variable usage and fixed operating cost separately
+- B. Measure sustained appropriate use and task success
+- C. Define outcome-focused baseline and success metrics
+- D. Output token generation rate
 
-### 10. A team evaluates the underlying compute foundation for model training and serving. Which layer is being evaluated?
+### 6. A technically impressive pilot fails because process owners and users were excluded. What should have been done earlier?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Provide role-specific training and approved-use guidance
+- B. Align business, technical, security, and affected-user stakeholders
+- C. Pretraining
+- D. Assign an accountable business sponsor and decision rights
+
+### 7. A pilot has engineers but nobody who owns funding, business results, or trade-off decisions. Which role is missing?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Provide role-specific training and approved-use guidance
+- B. Evaluate contractual, data, service, and exit terms
+- C. Continuously evaluate, version, and monitor the solution
+- D. Assign an accountable business sponsor and decision rights
+
+### 8. An opportunity promises large savings but could deny customers essential services if wrong. What must influence prioritization?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Assess impact, likelihood, affected users, and mitigations
+- B. Review service-specific retention and data-use terms
+- C. Identity and Access Management (IAM)
+- D. Test subgroup outcomes and investigate disparities
+
+### 9. A department proposes generation for every task, including exact fixed-rule checks. What selection principle should leaders apply?
 
 Domain: Fundamentals of gen AI
 
-- A. Agent layer
-- B. Infrastructure layer
-- C. Application layer
-- D. Platform layer
-
-### 11. A workflow must retrieve a verified live business value instead of guessing from pretrained knowledge. Which approach fits?
-
-Domain: Google Cloud’s gen AI offerings
-
-- A. Gemini model family
-- B. Use an authorized database lookup tool
+- A. Independent representative evaluation
+- B. Compare cost per verified acceptable outcome
 - C. Model Garden on Agent Platform
-- D. Imagen model family
+- D. Evaluate model fit against business and operational requirements
 
-### 12. A leader asks which studio is positioned for quick AI prototyping in the retrieved guide. Which option fits?
-
-Domain: Google Cloud’s gen AI offerings
-
-- A. Agent Studio
-- B. Agent Platform AutoML
-- C. Google AI Studio
-- D. Google Cloud Contact Center as a Service
-
-### 13. A product team designs the screens and business workflow that present AI features to users. Which landscape layer fits?
-
-Domain: Fundamentals of gen AI
-
-- A. Infrastructure layer
-- B. Application layer
-- C. Platform layer
-- D. Foundation model
-
-### 14. An AI service's benefits and mistakes are unevenly distributed across intended users. Which responsible practice fits?
+### 10. An approved prebuilt product meets most requirements. What should justify building a custom alternative?
 
 Domain: Business strategies for a successful gen AI solution
 
-- A. Choose only the lowest token price
-- B. Improve data accuracy, completeness, consistency, and relevance
-- C. Choose only the largest available model
-- D. Evaluate relevant subgroups and address inappropriate disparities
+- A. Balance opportunities by value, feasibility, and risk
+- B. Evaluate model fit against business and operational requirements
+- C. Pretraining
+- D. Compare a prebuilt solution with custom development against requirements
 
-### 15. A company wants to generate still visual assets from a creative brief. Which Google model family fits?
-
-Domain: Fundamentals of gen AI
-
-- A. Imagen model family
-- B. Veo model family
-- C. Gemma model family
-- D. Classification
-
-### 16. A company wants an assistant to check authorized order records and initiate permitted support actions. A saved chat persona produces convincing text but never changes the business system. What should the team implement?
-
-Domain: Google Cloud’s gen AI offerings
-
-- A. A video-generation model
-- B. A controlled custom agent with validated tools and business-system integration
-- C. More detailed persona wording with no external integration
-- D. A larger response token limit
-
-### 17. An executive compares GPUs with Google's own ML-oriented accelerator design. Which option names that design?
-
-Domain: Google Cloud’s gen AI offerings
-
-- A. Cloud Storage
-- B. General-purpose CPUs
-- C. Graphics processing units (GPUs)
-- D. Google Tensor Processing Units (TPUs)
-
-### 18. A project needs model discovery rather than automated training of a new task model. Which capability fits?
-
-Domain: Google Cloud’s gen AI offerings
-
-- A. Agent Search on Gemini Enterprise Agent Platform
-- B. Gemini for Google Workspace
-- C. Agent Platform AutoML
-- D. Model Garden on Agent Platform
-
-### 19. A business wants shared ownership of an AI initiative across relevant functions. Which planning practice fits?
-
-Domain: Business strategies for a successful gen AI solution
-
-- A. Model training
-- B. Choose only the lowest token price
-- C. Align business, technical, security, and affected-user stakeholders
-- D. Choose only the largest available model
-
-### 20. A team proposes prompt tuning and another proposes rewriting the prompt manually. Which distinction is most accurate for supported prompt-tuning approaches?
-
-Domain: Techniques to improve gen AI model output
-
-- A. Prompt tuning always makes private data publicly accessible
-- B. Both methods are simply retrieval from a search engine
-- C. Both methods necessarily retrain every model parameter
-- D. Prompt tuning learns prompt representations while base weights remain frozen; manual prompt engineering changes written instructions
-
-### 21. A leader distinguishes a managed AI development environment from the final employee application. Which layer contains the environment?
-
-Domain: Fundamentals of gen AI
-
-- A. Infrastructure layer
-- B. Platform layer
-- C. Agent layer
-- D. Application layer
-
-### 22. A model's wording is too unpredictable and the team wants to adjust sampling randomness. Which parameter fits?
-
-Domain: Techniques to improve gen AI model output
-
-- A. Set an appropriate maximum output length
-- B. Context window
-- C. Token
-- D. Adjust temperature to control sampling variability
-
-### 23. An application needs private enterprise facts while preserving source access controls. Which grounding approach fits?
-
-Domain: Techniques to improve gen AI model output
-
-- A. Ground with authorized first-party enterprise data
-- B. Adjust temperature to control sampling variability
-- C. Ground with a licensed or approved third-party source
-- D. Ground with relevant public world information
-
-### 24. A company runs a job that learns a model from data rather than merely calling it. Which stage fits?
-
-Domain: Fundamentals of gen AI
-
-- A. Model management
-- B. Inference
-- C. Model training
-- D. Model deployment
-
-### 25. An application must ground answers using an approved third-party financial dataset. Which source approach fits?
-
-Domain: Techniques to improve gen AI model output
-
-- A. Ground with a licensed or approved third-party source
-- B. Ground with relevant public world information
-- C. Ground with authorized first-party enterprise data
-- D. Fine-tuning
-
-### 26. A business develops a result through a sequence of contextual follow-up prompts. Which approach fits?
-
-Domain: Techniques to improve gen AI model output
-
-- A. Few-shot prompting
-- B. Fine-tuning
-- C. Set an appropriate maximum output length
-- D. Prompt chaining
-
-### 27. A firm seeks an enterprise search-and-agent experience for internal knowledge rather than public-only search. Which product fits?
-
-Domain: Google Cloud’s gen AI offerings
-
-- A. Gemini Enterprise
-- B. Google Search and supported Search grounding
-- C. Model Garden on Agent Platform
-- D. Gemini for Google Workspace
-
-### 28. A procurement group needs to compare enterprise AI offerings beyond their demos. Which assessment fits?
-
-Domain: Google Cloud’s gen AI offerings
-
-- A. Gemini app
-- B. Add more data without checking its quality
-- C. Assess enterprise security, privacy, governance, and service controls
-- D. Choose only the largest available model
-
-### 29. A company distinguishes its private knowledge base from general public web evidence. Which grounding category describes the latter?
-
-Domain: Techniques to improve gen AI model output
-
-- A. Ground with relevant public world information
-- B. Fine-tuning
-- C. Ground with a licensed or approved third-party source
-- D. Ground with authorized first-party enterprise data
-
-### 30. A diagram places multi-layer neural-network methods inside the wider machine-learning field. What is this inner category?
-
-Domain: Fundamentals of gen AI
-
-- A. Structured data
-- B. Deterministic rule-based processing
-- C. Deep learning
-- D. Supervised learning
-
-### 31. An image collection has a checked defect category attached to each image. Which target-data category fits?
-
-Domain: Fundamentals of gen AI
-
-- A. Unstructured data
-- B. Labeled data
-- C. Unlabeled data
-- D. Structured data
-
-### 32. A service needs clear responsibility for correcting harmful AI outcomes and providing review. Which practice fits?
-
-Domain: Business strategies for a successful gen AI solution
-
-- A. Adjust temperature to control sampling variability
-- B. Disclose AI use, relevant limits, and review pathways
-- C. Choose only the largest available model
-- D. Assign decision ownership, explanations, and escalation responsibilities
-
-### 33. A product combines language generation with understanding of supported visual inputs. Which broad Google model family fits?
-
-Domain: Fundamentals of gen AI
-
-- A. Imagen model family
-- B. Gemma model family
-- C. Veo model family
-- D. Gemini model family
-
-### 34. A business wants to learn from a controlled trial rather than commit every team immediately. Which strategy fits?
+### 11. A company wants to test a new knowledge assistant before exposing all employees. Which rollout approach is appropriate?
 
 Domain: Business strategies for a successful gen AI solution
 
 - A. Start with a bounded pilot and defined success criteria
-- B. Model deployment
-- C. Choose only the largest available model
-- D. Add more data without checking its quality
+- B. Scale only after operational, economic, and control criteria pass
+- C. Pretraining
+- D. Compare a prebuilt solution with custom development against requirements
 
-### 35. A workflow starts with audio and needs a textual transcript. Which service fits?
-
-Domain: Google Cloud’s gen AI offerings
-
-- A. Translation API
-- B. Natural Language API
-- C. Speech-to-Text API
-- D. Text-to-Speech API
-
-### 36. A solution team wants compatible open and commercial model choices under their respective terms. Which ecosystem principle fits?
-
-Domain: Google Cloud’s gen AI offerings
-
-- A. Choose only the largest available model
-- B. Choose only the lowest token price
-- C. Deterministic rule-based processing
-- D. Evaluate model and framework choice through an open ecosystem
-
-### 37. A business must choose a model that supports its task and operating constraints. Which selection strategy fits?
-
-Domain: Fundamentals of gen AI
-
-- A. Choose only the lowest token price
-- B. Evaluate model fit against business and operational requirements
-- C. Choose only the largest available model
-- D. Add more data without checking its quality
-
-### 38. A platform team wants to review supported security findings rather than manually infer them from model answers. Which offering fits?
+### 12. Sales improve during an AI pilot, but a major promotion launched at the same time. What design helps isolate AI's contribution?
 
 Domain: Business strategies for a successful gen AI solution
 
-- A. Identity and Access Management (IAM)
-- B. Prompt engineering
-- C. Improve data accuracy, completeness, consistency, and relevance
-- D. Security Command Center
+- A. Compare a pilot with an appropriate control or baseline
+- B. Establish pre-change business performance
+- C. Collect reviewed user feedback and verified outcomes
+- D. Calibrate automated judging with expert review
 
-### 39. A model presents an invented statistic as established fact. Which failure does this illustrate?
-
-Domain: Techniques to improve gen AI model output
-
-- A. Pretraining knowledge cutoff
-- B. Token
-- C. Hallucination
-- D. Context window
-
-### 40. A solution team needs the production-oriented studio identified by the retrieved guide. Which option fits?
-
-Domain: Google Cloud’s gen AI offerings
-
-- A. Gems in the Gemini app
-- B. Google AI Studio
-- C. Gemini Notebook source-grounded research capabilities
-- D. Agent Studio
-
-### 41. A team must preserve reliable AI behavior as services and data evolve. Which ongoing approach fits?
+### 13. A pilot's success criteria are evaluated only on cases used to design the solution. What should be added?
 
 Domain: Techniques to improve gen AI model output
 
-- A. Choose only the largest available model
-- B. Add more data without checking its quality
-- C. Choose only the lowest token price
+- A. Collect reviewed user feedback and verified outcomes
+- B. Version prompts and regression-test revisions
+- C. Independent representative evaluation
 - D. Continuously evaluate, version, and monitor the solution
 
-### 42. A workflow integrates reasoning with controlled tool use toward a task goal. Which prompting or agent approach fits?
-
-Domain: Techniques to improve gen AI model output
-
-- A. ReAct-style reasoning and action
-- B. Chain-of-thought-style prompting
-- C. Adjust temperature to control sampling variability
-- D. Role prompting
-
-### 43. A leader needs a conversational self-service experience rather than guidance only for human call-center staff. Which offering fits?
-
-Domain: Google Cloud’s gen AI offerings
-
-- A. Google Cloud Contact Center as a Service
-- B. Conversational Agents
-- C. Conversational Insights
-- D. Agent Assist
-
-### 44. A system processes video frames and accompanying language in a supported workflow. Which model capability is relevant?
-
-Domain: Fundamentals of gen AI
-
-- A. Regression
-- B. Large language model
-- C. Multimodal foundation model
-- D. Structured data
-
-### 45. A leader proposes a generative model for an exact deterministic fee calculation. Which processing approach is more suitable for the calculation?
-
-Domain: Fundamentals of gen AI
-
-- A. Use generative AI to draft content with suitable review
-- B. Deterministic rule-based processing
-- C. Agent layer
-- D. Foundation model
-
-### 46. An assistant uses more personal records than required for its task. Which responsible approach should be applied?
+### 14. A pilot should expand only after meeting defined quality, economic, and control requirements. What planning mechanism supports this?
 
 Domain: Business strategies for a successful gen AI solution
 
-- A. Add more data without checking its quality
-- B. Minimize and protect personal data for the approved purpose
-- C. Prompt engineering
-- D. Choose only the largest available model
+- A. Use a phased roadmap with measurable stage gates
+- B. Balance opportunities by value, feasibility, and risk
+- C. Pretraining
+- D. Establish pre-change business performance
 
-### 47. A project transitions a tested model into a serving environment. Which lifecycle activity fits?
+### 15. A sponsor wants to stop funding if the pilot repeatedly misses its agreed target. What should be set before launch?
 
-Domain: Fundamentals of gen AI
+Domain: Business strategies for a successful gen AI solution
 
-- A. Model training
-- B. Model deployment
-- C. Data ingestion
-- D. Data preparation
+- A. Scale only after operational, economic, and control criteria pass
+- B. Define stopping, switching, and decommissioning criteria
+- C. Version prompts and regression-test revisions
+- D. Governed response caching
 
-### 48. A company converts gathered source material into consistent training-ready data. Which lifecycle stage fits?
+### 16. A chatbot reduces contact volume while unresolved complaints rise. What should leaders change in the pilot scorecard?
 
-Domain: Fundamentals of gen AI
+Domain: Business strategies for a successful gen AI solution
 
-- A. Data ingestion
-- B. Model training
-- C. Model deployment
-- D. Data preparation
+- A. Measure sustained appropriate use and task success
+- B. Define outcome-focused baseline and success metrics
+- C. Track variable usage and fixed operating cost separately
+- D. Output token generation rate
 
-### 49. A team adds multiple demonstrations to the prompt while keeping model weights unchanged. Which approach fits?
+### 17. A team changes both case complexity and timing rules when comparing the pilot with the old process. What requirement is missing?
 
-Domain: Techniques to improve gen AI model output
+Domain: Business strategies for a successful gen AI solution
 
-- A. Fine-tuning
-- B. Few-shot prompting
-- C. One-shot prompting
-- D. Zero-shot prompting
+- A. Collect reviewed user feedback and verified outcomes
+- B. Measure sustained appropriate use and task success
+- C. Establish pre-change business performance
+- D. Define outcome-focused baseline and success metrics
 
-### 50. A model dynamically chooses a candidate token set using total probability mass. Which setting is this?
+### 18. Users report that an assistant saves drafting time but creates review work. What should the pilot collect?
 
-Domain: Techniques to improve gen AI model output
+Domain: Business strategies for a successful gen AI solution
 
-- A. Adjust top-p nucleus sampling
-- B. Set an appropriate maximum output length
-- C. Adjust temperature to control sampling variability
-- D. Context window
+- A. Measure sustained appropriate use and task success
+- B. Calibrate automated judging with expert review
+- C. Continuously evaluate, version, and monitor the solution
+- D. Collect reviewed user feedback and verified outcomes
 
-### 51. A company wants grounded answers from external source content without inherently updating model parameters. Which approach fits?
+### 19. Offline evaluation passes, but production behavior is still uncertain. What release approach is most appropriate?
 
-Domain: Techniques to improve gen AI model output
+Domain: Business strategies for a successful gen AI solution
 
-- A. Prompt tuning
-- B. Retrieval-augmented generation (RAG)
+- A. Adversarial and misuse-oriented testing
+- B. Stage deployment with quality gates and rollback
+- C. Version prompts and regression-test revisions
+- D. Independent representative evaluation
+
+### 20. The pilot reaches a trade-off between speed and customer harm, but no one can accept the risk. What governance element is needed?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Assign decision ownership, explanations, and escalation responsibilities
+- B. Protected audit trails and traceability
+- C. Provide role-specific training and approved-use guidance
+- D. Disclose AI use, relevant limits, and review pathways
+
+### 21. A pilot costs $24,000 upfront and produces $8,000 net benefit each month. Ignoring discounting, what is its simple payback period?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. 6 months
+- B. 3 months
+- C. 2 months
+- D. 4 months
+
+### 22. A project delivers $150,000 in benefits against $120,000 total cost over the same year. Using net benefit divided by cost, what is ROI?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. 20%
+- B. 25%
+- C. 125%
+- D. 80%
+
+### 23. Average handling time falls from 12 minutes to 9 minutes. Relative to the original duration, what is the percentage reduction?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. 25% time reduction
+- B. 3% time reduction
+- C. 75% time reduction
+- D. About 33.3% time reduction
+
+### 24. A pilot incurs $500 in model usage, $250 in review, and $150 in monitoring each month. What is the listed monthly recurring total?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. $500 per month
+- B. $750 per month
+- C. $900 per month
+- D. $650 per month
+
+### 25. Model A costs $0.03 per attempt with 90% acceptance; B costs $0.02 with 50% acceptance. Ignoring other costs, which has lower cost per accepted answer?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Model B: $0.02 per accepted answer
+- B. Model A: about $0.033 per accepted answer
+- C. Both models have the same cost per accepted answer
+- D. Acceptance rate is irrelevant to outcome cost
+
+### 26. Verified monthly benefit is $20,000 and recurring monthly operating cost is $6,000. Before other unspecified costs, what is monthly net benefit?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. $20,000 monthly net benefit
+- B. $14,000 monthly net benefit
+- C. $6,000 monthly net benefit
+- D. $26,000 monthly net benefit
+
+### 27. A team saves 5 minutes on each of 1,200 tasks monthly. How much monthly capacity is released, without assuming cash savings?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. 100 hours of released capacity per month
+- B. 5 hours of released capacity per month
+- C. 6,000 hours of released capacity per month
+- D. 20 hours of released capacity per month
+
+### 28. A pilot attempts 1,000 tasks and completes 600 successfully. What is its successful completion rate per attempted task?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. 100% successful completion rate
+- B. 15% successful completion rate
+- C. 60% successful completion rate
+- D. 40% successful completion rate
+
+### 29. Request volume triples while unit variable cost falls to two thirds of its old value. Holding workload mix constant, what happens to total variable cost?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Total variable cost stays unchanged
+- B. Total variable cost doubles
+- C. Total variable cost triples
+- D. Total variable cost falls by one third
+
+### 30. A monthly variable budget is $4,000 and each request costs $0.05. Ignoring fixed costs, how many requests does this fund?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. 8,000 requests per month
+- B. 4,000 requests per month
+- C. 80,000 requests per month
+- D. 200 requests per month
+
+### 31. A business case lists model fees but excludes integration, review, and support. What economic evaluation should be completed?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Output token generation rate
+- B. Evaluate total benefits against total implementation and operating costs
 - C. Choose only the largest available model
-- D. Fine-tuning
+- D. Choose only the lowest token price
 
-### 52. A vendor supplies a broadly trained model capable of many downstream uses. Which category fits?
-
-Domain: Fundamentals of gen AI
-
-- A. Deterministic rule-based processing
-- B. Classification
-- C. Foundation model
-- D. Infrastructure layer
-
-### 53. An AI workflow needs a small event-driven action under the service's execution limits. Which offering fits?
-
-Domain: Google Cloud’s gen AI offerings
-
-- A. Model Garden on Agent Platform
-- B. Cloud Storage
-- C. Cloud Run functions / Cloud Functions
-- D. Agent Platform AutoML
-
-### 54. A company runs additional training on a pretrained model rather than only rewriting instructions. Which adaptation method fits?
-
-Domain: Techniques to improve gen AI model output
-
-- A. Fine-tuning
-- B. Prompt engineering
-- C. Adjust temperature to control sampling variability
-- D. Retrieval-augmented generation (RAG)
-
-### 55. A data team loads raw observations from source platforms for later processing. Which stage is this?
-
-Domain: Fundamentals of gen AI
-
-- A. Model training
-- B. Data preparation
-- C. Data ingestion
-- D. Model deployment
-
-### 56. A company owns clean, relevant documents, but its assistant cannot access the approved repository. A sponsor suggests making all documents public. What is the best response?
-
-Domain: Fundamentals of gen AI
-
-- A. Buy a larger model without connecting the data
-- B. Create an authorized data connection with usable formats and appropriate access controls
-- C. Publish every document publicly so the model can find it
-- D. Ask the model to reconstruct the documents from memory
-
-### 57. A team wants to translate existing written content for an international audience. Which API fits?
-
-Domain: Google Cloud’s gen AI offerings
-
-- A. Natural Language API
-- B. Translation API
-- C. Speech-to-Text API
-- D. Cloud Vision API
-
-### 58. A team specifies an assistant's role and communication perspective in instructions. Which technique fits?
-
-Domain: Techniques to improve gen AI model output
-
-- A. Few-shot prompting
-- B. Retrieval-augmented generation (RAG)
-- C. Role prompting
-- D. Fine-tuning
-
-### 59. A call-center team wants AI to help employees respond during their work. Which offering fits?
-
-Domain: Google Cloud’s gen AI offerings
-
-- A. Agent Assist
-- B. Conversational Agents
-- C. Google Cloud Contact Center as a Service
-- D. Conversational Insights
-
-### 60. A team needs document-level translation that considers supported file structure and layout. Which capability fits?
-
-Domain: Google Cloud’s gen AI offerings
-
-- A. Document Translation
-- B. Cloud Vision API
-- C. Translation API
-- D. Document AI
-
-### 61. An assistant reasons about next steps and invokes permitted external functions. Which landscape component fits?
-
-Domain: Fundamentals of gen AI
-
-- A. Agent layer
-- B. Platform layer
-- C. Infrastructure layer
-- D. Application layer
-
-### 62. A team adds one input-output demonstration without updating weights. Which prompting technique fits?
-
-Domain: Techniques to improve gen AI model output
-
-- A. Zero-shot prompting
-- B. Fine-tuning
-- C. Few-shot prompting
-- D. One-shot prompting
-
-### 63. An assistant must consult current public sources through a supported grounding capability. Which approach fits?
-
-Domain: Google Cloud’s gen AI offerings
-
-- A. Google Search and supported Search grounding
-- B. Gemini Enterprise
-- C. Agent Search on Gemini Enterprise Agent Platform
-- D. Gemini Notebook source-grounded research capabilities
-
-### 64. A team wants to analyze the meaning and sentiment of written feedback. Which API fits?
-
-Domain: Google Cloud’s gen AI offerings
-
-- A. Speech-to-Text API
-- B. Text-to-Speech API
-- C. Translation API
-- D. Natural Language API
-
-### 65. A research project uses images and free-text comments as source content. Which data category fits?
-
-Domain: Fundamentals of gen AI
-
-- A. Labeled data
-- B. Structured data
-- C. Unstructured data
-- D. Regression
-
-### 66. A company evaluates Google's structured guidance for secure AI development and operation. Which framework fits?
+### 32. A low-price model requires more failed attempts and human corrections. Which metric better reflects workflow efficiency?
 
 Domain: Business strategies for a successful gen AI solution
 
-- A. Security Command Center
-- B. Configure and test appropriate safety controls
-- C. Google Secure AI Framework (SAIF)
+- A. Output token generation rate
+- B. Time to first token
+- C. Compare cost per verified acceptable outcome
+- D. Track variable usage and fixed operating cost separately
+
+### 33. A team saves staff time, but has not reduced costs or increased useful output. What distinction should the value report make?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Distinguish estimated capacity savings from realized business benefit
+- B. Measure sustained appropriate use and task success
+- C. Output token generation rate
+- D. Evaluate total benefits against total implementation and operating costs
+
+### 34. An AI bill rises even after token prices fall because demand grows. What cost-planning practice helps explain this?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Establish pre-change business performance
+- B. Evaluate total benefits against total implementation and operating costs
+- C. Compare cost per verified acceptable outcome
+- D. Track variable usage and fixed operating cost separately
+
+### 35. A cheaper configuration fails the required accuracy threshold. How should the cost saving be judged?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Compare cost per verified acceptable outcome
+- B. Measure sustained appropriate use and task success
+- C. Output token generation rate
+- D. Evaluate objectives and constraints together
+
+### 36. A sponsor claims productivity gains from a before-and-after comparison with no pre-change data. What evidence gap exists?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Measure sustained appropriate use and task success
+- B. Collect reviewed user feedback and verified outcomes
+- C. Establish pre-change business performance
+- D. Define outcome-focused baseline and success metrics
+
+### 37. An assistant improves drafting speed but produces more factual errors. What should the scorecard include?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Measure sustained appropriate use and task success
+- B. Define outcome-focused baseline and success metrics
+- C. Track variable usage and fixed operating cost separately
+- D. Output token generation rate
+
+### 38. Two solutions have equal model costs but different reviewer effort. Which comparison should guide selection?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Track variable usage and fixed operating cost separately
+- B. Measure sustained appropriate use and task success
+- C. Time to first token
+- D. Compare cost per verified acceptable outcome
+
+### 39. A project counts all theoretically saved minutes as payroll savings while keeping staffing and duties unchanged. What should be corrected?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Evaluate total benefits against total implementation and operating costs
+- B. Distinguish estimated capacity savings from realized business benefit
+- C. Measure sustained appropriate use and task success
+- D. Output token generation rate
+
+### 40. Business performance improves after AI launch, but staffing and policy also changed. What should the value analysis use?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Establish pre-change business performance
+- B. Compare a pilot with an appropriate control or baseline
+- C. Collect reviewed user feedback and verified outcomes
+- D. Calibrate automated judging with expert review
+
+### 41. A new assistant is technically available, but employees do not trust it or know where it fits. What program is needed?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Pretraining
+- B. Plan training, workflow change, feedback, and ongoing support
+- C. Provide role-specific training and approved-use guidance
+- D. Evaluate contractual, data, service, and exit terms
+
+### 42. Users have access to an assistant but cannot distinguish approved uses from prohibited data handling. What should leaders provide?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Provide role-specific training and approved-use guidance
+- B. Protected audit trails and traceability
+- C. Collect reviewed user feedback and verified outcomes
+- D. Align business, technical, security, and affected-user stakeholders
+
+### 43. A company adds a chatbot to a process whose approvals and exceptions remain unclear. What should be redesigned?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Pretraining
+- B. Redesign the workflow around verified outcomes and human roles
+- C. Provide role-specific training and approved-use guidance
+- D. Version prompts and regression-test revisions
+
+### 44. Leadership reports the number of installed seats as proof of transformation. What should it measure instead?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Output token generation rate
+- B. Define outcome-focused baseline and success metrics
+- C. Measure sustained appropriate use and task success
+- D. Track variable usage and fixed operating cost separately
+
+### 45. Staff routinely correct the same assistant error but have no reporting channel. What mechanism should be introduced?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Continuously evaluate, version, and monitor the solution
+- B. Measure sustained appropriate use and task success
+- C. Calibrate automated judging with expert review
+- D. Collect reviewed user feedback and verified outcomes
+
+### 46. A rollout changes frontline duties without involving frontline staff. What engagement practice should be added?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Align business, technical, security, and affected-user stakeholders
+- B. Pretraining
+- C. Provide role-specific training and approved-use guidance
+- D. Assign an accountable business sponsor and decision rights
+
+### 47. Employees fear the assistant's recommendations are mandatory even when the tool is advisory. What should communication clarify?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Disclose AI use, relevant limits, and review pathways
+- B. Minimize and protect personal data for the approved purpose
+- C. Protected audit trails and traceability
+- D. Provide role-specific training and approved-use guidance
+
+### 48. Users do not know who should correct an assistant error or decide whether to escalate it. What operating element is missing?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Disclose AI use, relevant limits, and review pathways
+- B. Protected audit trails and traceability
+- C. Provide role-specific training and approved-use guidance
+- D. Assign decision ownership, explanations, and escalation responsibilities
+
+### 49. Technical adoption stalls because no business leader will prioritize process changes. Which accountability is needed?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Continuously evaluate, version, and monitor the solution
+- B. Assign an accountable business sponsor and decision rights
+- C. Provide role-specific training and approved-use guidance
+- D. Evaluate contractual, data, service, and exit terms
+
+### 50. A company wants to expand skills and use cases gradually rather than announce immediate full automation. What planning approach fits?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Pretraining
+- B. Balance opportunities by value, feasibility, and risk
+- C. Establish pre-change business performance
+- D. Use a phased roadmap with measurable stage gates
+
+### 51. A knowledge assistant depends on documents that no team is responsible for updating. What operating responsibility must be assigned?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Improve data accuracy, completeness, consistency, and relevance
+- B. Refresh and govern the retrieval index
+- C. Ensure authorized data is available in a usable format
+- D. Assign authoritative data ownership and freshness responsibilities
+
+### 52. A pilot works only when its creator manually fixes every request. What should be assessed before expansion?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Assess data, skills, workflow, infrastructure, and control readiness
+- B. Independent representative evaluation
+- C. Provide role-specific training and approved-use guidance
+- D. Evaluate contractual, data, service, and exit terms
+
+### 53. A business assistant works at launch but must remain reliable as users and documents change. What operating practice is required?
+
+Domain: Techniques to improve gen AI model output
+
+- A. Pretraining
+- B. Protected audit trails and traceability
+- C. Continuously evaluate, version, and monitor the solution
+- D. Independent representative evaluation
+
+### 54. Several departments edit shared prompts without records. What practice supports reliable maintenance?
+
+Domain: Techniques to improve gen AI model output
+
+- A. Version prompts and regression-test revisions
+- B. Protected audit trails and traceability
+- C. Continuously evaluate, version, and monitor the solution
+- D. Independent representative evaluation
+
+### 55. A business owner needs to trace an important automated decision back to its identity and approved configuration. What capability helps?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Protected audit trails and traceability
+- B. Continuously evaluate, version, and monitor the solution
+- C. Provide role-specific training and approved-use guidance
 - D. Identity and Access Management (IAM)
 
-### 67. A business needs insight into common issues across customer communications rather than suggestions during one call. Which offering fits?
-
-Domain: Google Cloud’s gen AI offerings
-
-- A. Agent Assist
-- B. Conversational Agents
-- C. Google Cloud Contact Center as a Service
-- D. Conversational Insights
-
-### 68. A workflow needs general image-content analysis instead of a specialist document form processor. Which capability fits?
-
-Domain: Google Cloud’s gen AI offerings
-
-- A. Imagen model family
-- B. Cloud Vision API
-- C. Natural Language API
-- D. Cloud Video Intelligence API
-
-### 69. A user wants to work through key points and questions from a chosen source collection. Which capability fits?
-
-Domain: Google Cloud’s gen AI offerings
-
-- A. Model Garden on Agent Platform
-- B. Google Cloud Contact Center as a Service
-- C. Gemini Notebook source-grounded research capabilities
-- D. Agent Platform AutoML
-
-### 70. A production model is monitored and maintained as input conditions change. Which lifecycle activity fits?
-
-Domain: Fundamentals of gen AI
-
-- A. Data preparation
-- B. Model management
-- C. Model training
-- D. Data ingestion
-
-### 71. A cost policy requires a limit on output token count per call. Which control is most direct?
-
-Domain: Techniques to improve gen AI model output
-
-- A. Set an appropriate maximum output length
-- B. Context window
-- C. Adjust temperature to control sampling variability
-- D. Adjust top-p nucleus sampling
-
-### 72. A project substitutes identifiers with tokens that can be linked back using another file. Which privacy technique fits?
+### 56. A pilot succeeds with 20 users but is proposed for 20,000 users. What should justify the expansion?
 
 Domain: Business strategies for a successful gen AI solution
 
-- A. Unlabeled data
-- B. Pseudonymization
-- C. Anonymization
-- D. Structured data
+- A. Pretraining
+- B. Scale only after operational, economic, and control criteria pass
+- C. Balance opportunities by value, feasibility, and risk
+- D. Stage deployment with quality gates and rollback
 
-### 73. A publisher creates candidate summaries and new introductory paragraphs from source material. Which capability fits?
+### 57. A company plans to expose a new workflow to every branch at once. What alternative limits early operational failures?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Independent representative evaluation
+- B. Version prompts and regression-test revisions
+- C. Adversarial and misuse-oriented testing
+- D. Stage deployment with quality gates and rollback
+
+### 58. No team knows what to do if the assistant leaks sensitive information. What process must be established?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Use a tested incident response and containment process
+- B. Continuously evaluate, version, and monitor the solution
+- C. Protected audit trails and traceability
+- D. Adversarial and misuse-oriented testing
+
+### 59. A solution depends on one vendor, but export and decommissioning have never been considered. What planning is needed?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Define stopping, switching, and decommissioning criteria
+- B. Scale only after operational, economic, and control criteria pass
+- C. Version prompts and regression-test revisions
+- D. Governed response caching
+
+### 60. A smaller solution meets all required quality and safety levels using fewer resources. What additional consideration can favor it?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Compare cost per verified acceptable outcome
+- B. Time to first token
+- C. Output token generation rate
+- D. Consider resource efficiency alongside required quality
+
+### 61. A prebuilt tool offers fast deployment; a custom build offers specialized integration. What comparison should determine the choice?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Balance opportunities by value, feasibility, and risk
+- B. Pretraining
+- C. Compare a prebuilt solution with custom development against requirements
+- D. Evaluate model fit against business and operational requirements
+
+### 62. A vendor has strong benchmark results but vague retention and exit terms. What should the sourcing team do?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Evaluate contractual, data, service, and exit terms
+- B. Review rights, licenses, and permitted content use
+- C. Evaluate model fit against business and operational requirements
+- D. Review service-specific retention and data-use terms
+
+### 63. A proposed model ranks highest publicly but misses the business's latency limit. What should selection prioritize?
+
+Domain: Fundamentals of gen AI
+
+- A. Model Garden on Agent Platform
+- B. Evaluate model fit against business and operational requirements
+- C. Compare cost per verified acceptable outcome
+- D. Independent representative evaluation
+
+### 64. A workflow applies a small set of stable mandatory eligibility rules. What should leaders consider before funding generation?
 
 Domain: Fundamentals of gen AI
 
 - A. Generative AI
-- B. Regression
-- C. Deterministic rule-based processing
-- D. Classification
+- B. Deterministic rule-based processing
+- C. Unsupervised learning
+- D. Reinforcement learning
 
-### 74. A team should explain that generated responses can be wrong and offer review pathways. Which practice fits?
+### 65. A business needs frequently updated approved knowledge in answers, but its response style is already satisfactory. What architecture should be considered first?
+
+Domain: Techniques to improve gen AI model output
+
+- A. Quantization
+- B. Pretraining
+- C. Retrieval-augmented generation (RAG)
+- D. Supervised fine-tuning
+
+### 66. A supported model needs recurring specialized response behavior, and high-quality examples are available after prompt improvements. Which adaptation may be worth piloting?
+
+Domain: Techniques to improve gen AI model output
+
+- A. Budget and select relevant context
+- B. Retrieval-augmented generation (RAG)
+- C. Supervised fine-tuning
+- D. Refresh and govern the retrieval index
+
+### 67. A site must operate entirely without external connectivity after installation. What deployment approach addresses that requirement?
 
 Domain: Business strategies for a successful gen AI solution
 
-- A. Configure and test appropriate safety controls
-- B. Disclose AI use, relevant limits, and review pathways
-- C. Assign decision ownership, explanations, and escalation responsibilities
-- D. Adjust temperature to control sampling variability
+- A. Choose only the largest available model
+- B. Retrieval-augmented generation (RAG)
+- C. Controlled local deployment of a compatible licensed model
+- D. Quantization
 
-### 75. An organization wants continuous AI security rather than one launch-time filter. Which lifecycle approach fits?
+### 68. A department wants to use confidential data with an external AI offering. What should drive the approval decision?
 
-Domain: Business strategies for a successful gen AI solution
+Domain: Google Cloud’s gen AI offerings
 
-- A. Apply security controls throughout the AI lifecycle
+- A. Identity and Access Management (IAM)
 - B. Configure and test appropriate safety controls
-- C. Model deployment
-- D. Choose only the largest available model
+- C. Assess enterprise security, privacy, governance, and service controls
+- D. Configure supported private connectivity and network controls
 
-### 76. A manager describes software that learns patterns from experience represented in datasets. Which concept is this?
-
-Domain: Fundamentals of gen AI
-
-- A. Deterministic rule-based processing
-- B. Application layer
-- C. Machine learning
-- D. Infrastructure layer
-
-### 77. A company needs to understand existing video content rather than create a new sequence. Which API fits?
+### 69. An architecture strategy seeks flexibility across supported models and frameworks. What ecosystem principle is relevant?
 
 Domain: Google Cloud’s gen AI offerings
 
-- A. Cloud Video Intelligence API
-- B. Veo model family
-- C. Cloud Vision API
-- D. Natural Language API
+- A. Use managed cloud capacity with workload-aware scaling
+- B. Controlled local deployment of a compatible licensed model
+- C. Compare a prebuilt solution with custom development against requirements
+- D. Evaluate model and framework choice through an open ecosystem
 
-### 78. An AI workload relies on a compatible ecosystem of graphics-processing accelerators. Which hardware family fits?
+### 70. One provider is cheaper per request but more expensive after review and retries. What should inform sourcing?
 
-Domain: Google Cloud’s gen AI offerings
+Domain: Business strategies for a successful gen AI solution
 
-- A. Use an authorized database lookup tool
-- B. General-purpose CPUs
-- C. Cloud Storage
-- D. Graphics processing units (GPUs)
+- A. Track variable usage and fixed operating cost separately
+- B. Compare cost per verified acceptable outcome
+- C. Output token generation rate
+- D. Time to first token
 
-### 79. A model can draft a request, but the application must perform the approved external operation. Which capability fits?
+### 71. Every department funds a separate proof of concept with overlapping goals and no shared priorities. What enterprise planning approach may help?
 
-Domain: Google Cloud’s gen AI offerings
+Domain: Business strategies for a successful gen AI solution
 
-- A. Prompt engineering
-- B. Gemini app
-- C. Use a validated function or extension to an external service
-- D. Model Garden on Agent Platform
+- A. Compare a prebuilt solution with custom development against requirements
+- B. Start with a bounded pilot and defined success criteria
+- C. Scale only after operational, economic, and control criteria pass
+- D. Balance opportunities by value, feasibility, and risk
 
-### 80. A team wants everyday AI assistance within Gmail and Docs, subject to edition availability. Which product fits?
+### 72. An organization establishes an AI committee but gives it no decision rights or named owners. What is still missing?
 
-Domain: Google Cloud’s gen AI offerings
+Domain: Business strategies for a successful gen AI solution
 
-- A. Model Garden on Agent Platform
-- B. Agent Platform AutoML
-- C. Gemini for Google Workspace
-- D. Gemini Enterprise
+- A. Protected audit trails and traceability
+- B. Provide role-specific training and approved-use guidance
+- C. Assign decision ownership, explanations, and escalation responsibilities
+- D. Disclose AI use, relevant limits, and review pathways
 
-### 81. A generative application draws from irrelevant and incomplete documents. Which foundational action should lead remediation?
+### 73. Leadership wants AI to create value but refuses any changes to roles, approvals, or exception handling. What must be reconsidered?
 
-Domain: Fundamentals of gen AI
+Domain: Business strategies for a successful gen AI solution
 
-- A. Add more data without checking its quality
-- B. Choose only the largest available model
-- C. Improve data accuracy, completeness, consistency, and relevance
-- D. Prompt engineering
+- A. Version prompts and regression-test revisions
+- B. Provide role-specific training and approved-use guidance
+- C. Redesign the workflow around verified outcomes and human roles
+- D. Pretraining
 
-### 82. A solution team needs programmatic RAG components for its own application design. Which approach fits?
+### 74. An executive workshop covers broad AI concepts but frontline users still cannot perform approved tasks. What should follow?
 
-Domain: Google Cloud’s gen AI offerings
+Domain: Business strategies for a successful gen AI solution
 
-- A. Model training
-- B. Use supported RAG APIs for a custom retrieval workflow
-- C. Gems in the Gemini app
-- D. Agent Platform AutoML
+- A. Align business, technical, security, and affected-user stakeholders
+- B. Provide role-specific training and approved-use guidance
+- C. Protected audit trails and traceability
+- D. Collect reviewed user feedback and verified outcomes
 
-### 83. An interactive simulator provides penalties for unsafe moves and rewards for reaching a goal. Which learning approach fits?
+### 75. A tool has many trial logins but little continuing useful use. What metric should guide adoption improvement?
 
-Domain: Fundamentals of gen AI
+Domain: Business strategies for a successful gen AI solution
 
-- A. Supervised learning
-- B. Reinforcement learning
-- C. Data preparation
-- D. Unsupervised learning
+- A. Measure sustained appropriate use and task success
+- B. Output token generation rate
+- C. Define outcome-focused baseline and success metrics
+- D. Track variable usage and fixed operating cost separately
 
-### 84. An assistant rewrites text and answers questions in prose. Which model category is a natural fit?
+### 76. An executive dashboard excludes verified user complaints because they reduce the success score. What learning practice should be restored?
 
-Domain: Fundamentals of gen AI
+Domain: Business strategies for a successful gen AI solution
 
-- A. Infrastructure layer
-- B. Large language model
-- C. Structured data
-- D. Regression
+- A. Collect reviewed user feedback and verified outcomes
+- B. Continuously evaluate, version, and monitor the solution
+- C. Measure sustained appropriate use and task success
+- D. Calibrate automated judging with expert review
 
-### 85. A company wants a practical AI initiative rather than novelty without outcomes. Which prioritization approach fits?
+### 77. Security and legal teams are consulted only after an assistant is publicly launched. What engagement pattern should change?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Assign an accountable business sponsor and decision rights
+- B. Align business, technical, security, and affected-user stakeholders
+- C. Provide role-specific training and approved-use guidance
+- D. Pretraining
+
+### 78. A transformation plan lists tools but no milestones, success criteria, or stopping points. What should be added?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Establish pre-change business performance
+- B. Balance opportunities by value, feasibility, and risk
+- C. Pretraining
+- D. Use a phased roadmap with measurable stage gates
+
+### 79. A transformation report calls every saved minute a booked financial return. What distinction is required?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Output token generation rate
+- B. Evaluate total benefits against total implementation and operating costs
+- C. Measure sustained appropriate use and task success
+- D. Distinguish estimated capacity savings from realized business benefit
+
+### 80. Several functions disagree about who funds shared AI support and who owns the outcome. What leadership structure is needed?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Assign an accountable business sponsor and decision rights
+- B. Continuously evaluate, version, and monitor the solution
+- C. Provide role-specific training and approved-use guidance
+- D. Evaluate contractual, data, service, and exit terms
+
+### 81. An internal assistant is proposed for public use without reassessing harm or abuse. What should precede expansion?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Test subgroup outcomes and investigate disparities
+- B. Identity and Access Management (IAM)
+- C. Assess impact, likelihood, affected users, and mitigations
+- D. Review service-specific retention and data-use terms
+
+### 82. A strategy calls for collecting all available employee data before identifying any use case. What principle should constrain it?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Pseudonymization
+- B. Review service-specific retention and data-use terms
+- C. Minimize and protect personal data for the approved purpose
+- D. Protected audit trails and traceability
+
+### 83. An AI service expands to new populations whose needs were absent from pilot tests. What evaluation is needed?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Provide meaningful decision factors and reviewable evidence
+- B. Output token generation rate
+- C. Test subgroup outcomes and investigate disparities
+- D. Minimize and protect personal data for the approved purpose
+
+### 84. A company wants users to understand when AI is advising rather than making a final decision. What communication practice supports this?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Minimize and protect personal data for the approved purpose
+- B. Disclose AI use, relevant limits, and review pathways
+- C. Protected audit trails and traceability
+- D. Provide role-specific training and approved-use guidance
+
+### 85. A growth plan assumes any public content may be copied into a commercial AI product. What issue must be reviewed?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Ground with authorized first-party enterprise data
+- B. Ground with relevant public world information
+- C. Ground with a licensed or approved third-party source
+- D. Review rights, licenses, and permitted content use
+
+### 86. An AI program treats security as a one-time procurement checkbox. What operating principle should replace that view?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Protected audit trails and traceability
+- B. Pretraining
+- C. Apply security controls throughout the AI lifecycle
+- D. Adversarial and misuse-oriented testing
+
+### 87. A successful pilot is promoted despite unresolved support capacity and quality regressions. What expansion principle applies?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Stage deployment with quality gates and rollback
+- B. Balance opportunities by value, feasibility, and risk
+- C. Pretraining
+- D. Scale only after operational, economic, and control criteria pass
+
+### 88. A project remains funded because of past spending despite repeated failure to meet future-value criteria. What decision mechanism should apply?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Scale only after operational, economic, and control criteria pass
+- B. Governed response caching
+- C. Version prompts and regression-test revisions
+- D. Define stopping, switching, and decommissioning criteria
+
+### 89. A transformation program wants to reduce wasted compute while retaining required service quality. What consideration is appropriate?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Time to first token
+- B. Compare cost per verified acceptable outcome
+- C. Output token generation rate
+- D. Consider resource efficiency alongside required quality
+
+### 90. A proposed AI program maximizes automation volume while ignoring privacy and incorrect actions. What leadership principle should guide redesign?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Evaluate objectives and constraints together
+- B. Output token generation rate
+- C. Compare cost per verified acceptable outcome
+- D. Measure sustained appropriate use and task success
+
+### 91. A team can access a powerful model but cannot identify an authorized data source or deployment owner. What should be assessed before funding delivery?
+
+Domain: Business strategies for a successful gen AI solution
+
+- A. Independent representative evaluation
+- B. Assess data, skills, workflow, infrastructure, and control readiness
+- C. Provide role-specific training and approved-use guidance
+- D. Evaluate contractual, data, service, and exit terms
+
+### 92. A low-risk drafting use case has clear value, while a more glamorous autonomous use case lacks data and controls. Which selection approach is appropriate?
 
 Domain: Business strategies for a successful gen AI solution
 
 - A. Prioritize measurable business value with feasible data and manageable risk
-- B. Choose only the lowest token price
-- C. Add more data without checking its quality
-- D. Choose only the largest available model
+- B. Provide role-specific training and approved-use guidance
+- C. Assess data, skills, workflow, infrastructure, and control readiness
+- D. Pretraining
 
-### 86. A team wants a place to store files, not a model-training feature or a complete search solution. Which service fits?
-
-Domain: Google Cloud’s gen AI offerings
-
-- A. Agent Platform AutoML
-- B. Cloud Storage
-- C. Agent Search on Gemini Enterprise Agent Platform
-- D. Use an authorized database lookup tool
-
-### 87. A team wants to narrate existing instructions without recording a human speaker. Which capability fits?
-
-Domain: Google Cloud’s gen AI offerings
-
-- A. Natural Language API
-- B. Translation API
-- C. Speech-to-Text API
-- D. Text-to-Speech API
-
-### 88. A business needs to process supported forms and extract useful structured information. Which service fits?
-
-Domain: Google Cloud’s gen AI offerings
-
-- A. Document AI
-- B. Cloud Vision API
-- C. Translation API
-- D. Natural Language API
-
-### 89. A generator learns the reverse of a corruption process to create new images. Which approach fits?
-
-Domain: Fundamentals of gen AI
-
-- A. Supervised learning
-- B. Classification
-- C. Diffusion model
-- D. Regression
-
-### 90. A designer wants a Google video-generation family for a visual storytelling concept. Which one fits?
-
-Domain: Fundamentals of gen AI
-
-- A. Veo model family
-- B. Imagen model family
-- C. Classification
-- D. Gemma model family
-
-### 91. A customer database enforces a defined set of fields for each record. Which data category fits?
-
-Domain: Fundamentals of gen AI
-
-- A. Labeled data
-- B. Unlabeled data
-- C. Unstructured data
-- D. Structured data
-
-### 92. A business expects 10,000 monthly requests at an illustrative model cost of $0.01 each. It also budgets $300 for review and $500 for platform operations each month. What is the total stated monthly cost?
+### 93. An assistant's review expense exceeds its model bill, but the budget tracks only tokens. What economic measure should be introduced?
 
 Domain: Business strategies for a successful gen AI solution
 
-- A. $800
-- B. $100
-- C. $10,800
-- D. $900
+- A. Track variable usage and fixed operating cost separately
+- B. Output token generation rate
+- C. Compare cost per verified acceptable outcome
+- D. Time to first token
 
-### 93. A model learns from examples that include the correct expected answer. Which learning approach is being used?
+### 94. A regional rollout finds conflicting local policies and no authority to resolve them. What responsibility must be established?
 
-Domain: Fundamentals of gen AI
+Domain: Business strategies for a successful gen AI solution
 
-- A. Reinforcement learning
-- B. Deterministic rule-based processing
-- C. Supervised learning
-- D. Unsupervised learning
+- A. Ensure authorized data is available in a usable format
+- B. Refresh and govern the retrieval index
+- C. Improve data accuracy, completeness, consistency, and relevance
+- D. Assign authoritative data ownership and freshness responsibilities
 
-### 94. A project wants managed application hosting for a compatible container rather than model discovery. Which service fits?
+### 95. Experienced employees avoid an approved assistant because examples do not match their role. What enablement improvement is most useful?
 
-Domain: Google Cloud’s gen AI offerings
+Domain: Business strategies for a successful gen AI solution
 
-- A. Model Garden on Agent Platform
-- B. Cloud Storage
-- C. Cloud Run
-- D. Agent Platform AutoML
+- A. Protected audit trails and traceability
+- B. Collect reviewed user feedback and verified outcomes
+- C. Align business, technical, security, and affected-user stakeholders
+- D. Provide role-specific training and approved-use guidance
 
-### 95. A leader distinguishes selecting a pretrained model from training a suitable model with reduced technical effort. Which capability serves the latter?
+### 96. Usage spikes during a mandatory demonstration but collapses afterward. What should leaders track to assess actual adoption?
 
-Domain: Google Cloud’s gen AI offerings
+Domain: Business strategies for a successful gen AI solution
 
-- A. Agent Search on Gemini Enterprise Agent Platform
-- B. Model Garden on Agent Platform
-- C. Gemini for Google Workspace
-- D. Agent Platform AutoML
+- A. Define outcome-focused baseline and success metrics
+- B. Output token generation rate
+- C. Track variable usage and fixed operating cost separately
+- D. Measure sustained appropriate use and task success
 
-### 96. A model output is outside the application's approved scope and may cause harm. Which escalation approach fits?
+### 97. One pilot team receives extra staff alongside AI, while the comparison team does not. What should the evaluation design address?
 
-Domain: Techniques to improve gen AI model output
+Domain: Business strategies for a successful gen AI solution
 
-- A. Set an appropriate maximum output length
-- B. Adjust temperature to control sampling variability
-- C. Human-in-the-loop review
-- D. Choose only the largest available model
+- A. Establish pre-change business performance
+- B. Compare a pilot with an appropriate control or baseline
+- C. Calibrate automated judging with expert review
+- D. Collect reviewed user feedback and verified outcomes
 
-### 97. A support organization evaluates a cloud-native contact-center solution for its service operation. Which offering fits?
+### 98. A supplier changes its data terms during a planned expansion. What business review should occur before proceeding?
 
-Domain: Google Cloud’s gen AI offerings
+Domain: Business strategies for a successful gen AI solution
 
-- A. Translation API
-- B. Agent Assist
-- C. Conversational Insights
-- D. Google Cloud Contact Center as a Service
+- A. Review service-specific retention and data-use terms
+- B. Review rights, licenses, and permitted content use
+- C. Evaluate contractual, data, service, and exit terms
+- D. Evaluate model fit against business and operational requirements
 
-### 98. A user asks for a reusable instruction-based assistant in the Gemini app rather than a custom training job. Which feature fits?
+### 99. Staff submit suggested corrections that sometimes conflict with approved policy. How should that input be handled?
 
-Domain: Google Cloud’s gen AI offerings
+Domain: Business strategies for a successful gen AI solution
 
-- A. Gems in the Gemini app
-- B. Gemini for Google Workspace
-- C. Model Garden on Agent Platform
-- D. Agent Platform AutoML
+- A. Calibrate automated judging with expert review
+- B. Measure sustained appropriate use and task success
+- C. Collect reviewed user feedback and verified outcomes
+- D. Continuously evaluate, version, and monitor the solution
 
-### 99. A team can use standard AI capabilities rather than create every component manually. Which approach reduces the implementation barrier?
+### 100. An assistant is being retired after replacement. Which plan should govern data export, retained records, credentials, and shutdown?
 
-Domain: Google Cloud’s gen AI offerings
+Domain: Business strategies for a successful gen AI solution
 
-- A. Use supported prebuilt APIs and low-code or no-code tools
-- B. Model training
-- C. Infrastructure layer
-- D. Choose only the largest available model
-
-### 100. An application relies only on pretrained weights for facts created after training. Which limitation should the team address?
-
-Domain: Techniques to improve gen AI model output
-
-- A. Hallucination
-- B. Pretraining knowledge cutoff
-- C. Context window
-- D. Token
+- A. Governed response caching
+- B. Scale only after operational, economic, and control criteria pass
+- C. Define stopping, switching, and decommissioning criteria
+- D. Version prompts and regression-test revisions
 
 ---
 
 ## Answer key and explanations
 
-### Question 1 — B
+### Question 1 — D
 
-Answer: Define outcome-focused baseline and success metrics. Outcome baselines and quality constraints determine whether an initiative helps the business rather than merely generating more text. Official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Prioritize measurable business value with feasible data and manageable risk. Measurable value, feasibility, and manageable risk are more useful than novelty or model size alone. Selects use cases using value, readiness, constraints, and consequences rather than novelty alone. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Can increase cost or latency without establishing task suitability or meeting governance requirements.
-- **B:** Correct. Measures the business goal, such as verified resolution or handling time, alongside quality and safety measures.
-- **C:** Incorrect for this requirement. Is a model-dependent input or output unit that may represent a word fragment; token count is not always word count.
-- **D:** Incorrect for this requirement. Ignores quality, retries, review effort, latency, and other costs of the full solution.
+- **A:** Incorrect for this question. Identifies gaps before scaling a business idea. Access to a model alone does not establish operational preparedness. In this case: Measurable value, feasibility, and manageable risk are more useful than novelty or model size alone.
+- **B:** Incorrect for this question. Builds practical capability and awareness of limits. Tool access alone does not mean users can apply it safely. In this case: Measurable value, feasibility, and manageable risk are more useful than novelty or model size alone.
+- **C:** Incorrect for this question. Learns broad statistical representations from a large corpus before downstream adaptation. The precise objective depends on architecture and modality. In this case: Measurable value, feasibility, and manageable risk are more useful than novelty or model size alone.
+- **D:** Correct. Selects use cases using value, readiness, constraints, and consequences rather than novelty alone. In this case: Measurable value, feasibility, and manageable risk are more useful than novelty or model size alone.
 
-### Question 2 — D
+### Question 2 — A
 
-Answer: Agent Search on Gemini Enterprise Agent Platform. Managed search over business content fits Agent Search; model discovery is a different function. Official exam-guide objective 2.3: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Balance opportunities by value, feasibility, and risk. A balanced opportunity portfolio considers value, feasibility, and risk across projects. Avoids concentrating investment solely on novelty or on whichever demo is most impressive. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Helps teams discover and evaluate supported Google, third-party, and open models, subject to model-specific terms and availability.
-- **B:** Incorrect for this requirement. Provides access to public world information; it does not automatically grant access to confidential enterprise repositories.
-- **C:** Incorrect for this requirement. Supports training suitable models with reduced manual model-development effort; it is not a general guarantee that every task can be automated.
-- **D:** Correct. Provides managed enterprise search and retrieval capabilities for supported business content and applications.
+- **A:** Correct. Avoids concentrating investment solely on novelty or on whichever demo is most impressive. In this case: A balanced opportunity portfolio considers value, feasibility, and risk across projects.
+- **B:** Incorrect for this question. Considers fit, integration, time, ownership, controls, and total cost. Neither custom nor prebuilt is always superior. In this case: A balanced opportunity portfolio considers value, feasibility, and risk across projects.
+- **C:** Incorrect for this question. Requires support, capacity, quality, and governance evidence, not just a successful demonstration. In this case: A balanced opportunity portfolio considers value, feasibility, and risk across projects.
+- **D:** Incorrect for this question. Tests value and risk on a controlled scope before broad expansion. In this case: A balanced opportunity portfolio considers value, feasibility, and risk across projects.
 
 ### Question 3 — A
 
-Answer: Gemma model family. An open-weight deployment requirement points to Gemma; license, hardware, and operational fit still need review. Official exam-guide objective 1.4: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Assess data, skills, workflow, infrastructure, and control readiness. Readiness assessment exposes operational gaps that model access alone will not fix. Identifies gaps before scaling a business idea. Access to a model alone does not establish operational preparedness. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Correct. Offers open-weight model options for compatible customized or local deployments, subject to license and hardware requirements.
-- **B:** Incorrect for this requirement. Focuses on video generation from supported prompts or image inputs, subject to model availability and capabilities.
-- **C:** Incorrect for this requirement. Focuses on generating and editing images from supported inputs, rather than serving as a video-generation family.
-- **D:** Incorrect for this requirement. Supports broad multimodal and language tasks, with specific modalities and limits depending on the chosen model.
+- **A:** Correct. Identifies gaps before scaling a business idea. Access to a model alone does not establish operational preparedness. In this case: Readiness assessment exposes operational gaps that model access alone will not fix.
+- **B:** Incorrect for this question. Builds practical capability and awareness of limits. Tool access alone does not mean users can apply it safely. In this case: Readiness assessment exposes operational gaps that model access alone will not fix.
+- **C:** Incorrect for this question. Uses cases not used to design or train the change, including important user groups and failure cases. It supports regression detection rather than merely memorization. In this case: Readiness assessment exposes operational gaps that model access alone will not fix.
+- **D:** Incorrect for this question. Assesses the actual provider and offering rather than relying only on branding or a model leaderboard. In this case: Readiness assessment exposes operational gaps that model access alone will not fix.
 
-### Question 4 — C
+### Question 4 — A
 
-Answer: Unsupervised learning. Discovering structure without supplied target labels is unsupervised learning. Official exam-guide objective 1.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Establish pre-change business performance. Comparable pre-change performance is necessary to quantify improvement credibly. Makes improvement measurable against comparable conditions rather than attributing every later change to AI. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Learns from examples paired with known target labels or outcomes.
-- **B:** Incorrect for this requirement. Applies explicit rules and is suitable when an exact prescribed result is required without probabilistic generation.
-- **C:** Correct. Finds patterns or groupings without supplied target labels.
-- **D:** Incorrect for this requirement. Learns actions through interaction and reward or penalty feedback.
+- **A:** Correct. Makes improvement measurable against comparable conditions rather than attributing every later change to AI. In this case: Comparable pre-change performance is necessary to quantify improvement credibly.
+- **B:** Incorrect for this question. Turns field issues into improvements without treating popularity as proof of correctness. In this case: Comparable pre-change performance is necessary to quantify improvement credibly.
+- **C:** Incorrect for this question. Measures the business goal, such as verified resolution or handling time, alongside quality and safety measures. In this case: Comparable pre-change performance is necessary to quantify improvement credibly.
+- **D:** Incorrect for this question. Distinguishes installed seats or trial logins from useful adoption. Usage must be interpreted with quality and risk. In this case: Comparable pre-change performance is necessary to quantify improvement credibly.
 
 ### Question 5 — C
 
-Answer: Plan training, workflow change, feedback, and ongoing support. Useful adoption requires user capability and process change, not merely making software available. Official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Define outcome-focused baseline and success metrics. Outcome-focused metrics should reflect quality, completion, time, and business results rather than output volume. Measures the business goal, such as verified resolution or handling time, alongside quality and safety measures. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Can increase cost or latency without establishing task suitability or meeting governance requirements.
-- **B:** Incorrect for this requirement. Makes a trained or selected model available for application use.
-- **C:** Correct. Addresses the people and process changes required for useful adoption rather than treating deployment as automatic acceptance.
-- **D:** Incorrect for this requirement. Can amplify errors or irrelevant content and is not a substitute for data validation.
+- **A:** Incorrect for this question. Supports capacity and budget planning under changing demand. A token-price reduction need not reduce the total bill if usage grows. In this case: Outcome-focused metrics should reflect quality, completion, time, and business results rather than output volume.
+- **B:** Incorrect for this question. Distinguishes installed seats or trial logins from useful adoption. Usage must be interpreted with quality and risk. In this case: Outcome-focused metrics should reflect quality, completion, time, and business results rather than output volume.
+- **C:** Correct. Measures the business goal, such as verified resolution or handling time, alongside quality and safety measures. In this case: Outcome-focused metrics should reflect quality, completion, time, and business results rather than output volume.
+- **D:** Incorrect for this question. Measures output production speed under the stated conditions. It is distinct from first-token delay and content correctness. In this case: Outcome-focused metrics should reflect quality, completion, time, and business results rather than output volume.
 
-### Question 6 — A
+### Question 6 — B
 
-Answer: Use managed cloud capacity with workload-aware scaling. Managed services can reduce operational work, but scale and cost still need workload-specific planning. Official exam-guide objective 2.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Align business, technical, security, and affected-user stakeholders. Align business, technical, security, and affected-user stakeholders around the actual workflow. Connects goals, feasibility, controls, and user needs before decisions become difficult to reverse. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Correct. Can reduce infrastructure operating burden while capacity, quotas, reliability, and cost still require planning.
-- **B:** Incorrect for this requirement. Provides object storage for files and datasets rather than a complete conversation agent or a transactional relational database.
-- **C:** Incorrect for this requirement. Ignores quality, retries, review effort, latency, and other costs of the full solution.
-- **D:** Incorrect for this requirement. Can increase cost or latency without establishing task suitability or meeting governance requirements.
+- **A:** Incorrect for this question. Builds practical capability and awareness of limits. Tool access alone does not mean users can apply it safely. In this case: Align business, technical, security, and affected-user stakeholders around the actual workflow.
+- **B:** Correct. Connects goals, feasibility, controls, and user needs before decisions become difficult to reverse. In this case: Align business, technical, security, and affected-user stakeholders around the actual workflow.
+- **C:** Incorrect for this question. Learns broad statistical representations from a large corpus before downstream adaptation. The precise objective depends on architecture and modality. In this case: Align business, technical, security, and affected-user stakeholders around the actual workflow.
+- **D:** Incorrect for this question. Connects funding, outcomes, and adoption ownership rather than leaving a pilot as an unowned technical experiment. In this case: Align business, technical, security, and affected-user stakeholders around the actual workflow.
 
 ### Question 7 — D
 
-Answer: Identity and Access Management (IAM). Authorization policies control permitted resource actions; content filtering and model quality do not replace access enforcement. Official exam-guide objective 4.2: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Assign an accountable business sponsor and decision rights. An accountable business sponsor connects experimentation to outcomes and decision rights. Connects funding, outcomes, and adoption ownership rather than leaving a pilot as an unowned technical experiment. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Addresses defects in the source evidence; greater model capacity does not automatically repair incorrect data.
-- **B:** Incorrect for this requirement. Can reduce supported harmful content but does not guarantee factual accuracy, authorization, or complete risk elimination.
-- **C:** Incorrect for this requirement. Helps identify and manage supported security findings and posture information; it is not a source-document quality evaluator.
-- **D:** Correct. Controls which principals may perform supported actions on resources through roles and policies.
+- **A:** Incorrect for this question. Builds practical capability and awareness of limits. Tool access alone does not mean users can apply it safely. In this case: An accountable business sponsor connects experimentation to outcomes and decision rights.
+- **B:** Incorrect for this question. Assesses the actual provider and offering rather than relying only on branding or a model leaderboard. In this case: An accountable business sponsor connects experimentation to outcomes and decision rights.
+- **C:** Incorrect for this question. Tracks quality, usage, regressions, security updates, and changing conditions instead of assuming launch completes maintenance. In this case: An accountable business sponsor connects experimentation to outcomes and decision rights.
+- **D:** Correct. Connects funding, outcomes, and adoption ownership rather than leaving a pilot as an unowned technical experiment. In this case: An accountable business sponsor connects experimentation to outcomes and decision rights.
 
 ### Question 8 — A
 
-Answer: Zero-shot prompting. Instructions without demonstrations are zero-shot prompting; no model-weight change is implied. Official exam-guide objective 3.2: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Assess impact, likelihood, affected users, and mitigations. Consequences, likelihood, and mitigation requirements matter alongside benefit estimates. Prioritizes controls in proportion to potential harm rather than using the same autonomy for every workflow. Closest official exam-guide objective 4.3: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Correct. Gives task instructions without a worked example in the prompt.
-- **B:** Incorrect for this requirement. Updates model parameters using suitable task-specific training data; it is not automatically the best way to supply frequently changing facts.
-- **C:** Incorrect for this requirement. Provides several worked demonstrations of the desired input-output behavior in the prompt.
-- **D:** Incorrect for this requirement. Provides one worked demonstration of the desired task behavior in the prompt.
+- **A:** Correct. Prioritizes controls in proportion to potential harm rather than using the same autonomy for every workflow. In this case: Consequences, likelihood, and mitigation requirements matter alongside benefit estimates.
+- **B:** Incorrect for this question. Checks logs, abuse monitoring, training use, deletion, account settings, and contracts. Frozen model weights alone do not establish zero retention. In this case: Consequences, likelihood, and mitigation requirements matter alongside benefit estimates.
+- **C:** Incorrect for this question. Controls which principals may perform supported actions on resources through roles and policies. In this case: Consequences, likelihood, and mitigation requirements matter alongside benefit estimates.
+- **D:** Incorrect for this question. Uses relevant, appropriate comparisons and review rather than inferring fairness from one aggregate score. In this case: Consequences, likelihood, and mitigation requirements matter alongside benefit estimates.
 
 ### Question 9 — D
 
-Answer: Chain-of-thought-style prompting. Intermediate-step guidance can structure problem solving, but a plausible rationale is not proof that the answer is correct. Official exam-guide objective 3.2: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Evaluate model fit against business and operational requirements. Choose the solution that fits the task, including simpler non-generative methods when appropriate. Considers modality, quality, context, security, availability, customization, latency, and total cost. Closest official exam-guide objective 1.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Combines deciding a next step with permitted external actions and observations in a controlled loop.
-- **B:** Incorrect for this requirement. Specifies a perspective or function to guide response tone and focus; it does not grant expertise or authority.
-- **C:** Incorrect for this requirement. Lower values generally make sampling more focused and higher values more varied; neither guarantees factual correctness.
-- **D:** Correct. Uses intermediate-step demonstrations or structured problem-solving guidance; it is not a guarantee of correctness or access to private internal reasoning.
+- **A:** Incorrect for this question. Uses cases not used to design or train the change, including important user groups and failure cases. It supports regression detection rather than merely memorization. In this case: Choose the solution that fits the task, including simpler non-generative methods when appropriate.
+- **B:** Incorrect for this question. Accounts for success rates, rework, review, and full workflow costs rather than only unit model pricing. In this case: Choose the solution that fits the task, including simpler non-generative methods when appropriate.
+- **C:** Incorrect for this question. Helps teams discover and evaluate supported Google, third-party, and open models, subject to model-specific terms and availability. In this case: Choose the solution that fits the task, including simpler non-generative methods when appropriate.
+- **D:** Correct. Considers modality, quality, context, security, availability, customization, latency, and total cost. In this case: Choose the solution that fits the task, including simpler non-generative methods when appropriate.
 
-### Question 10 — B
+### Question 10 — D
 
-Answer: Infrastructure layer. Accelerators, servers, networking, and storage form the enabling infrastructure layer. Official exam-guide objective 1.3: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Compare a prebuilt solution with custom development against requirements. Compare fit, integration, time, operating ownership, controls, and total cost instead of novelty. Considers fit, integration, time, ownership, controls, and total cost. Neither custom nor prebuilt is always superior. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Combines a model or decision logic with tools and a goal-oriented workflow to observe and act.
-- **B:** Correct. Provides compute, accelerators, storage, networking, and supporting resources used to train and serve AI systems.
-- **C:** Incorrect for this requirement. Provides the user-facing experience that embeds AI capabilities into a business workflow.
-- **D:** Incorrect for this requirement. Provides APIs and services for developing, deploying, and managing models and AI applications.
+- **A:** Incorrect for this question. Avoids concentrating investment solely on novelty or on whichever demo is most impressive. In this case: Compare fit, integration, time, operating ownership, controls, and total cost instead of novelty.
+- **B:** Incorrect for this question. Considers modality, quality, context, security, availability, customization, latency, and total cost. In this case: Compare fit, integration, time, operating ownership, controls, and total cost instead of novelty.
+- **C:** Incorrect for this question. Learns broad statistical representations from a large corpus before downstream adaptation. The precise objective depends on architecture and modality. In this case: Compare fit, integration, time, operating ownership, controls, and total cost instead of novelty.
+- **D:** Correct. Considers fit, integration, time, ownership, controls, and total cost. Neither custom nor prebuilt is always superior. In this case: Compare fit, integration, time, operating ownership, controls, and total cost instead of novelty.
 
-### Question 11 — B
+### Question 11 — A
 
-Answer: Use an authorized database lookup tool. Live structured business facts should come from an authorized authoritative source rather than model recollection. Official exam-guide objective 2.5: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Start with a bounded pilot and defined success criteria. A bounded pilot can establish feasibility and outcomes while limiting initial risk. Tests value and risk on a controlled scope before broad expansion. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Supports broad multimodal and language tasks, with specific modalities and limits depending on the chosen model.
-- **B:** Correct. Retrieves authoritative structured business records through enforced access rather than inventing live facts from model weights.
-- **C:** Incorrect for this requirement. Helps teams discover and evaluate supported Google, third-party, and open models, subject to model-specific terms and availability.
-- **D:** Incorrect for this requirement. Focuses on generating and editing images from supported inputs, rather than serving as a video-generation family.
+- **A:** Correct. Tests value and risk on a controlled scope before broad expansion. In this case: A bounded pilot can establish feasibility and outcomes while limiting initial risk.
+- **B:** Incorrect for this question. Requires support, capacity, quality, and governance evidence, not just a successful demonstration. In this case: A bounded pilot can establish feasibility and outcomes while limiting initial risk.
+- **C:** Incorrect for this question. Learns broad statistical representations from a large corpus before downstream adaptation. The precise objective depends on architecture and modality. In this case: A bounded pilot can establish feasibility and outcomes while limiting initial risk.
+- **D:** Incorrect for this question. Considers fit, integration, time, ownership, controls, and total cost. Neither custom nor prebuilt is always superior. In this case: A bounded pilot can establish feasibility and outcomes while limiting initial risk.
 
-### Question 12 — C
+### Question 12 — A
 
-Answer: Google AI Studio. Google AI Studio is positioned for rapid prototyping with supported Gemini capabilities, not a guarantee of deployment readiness. Official exam-guide objective 2.5: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Compare a pilot with an appropriate control or baseline. An appropriate control or comparison reduces confounding from unrelated changes. Helps separate the effect of the intervention from seasonality and unrelated changes. Experiment design must be ethical and appropriate. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Is positioned in the retrieved guide for building production-oriented AI applications with cloud platform capabilities.
-- **B:** Incorrect for this requirement. Supports training suitable models with reduced manual model-development effort; it is not a general guarantee that every task can be automated.
-- **C:** Correct. Supports rapid prototyping and experimentation with supported Gemini capabilities; a prototype alone does not establish production readiness.
-- **D:** Incorrect for this requirement. Provides cloud-based contact-center capabilities rather than merely analyzing historical conversation text.
+- **A:** Correct. Helps separate the effect of the intervention from seasonality and unrelated changes. Experiment design must be ethical and appropriate. In this case: An appropriate control or comparison reduces confounding from unrelated changes.
+- **B:** Incorrect for this question. Makes improvement measurable against comparable conditions rather than attributing every later change to AI. In this case: An appropriate control or comparison reduces confounding from unrelated changes.
+- **C:** Incorrect for this question. Turns field issues into improvements without treating popularity as proof of correctness. In this case: An appropriate control or comparison reduces confounding from unrelated changes.
+- **D:** Incorrect for this question. Checks a model-based evaluator for agreement, bias, and failure cases instead of treating the judge as ground truth. In this case: An appropriate control or comparison reduces confounding from unrelated changes.
 
-### Question 13 — B
+### Question 13 — C
 
-Answer: Application layer. The business user interface is the application layer; the model and platform power it behind the scenes. Official exam-guide objective 1.3: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Independent representative evaluation. Independent representative cases reveal generalization rather than success on familiar examples. Uses cases not used to design or train the change, including important user groups and failure cases. It supports regression detection rather than merely memorization. Closest official exam-guide objective 3.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Provides compute, accelerators, storage, networking, and supporting resources used to train and serve AI systems.
-- **B:** Correct. Provides the user-facing experience that embeds AI capabilities into a business workflow.
-- **C:** Incorrect for this requirement. Provides APIs and services for developing, deploying, and managing models and AI applications.
-- **D:** Incorrect for this requirement. Is broadly pretrained and can support or be adapted to multiple downstream tasks.
+- **A:** Incorrect for this question. Turns field issues into improvements without treating popularity as proof of correctness. In this case: Independent representative cases reveal generalization rather than success on familiar examples.
+- **B:** Incorrect for this question. Makes instruction changes identifiable, comparable, and reversible. A version label is useful only when actual content and dependencies are tracked. In this case: Independent representative cases reveal generalization rather than success on familiar examples.
+- **C:** Correct. Uses cases not used to design or train the change, including important user groups and failure cases. It supports regression detection rather than merely memorization. In this case: Independent representative cases reveal generalization rather than success on familiar examples.
+- **D:** Incorrect for this question. Tracks quality, usage, regressions, security updates, and changing conditions instead of assuming launch completes maintenance. In this case: Independent representative cases reveal generalization rather than success on familiar examples.
 
-### Question 14 — D
+### Question 14 — A
 
-Answer: Evaluate relevant subgroups and address inappropriate disparities. Aggregate performance can hide inappropriate disparities; subgroup analysis and representation review are needed. Official exam-guide objective 4.3: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Use a phased roadmap with measurable stage gates. A phased roadmap with measurable gates links evidence to expansion or stopping decisions. Links pilot learning to incremental expansion or stopping decisions rather than promising immediate organization-wide automation. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Ignores quality, retries, review effort, latency, and other costs of the full solution.
-- **B:** Incorrect for this requirement. Addresses defects in the source evidence; greater model capacity does not automatically repair incorrect data.
-- **C:** Incorrect for this requirement. Can increase cost or latency without establishing task suitability or meeting governance requirements.
-- **D:** Correct. Checks uneven outcomes and representation with appropriate data and review; overall accuracy can conceal harmful differences.
+- **A:** Correct. Links pilot learning to incremental expansion or stopping decisions rather than promising immediate organization-wide automation. In this case: A phased roadmap with measurable gates links evidence to expansion or stopping decisions.
+- **B:** Incorrect for this question. Avoids concentrating investment solely on novelty or on whichever demo is most impressive. In this case: A phased roadmap with measurable gates links evidence to expansion or stopping decisions.
+- **C:** Incorrect for this question. Learns broad statistical representations from a large corpus before downstream adaptation. The precise objective depends on architecture and modality. In this case: A phased roadmap with measurable gates links evidence to expansion or stopping decisions.
+- **D:** Incorrect for this question. Makes improvement measurable against comparable conditions rather than attributing every later change to AI. In this case: A phased roadmap with measurable gates links evidence to expansion or stopping decisions.
 
-### Question 15 — A
+### Question 15 — B
 
-Answer: Imagen model family. The requirement is image generation, not video generation or classification of an existing picture. Official exam-guide objective 1.4: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Define stopping, switching, and decommissioning criteria. Explicit stopping or switching criteria prevent indefinite continuation based on sunk costs. Protects against continuing a project because of sunk costs or indefinite vendor dependence. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Correct. Focuses on generating and editing images from supported inputs, rather than serving as a video-generation family.
-- **B:** Incorrect for this requirement. Focuses on video generation from supported prompts or image inputs, subject to model availability and capabilities.
-- **C:** Incorrect for this requirement. Offers open-weight model options for compatible customized or local deployments, subject to license and hardware requirements.
-- **D:** Incorrect for this requirement. Assigns inputs to predefined categories rather than generating open-ended content.
+- **A:** Incorrect for this question. Requires support, capacity, quality, and governance evidence, not just a successful demonstration. In this case: Explicit stopping or switching criteria prevent indefinite continuation based on sunk costs.
+- **B:** Correct. Protects against continuing a project because of sunk costs or indefinite vendor dependence. In this case: Explicit stopping or switching criteria prevent indefinite continuation based on sunk costs.
+- **C:** Incorrect for this question. Makes instruction changes identifiable, comparable, and reversible. A version label is useful only when actual content and dependencies are tracked. In this case: Explicit stopping or switching criteria prevent indefinite continuation based on sunk costs.
+- **D:** Incorrect for this question. Reuses eligible results only within appropriate identity, freshness, and semantic boundaries. Similar wording alone does not make a cached answer safe. In this case: Explicit stopping or switching criteria prevent indefinite continuation based on sunk costs.
 
 ### Question 16 — B
 
-Answer: A controlled custom agent with validated tools and business-system integration. Distinguish a conversational preset from an integrated tool-using system. The model can propose an action; trusted application code must authorize and perform it. Official exam-guide objective 2.4: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Define outcome-focused baseline and success metrics. Include genuine resolution, quality, and user outcomes rather than treating deflection alone as value. Measures the business goal, such as verified resolution or handling time, alongside quality and safety measures. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. The requirement concerns business operations rather than media creation.
-- **B:** Correct. Actual permitted actions require trusted application tooling, access checks, and verified results.
-- **C:** Incorrect for this requirement. Instructions alone do not execute operations in another system.
-- **D:** Incorrect for this requirement. Longer responses cannot substitute for a real tool call.
+- **A:** Incorrect for this question. Distinguishes installed seats or trial logins from useful adoption. Usage must be interpreted with quality and risk. In this case: Include genuine resolution, quality, and user outcomes rather than treating deflection alone as value.
+- **B:** Correct. Measures the business goal, such as verified resolution or handling time, alongside quality and safety measures. In this case: Include genuine resolution, quality, and user outcomes rather than treating deflection alone as value.
+- **C:** Incorrect for this question. Supports capacity and budget planning under changing demand. A token-price reduction need not reduce the total bill if usage grows. In this case: Include genuine resolution, quality, and user outcomes rather than treating deflection alone as value.
+- **D:** Incorrect for this question. Measures output production speed under the stated conditions. It is distinct from first-token delay and content correctness. In this case: Include genuine resolution, quality, and user outcomes rather than treating deflection alone as value.
 
-### Question 17 — D
+### Question 17 — C
 
-Answer: Google Tensor Processing Units (TPUs). TPUs are Google-designed machine-learning accelerators; accelerator choice still needs workload evaluation. Official exam-guide objective 2.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Establish pre-change business performance. Measurements must be comparable before attributing a difference to the intervention. Makes improvement measurable against comparable conditions rather than attributing every later change to AI. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Provides object storage for files and datasets rather than a complete conversation agent or a transactional relational database.
-- **B:** Incorrect for this requirement. Handle general computation but do not denote a specialized parallel AI accelerator family.
-- **C:** Incorrect for this requirement. Provide parallel acceleration widely used for compatible training and inference workloads.
-- **D:** Correct. Are Google-designed accelerators optimized for supported machine-learning workloads; suitability still depends on the workload.
+- **A:** Incorrect for this question. Turns field issues into improvements without treating popularity as proof of correctness. In this case: Measurements must be comparable before attributing a difference to the intervention.
+- **B:** Incorrect for this question. Distinguishes installed seats or trial logins from useful adoption. Usage must be interpreted with quality and risk. In this case: Measurements must be comparable before attributing a difference to the intervention.
+- **C:** Correct. Makes improvement measurable against comparable conditions rather than attributing every later change to AI. In this case: Measurements must be comparable before attributing a difference to the intervention.
+- **D:** Incorrect for this question. Measures the business goal, such as verified resolution or handling time, alongside quality and safety measures. In this case: Measurements must be comparable before attributing a difference to the intervention.
 
 ### Question 18 — D
 
-Answer: Model Garden on Agent Platform. A model catalog helps compare eligible models; search over business documents serves a different purpose. Official exam-guide objective 2.4: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Collect reviewed user feedback and verified outcomes. Reviewed user feedback and verified workflow outcomes can expose hidden effort and failure modes. Turns field issues into improvements without treating popularity as proof of correctness. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Provides managed enterprise search and retrieval capabilities for supported business content and applications.
-- **B:** Incorrect for this requirement. Brings supported AI assistance into Workspace applications such as Gmail and Docs, subject to edition and availability.
-- **C:** Incorrect for this requirement. Supports training suitable models with reduced manual model-development effort; it is not a general guarantee that every task can be automated.
-- **D:** Correct. Helps teams discover and evaluate supported Google, third-party, and open models, subject to model-specific terms and availability.
+- **A:** Incorrect for this question. Distinguishes installed seats or trial logins from useful adoption. Usage must be interpreted with quality and risk. In this case: Reviewed user feedback and verified workflow outcomes can expose hidden effort and failure modes.
+- **B:** Incorrect for this question. Checks a model-based evaluator for agreement, bias, and failure cases instead of treating the judge as ground truth. In this case: Reviewed user feedback and verified workflow outcomes can expose hidden effort and failure modes.
+- **C:** Incorrect for this question. Tracks quality, usage, regressions, security updates, and changing conditions instead of assuming launch completes maintenance. In this case: Reviewed user feedback and verified workflow outcomes can expose hidden effort and failure modes.
+- **D:** Correct. Turns field issues into improvements without treating popularity as proof of correctness. In this case: Reviewed user feedback and verified workflow outcomes can expose hidden effort and failure modes.
 
-### Question 19 — C
+### Question 19 — B
 
-Answer: Align business, technical, security, and affected-user stakeholders. Cross-functional alignment joins business goals, feasibility, controls, and the needs of affected users. Official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Stage deployment with quality gates and rollback. Controlled exposure, monitoring, acceptance gates, and rollback limit unknown failures. Limits initial exposure and promotes only when defined outcomes remain acceptable. Availability alone does not establish answer quality. Closest official exam-guide objective 4.2: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Learns model parameters from data; it is different from serving a trained model to users.
-- **B:** Incorrect for this requirement. Ignores quality, retries, review effort, latency, and other costs of the full solution.
-- **C:** Correct. Connects goals, feasibility, controls, and user needs before decisions become difficult to reverse.
-- **D:** Incorrect for this requirement. Can increase cost or latency without establishing task suitability or meeting governance requirements.
+- **A:** Incorrect for this question. Probes likely bypasses and harmful interactions before and after release. Passing a finite test suite is not proof that all attacks are prevented. In this case: Controlled exposure, monitoring, acceptance gates, and rollback limit unknown failures.
+- **B:** Correct. Limits initial exposure and promotes only when defined outcomes remain acceptable. Availability alone does not establish answer quality. In this case: Controlled exposure, monitoring, acceptance gates, and rollback limit unknown failures.
+- **C:** Incorrect for this question. Makes instruction changes identifiable, comparable, and reversible. A version label is useful only when actual content and dependencies are tracked. In this case: Controlled exposure, monitoring, acceptance gates, and rollback limit unknown failures.
+- **D:** Incorrect for this question. Uses cases not used to design or train the change, including important user groups and failure cases. It supports regression detection rather than merely memorization. In this case: Controlled exposure, monitoring, acceptance gates, and rollback limit unknown failures.
 
-### Question 20 — D
+### Question 20 — A
 
-Answer: Prompt tuning learns prompt representations while base weights remain frozen; manual prompt engineering changes written instructions. Choose the customization method based on the behavior needed, data availability, support, cost, and evaluation. Prompt tuning, fine-tuning, RAG, and manual prompting are not interchangeable. Official exam-guide objective 3.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Assign decision ownership, explanations, and escalation responsibilities. Named ownership and decision rights must exist for consequential trade-offs. Makes people or teams answerable for AI impacts and supports review of consequential outcomes. Closest official exam-guide objective 4.3: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Access and data handling depend on the system design, not this definition.
-- **B:** Incorrect for this requirement. Retrieval is a separate evidence-supply mechanism.
-- **C:** Incorrect for this requirement. That is not required by either manual prompting or the stated prompt-tuning approach.
-- **D:** Correct. This distinguishes learned prompt-side adaptation from direct input wording changes.
+- **A:** Correct. Makes people or teams answerable for AI impacts and supports review of consequential outcomes. In this case: Named ownership and decision rights must exist for consequential trade-offs.
+- **B:** Incorrect for this question. Records necessary actions, versions, and approvals for investigation while controlling sensitive telemetry access and retention. In this case: Named ownership and decision rights must exist for consequential trade-offs.
+- **C:** Incorrect for this question. Builds practical capability and awareness of limits. Tool access alone does not mean users can apply it safely. In this case: Named ownership and decision rights must exist for consequential trade-offs.
+- **D:** Incorrect for this question. Helps stakeholders understand the role of the system and limitations rather than treating generated answers as unquestionable authority. In this case: Named ownership and decision rights must exist for consequential trade-offs.
 
 ### Question 21 — B
 
-Answer: Platform layer. Model-development and management APIs belong to the platform layer rather than the user-facing business interface. Official exam-guide objective 1.3: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: 3 months. Divide upfront investment by constant monthly net benefit: $24,000 / $8,000 = 3 months. For $24,000 upfront cost and $8,000 net monthly benefit, simple payback is $24,000 / $8,000 = 3 months, assuming constant benefits and ignoring discounting. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Provides compute, accelerators, storage, networking, and supporting resources used to train and serve AI systems.
-- **B:** Correct. Provides APIs and services for developing, deploying, and managing models and AI applications.
-- **C:** Incorrect for this requirement. Combines a model or decision logic with tools and a goal-oriented workflow to observe and act.
-- **D:** Incorrect for this requirement. Provides the user-facing experience that embeds AI capabilities into a business workflow.
+- **A:** Incorrect for this question. A six-month payback requires cumulative net benefit to offset the initial investment by month six. In this case: Divide upfront investment by constant monthly net benefit: $24,000 / $8,000 = 3 months.
+- **B:** Correct. For $24,000 upfront cost and $8,000 net monthly benefit, simple payback is $24,000 / $8,000 = 3 months, assuming constant benefits and ignoring discounting. In this case: Divide upfront investment by constant monthly net benefit: $24,000 / $8,000 = 3 months.
+- **C:** Incorrect for this question. A two-month payback would require cumulative net benefit to reach the initial cost after two months; use net rather than gross benefit. In this case: Divide upfront investment by constant monthly net benefit: $24,000 / $8,000 = 3 months.
+- **D:** Incorrect for this question. A four-month payback means cumulative net benefit reaches the initial investment at month four under the stated assumptions. In this case: Divide upfront investment by constant monthly net benefit: $24,000 / $8,000 = 3 months.
 
-### Question 22 — D
+### Question 22 — B
 
-Answer: Adjust temperature to control sampling variability. Temperature adjusts sampling variation; lower variability is not a guarantee of truth. Official exam-guide objective 3.3: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: 25%. Net benefit is $30,000, so $30,000 / $120,000 = 25%. For $150,000 benefit and $120,000 total cost over the same period, simple ROI is ($150,000 - $120,000) / $120,000 = 25%. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Caps generated output tokens within supported limits; too low a cap can truncate an answer.
-- **B:** Incorrect for this requirement. Bounds the information a model can consider within a request according to model-specific limits.
-- **C:** Incorrect for this requirement. Is a model-dependent input or output unit that may represent a word fragment; token count is not always word count.
-- **D:** Correct. Lower values generally make sampling more focused and higher values more varied; neither guarantees factual correctness.
+- **A:** Incorrect for this question. A 20% ROI means net benefit is one fifth of the total cost. Dividing net benefit by gross benefit instead uses the wrong ROI denominator. In this case: Net benefit is $30,000, so $30,000 / $120,000 = 25%.
+- **B:** Correct. For $150,000 benefit and $120,000 total cost over the same period, simple ROI is ($150,000 - $120,000) / $120,000 = 25%. In this case: Net benefit is $30,000, so $30,000 / $120,000 = 25%.
+- **C:** Incorrect for this question. A gross-benefit-to-cost ratio of 125% is not the same as 125% net ROI. Subtract cost before computing net ROI. In this case: Net benefit is $30,000, so $30,000 / $120,000 = 25%.
+- **D:** Incorrect for this question. An 80% ROI means net benefit equals 0.8 times total cost; it is not obtained by dividing cost by gross benefit. In this case: Net benefit is $30,000, so $30,000 / $120,000 = 25%.
 
 ### Question 23 — A
 
-Answer: Ground with authorized first-party enterprise data. Private company facts need authorized enterprise evidence, not merely public web content or sampling changes. Official exam-guide objective 3.3: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: 25% time reduction. The saving is 3 minutes from a 12-minute baseline, giving 3 / 12 = 25%. Reducing handling time from 12 to 9 minutes saves 3 / 12 = 25% of the baseline time. Use the original duration as denominator. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Correct. Uses approved organizational evidence for private business facts, with appropriate access controls.
-- **B:** Incorrect for this requirement. Lower values generally make sampling more focused and higher values more varied; neither guarantees factual correctness.
-- **C:** Incorrect for this requirement. Uses permitted information from an external provider when that source is authoritative for the requirement.
-- **D:** Incorrect for this requirement. Uses appropriate public evidence, such as supported Search grounding, rather than assuming private records are publicly available.
+- **A:** Correct. Reducing handling time from 12 to 9 minutes saves 3 / 12 = 25% of the baseline time. Use the original duration as denominator. In this case: The saving is 3 minutes from a 12-minute baseline, giving 3 / 12 = 25%.
+- **B:** Incorrect for this question. A three-minute change is not automatically a three-percent change; percentage change depends on baseline duration. In this case: The saving is 3 minutes from a 12-minute baseline, giving 3 / 12 = 25%.
+- **C:** Incorrect for this question. A 75% time reduction leaves only a quarter of baseline duration. The share remaining is different from the share saved. In this case: The saving is 3 minutes from a 12-minute baseline, giving 3 / 12 = 25%.
+- **D:** Incorrect for this question. A one-third time reduction means saving one third of the original duration. Dividing saved time by the new duration answers a different question. In this case: The saving is 3 minutes from a 12-minute baseline, giving 3 / 12 = 25%.
 
 ### Question 24 — C
 
-Answer: Model training. Learning weights or parameters from data is training rather than serving predictions. Official exam-guide objective 1.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: $900 per month. Include all three specified categories once: $500 + $250 + $150 = $900. At $500 in model charges, $250 in review, and $150 in monitoring per month, listed recurring cost is $500 + $250 + $150 = $900. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Monitors, versions, maintains, and improves models after deployment as conditions change.
-- **B:** Incorrect for this requirement. Uses a trained model to produce an output for new input without inherently updating its weights.
-- **C:** Correct. Learns model parameters from data; it is different from serving a trained model to users.
-- **D:** Incorrect for this requirement. Makes a trained or selected model available for application use.
+- **A:** Incorrect for this question. A model-only charge may omit human review, monitoring, and other recurring workflow costs. In this case: Include all three specified categories once: $500 + $250 + $150 = $900.
+- **B:** Incorrect for this question. A subtotal can omit an operating category; include every listed cost once when calculating total recurring cost. In this case: Include all three specified categories once: $500 + $250 + $150 = $900.
+- **C:** Correct. At $500 in model charges, $250 in review, and $150 in monitoring per month, listed recurring cost is $500 + $250 + $150 = $900. In this case: Include all three specified categories once: $500 + $250 + $150 = $900.
+- **D:** Incorrect for this question. Adding only selected operating costs is not a complete total when other recurring categories are specified. In this case: Include all three specified categories once: $500 + $250 + $150 = $900.
 
-### Question 25 — A
+### Question 25 — B
 
-Answer: Ground with a licensed or approved third-party source. An approved external authoritative provider is a third-party evidence source, with licensing and freshness obligations. Official exam-guide objective 3.3: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Model A: about $0.033 per accepted answer. A costs about $0.033 per accepted answer, compared with B at $0.04. With independent one-call outcomes and no extra costs, $0.03 / 0.90 is about $0.033 per accepted answer, below $0.02 / 0.50 = $0.04 for Model B. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Correct. Uses permitted information from an external provider when that source is authoritative for the requirement.
-- **B:** Incorrect for this requirement. Uses appropriate public evidence, such as supported Search grounding, rather than assuming private records are publicly available.
-- **C:** Incorrect for this requirement. Uses approved organizational evidence for private business facts, with appropriate access controls.
-- **D:** Incorrect for this requirement. Updates model parameters using suitable task-specific training data; it is not automatically the best way to supply frequently changing facts.
+- **A:** Incorrect for this question. The $0.02 call price must be divided by acceptance rate to calculate cost per accepted answer; it is not already the accepted-outcome cost. In this case: A costs about $0.033 per accepted answer, compared with B at $0.04.
+- **B:** Correct. With independent one-call outcomes and no extra costs, $0.03 / 0.90 is about $0.033 per accepted answer, below $0.02 / 0.50 = $0.04 for Model B. In this case: A costs about $0.033 per accepted answer, compared with B at $0.04.
+- **C:** Incorrect for this question. Equal accepted-outcome cost requires equal call-price-to-acceptance ratios under the simplified assumptions. In this case: A costs about $0.033 per accepted answer, compared with B at $0.04.
+- **D:** Incorrect for this question. Rejected attempts still consume resources, so acceptance rate matters when comparing verified outcomes. In this case: A costs about $0.033 per accepted answer, compared with B at $0.04.
 
-### Question 26 — D
+### Question 26 — B
 
-Answer: Prompt chaining. Linked prompt stages use one result to inform the next without inherently changing weights. Official exam-guide objective 3.2: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: $14,000 monthly net benefit. Subtract recurring cost from the stated benefit: $20,000 - $6,000 = $14,000. $20,000 in verified monthly benefit minus $6,000 recurring monthly operating cost yields $14,000 monthly net benefit, before other unspecified costs. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Provides several worked demonstrations of the desired input-output behavior in the prompt.
-- **B:** Incorrect for this requirement. Updates model parameters using suitable task-specific training data; it is not automatically the best way to supply frequently changing facts.
-- **C:** Incorrect for this requirement. Caps generated output tokens within supported limits; too low a cap can truncate an answer.
-- **D:** Correct. Uses linked prompt steps or exchanges so one stage informs later stages of a larger task.
+- **A:** Incorrect for this question. Gross monthly benefit is not net benefit when recurring operating costs are specified. In this case: Subtract recurring cost from the stated benefit: $20,000 - $6,000 = $14,000.
+- **B:** Correct. $20,000 in verified monthly benefit minus $6,000 recurring monthly operating cost yields $14,000 monthly net benefit, before other unspecified costs. In this case: Subtract recurring cost from the stated benefit: $20,000 - $6,000 = $14,000.
+- **C:** Incorrect for this question. Recurring operating cost by itself is not the remaining net benefit after subtracting cost from benefit. In this case: Subtract recurring cost from the stated benefit: $20,000 - $6,000 = $14,000.
+- **D:** Incorrect for this question. Adding recurring cost to gross benefit does not calculate net benefit; net benefit subtracts costs. In this case: Subtract recurring cost from the stated benefit: $20,000 - $6,000 = $14,000.
 
 ### Question 27 — A
 
-Answer: Gemini Enterprise. Cross-source enterprise discovery and agent experiences require organizational connectors and permissions, not only public web search. Official exam-guide objective 2.2: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: 100 hours of released capacity per month. The saving is 6,000 minutes, which converts to 100 hours. Saving 5 minutes on each of 1,200 tasks gives 6,000 minutes, or 100 hours. This is capacity, not automatically cash savings. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Correct. Supports enterprise information discovery and custom agent experiences across authorized organizational sources, subject to configuration.
-- **B:** Incorrect for this requirement. Provides access to public world information; it does not automatically grant access to confidential enterprise repositories.
-- **C:** Incorrect for this requirement. Helps teams discover and evaluate supported Google, third-party, and open models, subject to model-specific terms and availability.
-- **D:** Incorrect for this requirement. Brings supported AI assistance into Workspace applications such as Gmail and Docs, subject to edition and availability.
+- **A:** Correct. Saving 5 minutes on each of 1,200 tasks gives 6,000 minutes, or 100 hours. This is capacity, not automatically cash savings. In this case: The saving is 6,000 minutes, which converts to 100 hours.
+- **B:** Incorrect for this question. A per-task minute saving is not the total monthly hours. The task count and unit conversion are required. In this case: The saving is 6,000 minutes, which converts to 100 hours.
+- **C:** Incorrect for this question. Minutes must be divided by 60 to express hours. Keeping the minute total while labeling it hours creates a unit error. In this case: The saving is 6,000 minutes, which converts to 100 hours.
+- **D:** Incorrect for this question. Calculate saved minutes per task times task volume before converting to hours; converting volume alone does not measure time savings. In this case: The saving is 6,000 minutes, which converts to 100 hours.
 
 ### Question 28 — C
 
-Answer: Assess enterprise security, privacy, governance, and service controls. Enterprise readiness must be evaluated at the selected service and configuration, not inferred from a brand name alone. Official exam-guide objective 2.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: 60% successful completion rate. Use attempted tasks as the denominator: 600 / 1,000 = 60%. For 600 successful completions from 1,000 attempts, the rate is 600 / 1,000 = 60%. Purchased-seat count is not the attempted-task denominator. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Provides a conversational user-facing assistant experience; its features and data terms depend on account and offering.
-- **B:** Incorrect for this requirement. Can amplify errors or irrelevant content and is not a substitute for data validation.
-- **C:** Correct. Checks the actual service, account, configuration, and terms instead of assuming all AI products handle data identically.
-- **D:** Incorrect for this requirement. Can increase cost or latency without establishing task suitability or meeting governance requirements.
+- **A:** Incorrect for this question. All attempted tasks would need to be successful for a 100% completion rate; adoption or licensing alone does not imply that. In this case: Use attempted tasks as the denominator: 600 / 1,000 = 60%.
+- **B:** Incorrect for this question. Successful completions divided by the stated denominator gives a completion rate; choose the denominator appropriate to the question. In this case: Use attempted tasks as the denominator: 600 / 1,000 = 60%.
+- **C:** Correct. For 600 successful completions from 1,000 attempts, the rate is 600 / 1,000 = 60%. Purchased-seat count is not the attempted-task denominator. In this case: Use attempted tasks as the denominator: 600 / 1,000 = 60%.
+- **D:** Incorrect for this question. Failures divided by attempts give a failure rate, not successful completion rate, when the categories are exhaustive. In this case: Use attempted tasks as the denominator: 600 / 1,000 = 60%.
 
-### Question 29 — A
+### Question 29 — B
 
-Answer: Ground with relevant public world information. Public-world grounding fits public evidence requirements, but freshness and source support still need checking. Official exam-guide objective 3.3: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Total variable cost doubles. Multiplying the changes gives 3 × 2/3 = 2 times baseline cost. With constant workload mix, tripled volume and a unit cost of two thirds of baseline yield 3 × 2/3 = 2 times baseline total variable cost. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Correct. Uses appropriate public evidence, such as supported Search grounding, rather than assuming private records are publicly available.
-- **B:** Incorrect for this requirement. Updates model parameters using suitable task-specific training data; it is not automatically the best way to supply frequently changing facts.
-- **C:** Incorrect for this requirement. Uses permitted information from an external provider when that source is authoritative for the requirement.
-- **D:** Incorrect for this requirement. Uses approved organizational evidence for private business facts, with appropriate access controls.
+- **A:** Incorrect for this question. An unchanged bill requires usage growth and unit-cost changes to exactly offset one another. In this case: Multiplying the changes gives 3 × 2/3 = 2 times baseline cost.
+- **B:** Correct. With constant workload mix, tripled volume and a unit cost of two thirds of baseline yield 3 × 2/3 = 2 times baseline total variable cost. In this case: Multiplying the changes gives 3 × 2/3 = 2 times baseline cost.
+- **C:** Incorrect for this question. Tripled usage only triples cost if the unit cost stays unchanged, holding other factors constant. In this case: Multiplying the changes gives 3 × 2/3 = 2 times baseline cost.
+- **D:** Incorrect for this question. A one-third unit-price decrease does not imply a one-third total-bill decrease when usage also changes. In this case: Multiplying the changes gives 3 × 2/3 = 2 times baseline cost.
 
 ### Question 30 — C
 
-Answer: Deep learning. Multiple neural-network layers distinguish deep learning; supervision is a separate description of the training signal. Official exam-guide objective 1.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: 80,000 requests per month. Request capacity is budget divided by unit price: $4,000 / $0.05 = 80,000. A $4,000 variable budget divided by $0.05 per request funds 80,000 requests, ignoring fixed costs and rounding restrictions. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Uses a predefined organization such as rows and typed columns in a relational table.
-- **B:** Incorrect for this requirement. Applies explicit rules and is suitable when an exact prescribed result is required without probabilistic generation.
-- **C:** Correct. Is a subset of machine learning using neural networks with multiple layers to learn representations.
-- **D:** Incorrect for this requirement. Learns from examples paired with known target labels or outcomes.
+- **A:** Incorrect for this question. Check decimal placement when dividing budget by a fractional-dollar unit cost. In this case: Request capacity is budget divided by unit price: $4,000 / $0.05 = 80,000.
+- **B:** Incorrect for this question. A dollar budget is not numerically a request count unless unit cost happens to be one dollar per request. In this case: Request capacity is budget divided by unit price: $4,000 / $0.05 = 80,000.
+- **C:** Correct. A $4,000 variable budget divided by $0.05 per request funds 80,000 requests, ignoring fixed costs and rounding restrictions. In this case: Request capacity is budget divided by unit price: $4,000 / $0.05 = 80,000.
+- **D:** Incorrect for this question. Multiplying a currency budget by per-request currency cost does not produce request capacity; divide budget by unit cost. In this case: Request capacity is budget divided by unit price: $4,000 / $0.05 = 80,000.
 
 ### Question 31 — B
 
-Answer: Labeled data. Supplied target annotations make the examples labeled regardless of whether the underlying inputs are text, images, or tables. Official exam-guide objective 1.2: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Evaluate total benefits against total implementation and operating costs. Evaluate full implementation and operating costs against benefits over a consistent period. Accounts for integration, model use, review, training, and maintenance rather than relying only on the price of a token. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Includes free-form content such as prose, audio, and images without a fixed tabular schema.
-- **B:** Correct. Pairs examples with assigned tags, categories, or target outcomes; a structured file is not automatically labeled.
-- **C:** Incorrect for this requirement. Lacks supplied target annotations; it may still contain useful patterns and can be structured or unstructured.
-- **D:** Incorrect for this requirement. Uses a predefined organization such as rows and typed columns in a relational table.
+- **A:** Incorrect for this question. Measures output production speed under the stated conditions. It is distinct from first-token delay and content correctness. In this case: Evaluate full implementation and operating costs against benefits over a consistent period.
+- **B:** Correct. Accounts for integration, model use, review, training, and maintenance rather than relying only on the price of a token. In this case: Evaluate full implementation and operating costs against benefits over a consistent period.
+- **C:** Incorrect for this question. Can increase cost or latency without establishing task suitability or meeting governance requirements. In this case: Evaluate full implementation and operating costs against benefits over a consistent period.
+- **D:** Incorrect for this question. Ignores quality, retries, review effort, latency, and other costs of the full solution. In this case: Evaluate full implementation and operating costs against benefits over a consistent period.
 
-### Question 32 — D
+### Question 32 — C
 
-Answer: Assign decision ownership, explanations, and escalation responsibilities. Consequential AI decisions need named owners, meaningful review, and appropriate explanations rather than responsibility assigned to the model itself. Official exam-guide objective 4.3: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Compare cost per verified acceptable outcome. Compare cost per verified acceptable outcome rather than raw request price. Accounts for success rates, rework, review, and full workflow costs rather than only unit model pricing. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Lower values generally make sampling more focused and higher values more varied; neither guarantees factual correctness.
-- **B:** Incorrect for this requirement. Helps stakeholders understand the role of the system and limitations rather than treating generated answers as unquestionable authority.
-- **C:** Incorrect for this requirement. Can increase cost or latency without establishing task suitability or meeting governance requirements.
-- **D:** Correct. Makes people or teams answerable for AI impacts and supports review of consequential outcomes.
+- **A:** Incorrect for this question. Measures output production speed under the stated conditions. It is distinct from first-token delay and content correctness. In this case: Compare cost per verified acceptable outcome rather than raw request price.
+- **B:** Incorrect for this question. Measures initial response delay before the first token becomes available under the measurement definition. It differs from complete-response latency. In this case: Compare cost per verified acceptable outcome rather than raw request price.
+- **C:** Correct. Accounts for success rates, rework, review, and full workflow costs rather than only unit model pricing. In this case: Compare cost per verified acceptable outcome rather than raw request price.
+- **D:** Incorrect for this question. Supports capacity and budget planning under changing demand. A token-price reduction need not reduce the total bill if usage grows. In this case: Compare cost per verified acceptable outcome rather than raw request price.
 
-### Question 33 — D
+### Question 33 — A
 
-Answer: Gemini model family. Gemini is the broad multimodal model family; the chosen variant must still support the required inputs and limits. Official exam-guide objective 1.4: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Distinguish estimated capacity savings from realized business benefit. Released capacity is potential value and does not automatically equal realized financial savings. Saved minutes do not automatically become reduced payroll or revenue. Validate how released capacity is actually used. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Focuses on generating and editing images from supported inputs, rather than serving as a video-generation family.
-- **B:** Incorrect for this requirement. Offers open-weight model options for compatible customized or local deployments, subject to license and hardware requirements.
-- **C:** Incorrect for this requirement. Focuses on video generation from supported prompts or image inputs, subject to model availability and capabilities.
-- **D:** Correct. Supports broad multimodal and language tasks, with specific modalities and limits depending on the chosen model.
+- **A:** Correct. Saved minutes do not automatically become reduced payroll or revenue. Validate how released capacity is actually used. In this case: Released capacity is potential value and does not automatically equal realized financial savings.
+- **B:** Incorrect for this question. Distinguishes installed seats or trial logins from useful adoption. Usage must be interpreted with quality and risk. In this case: Released capacity is potential value and does not automatically equal realized financial savings.
+- **C:** Incorrect for this question. Measures output production speed under the stated conditions. It is distinct from first-token delay and content correctness. In this case: Released capacity is potential value and does not automatically equal realized financial savings.
+- **D:** Incorrect for this question. Accounts for integration, model use, review, training, and maintenance rather than relying only on the price of a token. In this case: Released capacity is potential value and does not automatically equal realized financial savings.
 
-### Question 34 — A
+### Question 34 — D
 
-Answer: Start with a bounded pilot and defined success criteria. A controlled pilot tests assumptions and outcomes before broad rollout; deployment alone is not validation. Official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Track variable usage and fixed operating cost separately. Track variable usage separately from unit prices and fixed operating cost. Supports capacity and budget planning under changing demand. A token-price reduction need not reduce the total bill if usage grows. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Correct. Tests value and risk on a controlled scope before broad expansion.
-- **B:** Incorrect for this requirement. Makes a trained or selected model available for application use.
-- **C:** Incorrect for this requirement. Can increase cost or latency without establishing task suitability or meeting governance requirements.
-- **D:** Incorrect for this requirement. Can amplify errors or irrelevant content and is not a substitute for data validation.
+- **A:** Incorrect for this question. Makes improvement measurable against comparable conditions rather than attributing every later change to AI. In this case: Track variable usage separately from unit prices and fixed operating cost.
+- **B:** Incorrect for this question. Accounts for integration, model use, review, training, and maintenance rather than relying only on the price of a token. In this case: Track variable usage separately from unit prices and fixed operating cost.
+- **C:** Incorrect for this question. Accounts for success rates, rework, review, and full workflow costs rather than only unit model pricing. In this case: Track variable usage separately from unit prices and fixed operating cost.
+- **D:** Correct. Supports capacity and budget planning under changing demand. A token-price reduction need not reduce the total bill if usage grows. In this case: Track variable usage separately from unit prices and fixed operating cost.
 
-### Question 35 — C
+### Question 35 — D
 
-Answer: Speech-to-Text API. The input is spoken audio and the required output is text. Official exam-guide objective 2.5: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Evaluate objectives and constraints together. Cost efficiency is relevant only within required quality, safety, and operational constraints. Balances usefulness, speed, cost, privacy, and safety instead of maximizing one metric without boundaries. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Translates supported text between languages; it does not by itself constitute structured document extraction.
-- **B:** Incorrect for this requirement. Analyzes existing text for supported tasks such as sentiment, entities, and classification.
-- **C:** Correct. Converts supported speech audio into text rather than synthesizing spoken output.
-- **D:** Incorrect for this requirement. Converts text into supported synthesized speech rather than transcribing input audio.
+- **A:** Incorrect for this question. Accounts for success rates, rework, review, and full workflow costs rather than only unit model pricing. In this case: Cost efficiency is relevant only within required quality, safety, and operational constraints.
+- **B:** Incorrect for this question. Distinguishes installed seats or trial logins from useful adoption. Usage must be interpreted with quality and risk. In this case: Cost efficiency is relevant only within required quality, safety, and operational constraints.
+- **C:** Incorrect for this question. Measures output production speed under the stated conditions. It is distinct from first-token delay and content correctness. In this case: Cost efficiency is relevant only within required quality, safety, and operational constraints.
+- **D:** Correct. Balances usefulness, speed, cost, privacy, and safety instead of maximizing one metric without boundaries. In this case: Cost efficiency is relevant only within required quality, safety, and operational constraints.
 
-### Question 36 — D
+### Question 36 — C
 
-Answer: Evaluate model and framework choice through an open ecosystem. An open ecosystem offers flexibility and choice, not an obligation to use one proprietary model for every task. Official exam-guide objective 2.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Establish pre-change business performance. Without a comparable baseline, the size and attribution of improvement are uncertain. Makes improvement measurable against comparable conditions rather than attributing every later change to AI. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Can increase cost or latency without establishing task suitability or meeting governance requirements.
-- **B:** Incorrect for this requirement. Ignores quality, retries, review effort, latency, and other costs of the full solution.
-- **C:** Incorrect for this requirement. Applies explicit rules and is suitable when an exact prescribed result is required without probabilistic generation.
-- **D:** Correct. Supports flexibility across eligible first-party, third-party, and open models rather than assuming one model suits every use case.
+- **A:** Incorrect for this question. Distinguishes installed seats or trial logins from useful adoption. Usage must be interpreted with quality and risk. In this case: Without a comparable baseline, the size and attribution of improvement are uncertain.
+- **B:** Incorrect for this question. Turns field issues into improvements without treating popularity as proof of correctness. In this case: Without a comparable baseline, the size and attribution of improvement are uncertain.
+- **C:** Correct. Makes improvement measurable against comparable conditions rather than attributing every later change to AI. In this case: Without a comparable baseline, the size and attribution of improvement are uncertain.
+- **D:** Incorrect for this question. Measures the business goal, such as verified resolution or handling time, alongside quality and safety measures. In this case: Without a comparable baseline, the size and attribution of improvement are uncertain.
 
 ### Question 37 — B
 
-Answer: Evaluate model fit against business and operational requirements. The best business choice must meet actual capability and operating requirements, not win one size or price ranking. Official exam-guide objective 1.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Define outcome-focused baseline and success metrics. Measure quality and rework as well as speed so apparent efficiency does not hide harm. Measures the business goal, such as verified resolution or handling time, alongside quality and safety measures. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Ignores quality, retries, review effort, latency, and other costs of the full solution.
-- **B:** Correct. Considers modality, quality, context, security, availability, customization, latency, and total cost.
-- **C:** Incorrect for this requirement. Can increase cost or latency without establishing task suitability or meeting governance requirements.
-- **D:** Incorrect for this requirement. Can amplify errors or irrelevant content and is not a substitute for data validation.
+- **A:** Incorrect for this question. Distinguishes installed seats or trial logins from useful adoption. Usage must be interpreted with quality and risk. In this case: Measure quality and rework as well as speed so apparent efficiency does not hide harm.
+- **B:** Correct. Measures the business goal, such as verified resolution or handling time, alongside quality and safety measures. In this case: Measure quality and rework as well as speed so apparent efficiency does not hide harm.
+- **C:** Incorrect for this question. Supports capacity and budget planning under changing demand. A token-price reduction need not reduce the total bill if usage grows. In this case: Measure quality and rework as well as speed so apparent efficiency does not hide harm.
+- **D:** Incorrect for this question. Measures output production speed under the stated conditions. It is distinct from first-token delay and content correctness. In this case: Measure quality and rework as well as speed so apparent efficiency does not hide harm.
 
 ### Question 38 — D
 
-Answer: Security Command Center. Security findings and posture visibility are distinct from resource-role assignment or prompt improvement. Official exam-guide objective 4.2: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Compare cost per verified acceptable outcome. Full verified-outcome cost captures downstream review differences omitted by model pricing. Accounts for success rates, rework, review, and full workflow costs rather than only unit model pricing. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Controls which principals may perform supported actions on resources through roles and policies.
-- **B:** Incorrect for this requirement. Refines instructions, examples, and context at inference time without changing learned model weights.
-- **C:** Incorrect for this requirement. Addresses defects in the source evidence; greater model capacity does not automatically repair incorrect data.
-- **D:** Correct. Helps identify and manage supported security findings and posture information; it is not a source-document quality evaluator.
+- **A:** Incorrect for this question. Supports capacity and budget planning under changing demand. A token-price reduction need not reduce the total bill if usage grows. In this case: Full verified-outcome cost captures downstream review differences omitted by model pricing.
+- **B:** Incorrect for this question. Distinguishes installed seats or trial logins from useful adoption. Usage must be interpreted with quality and risk. In this case: Full verified-outcome cost captures downstream review differences omitted by model pricing.
+- **C:** Incorrect for this question. Measures initial response delay before the first token becomes available under the measurement definition. It differs from complete-response latency. In this case: Full verified-outcome cost captures downstream review differences omitted by model pricing.
+- **D:** Correct. Accounts for success rates, rework, review, and full workflow costs rather than only unit model pricing. In this case: Full verified-outcome cost captures downstream review differences omitted by model pricing.
 
-### Question 39 — C
+### Question 39 — B
 
-Answer: Hallucination. Fluency and confidence do not prove support or truth; unsupported generated facts are hallucinations. Official exam-guide objective 3.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Distinguish estimated capacity savings from realized business benefit. Report capacity separately and validate how any financial benefit is actually realized. Saved minutes do not automatically become reduced payroll or revenue. Validate how released capacity is actually used. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Limits what facts could be learned during training; the model does not inherently know later events without additional evidence or tools.
-- **B:** Incorrect for this requirement. Is a model-dependent input or output unit that may represent a word fragment; token count is not always word count.
-- **C:** Correct. Is generated content that appears plausible but is factually wrong or unsupported by the available evidence.
-- **D:** Incorrect for this requirement. Bounds the information a model can consider within a request according to model-specific limits.
+- **A:** Incorrect for this question. Accounts for integration, model use, review, training, and maintenance rather than relying only on the price of a token. In this case: Report capacity separately and validate how any financial benefit is actually realized.
+- **B:** Correct. Saved minutes do not automatically become reduced payroll or revenue. Validate how released capacity is actually used. In this case: Report capacity separately and validate how any financial benefit is actually realized.
+- **C:** Incorrect for this question. Distinguishes installed seats or trial logins from useful adoption. Usage must be interpreted with quality and risk. In this case: Report capacity separately and validate how any financial benefit is actually realized.
+- **D:** Incorrect for this question. Measures output production speed under the stated conditions. It is distinct from first-token delay and content correctness. In this case: Report capacity separately and validate how any financial benefit is actually realized.
 
-### Question 40 — D
+### Question 40 — B
 
-Answer: Agent Studio. The retrieved guide positions Agent Studio for cloud production-oriented application development; prototyping alone does not prove production readiness. Official exam-guide objective 2.5: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Compare a pilot with an appropriate control or baseline. An appropriate comparison helps distinguish the intervention effect from concurrent changes. Helps separate the effect of the intervention from seasonality and unrelated changes. Experiment design must be ethical and appropriate. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Provide reusable personalized assistant instructions for supported tasks; they are not automatically a fully deployed enterprise agent platform.
-- **B:** Incorrect for this requirement. Supports rapid prototyping and experimentation with supported Gemini capabilities; a prototype alone does not establish production readiness.
-- **C:** Incorrect for this requirement. Help users work with selected source materials through summaries and source-oriented questions, subject to the available offering.
-- **D:** Correct. Is positioned in the retrieved guide for building production-oriented AI applications with cloud platform capabilities.
+- **A:** Incorrect for this question. Makes improvement measurable against comparable conditions rather than attributing every later change to AI. In this case: An appropriate comparison helps distinguish the intervention effect from concurrent changes.
+- **B:** Correct. Helps separate the effect of the intervention from seasonality and unrelated changes. Experiment design must be ethical and appropriate. In this case: An appropriate comparison helps distinguish the intervention effect from concurrent changes.
+- **C:** Incorrect for this question. Turns field issues into improvements without treating popularity as proof of correctness. In this case: An appropriate comparison helps distinguish the intervention effect from concurrent changes.
+- **D:** Incorrect for this question. Checks a model-based evaluator for agreement, bias, and failure cases instead of treating the judge as ground truth. In this case: An appropriate comparison helps distinguish the intervention effect from concurrent changes.
 
-### Question 41 — D
+### Question 41 — B
 
-Answer: Continuously evaluate, version, and monitor the solution. Quality and risk can change after launch, so updates and version transitions require continued observation and evaluation. Official exam-guide objective 3.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Plan training, workflow change, feedback, and ongoing support. Training, workflow change, feedback, and support are central to adoption. Addresses the people and process changes required for useful adoption rather than treating deployment as automatic acceptance. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Can increase cost or latency without establishing task suitability or meeting governance requirements.
-- **B:** Incorrect for this requirement. Can amplify errors or irrelevant content and is not a substitute for data validation.
-- **C:** Incorrect for this requirement. Ignores quality, retries, review effort, latency, and other costs of the full solution.
-- **D:** Correct. Tracks quality, usage, regressions, security updates, and changing conditions instead of assuming launch completes maintenance.
+- **A:** Incorrect for this question. Learns broad statistical representations from a large corpus before downstream adaptation. The precise objective depends on architecture and modality. In this case: Training, workflow change, feedback, and support are central to adoption.
+- **B:** Correct. Addresses the people and process changes required for useful adoption rather than treating deployment as automatic acceptance. In this case: Training, workflow change, feedback, and support are central to adoption.
+- **C:** Incorrect for this question. Builds practical capability and awareness of limits. Tool access alone does not mean users can apply it safely. In this case: Training, workflow change, feedback, and support are central to adoption.
+- **D:** Incorrect for this question. Assesses the actual provider and offering rather than relying only on branding or a model leaderboard. In this case: Training, workflow change, feedback, and support are central to adoption.
 
 ### Question 42 — A
 
-Answer: ReAct-style reasoning and action. Alternating decision steps with permitted external actions and observations is characteristic of ReAct-style behavior. Official exam-guide objective 3.2: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Provide role-specific training and approved-use guidance. Role-specific education and practical approved-use guidance address the capability gap. Builds practical capability and awareness of limits. Tool access alone does not mean users can apply it safely. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Correct. Combines deciding a next step with permitted external actions and observations in a controlled loop.
-- **B:** Incorrect for this requirement. Uses intermediate-step demonstrations or structured problem-solving guidance; it is not a guarantee of correctness or access to private internal reasoning.
-- **C:** Incorrect for this requirement. Lower values generally make sampling more focused and higher values more varied; neither guarantees factual correctness.
-- **D:** Incorrect for this requirement. Specifies a perspective or function to guide response tone and focus; it does not grant expertise or authority.
+- **A:** Correct. Builds practical capability and awareness of limits. Tool access alone does not mean users can apply it safely. In this case: Role-specific education and practical approved-use guidance address the capability gap.
+- **B:** Incorrect for this question. Records necessary actions, versions, and approvals for investigation while controlling sensitive telemetry access and retention. In this case: Role-specific education and practical approved-use guidance address the capability gap.
+- **C:** Incorrect for this question. Turns field issues into improvements without treating popularity as proof of correctness. In this case: Role-specific education and practical approved-use guidance address the capability gap.
+- **D:** Incorrect for this question. Connects goals, feasibility, controls, and user needs before decisions become difficult to reverse. In this case: Role-specific education and practical approved-use guidance address the capability gap.
 
 ### Question 43 — B
 
-Answer: Conversational Agents. A customer-facing conversational interaction differs from helping a human agent or analyzing completed calls. Official exam-guide objective 2.3: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Redesign the workflow around verified outcomes and human roles. Workflow responsibilities and exception paths must support verified business outcomes. Avoids merely placing a chatbot on top of an unchanged broken process. Explicit responsibilities and exceptions matter. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Provides cloud-based contact-center capabilities rather than merely analyzing historical conversation text.
-- **B:** Correct. Supports customer-facing conversational experiences and task interactions, subject to configured capabilities and integrations.
-- **C:** Incorrect for this requirement. Analyzes customer conversations to identify themes, patterns, and operational improvement opportunities.
-- **D:** Incorrect for this requirement. Provides supported guidance and assistance to human contact-center agents during their work.
+- **A:** Incorrect for this question. Learns broad statistical representations from a large corpus before downstream adaptation. The precise objective depends on architecture and modality. In this case: Workflow responsibilities and exception paths must support verified business outcomes.
+- **B:** Correct. Avoids merely placing a chatbot on top of an unchanged broken process. Explicit responsibilities and exceptions matter. In this case: Workflow responsibilities and exception paths must support verified business outcomes.
+- **C:** Incorrect for this question. Builds practical capability and awareness of limits. Tool access alone does not mean users can apply it safely. In this case: Workflow responsibilities and exception paths must support verified business outcomes.
+- **D:** Incorrect for this question. Makes instruction changes identifiable, comparable, and reversible. A version label is useful only when actual content and dependencies are tracked. In this case: Workflow responsibilities and exception paths must support verified business outcomes.
 
 ### Question 44 — C
 
-Answer: Multimodal foundation model. Multiple modalities are required when the same interaction includes distinct types such as images and text. Official exam-guide objective 1.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Measure sustained appropriate use and task success. Sustained appropriate use and successful task outcomes are stronger evidence than provisioning. Distinguishes installed seats or trial logins from useful adoption. Usage must be interpreted with quality and risk. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Predicts a numeric quantity rather than producing new prose, images, or video.
-- **B:** Incorrect for this requirement. Is designed to process and generate language using learned patterns; fluency is not proof of truth.
-- **C:** Correct. Can work with multiple input or output modalities, subject to the selected model capabilities.
-- **D:** Incorrect for this requirement. Uses a predefined organization such as rows and typed columns in a relational table.
+- **A:** Incorrect for this question. Measures output production speed under the stated conditions. It is distinct from first-token delay and content correctness. In this case: Sustained appropriate use and successful task outcomes are stronger evidence than provisioning.
+- **B:** Incorrect for this question. Measures the business goal, such as verified resolution or handling time, alongside quality and safety measures. In this case: Sustained appropriate use and successful task outcomes are stronger evidence than provisioning.
+- **C:** Correct. Distinguishes installed seats or trial logins from useful adoption. Usage must be interpreted with quality and risk. In this case: Sustained appropriate use and successful task outcomes are stronger evidence than provisioning.
+- **D:** Incorrect for this question. Supports capacity and budget planning under changing demand. A token-price reduction need not reduce the total bill if usage grows. In this case: Sustained appropriate use and successful task outcomes are stronger evidence than provisioning.
 
-### Question 45 — B
+### Question 45 — D
 
-Answer: Deterministic rule-based processing. An exact prescribed calculation or rule is usually better executed deterministically, even if a generative interface surrounds it. Official exam-guide objective 1.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Collect reviewed user feedback and verified outcomes. Reviewed feedback can connect real workflow failures to improvement work. Turns field issues into improvements without treating popularity as proof of correctness. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Fits open-ended content creation when quality, rights, and risk controls are addressed.
-- **B:** Correct. Applies explicit rules and is suitable when an exact prescribed result is required without probabilistic generation.
-- **C:** Incorrect for this requirement. Combines a model or decision logic with tools and a goal-oriented workflow to observe and act.
-- **D:** Incorrect for this requirement. Is broadly pretrained and can support or be adapted to multiple downstream tasks.
+- **A:** Incorrect for this question. Tracks quality, usage, regressions, security updates, and changing conditions instead of assuming launch completes maintenance. In this case: Reviewed feedback can connect real workflow failures to improvement work.
+- **B:** Incorrect for this question. Distinguishes installed seats or trial logins from useful adoption. Usage must be interpreted with quality and risk. In this case: Reviewed feedback can connect real workflow failures to improvement work.
+- **C:** Incorrect for this question. Checks a model-based evaluator for agreement, bias, and failure cases instead of treating the judge as ground truth. In this case: Reviewed feedback can connect real workflow failures to improvement work.
+- **D:** Correct. Turns field issues into improvements without treating popularity as proof of correctness. In this case: Reviewed feedback can connect real workflow failures to improvement work.
 
-### Question 46 — B
+### Question 46 — A
 
-Answer: Minimize and protect personal data for the approved purpose. Personal information should be necessary, authorized, protected, and retained only as appropriate for its purpose. Official exam-guide objective 4.3: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Align business, technical, security, and affected-user stakeholders. Affected users and process owners should help shape the change and identify practical risks. Connects goals, feasibility, controls, and user needs before decisions become difficult to reverse. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Can amplify errors or irrelevant content and is not a substitute for data validation.
-- **B:** Correct. Limits unnecessary collection, use, retention, and disclosure according to applicable obligations.
-- **C:** Incorrect for this requirement. Refines instructions, examples, and context at inference time without changing learned model weights.
-- **D:** Incorrect for this requirement. Can increase cost or latency without establishing task suitability or meeting governance requirements.
+- **A:** Correct. Connects goals, feasibility, controls, and user needs before decisions become difficult to reverse. In this case: Affected users and process owners should help shape the change and identify practical risks.
+- **B:** Incorrect for this question. Learns broad statistical representations from a large corpus before downstream adaptation. The precise objective depends on architecture and modality. In this case: Affected users and process owners should help shape the change and identify practical risks.
+- **C:** Incorrect for this question. Builds practical capability and awareness of limits. Tool access alone does not mean users can apply it safely. In this case: Affected users and process owners should help shape the change and identify practical risks.
+- **D:** Incorrect for this question. Connects funding, outcomes, and adoption ownership rather than leaving a pilot as an unowned technical experiment. In this case: Affected users and process owners should help shape the change and identify practical risks.
 
-### Question 47 — B
+### Question 47 — A
 
-Answer: Model deployment. Making a model available to applications is deployment rather than learning weights or collecting data. Official exam-guide objective 1.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Disclose AI use, relevant limits, and review pathways. Explain the AI role, limits, human responsibilities, and available review pathways. Helps stakeholders understand the role of the system and limitations rather than treating generated answers as unquestionable authority. Closest official exam-guide objective 4.3: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Learns model parameters from data; it is different from serving a trained model to users.
-- **B:** Correct. Makes a trained or selected model available for application use.
-- **C:** Incorrect for this requirement. Collects or brings source information into the data workflow before later processing.
-- **D:** Incorrect for this requirement. Cleans, transforms, and organizes collected data for its intended use.
+- **A:** Correct. Helps stakeholders understand the role of the system and limitations rather than treating generated answers as unquestionable authority. In this case: Explain the AI role, limits, human responsibilities, and available review pathways.
+- **B:** Incorrect for this question. Limits unnecessary collection, use, retention, and disclosure according to applicable obligations. In this case: Explain the AI role, limits, human responsibilities, and available review pathways.
+- **C:** Incorrect for this question. Records necessary actions, versions, and approvals for investigation while controlling sensitive telemetry access and retention. In this case: Explain the AI role, limits, human responsibilities, and available review pathways.
+- **D:** Incorrect for this question. Builds practical capability and awareness of limits. Tool access alone does not mean users can apply it safely. In this case: Explain the AI role, limits, human responsibilities, and available review pathways.
 
 ### Question 48 — D
 
-Answer: Data preparation. Cleaning and transforming already collected information is data preparation. Official exam-guide objective 1.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Assign decision ownership, explanations, and escalation responsibilities. Ownership and escalation responsibilities must be explicit for staff to act appropriately. Makes people or teams answerable for AI impacts and supports review of consequential outcomes. Closest official exam-guide objective 4.3: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Collects or brings source information into the data workflow before later processing.
-- **B:** Incorrect for this requirement. Learns model parameters from data; it is different from serving a trained model to users.
-- **C:** Incorrect for this requirement. Makes a trained or selected model available for application use.
-- **D:** Correct. Cleans, transforms, and organizes collected data for its intended use.
+- **A:** Incorrect for this question. Helps stakeholders understand the role of the system and limitations rather than treating generated answers as unquestionable authority. In this case: Ownership and escalation responsibilities must be explicit for staff to act appropriately.
+- **B:** Incorrect for this question. Records necessary actions, versions, and approvals for investigation while controlling sensitive telemetry access and retention. In this case: Ownership and escalation responsibilities must be explicit for staff to act appropriately.
+- **C:** Incorrect for this question. Builds practical capability and awareness of limits. Tool access alone does not mean users can apply it safely. In this case: Ownership and escalation responsibilities must be explicit for staff to act appropriately.
+- **D:** Correct. Makes people or teams answerable for AI impacts and supports review of consequential outcomes. In this case: Ownership and escalation responsibilities must be explicit for staff to act appropriately.
 
 ### Question 49 — B
 
-Answer: Few-shot prompting. Several demonstrations provided in the prompt constitute few-shot prompting rather than weight training. Official exam-guide objective 3.2: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Assign an accountable business sponsor and decision rights. A sponsor connects business decisions, resources, and outcomes to the adoption effort. Connects funding, outcomes, and adoption ownership rather than leaving a pilot as an unowned technical experiment. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Updates model parameters using suitable task-specific training data; it is not automatically the best way to supply frequently changing facts.
-- **B:** Correct. Provides several worked demonstrations of the desired input-output behavior in the prompt.
-- **C:** Incorrect for this requirement. Provides one worked demonstration of the desired task behavior in the prompt.
-- **D:** Incorrect for this requirement. Gives task instructions without a worked example in the prompt.
+- **A:** Incorrect for this question. Tracks quality, usage, regressions, security updates, and changing conditions instead of assuming launch completes maintenance. In this case: A sponsor connects business decisions, resources, and outcomes to the adoption effort.
+- **B:** Correct. Connects funding, outcomes, and adoption ownership rather than leaving a pilot as an unowned technical experiment. In this case: A sponsor connects business decisions, resources, and outcomes to the adoption effort.
+- **C:** Incorrect for this question. Builds practical capability and awareness of limits. Tool access alone does not mean users can apply it safely. In this case: A sponsor connects business decisions, resources, and outcomes to the adoption effort.
+- **D:** Incorrect for this question. Assesses the actual provider and offering rather than relying only on branding or a model leaderboard. In this case: A sponsor connects business decisions, resources, and outcomes to the adoption effort.
 
-### Question 50 — A
+### Question 50 — D
 
-Answer: Adjust top-p nucleus sampling. Top-p changes a cumulative-probability candidate set rather than capping how long the response can be. Official exam-guide objective 3.3: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Use a phased roadmap with measurable stage gates. Phased measurable stages allow learning and controlled expansion. Links pilot learning to incremental expansion or stopping decisions rather than promising immediate organization-wide automation. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Correct. Restricts the candidate token set using cumulative probability mass rather than a fixed response length.
-- **B:** Incorrect for this requirement. Caps generated output tokens within supported limits; too low a cap can truncate an answer.
-- **C:** Incorrect for this requirement. Lower values generally make sampling more focused and higher values more varied; neither guarantees factual correctness.
-- **D:** Incorrect for this requirement. Bounds the information a model can consider within a request according to model-specific limits.
+- **A:** Incorrect for this question. Learns broad statistical representations from a large corpus before downstream adaptation. The precise objective depends on architecture and modality. In this case: Phased measurable stages allow learning and controlled expansion.
+- **B:** Incorrect for this question. Avoids concentrating investment solely on novelty or on whichever demo is most impressive. In this case: Phased measurable stages allow learning and controlled expansion.
+- **C:** Incorrect for this question. Makes improvement measurable against comparable conditions rather than attributing every later change to AI. In this case: Phased measurable stages allow learning and controlled expansion.
+- **D:** Correct. Links pilot learning to incremental expansion or stopping decisions rather than promising immediate organization-wide automation. In this case: Phased measurable stages allow learning and controlled expansion.
 
-### Question 51 — B
+### Question 51 — D
 
-Answer: Retrieval-augmented generation (RAG). Frequently changing evidence can be supplied through retrieval rather than repeatedly training facts into model weights. Official exam-guide objective 3.3: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Assign authoritative data ownership and freshness responsibilities. Authoritative data ownership and freshness duties are necessary beyond initial indexing. Ensures knowledge quality remains accountable after deployment. Adding documents without ownership can create conflicting evidence. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Learns task-specific prompt representations while keeping base model weights frozen in supported approaches; it differs from manually rewriting prompt text.
-- **B:** Correct. Retrieves external evidence, adds it to the request context, and generates an answer without inherently updating model weights.
-- **C:** Incorrect for this requirement. Can increase cost or latency without establishing task suitability or meeting governance requirements.
-- **D:** Incorrect for this requirement. Updates model parameters using suitable task-specific training data; it is not automatically the best way to supply frequently changing facts.
+- **A:** Incorrect for this question. Addresses defects in the source evidence; greater model capacity does not automatically repair incorrect data. In this case: Authoritative data ownership and freshness duties are necessary beyond initial indexing.
+- **B:** Incorrect for this question. Updates approved evidence, removes or marks obsolete versions, and preserves source authorization. New documents alone do not prove retrieval and generation quality. In this case: Authoritative data ownership and freshness duties are necessary beyond initial indexing.
+- **C:** Incorrect for this question. Makes relevant evidence practically usable while retaining permissions and governance; accessibility does not mean public access. In this case: Authoritative data ownership and freshness duties are necessary beyond initial indexing.
+- **D:** Correct. Ensures knowledge quality remains accountable after deployment. Adding documents without ownership can create conflicting evidence. In this case: Authoritative data ownership and freshness duties are necessary beyond initial indexing.
 
-### Question 52 — C
+### Question 52 — A
 
-Answer: Foundation model. Broad pretraining and reuse across downstream tasks distinguish foundation models from narrow task-specific rules. Official exam-guide objective 1.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Assess data, skills, workflow, infrastructure, and control readiness. Skills, support, data, infrastructure, workflow, and controls need an operational readiness review. Identifies gaps before scaling a business idea. Access to a model alone does not establish operational preparedness. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Applies explicit rules and is suitable when an exact prescribed result is required without probabilistic generation.
-- **B:** Incorrect for this requirement. Assigns inputs to predefined categories rather than generating open-ended content.
-- **C:** Correct. Is broadly pretrained and can support or be adapted to multiple downstream tasks.
-- **D:** Incorrect for this requirement. Provides compute, accelerators, storage, networking, and supporting resources used to train and serve AI systems.
+- **A:** Correct. Identifies gaps before scaling a business idea. Access to a model alone does not establish operational preparedness. In this case: Skills, support, data, infrastructure, workflow, and controls need an operational readiness review.
+- **B:** Incorrect for this question. Uses cases not used to design or train the change, including important user groups and failure cases. It supports regression detection rather than merely memorization. In this case: Skills, support, data, infrastructure, workflow, and controls need an operational readiness review.
+- **C:** Incorrect for this question. Builds practical capability and awareness of limits. Tool access alone does not mean users can apply it safely. In this case: Skills, support, data, infrastructure, workflow, and controls need an operational readiness review.
+- **D:** Incorrect for this question. Assesses the actual provider and offering rather than relying only on branding or a model leaderboard. In this case: Skills, support, data, infrastructure, workflow, and controls need an operational readiness review.
 
 ### Question 53 — C
 
-Answer: Cloud Run functions / Cloud Functions. A suitable bounded event-driven tool can be implemented with a function service rather than a model catalog. Official exam-guide objective 2.5: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Continuously evaluate, version, and monitor the solution. Continuous evaluation and monitoring detect drift and emerging failure patterns. Tracks quality, usage, regressions, security updates, and changing conditions instead of assuming launch completes maintenance. Closest official exam-guide objective 3.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Helps teams discover and evaluate supported Google, third-party, and open models, subject to model-specific terms and availability.
-- **B:** Incorrect for this requirement. Provides object storage for files and datasets rather than a complete conversation agent or a transactional relational database.
-- **C:** Correct. Supports suitable event-driven functions and tool implementations; naming varies across guide and service generations.
-- **D:** Incorrect for this requirement. Supports training suitable models with reduced manual model-development effort; it is not a general guarantee that every task can be automated.
+- **A:** Incorrect for this question. Learns broad statistical representations from a large corpus before downstream adaptation. The precise objective depends on architecture and modality. In this case: Continuous evaluation and monitoring detect drift and emerging failure patterns.
+- **B:** Incorrect for this question. Records necessary actions, versions, and approvals for investigation while controlling sensitive telemetry access and retention. In this case: Continuous evaluation and monitoring detect drift and emerging failure patterns.
+- **C:** Correct. Tracks quality, usage, regressions, security updates, and changing conditions instead of assuming launch completes maintenance. In this case: Continuous evaluation and monitoring detect drift and emerging failure patterns.
+- **D:** Incorrect for this question. Uses cases not used to design or train the change, including important user groups and failure cases. It supports regression detection rather than merely memorization. In this case: Continuous evaluation and monitoring detect drift and emerging failure patterns.
 
 ### Question 54 — A
 
-Answer: Fine-tuning. Changing learned task behavior with an additional supported training job is fine-tuning, not only adding retrieval context. Official exam-guide objective 3.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Version prompts and regression-test revisions. Track configuration and prompt versions so regressions can be investigated and changes reversed. Makes instruction changes identifiable, comparable, and reversible. A version label is useful only when actual content and dependencies are tracked. Closest official exam-guide objective 3.2: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Correct. Updates model parameters using suitable task-specific training data; it is not automatically the best way to supply frequently changing facts.
-- **B:** Incorrect for this requirement. Refines instructions, examples, and context at inference time without changing learned model weights.
-- **C:** Incorrect for this requirement. Lower values generally make sampling more focused and higher values more varied; neither guarantees factual correctness.
-- **D:** Incorrect for this requirement. Retrieves external evidence, adds it to the request context, and generates an answer without inherently updating model weights.
+- **A:** Correct. Makes instruction changes identifiable, comparable, and reversible. A version label is useful only when actual content and dependencies are tracked. In this case: Track configuration and prompt versions so regressions can be investigated and changes reversed.
+- **B:** Incorrect for this question. Records necessary actions, versions, and approvals for investigation while controlling sensitive telemetry access and retention. In this case: Track configuration and prompt versions so regressions can be investigated and changes reversed.
+- **C:** Incorrect for this question. Tracks quality, usage, regressions, security updates, and changing conditions instead of assuming launch completes maintenance. In this case: Track configuration and prompt versions so regressions can be investigated and changes reversed.
+- **D:** Incorrect for this question. Uses cases not used to design or train the change, including important user groups and failure cases. It supports regression detection rather than merely memorization. In this case: Track configuration and prompt versions so regressions can be investigated and changes reversed.
 
-### Question 55 — C
+### Question 55 — A
 
-Answer: Data ingestion. Bringing source data into a workflow is ingestion; cleaning or model fitting happens later. Official exam-guide objective 1.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Protected audit trails and traceability. Protected audit trails provide necessary attribution and evidence with appropriate access limits. Records necessary actions, versions, and approvals for investigation while controlling sensitive telemetry access and retention. Closest official exam-guide objective 4.2: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Learns model parameters from data; it is different from serving a trained model to users.
-- **B:** Incorrect for this requirement. Cleans, transforms, and organizes collected data for its intended use.
-- **C:** Correct. Collects or brings source information into the data workflow before later processing.
-- **D:** Incorrect for this requirement. Makes a trained or selected model available for application use.
+- **A:** Correct. Records necessary actions, versions, and approvals for investigation while controlling sensitive telemetry access and retention. In this case: Protected audit trails provide necessary attribution and evidence with appropriate access limits.
+- **B:** Incorrect for this question. Tracks quality, usage, regressions, security updates, and changing conditions instead of assuming launch completes maintenance. In this case: Protected audit trails provide necessary attribution and evidence with appropriate access limits.
+- **C:** Incorrect for this question. Builds practical capability and awareness of limits. Tool access alone does not mean users can apply it safely. In this case: Protected audit trails provide necessary attribution and evidence with appropriate access limits.
+- **D:** Incorrect for this question. Controls which principals may perform supported actions on resources through roles and policies. In this case: Protected audit trails provide necessary attribution and evidence with appropriate access limits.
 
 ### Question 56 — B
 
-Answer: Create an authorized data connection with usable formats and appropriate access controls. Accessible data means available and usable for the authorized workflow. It does not mean available to everyone. Official exam-guide objective 1.2: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Scale only after operational, economic, and control criteria pass. Capacity, support, economics, quality, and controls must be tested for the broader workload. Requires support, capacity, quality, and governance evidence, not just a successful demonstration. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Additional capacity does not grant access to missing private evidence.
-- **B:** Correct. The problem is controlled accessibility, not a need for public disclosure.
-- **C:** Incorrect for this requirement. Public access removes confidentiality boundaries and is unnecessary for authorized enterprise retrieval.
-- **D:** Incorrect for this requirement. The model cannot be assumed to know private source records.
+- **A:** Incorrect for this question. Learns broad statistical representations from a large corpus before downstream adaptation. The precise objective depends on architecture and modality. In this case: Capacity, support, economics, quality, and controls must be tested for the broader workload.
+- **B:** Correct. Requires support, capacity, quality, and governance evidence, not just a successful demonstration. In this case: Capacity, support, economics, quality, and controls must be tested for the broader workload.
+- **C:** Incorrect for this question. Avoids concentrating investment solely on novelty or on whichever demo is most impressive. In this case: Capacity, support, economics, quality, and controls must be tested for the broader workload.
+- **D:** Incorrect for this question. Limits initial exposure and promotes only when defined outcomes remain acceptable. Availability alone does not establish answer quality. In this case: Capacity, support, economics, quality, and controls must be tested for the broader workload.
 
-### Question 57 — B
+### Question 57 — D
 
-Answer: Translation API. Language conversion of text is translation rather than sentiment analysis or audio transcription. Official exam-guide objective 2.5: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Stage deployment with quality gates and rollback. Staged deployment with gates and rollback allows failures to be detected before full exposure. Limits initial exposure and promotes only when defined outcomes remain acceptable. Availability alone does not establish answer quality. Closest official exam-guide objective 4.2: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Analyzes existing text for supported tasks such as sentiment, entities, and classification.
-- **B:** Correct. Translates supported text between languages; it does not by itself constitute structured document extraction.
-- **C:** Incorrect for this requirement. Converts supported speech audio into text rather than synthesizing spoken output.
-- **D:** Incorrect for this requirement. Analyzes supported image content, such as objects, text, and landmarks; it is distinct from generating a new image.
+- **A:** Incorrect for this question. Uses cases not used to design or train the change, including important user groups and failure cases. It supports regression detection rather than merely memorization. In this case: Staged deployment with gates and rollback allows failures to be detected before full exposure.
+- **B:** Incorrect for this question. Makes instruction changes identifiable, comparable, and reversible. A version label is useful only when actual content and dependencies are tracked. In this case: Staged deployment with gates and rollback allows failures to be detected before full exposure.
+- **C:** Incorrect for this question. Probes likely bypasses and harmful interactions before and after release. Passing a finite test suite is not proof that all attacks are prevented. In this case: Staged deployment with gates and rollback allows failures to be detected before full exposure.
+- **D:** Correct. Limits initial exposure and promotes only when defined outcomes remain acceptable. Availability alone does not establish answer quality. In this case: Staged deployment with gates and rollback allows failures to be detected before full exposure.
 
-### Question 58 — C
+### Question 58 — A
 
-Answer: Role prompting. A requested role guides perspective and style but is not an authorization mechanism or proof of competence. Official exam-guide objective 3.2: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Use a tested incident response and containment process. Incident response needs owners, containment, evidence handling, recovery, and communication plans. Defines owners, detection, containment, evidence handling, recovery, and communication rather than treating an alert as the end of response. Closest official exam-guide objective 4.2: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Provides several worked demonstrations of the desired input-output behavior in the prompt.
-- **B:** Incorrect for this requirement. Retrieves external evidence, adds it to the request context, and generates an answer without inherently updating model weights.
-- **C:** Correct. Specifies a perspective or function to guide response tone and focus; it does not grant expertise or authority.
-- **D:** Incorrect for this requirement. Updates model parameters using suitable task-specific training data; it is not automatically the best way to supply frequently changing facts.
+- **A:** Correct. Defines owners, detection, containment, evidence handling, recovery, and communication rather than treating an alert as the end of response. In this case: Incident response needs owners, containment, evidence handling, recovery, and communication plans.
+- **B:** Incorrect for this question. Tracks quality, usage, regressions, security updates, and changing conditions instead of assuming launch completes maintenance. In this case: Incident response needs owners, containment, evidence handling, recovery, and communication plans.
+- **C:** Incorrect for this question. Records necessary actions, versions, and approvals for investigation while controlling sensitive telemetry access and retention. In this case: Incident response needs owners, containment, evidence handling, recovery, and communication plans.
+- **D:** Incorrect for this question. Probes likely bypasses and harmful interactions before and after release. Passing a finite test suite is not proof that all attacks are prevented. In this case: Incident response needs owners, containment, evidence handling, recovery, and communication plans.
 
 ### Question 59 — A
 
-Answer: Agent Assist. Real-time support for a human contact-center worker fits Agent Assist. Official exam-guide objective 2.3: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Define stopping, switching, and decommissioning criteria. Switching and retirement criteria reduce unmanaged dependence and data lifecycle risk. Protects against continuing a project because of sunk costs or indefinite vendor dependence. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Correct. Provides supported guidance and assistance to human contact-center agents during their work.
-- **B:** Incorrect for this requirement. Supports customer-facing conversational experiences and task interactions, subject to configured capabilities and integrations.
-- **C:** Incorrect for this requirement. Provides cloud-based contact-center capabilities rather than merely analyzing historical conversation text.
-- **D:** Incorrect for this requirement. Analyzes customer conversations to identify themes, patterns, and operational improvement opportunities.
+- **A:** Correct. Protects against continuing a project because of sunk costs or indefinite vendor dependence. In this case: Switching and retirement criteria reduce unmanaged dependence and data lifecycle risk.
+- **B:** Incorrect for this question. Requires support, capacity, quality, and governance evidence, not just a successful demonstration. In this case: Switching and retirement criteria reduce unmanaged dependence and data lifecycle risk.
+- **C:** Incorrect for this question. Makes instruction changes identifiable, comparable, and reversible. A version label is useful only when actual content and dependencies are tracked. In this case: Switching and retirement criteria reduce unmanaged dependence and data lifecycle risk.
+- **D:** Incorrect for this question. Reuses eligible results only within appropriate identity, freshness, and semantic boundaries. Similar wording alone does not make a cached answer safe. In this case: Switching and retirement criteria reduce unmanaged dependence and data lifecycle risk.
 
-### Question 60 — A
+### Question 60 — D
 
-Answer: Document Translation. The requirement includes translating a supported formatted document while preserving its layout as appropriate. Official exam-guide objective 2.5: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Consider resource efficiency alongside required quality. Resource efficiency matters when it does not compromise required outcomes or controls. Evaluates whether a smaller or less wasteful solution meets the need. Lower compute alone does not excuse unacceptable quality or harm. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Correct. Translates supported formatted documents while aiming to preserve document layout, subject to format limitations.
-- **B:** Incorrect for this requirement. Analyzes supported image content, such as objects, text, and landmarks; it is distinct from generating a new image.
-- **C:** Incorrect for this requirement. Translates supported text between languages; it does not by itself constitute structured document extraction.
-- **D:** Incorrect for this requirement. Extracts and processes information from supported documents, including structured fields for suitable processors.
+- **A:** Incorrect for this question. Accounts for success rates, rework, review, and full workflow costs rather than only unit model pricing. In this case: Resource efficiency matters when it does not compromise required outcomes or controls.
+- **B:** Incorrect for this question. Measures initial response delay before the first token becomes available under the measurement definition. It differs from complete-response latency. In this case: Resource efficiency matters when it does not compromise required outcomes or controls.
+- **C:** Incorrect for this question. Measures output production speed under the stated conditions. It is distinct from first-token delay and content correctness. In this case: Resource efficiency matters when it does not compromise required outcomes or controls.
+- **D:** Correct. Evaluates whether a smaller or less wasteful solution meets the need. Lower compute alone does not excuse unacceptable quality or harm. In this case: Resource efficiency matters when it does not compromise required outcomes or controls.
 
-### Question 61 — A
+### Question 61 — C
 
-Answer: Agent layer. An agent pursues a goal using a reasoning or decision loop and permitted tools, rather than only displaying a response. Official exam-guide objective 1.3: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Compare a prebuilt solution with custom development against requirements. Assess real requirements, total ownership, time, controls, and integration rather than assume one approach always wins. Considers fit, integration, time, ownership, controls, and total cost. Neither custom nor prebuilt is always superior. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Correct. Combines a model or decision logic with tools and a goal-oriented workflow to observe and act.
-- **B:** Incorrect for this requirement. Provides APIs and services for developing, deploying, and managing models and AI applications.
-- **C:** Incorrect for this requirement. Provides compute, accelerators, storage, networking, and supporting resources used to train and serve AI systems.
-- **D:** Incorrect for this requirement. Provides the user-facing experience that embeds AI capabilities into a business workflow.
+- **A:** Incorrect for this question. Avoids concentrating investment solely on novelty or on whichever demo is most impressive. In this case: Assess real requirements, total ownership, time, controls, and integration rather than assume one approach always wins.
+- **B:** Incorrect for this question. Learns broad statistical representations from a large corpus before downstream adaptation. The precise objective depends on architecture and modality. In this case: Assess real requirements, total ownership, time, controls, and integration rather than assume one approach always wins.
+- **C:** Correct. Considers fit, integration, time, ownership, controls, and total cost. Neither custom nor prebuilt is always superior. In this case: Assess real requirements, total ownership, time, controls, and integration rather than assume one approach always wins.
+- **D:** Incorrect for this question. Considers modality, quality, context, security, availability, customization, latency, and total cost. In this case: Assess real requirements, total ownership, time, controls, and integration rather than assume one approach always wins.
 
-### Question 62 — D
+### Question 62 — A
 
-Answer: One-shot prompting. One worked input-output example in the request is one-shot prompting, not training. Official exam-guide objective 3.2: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Evaluate contractual, data, service, and exit terms. Evaluate material contractual and data-handling obligations before adoption. Assesses the actual provider and offering rather than relying only on branding or a model leaderboard. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Gives task instructions without a worked example in the prompt.
-- **B:** Incorrect for this requirement. Updates model parameters using suitable task-specific training data; it is not automatically the best way to supply frequently changing facts.
-- **C:** Incorrect for this requirement. Provides several worked demonstrations of the desired input-output behavior in the prompt.
-- **D:** Correct. Provides one worked demonstration of the desired task behavior in the prompt.
+- **A:** Correct. Assesses the actual provider and offering rather than relying only on branding or a model leaderboard. In this case: Evaluate material contractual and data-handling obligations before adoption.
+- **B:** Incorrect for this question. Checks source and output obligations rather than assuming AI generation removes intellectual-property restrictions. In this case: Evaluate material contractual and data-handling obligations before adoption.
+- **C:** Incorrect for this question. Considers modality, quality, context, security, availability, customization, latency, and total cost. In this case: Evaluate material contractual and data-handling obligations before adoption.
+- **D:** Incorrect for this question. Checks logs, abuse monitoring, training use, deletion, account settings, and contracts. Frozen model weights alone do not establish zero retention. In this case: Evaluate material contractual and data-handling obligations before adoption.
 
-### Question 63 — A
+### Question 63 — B
 
-Answer: Google Search and supported Search grounding. Public world information calls for web search or supported Search grounding; confidential sources need separate authorized access. Official exam-guide objective 2.3: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Evaluate model fit against business and operational requirements. The chosen system must fit actual quality and operational requirements, not only benchmark rank. Considers modality, quality, context, security, availability, customization, latency, and total cost. Closest official exam-guide objective 1.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Correct. Provides access to public world information; it does not automatically grant access to confidential enterprise repositories.
-- **B:** Incorrect for this requirement. Supports enterprise information discovery and custom agent experiences across authorized organizational sources, subject to configuration.
-- **C:** Incorrect for this requirement. Provides managed enterprise search and retrieval capabilities for supported business content and applications.
-- **D:** Incorrect for this requirement. Help users work with selected source materials through summaries and source-oriented questions, subject to the available offering.
+- **A:** Incorrect for this question. Helps teams discover and evaluate supported Google, third-party, and open models, subject to model-specific terms and availability. In this case: The chosen system must fit actual quality and operational requirements, not only benchmark rank.
+- **B:** Correct. Considers modality, quality, context, security, availability, customization, latency, and total cost. In this case: The chosen system must fit actual quality and operational requirements, not only benchmark rank.
+- **C:** Incorrect for this question. Accounts for success rates, rework, review, and full workflow costs rather than only unit model pricing. In this case: The chosen system must fit actual quality and operational requirements, not only benchmark rank.
+- **D:** Incorrect for this question. Uses cases not used to design or train the change, including important user groups and failure cases. It supports regression detection rather than merely memorization. In this case: The chosen system must fit actual quality and operational requirements, not only benchmark rank.
 
-### Question 64 — D
+### Question 64 — B
 
-Answer: Natural Language API. Sentiment and entity analysis operate on existing text rather than translating or synthesizing it. Official exam-guide objective 2.5: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Deterministic rule-based processing. A deterministic rule engine may satisfy the need more simply and reliably. Applies explicit rules and is suitable when an exact prescribed result is required without probabilistic generation. Closest official exam-guide objective 1.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Converts supported speech audio into text rather than synthesizing spoken output.
-- **B:** Incorrect for this requirement. Converts text into supported synthesized speech rather than transcribing input audio.
-- **C:** Incorrect for this requirement. Translates supported text between languages; it does not by itself constitute structured document extraction.
-- **D:** Correct. Analyzes existing text for supported tasks such as sentiment, entities, and classification.
+- **A:** Incorrect for this question. Creates new content from learned patterns; generated content still needs appropriate review. In this case: A deterministic rule engine may satisfy the need more simply and reliably.
+- **B:** Correct. Applies explicit rules and is suitable when an exact prescribed result is required without probabilistic generation. In this case: A deterministic rule engine may satisfy the need more simply and reliably.
+- **C:** Incorrect for this question. Finds patterns or groupings without supplied target labels. In this case: A deterministic rule engine may satisfy the need more simply and reliably.
+- **D:** Incorrect for this question. Learns actions through interaction and reward or penalty feedback. In this case: A deterministic rule engine may satisfy the need more simply and reliably.
 
 ### Question 65 — C
 
-Answer: Unstructured data. Free-form prose, audio, and imagery require processing beyond assuming a consistent row-and-column schema. Official exam-guide objective 1.2: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Retrieval-augmented generation (RAG). Retrieval addresses the evidence-freshness gap without repeatedly retraining behavior. Retrieves external evidence, adds it to the request context, and generates an answer without inherently updating model weights. Closest official exam-guide objective 3.3: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Pairs examples with assigned tags, categories, or target outcomes; a structured file is not automatically labeled.
-- **B:** Incorrect for this requirement. Uses a predefined organization such as rows and typed columns in a relational table.
-- **C:** Correct. Includes free-form content such as prose, audio, and images without a fixed tabular schema.
-- **D:** Incorrect for this requirement. Predicts a numeric quantity rather than producing new prose, images, or video.
+- **A:** Incorrect for this question. Uses lower-precision representations to reduce model memory or compute requirements. Quality and runtime compatibility must be measured; savings do not prove hardware fit. In this case: Retrieval addresses the evidence-freshness gap without repeatedly retraining behavior.
+- **B:** Incorrect for this question. Learns broad statistical representations from a large corpus before downstream adaptation. The precise objective depends on architecture and modality. In this case: Retrieval addresses the evidence-freshness gap without repeatedly retraining behavior.
+- **C:** Correct. Retrieves external evidence, adds it to the request context, and generates an answer without inherently updating model weights. In this case: Retrieval addresses the evidence-freshness gap without repeatedly retraining behavior.
+- **D:** Incorrect for this question. Adapts supported models using curated examples of inputs and desired outputs. Independent evaluation is needed to check generalization and regressions. In this case: Retrieval addresses the evidence-freshness gap without repeatedly retraining behavior.
 
 ### Question 66 — C
 
-Answer: Google Secure AI Framework (SAIF). SAIF is a security framework for AI lifecycle risks; individual tools implement parts of a security program. Official exam-guide objective 4.2: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Supervised fine-tuning. Supervised fine-tuning can teach stable patterns but needs quality, cost, and regression evaluation. Adapts supported models using curated examples of inputs and desired outputs. Independent evaluation is needed to check generalization and regressions. Closest official exam-guide objective 3.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Helps identify and manage supported security findings and posture information; it is not a source-document quality evaluator.
-- **B:** Incorrect for this requirement. Can reduce supported harmful content but does not guarantee factual accuracy, authorization, or complete risk elimination.
-- **C:** Correct. Provides a framework for securing AI systems and addressing AI-specific risks across their lifecycle; it is not a guarantee or an automatic certification.
-- **D:** Incorrect for this requirement. Controls which principals may perform supported actions on resources through roles and policies.
+- **A:** Incorrect for this question. Reserves capacity for instructions, evidence, history, and generation according to model-specific limits. Exceeding a limit may cause rejection or configured truncation, not a universal oldest-message deletion rule. In this case: Supervised fine-tuning can teach stable patterns but needs quality, cost, and regression evaluation.
+- **B:** Incorrect for this question. Retrieves external evidence, adds it to the request context, and generates an answer without inherently updating model weights. In this case: Supervised fine-tuning can teach stable patterns but needs quality, cost, and regression evaluation.
+- **C:** Correct. Adapts supported models using curated examples of inputs and desired outputs. Independent evaluation is needed to check generalization and regressions. In this case: Supervised fine-tuning can teach stable patterns but needs quality, cost, and regression evaluation.
+- **D:** Incorrect for this question. Updates approved evidence, removes or marks obsolete versions, and preserves source authorization. New documents alone do not prove retrieval and generation quality. In this case: Supervised fine-tuning can teach stable patterns but needs quality, cost, and regression evaluation.
 
-### Question 67 — D
+### Question 67 — C
 
-Answer: Conversational Insights. Analyzing patterns across customer conversations is an insights task, not only a live assistance task. Official exam-guide objective 2.3: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Controlled local deployment of a compatible licensed model. Evaluate a compatible, properly licensed local stack including tools and dependencies rather than assuming compression alone solves offline operation. Can meet an offline requirement if all needed model files, runtimes, tools, and dependencies are available locally. Open weights, quantization, and GPUs are not universal logical requirements. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Provides supported guidance and assistance to human contact-center agents during their work.
-- **B:** Incorrect for this requirement. Supports customer-facing conversational experiences and task interactions, subject to configured capabilities and integrations.
-- **C:** Incorrect for this requirement. Provides cloud-based contact-center capabilities rather than merely analyzing historical conversation text.
-- **D:** Correct. Analyzes customer conversations to identify themes, patterns, and operational improvement opportunities.
+- **A:** Incorrect for this question. Can increase cost or latency without establishing task suitability or meeting governance requirements. In this case: Evaluate a compatible, properly licensed local stack including tools and dependencies rather than assuming compression alone solves offline operation.
+- **B:** Incorrect for this question. Retrieves external evidence, adds it to the request context, and generates an answer without inherently updating model weights. In this case: Evaluate a compatible, properly licensed local stack including tools and dependencies rather than assuming compression alone solves offline operation.
+- **C:** Correct. Can meet an offline requirement if all needed model files, runtimes, tools, and dependencies are available locally. Open weights, quantization, and GPUs are not universal logical requirements. In this case: Evaluate a compatible, properly licensed local stack including tools and dependencies rather than assuming compression alone solves offline operation.
+- **D:** Incorrect for this question. Uses lower-precision representations to reduce model memory or compute requirements. Quality and runtime compatibility must be measured; savings do not prove hardware fit. In this case: Evaluate a compatible, properly licensed local stack including tools and dependencies rather than assuming compression alone solves offline operation.
 
-### Question 68 — B
+### Question 68 — C
 
-Answer: Cloud Vision API. The task analyzes existing image content rather than creating a new image or analyzing a video sequence. Official exam-guide objective 2.5: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Assess enterprise security, privacy, governance, and service controls. The exact service's privacy, access, governance, and contractual fit must be assessed. Checks the actual service, account, configuration, and terms instead of assuming all AI products handle data identically. Closest official exam-guide objective 2.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Focuses on generating and editing images from supported inputs, rather than serving as a video-generation family.
-- **B:** Correct. Analyzes supported image content, such as objects, text, and landmarks; it is distinct from generating a new image.
-- **C:** Incorrect for this requirement. Analyzes existing text for supported tasks such as sentiment, entities, and classification.
-- **D:** Incorrect for this requirement. Analyzes supported video content and extracts useful annotations rather than generating new video.
+- **A:** Incorrect for this question. Controls which principals may perform supported actions on resources through roles and policies. In this case: The exact service's privacy, access, governance, and contractual fit must be assessed.
+- **B:** Incorrect for this question. Can reduce supported harmful content but does not guarantee factual accuracy, authorization, or complete risk elimination. In this case: The exact service's privacy, access, governance, and contractual fit must be assessed.
+- **C:** Correct. Checks the actual service, account, configuration, and terms instead of assuming all AI products handle data identically. In this case: The exact service's privacy, access, governance, and contractual fit must be assessed.
+- **D:** Incorrect for this question. Limits network paths when correctly configured. Private routing does not replace authentication or make the whole solution absolutely isolated. In this case: The exact service's privacy, access, governance, and contractual fit must be assessed.
 
-### Question 69 — C
+### Question 69 — D
 
-Answer: Gemini Notebook source-grounded research capabilities. A source-oriented research assistant fits notebook capabilities; it is not a model catalog or contact-center platform. Official exam-guide objective 2.2: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Evaluate model and framework choice through an open ecosystem. An open ecosystem can support choice, though actual portability and integration still need validation. Supports flexibility across eligible first-party, third-party, and open models rather than assuming one model suits every use case. Closest official exam-guide objective 2.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Helps teams discover and evaluate supported Google, third-party, and open models, subject to model-specific terms and availability.
-- **B:** Incorrect for this requirement. Provides cloud-based contact-center capabilities rather than merely analyzing historical conversation text.
-- **C:** Correct. Help users work with selected source materials through summaries and source-oriented questions, subject to the available offering.
-- **D:** Incorrect for this requirement. Supports training suitable models with reduced manual model-development effort; it is not a general guarantee that every task can be automated.
+- **A:** Incorrect for this question. Can reduce infrastructure operating burden while capacity, quotas, reliability, and cost still require planning. In this case: An open ecosystem can support choice, though actual portability and integration still need validation.
+- **B:** Incorrect for this question. Can meet an offline requirement if all needed model files, runtimes, tools, and dependencies are available locally. Open weights, quantization, and GPUs are not universal logical requirements. In this case: An open ecosystem can support choice, though actual portability and integration still need validation.
+- **C:** Incorrect for this question. Considers fit, integration, time, ownership, controls, and total cost. Neither custom nor prebuilt is always superior. In this case: An open ecosystem can support choice, though actual portability and integration still need validation.
+- **D:** Correct. Supports flexibility across eligible first-party, third-party, and open models rather than assuming one model suits every use case. In this case: An open ecosystem can support choice, though actual portability and integration still need validation.
 
 ### Question 70 — B
 
-Answer: Model management. Deployed systems still need monitoring, versioning, maintenance, and reassessment. Official exam-guide objective 1.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Compare cost per verified acceptable outcome. Compare complete verified-outcome costs under the same workload and quality requirements. Accounts for success rates, rework, review, and full workflow costs rather than only unit model pricing. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Cleans, transforms, and organizes collected data for its intended use.
-- **B:** Correct. Monitors, versions, maintains, and improves models after deployment as conditions change.
-- **C:** Incorrect for this requirement. Learns model parameters from data; it is different from serving a trained model to users.
-- **D:** Incorrect for this requirement. Collects or brings source information into the data workflow before later processing.
+- **A:** Incorrect for this question. Supports capacity and budget planning under changing demand. A token-price reduction need not reduce the total bill if usage grows. In this case: Compare complete verified-outcome costs under the same workload and quality requirements.
+- **B:** Correct. Accounts for success rates, rework, review, and full workflow costs rather than only unit model pricing. In this case: Compare complete verified-outcome costs under the same workload and quality requirements.
+- **C:** Incorrect for this question. Measures output production speed under the stated conditions. It is distinct from first-token delay and content correctness. In this case: Compare complete verified-outcome costs under the same workload and quality requirements.
+- **D:** Incorrect for this question. Measures initial response delay before the first token becomes available under the measurement definition. It differs from complete-response latency. In this case: Compare complete verified-outcome costs under the same workload and quality requirements.
 
-### Question 71 — A
+### Question 71 — D
 
-Answer: Set an appropriate maximum output length. An output token cap controls generated length, not the total capacity of the request context or factual correctness. Official exam-guide objective 3.3: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Balance opportunities by value, feasibility, and risk. A balanced portfolio can coordinate value, risk, feasibility, and reuse across opportunities. Avoids concentrating investment solely on novelty or on whichever demo is most impressive. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Correct. Caps generated output tokens within supported limits; too low a cap can truncate an answer.
-- **B:** Incorrect for this requirement. Bounds the information a model can consider within a request according to model-specific limits.
-- **C:** Incorrect for this requirement. Lower values generally make sampling more focused and higher values more varied; neither guarantees factual correctness.
-- **D:** Incorrect for this requirement. Restricts the candidate token set using cumulative probability mass rather than a fixed response length.
+- **A:** Incorrect for this question. Considers fit, integration, time, ownership, controls, and total cost. Neither custom nor prebuilt is always superior. In this case: A balanced portfolio can coordinate value, risk, feasibility, and reuse across opportunities.
+- **B:** Incorrect for this question. Tests value and risk on a controlled scope before broad expansion. In this case: A balanced portfolio can coordinate value, risk, feasibility, and reuse across opportunities.
+- **C:** Incorrect for this question. Requires support, capacity, quality, and governance evidence, not just a successful demonstration. In this case: A balanced portfolio can coordinate value, risk, feasibility, and reuse across opportunities.
+- **D:** Correct. Avoids concentrating investment solely on novelty or on whichever demo is most impressive. In this case: A balanced portfolio can coordinate value, risk, feasibility, and reuse across opportunities.
 
-### Question 72 — B
+### Question 72 — C
 
-Answer: Pseudonymization. A retained linkage can allow re-identification, so replacing names with codes does not establish anonymization. Official exam-guide objective 4.3: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Assign decision ownership, explanations, and escalation responsibilities. Governance requires actionable accountability, not only a meeting forum. Makes people or teams answerable for AI impacts and supports review of consequential outcomes. Closest official exam-guide objective 4.3: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Lacks supplied target annotations; it may still contain useful patterns and can be structured or unstructured.
-- **B:** Correct. Replaces direct identifiers with aliases while a linkage or re-identification route may remain; it is not the same as irreversible anonymity.
-- **C:** Incorrect for this requirement. Aims to prevent identification under the relevant standard; simply removing names does not automatically achieve it.
-- **D:** Incorrect for this requirement. Uses a predefined organization such as rows and typed columns in a relational table.
+- **A:** Incorrect for this question. Records necessary actions, versions, and approvals for investigation while controlling sensitive telemetry access and retention. In this case: Governance requires actionable accountability, not only a meeting forum.
+- **B:** Incorrect for this question. Builds practical capability and awareness of limits. Tool access alone does not mean users can apply it safely. In this case: Governance requires actionable accountability, not only a meeting forum.
+- **C:** Correct. Makes people or teams answerable for AI impacts and supports review of consequential outcomes. In this case: Governance requires actionable accountability, not only a meeting forum.
+- **D:** Incorrect for this question. Helps stakeholders understand the role of the system and limitations rather than treating generated answers as unquestionable authority. In this case: Governance requires actionable accountability, not only a meeting forum.
 
-### Question 73 — A
+### Question 73 — C
 
-Answer: Generative AI. The defining requirement is new content, not a fixed label or numeric forecast. Official exam-guide objective 1.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Redesign the workflow around verified outcomes and human roles. Transformation often requires workflow redesign rather than merely adding generation to existing steps. Avoids merely placing a chatbot on top of an unchanged broken process. Explicit responsibilities and exceptions matter. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Correct. Creates new content from learned patterns; generated content still needs appropriate review.
-- **B:** Incorrect for this requirement. Predicts a numeric quantity rather than producing new prose, images, or video.
-- **C:** Incorrect for this requirement. Applies explicit rules and is suitable when an exact prescribed result is required without probabilistic generation.
-- **D:** Incorrect for this requirement. Assigns inputs to predefined categories rather than generating open-ended content.
+- **A:** Incorrect for this question. Makes instruction changes identifiable, comparable, and reversible. A version label is useful only when actual content and dependencies are tracked. In this case: Transformation often requires workflow redesign rather than merely adding generation to existing steps.
+- **B:** Incorrect for this question. Builds practical capability and awareness of limits. Tool access alone does not mean users can apply it safely. In this case: Transformation often requires workflow redesign rather than merely adding generation to existing steps.
+- **C:** Correct. Avoids merely placing a chatbot on top of an unchanged broken process. Explicit responsibilities and exceptions matter. In this case: Transformation often requires workflow redesign rather than merely adding generation to existing steps.
+- **D:** Incorrect for this question. Learns broad statistical representations from a large corpus before downstream adaptation. The precise objective depends on architecture and modality. In this case: Transformation often requires workflow redesign rather than merely adding generation to existing steps.
 
 ### Question 74 — B
 
-Answer: Disclose AI use, relevant limits, and review pathways. Transparency helps people understand AI involvement and limits; it does not itself guarantee correctness. Official exam-guide objective 4.3: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Provide role-specific training and approved-use guidance. Role-specific practical training must connect concepts to actual responsibilities and constraints. Builds practical capability and awareness of limits. Tool access alone does not mean users can apply it safely. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Can reduce supported harmful content but does not guarantee factual accuracy, authorization, or complete risk elimination.
-- **B:** Correct. Helps stakeholders understand the role of the system and limitations rather than treating generated answers as unquestionable authority.
-- **C:** Incorrect for this requirement. Makes people or teams answerable for AI impacts and supports review of consequential outcomes.
-- **D:** Incorrect for this requirement. Lower values generally make sampling more focused and higher values more varied; neither guarantees factual correctness.
+- **A:** Incorrect for this question. Connects goals, feasibility, controls, and user needs before decisions become difficult to reverse. In this case: Role-specific practical training must connect concepts to actual responsibilities and constraints.
+- **B:** Correct. Builds practical capability and awareness of limits. Tool access alone does not mean users can apply it safely. In this case: Role-specific practical training must connect concepts to actual responsibilities and constraints.
+- **C:** Incorrect for this question. Records necessary actions, versions, and approvals for investigation while controlling sensitive telemetry access and retention. In this case: Role-specific practical training must connect concepts to actual responsibilities and constraints.
+- **D:** Incorrect for this question. Turns field issues into improvements without treating popularity as proof of correctness. In this case: Role-specific practical training must connect concepts to actual responsibilities and constraints.
 
 ### Question 75 — A
 
-Answer: Apply security controls throughout the AI lifecycle. AI security spans data, development, access, serving, monitoring, and updates instead of appearing only at launch. Official exam-guide objective 4.2: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Measure sustained appropriate use and task success. Sustained appropriate use and task success are more informative than initial curiosity. Distinguishes installed seats or trial logins from useful adoption. Usage must be interpreted with quality and risk. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Correct. Addresses source data, development, deployment, access, monitoring, and updates rather than only the launch endpoint.
-- **B:** Incorrect for this requirement. Can reduce supported harmful content but does not guarantee factual accuracy, authorization, or complete risk elimination.
-- **C:** Incorrect for this requirement. Makes a trained or selected model available for application use.
-- **D:** Incorrect for this requirement. Can increase cost or latency without establishing task suitability or meeting governance requirements.
+- **A:** Correct. Distinguishes installed seats or trial logins from useful adoption. Usage must be interpreted with quality and risk. In this case: Sustained appropriate use and task success are more informative than initial curiosity.
+- **B:** Incorrect for this question. Measures output production speed under the stated conditions. It is distinct from first-token delay and content correctness. In this case: Sustained appropriate use and task success are more informative than initial curiosity.
+- **C:** Incorrect for this question. Measures the business goal, such as verified resolution or handling time, alongside quality and safety measures. In this case: Sustained appropriate use and task success are more informative than initial curiosity.
+- **D:** Incorrect for this question. Supports capacity and budget planning under changing demand. A token-price reduction need not reduce the total bill if usage grows. In this case: Sustained appropriate use and task success are more informative than initial curiosity.
 
-### Question 76 — C
+### Question 76 — A
 
-Answer: Machine learning. Learning a decision pattern from examples is machine learning rather than exclusively hand-written rules. Official exam-guide objective 1.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Collect reviewed user feedback and verified outcomes. Reviewed feedback and outcomes must inform improvement rather than be filtered for positive reporting. Turns field issues into improvements without treating popularity as proof of correctness. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Applies explicit rules and is suitable when an exact prescribed result is required without probabilistic generation.
-- **B:** Incorrect for this requirement. Provides the user-facing experience that embeds AI capabilities into a business workflow.
-- **C:** Correct. Learns useful patterns from data instead of requiring every decision rule to be manually programmed.
-- **D:** Incorrect for this requirement. Provides compute, accelerators, storage, networking, and supporting resources used to train and serve AI systems.
+- **A:** Correct. Turns field issues into improvements without treating popularity as proof of correctness. In this case: Reviewed feedback and outcomes must inform improvement rather than be filtered for positive reporting.
+- **B:** Incorrect for this question. Tracks quality, usage, regressions, security updates, and changing conditions instead of assuming launch completes maintenance. In this case: Reviewed feedback and outcomes must inform improvement rather than be filtered for positive reporting.
+- **C:** Incorrect for this question. Distinguishes installed seats or trial logins from useful adoption. Usage must be interpreted with quality and risk. In this case: Reviewed feedback and outcomes must inform improvement rather than be filtered for positive reporting.
+- **D:** Incorrect for this question. Checks a model-based evaluator for agreement, bias, and failure cases instead of treating the judge as ground truth. In this case: Reviewed feedback and outcomes must inform improvement rather than be filtered for positive reporting.
 
-### Question 77 — A
+### Question 77 — B
 
-Answer: Cloud Video Intelligence API. Analyzing existing video differs from generating a new video sequence. Official exam-guide objective 2.5: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Align business, technical, security, and affected-user stakeholders. Relevant stakeholders should help assess requirements and impacts early enough to influence design. Connects goals, feasibility, controls, and user needs before decisions become difficult to reverse. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Correct. Analyzes supported video content and extracts useful annotations rather than generating new video.
-- **B:** Incorrect for this requirement. Focuses on video generation from supported prompts or image inputs, subject to model availability and capabilities.
-- **C:** Incorrect for this requirement. Analyzes supported image content, such as objects, text, and landmarks; it is distinct from generating a new image.
-- **D:** Incorrect for this requirement. Analyzes existing text for supported tasks such as sentiment, entities, and classification.
+- **A:** Incorrect for this question. Connects funding, outcomes, and adoption ownership rather than leaving a pilot as an unowned technical experiment. In this case: Relevant stakeholders should help assess requirements and impacts early enough to influence design.
+- **B:** Correct. Connects goals, feasibility, controls, and user needs before decisions become difficult to reverse. In this case: Relevant stakeholders should help assess requirements and impacts early enough to influence design.
+- **C:** Incorrect for this question. Builds practical capability and awareness of limits. Tool access alone does not mean users can apply it safely. In this case: Relevant stakeholders should help assess requirements and impacts early enough to influence design.
+- **D:** Incorrect for this question. Learns broad statistical representations from a large corpus before downstream adaptation. The precise objective depends on architecture and modality. In this case: Relevant stakeholders should help assess requirements and impacts early enough to influence design.
 
 ### Question 78 — D
 
-Answer: Graphics processing units (GPUs). GPUs provide widely used parallel acceleration; they are distinct from the specifically Google-designed TPU family. Official exam-guide objective 2.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Use a phased roadmap with measurable stage gates. A phased roadmap with measurable gates connects investment to evidence and decisions. Links pilot learning to incremental expansion or stopping decisions rather than promising immediate organization-wide automation. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Retrieves authoritative structured business records through enforced access rather than inventing live facts from model weights.
-- **B:** Incorrect for this requirement. Handle general computation but do not denote a specialized parallel AI accelerator family.
-- **C:** Incorrect for this requirement. Provides object storage for files and datasets rather than a complete conversation agent or a transactional relational database.
-- **D:** Correct. Provide parallel acceleration widely used for compatible training and inference workloads.
+- **A:** Incorrect for this question. Makes improvement measurable against comparable conditions rather than attributing every later change to AI. In this case: A phased roadmap with measurable gates connects investment to evidence and decisions.
+- **B:** Incorrect for this question. Avoids concentrating investment solely on novelty or on whichever demo is most impressive. In this case: A phased roadmap with measurable gates connects investment to evidence and decisions.
+- **C:** Incorrect for this question. Learns broad statistical representations from a large corpus before downstream adaptation. The precise objective depends on architecture and modality. In this case: A phased roadmap with measurable gates connects investment to evidence and decisions.
+- **D:** Correct. Links pilot learning to incremental expansion or stopping decisions rather than promising immediate organization-wide automation. In this case: A phased roadmap with measurable gates connects investment to evidence and decisions.
 
-### Question 79 — C
+### Question 79 — D
 
-Answer: Use a validated function or extension to an external service. A real-world operation must be performed and verified by authorized application tooling; generating a claim does not execute it. Official exam-guide objective 2.5: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Distinguish estimated capacity savings from realized business benefit. Potential capacity and realized business benefit must be reported separately and validated. Saved minutes do not automatically become reduced payroll or revenue. Validate how released capacity is actually used. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Refines instructions, examples, and context at inference time without changing learned model weights.
-- **B:** Incorrect for this requirement. Provides a conversational user-facing assistant experience; its features and data terms depend on account and offering.
-- **C:** Correct. Lets trusted application code perform an authorized real-world operation; generated text claiming success is not proof of execution.
-- **D:** Incorrect for this requirement. Helps teams discover and evaluate supported Google, third-party, and open models, subject to model-specific terms and availability.
+- **A:** Incorrect for this question. Measures output production speed under the stated conditions. It is distinct from first-token delay and content correctness. In this case: Potential capacity and realized business benefit must be reported separately and validated.
+- **B:** Incorrect for this question. Accounts for integration, model use, review, training, and maintenance rather than relying only on the price of a token. In this case: Potential capacity and realized business benefit must be reported separately and validated.
+- **C:** Incorrect for this question. Distinguishes installed seats or trial logins from useful adoption. Usage must be interpreted with quality and risk. In this case: Potential capacity and realized business benefit must be reported separately and validated.
+- **D:** Correct. Saved minutes do not automatically become reduced payroll or revenue. Validate how released capacity is actually used. In this case: Potential capacity and realized business benefit must be reported separately and validated.
 
-### Question 80 — C
+### Question 80 — A
 
-Answer: Gemini for Google Workspace. Assistance inside familiar Workspace productivity applications fits Gemini for Google Workspace. Official exam-guide objective 2.2: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Assign an accountable business sponsor and decision rights. An accountable sponsor and explicit decision rights connect ownership, resources, and business value. Connects funding, outcomes, and adoption ownership rather than leaving a pilot as an unowned technical experiment. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Helps teams discover and evaluate supported Google, third-party, and open models, subject to model-specific terms and availability.
-- **B:** Incorrect for this requirement. Supports training suitable models with reduced manual model-development effort; it is not a general guarantee that every task can be automated.
-- **C:** Correct. Brings supported AI assistance into Workspace applications such as Gmail and Docs, subject to edition and availability.
-- **D:** Incorrect for this requirement. Supports enterprise information discovery and custom agent experiences across authorized organizational sources, subject to configuration.
+- **A:** Correct. Connects funding, outcomes, and adoption ownership rather than leaving a pilot as an unowned technical experiment. In this case: An accountable sponsor and explicit decision rights connect ownership, resources, and business value.
+- **B:** Incorrect for this question. Tracks quality, usage, regressions, security updates, and changing conditions instead of assuming launch completes maintenance. In this case: An accountable sponsor and explicit decision rights connect ownership, resources, and business value.
+- **C:** Incorrect for this question. Builds practical capability and awareness of limits. Tool access alone does not mean users can apply it safely. In this case: An accountable sponsor and explicit decision rights connect ownership, resources, and business value.
+- **D:** Incorrect for this question. Assesses the actual provider and offering rather than relying only on branding or a model leaderboard. In this case: An accountable sponsor and explicit decision rights connect ownership, resources, and business value.
 
 ### Question 81 — C
 
-Answer: Improve data accuracy, completeness, consistency, and relevance. Incorrect, missing, or inconsistent evidence requires source-data improvement rather than merely changing generation settings. Official exam-guide objective 1.2: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Assess impact, likelihood, affected users, and mitigations. The changed users, exposure, consequences, and obligations require renewed risk assessment. Prioritizes controls in proportion to potential harm rather than using the same autonomy for every workflow. Closest official exam-guide objective 4.3: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Can amplify errors or irrelevant content and is not a substitute for data validation.
-- **B:** Incorrect for this requirement. Can increase cost or latency without establishing task suitability or meeting governance requirements.
-- **C:** Correct. Addresses defects in the source evidence; greater model capacity does not automatically repair incorrect data.
-- **D:** Incorrect for this requirement. Refines instructions, examples, and context at inference time without changing learned model weights.
+- **A:** Incorrect for this question. Uses relevant, appropriate comparisons and review rather than inferring fairness from one aggregate score. In this case: The changed users, exposure, consequences, and obligations require renewed risk assessment.
+- **B:** Incorrect for this question. Controls which principals may perform supported actions on resources through roles and policies. In this case: The changed users, exposure, consequences, and obligations require renewed risk assessment.
+- **C:** Correct. Prioritizes controls in proportion to potential harm rather than using the same autonomy for every workflow. In this case: The changed users, exposure, consequences, and obligations require renewed risk assessment.
+- **D:** Incorrect for this question. Checks logs, abuse monitoring, training use, deletion, account settings, and contracts. Frozen model weights alone do not establish zero retention. In this case: The changed users, exposure, consequences, and obligations require renewed risk assessment.
 
-### Question 82 — B
+### Question 82 — C
 
-Answer: Use supported RAG APIs for a custom retrieval workflow. RAG APIs support custom retrieval integration without implying that facts are permanently trained into the model. Official exam-guide objective 2.4: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Minimize and protect personal data for the approved purpose. Data collection should follow approved purpose and necessity rather than speculative accumulation. Limits unnecessary collection, use, retention, and disclosure according to applicable obligations. Closest official exam-guide objective 4.3: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Learns model parameters from data; it is different from serving a trained model to users.
-- **B:** Correct. Provides building blocks for retrieving and supplying external evidence when a team needs application-specific integration.
-- **C:** Incorrect for this requirement. Provide reusable personalized assistant instructions for supported tasks; they are not automatically a fully deployed enterprise agent platform.
-- **D:** Incorrect for this requirement. Supports training suitable models with reduced manual model-development effort; it is not a general guarantee that every task can be automated.
+- **A:** Incorrect for this question. Replaces direct identifiers with aliases while a linkage or re-identification route may remain; it is not the same as irreversible anonymity. In this case: Data collection should follow approved purpose and necessity rather than speculative accumulation.
+- **B:** Incorrect for this question. Checks logs, abuse monitoring, training use, deletion, account settings, and contracts. Frozen model weights alone do not establish zero retention. In this case: Data collection should follow approved purpose and necessity rather than speculative accumulation.
+- **C:** Correct. Limits unnecessary collection, use, retention, and disclosure according to applicable obligations. In this case: Data collection should follow approved purpose and necessity rather than speculative accumulation.
+- **D:** Incorrect for this question. Records necessary actions, versions, and approvals for investigation while controlling sensitive telemetry access and retention. In this case: Data collection should follow approved purpose and necessity rather than speculative accumulation.
 
-### Question 83 — B
+### Question 83 — C
 
-Answer: Reinforcement learning. Reward-driven learning through actions and feedback differs from fitting fixed labeled examples. Official exam-guide objective 1.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Test subgroup outcomes and investigate disparities. Relevant subgroup outcomes and local failure cases must be assessed before assuming transferability. Uses relevant, appropriate comparisons and review rather than inferring fairness from one aggregate score. Closest official exam-guide objective 4.3: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Learns from examples paired with known target labels or outcomes.
-- **B:** Correct. Learns actions through interaction and reward or penalty feedback.
-- **C:** Incorrect for this requirement. Cleans, transforms, and organizes collected data for its intended use.
-- **D:** Incorrect for this requirement. Finds patterns or groupings without supplied target labels.
+- **A:** Incorrect for this question. Helps stakeholders understand a recommendation without claiming that a fluent generated rationale is the model real internal causal explanation. In this case: Relevant subgroup outcomes and local failure cases must be assessed before assuming transferability.
+- **B:** Incorrect for this question. Measures output production speed under the stated conditions. It is distinct from first-token delay and content correctness. In this case: Relevant subgroup outcomes and local failure cases must be assessed before assuming transferability.
+- **C:** Correct. Uses relevant, appropriate comparisons and review rather than inferring fairness from one aggregate score. In this case: Relevant subgroup outcomes and local failure cases must be assessed before assuming transferability.
+- **D:** Incorrect for this question. Limits unnecessary collection, use, retention, and disclosure according to applicable obligations. In this case: Relevant subgroup outcomes and local failure cases must be assessed before assuming transferability.
 
 ### Question 84 — B
 
-Answer: Large language model. A language model is suited to language understanding and generation, not a guarantee of factual accuracy. Official exam-guide objective 1.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Disclose AI use, relevant limits, and review pathways. Clear disclosure of role, limits, and review options supports informed use. Helps stakeholders understand the role of the system and limitations rather than treating generated answers as unquestionable authority. Closest official exam-guide objective 4.3: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Provides compute, accelerators, storage, networking, and supporting resources used to train and serve AI systems.
-- **B:** Correct. Is designed to process and generate language using learned patterns; fluency is not proof of truth.
-- **C:** Incorrect for this requirement. Uses a predefined organization such as rows and typed columns in a relational table.
-- **D:** Incorrect for this requirement. Predicts a numeric quantity rather than producing new prose, images, or video.
+- **A:** Incorrect for this question. Limits unnecessary collection, use, retention, and disclosure according to applicable obligations. In this case: Clear disclosure of role, limits, and review options supports informed use.
+- **B:** Correct. Helps stakeholders understand the role of the system and limitations rather than treating generated answers as unquestionable authority. In this case: Clear disclosure of role, limits, and review options supports informed use.
+- **C:** Incorrect for this question. Records necessary actions, versions, and approvals for investigation while controlling sensitive telemetry access and retention. In this case: Clear disclosure of role, limits, and review options supports informed use.
+- **D:** Incorrect for this question. Builds practical capability and awareness of limits. Tool access alone does not mean users can apply it safely. In this case: Clear disclosure of role, limits, and review options supports informed use.
 
-### Question 85 — A
+### Question 85 — D
 
-Answer: Prioritize measurable business value with feasible data and manageable risk. A useful first use case must connect value with feasibility, data readiness, and manageable consequences. Official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Review rights, licenses, and permitted content use. Public availability does not establish unrestricted licensing or redistribution rights. Checks source and output obligations rather than assuming AI generation removes intellectual-property restrictions. Closest official exam-guide objective 4.3: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Correct. Selects use cases using value, readiness, constraints, and consequences rather than novelty alone.
-- **B:** Incorrect for this requirement. Ignores quality, retries, review effort, latency, and other costs of the full solution.
-- **C:** Incorrect for this requirement. Can amplify errors or irrelevant content and is not a substitute for data validation.
-- **D:** Incorrect for this requirement. Can increase cost or latency without establishing task suitability or meeting governance requirements.
+- **A:** Incorrect for this question. Uses approved organizational evidence for private business facts, with appropriate access controls. In this case: Public availability does not establish unrestricted licensing or redistribution rights.
+- **B:** Incorrect for this question. Uses appropriate public evidence, such as supported Search grounding, rather than assuming private records are publicly available. In this case: Public availability does not establish unrestricted licensing or redistribution rights.
+- **C:** Incorrect for this question. Uses permitted information from an external provider when that source is authoritative for the requirement. In this case: Public availability does not establish unrestricted licensing or redistribution rights.
+- **D:** Correct. Checks source and output obligations rather than assuming AI generation removes intellectual-property restrictions. In this case: Public availability does not establish unrestricted licensing or redistribution rights.
 
-### Question 86 — B
+### Question 86 — C
 
-Answer: Cloud Storage. Files and datasets are objects; object storage is not automatically a business-search index or transactional database. Official exam-guide objective 2.5: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Apply security controls throughout the AI lifecycle. Security responsibilities continue through data, implementation, dependency changes, deployment, and operations. Addresses source data, development, deployment, access, monitoring, and updates rather than only the launch endpoint. Closest official exam-guide objective 4.2: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Supports training suitable models with reduced manual model-development effort; it is not a general guarantee that every task can be automated.
-- **B:** Correct. Provides object storage for files and datasets rather than a complete conversation agent or a transactional relational database.
-- **C:** Incorrect for this requirement. Provides managed enterprise search and retrieval capabilities for supported business content and applications.
-- **D:** Incorrect for this requirement. Retrieves authoritative structured business records through enforced access rather than inventing live facts from model weights.
+- **A:** Incorrect for this question. Records necessary actions, versions, and approvals for investigation while controlling sensitive telemetry access and retention. In this case: Security responsibilities continue through data, implementation, dependency changes, deployment, and operations.
+- **B:** Incorrect for this question. Learns broad statistical representations from a large corpus before downstream adaptation. The precise objective depends on architecture and modality. In this case: Security responsibilities continue through data, implementation, dependency changes, deployment, and operations.
+- **C:** Correct. Addresses source data, development, deployment, access, monitoring, and updates rather than only the launch endpoint. In this case: Security responsibilities continue through data, implementation, dependency changes, deployment, and operations.
+- **D:** Incorrect for this question. Probes likely bypasses and harmful interactions before and after release. Passing a finite test suite is not proof that all attacks are prevented. In this case: Security responsibilities continue through data, implementation, dependency changes, deployment, and operations.
 
 ### Question 87 — D
 
-Answer: Text-to-Speech API. The input is text and the required output is synthesized speech. Official exam-guide objective 2.5: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Scale only after operational, economic, and control criteria pass. Scale only when operational, economic, quality, and control criteria pass. Requires support, capacity, quality, and governance evidence, not just a successful demonstration. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Analyzes existing text for supported tasks such as sentiment, entities, and classification.
-- **B:** Incorrect for this requirement. Translates supported text between languages; it does not by itself constitute structured document extraction.
-- **C:** Incorrect for this requirement. Converts supported speech audio into text rather than synthesizing spoken output.
-- **D:** Correct. Converts text into supported synthesized speech rather than transcribing input audio.
+- **A:** Incorrect for this question. Limits initial exposure and promotes only when defined outcomes remain acceptable. Availability alone does not establish answer quality. In this case: Scale only when operational, economic, quality, and control criteria pass.
+- **B:** Incorrect for this question. Avoids concentrating investment solely on novelty or on whichever demo is most impressive. In this case: Scale only when operational, economic, quality, and control criteria pass.
+- **C:** Incorrect for this question. Learns broad statistical representations from a large corpus before downstream adaptation. The precise objective depends on architecture and modality. In this case: Scale only when operational, economic, quality, and control criteria pass.
+- **D:** Correct. Requires support, capacity, quality, and governance evidence, not just a successful demonstration. In this case: Scale only when operational, economic, quality, and control criteria pass.
 
-### Question 88 — A
+### Question 88 — D
 
-Answer: Document AI. Structured extraction from documents fits Document AI; general image analysis and language conversion are different tasks. Official exam-guide objective 2.5: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Define stopping, switching, and decommissioning criteria. Previously defined stopping or switching criteria counter sunk-cost-driven continuation. Protects against continuing a project because of sunk costs or indefinite vendor dependence. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Correct. Extracts and processes information from supported documents, including structured fields for suitable processors.
-- **B:** Incorrect for this requirement. Analyzes supported image content, such as objects, text, and landmarks; it is distinct from generating a new image.
-- **C:** Incorrect for this requirement. Translates supported text between languages; it does not by itself constitute structured document extraction.
-- **D:** Incorrect for this requirement. Analyzes existing text for supported tasks such as sentiment, entities, and classification.
+- **A:** Incorrect for this question. Requires support, capacity, quality, and governance evidence, not just a successful demonstration. In this case: Previously defined stopping or switching criteria counter sunk-cost-driven continuation.
+- **B:** Incorrect for this question. Reuses eligible results only within appropriate identity, freshness, and semantic boundaries. Similar wording alone does not make a cached answer safe. In this case: Previously defined stopping or switching criteria counter sunk-cost-driven continuation.
+- **C:** Incorrect for this question. Makes instruction changes identifiable, comparable, and reversible. A version label is useful only when actual content and dependencies are tracked. In this case: Previously defined stopping or switching criteria counter sunk-cost-driven continuation.
+- **D:** Correct. Protects against continuing a project because of sunk costs or indefinite vendor dependence. In this case: Previously defined stopping or switching criteria counter sunk-cost-driven continuation.
 
-### Question 89 — C
+### Question 89 — D
 
-Answer: Diffusion model. Iterative generation by reversing a noise process is characteristic of diffusion; supervision is not the defining model family. Official exam-guide objective 1.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Consider resource efficiency alongside required quality. Measure resource efficiency alongside quality, safety, and business outcomes rather than optimize compute in isolation. Evaluates whether a smaller or less wasteful solution meets the need. Lower compute alone does not excuse unacceptable quality or harm. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Learns from examples paired with known target labels or outcomes.
-- **B:** Incorrect for this requirement. Assigns inputs to predefined categories rather than generating open-ended content.
-- **C:** Correct. Learns to reverse a noise process and is commonly used for image generation.
-- **D:** Incorrect for this requirement. Predicts a numeric quantity rather than producing new prose, images, or video.
+- **A:** Incorrect for this question. Measures initial response delay before the first token becomes available under the measurement definition. It differs from complete-response latency. In this case: Measure resource efficiency alongside quality, safety, and business outcomes rather than optimize compute in isolation.
+- **B:** Incorrect for this question. Accounts for success rates, rework, review, and full workflow costs rather than only unit model pricing. In this case: Measure resource efficiency alongside quality, safety, and business outcomes rather than optimize compute in isolation.
+- **C:** Incorrect for this question. Measures output production speed under the stated conditions. It is distinct from first-token delay and content correctness. In this case: Measure resource efficiency alongside quality, safety, and business outcomes rather than optimize compute in isolation.
+- **D:** Correct. Evaluates whether a smaller or less wasteful solution meets the need. Lower compute alone does not excuse unacceptable quality or harm. In this case: Measure resource efficiency alongside quality, safety, and business outcomes rather than optimize compute in isolation.
 
 ### Question 90 — A
 
-Answer: Veo model family. The defining deliverable is generated video rather than a still image or a label. Official exam-guide objective 1.4: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Evaluate objectives and constraints together. Business value must be pursued within explicit quality, security, privacy, and accountability constraints. Balances usefulness, speed, cost, privacy, and safety instead of maximizing one metric without boundaries. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Correct. Focuses on video generation from supported prompts or image inputs, subject to model availability and capabilities.
-- **B:** Incorrect for this requirement. Focuses on generating and editing images from supported inputs, rather than serving as a video-generation family.
-- **C:** Incorrect for this requirement. Assigns inputs to predefined categories rather than generating open-ended content.
-- **D:** Incorrect for this requirement. Offers open-weight model options for compatible customized or local deployments, subject to license and hardware requirements.
+- **A:** Correct. Balances usefulness, speed, cost, privacy, and safety instead of maximizing one metric without boundaries. In this case: Business value must be pursued within explicit quality, security, privacy, and accountability constraints.
+- **B:** Incorrect for this question. Measures output production speed under the stated conditions. It is distinct from first-token delay and content correctness. In this case: Business value must be pursued within explicit quality, security, privacy, and accountability constraints.
+- **C:** Incorrect for this question. Accounts for success rates, rework, review, and full workflow costs rather than only unit model pricing. In this case: Business value must be pursued within explicit quality, security, privacy, and accountability constraints.
+- **D:** Incorrect for this question. Distinguishes installed seats or trial logins from useful adoption. Usage must be interpreted with quality and risk. In this case: Business value must be pursued within explicit quality, security, privacy, and accountability constraints.
 
-### Question 91 — D
+### Question 91 — B
 
-Answer: Structured data. A fixed schema is the key property; label availability is a separate distinction. Official exam-guide objective 1.2: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Assess data, skills, workflow, infrastructure, and control readiness. Model availability is only one input; data, skills, workflow, infrastructure, and controls determine readiness. Identifies gaps before scaling a business idea. Access to a model alone does not establish operational preparedness. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Pairs examples with assigned tags, categories, or target outcomes; a structured file is not automatically labeled.
-- **B:** Incorrect for this requirement. Lacks supplied target annotations; it may still contain useful patterns and can be structured or unstructured.
-- **C:** Incorrect for this requirement. Includes free-form content such as prose, audio, and images without a fixed tabular schema.
-- **D:** Correct. Uses a predefined organization such as rows and typed columns in a relational table.
+- **A:** Incorrect for this question. Uses cases not used to design or train the change, including important user groups and failure cases. It supports regression detection rather than merely memorization. In this case: Model availability is only one input; data, skills, workflow, infrastructure, and controls determine readiness.
+- **B:** Correct. Identifies gaps before scaling a business idea. Access to a model alone does not establish operational preparedness. In this case: Model availability is only one input; data, skills, workflow, infrastructure, and controls determine readiness.
+- **C:** Incorrect for this question. Builds practical capability and awareness of limits. Tool access alone does not mean users can apply it safely. In this case: Model availability is only one input; data, skills, workflow, infrastructure, and controls determine readiness.
+- **D:** Incorrect for this question. Assesses the actual provider and offering rather than relying only on branding or a model leaderboard. In this case: Model availability is only one input; data, skills, workflow, infrastructure, and controls determine readiness.
 
-### Question 92 — D
+### Question 92 — A
 
-Answer: $900. Budget the whole workflow, not just tokens or requests. These are illustrative figures rather than current Google service prices. Official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Prioritize measurable business value with feasible data and manageable risk. Prioritize feasible measurable value with manageable risk rather than choosing by novelty alone. Selects use cases using value, readiness, constraints, and consequences rather than novelty alone. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. This omits model usage from the stated total.
-- **B:** Incorrect for this requirement. This counts only model usage and omits the other stated expenses.
-- **C:** Incorrect for this requirement. This treats the number of requests as a monetary cost.
-- **D:** Correct. Model usage is $100, plus $300 review and $500 operations, totaling $900.
+- **A:** Correct. Selects use cases using value, readiness, constraints, and consequences rather than novelty alone. In this case: Prioritize feasible measurable value with manageable risk rather than choosing by novelty alone.
+- **B:** Incorrect for this question. Builds practical capability and awareness of limits. Tool access alone does not mean users can apply it safely. In this case: Prioritize feasible measurable value with manageable risk rather than choosing by novelty alone.
+- **C:** Incorrect for this question. Identifies gaps before scaling a business idea. Access to a model alone does not establish operational preparedness. In this case: Prioritize feasible measurable value with manageable risk rather than choosing by novelty alone.
+- **D:** Incorrect for this question. Learns broad statistical representations from a large corpus before downstream adaptation. The precise objective depends on architecture and modality. In this case: Prioritize feasible measurable value with manageable risk rather than choosing by novelty alone.
 
 ### Question 93 — C
 
-Answer: Supervised learning. Known target outcomes supply the training signal for supervised learning. Official exam-guide objective 1.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Compare cost per verified acceptable outcome. Verified-outcome cost captures the review burden and other workflow costs omitted from token pricing. Accounts for success rates, rework, review, and full workflow costs rather than only unit model pricing. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Learns actions through interaction and reward or penalty feedback.
-- **B:** Incorrect for this requirement. Applies explicit rules and is suitable when an exact prescribed result is required without probabilistic generation.
-- **C:** Correct. Learns from examples paired with known target labels or outcomes.
-- **D:** Incorrect for this requirement. Finds patterns or groupings without supplied target labels.
+- **A:** Incorrect for this question. Supports capacity and budget planning under changing demand. A token-price reduction need not reduce the total bill if usage grows. In this case: Verified-outcome cost captures the review burden and other workflow costs omitted from token pricing.
+- **B:** Incorrect for this question. Measures output production speed under the stated conditions. It is distinct from first-token delay and content correctness. In this case: Verified-outcome cost captures the review burden and other workflow costs omitted from token pricing.
+- **C:** Correct. Accounts for success rates, rework, review, and full workflow costs rather than only unit model pricing. In this case: Verified-outcome cost captures the review burden and other workflow costs omitted from token pricing.
+- **D:** Incorrect for this question. Measures initial response delay before the first token becomes available under the measurement definition. It differs from complete-response latency. In this case: Verified-outcome cost captures the review burden and other workflow costs omitted from token pricing.
 
-### Question 94 — C
+### Question 94 — D
 
-Answer: Cloud Run. Managed hosting for compatible containerized services fits Cloud Run rather than object storage or a model catalog. Official exam-guide objective 2.5: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Assign authoritative data ownership and freshness responsibilities. Assign authoritative ownership and approval duties for the knowledge used by each workflow. Ensures knowledge quality remains accountable after deployment. Adding documents without ownership can create conflicting evidence. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Helps teams discover and evaluate supported Google, third-party, and open models, subject to model-specific terms and availability.
-- **B:** Incorrect for this requirement. Provides object storage for files and datasets rather than a complete conversation agent or a transactional relational database.
-- **C:** Correct. Provides managed hosting for compatible containerized applications and services, subject to runtime and service configuration.
-- **D:** Incorrect for this requirement. Supports training suitable models with reduced manual model-development effort; it is not a general guarantee that every task can be automated.
+- **A:** Incorrect for this question. Makes relevant evidence practically usable while retaining permissions and governance; accessibility does not mean public access. In this case: Assign authoritative ownership and approval duties for the knowledge used by each workflow.
+- **B:** Incorrect for this question. Updates approved evidence, removes or marks obsolete versions, and preserves source authorization. New documents alone do not prove retrieval and generation quality. In this case: Assign authoritative ownership and approval duties for the knowledge used by each workflow.
+- **C:** Incorrect for this question. Addresses defects in the source evidence; greater model capacity does not automatically repair incorrect data. In this case: Assign authoritative ownership and approval duties for the knowledge used by each workflow.
+- **D:** Correct. Ensures knowledge quality remains accountable after deployment. Adding documents without ownership can create conflicting evidence. In this case: Assign authoritative ownership and approval duties for the knowledge used by each workflow.
 
 ### Question 95 — D
 
-Answer: Agent Platform AutoML. A reduced-code model-training workflow is different from simply browsing existing models. Official exam-guide objective 2.4: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Provide role-specific training and approved-use guidance. Practical role-specific training can show relevant approved uses and review responsibilities. Builds practical capability and awareness of limits. Tool access alone does not mean users can apply it safely. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Provides managed enterprise search and retrieval capabilities for supported business content and applications.
-- **B:** Incorrect for this requirement. Helps teams discover and evaluate supported Google, third-party, and open models, subject to model-specific terms and availability.
-- **C:** Incorrect for this requirement. Brings supported AI assistance into Workspace applications such as Gmail and Docs, subject to edition and availability.
-- **D:** Correct. Supports training suitable models with reduced manual model-development effort; it is not a general guarantee that every task can be automated.
+- **A:** Incorrect for this question. Records necessary actions, versions, and approvals for investigation while controlling sensitive telemetry access and retention. In this case: Practical role-specific training can show relevant approved uses and review responsibilities.
+- **B:** Incorrect for this question. Turns field issues into improvements without treating popularity as proof of correctness. In this case: Practical role-specific training can show relevant approved uses and review responsibilities.
+- **C:** Incorrect for this question. Connects goals, feasibility, controls, and user needs before decisions become difficult to reverse. In this case: Practical role-specific training can show relevant approved uses and review responsibilities.
+- **D:** Correct. Builds practical capability and awareness of limits. Tool access alone does not mean users can apply it safely. In this case: Practical role-specific training can show relevant approved uses and review responsibilities.
 
-### Question 96 — C
+### Question 96 — D
 
-Answer: Human-in-the-loop review. Consequential or uncertain outputs require suitable qualified review; generation settings cannot provide accountability alone. Official exam-guide objective 3.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Measure sustained appropriate use and task success. Continuing appropriate use and successful tasks reveal whether the tool becomes useful work practice. Distinguishes installed seats or trial logins from useful adoption. Usage must be interpreted with quality and risk. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Caps generated output tokens within supported limits; too low a cap can truncate an answer.
-- **B:** Incorrect for this requirement. Lower values generally make sampling more focused and higher values more varied; neither guarantees factual correctness.
-- **C:** Correct. Uses qualified people to verify, approve, correct, or escalate outputs, especially where consequences are significant.
-- **D:** Incorrect for this requirement. Can increase cost or latency without establishing task suitability or meeting governance requirements.
+- **A:** Incorrect for this question. Measures the business goal, such as verified resolution or handling time, alongside quality and safety measures. In this case: Continuing appropriate use and successful tasks reveal whether the tool becomes useful work practice.
+- **B:** Incorrect for this question. Measures output production speed under the stated conditions. It is distinct from first-token delay and content correctness. In this case: Continuing appropriate use and successful tasks reveal whether the tool becomes useful work practice.
+- **C:** Incorrect for this question. Supports capacity and budget planning under changing demand. A token-price reduction need not reduce the total bill if usage grows. In this case: Continuing appropriate use and successful tasks reveal whether the tool becomes useful work practice.
+- **D:** Correct. Distinguishes installed seats or trial logins from useful adoption. Usage must be interpreted with quality and risk. In this case: Continuing appropriate use and successful tasks reveal whether the tool becomes useful work practice.
 
-### Question 97 — D
+### Question 97 — B
 
-Answer: Google Cloud Contact Center as a Service. An overall cloud contact-center capability is broader than an AI helper or a conversation analytics component. Official exam-guide objective 2.3: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Compare a pilot with an appropriate control or baseline. A suitable comparison must account for staffing differences rather than attribute the whole effect to AI. Helps separate the effect of the intervention from seasonality and unrelated changes. Experiment design must be ethical and appropriate. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Translates supported text between languages; it does not by itself constitute structured document extraction.
-- **B:** Incorrect for this requirement. Provides supported guidance and assistance to human contact-center agents during their work.
-- **C:** Incorrect for this requirement. Analyzes customer conversations to identify themes, patterns, and operational improvement opportunities.
-- **D:** Correct. Provides cloud-based contact-center capabilities rather than merely analyzing historical conversation text.
+- **A:** Incorrect for this question. Makes improvement measurable against comparable conditions rather than attributing every later change to AI. In this case: A suitable comparison must account for staffing differences rather than attribute the whole effect to AI.
+- **B:** Correct. Helps separate the effect of the intervention from seasonality and unrelated changes. Experiment design must be ethical and appropriate. In this case: A suitable comparison must account for staffing differences rather than attribute the whole effect to AI.
+- **C:** Incorrect for this question. Checks a model-based evaluator for agreement, bias, and failure cases instead of treating the judge as ground truth. In this case: A suitable comparison must account for staffing differences rather than attribute the whole effect to AI.
+- **D:** Incorrect for this question. Turns field issues into improvements without treating popularity as proof of correctness. In this case: A suitable comparison must account for staffing differences rather than attribute the whole effect to AI.
 
-### Question 98 — A
+### Question 98 — C
 
-Answer: Gems in the Gemini app. Reusable personal assistant instructions inside the Gemini app point to Gems, not model training or model discovery. Official exam-guide objective 2.2: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Evaluate contractual, data, service, and exit terms. Review contractual, data, service, and exit requirements for the actual offering and proposed use. Assesses the actual provider and offering rather than relying only on branding or a model leaderboard. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Correct. Provide reusable personalized assistant instructions for supported tasks; they are not automatically a fully deployed enterprise agent platform.
-- **B:** Incorrect for this requirement. Brings supported AI assistance into Workspace applications such as Gmail and Docs, subject to edition and availability.
-- **C:** Incorrect for this requirement. Helps teams discover and evaluate supported Google, third-party, and open models, subject to model-specific terms and availability.
-- **D:** Incorrect for this requirement. Supports training suitable models with reduced manual model-development effort; it is not a general guarantee that every task can be automated.
+- **A:** Incorrect for this question. Checks logs, abuse monitoring, training use, deletion, account settings, and contracts. Frozen model weights alone do not establish zero retention. In this case: Review contractual, data, service, and exit requirements for the actual offering and proposed use.
+- **B:** Incorrect for this question. Checks source and output obligations rather than assuming AI generation removes intellectual-property restrictions. In this case: Review contractual, data, service, and exit requirements for the actual offering and proposed use.
+- **C:** Correct. Assesses the actual provider and offering rather than relying only on branding or a model leaderboard. In this case: Review contractual, data, service, and exit requirements for the actual offering and proposed use.
+- **D:** Incorrect for this question. Considers modality, quality, context, security, availability, customization, latency, and total cost. In this case: Review contractual, data, service, and exit requirements for the actual offering and proposed use.
 
-### Question 99 — A
+### Question 99 — C
 
-Answer: Use supported prebuilt APIs and low-code or no-code tools. Prebuilt APIs and suitable low-code tools reduce entry barriers, but do not remove responsibility for quality and governance. Official exam-guide objective 2.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Collect reviewed user feedback and verified outcomes. Review feedback against authoritative evidence before incorporating changes; user preference alone is not truth. Turns field issues into improvements without treating popularity as proof of correctness. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Correct. Can lower development barriers for suitable tasks without eliminating testing, governance, or all technical work.
-- **B:** Incorrect for this requirement. Learns model parameters from data; it is different from serving a trained model to users.
-- **C:** Incorrect for this requirement. Provides compute, accelerators, storage, networking, and supporting resources used to train and serve AI systems.
-- **D:** Incorrect for this requirement. Can increase cost or latency without establishing task suitability or meeting governance requirements.
+- **A:** Incorrect for this question. Checks a model-based evaluator for agreement, bias, and failure cases instead of treating the judge as ground truth. In this case: Review feedback against authoritative evidence before incorporating changes; user preference alone is not truth.
+- **B:** Incorrect for this question. Distinguishes installed seats or trial logins from useful adoption. Usage must be interpreted with quality and risk. In this case: Review feedback against authoritative evidence before incorporating changes; user preference alone is not truth.
+- **C:** Correct. Turns field issues into improvements without treating popularity as proof of correctness. In this case: Review feedback against authoritative evidence before incorporating changes; user preference alone is not truth.
+- **D:** Incorrect for this question. Tracks quality, usage, regressions, security updates, and changing conditions instead of assuming launch completes maintenance. In this case: Review feedback against authoritative evidence before incorporating changes; user preference alone is not truth.
 
-### Question 100 — B
+### Question 100 — C
 
-Answer: Pretraining knowledge cutoff. A model cannot inherently know facts that occurred after its training knowledge without additional information. Official exam-guide objective 3.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
+Answer: Define stopping, switching, and decommissioning criteria. Controlled decommissioning and transition criteria prevent abandoned access and unmanaged data copies. Protects against continuing a project because of sunk costs or indefinite vendor dependence. Closest official exam-guide objective 4.1: https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf Official study guide: https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf
 
-- **A:** Incorrect for this requirement. Is generated content that appears plausible but is factually wrong or unsupported by the available evidence.
-- **B:** Correct. Limits what facts could be learned during training; the model does not inherently know later events without additional evidence or tools.
-- **C:** Incorrect for this requirement. Bounds the information a model can consider within a request according to model-specific limits.
-- **D:** Incorrect for this requirement. Is a model-dependent input or output unit that may represent a word fragment; token count is not always word count.
+- **A:** Incorrect for this question. Reuses eligible results only within appropriate identity, freshness, and semantic boundaries. Similar wording alone does not make a cached answer safe. In this case: Controlled decommissioning and transition criteria prevent abandoned access and unmanaged data copies.
+- **B:** Incorrect for this question. Requires support, capacity, quality, and governance evidence, not just a successful demonstration. In this case: Controlled decommissioning and transition criteria prevent abandoned access and unmanaged data copies.
+- **C:** Correct. Protects against continuing a project because of sunk costs or indefinite vendor dependence. In this case: Controlled decommissioning and transition criteria prevent abandoned access and unmanaged data copies.
+- **D:** Incorrect for this question. Makes instruction changes identifiable, comparable, and reversible. A version label is useful only when actual content and dependencies are tracked. In this case: Controlled decommissioning and transition criteria prevent abandoned access and unmanaged data copies.
