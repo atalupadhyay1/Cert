@@ -1,0 +1,9014 @@
+{
+  "1": [
+    {
+      "question": 1,
+      "objective": 66,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "hallucination"
+      ],
+      "option_terms": [
+        "hallucination",
+        "token",
+        "context",
+        "cutoff"
+      ]
+    },
+    {
+      "question": 2,
+      "objective": 69,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "tune"
+      ],
+      "option_terms": [
+        "tune",
+        "prompt",
+        "temperature",
+        "rag"
+      ]
+    },
+    {
+      "question": 3,
+      "objective": 18,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "llm"
+      ],
+      "option_terms": [
+        "infra",
+        "regression",
+        "llm",
+        "structured"
+      ]
+    },
+    {
+      "question": 4,
+      "objective": 45,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "insights"
+      ],
+      "option_terms": [
+        "assist",
+        "insights",
+        "ccaas",
+        "conversational"
+      ]
+    },
+    {
+      "question": 5,
+      "objective": 4,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "supervised"
+      ],
+      "option_terms": [
+        "rules",
+        "unsupervised",
+        "supervised",
+        "reinforcement"
+      ]
+    },
+    {
+      "question": 6,
+      "objective": 75,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "chaining"
+      ],
+      "option_terms": [
+        "chaining",
+        "tune",
+        "few",
+        "length"
+      ]
+    },
+    {
+      "question": 7,
+      "objective": 43,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "conversational"
+      ],
+      "option_terms": [
+        "assist",
+        "ccaas",
+        "insights",
+        "conversational"
+      ]
+    },
+    {
+      "question": 8,
+      "objective": 64,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "database"
+      ],
+      "option_terms": [
+        "gemini",
+        "garden",
+        "imagen",
+        "database"
+      ]
+    },
+    {
+      "question": 9,
+      "objective": 90,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "adoption"
+      ],
+      "option_terms": [
+        "adoption",
+        "biggerdata",
+        "deploy",
+        "largest"
+      ]
+    },
+    {
+      "question": 10,
+      "objective": 23,
+      "domain": 1,
+      "task": "1.3",
+      "correct_terms": [
+        "platform"
+      ],
+      "option_terms": [
+        "agent",
+        "infra",
+        "platform",
+        "application"
+      ]
+    },
+    {
+      "question": 11,
+      "objective": 82,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "topp"
+      ],
+      "option_terms": [
+        "temperature",
+        "context",
+        "length",
+        "topp"
+      ]
+    },
+    {
+      "question": 12,
+      "objective": 15,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "deploy"
+      ],
+      "option_terms": [
+        "ingest",
+        "prepare",
+        "deploy",
+        "train"
+      ]
+    },
+    {
+      "question": 13,
+      "objective": 73,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "few"
+      ],
+      "option_terms": [
+        "tune",
+        "one",
+        "zero",
+        "few"
+      ]
+    },
+    {
+      "question": 14,
+      "objective": 81,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "temperature"
+      ],
+      "option_terms": [
+        "context",
+        "length",
+        "token",
+        "temperature"
+      ]
+    },
+    {
+      "question": 15,
+      "objective": 77,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "react"
+      ],
+      "option_terms": [
+        "cot",
+        "react",
+        "temperature",
+        "role"
+      ]
+    },
+    {
+      "question": 16,
+      "objective": 35,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "controls"
+      ],
+      "option_terms": [
+        "geminiapp",
+        "largest",
+        "controls",
+        "biggerdata"
+      ]
+    },
+    {
+      "question": 17,
+      "objective": 88,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "case_1_88_0"
+      ],
+      "option_terms": [
+        "case_1_88_1",
+        "case_1_88_0",
+        "case_1_88_3",
+        "case_1_88_2"
+      ]
+    },
+    {
+      "question": 18,
+      "objective": 29,
+      "domain": 1,
+      "task": "1.4",
+      "correct_terms": [
+        "veo"
+      ],
+      "option_terms": [
+        "imagen",
+        "gemma",
+        "classification",
+        "veo"
+      ]
+    },
+    {
+      "question": 19,
+      "objective": 37,
+      "domain": 2,
+      "task": "2.2",
+      "correct_terms": [
+        "gems"
+      ],
+      "option_terms": [
+        "automl",
+        "workspace",
+        "gems",
+        "garden"
+      ]
+    },
+    {
+      "question": 20,
+      "objective": 80,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "world"
+      ],
+      "option_terms": [
+        "firstparty",
+        "thirdparty",
+        "world",
+        "tune"
+      ]
+    },
+    {
+      "question": 21,
+      "objective": 83,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "length"
+      ],
+      "option_terms": [
+        "context",
+        "length",
+        "topp",
+        "temperature"
+      ]
+    },
+    {
+      "question": 22,
+      "objective": 40,
+      "domain": 2,
+      "task": "2.2",
+      "correct_terms": [
+        "notebook"
+      ],
+      "option_terms": [
+        "ccaas",
+        "notebook",
+        "garden",
+        "automl"
+      ]
+    },
+    {
+      "question": 23,
+      "objective": 51,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "agentstudio"
+      ],
+      "option_terms": [
+        "notebook",
+        "aistudio",
+        "agentstudio",
+        "gems"
+      ]
+    },
+    {
+      "question": 24,
+      "objective": 91,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "stakeholders"
+      ],
+      "option_terms": [
+        "cheapest",
+        "stakeholders",
+        "train",
+        "largest"
+      ]
+    },
+    {
+      "question": 25,
+      "objective": 67,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "cutoff"
+      ],
+      "option_terms": [
+        "cutoff",
+        "token",
+        "context",
+        "hallucination"
+      ]
+    },
+    {
+      "question": 26,
+      "objective": 32,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "gpu"
+      ],
+      "option_terms": [
+        "database",
+        "storage",
+        "gpu",
+        "cpu"
+      ]
+    },
+    {
+      "question": 27,
+      "objective": 65,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "tool"
+      ],
+      "option_terms": [
+        "geminiapp",
+        "prompt",
+        "garden",
+        "tool"
+      ]
+    },
+    {
+      "question": 28,
+      "objective": 54,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "run"
+      ],
+      "option_terms": [
+        "garden",
+        "run",
+        "storage",
+        "automl"
+      ]
+    },
+    {
+      "question": 29,
+      "objective": 56,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "stt"
+      ],
+      "option_terms": [
+        "stt",
+        "nlp",
+        "translation",
+        "tts"
+      ]
+    },
+    {
+      "question": 30,
+      "objective": 17,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "fm"
+      ],
+      "option_terms": [
+        "infra",
+        "fm",
+        "rules",
+        "classification"
+      ]
+    },
+    {
+      "question": 31,
+      "objective": 26,
+      "domain": 1,
+      "task": "1.4",
+      "correct_terms": [
+        "gemini"
+      ],
+      "option_terms": [
+        "gemini",
+        "veo",
+        "imagen",
+        "gemma"
+      ]
+    },
+    {
+      "question": 32,
+      "objective": 31,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "tpu"
+      ],
+      "option_terms": [
+        "tpu",
+        "cpu",
+        "gpu",
+        "storage"
+      ]
+    },
+    {
+      "question": 33,
+      "objective": 24,
+      "domain": 1,
+      "task": "1.3",
+      "correct_terms": [
+        "agent"
+      ],
+      "option_terms": [
+        "platform",
+        "infra",
+        "application",
+        "agent"
+      ]
+    },
+    {
+      "question": 34,
+      "objective": 25,
+      "domain": 1,
+      "task": "1.3",
+      "correct_terms": [
+        "application"
+      ],
+      "option_terms": [
+        "fm",
+        "platform",
+        "application",
+        "infra"
+      ]
+    },
+    {
+      "question": 35,
+      "objective": 98,
+      "domain": 4,
+      "task": "4.3",
+      "correct_terms": [
+        "pseudonym"
+      ],
+      "option_terms": [
+        "structured",
+        "pseudonym",
+        "unlabeled",
+        "anonym"
+      ]
+    },
+    {
+      "question": 36,
+      "objective": 72,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "one"
+      ],
+      "option_terms": [
+        "zero",
+        "one",
+        "few",
+        "tune"
+      ]
+    },
+    {
+      "question": 37,
+      "objective": 76,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "cot"
+      ],
+      "option_terms": [
+        "cot",
+        "react",
+        "temperature",
+        "role"
+      ]
+    },
+    {
+      "question": 38,
+      "objective": 60,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "docai"
+      ],
+      "option_terms": [
+        "vision",
+        "docai",
+        "translation",
+        "nlp"
+      ]
+    },
+    {
+      "question": 39,
+      "objective": 100,
+      "domain": 4,
+      "task": "4.3",
+      "correct_terms": [
+        "accountable"
+      ],
+      "option_terms": [
+        "accountable",
+        "transparent",
+        "largest",
+        "temperature"
+      ]
+    },
+    {
+      "question": 40,
+      "objective": 71,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "zero"
+      ],
+      "option_terms": [
+        "zero",
+        "tune",
+        "few",
+        "one"
+      ]
+    },
+    {
+      "question": 41,
+      "objective": 30,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "rules"
+      ],
+      "option_terms": [
+        "fm",
+        "agent",
+        "draft",
+        "rules"
+      ]
+    },
+    {
+      "question": 42,
+      "objective": 9,
+      "domain": 1,
+      "task": "1.2",
+      "correct_terms": [
+        "labeled"
+      ],
+      "option_terms": [
+        "unstructured",
+        "structured",
+        "labeled",
+        "unlabeled"
+      ]
+    },
+    {
+      "question": 43,
+      "objective": 21,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "case_1_21_0"
+      ],
+      "option_terms": [
+        "case_1_21_3",
+        "case_1_21_0",
+        "case_1_21_1",
+        "case_1_21_2"
+      ]
+    },
+    {
+      "question": 44,
+      "objective": 48,
+      "domain": 2,
+      "task": "2.4",
+      "correct_terms": [
+        "automl"
+      ],
+      "option_terms": [
+        "workspace",
+        "automl",
+        "search",
+        "garden"
+      ]
+    },
+    {
+      "question": 45,
+      "objective": 19,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "multi"
+      ],
+      "option_terms": [
+        "multi",
+        "regression",
+        "structured",
+        "llm"
+      ]
+    },
+    {
+      "question": 46,
+      "objective": 61,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "vision"
+      ],
+      "option_terms": [
+        "vision",
+        "nlp",
+        "video",
+        "imagen"
+      ]
+    },
+    {
+      "question": 47,
+      "objective": 22,
+      "domain": 1,
+      "task": "1.3",
+      "correct_terms": [
+        "infra"
+      ],
+      "option_terms": [
+        "application",
+        "platform",
+        "agent",
+        "infra"
+      ]
+    },
+    {
+      "question": 48,
+      "objective": 7,
+      "domain": 1,
+      "task": "1.2",
+      "correct_terms": [
+        "structured"
+      ],
+      "option_terms": [
+        "unstructured",
+        "unlabeled",
+        "labeled",
+        "structured"
+      ]
+    },
+    {
+      "question": 49,
+      "objective": 12,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "ingest"
+      ],
+      "option_terms": [
+        "deploy",
+        "prepare",
+        "train",
+        "ingest"
+      ]
+    },
+    {
+      "question": 50,
+      "objective": 86,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "priority"
+      ],
+      "option_terms": [
+        "cheapest",
+        "biggerdata",
+        "priority",
+        "largest"
+      ]
+    },
+    {
+      "question": 51,
+      "objective": 42,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "googlesearch"
+      ],
+      "option_terms": [
+        "enterprise",
+        "googlesearch",
+        "search",
+        "notebook"
+      ]
+    },
+    {
+      "question": 52,
+      "objective": 16,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "manage"
+      ],
+      "option_terms": [
+        "train",
+        "manage",
+        "prepare",
+        "ingest"
+      ]
+    },
+    {
+      "question": 53,
+      "objective": 10,
+      "domain": 1,
+      "task": "1.2",
+      "correct_terms": [
+        "quality"
+      ],
+      "option_terms": [
+        "prompt",
+        "biggerdata",
+        "quality",
+        "largest"
+      ]
+    },
+    {
+      "question": 54,
+      "objective": 89,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "kpi"
+      ],
+      "option_terms": [
+        "token",
+        "cheapest",
+        "kpi",
+        "largest"
+      ]
+    },
+    {
+      "question": 55,
+      "objective": 87,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "pilot"
+      ],
+      "option_terms": [
+        "largest",
+        "biggerdata",
+        "deploy",
+        "pilot"
+      ]
+    },
+    {
+      "question": 56,
+      "objective": 8,
+      "domain": 1,
+      "task": "1.2",
+      "correct_terms": [
+        "unstructured"
+      ],
+      "option_terms": [
+        "structured",
+        "regression",
+        "labeled",
+        "unstructured"
+      ]
+    },
+    {
+      "question": 57,
+      "objective": 55,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "functions"
+      ],
+      "option_terms": [
+        "storage",
+        "automl",
+        "functions",
+        "garden"
+      ]
+    },
+    {
+      "question": 58,
+      "objective": 6,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "reinforcement"
+      ],
+      "option_terms": [
+        "reinforcement",
+        "prepare",
+        "unsupervised",
+        "supervised"
+      ]
+    },
+    {
+      "question": 59,
+      "objective": 78,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "firstparty"
+      ],
+      "option_terms": [
+        "firstparty",
+        "temperature",
+        "thirdparty",
+        "world"
+      ]
+    },
+    {
+      "question": 60,
+      "objective": 39,
+      "domain": 2,
+      "task": "2.2",
+      "correct_terms": [
+        "case_1_39_0"
+      ],
+      "option_terms": [
+        "case_1_39_0",
+        "case_1_39_2",
+        "case_1_39_1",
+        "case_1_39_3"
+      ]
+    },
+    {
+      "question": 61,
+      "objective": 47,
+      "domain": 2,
+      "task": "2.4",
+      "correct_terms": [
+        "garden"
+      ],
+      "option_terms": [
+        "automl",
+        "workspace",
+        "garden",
+        "search"
+      ]
+    },
+    {
+      "question": 62,
+      "objective": 62,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "video"
+      ],
+      "option_terms": [
+        "vision",
+        "veo",
+        "video",
+        "nlp"
+      ]
+    },
+    {
+      "question": 63,
+      "objective": 46,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "ccaas"
+      ],
+      "option_terms": [
+        "ccaas",
+        "assist",
+        "translation",
+        "insights"
+      ]
+    },
+    {
+      "question": 64,
+      "objective": 1,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "gen"
+      ],
+      "option_terms": [
+        "rules",
+        "regression",
+        "gen",
+        "classification"
+      ]
+    },
+    {
+      "question": 65,
+      "objective": 85,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "softprompt"
+      ],
+      "option_terms": [
+        "tune",
+        "prompt",
+        "rag",
+        "softprompt"
+      ]
+    },
+    {
+      "question": 66,
+      "objective": 95,
+      "domain": 4,
+      "task": "4.2",
+      "correct_terms": [
+        "securelife"
+      ],
+      "option_terms": [
+        "largest",
+        "safety",
+        "securelife",
+        "deploy"
+      ]
+    },
+    {
+      "question": 67,
+      "objective": 70,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "human"
+      ],
+      "option_terms": [
+        "length",
+        "largest",
+        "human",
+        "temperature"
+      ]
+    },
+    {
+      "question": 68,
+      "objective": 68,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "case_1_68_0"
+      ],
+      "option_terms": [
+        "case_1_68_2",
+        "case_1_68_1",
+        "case_1_68_3",
+        "case_1_68_0"
+      ]
+    },
+    {
+      "question": 69,
+      "objective": 52,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "aistudio"
+      ],
+      "option_terms": [
+        "ccaas",
+        "agentstudio",
+        "aistudio",
+        "automl"
+      ]
+    },
+    {
+      "question": 70,
+      "objective": 49,
+      "domain": 2,
+      "task": "2.4",
+      "correct_terms": [
+        "customagents"
+      ],
+      "option_terms": [
+        "workspace",
+        "gems",
+        "garden",
+        "customagents"
+      ]
+    },
+    {
+      "question": 71,
+      "objective": 53,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "storage"
+      ],
+      "option_terms": [
+        "search",
+        "storage",
+        "automl",
+        "database"
+      ]
+    },
+    {
+      "question": 72,
+      "objective": 36,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "lowcode"
+      ],
+      "option_terms": [
+        "infra",
+        "largest",
+        "lowcode",
+        "train"
+      ]
+    },
+    {
+      "question": 73,
+      "objective": 28,
+      "domain": 1,
+      "task": "1.4",
+      "correct_terms": [
+        "imagen"
+      ],
+      "option_terms": [
+        "imagen",
+        "classification",
+        "veo",
+        "gemma"
+      ]
+    },
+    {
+      "question": 74,
+      "objective": 3,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "deep"
+      ],
+      "option_terms": [
+        "supervised",
+        "rules",
+        "structured",
+        "deep"
+      ]
+    },
+    {
+      "question": 75,
+      "objective": 79,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "thirdparty"
+      ],
+      "option_terms": [
+        "thirdparty",
+        "firstparty",
+        "world",
+        "tune"
+      ]
+    },
+    {
+      "question": 76,
+      "objective": 44,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "assist"
+      ],
+      "option_terms": [
+        "assist",
+        "conversational",
+        "ccaas",
+        "insights"
+      ]
+    },
+    {
+      "question": 77,
+      "objective": 11,
+      "domain": 1,
+      "task": "1.2",
+      "correct_terms": [
+        "access"
+      ],
+      "option_terms": [
+        "quality",
+        "access",
+        "largest",
+        "biggerdata"
+      ]
+    },
+    {
+      "question": 78,
+      "objective": 93,
+      "domain": 4,
+      "task": "4.2",
+      "correct_terms": [
+        "iam"
+      ],
+      "option_terms": [
+        "iam",
+        "quality",
+        "scc",
+        "safety"
+      ]
+    },
+    {
+      "question": 79,
+      "objective": 58,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "translation"
+      ],
+      "option_terms": [
+        "vision",
+        "translation",
+        "nlp",
+        "stt"
+      ]
+    },
+    {
+      "question": 80,
+      "objective": 5,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "unsupervised"
+      ],
+      "option_terms": [
+        "rules",
+        "reinforcement",
+        "unsupervised",
+        "supervised"
+      ]
+    },
+    {
+      "question": 81,
+      "objective": 94,
+      "domain": 4,
+      "task": "4.2",
+      "correct_terms": [
+        "scc"
+      ],
+      "option_terms": [
+        "prompt",
+        "iam",
+        "quality",
+        "scc"
+      ]
+    },
+    {
+      "question": 82,
+      "objective": 34,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "open"
+      ],
+      "option_terms": [
+        "cheapest",
+        "largest",
+        "rules",
+        "open"
+      ]
+    },
+    {
+      "question": 83,
+      "objective": 57,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "tts"
+      ],
+      "option_terms": [
+        "translation",
+        "tts",
+        "nlp",
+        "stt"
+      ]
+    },
+    {
+      "question": 84,
+      "objective": 84,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "monitor"
+      ],
+      "option_terms": [
+        "cheapest",
+        "monitor",
+        "biggerdata",
+        "largest"
+      ]
+    },
+    {
+      "question": 85,
+      "objective": 99,
+      "domain": 4,
+      "task": "4.3",
+      "correct_terms": [
+        "fair"
+      ],
+      "option_terms": [
+        "cheapest",
+        "fair",
+        "largest",
+        "quality"
+      ]
+    },
+    {
+      "question": 86,
+      "objective": 14,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "train"
+      ],
+      "option_terms": [
+        "inference",
+        "deploy",
+        "manage",
+        "train"
+      ]
+    },
+    {
+      "question": 87,
+      "objective": 41,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "search"
+      ],
+      "option_terms": [
+        "garden",
+        "search",
+        "googlesearch",
+        "automl"
+      ]
+    },
+    {
+      "question": 88,
+      "objective": 59,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "doctranslation"
+      ],
+      "option_terms": [
+        "doctranslation",
+        "translation",
+        "vision",
+        "docai"
+      ]
+    },
+    {
+      "question": 89,
+      "objective": 20,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "diffusion"
+      ],
+      "option_terms": [
+        "supervised",
+        "classification",
+        "regression",
+        "diffusion"
+      ]
+    },
+    {
+      "question": 90,
+      "objective": 38,
+      "domain": 2,
+      "task": "2.2",
+      "correct_terms": [
+        "workspace"
+      ],
+      "option_terms": [
+        "enterprise",
+        "workspace",
+        "garden",
+        "automl"
+      ]
+    },
+    {
+      "question": 91,
+      "objective": 33,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "managed"
+      ],
+      "option_terms": [
+        "storage",
+        "largest",
+        "managed",
+        "cheapest"
+      ]
+    },
+    {
+      "question": 92,
+      "objective": 63,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "nlp"
+      ],
+      "option_terms": [
+        "nlp",
+        "stt",
+        "tts",
+        "translation"
+      ]
+    },
+    {
+      "question": 93,
+      "objective": 2,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "ml"
+      ],
+      "option_terms": [
+        "rules",
+        "application",
+        "infra",
+        "ml"
+      ]
+    },
+    {
+      "question": 94,
+      "objective": 96,
+      "domain": 4,
+      "task": "4.3",
+      "correct_terms": [
+        "transparent"
+      ],
+      "option_terms": [
+        "temperature",
+        "safety",
+        "transparent",
+        "accountable"
+      ]
+    },
+    {
+      "question": 95,
+      "objective": 97,
+      "domain": 4,
+      "task": "4.3",
+      "correct_terms": [
+        "privacy"
+      ],
+      "option_terms": [
+        "prompt",
+        "privacy",
+        "biggerdata",
+        "largest"
+      ]
+    },
+    {
+      "question": 96,
+      "objective": 92,
+      "domain": 4,
+      "task": "4.2",
+      "correct_terms": [
+        "saif"
+      ],
+      "option_terms": [
+        "safety",
+        "scc",
+        "iam",
+        "saif"
+      ]
+    },
+    {
+      "question": 97,
+      "objective": 27,
+      "domain": 1,
+      "task": "1.4",
+      "correct_terms": [
+        "gemma"
+      ],
+      "option_terms": [
+        "veo",
+        "gemini",
+        "imagen",
+        "gemma"
+      ]
+    },
+    {
+      "question": 98,
+      "objective": 74,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "role"
+      ],
+      "option_terms": [
+        "role",
+        "tune",
+        "few",
+        "rag"
+      ]
+    },
+    {
+      "question": 99,
+      "objective": 50,
+      "domain": 2,
+      "task": "2.4",
+      "correct_terms": [
+        "ragapi"
+      ],
+      "option_terms": [
+        "ragapi",
+        "train",
+        "automl",
+        "gems"
+      ]
+    },
+    {
+      "question": 100,
+      "objective": 13,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "prepare"
+      ],
+      "option_terms": [
+        "deploy",
+        "prepare",
+        "train",
+        "ingest"
+      ]
+    }
+  ],
+  "2": [
+    {
+      "question": 1,
+      "objective": 20,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "diffusion"
+      ],
+      "option_terms": [
+        "supervised",
+        "diffusion",
+        "classification",
+        "regression"
+      ]
+    },
+    {
+      "question": 2,
+      "objective": 51,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "agentstudio"
+      ],
+      "option_terms": [
+        "aistudio",
+        "agentstudio",
+        "gems",
+        "notebook"
+      ]
+    },
+    {
+      "question": 3,
+      "objective": 32,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "gpu"
+      ],
+      "option_terms": [
+        "database",
+        "gpu",
+        "storage",
+        "cpu"
+      ]
+    },
+    {
+      "question": 4,
+      "objective": 21,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "choose"
+      ],
+      "option_terms": [
+        "cheapest",
+        "choose",
+        "biggerdata",
+        "largest"
+      ]
+    },
+    {
+      "question": 5,
+      "objective": 72,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "one"
+      ],
+      "option_terms": [
+        "one",
+        "tune",
+        "few",
+        "zero"
+      ]
+    },
+    {
+      "question": 6,
+      "objective": 65,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "tool"
+      ],
+      "option_terms": [
+        "garden",
+        "prompt",
+        "tool",
+        "geminiapp"
+      ]
+    },
+    {
+      "question": 7,
+      "objective": 35,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "controls"
+      ],
+      "option_terms": [
+        "controls",
+        "largest",
+        "biggerdata",
+        "geminiapp"
+      ]
+    },
+    {
+      "question": 8,
+      "objective": 90,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "adoption"
+      ],
+      "option_terms": [
+        "adoption",
+        "largest",
+        "biggerdata",
+        "deploy"
+      ]
+    },
+    {
+      "question": 9,
+      "objective": 80,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "world"
+      ],
+      "option_terms": [
+        "tune",
+        "firstparty",
+        "thirdparty",
+        "world"
+      ]
+    },
+    {
+      "question": 10,
+      "objective": 85,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "softprompt"
+      ],
+      "option_terms": [
+        "rag",
+        "prompt",
+        "softprompt",
+        "tune"
+      ]
+    },
+    {
+      "question": 11,
+      "objective": 12,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "ingest"
+      ],
+      "option_terms": [
+        "prepare",
+        "deploy",
+        "ingest",
+        "train"
+      ]
+    },
+    {
+      "question": 12,
+      "objective": 67,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "cutoff"
+      ],
+      "option_terms": [
+        "hallucination",
+        "context",
+        "cutoff",
+        "token"
+      ]
+    },
+    {
+      "question": 13,
+      "objective": 60,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "docai"
+      ],
+      "option_terms": [
+        "docai",
+        "vision",
+        "translation",
+        "nlp"
+      ]
+    },
+    {
+      "question": 14,
+      "objective": 93,
+      "domain": 4,
+      "task": "4.2",
+      "correct_terms": [
+        "iam"
+      ],
+      "option_terms": [
+        "quality",
+        "scc",
+        "iam",
+        "safety"
+      ]
+    },
+    {
+      "question": 15,
+      "objective": 1,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "gen"
+      ],
+      "option_terms": [
+        "classification",
+        "regression",
+        "gen",
+        "rules"
+      ]
+    },
+    {
+      "question": 16,
+      "objective": 88,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "case_2_88_0"
+      ],
+      "option_terms": [
+        "case_2_88_1",
+        "case_2_88_2",
+        "case_2_88_0",
+        "case_2_88_3"
+      ]
+    },
+    {
+      "question": 17,
+      "objective": 40,
+      "domain": 2,
+      "task": "2.2",
+      "correct_terms": [
+        "notebook"
+      ],
+      "option_terms": [
+        "ccaas",
+        "automl",
+        "notebook",
+        "garden"
+      ]
+    },
+    {
+      "question": 18,
+      "objective": 47,
+      "domain": 2,
+      "task": "2.4",
+      "correct_terms": [
+        "garden"
+      ],
+      "option_terms": [
+        "garden",
+        "automl",
+        "search",
+        "workspace"
+      ]
+    },
+    {
+      "question": 19,
+      "objective": 37,
+      "domain": 2,
+      "task": "2.2",
+      "correct_terms": [
+        "gems"
+      ],
+      "option_terms": [
+        "garden",
+        "automl",
+        "workspace",
+        "gems"
+      ]
+    },
+    {
+      "question": 20,
+      "objective": 14,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "train"
+      ],
+      "option_terms": [
+        "train",
+        "inference",
+        "deploy",
+        "manage"
+      ]
+    },
+    {
+      "question": 21,
+      "objective": 76,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "cot"
+      ],
+      "option_terms": [
+        "cot",
+        "role",
+        "temperature",
+        "react"
+      ]
+    },
+    {
+      "question": 22,
+      "objective": 24,
+      "domain": 1,
+      "task": "1.3",
+      "correct_terms": [
+        "agent"
+      ],
+      "option_terms": [
+        "platform",
+        "application",
+        "agent",
+        "infra"
+      ]
+    },
+    {
+      "question": 23,
+      "objective": 97,
+      "domain": 4,
+      "task": "4.3",
+      "correct_terms": [
+        "privacy"
+      ],
+      "option_terms": [
+        "biggerdata",
+        "prompt",
+        "privacy",
+        "largest"
+      ]
+    },
+    {
+      "question": 24,
+      "objective": 92,
+      "domain": 4,
+      "task": "4.2",
+      "correct_terms": [
+        "saif"
+      ],
+      "option_terms": [
+        "scc",
+        "saif",
+        "safety",
+        "iam"
+      ]
+    },
+    {
+      "question": 25,
+      "objective": 8,
+      "domain": 1,
+      "task": "1.2",
+      "correct_terms": [
+        "unstructured"
+      ],
+      "option_terms": [
+        "regression",
+        "labeled",
+        "structured",
+        "unstructured"
+      ]
+    },
+    {
+      "question": 26,
+      "objective": 68,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "rag"
+      ],
+      "option_terms": [
+        "tune",
+        "softprompt",
+        "largest",
+        "rag"
+      ]
+    },
+    {
+      "question": 27,
+      "objective": 87,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "pilot"
+      ],
+      "option_terms": [
+        "deploy",
+        "largest",
+        "biggerdata",
+        "pilot"
+      ]
+    },
+    {
+      "question": 28,
+      "objective": 94,
+      "domain": 4,
+      "task": "4.2",
+      "correct_terms": [
+        "scc"
+      ],
+      "option_terms": [
+        "scc",
+        "iam",
+        "quality",
+        "prompt"
+      ]
+    },
+    {
+      "question": 29,
+      "objective": 82,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "topp"
+      ],
+      "option_terms": [
+        "temperature",
+        "length",
+        "topp",
+        "context"
+      ]
+    },
+    {
+      "question": 30,
+      "objective": 10,
+      "domain": 1,
+      "task": "1.2",
+      "correct_terms": [
+        "case_2_10_0"
+      ],
+      "option_terms": [
+        "case_2_10_3",
+        "case_2_10_0",
+        "case_2_10_1",
+        "case_2_10_2"
+      ]
+    },
+    {
+      "question": 31,
+      "objective": 81,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "case_2_81_0"
+      ],
+      "option_terms": [
+        "case_2_81_3",
+        "case_2_81_2",
+        "case_2_81_1",
+        "case_2_81_0"
+      ]
+    },
+    {
+      "question": 32,
+      "objective": 78,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "firstparty"
+      ],
+      "option_terms": [
+        "world",
+        "temperature",
+        "firstparty",
+        "thirdparty"
+      ]
+    },
+    {
+      "question": 33,
+      "objective": 52,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "aistudio"
+      ],
+      "option_terms": [
+        "automl",
+        "aistudio",
+        "ccaas",
+        "agentstudio"
+      ]
+    },
+    {
+      "question": 34,
+      "objective": 44,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "case_2_44_0"
+      ],
+      "option_terms": [
+        "case_2_44_3",
+        "case_2_44_2",
+        "case_2_44_1",
+        "case_2_44_0"
+      ]
+    },
+    {
+      "question": 35,
+      "objective": 64,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "database"
+      ],
+      "option_terms": [
+        "imagen",
+        "database",
+        "garden",
+        "gemini"
+      ]
+    },
+    {
+      "question": 36,
+      "objective": 25,
+      "domain": 1,
+      "task": "1.3",
+      "correct_terms": [
+        "application"
+      ],
+      "option_terms": [
+        "platform",
+        "fm",
+        "infra",
+        "application"
+      ]
+    },
+    {
+      "question": 37,
+      "objective": 83,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "length"
+      ],
+      "option_terms": [
+        "temperature",
+        "length",
+        "topp",
+        "context"
+      ]
+    },
+    {
+      "question": 38,
+      "objective": 95,
+      "domain": 4,
+      "task": "4.2",
+      "correct_terms": [
+        "securelife"
+      ],
+      "option_terms": [
+        "securelife",
+        "deploy",
+        "safety",
+        "largest"
+      ]
+    },
+    {
+      "question": 39,
+      "objective": 69,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "tune"
+      ],
+      "option_terms": [
+        "tune",
+        "rag",
+        "temperature",
+        "prompt"
+      ]
+    },
+    {
+      "question": 40,
+      "objective": 54,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "run"
+      ],
+      "option_terms": [
+        "garden",
+        "run",
+        "storage",
+        "automl"
+      ]
+    },
+    {
+      "question": 41,
+      "objective": 71,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "zero"
+      ],
+      "option_terms": [
+        "zero",
+        "tune",
+        "few",
+        "one"
+      ]
+    },
+    {
+      "question": 42,
+      "objective": 5,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "unsupervised"
+      ],
+      "option_terms": [
+        "rules",
+        "supervised",
+        "reinforcement",
+        "unsupervised"
+      ]
+    },
+    {
+      "question": 43,
+      "objective": 28,
+      "domain": 1,
+      "task": "1.4",
+      "correct_terms": [
+        "imagen"
+      ],
+      "option_terms": [
+        "classification",
+        "veo",
+        "imagen",
+        "gemma"
+      ]
+    },
+    {
+      "question": 44,
+      "objective": 42,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "googlesearch"
+      ],
+      "option_terms": [
+        "notebook",
+        "search",
+        "enterprise",
+        "googlesearch"
+      ]
+    },
+    {
+      "question": 45,
+      "objective": 79,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "thirdparty"
+      ],
+      "option_terms": [
+        "tune",
+        "firstparty",
+        "thirdparty",
+        "world"
+      ]
+    },
+    {
+      "question": 46,
+      "objective": 49,
+      "domain": 2,
+      "task": "2.4",
+      "correct_terms": [
+        "customagents"
+      ],
+      "option_terms": [
+        "workspace",
+        "gems",
+        "garden",
+        "customagents"
+      ]
+    },
+    {
+      "question": 47,
+      "objective": 17,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "fm"
+      ],
+      "option_terms": [
+        "rules",
+        "fm",
+        "infra",
+        "classification"
+      ]
+    },
+    {
+      "question": 48,
+      "objective": 9,
+      "domain": 1,
+      "task": "1.2",
+      "correct_terms": [
+        "labeled"
+      ],
+      "option_terms": [
+        "structured",
+        "unlabeled",
+        "unstructured",
+        "labeled"
+      ]
+    },
+    {
+      "question": 49,
+      "objective": 18,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "llm"
+      ],
+      "option_terms": [
+        "infra",
+        "regression",
+        "llm",
+        "structured"
+      ]
+    },
+    {
+      "question": 50,
+      "objective": 2,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "ml"
+      ],
+      "option_terms": [
+        "rules",
+        "ml",
+        "application",
+        "infra"
+      ]
+    },
+    {
+      "question": 51,
+      "objective": 34,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "open"
+      ],
+      "option_terms": [
+        "open",
+        "largest",
+        "cheapest",
+        "rules"
+      ]
+    },
+    {
+      "question": 52,
+      "objective": 55,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "functions"
+      ],
+      "option_terms": [
+        "garden",
+        "automl",
+        "storage",
+        "functions"
+      ]
+    },
+    {
+      "question": 53,
+      "objective": 13,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "prepare"
+      ],
+      "option_terms": [
+        "prepare",
+        "deploy",
+        "ingest",
+        "train"
+      ]
+    },
+    {
+      "question": 54,
+      "objective": 63,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "nlp"
+      ],
+      "option_terms": [
+        "tts",
+        "nlp",
+        "translation",
+        "stt"
+      ]
+    },
+    {
+      "question": 55,
+      "objective": 41,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "search"
+      ],
+      "option_terms": [
+        "search",
+        "automl",
+        "googlesearch",
+        "garden"
+      ]
+    },
+    {
+      "question": 56,
+      "objective": 15,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "deploy"
+      ],
+      "option_terms": [
+        "train",
+        "deploy",
+        "prepare",
+        "ingest"
+      ]
+    },
+    {
+      "question": 57,
+      "objective": 61,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "vision"
+      ],
+      "option_terms": [
+        "imagen",
+        "video",
+        "vision",
+        "nlp"
+      ]
+    },
+    {
+      "question": 58,
+      "objective": 45,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "insights"
+      ],
+      "option_terms": [
+        "insights",
+        "conversational",
+        "assist",
+        "ccaas"
+      ]
+    },
+    {
+      "question": 59,
+      "objective": 98,
+      "domain": 4,
+      "task": "4.3",
+      "correct_terms": [
+        "pseudonym"
+      ],
+      "option_terms": [
+        "unlabeled",
+        "anonym",
+        "structured",
+        "pseudonym"
+      ]
+    },
+    {
+      "question": 60,
+      "objective": 73,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "few"
+      ],
+      "option_terms": [
+        "zero",
+        "one",
+        "tune",
+        "few"
+      ]
+    },
+    {
+      "question": 61,
+      "objective": 66,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "hallucination"
+      ],
+      "option_terms": [
+        "cutoff",
+        "context",
+        "token",
+        "hallucination"
+      ]
+    },
+    {
+      "question": 62,
+      "objective": 19,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "multi"
+      ],
+      "option_terms": [
+        "regression",
+        "llm",
+        "multi",
+        "structured"
+      ]
+    },
+    {
+      "question": 63,
+      "objective": 86,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "priority"
+      ],
+      "option_terms": [
+        "biggerdata",
+        "largest",
+        "cheapest",
+        "priority"
+      ]
+    },
+    {
+      "question": 64,
+      "objective": 75,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "chaining"
+      ],
+      "option_terms": [
+        "tune",
+        "chaining",
+        "few",
+        "length"
+      ]
+    },
+    {
+      "question": 65,
+      "objective": 36,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "lowcode"
+      ],
+      "option_terms": [
+        "lowcode",
+        "largest",
+        "train",
+        "infra"
+      ]
+    },
+    {
+      "question": 66,
+      "objective": 84,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "monitor"
+      ],
+      "option_terms": [
+        "cheapest",
+        "monitor",
+        "biggerdata",
+        "largest"
+      ]
+    },
+    {
+      "question": 67,
+      "objective": 4,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "supervised"
+      ],
+      "option_terms": [
+        "unsupervised",
+        "rules",
+        "reinforcement",
+        "supervised"
+      ]
+    },
+    {
+      "question": 68,
+      "objective": 29,
+      "domain": 1,
+      "task": "1.4",
+      "correct_terms": [
+        "veo"
+      ],
+      "option_terms": [
+        "classification",
+        "gemma",
+        "imagen",
+        "veo"
+      ]
+    },
+    {
+      "question": 69,
+      "objective": 23,
+      "domain": 1,
+      "task": "1.3",
+      "correct_terms": [
+        "platform"
+      ],
+      "option_terms": [
+        "platform",
+        "agent",
+        "application",
+        "infra"
+      ]
+    },
+    {
+      "question": 70,
+      "objective": 27,
+      "domain": 1,
+      "task": "1.4",
+      "correct_terms": [
+        "gemma"
+      ],
+      "option_terms": [
+        "gemma",
+        "veo",
+        "gemini",
+        "imagen"
+      ]
+    },
+    {
+      "question": 71,
+      "objective": 48,
+      "domain": 2,
+      "task": "2.4",
+      "correct_terms": [
+        "automl"
+      ],
+      "option_terms": [
+        "search",
+        "workspace",
+        "automl",
+        "garden"
+      ]
+    },
+    {
+      "question": 72,
+      "objective": 46,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "ccaas"
+      ],
+      "option_terms": [
+        "assist",
+        "ccaas",
+        "insights",
+        "translation"
+      ]
+    },
+    {
+      "question": 73,
+      "objective": 43,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "conversational"
+      ],
+      "option_terms": [
+        "insights",
+        "ccaas",
+        "conversational",
+        "assist"
+      ]
+    },
+    {
+      "question": 74,
+      "objective": 3,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "deep"
+      ],
+      "option_terms": [
+        "deep",
+        "supervised",
+        "rules",
+        "structured"
+      ]
+    },
+    {
+      "question": 75,
+      "objective": 57,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "tts"
+      ],
+      "option_terms": [
+        "stt",
+        "tts",
+        "nlp",
+        "translation"
+      ]
+    },
+    {
+      "question": 76,
+      "objective": 77,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "react"
+      ],
+      "option_terms": [
+        "react",
+        "role",
+        "cot",
+        "temperature"
+      ]
+    },
+    {
+      "question": 77,
+      "objective": 11,
+      "domain": 1,
+      "task": "1.2",
+      "correct_terms": [
+        "access"
+      ],
+      "option_terms": [
+        "quality",
+        "largest",
+        "access",
+        "biggerdata"
+      ]
+    },
+    {
+      "question": 78,
+      "objective": 38,
+      "domain": 2,
+      "task": "2.2",
+      "correct_terms": [
+        "workspace"
+      ],
+      "option_terms": [
+        "automl",
+        "workspace",
+        "garden",
+        "enterprise"
+      ]
+    },
+    {
+      "question": 79,
+      "objective": 56,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "stt"
+      ],
+      "option_terms": [
+        "tts",
+        "stt",
+        "nlp",
+        "translation"
+      ]
+    },
+    {
+      "question": 80,
+      "objective": 33,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "managed"
+      ],
+      "option_terms": [
+        "largest",
+        "managed",
+        "storage",
+        "cheapest"
+      ]
+    },
+    {
+      "question": 81,
+      "objective": 91,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "stakeholders"
+      ],
+      "option_terms": [
+        "train",
+        "largest",
+        "stakeholders",
+        "cheapest"
+      ]
+    },
+    {
+      "question": 82,
+      "objective": 96,
+      "domain": 4,
+      "task": "4.3",
+      "correct_terms": [
+        "transparent"
+      ],
+      "option_terms": [
+        "temperature",
+        "safety",
+        "transparent",
+        "accountable"
+      ]
+    },
+    {
+      "question": 83,
+      "objective": 74,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "role"
+      ],
+      "option_terms": [
+        "tune",
+        "rag",
+        "few",
+        "role"
+      ]
+    },
+    {
+      "question": 84,
+      "objective": 89,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "kpi"
+      ],
+      "option_terms": [
+        "token",
+        "cheapest",
+        "largest",
+        "kpi"
+      ]
+    },
+    {
+      "question": 85,
+      "objective": 99,
+      "domain": 4,
+      "task": "4.3",
+      "correct_terms": [
+        "fair"
+      ],
+      "option_terms": [
+        "cheapest",
+        "largest",
+        "fair",
+        "quality"
+      ]
+    },
+    {
+      "question": 86,
+      "objective": 6,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "reinforcement"
+      ],
+      "option_terms": [
+        "prepare",
+        "reinforcement",
+        "unsupervised",
+        "supervised"
+      ]
+    },
+    {
+      "question": 87,
+      "objective": 62,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "video"
+      ],
+      "option_terms": [
+        "video",
+        "nlp",
+        "vision",
+        "veo"
+      ]
+    },
+    {
+      "question": 88,
+      "objective": 39,
+      "domain": 2,
+      "task": "2.2",
+      "correct_terms": [
+        "enterprise"
+      ],
+      "option_terms": [
+        "googlesearch",
+        "workspace",
+        "garden",
+        "enterprise"
+      ]
+    },
+    {
+      "question": 89,
+      "objective": 31,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "tpu"
+      ],
+      "option_terms": [
+        "tpu",
+        "gpu",
+        "cpu",
+        "storage"
+      ]
+    },
+    {
+      "question": 90,
+      "objective": 53,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "storage"
+      ],
+      "option_terms": [
+        "storage",
+        "search",
+        "database",
+        "automl"
+      ]
+    },
+    {
+      "question": 91,
+      "objective": 30,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "rules"
+      ],
+      "option_terms": [
+        "agent",
+        "rules",
+        "draft",
+        "fm"
+      ]
+    },
+    {
+      "question": 92,
+      "objective": 70,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "human"
+      ],
+      "option_terms": [
+        "largest",
+        "length",
+        "human",
+        "temperature"
+      ]
+    },
+    {
+      "question": 93,
+      "objective": 16,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "manage"
+      ],
+      "option_terms": [
+        "prepare",
+        "manage",
+        "ingest",
+        "train"
+      ]
+    },
+    {
+      "question": 94,
+      "objective": 100,
+      "domain": 4,
+      "task": "4.3",
+      "correct_terms": [
+        "accountable"
+      ],
+      "option_terms": [
+        "temperature",
+        "transparent",
+        "largest",
+        "accountable"
+      ]
+    },
+    {
+      "question": 95,
+      "objective": 58,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "translation"
+      ],
+      "option_terms": [
+        "translation",
+        "nlp",
+        "vision",
+        "stt"
+      ]
+    },
+    {
+      "question": 96,
+      "objective": 26,
+      "domain": 1,
+      "task": "1.4",
+      "correct_terms": [
+        "gemini"
+      ],
+      "option_terms": [
+        "gemini",
+        "gemma",
+        "imagen",
+        "veo"
+      ]
+    },
+    {
+      "question": 97,
+      "objective": 59,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "doctranslation"
+      ],
+      "option_terms": [
+        "vision",
+        "translation",
+        "doctranslation",
+        "docai"
+      ]
+    },
+    {
+      "question": 98,
+      "objective": 22,
+      "domain": 1,
+      "task": "1.3",
+      "correct_terms": [
+        "infra"
+      ],
+      "option_terms": [
+        "application",
+        "agent",
+        "platform",
+        "infra"
+      ]
+    },
+    {
+      "question": 99,
+      "objective": 7,
+      "domain": 1,
+      "task": "1.2",
+      "correct_terms": [
+        "structured"
+      ],
+      "option_terms": [
+        "unlabeled",
+        "labeled",
+        "unstructured",
+        "structured"
+      ]
+    },
+    {
+      "question": 100,
+      "objective": 50,
+      "domain": 2,
+      "task": "2.4",
+      "correct_terms": [
+        "ragapi"
+      ],
+      "option_terms": [
+        "train",
+        "ragapi",
+        "gems",
+        "automl"
+      ]
+    }
+  ],
+  "3": [
+    {
+      "question": 1,
+      "objective": 19,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "multi"
+      ],
+      "option_terms": [
+        "structured",
+        "regression",
+        "multi",
+        "llm"
+      ]
+    },
+    {
+      "question": 2,
+      "objective": 54,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "run"
+      ],
+      "option_terms": [
+        "run",
+        "storage",
+        "garden",
+        "automl"
+      ]
+    },
+    {
+      "question": 3,
+      "objective": 61,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "vision"
+      ],
+      "option_terms": [
+        "nlp",
+        "imagen",
+        "video",
+        "vision"
+      ]
+    },
+    {
+      "question": 4,
+      "objective": 22,
+      "domain": 1,
+      "task": "1.3",
+      "correct_terms": [
+        "infra"
+      ],
+      "option_terms": [
+        "infra",
+        "platform",
+        "application",
+        "agent"
+      ]
+    },
+    {
+      "question": 5,
+      "objective": 68,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "rag"
+      ],
+      "option_terms": [
+        "tune",
+        "largest",
+        "rag",
+        "softprompt"
+      ]
+    },
+    {
+      "question": 6,
+      "objective": 58,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "translation"
+      ],
+      "option_terms": [
+        "vision",
+        "nlp",
+        "translation",
+        "stt"
+      ]
+    },
+    {
+      "question": 7,
+      "objective": 31,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "tpu"
+      ],
+      "option_terms": [
+        "storage",
+        "cpu",
+        "tpu",
+        "gpu"
+      ]
+    },
+    {
+      "question": 8,
+      "objective": 87,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "pilot"
+      ],
+      "option_terms": [
+        "largest",
+        "biggerdata",
+        "pilot",
+        "deploy"
+      ]
+    },
+    {
+      "question": 9,
+      "objective": 45,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "insights"
+      ],
+      "option_terms": [
+        "conversational",
+        "insights",
+        "assist",
+        "ccaas"
+      ]
+    },
+    {
+      "question": 10,
+      "objective": 66,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "hallucination"
+      ],
+      "option_terms": [
+        "context",
+        "cutoff",
+        "token",
+        "hallucination"
+      ]
+    },
+    {
+      "question": 11,
+      "objective": 25,
+      "domain": 1,
+      "task": "1.3",
+      "correct_terms": [
+        "application"
+      ],
+      "option_terms": [
+        "infra",
+        "application",
+        "fm",
+        "platform"
+      ]
+    },
+    {
+      "question": 12,
+      "objective": 6,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "reinforcement"
+      ],
+      "option_terms": [
+        "reinforcement",
+        "prepare",
+        "unsupervised",
+        "supervised"
+      ]
+    },
+    {
+      "question": 13,
+      "objective": 63,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "nlp"
+      ],
+      "option_terms": [
+        "translation",
+        "tts",
+        "stt",
+        "nlp"
+      ]
+    },
+    {
+      "question": 14,
+      "objective": 77,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "react"
+      ],
+      "option_terms": [
+        "role",
+        "react",
+        "cot",
+        "temperature"
+      ]
+    },
+    {
+      "question": 15,
+      "objective": 90,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "adoption"
+      ],
+      "option_terms": [
+        "biggerdata",
+        "deploy",
+        "adoption",
+        "largest"
+      ]
+    },
+    {
+      "question": 16,
+      "objective": 32,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "gpu"
+      ],
+      "option_terms": [
+        "gpu",
+        "storage",
+        "database",
+        "cpu"
+      ]
+    },
+    {
+      "question": 17,
+      "objective": 3,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "deep"
+      ],
+      "option_terms": [
+        "deep",
+        "structured",
+        "rules",
+        "supervised"
+      ]
+    },
+    {
+      "question": 18,
+      "objective": 92,
+      "domain": 4,
+      "task": "4.2",
+      "correct_terms": [
+        "saif"
+      ],
+      "option_terms": [
+        "scc",
+        "iam",
+        "safety",
+        "saif"
+      ]
+    },
+    {
+      "question": 19,
+      "objective": 14,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "train"
+      ],
+      "option_terms": [
+        "manage",
+        "deploy",
+        "train",
+        "inference"
+      ]
+    },
+    {
+      "question": 20,
+      "objective": 65,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "tool"
+      ],
+      "option_terms": [
+        "prompt",
+        "tool",
+        "garden",
+        "geminiapp"
+      ]
+    },
+    {
+      "question": 21,
+      "objective": 41,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "search"
+      ],
+      "option_terms": [
+        "search",
+        "automl",
+        "garden",
+        "googlesearch"
+      ]
+    },
+    {
+      "question": 22,
+      "objective": 27,
+      "domain": 1,
+      "task": "1.4",
+      "correct_terms": [
+        "gemma"
+      ],
+      "option_terms": [
+        "gemma",
+        "imagen",
+        "gemini",
+        "veo"
+      ]
+    },
+    {
+      "question": 23,
+      "objective": 89,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "kpi"
+      ],
+      "option_terms": [
+        "token",
+        "largest",
+        "cheapest",
+        "kpi"
+      ]
+    },
+    {
+      "question": 24,
+      "objective": 53,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "storage"
+      ],
+      "option_terms": [
+        "search",
+        "storage",
+        "automl",
+        "database"
+      ]
+    },
+    {
+      "question": 25,
+      "objective": 99,
+      "domain": 4,
+      "task": "4.3",
+      "correct_terms": [
+        "fair"
+      ],
+      "option_terms": [
+        "fair",
+        "quality",
+        "cheapest",
+        "largest"
+      ]
+    },
+    {
+      "question": 26,
+      "objective": 17,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "fm"
+      ],
+      "option_terms": [
+        "classification",
+        "infra",
+        "rules",
+        "fm"
+      ]
+    },
+    {
+      "question": 27,
+      "objective": 50,
+      "domain": 2,
+      "task": "2.4",
+      "correct_terms": [
+        "ragapi"
+      ],
+      "option_terms": [
+        "automl",
+        "train",
+        "ragapi",
+        "gems"
+      ]
+    },
+    {
+      "question": 28,
+      "objective": 57,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "tts"
+      ],
+      "option_terms": [
+        "stt",
+        "tts",
+        "nlp",
+        "translation"
+      ]
+    },
+    {
+      "question": 29,
+      "objective": 2,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "ml"
+      ],
+      "option_terms": [
+        "rules",
+        "infra",
+        "ml",
+        "application"
+      ]
+    },
+    {
+      "question": 30,
+      "objective": 8,
+      "domain": 1,
+      "task": "1.2",
+      "correct_terms": [
+        "unstructured"
+      ],
+      "option_terms": [
+        "structured",
+        "unstructured",
+        "regression",
+        "labeled"
+      ]
+    },
+    {
+      "question": 31,
+      "objective": 69,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "tune"
+      ],
+      "option_terms": [
+        "temperature",
+        "prompt",
+        "tune",
+        "rag"
+      ]
+    },
+    {
+      "question": 32,
+      "objective": 23,
+      "domain": 1,
+      "task": "1.3",
+      "correct_terms": [
+        "platform"
+      ],
+      "option_terms": [
+        "application",
+        "infra",
+        "platform",
+        "agent"
+      ]
+    },
+    {
+      "question": 33,
+      "objective": 34,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "open"
+      ],
+      "option_terms": [
+        "largest",
+        "open",
+        "cheapest",
+        "rules"
+      ]
+    },
+    {
+      "question": 34,
+      "objective": 16,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "manage"
+      ],
+      "option_terms": [
+        "prepare",
+        "ingest",
+        "train",
+        "manage"
+      ]
+    },
+    {
+      "question": 35,
+      "objective": 60,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "docai"
+      ],
+      "option_terms": [
+        "translation",
+        "docai",
+        "nlp",
+        "vision"
+      ]
+    },
+    {
+      "question": 36,
+      "objective": 59,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "doctranslation"
+      ],
+      "option_terms": [
+        "vision",
+        "doctranslation",
+        "docai",
+        "translation"
+      ]
+    },
+    {
+      "question": 37,
+      "objective": 49,
+      "domain": 2,
+      "task": "2.4",
+      "correct_terms": [
+        "customagents"
+      ],
+      "option_terms": [
+        "garden",
+        "gems",
+        "customagents",
+        "workspace"
+      ]
+    },
+    {
+      "question": 38,
+      "objective": 75,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "chaining"
+      ],
+      "option_terms": [
+        "chaining",
+        "length",
+        "tune",
+        "few"
+      ]
+    },
+    {
+      "question": 39,
+      "objective": 70,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "human"
+      ],
+      "option_terms": [
+        "temperature",
+        "largest",
+        "length",
+        "human"
+      ]
+    },
+    {
+      "question": 40,
+      "objective": 42,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "googlesearch"
+      ],
+      "option_terms": [
+        "googlesearch",
+        "enterprise",
+        "notebook",
+        "search"
+      ]
+    },
+    {
+      "question": 41,
+      "objective": 56,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "stt"
+      ],
+      "option_terms": [
+        "stt",
+        "tts",
+        "nlp",
+        "translation"
+      ]
+    },
+    {
+      "question": 42,
+      "objective": 15,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "deploy"
+      ],
+      "option_terms": [
+        "deploy",
+        "train",
+        "prepare",
+        "ingest"
+      ]
+    },
+    {
+      "question": 43,
+      "objective": 4,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "supervised"
+      ],
+      "option_terms": [
+        "unsupervised",
+        "supervised",
+        "reinforcement",
+        "rules"
+      ]
+    },
+    {
+      "question": 44,
+      "objective": 80,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "world"
+      ],
+      "option_terms": [
+        "thirdparty",
+        "tune",
+        "firstparty",
+        "world"
+      ]
+    },
+    {
+      "question": 45,
+      "objective": 40,
+      "domain": 2,
+      "task": "2.2",
+      "correct_terms": [
+        "notebook"
+      ],
+      "option_terms": [
+        "automl",
+        "notebook",
+        "garden",
+        "ccaas"
+      ]
+    },
+    {
+      "question": 46,
+      "objective": 18,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "llm"
+      ],
+      "option_terms": [
+        "structured",
+        "infra",
+        "regression",
+        "llm"
+      ]
+    },
+    {
+      "question": 47,
+      "objective": 85,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "softprompt"
+      ],
+      "option_terms": [
+        "rag",
+        "prompt",
+        "tune",
+        "softprompt"
+      ]
+    },
+    {
+      "question": 48,
+      "objective": 55,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "functions"
+      ],
+      "option_terms": [
+        "garden",
+        "automl",
+        "functions",
+        "storage"
+      ]
+    },
+    {
+      "question": 49,
+      "objective": 82,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "topp"
+      ],
+      "option_terms": [
+        "length",
+        "temperature",
+        "context",
+        "topp"
+      ]
+    },
+    {
+      "question": 50,
+      "objective": 36,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "lowcode"
+      ],
+      "option_terms": [
+        "largest",
+        "infra",
+        "train",
+        "lowcode"
+      ]
+    },
+    {
+      "question": 51,
+      "objective": 43,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "conversational"
+      ],
+      "option_terms": [
+        "insights",
+        "conversational",
+        "assist",
+        "ccaas"
+      ]
+    },
+    {
+      "question": 52,
+      "objective": 72,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "one"
+      ],
+      "option_terms": [
+        "one",
+        "few",
+        "zero",
+        "tune"
+      ]
+    },
+    {
+      "question": 53,
+      "objective": 86,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "priority"
+      ],
+      "option_terms": [
+        "cheapest",
+        "biggerdata",
+        "priority",
+        "largest"
+      ]
+    },
+    {
+      "question": 54,
+      "objective": 7,
+      "domain": 1,
+      "task": "1.2",
+      "correct_terms": [
+        "structured"
+      ],
+      "option_terms": [
+        "unlabeled",
+        "labeled",
+        "unstructured",
+        "structured"
+      ]
+    },
+    {
+      "question": 55,
+      "objective": 52,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "aistudio"
+      ],
+      "option_terms": [
+        "automl",
+        "ccaas",
+        "agentstudio",
+        "aistudio"
+      ]
+    },
+    {
+      "question": 56,
+      "objective": 35,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "controls"
+      ],
+      "option_terms": [
+        "geminiapp",
+        "biggerdata",
+        "controls",
+        "largest"
+      ]
+    },
+    {
+      "question": 57,
+      "objective": 12,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "ingest"
+      ],
+      "option_terms": [
+        "train",
+        "deploy",
+        "ingest",
+        "prepare"
+      ]
+    },
+    {
+      "question": 58,
+      "objective": 76,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "cot"
+      ],
+      "option_terms": [
+        "cot",
+        "react",
+        "role",
+        "temperature"
+      ]
+    },
+    {
+      "question": 59,
+      "objective": 21,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "choose"
+      ],
+      "option_terms": [
+        "biggerdata",
+        "cheapest",
+        "largest",
+        "choose"
+      ]
+    },
+    {
+      "question": 60,
+      "objective": 91,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "stakeholders"
+      ],
+      "option_terms": [
+        "cheapest",
+        "stakeholders",
+        "largest",
+        "train"
+      ]
+    },
+    {
+      "question": 61,
+      "objective": 83,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "length"
+      ],
+      "option_terms": [
+        "context",
+        "length",
+        "temperature",
+        "topp"
+      ]
+    },
+    {
+      "question": 62,
+      "objective": 96,
+      "domain": 4,
+      "task": "4.3",
+      "correct_terms": [
+        "transparent"
+      ],
+      "option_terms": [
+        "temperature",
+        "transparent",
+        "safety",
+        "accountable"
+      ]
+    },
+    {
+      "question": 63,
+      "objective": 97,
+      "domain": 4,
+      "task": "4.3",
+      "correct_terms": [
+        "privacy"
+      ],
+      "option_terms": [
+        "biggerdata",
+        "privacy",
+        "prompt",
+        "largest"
+      ]
+    },
+    {
+      "question": 64,
+      "objective": 48,
+      "domain": 2,
+      "task": "2.4",
+      "correct_terms": [
+        "automl"
+      ],
+      "option_terms": [
+        "garden",
+        "automl",
+        "workspace",
+        "search"
+      ]
+    },
+    {
+      "question": 65,
+      "objective": 74,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "role"
+      ],
+      "option_terms": [
+        "tune",
+        "role",
+        "few",
+        "rag"
+      ]
+    },
+    {
+      "question": 66,
+      "objective": 29,
+      "domain": 1,
+      "task": "1.4",
+      "correct_terms": [
+        "veo"
+      ],
+      "option_terms": [
+        "veo",
+        "imagen",
+        "gemma",
+        "classification"
+      ]
+    },
+    {
+      "question": 67,
+      "objective": 24,
+      "domain": 1,
+      "task": "1.3",
+      "correct_terms": [
+        "agent"
+      ],
+      "option_terms": [
+        "platform",
+        "infra",
+        "agent",
+        "application"
+      ]
+    },
+    {
+      "question": 68,
+      "objective": 9,
+      "domain": 1,
+      "task": "1.2",
+      "correct_terms": [
+        "labeled"
+      ],
+      "option_terms": [
+        "labeled",
+        "unlabeled",
+        "unstructured",
+        "structured"
+      ]
+    },
+    {
+      "question": 69,
+      "objective": 11,
+      "domain": 1,
+      "task": "1.2",
+      "correct_terms": [
+        "access"
+      ],
+      "option_terms": [
+        "largest",
+        "quality",
+        "access",
+        "biggerdata"
+      ]
+    },
+    {
+      "question": 70,
+      "objective": 33,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "managed"
+      ],
+      "option_terms": [
+        "managed",
+        "largest",
+        "cheapest",
+        "storage"
+      ]
+    },
+    {
+      "question": 71,
+      "objective": 78,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "firstparty"
+      ],
+      "option_terms": [
+        "thirdparty",
+        "world",
+        "temperature",
+        "firstparty"
+      ]
+    },
+    {
+      "question": 72,
+      "objective": 81,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "temperature"
+      ],
+      "option_terms": [
+        "length",
+        "temperature",
+        "token",
+        "context"
+      ]
+    },
+    {
+      "question": 73,
+      "objective": 51,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "agentstudio"
+      ],
+      "option_terms": [
+        "notebook",
+        "agentstudio",
+        "aistudio",
+        "gems"
+      ]
+    },
+    {
+      "question": 74,
+      "objective": 10,
+      "domain": 1,
+      "task": "1.2",
+      "correct_terms": [
+        "quality"
+      ],
+      "option_terms": [
+        "prompt",
+        "largest",
+        "quality",
+        "biggerdata"
+      ]
+    },
+    {
+      "question": 75,
+      "objective": 38,
+      "domain": 2,
+      "task": "2.2",
+      "correct_terms": [
+        "workspace"
+      ],
+      "option_terms": [
+        "enterprise",
+        "garden",
+        "workspace",
+        "automl"
+      ]
+    },
+    {
+      "question": 76,
+      "objective": 13,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "prepare"
+      ],
+      "option_terms": [
+        "train",
+        "deploy",
+        "ingest",
+        "prepare"
+      ]
+    },
+    {
+      "question": 77,
+      "objective": 37,
+      "domain": 2,
+      "task": "2.2",
+      "correct_terms": [
+        "gems"
+      ],
+      "option_terms": [
+        "garden",
+        "gems",
+        "workspace",
+        "automl"
+      ]
+    },
+    {
+      "question": 78,
+      "objective": 71,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "zero"
+      ],
+      "option_terms": [
+        "few",
+        "tune",
+        "one",
+        "zero"
+      ]
+    },
+    {
+      "question": 79,
+      "objective": 100,
+      "domain": 4,
+      "task": "4.3",
+      "correct_terms": [
+        "accountable"
+      ],
+      "option_terms": [
+        "transparent",
+        "temperature",
+        "accountable",
+        "largest"
+      ]
+    },
+    {
+      "question": 80,
+      "objective": 73,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "case_3_73_0"
+      ],
+      "option_terms": [
+        "case_3_73_0",
+        "case_3_73_1",
+        "case_3_73_2",
+        "case_3_73_3"
+      ]
+    },
+    {
+      "question": 81,
+      "objective": 79,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "thirdparty"
+      ],
+      "option_terms": [
+        "thirdparty",
+        "world",
+        "tune",
+        "firstparty"
+      ]
+    },
+    {
+      "question": 82,
+      "objective": 88,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "case_3_88_0"
+      ],
+      "option_terms": [
+        "case_3_88_2",
+        "case_3_88_3",
+        "case_3_88_1",
+        "case_3_88_0"
+      ]
+    },
+    {
+      "question": 83,
+      "objective": 26,
+      "domain": 1,
+      "task": "1.4",
+      "correct_terms": [
+        "gemini"
+      ],
+      "option_terms": [
+        "veo",
+        "gemini",
+        "imagen",
+        "gemma"
+      ]
+    },
+    {
+      "question": 84,
+      "objective": 28,
+      "domain": 1,
+      "task": "1.4",
+      "correct_terms": [
+        "imagen"
+      ],
+      "option_terms": [
+        "veo",
+        "imagen",
+        "gemma",
+        "classification"
+      ]
+    },
+    {
+      "question": 85,
+      "objective": 39,
+      "domain": 2,
+      "task": "2.2",
+      "correct_terms": [
+        "enterprise"
+      ],
+      "option_terms": [
+        "garden",
+        "googlesearch",
+        "workspace",
+        "enterprise"
+      ]
+    },
+    {
+      "question": 86,
+      "objective": 46,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "case_3_46_0"
+      ],
+      "option_terms": [
+        "case_3_46_2",
+        "case_3_46_1",
+        "case_3_46_3",
+        "case_3_46_0"
+      ]
+    },
+    {
+      "question": 87,
+      "objective": 30,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "case_3_30_0"
+      ],
+      "option_terms": [
+        "case_3_30_0",
+        "case_3_30_3",
+        "case_3_30_1",
+        "case_3_30_2"
+      ]
+    },
+    {
+      "question": 88,
+      "objective": 64,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "database"
+      ],
+      "option_terms": [
+        "database",
+        "gemini",
+        "garden",
+        "imagen"
+      ]
+    },
+    {
+      "question": 89,
+      "objective": 98,
+      "domain": 4,
+      "task": "4.3",
+      "correct_terms": [
+        "pseudonym"
+      ],
+      "option_terms": [
+        "pseudonym",
+        "structured",
+        "unlabeled",
+        "anonym"
+      ]
+    },
+    {
+      "question": 90,
+      "objective": 47,
+      "domain": 2,
+      "task": "2.4",
+      "correct_terms": [
+        "garden"
+      ],
+      "option_terms": [
+        "workspace",
+        "search",
+        "automl",
+        "garden"
+      ]
+    },
+    {
+      "question": 91,
+      "objective": 5,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "unsupervised"
+      ],
+      "option_terms": [
+        "rules",
+        "supervised",
+        "unsupervised",
+        "reinforcement"
+      ]
+    },
+    {
+      "question": 92,
+      "objective": 44,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "assist"
+      ],
+      "option_terms": [
+        "assist",
+        "insights",
+        "ccaas",
+        "conversational"
+      ]
+    },
+    {
+      "question": 93,
+      "objective": 1,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "gen"
+      ],
+      "option_terms": [
+        "rules",
+        "regression",
+        "gen",
+        "classification"
+      ]
+    },
+    {
+      "question": 94,
+      "objective": 93,
+      "domain": 4,
+      "task": "4.2",
+      "correct_terms": [
+        "iam"
+      ],
+      "option_terms": [
+        "iam",
+        "quality",
+        "scc",
+        "safety"
+      ]
+    },
+    {
+      "question": 95,
+      "objective": 20,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "diffusion"
+      ],
+      "option_terms": [
+        "classification",
+        "regression",
+        "diffusion",
+        "supervised"
+      ]
+    },
+    {
+      "question": 96,
+      "objective": 94,
+      "domain": 4,
+      "task": "4.2",
+      "correct_terms": [
+        "scc"
+      ],
+      "option_terms": [
+        "scc",
+        "iam",
+        "prompt",
+        "quality"
+      ]
+    },
+    {
+      "question": 97,
+      "objective": 62,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "video"
+      ],
+      "option_terms": [
+        "vision",
+        "video",
+        "nlp",
+        "veo"
+      ]
+    },
+    {
+      "question": 98,
+      "objective": 84,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "monitor"
+      ],
+      "option_terms": [
+        "cheapest",
+        "largest",
+        "biggerdata",
+        "monitor"
+      ]
+    },
+    {
+      "question": 99,
+      "objective": 95,
+      "domain": 4,
+      "task": "4.2",
+      "correct_terms": [
+        "securelife"
+      ],
+      "option_terms": [
+        "safety",
+        "deploy",
+        "largest",
+        "securelife"
+      ]
+    },
+    {
+      "question": 100,
+      "objective": 67,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "cutoff"
+      ],
+      "option_terms": [
+        "context",
+        "hallucination",
+        "cutoff",
+        "token"
+      ]
+    }
+  ],
+  "4": [
+    {
+      "question": 1,
+      "objective": 41,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "search"
+      ],
+      "option_terms": [
+        "search",
+        "garden",
+        "googlesearch",
+        "automl"
+      ]
+    },
+    {
+      "question": 2,
+      "objective": 90,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "adoption"
+      ],
+      "option_terms": [
+        "adoption",
+        "deploy",
+        "biggerdata",
+        "largest"
+      ]
+    },
+    {
+      "question": 3,
+      "objective": 60,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "docai"
+      ],
+      "option_terms": [
+        "nlp",
+        "docai",
+        "translation",
+        "vision"
+      ]
+    },
+    {
+      "question": 4,
+      "objective": 72,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "one"
+      ],
+      "option_terms": [
+        "one",
+        "zero",
+        "few",
+        "tune"
+      ]
+    },
+    {
+      "question": 5,
+      "objective": 85,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "softprompt"
+      ],
+      "option_terms": [
+        "tune",
+        "rag",
+        "softprompt",
+        "prompt"
+      ]
+    },
+    {
+      "question": 6,
+      "objective": 53,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "storage"
+      ],
+      "option_terms": [
+        "database",
+        "search",
+        "storage",
+        "automl"
+      ]
+    },
+    {
+      "question": 7,
+      "objective": 11,
+      "domain": 1,
+      "task": "1.2",
+      "correct_terms": [
+        "access"
+      ],
+      "option_terms": [
+        "quality",
+        "access",
+        "biggerdata",
+        "largest"
+      ]
+    },
+    {
+      "question": 8,
+      "objective": 39,
+      "domain": 2,
+      "task": "2.2",
+      "correct_terms": [
+        "enterprise"
+      ],
+      "option_terms": [
+        "workspace",
+        "garden",
+        "enterprise",
+        "googlesearch"
+      ]
+    },
+    {
+      "question": 9,
+      "objective": 80,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "world"
+      ],
+      "option_terms": [
+        "thirdparty",
+        "firstparty",
+        "tune",
+        "world"
+      ]
+    },
+    {
+      "question": 10,
+      "objective": 45,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "insights"
+      ],
+      "option_terms": [
+        "conversational",
+        "ccaas",
+        "insights",
+        "assist"
+      ]
+    },
+    {
+      "question": 11,
+      "objective": 82,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "topp"
+      ],
+      "option_terms": [
+        "length",
+        "temperature",
+        "topp",
+        "context"
+      ]
+    },
+    {
+      "question": 12,
+      "objective": 12,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "ingest"
+      ],
+      "option_terms": [
+        "prepare",
+        "deploy",
+        "ingest",
+        "train"
+      ]
+    },
+    {
+      "question": 13,
+      "objective": 75,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "chaining"
+      ],
+      "option_terms": [
+        "few",
+        "chaining",
+        "tune",
+        "length"
+      ]
+    },
+    {
+      "question": 14,
+      "objective": 95,
+      "domain": 4,
+      "task": "4.2",
+      "correct_terms": [
+        "securelife"
+      ],
+      "option_terms": [
+        "deploy",
+        "largest",
+        "safety",
+        "securelife"
+      ]
+    },
+    {
+      "question": 15,
+      "objective": 71,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "zero"
+      ],
+      "option_terms": [
+        "tune",
+        "few",
+        "zero",
+        "one"
+      ]
+    },
+    {
+      "question": 16,
+      "objective": 67,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "cutoff"
+      ],
+      "option_terms": [
+        "hallucination",
+        "cutoff",
+        "token",
+        "context"
+      ]
+    },
+    {
+      "question": 17,
+      "objective": 1,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "gen"
+      ],
+      "option_terms": [
+        "rules",
+        "gen",
+        "classification",
+        "regression"
+      ]
+    },
+    {
+      "question": 18,
+      "objective": 83,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "length"
+      ],
+      "option_terms": [
+        "topp",
+        "context",
+        "temperature",
+        "length"
+      ]
+    },
+    {
+      "question": 19,
+      "objective": 24,
+      "domain": 1,
+      "task": "1.3",
+      "correct_terms": [
+        "agent"
+      ],
+      "option_terms": [
+        "platform",
+        "agent",
+        "infra",
+        "application"
+      ]
+    },
+    {
+      "question": 20,
+      "objective": 87,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "pilot"
+      ],
+      "option_terms": [
+        "largest",
+        "pilot",
+        "deploy",
+        "biggerdata"
+      ]
+    },
+    {
+      "question": 21,
+      "objective": 70,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "human"
+      ],
+      "option_terms": [
+        "human",
+        "largest",
+        "temperature",
+        "length"
+      ]
+    },
+    {
+      "question": 22,
+      "objective": 5,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "unsupervised"
+      ],
+      "option_terms": [
+        "reinforcement",
+        "rules",
+        "supervised",
+        "unsupervised"
+      ]
+    },
+    {
+      "question": 23,
+      "objective": 93,
+      "domain": 4,
+      "task": "4.2",
+      "correct_terms": [
+        "iam"
+      ],
+      "option_terms": [
+        "iam",
+        "quality",
+        "safety",
+        "scc"
+      ]
+    },
+    {
+      "question": 24,
+      "objective": 59,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "doctranslation"
+      ],
+      "option_terms": [
+        "doctranslation",
+        "docai",
+        "translation",
+        "vision"
+      ]
+    },
+    {
+      "question": 25,
+      "objective": 78,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "firstparty"
+      ],
+      "option_terms": [
+        "firstparty",
+        "thirdparty",
+        "temperature",
+        "world"
+      ]
+    },
+    {
+      "question": 26,
+      "objective": 17,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "fm"
+      ],
+      "option_terms": [
+        "infra",
+        "classification",
+        "fm",
+        "rules"
+      ]
+    },
+    {
+      "question": 27,
+      "objective": 2,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "ml"
+      ],
+      "option_terms": [
+        "application",
+        "ml",
+        "infra",
+        "rules"
+      ]
+    },
+    {
+      "question": 28,
+      "objective": 37,
+      "domain": 2,
+      "task": "2.2",
+      "correct_terms": [
+        "gems"
+      ],
+      "option_terms": [
+        "automl",
+        "gems",
+        "workspace",
+        "garden"
+      ]
+    },
+    {
+      "question": 29,
+      "objective": 9,
+      "domain": 1,
+      "task": "1.2",
+      "correct_terms": [
+        "labeled"
+      ],
+      "option_terms": [
+        "unstructured",
+        "labeled",
+        "structured",
+        "unlabeled"
+      ]
+    },
+    {
+      "question": 30,
+      "objective": 40,
+      "domain": 2,
+      "task": "2.2",
+      "correct_terms": [
+        "case_4_40_0"
+      ],
+      "option_terms": [
+        "case_4_40_2",
+        "case_4_40_3",
+        "case_4_40_0",
+        "case_4_40_1"
+      ]
+    },
+    {
+      "question": 31,
+      "objective": 19,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "case_4_19_0"
+      ],
+      "option_terms": [
+        "case_4_19_1",
+        "case_4_19_2",
+        "case_4_19_3",
+        "case_4_19_0"
+      ]
+    },
+    {
+      "question": 32,
+      "objective": 96,
+      "domain": 4,
+      "task": "4.3",
+      "correct_terms": [
+        "transparent"
+      ],
+      "option_terms": [
+        "transparent",
+        "temperature",
+        "accountable",
+        "safety"
+      ]
+    },
+    {
+      "question": 33,
+      "objective": 27,
+      "domain": 1,
+      "task": "1.4",
+      "correct_terms": [
+        "gemma"
+      ],
+      "option_terms": [
+        "gemma",
+        "gemini",
+        "imagen",
+        "veo"
+      ]
+    },
+    {
+      "question": 34,
+      "objective": 76,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "cot"
+      ],
+      "option_terms": [
+        "react",
+        "role",
+        "temperature",
+        "cot"
+      ]
+    },
+    {
+      "question": 35,
+      "objective": 57,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "tts"
+      ],
+      "option_terms": [
+        "stt",
+        "nlp",
+        "tts",
+        "translation"
+      ]
+    },
+    {
+      "question": 36,
+      "objective": 77,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "react"
+      ],
+      "option_terms": [
+        "cot",
+        "react",
+        "temperature",
+        "role"
+      ]
+    },
+    {
+      "question": 37,
+      "objective": 33,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "managed"
+      ],
+      "option_terms": [
+        "largest",
+        "cheapest",
+        "storage",
+        "managed"
+      ]
+    },
+    {
+      "question": 38,
+      "objective": 62,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "video"
+      ],
+      "option_terms": [
+        "video",
+        "vision",
+        "nlp",
+        "veo"
+      ]
+    },
+    {
+      "question": 39,
+      "objective": 61,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "vision"
+      ],
+      "option_terms": [
+        "video",
+        "nlp",
+        "imagen",
+        "vision"
+      ]
+    },
+    {
+      "question": 40,
+      "objective": 65,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "tool"
+      ],
+      "option_terms": [
+        "geminiapp",
+        "prompt",
+        "tool",
+        "garden"
+      ]
+    },
+    {
+      "question": 41,
+      "objective": 94,
+      "domain": 4,
+      "task": "4.2",
+      "correct_terms": [
+        "scc"
+      ],
+      "option_terms": [
+        "prompt",
+        "quality",
+        "iam",
+        "scc"
+      ]
+    },
+    {
+      "question": 42,
+      "objective": 88,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "case_4_88_0"
+      ],
+      "option_terms": [
+        "case_4_88_0",
+        "case_4_88_1",
+        "case_4_88_3",
+        "case_4_88_2"
+      ]
+    },
+    {
+      "question": 43,
+      "objective": 66,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "hallucination"
+      ],
+      "option_terms": [
+        "hallucination",
+        "context",
+        "cutoff",
+        "token"
+      ]
+    },
+    {
+      "question": 44,
+      "objective": 55,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "functions"
+      ],
+      "option_terms": [
+        "garden",
+        "automl",
+        "storage",
+        "functions"
+      ]
+    },
+    {
+      "question": 45,
+      "objective": 56,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "stt"
+      ],
+      "option_terms": [
+        "nlp",
+        "translation",
+        "tts",
+        "stt"
+      ]
+    },
+    {
+      "question": 46,
+      "objective": 44,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "assist"
+      ],
+      "option_terms": [
+        "assist",
+        "ccaas",
+        "insights",
+        "conversational"
+      ]
+    },
+    {
+      "question": 47,
+      "objective": 89,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "kpi"
+      ],
+      "option_terms": [
+        "kpi",
+        "cheapest",
+        "largest",
+        "token"
+      ]
+    },
+    {
+      "question": 48,
+      "objective": 99,
+      "domain": 4,
+      "task": "4.3",
+      "correct_terms": [
+        "fair"
+      ],
+      "option_terms": [
+        "quality",
+        "fair",
+        "cheapest",
+        "largest"
+      ]
+    },
+    {
+      "question": 49,
+      "objective": 16,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "manage"
+      ],
+      "option_terms": [
+        "train",
+        "prepare",
+        "manage",
+        "ingest"
+      ]
+    },
+    {
+      "question": 50,
+      "objective": 21,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "choose"
+      ],
+      "option_terms": [
+        "largest",
+        "choose",
+        "cheapest",
+        "biggerdata"
+      ]
+    },
+    {
+      "question": 51,
+      "objective": 74,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "role"
+      ],
+      "option_terms": [
+        "few",
+        "tune",
+        "role",
+        "rag"
+      ]
+    },
+    {
+      "question": 52,
+      "objective": 46,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "ccaas"
+      ],
+      "option_terms": [
+        "ccaas",
+        "assist",
+        "insights",
+        "translation"
+      ]
+    },
+    {
+      "question": 53,
+      "objective": 38,
+      "domain": 2,
+      "task": "2.2",
+      "correct_terms": [
+        "workspace"
+      ],
+      "option_terms": [
+        "automl",
+        "enterprise",
+        "workspace",
+        "garden"
+      ]
+    },
+    {
+      "question": 54,
+      "objective": 97,
+      "domain": 4,
+      "task": "4.3",
+      "correct_terms": [
+        "privacy"
+      ],
+      "option_terms": [
+        "prompt",
+        "biggerdata",
+        "privacy",
+        "largest"
+      ]
+    },
+    {
+      "question": 55,
+      "objective": 58,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "translation"
+      ],
+      "option_terms": [
+        "nlp",
+        "stt",
+        "vision",
+        "translation"
+      ]
+    },
+    {
+      "question": 56,
+      "objective": 25,
+      "domain": 1,
+      "task": "1.3",
+      "correct_terms": [
+        "application"
+      ],
+      "option_terms": [
+        "platform",
+        "infra",
+        "application",
+        "fm"
+      ]
+    },
+    {
+      "question": 57,
+      "objective": 8,
+      "domain": 1,
+      "task": "1.2",
+      "correct_terms": [
+        "unstructured"
+      ],
+      "option_terms": [
+        "structured",
+        "labeled",
+        "regression",
+        "unstructured"
+      ]
+    },
+    {
+      "question": 58,
+      "objective": 4,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "supervised"
+      ],
+      "option_terms": [
+        "supervised",
+        "unsupervised",
+        "reinforcement",
+        "rules"
+      ]
+    },
+    {
+      "question": 59,
+      "objective": 15,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "deploy"
+      ],
+      "option_terms": [
+        "deploy",
+        "ingest",
+        "prepare",
+        "train"
+      ]
+    },
+    {
+      "question": 60,
+      "objective": 98,
+      "domain": 4,
+      "task": "4.3",
+      "correct_terms": [
+        "pseudonym"
+      ],
+      "option_terms": [
+        "pseudonym",
+        "structured",
+        "anonym",
+        "unlabeled"
+      ]
+    },
+    {
+      "question": 61,
+      "objective": 81,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "temperature"
+      ],
+      "option_terms": [
+        "length",
+        "token",
+        "context",
+        "temperature"
+      ]
+    },
+    {
+      "question": 62,
+      "objective": 48,
+      "domain": 2,
+      "task": "2.4",
+      "correct_terms": [
+        "automl"
+      ],
+      "option_terms": [
+        "garden",
+        "search",
+        "workspace",
+        "automl"
+      ]
+    },
+    {
+      "question": 63,
+      "objective": 34,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "open"
+      ],
+      "option_terms": [
+        "rules",
+        "open",
+        "largest",
+        "cheapest"
+      ]
+    },
+    {
+      "question": 64,
+      "objective": 86,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "priority"
+      ],
+      "option_terms": [
+        "largest",
+        "priority",
+        "biggerdata",
+        "cheapest"
+      ]
+    },
+    {
+      "question": 65,
+      "objective": 52,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "aistudio"
+      ],
+      "option_terms": [
+        "automl",
+        "agentstudio",
+        "ccaas",
+        "aistudio"
+      ]
+    },
+    {
+      "question": 66,
+      "objective": 23,
+      "domain": 1,
+      "task": "1.3",
+      "correct_terms": [
+        "platform"
+      ],
+      "option_terms": [
+        "application",
+        "agent",
+        "infra",
+        "platform"
+      ]
+    },
+    {
+      "question": 67,
+      "objective": 49,
+      "domain": 2,
+      "task": "2.4",
+      "correct_terms": [
+        "customagents"
+      ],
+      "option_terms": [
+        "gems",
+        "garden",
+        "workspace",
+        "customagents"
+      ]
+    },
+    {
+      "question": 68,
+      "objective": 28,
+      "domain": 1,
+      "task": "1.4",
+      "correct_terms": [
+        "imagen"
+      ],
+      "option_terms": [
+        "gemma",
+        "veo",
+        "classification",
+        "imagen"
+      ]
+    },
+    {
+      "question": 69,
+      "objective": 22,
+      "domain": 1,
+      "task": "1.3",
+      "correct_terms": [
+        "infra"
+      ],
+      "option_terms": [
+        "application",
+        "agent",
+        "platform",
+        "infra"
+      ]
+    },
+    {
+      "question": 70,
+      "objective": 84,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "case_4_84_0"
+      ],
+      "option_terms": [
+        "case_4_84_3",
+        "case_4_84_0",
+        "case_4_84_1",
+        "case_4_84_2"
+      ]
+    },
+    {
+      "question": 71,
+      "objective": 26,
+      "domain": 1,
+      "task": "1.4",
+      "correct_terms": [
+        "gemini"
+      ],
+      "option_terms": [
+        "imagen",
+        "gemini",
+        "gemma",
+        "veo"
+      ]
+    },
+    {
+      "question": 72,
+      "objective": 64,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "database"
+      ],
+      "option_terms": [
+        "gemini",
+        "garden",
+        "imagen",
+        "database"
+      ]
+    },
+    {
+      "question": 73,
+      "objective": 79,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "thirdparty"
+      ],
+      "option_terms": [
+        "world",
+        "thirdparty",
+        "tune",
+        "firstparty"
+      ]
+    },
+    {
+      "question": 74,
+      "objective": 50,
+      "domain": 2,
+      "task": "2.4",
+      "correct_terms": [
+        "ragapi"
+      ],
+      "option_terms": [
+        "ragapi",
+        "train",
+        "automl",
+        "gems"
+      ]
+    },
+    {
+      "question": 75,
+      "objective": 68,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "rag"
+      ],
+      "option_terms": [
+        "largest",
+        "rag",
+        "softprompt",
+        "tune"
+      ]
+    },
+    {
+      "question": 76,
+      "objective": 29,
+      "domain": 1,
+      "task": "1.4",
+      "correct_terms": [
+        "veo"
+      ],
+      "option_terms": [
+        "imagen",
+        "classification",
+        "veo",
+        "gemma"
+      ]
+    },
+    {
+      "question": 77,
+      "objective": 63,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "nlp"
+      ],
+      "option_terms": [
+        "translation",
+        "tts",
+        "nlp",
+        "stt"
+      ]
+    },
+    {
+      "question": 78,
+      "objective": 7,
+      "domain": 1,
+      "task": "1.2",
+      "correct_terms": [
+        "structured"
+      ],
+      "option_terms": [
+        "unstructured",
+        "structured",
+        "unlabeled",
+        "labeled"
+      ]
+    },
+    {
+      "question": 79,
+      "objective": 92,
+      "domain": 4,
+      "task": "4.2",
+      "correct_terms": [
+        "saif"
+      ],
+      "option_terms": [
+        "safety",
+        "saif",
+        "scc",
+        "iam"
+      ]
+    },
+    {
+      "question": 80,
+      "objective": 69,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "tune"
+      ],
+      "option_terms": [
+        "tune",
+        "rag",
+        "prompt",
+        "temperature"
+      ]
+    },
+    {
+      "question": 81,
+      "objective": 51,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "agentstudio"
+      ],
+      "option_terms": [
+        "gems",
+        "notebook",
+        "aistudio",
+        "agentstudio"
+      ]
+    },
+    {
+      "question": 82,
+      "objective": 14,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "train"
+      ],
+      "option_terms": [
+        "inference",
+        "train",
+        "manage",
+        "deploy"
+      ]
+    },
+    {
+      "question": 83,
+      "objective": 35,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "controls"
+      ],
+      "option_terms": [
+        "largest",
+        "biggerdata",
+        "geminiapp",
+        "controls"
+      ]
+    },
+    {
+      "question": 84,
+      "objective": 10,
+      "domain": 1,
+      "task": "1.2",
+      "correct_terms": [
+        "quality"
+      ],
+      "option_terms": [
+        "biggerdata",
+        "largest",
+        "quality",
+        "prompt"
+      ]
+    },
+    {
+      "question": 85,
+      "objective": 30,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "rules"
+      ],
+      "option_terms": [
+        "fm",
+        "rules",
+        "draft",
+        "agent"
+      ]
+    },
+    {
+      "question": 86,
+      "objective": 36,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "lowcode"
+      ],
+      "option_terms": [
+        "train",
+        "largest",
+        "lowcode",
+        "infra"
+      ]
+    },
+    {
+      "question": 87,
+      "objective": 73,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "few"
+      ],
+      "option_terms": [
+        "tune",
+        "zero",
+        "few",
+        "one"
+      ]
+    },
+    {
+      "question": 88,
+      "objective": 100,
+      "domain": 4,
+      "task": "4.3",
+      "correct_terms": [
+        "accountable"
+      ],
+      "option_terms": [
+        "accountable",
+        "largest",
+        "temperature",
+        "transparent"
+      ]
+    },
+    {
+      "question": 89,
+      "objective": 32,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "gpu"
+      ],
+      "option_terms": [
+        "gpu",
+        "database",
+        "cpu",
+        "storage"
+      ]
+    },
+    {
+      "question": 90,
+      "objective": 3,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "deep"
+      ],
+      "option_terms": [
+        "supervised",
+        "structured",
+        "rules",
+        "deep"
+      ]
+    },
+    {
+      "question": 91,
+      "objective": 31,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "tpu"
+      ],
+      "option_terms": [
+        "tpu",
+        "cpu",
+        "storage",
+        "gpu"
+      ]
+    },
+    {
+      "question": 92,
+      "objective": 43,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "conversational"
+      ],
+      "option_terms": [
+        "ccaas",
+        "assist",
+        "insights",
+        "conversational"
+      ]
+    },
+    {
+      "question": 93,
+      "objective": 6,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "reinforcement"
+      ],
+      "option_terms": [
+        "reinforcement",
+        "unsupervised",
+        "supervised",
+        "prepare"
+      ]
+    },
+    {
+      "question": 94,
+      "objective": 20,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "diffusion"
+      ],
+      "option_terms": [
+        "classification",
+        "diffusion",
+        "supervised",
+        "regression"
+      ]
+    },
+    {
+      "question": 95,
+      "objective": 13,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "prepare"
+      ],
+      "option_terms": [
+        "deploy",
+        "train",
+        "prepare",
+        "ingest"
+      ]
+    },
+    {
+      "question": 96,
+      "objective": 47,
+      "domain": 2,
+      "task": "2.4",
+      "correct_terms": [
+        "garden"
+      ],
+      "option_terms": [
+        "workspace",
+        "automl",
+        "garden",
+        "search"
+      ]
+    },
+    {
+      "question": 97,
+      "objective": 91,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "stakeholders"
+      ],
+      "option_terms": [
+        "stakeholders",
+        "train",
+        "largest",
+        "cheapest"
+      ]
+    },
+    {
+      "question": 98,
+      "objective": 18,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "llm"
+      ],
+      "option_terms": [
+        "structured",
+        "regression",
+        "llm",
+        "infra"
+      ]
+    },
+    {
+      "question": 99,
+      "objective": 42,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "googlesearch"
+      ],
+      "option_terms": [
+        "enterprise",
+        "search",
+        "googlesearch",
+        "notebook"
+      ]
+    },
+    {
+      "question": 100,
+      "objective": 54,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "run"
+      ],
+      "option_terms": [
+        "automl",
+        "run",
+        "garden",
+        "storage"
+      ]
+    }
+  ],
+  "5": [
+    {
+      "question": 1,
+      "objective": 57,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "tts"
+      ],
+      "option_terms": [
+        "tts",
+        "translation",
+        "stt",
+        "nlp"
+      ]
+    },
+    {
+      "question": 2,
+      "objective": 78,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "firstparty"
+      ],
+      "option_terms": [
+        "world",
+        "temperature",
+        "firstparty",
+        "thirdparty"
+      ]
+    },
+    {
+      "question": 3,
+      "objective": 87,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "pilot"
+      ],
+      "option_terms": [
+        "deploy",
+        "biggerdata",
+        "pilot",
+        "largest"
+      ]
+    },
+    {
+      "question": 4,
+      "objective": 45,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "insights"
+      ],
+      "option_terms": [
+        "ccaas",
+        "conversational",
+        "assist",
+        "insights"
+      ]
+    },
+    {
+      "question": 5,
+      "objective": 63,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "nlp"
+      ],
+      "option_terms": [
+        "tts",
+        "stt",
+        "nlp",
+        "translation"
+      ]
+    },
+    {
+      "question": 6,
+      "objective": 5,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "unsupervised"
+      ],
+      "option_terms": [
+        "reinforcement",
+        "unsupervised",
+        "supervised",
+        "rules"
+      ]
+    },
+    {
+      "question": 7,
+      "objective": 84,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "monitor"
+      ],
+      "option_terms": [
+        "cheapest",
+        "largest",
+        "biggerdata",
+        "monitor"
+      ]
+    },
+    {
+      "question": 8,
+      "objective": 89,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "kpi"
+      ],
+      "option_terms": [
+        "kpi",
+        "largest",
+        "cheapest",
+        "token"
+      ]
+    },
+    {
+      "question": 9,
+      "objective": 50,
+      "domain": 2,
+      "task": "2.4",
+      "correct_terms": [
+        "ragapi"
+      ],
+      "option_terms": [
+        "ragapi",
+        "gems",
+        "automl",
+        "train"
+      ]
+    },
+    {
+      "question": 10,
+      "objective": 60,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "docai"
+      ],
+      "option_terms": [
+        "docai",
+        "translation",
+        "vision",
+        "nlp"
+      ]
+    },
+    {
+      "question": 11,
+      "objective": 77,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "react"
+      ],
+      "option_terms": [
+        "temperature",
+        "role",
+        "react",
+        "cot"
+      ]
+    },
+    {
+      "question": 12,
+      "objective": 35,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "controls"
+      ],
+      "option_terms": [
+        "controls",
+        "geminiapp",
+        "largest",
+        "biggerdata"
+      ]
+    },
+    {
+      "question": 13,
+      "objective": 29,
+      "domain": 1,
+      "task": "1.4",
+      "correct_terms": [
+        "veo"
+      ],
+      "option_terms": [
+        "classification",
+        "gemma",
+        "veo",
+        "imagen"
+      ]
+    },
+    {
+      "question": 14,
+      "objective": 90,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "adoption"
+      ],
+      "option_terms": [
+        "largest",
+        "adoption",
+        "biggerdata",
+        "deploy"
+      ]
+    },
+    {
+      "question": 15,
+      "objective": 96,
+      "domain": 4,
+      "task": "4.3",
+      "correct_terms": [
+        "transparent"
+      ],
+      "option_terms": [
+        "safety",
+        "transparent",
+        "temperature",
+        "accountable"
+      ]
+    },
+    {
+      "question": 16,
+      "objective": 55,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "functions"
+      ],
+      "option_terms": [
+        "garden",
+        "automl",
+        "storage",
+        "functions"
+      ]
+    },
+    {
+      "question": 17,
+      "objective": 91,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "stakeholders"
+      ],
+      "option_terms": [
+        "train",
+        "largest",
+        "stakeholders",
+        "cheapest"
+      ]
+    },
+    {
+      "question": 18,
+      "objective": 64,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "database"
+      ],
+      "option_terms": [
+        "imagen",
+        "gemini",
+        "database",
+        "garden"
+      ]
+    },
+    {
+      "question": 19,
+      "objective": 2,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "ml"
+      ],
+      "option_terms": [
+        "application",
+        "rules",
+        "ml",
+        "infra"
+      ]
+    },
+    {
+      "question": 20,
+      "objective": 94,
+      "domain": 4,
+      "task": "4.2",
+      "correct_terms": [
+        "scc"
+      ],
+      "option_terms": [
+        "prompt",
+        "quality",
+        "iam",
+        "scc"
+      ]
+    },
+    {
+      "question": 21,
+      "objective": 54,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "run"
+      ],
+      "option_terms": [
+        "run",
+        "storage",
+        "automl",
+        "garden"
+      ]
+    },
+    {
+      "question": 22,
+      "objective": 43,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "conversational"
+      ],
+      "option_terms": [
+        "insights",
+        "ccaas",
+        "assist",
+        "conversational"
+      ]
+    },
+    {
+      "question": 23,
+      "objective": 3,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "deep"
+      ],
+      "option_terms": [
+        "structured",
+        "supervised",
+        "deep",
+        "rules"
+      ]
+    },
+    {
+      "question": 24,
+      "objective": 71,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "zero"
+      ],
+      "option_terms": [
+        "one",
+        "few",
+        "zero",
+        "tune"
+      ]
+    },
+    {
+      "question": 25,
+      "objective": 69,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "tune"
+      ],
+      "option_terms": [
+        "temperature",
+        "rag",
+        "tune",
+        "prompt"
+      ]
+    },
+    {
+      "question": 26,
+      "objective": 37,
+      "domain": 2,
+      "task": "2.2",
+      "correct_terms": [
+        "gems"
+      ],
+      "option_terms": [
+        "gems",
+        "automl",
+        "garden",
+        "workspace"
+      ]
+    },
+    {
+      "question": 27,
+      "objective": 11,
+      "domain": 1,
+      "task": "1.2",
+      "correct_terms": [
+        "access"
+      ],
+      "option_terms": [
+        "access",
+        "largest",
+        "biggerdata",
+        "quality"
+      ]
+    },
+    {
+      "question": 28,
+      "objective": 76,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "cot"
+      ],
+      "option_terms": [
+        "cot",
+        "react",
+        "temperature",
+        "role"
+      ]
+    },
+    {
+      "question": 29,
+      "objective": 18,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "llm"
+      ],
+      "option_terms": [
+        "structured",
+        "regression",
+        "infra",
+        "llm"
+      ]
+    },
+    {
+      "question": 30,
+      "objective": 38,
+      "domain": 2,
+      "task": "2.2",
+      "correct_terms": [
+        "workspace"
+      ],
+      "option_terms": [
+        "garden",
+        "workspace",
+        "enterprise",
+        "automl"
+      ]
+    },
+    {
+      "question": 31,
+      "objective": 66,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "hallucination"
+      ],
+      "option_terms": [
+        "token",
+        "hallucination",
+        "cutoff",
+        "context"
+      ]
+    },
+    {
+      "question": 32,
+      "objective": 28,
+      "domain": 1,
+      "task": "1.4",
+      "correct_terms": [
+        "imagen"
+      ],
+      "option_terms": [
+        "gemma",
+        "classification",
+        "veo",
+        "imagen"
+      ]
+    },
+    {
+      "question": 33,
+      "objective": 1,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "gen"
+      ],
+      "option_terms": [
+        "rules",
+        "gen",
+        "classification",
+        "regression"
+      ]
+    },
+    {
+      "question": 34,
+      "objective": 61,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "vision"
+      ],
+      "option_terms": [
+        "vision",
+        "imagen",
+        "nlp",
+        "video"
+      ]
+    },
+    {
+      "question": 35,
+      "objective": 32,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "gpu"
+      ],
+      "option_terms": [
+        "cpu",
+        "storage",
+        "gpu",
+        "database"
+      ]
+    },
+    {
+      "question": 36,
+      "objective": 75,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "chaining"
+      ],
+      "option_terms": [
+        "tune",
+        "few",
+        "length",
+        "chaining"
+      ]
+    },
+    {
+      "question": 37,
+      "objective": 23,
+      "domain": 1,
+      "task": "1.3",
+      "correct_terms": [
+        "platform"
+      ],
+      "option_terms": [
+        "platform",
+        "agent",
+        "infra",
+        "application"
+      ]
+    },
+    {
+      "question": 38,
+      "objective": 33,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "managed"
+      ],
+      "option_terms": [
+        "largest",
+        "managed",
+        "cheapest",
+        "storage"
+      ]
+    },
+    {
+      "question": 39,
+      "objective": 86,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "priority"
+      ],
+      "option_terms": [
+        "cheapest",
+        "biggerdata",
+        "priority",
+        "largest"
+      ]
+    },
+    {
+      "question": 40,
+      "objective": 79,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "thirdparty"
+      ],
+      "option_terms": [
+        "thirdparty",
+        "tune",
+        "firstparty",
+        "world"
+      ]
+    },
+    {
+      "question": 41,
+      "objective": 93,
+      "domain": 4,
+      "task": "4.2",
+      "correct_terms": [
+        "iam"
+      ],
+      "option_terms": [
+        "safety",
+        "scc",
+        "quality",
+        "iam"
+      ]
+    },
+    {
+      "question": 42,
+      "objective": 40,
+      "domain": 2,
+      "task": "2.2",
+      "correct_terms": [
+        "notebook"
+      ],
+      "option_terms": [
+        "automl",
+        "garden",
+        "notebook",
+        "ccaas"
+      ]
+    },
+    {
+      "question": 43,
+      "objective": 12,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "ingest"
+      ],
+      "option_terms": [
+        "ingest",
+        "prepare",
+        "deploy",
+        "train"
+      ]
+    },
+    {
+      "question": 44,
+      "objective": 46,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "ccaas"
+      ],
+      "option_terms": [
+        "ccaas",
+        "assist",
+        "translation",
+        "insights"
+      ]
+    },
+    {
+      "question": 45,
+      "objective": 65,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "tool"
+      ],
+      "option_terms": [
+        "tool",
+        "geminiapp",
+        "garden",
+        "prompt"
+      ]
+    },
+    {
+      "question": 46,
+      "objective": 83,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "length"
+      ],
+      "option_terms": [
+        "length",
+        "context",
+        "topp",
+        "temperature"
+      ]
+    },
+    {
+      "question": 47,
+      "objective": 7,
+      "domain": 1,
+      "task": "1.2",
+      "correct_terms": [
+        "structured"
+      ],
+      "option_terms": [
+        "unstructured",
+        "unlabeled",
+        "labeled",
+        "structured"
+      ]
+    },
+    {
+      "question": 48,
+      "objective": 36,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "lowcode"
+      ],
+      "option_terms": [
+        "infra",
+        "train",
+        "lowcode",
+        "largest"
+      ]
+    },
+    {
+      "question": 49,
+      "objective": 39,
+      "domain": 2,
+      "task": "2.2",
+      "correct_terms": [
+        "enterprise"
+      ],
+      "option_terms": [
+        "googlesearch",
+        "garden",
+        "workspace",
+        "enterprise"
+      ]
+    },
+    {
+      "question": 50,
+      "objective": 4,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "supervised"
+      ],
+      "option_terms": [
+        "supervised",
+        "reinforcement",
+        "unsupervised",
+        "rules"
+      ]
+    },
+    {
+      "question": 51,
+      "objective": 82,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "topp"
+      ],
+      "option_terms": [
+        "topp",
+        "temperature",
+        "context",
+        "length"
+      ]
+    },
+    {
+      "question": 52,
+      "objective": 21,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "choose"
+      ],
+      "option_terms": [
+        "biggerdata",
+        "cheapest",
+        "choose",
+        "largest"
+      ]
+    },
+    {
+      "question": 53,
+      "objective": 53,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "storage"
+      ],
+      "option_terms": [
+        "automl",
+        "storage",
+        "search",
+        "database"
+      ]
+    },
+    {
+      "question": 54,
+      "objective": 26,
+      "domain": 1,
+      "task": "1.4",
+      "correct_terms": [
+        "gemini"
+      ],
+      "option_terms": [
+        "veo",
+        "imagen",
+        "gemini",
+        "gemma"
+      ]
+    },
+    {
+      "question": 55,
+      "objective": 72,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "one"
+      ],
+      "option_terms": [
+        "tune",
+        "few",
+        "zero",
+        "one"
+      ]
+    },
+    {
+      "question": 56,
+      "objective": 92,
+      "domain": 4,
+      "task": "4.2",
+      "correct_terms": [
+        "saif"
+      ],
+      "option_terms": [
+        "iam",
+        "saif",
+        "scc",
+        "safety"
+      ]
+    },
+    {
+      "question": 57,
+      "objective": 44,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "assist"
+      ],
+      "option_terms": [
+        "ccaas",
+        "assist",
+        "insights",
+        "conversational"
+      ]
+    },
+    {
+      "question": 58,
+      "objective": 9,
+      "domain": 1,
+      "task": "1.2",
+      "correct_terms": [
+        "labeled"
+      ],
+      "option_terms": [
+        "structured",
+        "labeled",
+        "unlabeled",
+        "unstructured"
+      ]
+    },
+    {
+      "question": 59,
+      "objective": 81,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "temperature"
+      ],
+      "option_terms": [
+        "context",
+        "temperature",
+        "token",
+        "length"
+      ]
+    },
+    {
+      "question": 60,
+      "objective": 41,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "search"
+      ],
+      "option_terms": [
+        "automl",
+        "search",
+        "googlesearch",
+        "garden"
+      ]
+    },
+    {
+      "question": 61,
+      "objective": 73,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "few"
+      ],
+      "option_terms": [
+        "zero",
+        "one",
+        "few",
+        "tune"
+      ]
+    },
+    {
+      "question": 62,
+      "objective": 51,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "agentstudio"
+      ],
+      "option_terms": [
+        "aistudio",
+        "agentstudio",
+        "gems",
+        "notebook"
+      ]
+    },
+    {
+      "question": 63,
+      "objective": 58,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "translation"
+      ],
+      "option_terms": [
+        "nlp",
+        "translation",
+        "stt",
+        "vision"
+      ]
+    },
+    {
+      "question": 64,
+      "objective": 100,
+      "domain": 4,
+      "task": "4.3",
+      "correct_terms": [
+        "accountable"
+      ],
+      "option_terms": [
+        "largest",
+        "transparent",
+        "temperature",
+        "accountable"
+      ]
+    },
+    {
+      "question": 65,
+      "objective": 68,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "rag"
+      ],
+      "option_terms": [
+        "tune",
+        "softprompt",
+        "largest",
+        "rag"
+      ]
+    },
+    {
+      "question": 66,
+      "objective": 13,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "prepare"
+      ],
+      "option_terms": [
+        "deploy",
+        "prepare",
+        "train",
+        "ingest"
+      ]
+    },
+    {
+      "question": 67,
+      "objective": 99,
+      "domain": 4,
+      "task": "4.3",
+      "correct_terms": [
+        "fair"
+      ],
+      "option_terms": [
+        "cheapest",
+        "fair",
+        "largest",
+        "quality"
+      ]
+    },
+    {
+      "question": 68,
+      "objective": 80,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "world"
+      ],
+      "option_terms": [
+        "world",
+        "firstparty",
+        "tune",
+        "thirdparty"
+      ]
+    },
+    {
+      "question": 69,
+      "objective": 67,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "cutoff"
+      ],
+      "option_terms": [
+        "hallucination",
+        "context",
+        "cutoff",
+        "token"
+      ]
+    },
+    {
+      "question": 70,
+      "objective": 8,
+      "domain": 1,
+      "task": "1.2",
+      "correct_terms": [
+        "unstructured"
+      ],
+      "option_terms": [
+        "structured",
+        "labeled",
+        "regression",
+        "unstructured"
+      ]
+    },
+    {
+      "question": 71,
+      "objective": 74,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "role"
+      ],
+      "option_terms": [
+        "rag",
+        "role",
+        "tune",
+        "few"
+      ]
+    },
+    {
+      "question": 72,
+      "objective": 70,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "case_5_70_0"
+      ],
+      "option_terms": [
+        "case_5_70_2",
+        "case_5_70_1",
+        "case_5_70_3",
+        "case_5_70_0"
+      ]
+    },
+    {
+      "question": 73,
+      "objective": 95,
+      "domain": 4,
+      "task": "4.2",
+      "correct_terms": [
+        "securelife"
+      ],
+      "option_terms": [
+        "deploy",
+        "securelife",
+        "largest",
+        "safety"
+      ]
+    },
+    {
+      "question": 74,
+      "objective": 56,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "stt"
+      ],
+      "option_terms": [
+        "tts",
+        "translation",
+        "stt",
+        "nlp"
+      ]
+    },
+    {
+      "question": 75,
+      "objective": 30,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "rules"
+      ],
+      "option_terms": [
+        "fm",
+        "agent",
+        "draft",
+        "rules"
+      ]
+    },
+    {
+      "question": 76,
+      "objective": 19,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "multi"
+      ],
+      "option_terms": [
+        "regression",
+        "llm",
+        "multi",
+        "structured"
+      ]
+    },
+    {
+      "question": 77,
+      "objective": 42,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "case_5_42_0"
+      ],
+      "option_terms": [
+        "case_5_42_0",
+        "case_5_42_1",
+        "case_5_42_3",
+        "case_5_42_2"
+      ]
+    },
+    {
+      "question": 78,
+      "objective": 47,
+      "domain": 2,
+      "task": "2.4",
+      "correct_terms": [
+        "garden"
+      ],
+      "option_terms": [
+        "search",
+        "automl",
+        "workspace",
+        "garden"
+      ]
+    },
+    {
+      "question": 79,
+      "objective": 14,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "train"
+      ],
+      "option_terms": [
+        "train",
+        "inference",
+        "manage",
+        "deploy"
+      ]
+    },
+    {
+      "question": 80,
+      "objective": 48,
+      "domain": 2,
+      "task": "2.4",
+      "correct_terms": [
+        "automl"
+      ],
+      "option_terms": [
+        "garden",
+        "workspace",
+        "search",
+        "automl"
+      ]
+    },
+    {
+      "question": 81,
+      "objective": 17,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "fm"
+      ],
+      "option_terms": [
+        "fm",
+        "classification",
+        "rules",
+        "infra"
+      ]
+    },
+    {
+      "question": 82,
+      "objective": 22,
+      "domain": 1,
+      "task": "1.3",
+      "correct_terms": [
+        "infra"
+      ],
+      "option_terms": [
+        "application",
+        "infra",
+        "platform",
+        "agent"
+      ]
+    },
+    {
+      "question": 83,
+      "objective": 6,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "reinforcement"
+      ],
+      "option_terms": [
+        "supervised",
+        "unsupervised",
+        "reinforcement",
+        "prepare"
+      ]
+    },
+    {
+      "question": 84,
+      "objective": 88,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "case_5_88_0"
+      ],
+      "option_terms": [
+        "case_5_88_2",
+        "case_5_88_0",
+        "case_5_88_3",
+        "case_5_88_1"
+      ]
+    },
+    {
+      "question": 85,
+      "objective": 16,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "manage"
+      ],
+      "option_terms": [
+        "train",
+        "ingest",
+        "manage",
+        "prepare"
+      ]
+    },
+    {
+      "question": 86,
+      "objective": 15,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "deploy"
+      ],
+      "option_terms": [
+        "ingest",
+        "prepare",
+        "train",
+        "deploy"
+      ]
+    },
+    {
+      "question": 87,
+      "objective": 62,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "video"
+      ],
+      "option_terms": [
+        "video",
+        "vision",
+        "nlp",
+        "veo"
+      ]
+    },
+    {
+      "question": 88,
+      "objective": 49,
+      "domain": 2,
+      "task": "2.4",
+      "correct_terms": [
+        "customagents"
+      ],
+      "option_terms": [
+        "customagents",
+        "gems",
+        "workspace",
+        "garden"
+      ]
+    },
+    {
+      "question": 89,
+      "objective": 24,
+      "domain": 1,
+      "task": "1.3",
+      "correct_terms": [
+        "agent"
+      ],
+      "option_terms": [
+        "infra",
+        "platform",
+        "agent",
+        "application"
+      ]
+    },
+    {
+      "question": 90,
+      "objective": 52,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "aistudio"
+      ],
+      "option_terms": [
+        "aistudio",
+        "ccaas",
+        "agentstudio",
+        "automl"
+      ]
+    },
+    {
+      "question": 91,
+      "objective": 98,
+      "domain": 4,
+      "task": "4.3",
+      "correct_terms": [
+        "pseudonym"
+      ],
+      "option_terms": [
+        "unlabeled",
+        "pseudonym",
+        "structured",
+        "anonym"
+      ]
+    },
+    {
+      "question": 92,
+      "objective": 59,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "doctranslation"
+      ],
+      "option_terms": [
+        "translation",
+        "vision",
+        "docai",
+        "doctranslation"
+      ]
+    },
+    {
+      "question": 93,
+      "objective": 25,
+      "domain": 1,
+      "task": "1.3",
+      "correct_terms": [
+        "application"
+      ],
+      "option_terms": [
+        "fm",
+        "platform",
+        "application",
+        "infra"
+      ]
+    },
+    {
+      "question": 94,
+      "objective": 20,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "diffusion"
+      ],
+      "option_terms": [
+        "regression",
+        "classification",
+        "supervised",
+        "diffusion"
+      ]
+    },
+    {
+      "question": 95,
+      "objective": 31,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "tpu"
+      ],
+      "option_terms": [
+        "cpu",
+        "tpu",
+        "gpu",
+        "storage"
+      ]
+    },
+    {
+      "question": 96,
+      "objective": 97,
+      "domain": 4,
+      "task": "4.3",
+      "correct_terms": [
+        "privacy"
+      ],
+      "option_terms": [
+        "prompt",
+        "largest",
+        "biggerdata",
+        "privacy"
+      ]
+    },
+    {
+      "question": 97,
+      "objective": 34,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "open"
+      ],
+      "option_terms": [
+        "largest",
+        "rules",
+        "cheapest",
+        "open"
+      ]
+    },
+    {
+      "question": 98,
+      "objective": 10,
+      "domain": 1,
+      "task": "1.2",
+      "correct_terms": [
+        "quality"
+      ],
+      "option_terms": [
+        "biggerdata",
+        "prompt",
+        "largest",
+        "quality"
+      ]
+    },
+    {
+      "question": 99,
+      "objective": 85,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "softprompt"
+      ],
+      "option_terms": [
+        "tune",
+        "softprompt",
+        "prompt",
+        "rag"
+      ]
+    },
+    {
+      "question": 100,
+      "objective": 27,
+      "domain": 1,
+      "task": "1.4",
+      "correct_terms": [
+        "case_5_27_0"
+      ],
+      "option_terms": [
+        "case_5_27_2",
+        "case_5_27_0",
+        "case_5_27_3",
+        "case_5_27_1"
+      ]
+    }
+  ],
+  "6": [
+    {
+      "question": 1,
+      "objective": 89,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "kpi"
+      ],
+      "option_terms": [
+        "largest",
+        "kpi",
+        "token",
+        "cheapest"
+      ]
+    },
+    {
+      "question": 2,
+      "objective": 41,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "search"
+      ],
+      "option_terms": [
+        "garden",
+        "googlesearch",
+        "automl",
+        "search"
+      ]
+    },
+    {
+      "question": 3,
+      "objective": 27,
+      "domain": 1,
+      "task": "1.4",
+      "correct_terms": [
+        "gemma"
+      ],
+      "option_terms": [
+        "gemma",
+        "veo",
+        "imagen",
+        "gemini"
+      ]
+    },
+    {
+      "question": 4,
+      "objective": 5,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "unsupervised"
+      ],
+      "option_terms": [
+        "supervised",
+        "rules",
+        "unsupervised",
+        "reinforcement"
+      ]
+    },
+    {
+      "question": 5,
+      "objective": 90,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "adoption"
+      ],
+      "option_terms": [
+        "largest",
+        "deploy",
+        "adoption",
+        "biggerdata"
+      ]
+    },
+    {
+      "question": 6,
+      "objective": 33,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "managed"
+      ],
+      "option_terms": [
+        "managed",
+        "storage",
+        "cheapest",
+        "largest"
+      ]
+    },
+    {
+      "question": 7,
+      "objective": 93,
+      "domain": 4,
+      "task": "4.2",
+      "correct_terms": [
+        "iam"
+      ],
+      "option_terms": [
+        "quality",
+        "safety",
+        "scc",
+        "iam"
+      ]
+    },
+    {
+      "question": 8,
+      "objective": 71,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "zero"
+      ],
+      "option_terms": [
+        "zero",
+        "tune",
+        "few",
+        "one"
+      ]
+    },
+    {
+      "question": 9,
+      "objective": 76,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "cot"
+      ],
+      "option_terms": [
+        "react",
+        "role",
+        "temperature",
+        "cot"
+      ]
+    },
+    {
+      "question": 10,
+      "objective": 22,
+      "domain": 1,
+      "task": "1.3",
+      "correct_terms": [
+        "infra"
+      ],
+      "option_terms": [
+        "agent",
+        "infra",
+        "application",
+        "platform"
+      ]
+    },
+    {
+      "question": 11,
+      "objective": 64,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "database"
+      ],
+      "option_terms": [
+        "gemini",
+        "database",
+        "garden",
+        "imagen"
+      ]
+    },
+    {
+      "question": 12,
+      "objective": 52,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "aistudio"
+      ],
+      "option_terms": [
+        "agentstudio",
+        "automl",
+        "aistudio",
+        "ccaas"
+      ]
+    },
+    {
+      "question": 13,
+      "objective": 25,
+      "domain": 1,
+      "task": "1.3",
+      "correct_terms": [
+        "application"
+      ],
+      "option_terms": [
+        "infra",
+        "application",
+        "platform",
+        "fm"
+      ]
+    },
+    {
+      "question": 14,
+      "objective": 99,
+      "domain": 4,
+      "task": "4.3",
+      "correct_terms": [
+        "fair"
+      ],
+      "option_terms": [
+        "cheapest",
+        "quality",
+        "largest",
+        "fair"
+      ]
+    },
+    {
+      "question": 15,
+      "objective": 28,
+      "domain": 1,
+      "task": "1.4",
+      "correct_terms": [
+        "imagen"
+      ],
+      "option_terms": [
+        "imagen",
+        "veo",
+        "gemma",
+        "classification"
+      ]
+    },
+    {
+      "question": 16,
+      "objective": 49,
+      "domain": 2,
+      "task": "2.4",
+      "correct_terms": [
+        "case_6_49_0"
+      ],
+      "option_terms": [
+        "case_6_49_3",
+        "case_6_49_0",
+        "case_6_49_1",
+        "case_6_49_2"
+      ]
+    },
+    {
+      "question": 17,
+      "objective": 31,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "tpu"
+      ],
+      "option_terms": [
+        "storage",
+        "cpu",
+        "gpu",
+        "tpu"
+      ]
+    },
+    {
+      "question": 18,
+      "objective": 47,
+      "domain": 2,
+      "task": "2.4",
+      "correct_terms": [
+        "garden"
+      ],
+      "option_terms": [
+        "search",
+        "workspace",
+        "automl",
+        "garden"
+      ]
+    },
+    {
+      "question": 19,
+      "objective": 91,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "stakeholders"
+      ],
+      "option_terms": [
+        "train",
+        "cheapest",
+        "stakeholders",
+        "largest"
+      ]
+    },
+    {
+      "question": 20,
+      "objective": 85,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "case_6_85_0"
+      ],
+      "option_terms": [
+        "case_6_85_3",
+        "case_6_85_2",
+        "case_6_85_1",
+        "case_6_85_0"
+      ]
+    },
+    {
+      "question": 21,
+      "objective": 23,
+      "domain": 1,
+      "task": "1.3",
+      "correct_terms": [
+        "platform"
+      ],
+      "option_terms": [
+        "infra",
+        "platform",
+        "agent",
+        "application"
+      ]
+    },
+    {
+      "question": 22,
+      "objective": 81,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "temperature"
+      ],
+      "option_terms": [
+        "length",
+        "context",
+        "token",
+        "temperature"
+      ]
+    },
+    {
+      "question": 23,
+      "objective": 78,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "firstparty"
+      ],
+      "option_terms": [
+        "firstparty",
+        "temperature",
+        "thirdparty",
+        "world"
+      ]
+    },
+    {
+      "question": 24,
+      "objective": 14,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "train"
+      ],
+      "option_terms": [
+        "manage",
+        "inference",
+        "train",
+        "deploy"
+      ]
+    },
+    {
+      "question": 25,
+      "objective": 79,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "thirdparty"
+      ],
+      "option_terms": [
+        "thirdparty",
+        "world",
+        "firstparty",
+        "tune"
+      ]
+    },
+    {
+      "question": 26,
+      "objective": 75,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "chaining"
+      ],
+      "option_terms": [
+        "few",
+        "tune",
+        "length",
+        "chaining"
+      ]
+    },
+    {
+      "question": 27,
+      "objective": 39,
+      "domain": 2,
+      "task": "2.2",
+      "correct_terms": [
+        "enterprise"
+      ],
+      "option_terms": [
+        "enterprise",
+        "googlesearch",
+        "garden",
+        "workspace"
+      ]
+    },
+    {
+      "question": 28,
+      "objective": 35,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "controls"
+      ],
+      "option_terms": [
+        "geminiapp",
+        "biggerdata",
+        "controls",
+        "largest"
+      ]
+    },
+    {
+      "question": 29,
+      "objective": 80,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "world"
+      ],
+      "option_terms": [
+        "world",
+        "tune",
+        "thirdparty",
+        "firstparty"
+      ]
+    },
+    {
+      "question": 30,
+      "objective": 3,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "deep"
+      ],
+      "option_terms": [
+        "structured",
+        "rules",
+        "deep",
+        "supervised"
+      ]
+    },
+    {
+      "question": 31,
+      "objective": 9,
+      "domain": 1,
+      "task": "1.2",
+      "correct_terms": [
+        "labeled"
+      ],
+      "option_terms": [
+        "unstructured",
+        "labeled",
+        "unlabeled",
+        "structured"
+      ]
+    },
+    {
+      "question": 32,
+      "objective": 100,
+      "domain": 4,
+      "task": "4.3",
+      "correct_terms": [
+        "accountable"
+      ],
+      "option_terms": [
+        "temperature",
+        "transparent",
+        "largest",
+        "accountable"
+      ]
+    },
+    {
+      "question": 33,
+      "objective": 26,
+      "domain": 1,
+      "task": "1.4",
+      "correct_terms": [
+        "gemini"
+      ],
+      "option_terms": [
+        "imagen",
+        "gemma",
+        "veo",
+        "gemini"
+      ]
+    },
+    {
+      "question": 34,
+      "objective": 87,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "pilot"
+      ],
+      "option_terms": [
+        "pilot",
+        "deploy",
+        "largest",
+        "biggerdata"
+      ]
+    },
+    {
+      "question": 35,
+      "objective": 56,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "stt"
+      ],
+      "option_terms": [
+        "translation",
+        "nlp",
+        "stt",
+        "tts"
+      ]
+    },
+    {
+      "question": 36,
+      "objective": 34,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "open"
+      ],
+      "option_terms": [
+        "largest",
+        "cheapest",
+        "rules",
+        "open"
+      ]
+    },
+    {
+      "question": 37,
+      "objective": 21,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "choose"
+      ],
+      "option_terms": [
+        "cheapest",
+        "choose",
+        "largest",
+        "biggerdata"
+      ]
+    },
+    {
+      "question": 38,
+      "objective": 94,
+      "domain": 4,
+      "task": "4.2",
+      "correct_terms": [
+        "scc"
+      ],
+      "option_terms": [
+        "iam",
+        "prompt",
+        "quality",
+        "scc"
+      ]
+    },
+    {
+      "question": 39,
+      "objective": 66,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "hallucination"
+      ],
+      "option_terms": [
+        "cutoff",
+        "token",
+        "hallucination",
+        "context"
+      ]
+    },
+    {
+      "question": 40,
+      "objective": 51,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "agentstudio"
+      ],
+      "option_terms": [
+        "gems",
+        "aistudio",
+        "notebook",
+        "agentstudio"
+      ]
+    },
+    {
+      "question": 41,
+      "objective": 84,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "monitor"
+      ],
+      "option_terms": [
+        "largest",
+        "biggerdata",
+        "cheapest",
+        "monitor"
+      ]
+    },
+    {
+      "question": 42,
+      "objective": 77,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "react"
+      ],
+      "option_terms": [
+        "react",
+        "cot",
+        "temperature",
+        "role"
+      ]
+    },
+    {
+      "question": 43,
+      "objective": 43,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "conversational"
+      ],
+      "option_terms": [
+        "ccaas",
+        "conversational",
+        "insights",
+        "assist"
+      ]
+    },
+    {
+      "question": 44,
+      "objective": 19,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "multi"
+      ],
+      "option_terms": [
+        "regression",
+        "llm",
+        "multi",
+        "structured"
+      ]
+    },
+    {
+      "question": 45,
+      "objective": 30,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "rules"
+      ],
+      "option_terms": [
+        "draft",
+        "rules",
+        "agent",
+        "fm"
+      ]
+    },
+    {
+      "question": 46,
+      "objective": 97,
+      "domain": 4,
+      "task": "4.3",
+      "correct_terms": [
+        "privacy"
+      ],
+      "option_terms": [
+        "biggerdata",
+        "privacy",
+        "prompt",
+        "largest"
+      ]
+    },
+    {
+      "question": 47,
+      "objective": 15,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "deploy"
+      ],
+      "option_terms": [
+        "train",
+        "deploy",
+        "ingest",
+        "prepare"
+      ]
+    },
+    {
+      "question": 48,
+      "objective": 13,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "prepare"
+      ],
+      "option_terms": [
+        "ingest",
+        "train",
+        "deploy",
+        "prepare"
+      ]
+    },
+    {
+      "question": 49,
+      "objective": 73,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "few"
+      ],
+      "option_terms": [
+        "tune",
+        "few",
+        "one",
+        "zero"
+      ]
+    },
+    {
+      "question": 50,
+      "objective": 82,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "topp"
+      ],
+      "option_terms": [
+        "topp",
+        "length",
+        "temperature",
+        "context"
+      ]
+    },
+    {
+      "question": 51,
+      "objective": 68,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "rag"
+      ],
+      "option_terms": [
+        "softprompt",
+        "rag",
+        "largest",
+        "tune"
+      ]
+    },
+    {
+      "question": 52,
+      "objective": 17,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "fm"
+      ],
+      "option_terms": [
+        "rules",
+        "classification",
+        "fm",
+        "infra"
+      ]
+    },
+    {
+      "question": 53,
+      "objective": 55,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "functions"
+      ],
+      "option_terms": [
+        "garden",
+        "storage",
+        "functions",
+        "automl"
+      ]
+    },
+    {
+      "question": 54,
+      "objective": 69,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "tune"
+      ],
+      "option_terms": [
+        "tune",
+        "prompt",
+        "temperature",
+        "rag"
+      ]
+    },
+    {
+      "question": 55,
+      "objective": 12,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "ingest"
+      ],
+      "option_terms": [
+        "train",
+        "prepare",
+        "ingest",
+        "deploy"
+      ]
+    },
+    {
+      "question": 56,
+      "objective": 11,
+      "domain": 1,
+      "task": "1.2",
+      "correct_terms": [
+        "case_6_11_0"
+      ],
+      "option_terms": [
+        "case_6_11_2",
+        "case_6_11_0",
+        "case_6_11_1",
+        "case_6_11_3"
+      ]
+    },
+    {
+      "question": 57,
+      "objective": 58,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "translation"
+      ],
+      "option_terms": [
+        "nlp",
+        "translation",
+        "stt",
+        "vision"
+      ]
+    },
+    {
+      "question": 58,
+      "objective": 74,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "role"
+      ],
+      "option_terms": [
+        "few",
+        "rag",
+        "role",
+        "tune"
+      ]
+    },
+    {
+      "question": 59,
+      "objective": 44,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "assist"
+      ],
+      "option_terms": [
+        "assist",
+        "conversational",
+        "ccaas",
+        "insights"
+      ]
+    },
+    {
+      "question": 60,
+      "objective": 59,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "doctranslation"
+      ],
+      "option_terms": [
+        "doctranslation",
+        "vision",
+        "translation",
+        "docai"
+      ]
+    },
+    {
+      "question": 61,
+      "objective": 24,
+      "domain": 1,
+      "task": "1.3",
+      "correct_terms": [
+        "agent"
+      ],
+      "option_terms": [
+        "agent",
+        "platform",
+        "infra",
+        "application"
+      ]
+    },
+    {
+      "question": 62,
+      "objective": 72,
+      "domain": 3,
+      "task": "3.2",
+      "correct_terms": [
+        "one"
+      ],
+      "option_terms": [
+        "zero",
+        "tune",
+        "few",
+        "one"
+      ]
+    },
+    {
+      "question": 63,
+      "objective": 42,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "googlesearch"
+      ],
+      "option_terms": [
+        "googlesearch",
+        "enterprise",
+        "search",
+        "notebook"
+      ]
+    },
+    {
+      "question": 64,
+      "objective": 63,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "nlp"
+      ],
+      "option_terms": [
+        "stt",
+        "tts",
+        "translation",
+        "nlp"
+      ]
+    },
+    {
+      "question": 65,
+      "objective": 8,
+      "domain": 1,
+      "task": "1.2",
+      "correct_terms": [
+        "unstructured"
+      ],
+      "option_terms": [
+        "labeled",
+        "structured",
+        "unstructured",
+        "regression"
+      ]
+    },
+    {
+      "question": 66,
+      "objective": 92,
+      "domain": 4,
+      "task": "4.2",
+      "correct_terms": [
+        "saif"
+      ],
+      "option_terms": [
+        "scc",
+        "safety",
+        "saif",
+        "iam"
+      ]
+    },
+    {
+      "question": 67,
+      "objective": 45,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "insights"
+      ],
+      "option_terms": [
+        "assist",
+        "conversational",
+        "ccaas",
+        "insights"
+      ]
+    },
+    {
+      "question": 68,
+      "objective": 61,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "vision"
+      ],
+      "option_terms": [
+        "imagen",
+        "vision",
+        "nlp",
+        "video"
+      ]
+    },
+    {
+      "question": 69,
+      "objective": 40,
+      "domain": 2,
+      "task": "2.2",
+      "correct_terms": [
+        "notebook"
+      ],
+      "option_terms": [
+        "garden",
+        "ccaas",
+        "notebook",
+        "automl"
+      ]
+    },
+    {
+      "question": 70,
+      "objective": 16,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "manage"
+      ],
+      "option_terms": [
+        "prepare",
+        "manage",
+        "train",
+        "ingest"
+      ]
+    },
+    {
+      "question": 71,
+      "objective": 83,
+      "domain": 3,
+      "task": "3.3",
+      "correct_terms": [
+        "length"
+      ],
+      "option_terms": [
+        "length",
+        "context",
+        "temperature",
+        "topp"
+      ]
+    },
+    {
+      "question": 72,
+      "objective": 98,
+      "domain": 4,
+      "task": "4.3",
+      "correct_terms": [
+        "pseudonym"
+      ],
+      "option_terms": [
+        "unlabeled",
+        "pseudonym",
+        "anonym",
+        "structured"
+      ]
+    },
+    {
+      "question": 73,
+      "objective": 1,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "gen"
+      ],
+      "option_terms": [
+        "gen",
+        "regression",
+        "rules",
+        "classification"
+      ]
+    },
+    {
+      "question": 74,
+      "objective": 96,
+      "domain": 4,
+      "task": "4.3",
+      "correct_terms": [
+        "transparent"
+      ],
+      "option_terms": [
+        "safety",
+        "transparent",
+        "accountable",
+        "temperature"
+      ]
+    },
+    {
+      "question": 75,
+      "objective": 95,
+      "domain": 4,
+      "task": "4.2",
+      "correct_terms": [
+        "securelife"
+      ],
+      "option_terms": [
+        "securelife",
+        "safety",
+        "deploy",
+        "largest"
+      ]
+    },
+    {
+      "question": 76,
+      "objective": 2,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "ml"
+      ],
+      "option_terms": [
+        "rules",
+        "application",
+        "ml",
+        "infra"
+      ]
+    },
+    {
+      "question": 77,
+      "objective": 62,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "video"
+      ],
+      "option_terms": [
+        "video",
+        "veo",
+        "vision",
+        "nlp"
+      ]
+    },
+    {
+      "question": 78,
+      "objective": 32,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "gpu"
+      ],
+      "option_terms": [
+        "database",
+        "cpu",
+        "storage",
+        "gpu"
+      ]
+    },
+    {
+      "question": 79,
+      "objective": 65,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "tool"
+      ],
+      "option_terms": [
+        "prompt",
+        "geminiapp",
+        "tool",
+        "garden"
+      ]
+    },
+    {
+      "question": 80,
+      "objective": 38,
+      "domain": 2,
+      "task": "2.2",
+      "correct_terms": [
+        "workspace"
+      ],
+      "option_terms": [
+        "garden",
+        "automl",
+        "workspace",
+        "enterprise"
+      ]
+    },
+    {
+      "question": 81,
+      "objective": 10,
+      "domain": 1,
+      "task": "1.2",
+      "correct_terms": [
+        "quality"
+      ],
+      "option_terms": [
+        "biggerdata",
+        "largest",
+        "quality",
+        "prompt"
+      ]
+    },
+    {
+      "question": 82,
+      "objective": 50,
+      "domain": 2,
+      "task": "2.4",
+      "correct_terms": [
+        "ragapi"
+      ],
+      "option_terms": [
+        "train",
+        "ragapi",
+        "gems",
+        "automl"
+      ]
+    },
+    {
+      "question": 83,
+      "objective": 6,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "reinforcement"
+      ],
+      "option_terms": [
+        "supervised",
+        "reinforcement",
+        "prepare",
+        "unsupervised"
+      ]
+    },
+    {
+      "question": 84,
+      "objective": 18,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "llm"
+      ],
+      "option_terms": [
+        "infra",
+        "llm",
+        "structured",
+        "regression"
+      ]
+    },
+    {
+      "question": 85,
+      "objective": 86,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "priority"
+      ],
+      "option_terms": [
+        "priority",
+        "cheapest",
+        "biggerdata",
+        "largest"
+      ]
+    },
+    {
+      "question": 86,
+      "objective": 53,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "storage"
+      ],
+      "option_terms": [
+        "automl",
+        "storage",
+        "search",
+        "database"
+      ]
+    },
+    {
+      "question": 87,
+      "objective": 57,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "tts"
+      ],
+      "option_terms": [
+        "nlp",
+        "translation",
+        "stt",
+        "tts"
+      ]
+    },
+    {
+      "question": 88,
+      "objective": 60,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "docai"
+      ],
+      "option_terms": [
+        "docai",
+        "vision",
+        "translation",
+        "nlp"
+      ]
+    },
+    {
+      "question": 89,
+      "objective": 20,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "diffusion"
+      ],
+      "option_terms": [
+        "supervised",
+        "classification",
+        "diffusion",
+        "regression"
+      ]
+    },
+    {
+      "question": 90,
+      "objective": 29,
+      "domain": 1,
+      "task": "1.4",
+      "correct_terms": [
+        "veo"
+      ],
+      "option_terms": [
+        "veo",
+        "imagen",
+        "classification",
+        "gemma"
+      ]
+    },
+    {
+      "question": 91,
+      "objective": 7,
+      "domain": 1,
+      "task": "1.2",
+      "correct_terms": [
+        "structured"
+      ],
+      "option_terms": [
+        "labeled",
+        "unlabeled",
+        "unstructured",
+        "structured"
+      ]
+    },
+    {
+      "question": 92,
+      "objective": 88,
+      "domain": 4,
+      "task": "4.1",
+      "correct_terms": [
+        "case_6_88_0"
+      ],
+      "option_terms": [
+        "case_6_88_2",
+        "case_6_88_1",
+        "case_6_88_3",
+        "case_6_88_0"
+      ]
+    },
+    {
+      "question": 93,
+      "objective": 4,
+      "domain": 1,
+      "task": "1.1",
+      "correct_terms": [
+        "supervised"
+      ],
+      "option_terms": [
+        "reinforcement",
+        "rules",
+        "supervised",
+        "unsupervised"
+      ]
+    },
+    {
+      "question": 94,
+      "objective": 54,
+      "domain": 2,
+      "task": "2.5",
+      "correct_terms": [
+        "run"
+      ],
+      "option_terms": [
+        "garden",
+        "storage",
+        "run",
+        "automl"
+      ]
+    },
+    {
+      "question": 95,
+      "objective": 48,
+      "domain": 2,
+      "task": "2.4",
+      "correct_terms": [
+        "automl"
+      ],
+      "option_terms": [
+        "search",
+        "garden",
+        "workspace",
+        "automl"
+      ]
+    },
+    {
+      "question": 96,
+      "objective": 70,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "human"
+      ],
+      "option_terms": [
+        "length",
+        "temperature",
+        "human",
+        "largest"
+      ]
+    },
+    {
+      "question": 97,
+      "objective": 46,
+      "domain": 2,
+      "task": "2.3",
+      "correct_terms": [
+        "ccaas"
+      ],
+      "option_terms": [
+        "translation",
+        "assist",
+        "insights",
+        "ccaas"
+      ]
+    },
+    {
+      "question": 98,
+      "objective": 37,
+      "domain": 2,
+      "task": "2.2",
+      "correct_terms": [
+        "gems"
+      ],
+      "option_terms": [
+        "gems",
+        "workspace",
+        "garden",
+        "automl"
+      ]
+    },
+    {
+      "question": 99,
+      "objective": 36,
+      "domain": 2,
+      "task": "2.1",
+      "correct_terms": [
+        "lowcode"
+      ],
+      "option_terms": [
+        "lowcode",
+        "train",
+        "infra",
+        "largest"
+      ]
+    },
+    {
+      "question": 100,
+      "objective": 67,
+      "domain": 3,
+      "task": "3.1",
+      "correct_terms": [
+        "cutoff"
+      ],
+      "option_terms": [
+        "hallucination",
+        "cutoff",
+        "context",
+        "token"
+      ]
+    }
+  ]
+}

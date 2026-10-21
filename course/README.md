@@ -1,8 +1,17 @@
 # 🎓 Practice Test Course Packages
 
-This directory contains complete, production-ready Udemy Practice Test Course packages for AWS and Microsoft certifications.
+This directory contains complete, production-ready Udemy Practice Test Course packages for Google Cloud, AWS, and Microsoft certifications.
 
 ## 📦 Courses available
+
+### Google Cloud Generative AI Leader
+
+- **Status:** Six 100-question multiple-choice practice sets, generated with explanations and official Google guide references.
+- **Includes:** Udemy CSVs, offline review copies, reference-style landing page, curriculum, validation tools, and ZIP.
+- **Domain allocation per set:** 30 fundamentals / 35 offerings / 20 output improvement / 15 business strategy.
+- **Scope:** Original business-level exam-style practice, not copied exam content or calibrated replicas; core concepts recur across sets.
+- **Location:** [`course/Google-Gen-AI-Leader/`](Google-Gen-AI-Leader/README.md)
+- **Publication:** Final editorial and account-level import review required; no platform publication performed.
 
 ### AI-500: Designing and Implementing Multi-Agent AI Solutions
 
