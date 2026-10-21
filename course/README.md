@@ -4,6 +4,16 @@ This directory contains Udemy Practice Test Course packages for Claude/Anthropic
 
 ## 📦 Courses available
 
+### Claude Certified Developer — Foundations (CCDV-F)
+
+- **Status:** Six 100-question learning tests; 600 original single-answer items with explanations.
+- **Includes:** Udemy CSVs, offline review copies, comprehensive instructor landing page, curriculum, sources/coverage, QA tools, and reproducible ZIP.
+- **Organization:** Five focused learning tests plus an eight-domain integrated review; all 25 named skills mapped with local study IDs.
+- **Baseline:** July 2026 v1.0 guide; updated exam announced for December 7, 2026, revised guide due November 17. Future-version coverage is not claimed.
+- **Format:** Expanded single-answer learning tests, not replicas of the 53-item multiple-choice/multiple-response exam; practice targets are not scaled-score conversions.
+- **Location:** [`course/CCDV-F/`](CCDV-F/README.md)
+- **Publication:** Expert editorial review and account-level import preview still required; no Udemy publication performed.
+
 ### Claude Certified Architect – Foundations (CCAR-F)
 
 - **Status:** Six original 100-question tests with per-option explanations and official guide objective references.

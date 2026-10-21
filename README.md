@@ -6,6 +6,7 @@ This repository contains Udemy practice-test course packages for Claude/Anthropi
 
 | Course | Status | Sets | Total Qs |
 |---|---|---|---|
+| **Claude Certified Developer – Foundations (CCDV-F)** | ✅ [6 learning tests generated and structurally validated](course/CCDV-F/README.md) | 6 | 600 |
 | **Claude Certified Architect – Foundations (CCAR-F)** | ✅ [6 tests generated and structurally validated](course/CCAR-F/README.md) | 6 | 600 |
 | **Google Cloud Generative AI Leader** | ✅ [6 topical tests rewritten and structurally validated](course/Google-Gen-AI-Leader/README.md) | 6 | 600 |
 | **AI-500: Designing and Implementing Multi-Agent AI Solutions** | ✅ [6 sets generated and structurally validated](course/AI-500/README.md) | 6 | 600 |
