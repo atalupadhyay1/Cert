@@ -34,6 +34,16 @@ This directory contains Udemy Practice Test Course packages for Claude/Anthropic
 - **Location:** [`course/CCAR-F/`](CCAR-F/README.md)
 - **Publication:** Final subject-matter and account-level import review required; no platform publication performed.
 
+### Google Cloud Professional Agentic Architect
+
+- **Status:** Six 100-question learning tests; 600 original single-answer items with explanations.
+- **Includes:** Udemy CSVs, offline review copies, comprehensive instructor landing page, curriculum, sources/coverage, QA tools, and reproducible ZIP.
+- **Organization:** Five focused learning tests plus a five-section integrated review; 32 local study-map skills mapped to the guide objectives.
+- **Baseline:** Current beta English exam guide (13/17/33/22/15). Beta closed September 30, 2026; Google announces GA in mid-November 2026. Future-blueprint coverage is not claimed.
+- **Format:** Expanded single-answer learning tests, not replicas of the hybrid certification; the proctored exam is complemented by separate required hands-on labs.
+- **Location:** [`course/Google-Agentic-Architect/`](Google-Agentic-Architect/README.md)
+- **Publication:** Expert technical review, account-level import preview, and hands-on lab practice still required; no Udemy publication performed.
+
 ### Google Cloud Generative AI Leader
 
 - **Status:** Six topical 100-question multiple-choice tests, rewritten with original concept checks, short scenarios, explanations, and closest official guide references.

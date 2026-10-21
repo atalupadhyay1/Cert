@@ -1,0 +1,101 @@
+# Evaluating and deploying agentic workflows: 100
+4.1|golden,edgecases,threshold,evalset|A team is starting evaluation for a customer-support agent. What should anchor the test set?|A representative golden dataset drawn from real task patterns and expected outcomes.
+4.1|edgecases,golden,autorater,humanreview|A happy-path test set passes, but the agent fails on missing fields and hostile input. What is missing?|Explicit edge cases, including adversarial and incomplete inputs.
+4.1|golden,evalset,threshold,trajectory|A golden set contains only easy questions with one tool call. What risk does it create?|It will overstate readiness for multi-step and ambiguous production work.
+4.1|edgecases,threshold,golden,abtest|A safety-critical agent must be tested for prompt injection attempts. What should the test set include?|Adversarial cases that attempt to override instructions or exfiltrate data.
+4.1|golden,humanreview,autorater,regression|Subject-matter experts disagree on the expected answer for some cases. What should the team do?|Record adjudicated expected behavior and keep the disagreement visible for review.
+4.1|threshold,golden,trajectory,observability|A team sets a target of "90% good" without defining good. What should be defined first?|Task-specific criteria and measurement method for each quality dimension.
+4.1|edgecases,golden,abtest,regression|A new market introduces unfamiliar document formats. What should be added to evaluation?|Representative samples of the new formats and their boundary cases.
+4.1|golden,evalset,autorater,threshold|A test set is copied from vendor demos and does not resemble the organization's traffic. What is the flaw?|It is not representative, so results will not predict local performance.
+4.1|humanreview,golden,edgecases,threshold|A low-volume but high-impact case appears rarely in production. How should it be handled?|Include it deliberately in the test set and route real occurrences to review.
+4.1|evalset,golden,regression,onlineeval|An evaluation set contains duplicate paraphrases of the same case. What is the effect?|It overweights one behavior and distorts aggregate scores.
+4.1|edgecases,humanreview,threshold,golden|A test case requires a policy interpretation that the team cannot resolve. What should happen?|Escalate to the accountable owner and encode the decision in expected behavior.
+4.1|golden,threshold,evalset,trajectory|A golden set has expected final answers but no expected tool calls. What can it not assess?|Whether the agent used the right tools and arguments.
+4.1|abtest,golden,edgecases,regression|Two business units have different acceptable outcomes for the same request type. What should evaluation do?|Stratify cases by policy context rather than average incompatible expectations.
+4.1|evalset,observability,onlineeval,regression|A production incident involved a request type absent from the test suite. What should follow?|Add a regression case reproducing the failure before the fix is accepted.
+4.1|humanreview,autorater,golden,threshold|A model-based judge disagrees with experts on sensitive cases. What should be done?|Calibrate or restrict the judge and add human review for that category.
+4.1|golden,edgecases,threshold,capacity|A test set grows without version control or ownership. What problem arises?|Results become irreproducible and stale expectations go unnoticed.
+4.2|trajectory,responsequality,retrievalquality,autorater|An agent gives a correct final answer after deleting a production record it should not have touched. What evaluation would catch this?|Trajectory evaluation of tool calls, arguments, and side effects.
+4.2|responsequality,trajectory,retrievalquality,grounding|A final answer is fluent but omits a required exception. What metric dimension applies?|Response completeness against explicit task criteria.
+4.2|retrievalquality,responsequality,trajectory,grounding|The correct policy exists, but the agent answers from an unrelated older document. What should be measured?|Retrieval relevance and groundedness of the cited evidence.
+4.2|evalset,trajectory,autorater,threshold|A team wants repeatable checks of expected tool use and final responses. What artifact should it build?|An evalset with expected trajectory and response criteria.
+4.2|autorater,humanreview,threshold,responsequality|A model-based scorer rates tone and helpfulness at scale. What is required before trusting it?|Calibration against human judgments and periodic review.
+4.2|humanreview,autorater,trajectory,threshold|A decision requires judgment about a novel ethical trade-off. What evaluation method fits?|Accountable human review using explicit criteria.
+4.2|threshold,trajectory,responsequality,retrievalquality|A team wants to block a release if tool safety checks fail. What must exist?|A pre-agreed pass threshold and a blocking gate for that metric.
+4.2|trajectory,responsequality,grounding,retrievalquality|A correct answer cites a source that does not support it. Which metrics disagree?|Response quality may look acceptable while groundedness fails.
+4.2|responsequality,trajectory,humanreview,autorater|An agent wastes six tool calls but eventually succeeds. What should be measured?|Trajectory efficiency and unnecessary calls alongside success.
+4.2|retrievalquality,grounding,responsequality,threshold|A retrieval change improves recall but adds conflicting passages. What should be evaluated?|Whether answer accuracy and groundedness improve or degrade.
+4.2|autorater,threshold,evalset,humanreview|An autorater is used to judge its own model family's outputs. What risk exists?|Self-preference bias; use independent judges and human calibration.
+4.2|trajectory,responsequality,evalset,observability|An evaluation checks only the final text for a refund workflow. What important failure is missed?|An unauthorized refund executed and then described in a correct-sounding answer.
+4.2|humanreview,threshold,autorater,trajectory|A high-risk action passes automated metrics but lacks approval evidence. What should happen?|Block the action and require attributable approval.
+4.2|grounding,retrievalquality,responsequality,trajectory|An answer contains a correct conclusion but no usable citation. What should evaluation report?|A groundedness deficiency even if the conclusion is right.
+4.2|threshold,responsequality,trajectory,costtrack|A team wants to compare quality and efficiency across two agent designs. What should it report?|Task success, trajectory quality, and cost per successful task.
+4.2|evalset,regression,threshold,observability|An evalset is updated whenever a test fails so that the suite stays green. What is the risk?|The evaluation no longer detects real regressions.
+4.2|autorater,humanreview,grounding,responsequality|A judge model rewards long answers regardless of correctness. What should be done?|Use explicit rubric criteria and validate scores against human ratings.
+4.3|regression,abtest,threshold,onlineeval|A prompt change is proposed for a production agent. What should run before release?|Regression evaluation on representative sets plus staged online monitoring.
+4.3|onlineeval,observability,humanreview,threshold|Offline tests pass, but production users phrase requests differently. What should be monitored?|Online quality and failure patterns on sampled real traffic.
+4.3|abtest,regression,threshold,costtrack|A team changes the model, prompt, and retrieval configuration at once. What is the evaluation problem?|Effects cannot be attributed; change one variable where feasible.
+4.3|threshold,regression,rollout,observability|An agent release improves average quality but worsens a critical segment. What should the gate do?|Evaluate segment-level thresholds, not only the aggregate.
+4.3|onlineeval,observability,audit,humanreview|Online evaluation samples include sensitive customer text. What must be designed?|Minimization, access control, and retention rules for evaluation data.
+4.3|regression,evalset,threshold,drift|A model version is updated by the provider with no API change. What should happen?|Re-run the evaluation suite and compare against thresholds before rollout.
+4.3|abtest,threshold,rollout,capacity|A canary receives 5% of traffic and shows a higher error rate. What should follow?|Pause or roll back using the pre-agreed criteria and investigate.
+4.3|observability,onlineeval,regression,audit|A production agent starts calling an unexpected tool. What should detect it?|Trajectory monitoring and alerting on tool-use patterns.
+4.3|threshold,humanreview,autorater,onlineeval|Automated online scoring flags many answers as low quality, but reviewers disagree. What should be reviewed?|The scorer calibration and the sampling method.
+4.3|regression,drift,evalset,observability|Input distributions shift after a new customer segment is onboarded. What should be updated?|Representative evaluation data and drift monitoring for the new segment.
+4.3|rollout,abtest,regression,threshold|A team wants evidence before expanding an agent to a new region. What approach fits?|A limited rollout with region-specific evaluation and monitoring.
+4.3|onlineeval,observability,capacity,costtrack|Online evaluation itself adds latency and model cost. How should it be designed?|Sample traffic and evaluate asynchronously outside the response path.
+4.3|regression,evalset,threshold,humanreview|A regression suite takes longer than the release cadence allows. What is a sound approach?|Tier the suite into fast blocking checks and broader scheduled evaluation.
+4.3|drift,threshold,abtest,audit|A gradual quality decline is invisible week to week. What should be tracked?|Rolling metrics with baselines and alerts over time.
+4.3|onlineeval,humanreview,observability,policy|A production sample contains a potential policy violation. What should happen?|Route to the responsible team and preserve evidence under policy.
+4.3|regression,threshold,rollout,abtest|A change passes all tests but adds substantial latency. What should the release gate include?|Latency budgets and cost thresholds in addition to quality.
+4.4|agentruntime,cloudrun,gkescale,stateless|A team wants a managed runtime for agents with sessions and memory integration. What should it evaluate?|Agent Runtime for supported managed hosting.
+4.4|cloudrun,agentruntime,gkescale,workstations|A stateless API agent should scale to zero and handle short requests. What fits?|Cloud Run fits a stateless service when session data is externalized to a managed store.
+4.4|gkescale,cloudrun,agentruntime,firestore|A workload requires custom node pools, networking, and scheduling. What fits?|GKE with dedicated infrastructure and policy.
+4.4|sessionstore,redis,cloudsql,stateless|A service loses conversations during deployments because sessions live in memory. What should change?|Persist sessions in an external durable store.
+4.4|stateless,agentruntime,cloudrun,capacity|A stateless agent design needs shared conversation continuity. What must be added?|An external session store keyed by conversation and identity.
+4.4|capacity,timeout,latencybudget,costtrack|An agent performs long-running document analysis beyond typical request limits. What should be designed?|Asynchronous execution with status tracking and appropriate timeouts.
+4.4|agentruntime,gkescale,cloudrun,redis|A team wants managed scaling but needs a custom sidecar and network policy. What trade-off should it evaluate?|The control of GKE versus the operational simplicity of managed runtimes.
+4.4|cloudrun,gkescale,agentruntime,bigquery|A service has bursty traffic with long idle periods. What runtime characteristic matters?|Scale-to-zero or rapid scaling with acceptable cold-start behavior.
+4.4|firestore,sessionstore,cloudsql,gcs|A conversational agent needs per-session documents with low-latency reads. What storage fits?|A document store designed for session access.
+4.4|bigquery,cloudsql,gcs,redis|An agent must query governed analytical data with cost controls. What service fits?|BigQuery with appropriate authorization and query limits.
+4.4|gcs,artifact,cloudsql,firestore|Large generated reports must persist beyond a conversation. What should be used?|Cloud Storage or an artifact store with lifecycle and access controls.
+4.4|stateless,agentruntime,cloudrun,gkescale|A team wants minimal infrastructure management for a simple agent API. What fits?|A managed serverless or agent runtime rather than a custom cluster.
+4.4|capacity,latencybudget,rollout,costtrack|A deployment plan ignores model and tool quotas. What is the likely outcome?|Throttling and failures under peak load.
+4.4|redis,cloudsql,firestore,sessionstore|Multiple agent workers need fast shared coordination with ephemeral data. What fits?|An in-memory data store with appropriate durability expectations.
+4.4|agentruntime,cloudrun,gkescale,workstations|A team needs a managed environment for both agent deployment and evaluation workflows. What should it assess?|Whether the managed agent platform supports the required evaluation and session features.
+4.4|cloudsql,gcs,bigquery,redis|An agent needs transactional records for order changes. What storage fits?|A relational database with transactional guarantees.
+4.4|rollout,capacity,stateless,observability|A new runtime is adopted without load testing. What risk should be addressed?|Unknown scaling limits and latency under realistic concurrency.
+4.5|drift,loopguard,timeout,trace|An agent's answers degrade gradually after a source schema change. What should be investigated first?|Input and retrieval drift caused by the schema change.
+4.5|loopguard,timeout,drift,trace|An agent repeatedly calls the same search tool without progress. What should be implemented?|A step or time limit with loop detection and escalation.
+4.5|timeout,toolerror,loopguard,trace|A tool call occasionally hangs and blocks the workflow. What should be added?|Timeouts, bounded retries, and a clear failure path.
+4.5|trace,observability,drift,loopguard|A request is slow, but it is unclear which step dominates. What should be inspected?|Distributed traces spanning model calls, retrieval, and tools.
+4.5|toolerror,trace,timeout,humanreview|A tool returns a permission error that the agent retries indefinitely. What should change?|Classify the error as non-retryable and escalate instead of looping.
+4.5|drift,observability,regression,threshold|A provider updates a model and tool-call behavior changes. What should detect the effect?|Regression evaluation and production comparison against baselines.
+4.5|loopguard,sequential,parallel,graph|A planner keeps decomposing a task into smaller subtasks without executing them. What control addresses this?|A maximum planning depth with a requirement to act or escalate.
+4.5|trace,audit,costtrack,capacity|A workflow succeeds but costs far more than expected. What should be analyzed?|Per-step token and tool usage from traces and cost records.
+4.5|timeout,toolerror,drift,trace|A retry duplicates a payment because the first call succeeded but timed out. What is missing?|Idempotency and a check for prior success before retry.
+4.5|drift,threshold,onlineeval,humanreview|A new user cohort asks shorter, more ambiguous questions. What should be monitored?|Drift in input patterns and quality by segment.
+4.5|loopguard,hitl,approval,guardrail|An agent cannot resolve a conflict after several attempts. What should happen?|Escalate to a human rather than continue autonomously.
+4.5|trace,observability,audit,gateway|Logs show tool errors but not which agent initiated them. What should be improved?|Trace and log context that identifies the agent, session, and tool call.
+4.5|timeout,capacity,latencybudget,rollout|A retrieval service exceeds its latency budget during peak load. What should be evaluated?|Capacity, caching, and graceful degradation for the dependency.
+4.5|drift,regression,evalset,threshold|A drift alert fires but no evaluation case covers the changed behavior. What should follow?|Add representative cases and decide whether behavior is acceptable.
+4.5|toolerror,loopguard,timeout,trace|A tool returns a validation error with a clear field-level message. What should the agent do?|Correct the arguments within a bounded attempt and then escalate if needed.
+4.5|observability,costtrack,capacity,rollout|An agent's error rate rises only for long conversations. What should be examined?|Context growth, truncation, and session-state behavior over time.
+4.5|trace,audit,drift,humanreview|A correct answer was produced, but the tool arguments were wrong. What reveals this?|Trajectory traces showing the actual calls and arguments.
+4.6|observability,audit,gateway,trace|A platform team needs end-to-end visibility into agent behavior and failures. What should it implement?|Logging, tracing, and monitoring across agent, model, and tool components.
+4.6|costtrack,threshold,capacity,rollout|A team wants to control spend per completed task. What should it measure?|Token, tool, retry, and review cost attributed to accepted outcomes.
+4.6|capacity,latencybudget,observability,rollout|An agent meets quality targets but violates peak latency goals. What should be optimized?|The dominant latency contributors identified through traces.
+4.6|rollout,abtest,threshold,regression|A new version reduces cost but increases escalations. What decision framework fits?|Compare against pre-agreed quality and cost thresholds before expanding.
+4.6|audit,observability,gateway,policy|An auditor asks who approved a high-impact action taken by an agent. What evidence is needed?|Attributable logs linking the action, identity, and approval record.
+4.6|capacity,cloudrun,agentruntime,gkescale|Traffic doubles unexpectedly, and the runtime throttles. What should be reviewed?|Quota, scaling configuration, and degradation behavior.
+4.6|trace,observability,costtrack,drift|A team wants to find which tool causes most failures. What should it analyze?|Error rates grouped by tool from traces and logs.
+4.6|rollout,threshold,observability,humanreview|A canary shows a small quality drop within an acceptable range. What should happen?|Continue monitoring against thresholds and decide using pre-agreed criteria.
+4.6|costtrack,latencybudget,capacity,observability|A prompt change increases tokens but slightly improves quality. What should be evaluated?|Whether the quality gain justifies cost and latency under the use case.
+4.6|gateway,audit,observability,policy|An agent's traffic is not visible at the network or policy layer. What should be added?|Gateway-level observation and policy enforcement make agent traffic visible and controllable centrally.
+4.6|drift,observability,regression,onlineeval|A team wants early warning of changing user behavior. What should it monitor?|Input distribution and quality metrics with rolling baselines.
+4.6|humanreview,threshold,autorater,rollout|Leaders ask whether an agent is ready for wider release. What evidence should be presented?|Offline and online metrics, segment results, risks, and rollback readiness.
+4.6|capacity,costtrack,stateless,cloudrun|Autoscaling creates many cold starts and higher tail latency. What should be evaluated?|Minimum instances and warm capacity against cost.
+4.6|audit,gateway,policy,registry|An agent calls a tool that is not in the approved registry. What should happen?|Block or alert on unapproved tool use and investigate the configuration.
+4.6|trace,observability,humanreview,drift|A recurring hallucination appears only in one document type. What should be done?|Localize the pattern through traces and retrieval evidence, then add targeted tests.
+4.6|rollout,threshold,abtest,regression|A team plans a full launch based on one week of favorable metrics. What is missing?|Broader representative evidence and continued monitoring for delayed failures.
+4.6|costtrack,capacity,latencybudget,rollout|A cost optimization removes a validation step. What must be verified before adoption?|That safety and quality thresholds still hold under representative evaluation.
