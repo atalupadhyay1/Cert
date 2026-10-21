@@ -71,6 +71,17 @@ This directory contains Udemy Practice Test Course packages for Claude/Anthropic
 - **Location:** [`course/AIF-C01/`](AIF-C01/README.md)
 - **Publication:** Final editorial and Udemy account import review required; no platform upload performed.
 
+### Microsoft AI-103: Azure AI Apps and Agents Developer Associate
+
+- **Status:** Six 50-item mock exams; 300 original items with mixed formats and per-option explanations.
+- **Includes:** Udemy CSVs, offline review copies, comprehensive instructor landing page, curriculum, sources/coverage, QA suite, and reproducible ZIP.
+- **Organization:** Every exam is blueprint-weighted 14/16/7/7/6 across the five published domains (28/32/14/14/12 percent, all inside range); 30 local study-map skills mapped to the guide sub-objectives.
+- **Item mix:** 38 single-choice, 8 multi-select with the selection count stated, 4 ordering items rendered as candidate sequences, and two 3-question case studies per exam.
+- **Baseline:** Official study guide, skills measured as of April 16, 2026; 40–60 questions typical, 120 minutes (140-minute seat), 700/1000 scaled pass, $165 USD, proctored with possible interactive components. A 50-item practice exam is a documented design choice, not the live count.
+- **Format boundary:** Hot-area items, drag-and-drop UI, labs, and adaptive problem-solution sets are excluded and disclosed; practice percentages are not scaled exam scores.
+- **Location:** [`course/AI-103/`](AI-103/README.md)
+- **Publication:** Expert technical review and account-level import preview required; no Udemy publication performed.
+
 ### 1. **AB-100: Microsoft Certified Agentic AI Business Solutions Architect** *(in progress)*
 
 - **Status:** Scaffolding complete (landing page, curriculum, validator, set READMEs). Practice sets (Sets 1–6) to be built one per turn.
