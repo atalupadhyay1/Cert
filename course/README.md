@@ -4,6 +4,16 @@ This directory contains Udemy Practice Test Course packages for Claude/Anthropic
 
 ## 📦 Courses available
 
+### Claude Certified Associate — Foundations (CCAO-F)
+
+- **Status:** Six 100-question learning tests; 600 original single-answer items with explanations.
+- **Includes:** Udemy CSVs, offline review copies, comprehensive instructor landing page, curriculum, sources/coverage, QA tools, and reproducible ZIP.
+- **Organization:** Five business-practice learning tests plus a seven-domain integrated review; 32 local study-map skill IDs mapped to named guide objectives.
+- **Baseline:** July 2026 v1.0 guide; updated exam announced for December 7, 2026, revised guide due November 17. Future-version coverage is not claimed.
+- **Format:** Expanded single-answer learning tests, not replicas of the 60-item multiple-choice/multiple-response exam; 720 is a scaled score, not a raw percentage.
+- **Location:** [`course/CCAO-F/`](CCAO-F/README.md)
+- **Publication:** Expert editorial, privacy, and governance review plus account-level import preview still required; no Udemy publication performed.
+
 ### Claude Certified Developer — Foundations (CCDV-F)
 
 - **Status:** Six 100-question learning tests; 600 original single-answer items with explanations.

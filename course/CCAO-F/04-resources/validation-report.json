@@ -1,0 +1,101 @@
+{
+  "status": "PASS",
+  "sets": 6,
+  "total_questions": 600,
+  "checks": [
+    "17-column header",
+    "100 questions per set",
+    "topical-source domain counts",
+    "four unique options",
+    "single-answer keys",
+    "per-option explanations",
+    "CCAO-F exam-guide references",
+    "source consistency",
+    "normalized duplicate wording",
+    "25 correct answers per slot"
+  ],
+  "limitations": [
+    "No independent factual certification",
+    "No difficulty calibration against real exam",
+    "No exhaustive semantic duplicate detection",
+    "No Udemy account import performed",
+    "No continuous live URL verification"
+  ],
+  "files": [
+    {
+      "file": "03-practice-sets/set-1/practice-set-1.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 100
+      },
+      "domains": {
+        "Prompting and Task Execution": 100
+      }
+    },
+    {
+      "file": "03-practice-sets/set-2/practice-set-2.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 100
+      },
+      "domains": {
+        "Output Evaluation and Validation": 100
+      }
+    },
+    {
+      "file": "03-practice-sets/set-3/practice-set-3.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 100
+      },
+      "domains": {
+        "Product and Model Selection": 50,
+        "Configuration and Knowledge Management": 50
+      }
+    },
+    {
+      "file": "03-practice-sets/set-4/practice-set-4.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 100
+      },
+      "domains": {
+        "Workflow Integration and Solution Design": 100
+      }
+    },
+    {
+      "file": "03-practice-sets/set-5/practice-set-5.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 100
+      },
+      "domains": {
+        "Governance, Risk, and Responsible Use": 60,
+        "Troubleshooting and Optimization": 40
+      }
+    },
+    {
+      "file": "03-practice-sets/set-6/practice-set-6.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 100
+      },
+      "domains": {
+        "Configuration and Knowledge Management": 12,
+        "Prompting and Task Execution": 14,
+        "Governance, Risk, and Responsible Use": 15,
+        "Workflow Integration and Solution Design": 16,
+        "Troubleshooting and Optimization": 10,
+        "Output Evaluation and Validation": 21,
+        "Product and Model Selection": 12
+      }
+    }
+  ],
+  "errors": []
+}
