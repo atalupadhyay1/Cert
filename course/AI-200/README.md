@@ -40,6 +40,12 @@ Per exam: **76 multiple-choice** and **16 multi-select** items, plus **4 case st
 
 **Upload note.** Udemy's bulk importer accepts only `multiple-choice` and `multi-select` in the `Question Type` column, so each exported file contains 84 multiple-choice and 16 multi-select rows. Sequencing items are authored as candidate orderings and therefore upload unchanged as multiple-choice.
 
+Before uploading, sanity-check the file with the repo's pre-flight script, which reproduces the importer's own row numbering:
+
+```bash
+python course/check_csv_upload.py course/AI-200/03-practice-sets/set-1/practice-set-1.csv
+```
+
 Not reproduced, and stated in every export: hot-area image selection, drag-and-drop UI, live labs and interactive components, adaptive problem-solution (yes/no) sets, and the exact 40–60 item count.
 
 The exam is proctored, costs **$165 USD**, is offered in English plus twelve other languages, is valid for **one year** with a free renewal assessment, and passes at **700/1000**. Practice percentages here are not scaled exam scores.

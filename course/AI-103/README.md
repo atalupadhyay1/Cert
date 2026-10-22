@@ -39,6 +39,12 @@ Per exam: **76 multiple-choice** and **16 multi-select** items, plus **4 case st
 
 **Upload note.** Udemy's bulk importer accepts only `multiple-choice` and `multi-select` in the `Question Type` column, so the exported files contain 84 multiple-choice and 16 multi-select rows per exam. Sequencing items are authored as candidate orderings and therefore upload unchanged as multiple-choice.
 
+Before uploading, sanity-check the file with the repo's pre-flight script, which reproduces the importer's own row numbering:
+
+```bash
+python course/check_csv_upload.py course/AI-103/03-practice-sets/set-1/practice-set-1.csv
+```
+
 Not reproduced, and stated as such in every export: hot-area image selection, drag-and-drop UI, live labs and interactive components, adaptive problem-solution (yes/no) sets, and the exact 40–60 item count. Each practice exam is **100 items — deliberately larger than the live exam** — so the blueprint can be drilled twice without repeats; it is an expanded bank, not a claim about the real length, and the real 120-minute clock does not map directly to a 100-item attempt.
 
 The exam is proctored, costs **$165 USD**, is offered in ten languages, is valid for **one year** with a free renewal assessment, and passes at **700/1000**. Microsoft Learn is available in a split screen during role-based exams. Practice percentages here are not scaled exam scores and no readiness guarantee is implied.
