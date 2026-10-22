@@ -149,6 +149,52 @@ PL-300, Power BI Data Analyst, Microsoft PL-300 exam, Power BI certification, DA
 
 ---
 
+## 📣 Welcome Message (Course Setup → Welcome Message)
+
+```text
+Welcome to your PL-300 practice course!
+
+You have six full-length mock exams of 100 questions each, blueprint-weighted 28 / 28 / 28 / 16 across Prepare the data, Model the data, Visualize and analyze the data, and Manage and secure Power BI.
+
+Each exam mixes item types the way the real exam does:
+• 76 single-choice questions — select ONE best answer.
+• 16 multi-select questions — the stem says "Select two"; enter both keys, for example 2,4.
+• 8 sequencing questions, exported as multiple-choice — choose the candidate sequence that is in the correct order.
+• 4 case studies of 3 questions — read the shared scenario once, then answer all three.
+
+How to read the questions: almost every item hides one deciding constraint — freshness, volume, source capacity, grain, filter context, who the reader is, or who is allowed to see the row. Say that constraint out loud before you look at the options. Most wrong answers are real Power BI features that solve a different problem, so "it is a valid feature" is never a reason to pick it.
+
+Suggested pacing: the live exam is typically 40–60 questions in 100 minutes, and each practice exam is 100 items. Use 100 minutes as a pace drill or 150 minutes for a full review attempt. Work through the exams in order, then repeat your weakest one cold.
+
+Keep Desktop open if you can. When a question turns on behaviour you have not seen — filter context, cross-filter direction, incremental refresh, View as role — reproduce it in a small model rather than memorizing the answer.
+
+The real exam is proctored, scores 700/1000 on a scaled scale, and may include drag-and-drop and hot-area formats that a CSV cannot reproduce. This course is practice only, and a practice percentage is not a scaled exam score.
+
+Good luck — model the grain before you write the measure.
+```
+
+---
+
+## 🎉 Congratulations Message (Course Setup → Congratulations Message)
+
+```text
+Congratulations on finishing all six mock exams!
+
+Turn the result into a plan:
+• Re-read every explanation for questions you missed or guessed.
+• Restate the deciding constraint in your own words against a new scenario.
+• Revisit the mapped study area: Power Query steps and folding, relationships, DAX filter context, visual choice, or service security.
+• Rebuild the two or three patterns that cost you the most marks in a small model of your own.
+• Rehearse the formats you found hardest: multi-select, sequencing, and case studies.
+• Re-check the current study guide, price, language list, and item formats before booking.
+
+Remember that the live exam is typically 40–60 questions in 100 minutes, reports 700/1000 as a scaled pass score, and may include drag-and-drop or hot-area items this package deliberately excludes. Practice percentages are not scaled scores, and completing this independent course does not award the Microsoft credential.
+
+Thanks for studying — and good luck with PL-300!
+```
+
+---
+
 ## 🧭 Official blueprint and package allocation
 
 | Official domain | Guide weight | Each exam | Package total |

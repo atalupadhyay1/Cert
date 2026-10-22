@@ -188,6 +188,9 @@ class ArtifactTests(unittest.TestCase):
         self.assertIn('28 / 28 / 28 / 16', text)
         self.assertIn('100 minutes', text)
         self.assertNotIn('50 questions', text)
+        self.assertIn('Welcome Message', text)
+        self.assertIn('Congratulations Message', text)
+        self.assertIn('Practice percentages are not scaled scores', text)
         self.assertNotIn('AI-103', text)
         self.assertNotIn('AB-731', text)
 

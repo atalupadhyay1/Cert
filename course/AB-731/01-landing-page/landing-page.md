@@ -148,6 +148,52 @@ AB-731, AI Transformation Leader, Microsoft AI certification, Microsoft 365 Copi
 
 ---
 
+## 📣 Welcome Message (Course Setup → Welcome Message)
+
+```text
+Welcome to your AB-731 practice course!
+
+You have six full-length mock exams of 100 questions each, blueprint-weighted 37 / 38 / 25 across the business value of generative AI, Microsoft's AI apps and services, and implementation and adoption strategy.
+
+Each exam mixes item types:
+• 76 single-choice questions — select ONE best answer.
+• 16 multi-select questions — the stem says "Select two"; enter both keys, for example 2,4.
+• 8 sequencing questions, exported as multiple-choice — choose the candidate sequence that is in the correct order.
+• 4 case studies of 3 questions — read the shared scenario once, then answer all three.
+
+How to read the questions: every item is written for a decision-maker, not a developer. There is no code, no SDK call, and no lab step anywhere in the bank. What decides the answer is usually a business or governance constraint — who is accountable, what the data is allowed to do, what evidence justifies the spend, or which capability actually exists inside the licence the organization owns.
+
+Suggested pacing: AB-731 is a 45-minute proctored assessment and Microsoft publishes no item count, so treat each practice exam as an expanded bank rather than a length replica. Use 45 minutes as a pace drill or 90 minutes for a full review attempt. Work through the exams in order, then repeat your weakest one cold.
+
+For every miss, write down the constraint that decided the answer and why the closest alternative fails. That habit transfers to the assessment more reliably than memorizing option letters.
+
+The assessment scores 700/1000 on a scaled scale, publishes no item count, and may include formats a CSV cannot reproduce. This course is practice only, and a practice percentage is not a scaled score.
+
+Good luck — find the constraint behind the answer, not just the right letter.
+```
+
+---
+
+## 🎉 Congratulations Message (Course Setup → Congratulations Message)
+
+```text
+Congratulations on finishing all six mock exams!
+
+Turn the result into a plan:
+• Re-read every explanation for questions you missed or guessed.
+• Restate the deciding constraint in your own words against a scenario from your own organization.
+• Revisit the mapped study area: value case and ROI, prompt and grounding quality, Copilot capability and licensing, the AI council, adoption, or cost and commitment models.
+• Take one real use case in your business and write the one-page case: the problem, the baseline, the capability that fits, the control that makes it safe, and the owner.
+• Rehearse the formats you found hardest: multi-select, sequencing, and case studies.
+• Re-check the current study guide, fee, language list, and assessment length before booking.
+
+Remember that the assessment is 45 minutes, publishes no item count, and reports 700/1000 as a scaled pass score. Practice percentages are not scaled scores, and completing this independent course does not award the Microsoft credential.
+
+Thanks for studying — and good luck with AB-731!
+```
+
+---
+
 ## 🧭 Official blueprint and package allocation
 
 | Official domain | Guide weight | Each exam | Package total |
