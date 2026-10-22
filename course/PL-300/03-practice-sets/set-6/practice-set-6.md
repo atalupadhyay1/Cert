@@ -1,6 +1,6 @@
 # Microsoft PL-300 — Full-Length Mock Exam 6
 
-AI Transformation Leader · 100 questions · expanded practice bank · passing target 700/1000
+Power BI Data Analyst · 100 questions · expanded practice bank · passing target 700/1000
 
 Blueprint-weighted mock exam. Item mix: 84 multiple-choice (selection count stated where needed), 16 multi-select, and 4 case studies of 3 questions. 8 of the multiple-choice items ask you to choose the correct candidate sequence. Hot-area, drag-and-drop UI, labs, and adaptive problem-solution sets cannot be reproduced in a CSV; see the README for the exact fidelity boundary.
 
@@ -820,7 +820,9 @@ Domain: Manage and secure Power BI
 
 ## Case study — Atlas Holdings
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Atlas Holdings is a group of four businesses with different ERPs and one group data office. The group analyst must report across all four using the model the data office certifies, because a second definition of group revenue is not acceptable. A newly acquired business has just supplied its first extract, and nobody has inspected it. Subsidiary transactions arrive at line level, but the consolidation needs one row per entity per month before it is loaded.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 89. The group analyst must report across four businesses using the model the data office certifies. What should the analyst do?
 
@@ -853,7 +855,9 @@ Domain: Prepare the data
 
 ## Case study — Beacon Mutual
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Beacon Mutual is a mutual insurer reporting group reserves, claims, and policy data. Group reserve balances are captured at a point in time, and the current pack sums them across months into a meaningless peak. The claims desk must publish the settlement time below which 90 percent of claims close, not an average that hides the tail. Policy data is restricted: readers outside the actuarial function must not be able to download it from the report.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 92. Group reserve balances are being summed across months and producing a meaningless peak. What should the measure do?
 
@@ -886,7 +890,9 @@ Domain: Visualize and analyze the data
 
 ## Case study — Cedarline Foods
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Cedarline Foods reports volume and revenue for four regional businesses and a group board. The board must compare revenue across the regions, and the current chart mixes two measures on one axis. Each region is measured against a volume plan, and the monthly chart has to show whether the plan was beaten without a second visual. The commercial director wants the volume pack as an email snapshot on the first working day of the month.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 95. The board must compare revenue across its four regional businesses. Which visual fits?
 
@@ -919,7 +925,9 @@ Domain: Manage and secure Power BI
 
 ## Case study — Pinnacle Services
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Pinnacle Services is a professional services group with two business units that both keep their practice management system on premises. The service cannot reach either system directly, and refresh has to run overnight for both. Eight hundred consultants must see only their own engagements, and the mapping between person and engagement changes with every new project. The group wants one engagement model certified so that every business unit reports margin the same way.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 98. Two business units keep their practice system on-premises and the service cannot reach either. What is required?
 

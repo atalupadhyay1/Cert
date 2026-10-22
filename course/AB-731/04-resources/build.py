@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """Export original AB-731 mock-exam items; Python 3.10+, standard library only."""
-import csv, json, random
+import csv, json, random, sys
 from collections import Counter
 from pathlib import Path
 from bank import BANK, TERMS, TOPICS, VALID_TASKS, DOMAINS, ALLOCATIONS, SKILLS, TYPE_PLAN, CASE_STUDIES, ITEM_TOTAL
 ROOT=Path(__file__).resolve().parents[1]
 from sources import GUIDE, DOCS
+from cases import CASES
 HEADER=['Question','Question Type']
 for i in range(1,7): HEADER += [f'Answer Option {i}',f'Explanation {i}']
 HEADER += ['Correct Answers','Overall Explanation','Domain']
@@ -92,8 +93,9 @@ def render_test(number,rows):
     for n,row in enumerate(rows,1):
         case=row['_case']
         if case and case!=seen:
-            lines += ['---', '', f'## Case study — {case}', '',
-                      f'The next {CASE_SIZE} questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.', '']
+            lines += ['---', '', f'## Case study — {case}', '', CASES[case], '',
+                      f'The next {CASE_SIZE} questions refer to it. Read the scenario once, then answer all {CASE_SIZE}; '
+                      'each item restates the constraint it tests and is scored individually.', '']
         seen=case or None
         stem=row['_stem']
         lines += [f'### {n}. {stem}', '', f'Domain: {row["Domain"]}', '']
@@ -110,6 +112,37 @@ def render_test(number,rows):
                 lines.append(f'- **{chr(64+i)}:** {row[f"Explanation {i}"]}')
         lines.append('')
     return '\n'.join(lines)
+
+def render_case_brief():
+    """One document with every case-study scenario and its three questions."""
+    lines=['# AB-731 case study briefs','',
+           'Every mock exam contains four case studies of three questions. The scenario below is the shared context;',
+           'the three items that follow it are scored individually. Paste the relevant section into a Udemy lecture,',
+           'a downloadable resource, or the practice-test description when you want the scenario available before the questions.','']
+    for number in range(1,7):
+        rows,_=make_rows(number)
+        cases=[r['_case'] for r in rows if r['_case']]
+        lines += [f'## Exam {number}','']
+        for case in dict.fromkeys(cases):
+            lines += [f'### Case study — {case}','',CASES[case],'','Questions in this block','']
+            n=0
+            for row in rows:
+                if row['_case']!=case: continue
+                n+=1
+                letters=', '.join(chr(64+int(x)) for x in row['Correct Answers'].split(','))
+                lines.append(f'{n}. {row["_stem"]} _({letters})_')
+            lines.append('')
+    return '\n'.join(lines)
+
+def render_case_embedded(number, rows):
+    """Self-contained variant: the scenario is repeated inside every case-item stem."""
+    embedded=[]
+    for row in rows:
+        row=dict(row)
+        if row['_case']:
+            row['Question']=f'Case study — {row["_case"]}: {CASES[row["_case"]]} {row["_stem"]}'
+        embedded.append(row)
+    return embedded
 
 def check_source():
     stems=set()
@@ -154,6 +187,9 @@ def check_source():
             if norm in stems:
                 raise ValueError(f'Duplicate question: {item["id"]}')
             stems.add(norm)
+    names={case_name(r['question']) for rs in BANK.values() for r in rs if case_name(r['question'])}
+    if names!=set(CASES):
+        raise ValueError(f'Case-study scenarios do not match the bank: {sorted(names^set(CASES))}')
     if len(stems)!=ITEM_TOTAL*len(BANK):
         raise ValueError(f'Expected {ITEM_TOTAL*len(BANK)} distinct stems, found {len(stems)}')
 
@@ -184,5 +220,19 @@ def main():
         manifest[str(number)]=mapping
         print(f'Built set {number}: {len(rows)} questions')
     (ROOT/'04-resources/answer-manifest.json').write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8')
+    (ROOT/'04-resources/case-studies.md').write_text(render_case_brief(),encoding='utf-8')
+    if '--embed-case' in sys.argv[1:]:
+        for number in range(1,7):
+            rows,mapping=make_rows(number)
+            embedded=render_case_embedded(number,rows)
+            path=ROOT/f'03-practice-sets/set-{number}/case-embedded-set-{number}.csv'
+            with path.open('w',encoding='utf-8-sig',newline='') as f:
+                writer=csv.DictWriter(f,fieldnames=HEADER,extrasaction='ignore',lineterminator='\n')
+                writer.writeheader()
+                for row in embedded:
+                    writer.writerow({k:row.get(k,'') for k in HEADER})
+            longest=max(len(r['Question']) for r in embedded)
+            print(f'Wrote {path.name} (self-contained case stems, longest {longest} characters)')
+    print('Wrote 04-resources/case-studies.md')
 
 if __name__=='__main__': main()

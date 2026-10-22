@@ -224,7 +224,7 @@ Source: [PL-300 study guide](https://learn.microsoft.com/en-us/credentials/certi
 
 ## 🧪 How the case studies work
 
-Each exam contains four case studies of three questions. The three items in each block share one organization and are scored individually, which mirrors how a case-study block feels in the exam: read once, answer several linked questions, and keep the constraints straight. Every case-study item also restates the specific constraint it tests, so the item still reads correctly in a CSV player that cannot display a shared preamble.
+Each exam contains four case studies of three questions. The three items in each block share one organization and are scored individually, which mirrors how a case-study block feels in the exam: read once, answer several linked questions, and keep the constraints straight.
 
 | Exam | Case studies |
 |---:|---|
@@ -234,6 +234,14 @@ Each exam contains four case studies of three questions. The three items in each
 | 4 | Redwood Mills · Skyline Transit · Evergreen University · Lakeshore Library |
 | 5 | Summit Retail Group · Willow Creek Health · Granite Public Works · Aurora Schools |
 | 6 | Atlas Holdings · Beacon Mutual · Cedarline Foods · Pinnacle Services |
+
+**Where the scenario text is.** Every scenario is authored once in `04-resources/cases.py` and published three ways:
+
+- **Study copy** — `practice-set-N.md` prints the full scenario under each `## Case study — <Name>` heading, before its three questions.
+- **Brief bundle** — `04-resources/case-studies.md` collects all 24 scenarios with their questions and answer letters; upload it as a PDF or lecture resource.
+- **Self-contained CSV** — `case-embedded-set-N.csv` repeats the scenario inside every case-item stem, for platforms that shuffle item order. Longest stems are about 700 characters.
+
+The default `practice-set-N.csv` keeps the stems short, because a Udemy question field holds one block of text and repeating a 90-word scenario three times per case reads badly in the player. Build both variants with `python build.py --embed-case`.
 
 ## 🧠 Local skill map
 

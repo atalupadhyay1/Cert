@@ -819,7 +819,9 @@ Domain: Identify an implementation and adoption strategy for Microsoft's AI apps
 
 ## Case study — Calder Works
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Calder Works operates a steel plant with four furnaces and a quality function that handles returns from automotive customers. The plant wants to predict the yield of each furnace batch from five years of process measurements, and quality must route each returned component into one of seven disposition codes before an engineer reviews it. The safety team writes 400 incident reports a month, each of which must follow the same regulatory structure. Every assistant on site has to keep a qualified person accountable for any decision that affects production or safety.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 89. The steel plant wants to predict the yield of each furnace batch from five years of process measurements. Which AI approach fits best?
 
@@ -852,7 +854,9 @@ Domain: Identify the business value of generative AI solutions
 
 ## Case study — Helios Energy
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Helios Energy runs 240 wind turbines across three sites and maintains a controlled procedure library. The operator wants early warning of turbine behaviour that differs from two years of normal operation. Field technicians must confirm that a safety instruction came from the current procedure before acting on it, and three revisions of the same lockout procedure currently coexist in the library. The engineering director has made clear that a wrong instruction is a safety incident, not a quality defect.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 92. The operator wants early warning of turbine behaviour that differs from two years of normal operation. Which AI approach fits best?
 
@@ -885,7 +889,9 @@ Domain: Identify the business value of generative AI solutions
 
 ## Case study — Northline Logistics
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Northline Logistics is a freight forwarder handling customs clearance and last-mile distribution. The control tower must apply a fixed customs rule set and route each exception to the right desk, and the distributor receives 50,000 delivery notes a month as scans that must be posted into the ERP. Retrieval currently returns whole 80-page equipment manuals, so answers cite the wrong section. Customs rules change by jurisdiction, and the operations director wants the reasoning behind each routed exception to be checkable.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 95. The control tower must apply a fixed customs rule set and route each exception to the right desk. Which two techniques match those needs? Select two.
 
@@ -919,7 +925,9 @@ Domain: Identify the business value of generative AI solutions
 
 ## Case study — Vantage Motors
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Vantage Motors is a commercial vehicle manufacturer with a field-service network of 200 engineers. A field engineer must read 300 pages of maintenance history before each site visit, and the dispatch assistant must answer within two seconds during the 6 a.m. shift change. The engineering team needs an agent that answers from the maintenance manual and opens a work order in the CMMS. Any advice that affects a vehicle's roadworthiness has to be traceable to an approved procedure.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 98. A field engineer must read 300 pages of maintenance history before each site visit. Which solution fits best?
 

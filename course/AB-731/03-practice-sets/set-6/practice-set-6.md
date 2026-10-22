@@ -820,7 +820,9 @@ Domain: Identify an implementation and adoption strategy for Microsoft's AI apps
 
 ## Case study — Brightpath Services
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Brightpath Services is a professional services firm with an audit practice, an executive committee, and 3,000 consultants. The audit function must read 800 pages per entity and only needs the exceptions and their owners. The executive committee loses an hour after each meeting reconstructing decisions and owners, and procurement needs an agent that answers from the category handbook and opens a sourcing request in the ERP. The firm's clients require evidence of who saw which AI-generated advice about their engagement.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 89. The audit function must read 800 pages per entity and only needs the exceptions and their owners. Which solution fits best?
 
@@ -853,7 +855,9 @@ Domain: Identify benefits, capabilities, and opportunities for Microsoft's AI ap
 
 ## Case study — Fairhaven Mutual
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Fairhaven Mutual is a mutual insurer with a general counsel, a shared services function, and a three-year-old churn model. General counsel will only accept an answer that can be checked against the source clause. Shared services leadership accepts an assistant that prepares decisions but not one that makes them. Nobody can state which data trained the churn model, when it was last validated, or whether it still beats the campaign targeting it replaced.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 92. General counsel will only accept an answer that can be checked against the source clause. What should the design require?
 
@@ -886,7 +890,9 @@ Domain: Identify the business value of generative AI solutions
 
 ## Case study — Highline Foods
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Highline Foods is a food manufacturer operating in four markets with a large customer-service function. The group holds 50,000 edited customer letters that consistently use its approved multilingual tone. Every recommendation in its planning pack must end with risk, owner, and date, but the model keeps writing prose instead of that structure. The finance analyst works from a 120,000-row consolidation file and must explain a margin movement to the board.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 95. The group has 50,000 edited customer letters that consistently use its approved multilingual tone. Which model strategy fits best?
 
@@ -919,7 +925,9 @@ Domain: Identify benefits, capabilities, and opportunities for Microsoft's AI ap
 
 ## Case study — Kestrel Group
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Kestrel Group is a diversified group with nine brands, a shared services centre, and 40,000 employees. The centre routes 200,000 supplier emails a month, applies fixed payment-terms policy, and drafts replies, while the group holds 30,000 policy pages that answer the same questions in every brand. The group bill rose fourfold in one quarter and no business unit can explain its share. Group counsel also requires one consistent legal disclaimer across brands, which each brand has so far written for itself.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 98. The shared services centre routes 200,000 supplier emails, apply fixed payment-terms policy, and draft replies. Which approach fits best?
 

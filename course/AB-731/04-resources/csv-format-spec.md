@@ -58,6 +58,16 @@ Inventory the use case → classify the risk → record the control → review o
 
 Each option is a complete candidate sequence and exactly one is in the correct order. These items are exported with `Question Type` set to `multiple-choice` because the importer accepts no other single-answer label. The others are plausible reorderings, usually by moving the step that logically cannot move — inventory before classification, publication before measurement, commitment before a stable baseline.
 
+## Case-study text
+
+Case-study scenarios are authored in `cases.py` and injected at build time; never hand-edit the generated copies.
+
+- `practice-set-N.md` prints the scenario above the three questions of its case.
+- `case-studies.md` collects all 24 scenarios with questions and answer letters.
+- `case-embedded-set-N.csv` (built with `--embed-case`) repeats the scenario in every case-item stem and keeps the same answer keys.
+
+`build.py` fails if a `Case study — <Name>:` stem has no scenario in `cases.py`, or if a scenario is never used.
+
 ## Editing workflow
 
 1. Edit the authored source in `04-resources/questions/1.txt`–`6.txt`, never the generated CSV.

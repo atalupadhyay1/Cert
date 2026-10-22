@@ -820,7 +820,9 @@ Domain: Identify the business value of generative AI solutions
 
 ## Case study — Ashford Library
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Ashford Library is a state library service with 60 branches and a digitized archive. The service needs a catalogue assistant within a month and has no annotated data, while the archive holds 40 years of scanned minutes that return almost no answers even though the pages exist. A policy team is researching how other countries regulate short-term rentals and needs cited public sources. The library answers to a public-records law, so anything retained has to be discoverable and defensible.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 89. The library service needs a catalogue assistant within a month and has no annotated data. Which model strategy fits best?
 
@@ -853,7 +855,9 @@ Domain: Identify benefits, capabilities, and opportunities for Microsoft's AI ap
 
 ## Case study — Harborview Permits
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Harborview Permits is a city licensing service handling planning, parking, and trade permits. The council receives 70,000 resident enquiries a month and must route each one to the right service team. A planning inspector must read 500 pages per application and only needs the objections, dates, and conditions, while the revenue office receives 30,000 paper forms a month that must be posted into the billing system. Residents can appeal any decision, so every answer given to them has to be defensible and reviewable.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 92. The council receives 70,000 resident enquiries a month and must route each one to the right service team. Which AI approach fits best?
 
@@ -886,7 +890,9 @@ Domain: Identify the business value of generative AI solutions
 
 ## Case study — Metro Transit
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Metro Transit operates a metropolitan bus and rail network with four years of tap-in data. The authority must forecast weekday passenger numbers for service planning, and its parking service needs a step-by-step permit process that writes to the permits system. The meeting service needs searchable transcripts and captions for recorded board sessions. Anything published to the public must meet accessibility standards and must not expose personal travel data.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 95. The authority must forecast weekday passenger numbers from four years of tap-in data. Which AI approach fits best?
 
@@ -919,7 +925,9 @@ Domain: Identify benefits, capabilities, and opportunities for Microsoft's AI ap
 
 ## Case study — Rowan University
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Rowan University is a large public university with an admissions office, a progression board, and 30,000 students. The university wants a plain-language explanation of each applicant's progression decision, and it holds 18,000 edited admissions letters that consistently follow its approved wording. The student assistant keeps chat transcripts indefinitely, including details about disabilities. Students can request their records, so retention and disclosure have to be decided before the assistant scales.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 98. The university wants a plain-language explanation of each applicant's progression decision. Which AI approach fits best?
 

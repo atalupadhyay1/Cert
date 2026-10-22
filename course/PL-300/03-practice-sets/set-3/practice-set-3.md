@@ -1,6 +1,6 @@
 # Microsoft PL-300 — Full-Length Mock Exam 3
 
-AI Transformation Leader · 100 questions · expanded practice bank · passing target 700/1000
+Power BI Data Analyst · 100 questions · expanded practice bank · passing target 700/1000
 
 Blueprint-weighted mock exam. Item mix: 84 multiple-choice (selection count stated where needed), 16 multi-select, and 4 case studies of 3 questions. 8 of the multiple-choice items ask you to choose the correct candidate sequence. Hot-area, drag-and-drop UI, labs, and adaptive problem-solution sets cannot be reproduced in a CSV; see the README for the exact fidelity boundary.
 
@@ -819,7 +819,9 @@ Domain: Manage and secure Power BI
 
 ## Case study — Brightwater Utilities
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Brightwater Utilities models 3 million meters and publishes a board page plus an audit view. One free-text location column holds almost unique values, and it dominates the size of what is otherwise a modest model. The board page must explain the movement from opening to closing revenue across the quarter and show progress against the annual target. Internal audit needs to read the outage reports without being able to change them, and without joining the authoring workspace.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 89. The meter model is dominated by one text column with almost unique values. What should be done?
 
@@ -853,7 +855,9 @@ Domain: Manage and secure Power BI
 
 ## Case study — Coastline Logistics
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Coastline Logistics runs depot operations across three countries, with the depot management system on an on-premises server. Six hundred depot staff must see only their own depot's deliveries in one shared report, and the org chart changes every few weeks. The data team wants the delivery model certified so that other teams reuse it instead of building their own. Refresh must run overnight, and the service cannot reach the depot server directly.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 92. The depot extract lives on an on-premises server that the service cannot reach. What is required?
 
@@ -886,7 +890,9 @@ Domain: Manage and secure Power BI
 
 ## Case study — Fairmont Assurance
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Fairmont Assurance reports claims and reserves for a regulated insurance book. Reserve balances are captured at end of day, and the current report sums them across months, producing a peak that means nothing. The operations team must publish the claim-processing time below which 95 percent of claims are settled, not the average. The claims report is also subject to an accessibility review, because staff who use screen readers must be able to read it.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 95. End-of-day reserve balances are being summed across months and producing a meaningless peak. What should the measure do?
 
@@ -919,7 +925,9 @@ Domain: Visualize and analyze the data
 
 ## Case study — Northgate Bank
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Northgate Bank reports trading and balance data from a core system that cannot accept analyst queries. One query combines client balances with payroll data, and the team is worried the engine is folding values between the two sources. The branch identifier arrives as a region prefix and a branch number in separate fields, but the report needs one combined code. The trade table repeats counterparty name, sector, and rating on every row, and filters on 40 million rows have become unusable.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 98. The query combines client balances with payroll data, and the engine is folding values between the two sources. Which setting stops that?
 

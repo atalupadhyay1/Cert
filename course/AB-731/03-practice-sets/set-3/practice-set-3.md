@@ -820,7 +820,9 @@ Domain: Identify an implementation and adoption strategy for Microsoft's AI apps
 
 ## Case study — Aurelian Capital
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Aurelian Capital is an investment manager with a trading desk, a research team, and a risk function. The trading desk's assistant bill doubled after three teams started using it, and no one can attribute the increase to a team or a task. Retrieval misses exact instrument codes that appear in queries but finds conceptually similar documents instead. The fraud model validated at 95 percent on last year's cases and underperforms on this year's, and the model risk committee wants to understand why.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 89. The trading desk's assistant bill doubled after three teams started using it, and no one can attribute the cost. What should be introduced first?
 
@@ -853,7 +855,9 @@ Domain: Identify the business value of generative AI solutions
 
 ## Case study — Fairgate Payments
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Fairgate Payments is a payments processor serving 4,000 merchant clients across Europe. Its investment committee spends 90 minutes after each meeting reconstructing decisions and owners. The complaints team answers 500 regulatory letters a month, and each must open with the right acknowledgement before any substantive response. A disputes agent must check a transaction in the core banking system before it replies, and the team wants that action governed rather than improvised.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 92. The investment committee spends 90 minutes after each meeting reconstructing decisions and owners. Which Copilot use fits best?
 
@@ -886,7 +890,9 @@ Domain: Identify benefits, capabilities, and opportunities for Microsoft's AI ap
 
 ## Case study — Kingsmere Bank
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Kingsmere Bank is a mid-sized bank with a credit function, a compliance help desk, and a payments operation. The credit committee must digest 200 pages per application and only needs the exposure, covenants, and exceptions. Fifteen thousand staff ask the compliance desk the same 300 questions every month, and the bank processes 30,000 routine payment investigations alongside 300 complex fraud cases. The regulator has asked how the bank documents model limits, so every capability needs a defensible rationale.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 95. The credit committee must digest 200 pages per application and only needs the exposure, covenants, and risks. Which solution fits best?
 
@@ -919,7 +925,9 @@ Domain: Identify the business value of generative AI solutions
 
 ## Case study — Silverline Insurance
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Silverline Insurance handles motor and property claims across four countries. The claims operation receives 90,000 forms a month as scans and must post policy numbers and amounts into the claims system. Thirty thousand adjuster notes consistently use a legally reviewed tone the insurer must preserve, and the motor team must verify that photographed damage matches the submitted vehicle details. Assessors make the settlement decision, and the insurer will not delegate that to a model.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 98. The claims operation receives 90,000 forms a month as scans and must post policy numbers and amounts automatically. Which solution fits best?
 

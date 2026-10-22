@@ -1,6 +1,6 @@
 # Microsoft PL-300 — Full-Length Mock Exam 5
 
-AI Transformation Leader · 100 questions · expanded practice bank · passing target 700/1000
+Power BI Data Analyst · 100 questions · expanded practice bank · passing target 700/1000
 
 Blueprint-weighted mock exam. Item mix: 84 multiple-choice (selection count stated where needed), 16 multi-select, and 4 case studies of 3 questions. 8 of the multiple-choice items ask you to choose the correct candidate sequence. Hot-area, drag-and-drop UI, labs, and adaptive problem-solution sets cannot be reproduced in a CSV; see the README for the exact fidelity boundary.
 
@@ -817,7 +817,9 @@ Domain: Manage and secure Power BI
 
 ## Case study — Aurora Schools
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Aurora Schools reports attendance and attainment across 90 schools in a regional trust. Schools must be grouped by attendance pattern without anyone defining the groups in advance, and the trust wants to see which schools behave alike. The principal wants the weekly attendance report as an email snapshot on Monday morning. The attendance model refreshes every three hours from a cloud source, and the service account secret expires quarterly.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 89. Schools must be segmented by attendance pattern without a predefined scheme. What should be used?
 
@@ -851,7 +853,9 @@ Domain: Manage and secure Power BI
 
 ## Case study — Granite Public Works
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Granite Public Works reports road, water, and parks maintenance for a municipal authority. A contractor submits a works-order file with no documentation, and nobody can say whether it is complete or which values are placeholders. Rolling works-order totals skip days when no crew was scheduled, and the running figure looks wrong to the finance team. The dashboard is published to the public website, so it must be usable by screen-reader users and must not expose address-level detail.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 92. A contractor sends a works-order file with no documentation, and its completeness is unknown. What should be done first?
 
@@ -884,7 +888,9 @@ Domain: Visualize and analyze the data
 
 ## Case study — Summit Retail Group
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Summit Retail Group operates ten departments across several banners and reports revenue, margin, and returns. A category manager must compare revenue across the departments, and the current pie chart with ten slices is unreadable. Readers want sales, margin, and returns together when they hover a product, without another visual taking space on the page. Store managers must see only their own store in the shared group report, while buyers see everything.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 95. A category manager must compare revenue across ten departments of the group. Which visual fits?
 
@@ -918,7 +924,9 @@ Domain: Manage and secure Power BI
 
 ## Case study — Willow Creek Health
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Willow Creek Health is a clinic network reporting visits, charges, and encounter detail. Visits arrive at line level, but the operations page needs one row per clinic per day and a charge column that behaves as a decimal. The encounter fact stores every line even though most reporting looks at daily totals, and the model has grown far beyond what the pages need. Readers work across six pages and keep losing the clinic-network selection as they move between them.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 98. A visit table must become one row per clinic per day, and the charge column must be decimal. Which two steps are required? Select two.
 

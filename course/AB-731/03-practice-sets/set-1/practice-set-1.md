@@ -820,7 +820,9 @@ Domain: Identify an implementation and adoption strategy for Microsoft's AI apps
 
 ## Case study — Adatum Bank
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Adatum Bank is a retail and commercial bank with 22,000 staff and a procurement function that handles 9,000 supplier contracts. A procurement assistant summarizes uploaded contracts, and one supplier document contained text instructing the model to ignore its rules. Separately, a screening assistant shortlisted candidates for branch roles, and the review found it favoured one demographic. The bank is also about to pilot an assistant that will affect how credit applications are prioritized, and group risk wants that assessed before launch.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 89. A procurement assistant summarizes uploaded supplier contracts, and one contract contains text instructing the model to ignore its rules. What risk must the design address?
 
@@ -853,7 +855,9 @@ Domain: Identify an implementation and adoption strategy for Microsoft's AI apps
 
 ## Case study — Contoso Health
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Contoso Health is a hospital group with a clinical workforce of 14,000 and a Microsoft 365 tenant used for rosters and HR administration. A workforce assistant will answer from HR files that include individual salary letters alongside policy documents. The quality team also wants a triage assistant that recommends which patients receive a follow-up call, where an error changes clinical priority. Copilot is due to be enabled across clinical SharePoint sites next month, and permissions have not been reviewed for years.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 92. A workforce assistant will answer from HR files that include individual salary letters alongside general policy. Which control is essential before launch?
 
@@ -886,7 +890,9 @@ Domain: Identify an implementation and adoption strategy for Microsoft's AI apps
 
 ## Case study — Fabrikam Retail
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Fabrikam Retail runs 300 stores plus an online business, with sales history in a warehouse and merchandising decisions taken weekly. Store operations wants next quarter's demand per store from three years of transactions, and the buying team wants 400 seasonal policy questions answered on the returns portal. The merchandising team edits the assistant prompt every week and cannot say whether answers improved. Marketing budget is under review, so every capability has to justify its cost against a defined business outcome.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 95. Store operations wants next quarter's demand for each of 300 stores based on three years of sales history. Which AI approach fits best?
 
@@ -919,7 +925,9 @@ Domain: Identify the business value of generative AI solutions
 
 ## Case study — Northwind Insurance
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Northwind Insurance processes 20,000 supplier invoices a month as PDFs and employs a claims shared service of 120 people. The claims assistant answers from a policy library that is revised quarterly, and adjusters have seen it invent a clause when nothing relevant was retrieved. Twelve thousand notifications a month are routine, while 600 cases need genuine judgement. The claims director wants automation where volume is high and human attention where the consequence is a payment decision.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 98. The claims shared service receives 20,000 supplier invoices a month as PDFs and must post the totals, dates, and tax codes into the finance system. Which solution fits best?
 

@@ -1,6 +1,6 @@
 # Microsoft PL-300 — Full-Length Mock Exam 4
 
-AI Transformation Leader · 100 questions · expanded practice bank · passing target 700/1000
+Power BI Data Analyst · 100 questions · expanded practice bank · passing target 700/1000
 
 Blueprint-weighted mock exam. Item mix: 84 multiple-choice (selection count stated where needed), 16 multi-select, and 4 case studies of 3 questions. 8 of the multiple-choice items ask you to choose the correct candidate sequence. Hot-area, drag-and-drop UI, labs, and adaptive problem-solution sets cannot be reproduced in a CSV; see the README for the exact fidelity boundary.
 
@@ -817,7 +817,9 @@ Domain: Manage and secure Power BI
 
 ## Case study — Evergreen University
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Evergreen University reports admissions, progression, and course performance across five faculties. The report runs to five pages, all filtered to the same intake year, and staff re-apply that filter on every page they open. Faculty want a root-cause page that lets them explore any dimension in any order, plus a way to ask questions in their own words. External accreditors must be able to read the reports without editing anything, and they must not see another faculty's data.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 89. A chosen intake year must stay applied across five pages of the report. What should be configured?
 
@@ -851,7 +853,9 @@ Domain: Manage and secure Power BI
 
 ## Case study — Lakeshore Library
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Lakeshore Library runs 32 branches and reports loans, visits, and programme attendance. Every branch page must match the same palette and typeface, and nobody wants to style forty visuals by hand each time a branch is added. The branch manager wants a notification when daily loans fall below plan, delivered without opening the report. The circulation fact covers four years and must refresh inside a short overnight window, with only recent weeks changing.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 92. Every branch page must share one palette and font without individual styling. What should be applied?
 
@@ -885,7 +889,9 @@ Domain: Manage and secure Power BI
 
 ## Case study — Redwood Mills
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Redwood Mills runs four paper mills and receives sensor extracts from a third-party contractor with no data dictionary. The production table repeats machine name, line, and plant on every row, and slicers on the operations page have become slow. Unit cost must multiply quantity by rate before it is summed, and the yield ratio has to survive a denominator of zero when a line is idle. Nobody can say how complete the contractor's extract is, and the last feed silently changed two column types.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 95. A contractor supplies a sensor extract with no documentation, and its quality is unknown. What should be done first?
 
@@ -919,7 +925,9 @@ Domain: Model the data
 
 ## Case study — Skyline Transit
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Skyline Transit reports ridership, fare revenue, and service punctuality for a metropolitan network. Rolling ridership totals skip days when no service ran, and the running figure resets in a way nobody can explain. Fare-card balances are recorded only when a passenger tops up, so month-end often lands on a day with no record. The operations team must publish the delay below which 90 percent of trips fall, and the current average hides the tail entirely.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 98. Rolling ridership totals skip days when no service ran, and the running figure looks wrong. What is missing?
 

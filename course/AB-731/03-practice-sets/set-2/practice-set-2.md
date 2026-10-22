@@ -820,7 +820,9 @@ Domain: Identify an implementation and adoption strategy for Microsoft's AI apps
 
 ## Case study — BioNova Labs
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+BioNova Labs is a life-sciences organisation with a research library, a grants office, and a shared laboratory estate. The strategy group needs a cited review of published approaches to virtual wards, drawn from many public sources. A department wants a step-by-step equipment request process that writes into the asset system, and the group needs one relevance-ranked index of protocols that several assistants can query. Anything customer-facing or clinical has to be reviewed by the scientific director before release.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 89. The strategy group needs a cited review of published approaches to virtual wards. Which capability fits?
 
@@ -853,7 +855,9 @@ Domain: Identify benefits, capabilities, and opportunities for Microsoft's AI ap
 
 ## Case study — Brookfield Clinics
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Brookfield Clinics is a primary care network of 45 practices serving 300,000 patients. It needs a patient FAQ assistant within a month and has no annotated dataset, while the scheduling team handles 9,000 rescheduling requests a month and rarely reaches the clinical queue. The assistant still quotes a guideline that was withdrawn two months ago, and the medical director has flagged that as the single biggest risk. Anything that touches patient contact has to sit inside the protected tenant boundary.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 92. The network needs a patient FAQ assistant within a month and has no annotated dataset. Which model strategy fits best?
 
@@ -886,7 +890,9 @@ Domain: Identify the business value of generative AI solutions
 
 ## Case study — CareFirst Payer
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+CareFirst Payer is a health insurer covering 1.8 million members with a large analytics estate. Its readmission model performs measurably worse for members whose first language is not English, and the medical director wants that addressed before any expansion. The payer also wants to pilot an assistant that summarizes behavioural-health consultations, which raises consent and retention questions. For enablement, 12,000 staff need protected chat, but only 800 need the full in-app experience.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 95. The readmission model performs worse for members whose first language is not English. Which responsible AI principle is engaged?
 
@@ -919,7 +925,9 @@ Domain: Identify an implementation and adoption strategy for Microsoft's AI apps
 
 ## Case study — Cedar Ridge Health
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Cedar Ridge Health is a regional hospital network with 900 beds and a clinical documentation backlog. Discharge teams need a plain-language summary of each stay written from clinician notes, and the audit team reads 400 pages per case to find decisions, dates, and follow-ups. The laboratory service receives results and consent forms as scans and must post named fields into the record system. Clinicians will only accept output they can check, so the design has to keep the source visible and a person accountable.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 98. The discharge team needs a plain-language summary of each patient's stay written from clinician notes. Which AI approach fits best?
 

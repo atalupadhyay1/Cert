@@ -113,6 +113,30 @@ class SourceTests(unittest.TestCase):
                 self.assertGreaterEqual(pct, low, f'set {n} domain {domain}')
                 self.assertLessEqual(pct, high, f'set {n} domain {domain}')
 
+    def test_every_case_study_has_a_scenario(self):
+        from cases import CASES
+        for n, rows in BANK.items():
+            for record in rows:
+                match = re.match(r'Case study — ([^:]+):', record['question'])
+                if match:
+                    self.assertIn(match[1], CASES, f'set {n}: {match[1]}')
+                    self.assertGreater(len(CASES[match[1]].split()), 50, match[1])
+        brief = (ROOT / '04-resources/case-studies.md').read_text(encoding='utf-8')
+        for name, text in CASES.items():
+            self.assertIn(f'### Case study — {name}', brief)
+            self.assertIn(text, brief)
+
+    def test_embedded_case_variant_repeats_scenario(self):
+        from cases import CASES
+        from build import render_case_embedded
+        rows, _ = make_rows(1)
+        embedded = render_case_embedded(1, rows)
+        self.assertEqual(len(embedded), 100)
+        for row in embedded:
+            if row['_case']:
+                self.assertIn(CASES[row['_case']], row['Question'])
+                self.assertLess(len(row['Question']), 1000, row['_case'])
+
     def test_four_case_studies_per_exam(self):
         for n, rows in BANK.items():
             cases = Counter()
@@ -179,7 +203,7 @@ class ArtifactTests(unittest.TestCase):
                          '04-resources/sources-and-coverage.md',
                          '04-resources/csv-format-spec.md',
                          '04-resources/publication-checklist.md',
-                         '04-resources/SUMMARY.md']:
+                         '04-resources/SUMMARY.md', '04-resources/case-studies.md']:
             self.assertTrue((ROOT / relative).is_file(), relative)
 
     def test_landing_page_has_no_stale_counts(self):

@@ -30,6 +30,27 @@ Independent educational content — not actual, recalled, or copied Microsoft ex
 | 5 | Retail group, healthcare network, public works, schools | Summit Retail Group, Willow Creek Health, Granite Public Works, Aurora Schools |
 | 6 | Cross-industry capstone | Atlas Holdings, Beacon Mutual, Cedarline Foods, Pinnacle Services |
 
+## 🧩 Where the case-study text lives
+
+Each exam has four case studies of three questions. The scenario is written once per case and is published in three places, so you can pick the route that fits how you teach:
+
+| Route | File | Use it when |
+|---|---|---|
+| Study copy | `03-practice-sets/set-N/practice-set-N.md` | The scenario appears in full under each `## Case study — <Name>` heading, followed by its three questions. This is the default offline review experience. |
+| Brief bundle | `04-resources/case-studies.md` | All 24 scenarios, each with its three questions and answer letters. Upload as a PDF or lecture resource, or paste one section into the practice-test description. |
+| Self-contained CSV | `03-practice-sets/set-N/case-embedded-set-N.csv` | Same 100 items and same answer keys, but every case-item stem repeats the scenario, so the questions still make sense if the platform shuffles them. |
+
+Regenerate all three with:
+
+```bash
+python build.py                 # study copies + case-studies.md
+python build.py --embed-case    # adds the six self-contained CSVs
+```
+
+The default `practice-set-N.csv` deliberately keeps short stems: a Udemy question field carries one block of text, and repeating a 90-word scenario inside it three times per case bloats the import and reads badly on a phone. The embedded variant exists for platforms that randomise item order — its longest stems are about 700 characters, so check your platform's question-length limit before choosing it.
+
+Scenario text lives in `04-resources/cases.py`; `build.py` refuses to run if a case name in `questions/*.txt` has no scenario, or if a scenario is unused.
+
 ## Blueprint weighting
 
 | Official domain | Guide weight | Per exam | Package total |

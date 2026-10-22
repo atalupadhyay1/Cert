@@ -34,7 +34,7 @@ def main():
                 '02-curriculum/curriculum-outline.md', '04-resources/validation-report.json',
                 '04-resources/publication-checklist.md', '04-resources/sources-and-coverage.md',
                 '04-resources/csv-format-spec.md', '04-resources/SUMMARY.md',
-                '04-resources/answer-manifest.json']
+                '04-resources/answer-manifest.json', '04-resources/case-studies.md']
     for relative in required:
         if not (ROOT / relative).is_file():
             raise SystemExit(f'Package rejected: missing {relative}')

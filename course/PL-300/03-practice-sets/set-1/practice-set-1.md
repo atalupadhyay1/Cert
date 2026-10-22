@@ -1,6 +1,6 @@
 # Microsoft PL-300 — Full-Length Mock Exam 1
 
-AI Transformation Leader · 100 questions · expanded practice bank · passing target 700/1000
+Power BI Data Analyst · 100 questions · expanded practice bank · passing target 700/1000
 
 Blueprint-weighted mock exam. Item mix: 84 multiple-choice (selection count stated where needed), 16 multi-select, and 4 case studies of 3 questions. 8 of the multiple-choice items ask you to choose the correct candidate sequence. Hot-area, drag-and-drop UI, labs, and adaptive problem-solution sets cannot be reproduced in a CSV; see the README for the exact fidelity boundary.
 
@@ -819,7 +819,9 @@ Domain: Manage and secure Power BI
 
 ## Case study — Litware Financial
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Litware Financial reports for 240 branches across 12 regions, with a small analytics team and a single imported model. Regional managers rank branches every Monday, and the executive page needs a reset control because readers keep leaving filters applied. The monthly pack compares each branch against a cost-to-income target, and the current chart makes a good month look flat by starting the axis above zero. Nobody in the team has time to restyle forty visuals for each brand refresh.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 89. A regional manager must rank twelve branches by revenue. Which visual fits?
 
@@ -852,7 +854,9 @@ Domain: Visualize and analyze the data
 
 ## Case study — Proseware Health
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Proseware Health operates nine hospitals and 140 clinics on a single clinical warehouse that refreshes nightly. The reporting team built one wide encounter table that repeats patient region, clinic, and payer on every row, and filters have become slow. Quality reporting needs year-to-date admissions that stay correct on days with no recorded activity, plus bed-days that describe capacity at a point in time. The data office insists on one agreed definition of length of stay before any page is published.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 92. A single encounter table repeats patient region, clinic, and payer on every row, and slicers are slow. What should be built?
 
@@ -885,7 +889,9 @@ Domain: Model the data
 
 ## Case study — Thornbury Consulting
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Thornbury Consulting has 4,000 consultants, a sales pipeline inDataverse, and a finance system on an on-premises SQL Server. Its reporting workspace will serve two very different audiences: sales staff who need pipeline pages and finance staff who need utilisation pages. The model must refresh from the on-premises server, and exported files carry client rate cards that must stay protected after they leave the workspace. The platform team is small, so anything that needs per-user maintenance will not be sustained.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 95. One app must show sales pages to sales staff and finance pages to finance staff. What should be configured?
 
@@ -918,7 +924,9 @@ Domain: Manage and secure Power BI
 
 ## Case study — Wingfield Retail
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Wingfield Retail runs 420 stores and an e-commerce site on a SQL data warehouse, with franchisee sales arriving as monthly Excel files. Commercial analytics owns a certified semantic model for net sales, and finance rejects any second definition of the number. Sixty analysts build pages from that model, and the nightly refresh must finish before the 7 a.m. trading call. Buying also wants evidence on supplier concentration, and the warehouse still stores one wide sales table with a text amount column.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 98. A new analyst must build a sales report without creating a second definition of net sales. Which action fits?
 

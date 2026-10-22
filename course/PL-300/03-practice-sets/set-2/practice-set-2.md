@@ -1,6 +1,6 @@
 # Microsoft PL-300 — Full-Length Mock Exam 2
 
-AI Transformation Leader · 100 questions · expanded practice bank · passing target 700/1000
+Power BI Data Analyst · 100 questions · expanded practice bank · passing target 700/1000
 
 Blueprint-weighted mock exam. Item mix: 84 multiple-choice (selection count stated where needed), 16 multi-select, and 4 case studies of 3 questions. 8 of the multiple-choice items ask you to choose the correct candidate sequence. Hot-area, drag-and-drop UI, labs, and adaptive problem-solution sets cannot be reproduced in a CSV; see the README for the exact fidelity boundary.
 
@@ -815,7 +815,9 @@ Domain: Manage and secure Power BI
 
 ## Case study — Cambria Insurance
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Cambria Insurance reports on 1.2 million policies, and the monthly board pack must explain how opening policy counts became closing counts. The pack runs to four pages, all filtered to the same policy period, and readers keep re-applying that filter on every page. The retention team also wants to understand which factors are associated with lapses and to ask ad hoc questions without waiting for another page to be built. The model is imported and refreshes nightly from the policy administration system.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 89. The board pack must explain how opening policy counts became closing counts across the month. Which visual fits?
 
@@ -849,7 +851,9 @@ Domain: Visualize and analyze the data
 
 ## Case study — Harborline Grocers
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Harborline Grocers operates 300 stores and runs more than 400 promotions a year, several of them across many stores at once. Its visit table repeats store name, region, and district on every row, and category filters have slowed to a crawl. The sales fact holds every basket line and is slow to summarize, yet merchandisers still need to reach transaction detail when a number looks wrong. Promotion analysis needs a relationship that respects the many-to-many pattern between promotions and stores.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 92. The visit table repeats store name, region, and district on every row, and filters are slow. What should be built?
 
@@ -883,7 +887,9 @@ Domain: Model the data
 
 ## Case study — Pinecrest Clinics
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Pinecrest Clinics is a 60-clinic network that reports admissions from a shared electronic record system. The analytics team must use the clinical model the data office certifies, because a second definition of length of stay caused a board dispute last year. Encounter rows arrive at patient level, but the operations review needs one row per clinician per month. Clinic names sit in a lookup table keyed on a composite of site and clinic code, and the relationship must handle that shape.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 95. The analytics team must report on admissions without creating a second definition of length of stay. Which action fits?
 
@@ -917,7 +923,9 @@ Domain: Prepare the data
 
 ## Case study — Solstice Energy
 
-The next 3 questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.
+Solstice Energy reports outage and meter data for 2.1 million supply points, refreshed from an operational system every two hours. A small team of authors publishes the reports, while field crews need to read them on a phone without changing anything. The board asks for a monthly PDF snapshot of the outage report, and the service account used for refresh has a credential that expires every 90 days. The team has been caught twice by a refresh that failed silently overnight.
+
+The next 3 questions refer to it. Read the scenario once, then answer all 3; each item restates the constraint it tests and is scored individually.
 
 ### 98. Authors must publish and edit reports, and field crews must read without editing. Which two roles fit? Select two.
 
