@@ -203,7 +203,8 @@ class ArtifactTests(unittest.TestCase):
                          '04-resources/sources-and-coverage.md',
                          '04-resources/csv-format-spec.md',
                          '04-resources/publication-checklist.md',
-                         '04-resources/SUMMARY.md', '04-resources/case-studies.md']:
+                         '04-resources/SUMMARY.md', '04-resources/case-studies.md',
+                         '04-resources/case-study-upload-guide.md']:
             self.assertTrue((ROOT / relative).is_file(), relative)
 
     def test_landing_page_has_no_stale_counts(self):

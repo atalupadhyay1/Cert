@@ -70,6 +70,10 @@ Udemy's bulk importer accepts only two `Question Type` values — `multiple-choi
 
 Not reproduced, and disclosed in every export: hot-area image selection, drag-and-drop UI, labs and interactive components, adaptive problem-solution sets, and the exact live item count.
 
+## Publishing to Udemy, case studies included
+
+Udemy has no case-study question type: its practice-test builder offers multiple choice, multiple selection, and fill in the blanks, and bulk upload accepts only those three labels. The step-by-step procedure for loading the case-study blocks — with the scenario as a lecture resource, as embedded stems, or entered by hand — is in [`04-resources/case-study-upload-guide.md`](04-resources/case-study-upload-guide.md).
+
 ## Rebuild and verify
 
 From `04-resources/`:
