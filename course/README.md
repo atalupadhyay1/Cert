@@ -94,6 +94,17 @@ This directory contains Udemy Practice Test Course packages for Claude/Anthropic
 - **Location:** [`course/AI-200/`](AI-200/README.md)
 - **Publication:** Expert technical review and account-level import preview required; no Udemy publication performed.
 
+### Microsoft AB-731: AI Transformation Leader
+
+- **Status:** Six 100-item mock exams; 600 original business-leader items with mixed formats and per-option explanations.
+- **Includes:** Udemy CSVs, offline review copies, instructor landing page, curriculum, sources/coverage, QA suite, and reproducible ZIP.
+- **Organization:** Every exam is blueprint-weighted 37/38/25 across the three published domains (37/38/25 percent, all inside 35–40 / 35–40 / 20–25); 30 local study-map skills mapped to the guide sub-objectives.
+- **Item mix:** 76 single-choice, 16 multi-select with the selection count stated, 8 ordering items rendered as candidate sequences, and four 3-question case studies per exam.
+- **Baseline:** Official study guide, skills measured as of July 22, 2026; 45-minute proctored assessment with no published item count, 700/1000 scaled pass, $99 USD, no coding. Each 100-item practice exam is labelled an expanded bank, never as the live item count.
+- **Format boundary:** Hot-area items, drag-and-drop UI, labs, and adaptive problem-solution sets are excluded and disclosed; practice percentages are not scaled exam scores.
+- **Location:** [`course/AB-731/`](AB-731/README.md)
+- **Publication:** Expert business/legal review and account-level import preview required; no Udemy publication performed.
+
 ### 1. **AB-100: Microsoft Certified Agentic AI Business Solutions Architect** *(in progress)*
 
 - **Status:** Scaffolding complete (landing page, curriculum, validator, set READMEs). Practice sets (Sets 1–6) to be built one per turn.
