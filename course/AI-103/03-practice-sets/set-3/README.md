@@ -4,11 +4,11 @@
 
 | Official domain | Questions |
 |---|---:|
-| 1 | 0 |
-| 2 | 0 |
-| 3 | 0 |
-| 4 | 0 |
-| 5 | 0 |
+| Plan and manage an Azure AI solution | 28 |
+| Implement generative AI and agentic solutions | 33 |
+| Implement computer vision solutions | 13 |
+| Implement text analysis solutions | 13 |
+| Implement information extraction solutions | 13 |
 
 Item mix: 76 single-choice, 16 multi-select, 8 ordering items; 4 case studies of 3 questions. Microsoft typically uses 40–60 questions; this practice set is 100, an expanded exam for broader coverage. Hot-area, drag-and-drop, labs, and adaptive problem-solution sets are not reproduced.
 

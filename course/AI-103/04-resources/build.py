@@ -166,7 +166,7 @@ def main():
             f'# {TOPICS[number]}: AI-103 mock exam\n\n'
             f'{len(rows)} original items · 120 minutes · passing target 700/1000 · blueprint-weighted.\n\n'
             '| Official domain | Questions |\n|---|---:|\n'
-            + '\n'.join(f'| {d} | {counts[d]} |' for d in DOMAINS)
+            + '\n'.join(f'| {DOMAINS[d]} | {counts[DOMAINS[d]]} |' for d in DOMAINS)
             + f'\n\nItem mix: {types["multiple-choice"]} single-choice, {types["multi-select"]} multi-select, {types["ordering"]} ordering items; '
             f'{CASE_STUDIES} case studies of {CASE_SIZE} questions. '
             f'Microsoft typically uses 40–60 questions; this practice set is {len(rows)}, an expanded exam for broader coverage. '
