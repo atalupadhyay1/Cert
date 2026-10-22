@@ -73,8 +73,8 @@ def make_rows(number):
 
 def render_test(number,rows):
     lines=[f'# Microsoft AI-200 — {TOPICS[number]}', '',
-           'Azure AI Cloud Developer Associate · 50 questions · 120 minutes · passing target 700/1000', '',
-           'Blueprint-weighted mock exam. Item mix: 38 single-choice, 8 multi-select (selection count stated), 4 ordering items rendered as answer choices, and 2 case studies of 3 questions. '
+           'Azure AI Cloud Developer Associate · 100 questions · expanded practice bank · passing target 700/1000', '',
+           'Blueprint-weighted mock exam of 100 items. Item mix: 76 single-choice, 16 multi-select (selection count stated), 8 ordering items rendered as answer choices, and 4 case studies of 3 questions. '
            'Hot-area, drag-and-drop UI, labs, and adaptive problem-solution sets cannot be reproduced in a CSV; see the README for the exact fidelity boundary.', '',
            'Original educational content, not actual, recalled, or copied Microsoft exam items.', '',
            '## Questions','']
@@ -106,16 +106,16 @@ def check_source():
     if {r['task'] for rs in BANK.values() for r in rs} != VALID_TASKS:
         raise ValueError('Source must cover every local study-map skill')
     for number,records in BANK.items():
-        if len(records)!=50:
-            raise ValueError(f'Test {number}: expected 50 authored items, found {len(records)}')
+        if len(records)!=100:
+            raise ValueError(f'Test {number}: expected 100 authored items, found {len(records)}')
         if Counter(r['domain'] for r in records)!=Counter(ALLOCATIONS[number]):
             raise ValueError(f'Test {number}: wrong domain allocation')
         kinds=Counter('ordering' if r['kind']=='O' else ('multi-select' if r['kind'] in ('M2','M3') else 'multiple-choice') for r in records)
         if kinds!=Counter(TYPE_PLAN):
             raise ValueError(f'Test {number}: wrong item-type mix {kinds}')
         cases=Counter(case_name(r['question']) for r in records if case_name(r['question']))
-        if len(cases)!=2 or set(cases.values())!={3}:
-            raise ValueError(f'Test {number}: expected 2 case studies of 3 questions, found {dict(cases)}')
+        if len(cases)!=4 or set(cases.values())!={3}:
+            raise ValueError(f'Test {number}: expected 4 case studies of 3 questions, found {dict(cases)}')
         for item in records:
             if item['task'] not in VALID_TASKS:
                 raise ValueError(f'Unknown skill: {item["task"]}')
@@ -144,8 +144,8 @@ def check_source():
             if norm in stems:
                 raise ValueError(f'Duplicate question: {item["id"]}')
             stems.add(norm)
-    if len(stems)!=300:
-        raise ValueError(f'Expected 300 distinct stems, found {len(stems)}')
+    if len(stems)!=600:
+        raise ValueError(f'Expected 600 distinct stems, found {len(stems)}')
 
 def main():
     check_source()
@@ -162,11 +162,11 @@ def main():
         types=Counter(row['Question Type'] for row in rows)
         (folder/'README.md').write_text(
             f'# {TOPICS[number]}: AI-200 mock exam\n\n'
-            '50 original items · 120 minutes · passing target 700/1000 · blueprint-weighted.\n\n'
+            '100 original items · passing target 700/1000 · blueprint-weighted.\n\n'
             '| Official domain | Questions |\n|---|---:|\n'
-            + '\n'.join(f'| {d} | {counts[d]} |' for d in DOMAINS)
-            + f'\n\nItem mix: {types["multiple-choice"]} single-choice, {types["multi-select"]} multi-select, 4 ordering items; 2 case studies of 3 questions. '
-            'Microsoft typically uses 40–60 questions; this practice set is 50. Hot-area, drag-and-drop, labs, and adaptive problem-solution sets are not reproduced.\n\n'
+            + '\n'.join(f'| {DOMAINS[d]} | {counts[DOMAINS[d]]} |' for d in DOMAINS)
+            + f'\n\nItem mix: {types["multiple-choice"]} single-choice, {types["multi-select"]} multi-select, {types["ordering"]} ordering items; 4 case studies of 3 questions. '
+            'Microsoft typically uses 40–60 questions; this practice set is 100 — an expanded bank, not a length replica. Hot-area, drag-and-drop, labs, and adaptive problem-solution sets are not reproduced.\n\n'
             f'Upload `practice-set-{number}.csv`; use `practice-set-{number}.md` for offline review.\n\n'
             'Practice target 700/1000 mirrors the published passing score, but a practice percentage is not a scaled exam score.\n',encoding='utf-8')
         manifest[str(number)]=mapping

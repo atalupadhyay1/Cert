@@ -1,4 +1,4 @@
-"""Load 300 authored AI-200 items. Source order is preserved; export shuffles options."""
+"""Load 600 authored AI-200 items. Source order is preserved; export shuffles options."""
 from pathlib import Path
 from terms import TERMS
 HERE = Path(__file__).resolve().parent
@@ -50,9 +50,10 @@ VALID_TASKS = set(SKILLS)
 # skills-at-a-glance list; its change log records that the data domain's share
 # increased. 30% is the only value inside both statements, so it is enforced.
 OFFICIAL_WEIGHTS = {1: (20, 25), 2: (30, 30), 3: (20, 25), 4: (20, 25)}
-# 50-item exams: 24/30/24/22 percent, inside every published range.
-ALLOCATIONS = {n: {1: 12, 2: 15, 3: 12, 4: 11} for n in range(1, 7)}
-TYPE_PLAN = {'multiple-choice': 38, 'multi-select': 8, 'ordering': 4}
+# 100-item exams: 24/30/24/22 percent, inside every published range.
+ALLOCATIONS = {n: {1: 24, 2: 30, 3: 24, 4: 22} for n in range(1, 7)}
+TYPE_PLAN = {'multiple-choice': 76, 'multi-select': 16, 'ordering': 8}
+CASE_STUDIES = 4
 BANK = {}
 for number in TOPICS:
     records = []

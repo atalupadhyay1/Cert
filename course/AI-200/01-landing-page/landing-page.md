@@ -2,9 +2,9 @@
 
 > **Course Title:** **AI-200: Azure AI Cloud Developer Associate**
 >
-> **Course Subtitle:** **6 mock exams × 50 questions • Containers, vectors, messaging and monitoring • Explained**
+> **Course Subtitle:** **6 mock exams × 100 questions • Containers, vectors, messaging and monitoring • Explained**
 
-Build backend engineering judgment with **300 original questions across six full-length mock exams**, an explanation for every option, and a case-specific rationale.
+Build backend engineering judgment with **600 original questions across six full-length mock exams**, an explanation for every option, and a case-specific rationale.
 
 > **Version notice:** Baseline: the official AI-200 study guide, **skills measured as of October 7, 2026** (four domains). The certification page states a **120-minute** proctored assessment that may include interactive components; the pass score is **700/1000**. The exam typically runs **40–60 questions** and can include multi-select, drag-and-drop, hot-area, case-study, and adaptive problem-solution formats. Confirm the current guide before scheduling.
 
@@ -25,7 +25,7 @@ AI-200: Azure AI Cloud Developer Associate
 ### 2. Course Subtitle
 
 ```text
-6 mock exams × 50 questions • Containers, vectors, messaging and monitoring • Explained
+6 mock exams × 100 questions • Containers, vectors, messaging and monitoring • Explained
 ```
 
 ### 3. Course Description
@@ -33,15 +33,15 @@ AI-200: Azure AI Cloud Developer Associate
 ```text
 Can you ship an AI-backed backend that is deployable, queryable, event-driven, observable, and secure — not just working on your laptop?
 
-Prepare for Microsoft AI-200 (Developing AI Cloud Solutions on Azure) with 300 original questions across six full-length mock exams. Every exam is blueprint-weighted, so each one is a realistic 50-item rehearsal rather than a random topic dump.
+Prepare for Microsoft AI-200 (Developing AI Cloud Solutions on Azure) with 600 original questions across six full-length mock exams of 100 items each. Every exam is blueprint-weighted, so each one is a coherent rehearsal of the whole blueprint rather than a random topic dump.
 
 This is a developer exam about the back end of AI systems. It expects working judgment about container images and registries, App Service, Container Apps and KEDA scaling, Azure Kubernetes Service manifests, Cosmos DB vectors and change feed, PostgreSQL with pgvector, Azure Managed Redis caching and vector search, Service Bus and Event Grid messaging, Azure Functions triggers and bindings, Key Vault, App Configuration, OpenTelemetry and KQL.
 
 WHAT YOU GET
-• Six original 50-question mock exams
-• Blueprint weighting on every exam: 12 / 15 / 12 / 11 across the four published domains
-• Mixed item types: 38 single-choice, 8 multi-select, 4 ordering items per exam
-• Two three-question case studies inside every exam
+• Six original 100-question mock exams
+• Blueprint weighting on every exam: 24 / 30 / 24 / 22 across the four published domains
+• Mixed item types: 76 single-choice, 16 multi-select, 8 ordering items per exam
+• Four three-question case studies inside every exam
 • An explanation for every option plus a case-specific overall rationale
 • Local study-map skill anchors and the official study-guide reference on every item
 • Offline Markdown review copies alongside instructor CSV files
@@ -94,7 +94,7 @@ HOW THE CERTIFICATION ACTUALLY WORKS
 The exam is proctored and lasts 120 minutes. Microsoft may include interactive components. The passing score is 700 out of 1000, the exam costs $165 USD, it is available in English plus twelve other languages, it is valid for one year with a free renewal assessment, and a retake is possible 24 hours after the first attempt.
 
 HOW PRACTICE DIFFERS FROM THE SCORE
-Suggested practice duration is 120 minutes per 50-item exam, matching the real appointment length. Any percentage target you set is a study convention. Microsoft reports a scaled score of 700/1000, not a raw percentage, so a practice percentage is not a scaled exam score and no conversion is implied.
+A 100-item exam is more than twice the live item count, so the real 120-minute clock does not map directly. Use 100 minutes for a deliberate pace drill, or 150 minutes for a full review attempt. Any percentage target you set is a study convention. Microsoft reports a scaled score of 700/1000, not a raw percentage, so a practice percentage is not a scaled exam score and no conversion is implied.
 
 Concepts and option definitions recur across exams for reinforcement. Three hundred distinct question stems do not mean three hundred independent concepts or six independent readiness estimates. No score, calibrated difficulty, lab completion, or certification result is guaranteed.
 
@@ -178,15 +178,15 @@ NOT THE RIGHT FIT FOR
 ```text
 Welcome to your AI-200 practice course!
 
-You have six full-length mock exams of 50 questions each, blueprint-weighted 12 / 15 / 12 / 11 across the four published domains.
+You have six full-length mock exams of 100 questions each, blueprint-weighted 24 / 30 / 24 / 22 across the four published domains.
 
 Each exam mixes item types the way the real exam does:
-• 38 single-choice questions — select ONE best answer.
-• 8 multi-select questions — the stem tells you "Select two"; enter both keys, for example 2,4.
-• 4 ordering questions — choose the candidate sequence that is in the correct order.
-• 2 case studies of 3 questions — read the shared scenario once, then answer all three.
+• 76 single-choice questions — select ONE best answer.
+• 16 multi-select questions — the stem tells you "Select two"; enter both keys, for example 2,4.
+• 8 ordering questions — choose the candidate sequence that is in the correct order.
+• 4 case studies of 3 questions — read the shared scenario once, then answer all three.
 
-Suggested pacing: 120 minutes per exam, matching the real appointment length. Work through the exams in order, then repeat your weakest one cold.
+Suggested pacing: a 100-item exam is deliberately longer than the live 40–60 items, so use 100 minutes as a pace drill or 150 minutes for a review attempt. Work through the exams in order, then repeat your weakest one cold.
 
 For every miss, write down the constraint that decided the answer and why the closest alternative fails. On this exam the recurring traps are capacity versus code, filter-before versus filter-after, and identity versus key.
 
@@ -224,19 +224,19 @@ AI-200 fails developers at the seams: **an image that runs versus an image you c
 ## 📦 What you get
 
 ```text
-Microsoft AI-200 — 300 Questions
+Microsoft AI-200 — 600 Questions
 ├── EXAM 1 — Retail recommendation platform
-│   └── 50 items • 12 / 15 / 12 / 11 • 38 single-choice, 8 multi-select, 4 ordering, 2 case studies
+│   └── 100 items • 24 / 30 / 24 / 22 • 76 single-choice, 16 multi-select, 8 ordering, 4 case studies
 ├── EXAM 2 — Healthcare document intake
-│   └── 50 items • 12 / 15 / 12 / 11 • 38 single-choice, 8 multi-select, 4 ordering, 2 case studies
+│   └── 100 items • 24 / 30 / 24 / 22 • 76 single-choice, 16 multi-select, 8 ordering, 4 case studies
 ├── EXAM 3 — Payments and fraud scoring
-│   └── 50 items • 12 / 15 / 12 / 11 • 38 single-choice, 8 multi-select, 4 ordering, 2 case studies
+│   └── 100 items • 24 / 30 / 24 / 22 • 76 single-choice, 16 multi-select, 8 ordering, 4 case studies
 ├── EXAM 4 — Factory quality inspection
-│   └── 50 items • 12 / 15 / 12 / 11 • 38 single-choice, 8 multi-select, 4 ordering, 2 case studies
+│   └── 100 items • 24 / 30 / 24 / 22 • 76 single-choice, 16 multi-select, 8 ordering, 4 case studies
 ├── EXAM 5 — Citizen document services
-│   └── 50 items • 12 / 15 / 12 / 11 • 38 single-choice, 8 multi-select, 4 ordering, 2 case studies
+│   └── 100 items • 24 / 30 / 24 / 22 • 76 single-choice, 16 multi-select, 8 ordering, 4 case studies
 └── EXAM 6 — Global retail capstone
-    └── 50 items • 12 / 15 / 12 / 11 • 38 single-choice, 8 multi-select, 4 ordering, 2 case studies
+    └── 100 items • 24 / 30 / 24 / 22 • 76 single-choice, 16 multi-select, 8 ordering, 4 case studies
 ```
 
 Includes instructor CSVs, Markdown question-and-answer copies, curriculum, source and coverage notes, reproducible export tooling, a validation report, and an offline ZIP. No live Udemy import or publication is implied.
@@ -247,12 +247,12 @@ Includes instructor CSVs, Markdown question-and-answer copies, curriculum, sourc
 
 | Official domain | Guide weight | Each exam | Package total |
 |---|---:|---:|---:|
-| 1. Develop containerized solutions on Azure | 20–25% | 12 (24%) | 72 (24%) |
-| 2. Develop AI solutions by using Azure data management services | 25–30% and 30–35% published; 30% used | 15 (30%) | 90 (30%) |
-| 3. Connect to and consume Azure services | 20–25% | 12 (24%) | 72 (24%) |
-| 4. Secure, monitor, troubleshoot Azure solutions | 20–25% | 11 (22%) | 66 (22%) |
+| 1. Develop containerized solutions on Azure | 20–25% | 24 (24%) | 144 (24%) |
+| 2. Develop AI solutions by using Azure data management services | 25–30% and 30–35% published; 30% used | 30 (30%) | 180 (30%) |
+| 3. Connect to and consume Azure services | 20–25% | 24 (24%) | 144 (24%) |
+| 4. Secure, monitor, troubleshoot Azure solutions | 20–25% | 22 (22%) | 132 (22%) |
 
-Every exam uses the same integer allocation and sits inside the published ranges. Because the study guide states two different ranges for the data-management domain, this package fixes that domain at 30% — the only percentage accepted by both statements — and keeps the other three inside 20–25%.
+Every exam uses the same integer allocation and sits inside the published ranges; a 100-item exam is deliberately larger than the live 40–60 items so each sub-objective is exercised without repeating a question. Because the study guide states two different ranges for the data-management domain, this package fixes that domain at 30% — the only percentage accepted by both statements — and keeps the other three inside 20–25%.
 
 Source: [AI-200 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200); [certification page](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/). Reviewed October 2026.
 
@@ -260,8 +260,8 @@ Source: [AI-200 study guide](https://learn.microsoft.com/en-us/credentials/certi
 
 | Dimension | Microsoft AI-200 | This package |
 |---|---|---|
-| Question count | Typically 40–60 | 50 per exam |
-| Time | 120 minutes | 120 minutes suggested |
+| Question count | Typically 40–60 | 100 per exam (expanded bank) |
+| Time | 120 minutes | 100 min pace drill or 150 min review |
 | Passing standard | 700 / 1000 scaled | No scaled score; percentage is study-only |
 | Delivery | Proctored, Pearson VUE | CSV or Markdown, self-scored |
 | Item types | Single-choice, multi-select, drag-and-drop/ordering, hot-area, case studies, adaptive problem-solution sets, possible interactive components | Single-choice, multi-select (count stated), ordering as candidate sequences, case studies |
@@ -271,42 +271,42 @@ Source: [AI-200 study guide](https://learn.microsoft.com/en-us/credentials/certi
 
 ## 🧪 How the case studies work
 
-Each exam contains two case studies of three questions. The three items share one scenario and are scored individually, which mirrors how a case-study block feels in the exam: read once, answer several linked questions, and keep the scenario constraints straight. Every case-study item also restates the specific constraint it tests, so the item still reads correctly in a CSV player that cannot display a shared preamble.
+Each exam contains four case studies of three questions. The three items share one scenario and are scored individually, which mirrors how a case-study block feels in the exam: read once, answer several linked questions, and keep the scenario constraints straight. Every case-study item also restates the specific constraint it tests, so the item still reads correctly in a CSV player that cannot display a shared preamble.
 
 ## 🧠 Local skill map
 
 | Local ID | Study area | Domain | Items |
 |---|---|---|---:|
-| 1.1 | Container image lifecycle in Azure Container Registry | 1 | 13 |
-| 1.2 | Automated image builds with ACR Tasks | 1 | 6 |
-| 1.3 | Container deployment to Azure App Service | 1 | 12 |
-| 1.4 | Container Apps deployment and revisions | 1 | 13 |
-| 1.5 | Event-driven scaling with KEDA | 1 | 8 |
-| 1.6 | AKS deployment with manifests | 1 | 10 |
-| 1.7 | Container logs, events, and connectivity | 1 | 10 |
-| 2.1 | Cosmos DB SDK access and queries | 2 | 9 |
-| 2.2 | Cosmos DB indexing policies and request units | 2 | 6 |
-| 2.3 | Cosmos DB consistency levels | 2 | 7 |
-| 2.4 | Cosmos DB vector search and embeddings | 2 | 7 |
-| 2.5 | Cosmos DB change feed processing | 2 | 9 |
-| 2.6 | PostgreSQL connection and schema modeling | 2 | 8 |
-| 2.7 | pgvector indexing and query latency | 2 | 12 |
-| 2.8 | PostgreSQL compute, memory, and storage sizing | 2 | 6 |
-| 2.9 | PostgreSQL RAG with metadata filters | 2 | 6 |
-| 2.10 | PostgreSQL connection optimization | 2 | 7 |
-| 2.11 | Azure Managed Redis caching and invalidation | 2 | 7 |
-| 2.12 | Azure Managed Redis vector indexing | 2 | 6 |
-| 3.1 | Service Bus queues and sessions | 3 | 14 |
-| 3.2 | Service Bus topics, subscriptions, and filters | 3 | 11 |
-| 3.3 | Service Bus dead-lettering and retries | 3 | 14 |
-| 3.4 | Event Grid filters, custom events, and retries | 3 | 15 |
-| 3.5 | Azure Functions triggers and bindings | 3 | 10 |
-| 3.6 | Function app configuration and deployment | 3 | 8 |
-| 4.1 | Key Vault secret storage, rotation, and retrieval | 4 | 19 |
-| 4.2 | App Configuration settings and feature flags | 4 | 12 |
-| 4.3 | Distributed tracing with OpenTelemetry | 4 | 11 |
-| 4.4 | KQL queries for logs and metrics | 4 | 14 |
-| 4.5 | Identity-based access for application services | 4 | 10 |
+| 1.1 | Container image lifecycle in Azure Container Registry | 1 | 21 |
+| 1.2 | Automated image builds with ACR Tasks | 1 | 14 |
+| 1.3 | Container deployment to Azure App Service | 1 | 27 |
+| 1.4 | Container Apps deployment and revisions | 1 | 27 |
+| 1.5 | Event-driven scaling with KEDA | 1 | 18 |
+| 1.6 | AKS deployment with manifests | 1 | 20 |
+| 1.7 | Container logs, events, and connectivity | 1 | 17 |
+| 2.1 | Cosmos DB SDK access and queries | 2 | 22 |
+| 2.2 | Cosmos DB indexing policies and request units | 2 | 15 |
+| 2.3 | Cosmos DB consistency levels | 2 | 13 |
+| 2.4 | Cosmos DB vector search and embeddings | 2 | 15 |
+| 2.5 | Cosmos DB change feed processing | 2 | 17 |
+| 2.6 | PostgreSQL connection and schema modeling | 2 | 14 |
+| 2.7 | pgvector indexing and query latency | 2 | 24 |
+| 2.8 | PostgreSQL compute, memory, and storage sizing | 2 | 10 |
+| 2.9 | PostgreSQL RAG with metadata filters | 2 | 11 |
+| 2.10 | PostgreSQL connection optimization | 2 | 13 |
+| 2.11 | Azure Managed Redis caching and invalidation | 2 | 17 |
+| 2.12 | Azure Managed Redis vector indexing | 2 | 9 |
+| 3.1 | Service Bus queues and sessions | 3 | 24 |
+| 3.2 | Service Bus topics, subscriptions, and filters | 3 | 20 |
+| 3.3 | Service Bus dead-lettering and retries | 3 | 29 |
+| 3.4 | Event Grid filters, custom events, and retries | 3 | 29 |
+| 3.5 | Azure Functions triggers and bindings | 3 | 18 |
+| 3.6 | Function app configuration and deployment | 3 | 24 |
+| 4.1 | Key Vault secret storage, rotation, and retrieval | 4 | 36 |
+| 4.2 | App Configuration settings and feature flags | 4 | 26 |
+| 4.3 | Distributed tracing with OpenTelemetry | 4 | 26 |
+| 4.4 | KQL queries for logs and metrics | 4 | 27 |
+| 4.5 | Identity-based access for application services | 4 | 17 |
 
 These IDs are internal study aids. Microsoft names objectives without this numbering, and coverage counts describe practice emphasis rather than official sub-objective weighting.
 
@@ -332,11 +332,11 @@ These IDs are internal study aids. Microsoft names objectives without this numbe
 
 **Q: How many questions are included?**
 
-A: **300 across six exams of 50**, with 38 single-choice, 8 multi-select, 4 ordering, and 2 case studies of 3 questions per exam.
+A: **600 across six exams of 100**, with 76 single-choice, 16 multi-select, 8 ordering, and 4 case studies of 3 questions per exam.
 
 **Q: Is every exam blueprint-weighted?**
 
-A: Yes. All six use **12 / 15 / 12 / 11**, which is 24 / 30 / 24 / 22 percent — inside every published range.
+A: Yes. All six use **24 / 30 / 24 / 22**, which is 24 / 30 / 24 / 22 percent — inside every published range.
 
 **Q: Why is the data-management domain fixed at 30%?**
 
@@ -344,7 +344,11 @@ A: The study guide states 25–30% in the domain heading and 30–35% in its ski
 
 **Q: Do these reproduce the actual exam?**
 
-A: Not exactly, and the package says so. The live exam is typically 40–60 questions with possible interactive components. Practice exams are 50 items and reproduce the scoreable formats: single-choice, multi-select, ordering as candidate sequences, and case studies.
+A: Not exactly, and the package says so. The live exam is typically 40–60 questions with possible interactive components. Practice exams are 100 items and reproduce the scoreable formats: single-choice, multi-select, ordering as candidate sequences, and case studies.
+
+**Q: Why 100 questions when the real exam has 40–60?**
+
+A: So every sub-objective gets real coverage and each blueprint can be drilled twice without repeats. It is an expanded bank, not a length replica, and the package says so rather than implying the live exam is longer.
 
 **Q: Why are hot-area, drag-and-drop, and labs missing?**
 

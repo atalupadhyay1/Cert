@@ -1,6 +1,6 @@
 # Microsoft AI-200 — Developing AI Cloud Solutions on Azure
 
-**Six full-length mock exams • 300 original questions • mixed item types • blueprint-weighted**
+**Six full-length mock exams • 600 original questions • mixed item types • blueprint-weighted**
 
 Baseline: the official AI-200 study guide, **skills measured as of October 7, 2026** (four domains). Microsoft's exam page states a **120-minute** proctored assessment that may include interactive components, with a pass score of **700/1000**. The live exam typically contains **40–60 questions** and can include multi-select, drag-and-drop, hot-area, case-study, and adaptive problem-solution formats. This package reproduces what a CSV-based practice exam can carry honestly and documents the rest as a known boundary.
 
@@ -10,7 +10,7 @@ Baseline: the official AI-200 study guide, **skills measured as of October 7, 20
 
 - [Instructor-copy landing page](01-landing-page/landing-page.md): title, subtitle, description, outcomes, requirements, audience, welcome, congratulations, and FAQs.
 - [Curriculum and six-exam study sequence](02-curriculum/curriculum-outline.md).
-- [Download offline ZIP](AI-200-Azure-AI-Cloud-Developer-Associate-6x50.zip).
+- [Download offline ZIP](AI-200-Azure-AI-Cloud-Developer-Associate-6x100.zip).
 - [Official sources and coverage notes](04-resources/sources-and-coverage.md).
 - [Validation report](04-resources/validation-report.json), [CSV format specification](04-resources/csv-format-spec.md), [publication checklist](04-resources/publication-checklist.md), and [package summary](04-resources/SUMMARY.md).
 
@@ -18,25 +18,25 @@ Baseline: the official AI-200 study guide, **skills measured as of October 7, 20
 
 | Exam | Scenario spine | CSV | Offline review |
 |---|---|---|---|
-| 1 | Retail recommendation platform: Northwind, Fabrikam catalog | [CSV](03-practice-sets/set-1/practice-set-1.csv) | [Markdown](03-practice-sets/set-1/practice-set-1.md) |
-| 2 | Healthcare document intake: MedRec, ClaimsFlow | [CSV](03-practice-sets/set-2/practice-set-2.csv) | [Markdown](03-practice-sets/set-2/practice-set-2.md) |
-| 3 | Payments and fraud scoring: PaymentsGate, FraudDesk | [CSV](03-practice-sets/set-3/practice-set-3.csv) | [Markdown](03-practice-sets/set-3/practice-set-3.md) |
-| 4 | Factory quality inspection: Fabrikam Plant, Contoso Assembly | [CSV](03-practice-sets/set-4/practice-set-4.csv) | [Markdown](03-practice-sets/set-4/practice-set-4.md) |
-| 5 | Citizen document services: CityPortal, CampusDesk | [CSV](03-practice-sets/set-5/practice-set-5.csv) | [Markdown](03-practice-sets/set-5/practice-set-5.md) |
-| 6 | Global retail capstone: GroupRetail, StoreOps | [CSV](03-practice-sets/set-6/practice-set-6.csv) | [Markdown](03-practice-sets/set-6/practice-set-6.md) |
+| 1 | Retail recommendation platform: Northwind, Fabrikam catalog, Tailspin Retail, Alpine Outfitters | [CSV](03-practice-sets/set-1/practice-set-1.csv) | [Markdown](03-practice-sets/set-1/practice-set-1.md) |
+| 2 | Healthcare document intake: MedRec, ClaimsFlow, Lakeview Clinic, Meridian Health | [CSV](03-practice-sets/set-2/practice-set-2.csv) | [Markdown](03-practice-sets/set-2/practice-set-2.md) |
+| 3 | Payments and fraud scoring: PaymentsGate, FraudDesk, LedgerOne, VaultTrust | [CSV](03-practice-sets/set-3/practice-set-3.csv) | [Markdown](03-practice-sets/set-3/practice-set-3.md) |
+| 4 | Factory quality inspection: Fabrikam Plant, Contoso Assembly, Ironworks Plant, Apex Motors | [CSV](03-practice-sets/set-4/practice-set-4.csv) | [Markdown](03-practice-sets/set-4/practice-set-4.md) |
+| 5 | Citizen document services: CityPortal, CampusDesk, CityWorks Permits, StateLibrary | [CSV](03-practice-sets/set-5/practice-set-5.csv) | [Markdown](03-practice-sets/set-5/practice-set-5.md) |
+| 6 | Global retail capstone: GroupRetail, StoreOps, GlobalMart, NovaRetail | [CSV](03-practice-sets/set-6/practice-set-6.csv) | [Markdown](03-practice-sets/set-6/practice-set-6.md) |
 
 ## Scope and format
 
 | Official domain | Guide weight | Per exam | Package total |
 |---|---:|---:|---:|
-| 1. Develop containerized solutions on Azure | 20–25% | 12 (24%) | 72 |
-| 2. Develop AI solutions by using Azure data management services | 25–30% and 30–35% published; 30% used | 15 (30%) | 90 |
-| 3. Connect to and consume Azure services | 20–25% | 12 (24%) | 72 |
-| 4. Secure, monitor, troubleshoot Azure solutions | 20–25% | 11 (22%) | 66 |
+| 1. Develop containerized solutions on Azure | 20–25% | 24 (24%) | 144 |
+| 2. Develop AI solutions by using Azure data management services | 25–30% and 30–35% published; 30% used | 30 (30%) | 180 |
+| 3. Connect to and consume Azure services | 20–25% | 24 (24%) | 144 |
+| 4. Secure, monitor, troubleshoot Azure solutions | 20–25% | 22 (22%) | 132 |
 
-Every exam carries the same **12 / 15 / 12 / 11** allocation, so each one is a self-contained mock exam inside the published ranges and the aggregate is 24 / 30 / 24 / 22 percent.
+Every exam carries the same **24 / 30 / 24 / 22** allocation, so each one is a self-contained mock exam inside the published ranges and the aggregate is the same 24 / 30 / 24 / 22 percent.
 
-Per exam: **38 single-choice**, **8 multi-select**, and **4 ordering** items, plus **2 case studies of 3 questions each** (the six case items come from the 38 single-choice slots). Multi-select items state the required count ("Select two"). Ordering items are rendered as four candidate sequences so they can be answered and scored in a CSV player.
+Per exam: **76 single-choice**, **16 multi-select**, and **8 ordering** items, plus **4 case studies of 3 questions each** (the twelve case items come from the single-choice slots). Multi-select items state the required count ("Select two"). Ordering items are rendered as four candidate sequences so they can be answered and scored in a CSV player.
 
 Not reproduced, and stated in every export: hot-area image selection, drag-and-drop UI, live labs and interactive components, adaptive problem-solution (yes/no) sets, and the exact 40–60 item count.
 

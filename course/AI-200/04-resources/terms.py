@@ -359,3 +359,107 @@ t('containerappsenv', 'Deploy into a Container Apps environment attached to the 
   'A virtual-network-attached environment enables private access to dependencies and internal ingress. It also shifts DNS and egress design to you.')
 t('kedascaleidentity', 'Give the KEDA scaler a managed identity to read the event source',
   'A scaler needs permission to read queue metrics; identity-based access avoids a stored connection string. Least privilege still applies to that identity.')
+
+# --- Added for the 100-item expansion ---------------------------------------
+t('initcontainer', 'Run startup prerequisites in an init container',
+  'An init container finishes before the application container starts, so migrations or asset downloads complete first. It lengthens startup and must be fast and repeatable.')
+t('configmap', 'Mount non-secret configuration from a Kubernetes ConfigMap',
+  'A ConfigMap injects settings as environment variables or mounted files without rebuilding the image. Secrets still belong in Key Vault, not in a ConfigMap.')
+t('acrscan', 'Scan images on push and block vulnerable builds in the pipeline',
+  'A scan reports known vulnerabilities per image digest and can gate deployment. It does not patch the base image, so rebuilds are still required.')
+t('singlerevision', 'Lock the container app to single-revision mode',
+  'Single-revision mode keeps one active revision, so percentage traffic splitting is unavailable and a rollout replaces the running revision. Rollback is another replacement.')
+t('digestpin', 'Deploy the image by digest instead of a mutable tag',
+  'A digest identifies immutable content, so the same bytes run in every environment. A tag can be reassigned later and silently change what deploys.')
+t('cacheaside', 'Read through the cache and populate it on a miss',
+  'Cache-aside reads Redis first, falls back to the source, then stores the value with a TTL. Every write path must still invalidate or overwrite the entry.')
+t('cosmoscontinuation', 'Page large result sets with the continuation token',
+  'A continuation token returns the next page without re-sorting the previous one, which bounds response size and request charge per call. It is not a snapshot across pages.')
+t('compositeindex', 'Add a composite index for the filtered and ordered properties',
+  'A composite index lets a query filter and order on several paths without a runtime sort. It adds write cost for exactly those paths.')
+t('pghalfvec', 'Store the embeddings as halfvec to halve index memory',
+  'halfvec keeps 16-bit components, roughly halving index size at a small recall cost. The declared dimensions must still match the embedding model.')
+t('pgconcurrently', 'Build the vector index concurrently so writes are not blocked',
+  'CREATE INDEX CONCURRENTLY keeps inserts and updates flowing during the build, at the cost of a longer build and extra I/O. A failed build leaves an invalid index to drop.')
+t('sbdefer', 'Defer the message and retry it after the dependency recovers',
+  'A deferred message stays in the queue without consuming a delivery attempt until it is received again by sequence number. Deferral does not delay the retry by itself.')
+t('funcbackoff', 'Configure the host retry policy with exponential backoff',
+  'The host retry policy re-executes a failing trigger with bounded attempts and backoff. It cannot make a non-idempotent handler safe to replay.')
+t('functimer', 'Run the scheduled maintenance from a timer trigger',
+  'A timer trigger invokes the function on a schedule without an external caller. Overlapping runs and the time zone must be configured deliberately.')
+t('funcconcurrency', 'Tune the function app concurrency and batch size',
+  'Concurrency and batch size bound how much work one instance takes at a time, which controls downstream pressure and memory. Too high a value causes throttling and timeouts.')
+t('actiongroup', 'Route the alert to an action group with a named owner',
+  'An action group defines who is notified and which automation runs when an alert fires. An alert with no action group is only a record in the portal.')
+t('flagdark', 'Ship the code dark behind a feature flag',
+  'A feature flag enables reviewed code in production without a redeploy and lets it be switched off instantly. Flag state still needs ownership and cleanup.')
+t('otelspan', 'Create a custom span around each downstream call',
+  'A span records the duration and outcome of one operation and nests under the trace. It makes the slow dependency visible in the transaction view.')
+t('retentiondays', 'Set the workspace retention and table plan to control log cost',
+  'Retention and the table plan determine how long data is queryable and what it costs. Lower retention reduces cost but shortens the investigation window.')
+
+# --- Ordering sequences added for the expansion ------------------------------
+t('seqredis', 'Check the cache → on a miss query the source → write the value with a TTL → invalidate the entry when the source changes → serve the next request from the cache',
+  'The sequence is cache-first, source on miss, populate with expiry, invalidate on write, then serve from cache.')
+t('seqredisbad1', 'On a miss query the source → check the cache → write the value with a TTL → serve the next request → invalidate the entry when the source changes',
+  'Querying the source before checking the cache defeats the cache and doubles read load.')
+t('seqredisbad2', 'Write the value with a TTL → check the cache → on a miss query the source → invalidate the entry → serve the next request from the cache',
+  'A value cannot be written before it has been read, so the ordering is impossible.')
+t('seqredisbad3', 'Invalidate the entry when the source changes → write the value with a TTL → check the cache → serve the next request → on a miss query the source',
+  'Invalidation precedes the write it is meant to follow, and the read order is reversed.')
+t('seqcf', 'Enable the change feed on the container → create a lease container → start the processor with a unique instance name → read inserts and updates in order → checkpoint the continuation',
+  'The feed must be enabled and leases available before a processor can own partitions and checkpoint progress.')
+t('seqcfbad1', 'Create a lease container → enable the change feed → checkpoint the continuation → start the processor → read inserts and updates in order',
+  'A checkpoint is written by a running processor, so it cannot precede the processor start.')
+t('seqcfbad2', 'Read inserts and updates in order → start the processor → create a lease container → enable the change feed → checkpoint the continuation',
+  'Reading events before the processor exists and before leases are created cannot work.')
+t('seqcfbad3', 'Start the processor with a unique instance name → read inserts and updates → enable the change feed → create a lease container → checkpoint the continuation',
+  'Enabling the feed and creating leases must happen before any processor reads or checkpoints.')
+t('seqfunc', 'Create the function app with a managed identity → grant the identity access to the vault → reference the secret in application settings → deploy through the pipeline → verify a queue-triggered invocation',
+  'Identity, permission, and reference must exist before deployment, and verification follows the deployment.')
+t('seqfuncbad1', 'Grant the identity access to the vault → create the function app with a managed identity → deploy through the pipeline → reference the secret in application settings → verify a queue-triggered invocation',
+  'Permission cannot be granted before the identity exists, and the reference is missing at deploy time.')
+t('seqfuncbad2', 'Deploy through the pipeline → reference the secret in application settings → create the function app with a managed identity → grant the identity access to the vault → verify a queue-triggered invocation',
+  'The deployment would run before the identity and its access exist.')
+t('seqfuncbad3', 'Reference the secret in application settings → verify a queue-triggered invocation → create the function app with a managed identity → grant the identity access to the vault → deploy through the pipeline',
+  'Verification cannot precede the deployment it verifies.')
+t('seqsecure', 'Assign a managed identity to the app → grant the least-privilege data-plane role → move the credential into Key Vault → disable public network access behind a private endpoint → verify the call from inside the app',
+  'Identity and permission come before removing the old credential, and the network lockdown is verified from the workload itself.')
+t('seqsecurebad1', 'Disable public network access behind a private endpoint → assign a managed identity to the app → grant the least-privilege data-plane role → verify the call from inside the app → move the credential into Key Vault',
+  'Closing the network first breaks the app before identity-based access exists.')
+t('seqsecurebad2', 'Move the credential into Key Vault → disable public network access → verify the call from inside the app → assign a managed identity to the app → grant the least-privilege data-plane role',
+  'The app loses its credential and its route before any replacement access is granted.')
+t('seqsecurebad3', 'Verify the call from inside the app → assign a managed identity to the app → move the credential into Key Vault → disable public network access → grant the least-privilege data-plane role',
+  'Verification cannot happen before the access model is changed and permission is granted.')
+t('seqappcfg', 'Create the App Configuration store → add key-values with an environment label → reference the vault secret from a key value → enable refresh in the application → change the feature flag without redeploying',
+  'The store, labels, and secret reference must exist before refresh can deliver a flag change without a deployment.')
+t('seqappcfgbad1', 'Enable refresh in the application → create the App Configuration store → add key-values with an environment label → change the feature flag without redeploying → reference the vault secret from a key value',
+  'Refresh cannot be enabled against a store that does not exist yet.')
+t('seqappcfgbad2', 'Change the feature flag without redeploying → create the App Configuration store → add key-values with an environment label → enable refresh in the application → reference the vault secret from a key value',
+  'The flag cannot change before the store holds it and the app refreshes from it.')
+t('seqappcfgbad3', 'Add key-values with an environment label → reference the vault secret from a key value → create the App Configuration store → enable refresh in the application → change the feature flag without redeploying',
+  'Key-values must be added to a store that already exists.')
+t('seqtrace', 'Instrument the service with the OpenTelemetry SDK → propagate the trace context across queue hops → export spans to the collector → query the transaction view for the slow dependency → alert on the failure rate',
+  'Instrumentation precedes context propagation, export precedes querying, and alerting follows a validated query.')
+t('seqtracebad1', 'Alert on the failure rate → instrument the service with the OpenTelemetry SDK → propagate the trace context across queue hops → export spans to the collector → query the transaction view for the slow dependency',
+  'An alert cannot be defined before the telemetry it depends on exists.')
+t('seqtracebad2', 'Export spans to the collector → instrument the service with the OpenTelemetry SDK → query the transaction view for the slow dependency → propagate the trace context across queue hops → alert on the failure rate',
+  'There are no spans to export before instrumentation and propagation are in place.')
+t('seqtracebad3', 'Query the transaction view for the slow dependency → export spans to the collector → instrument the service with the OpenTelemetry SDK → alert on the failure rate → propagate the trace context across queue hops',
+  'Querying and alerting cannot precede instrumentation and export.')
+t('seqscale', 'Deploy the container app with a minimum replica count → attach a KEDA scale rule that uses the workload identity → cap the maximum replicas → run a load test → confirm replicas grow and drain',
+  'The app, the scale rule, and the bound must exist before a load test can prove the scaling behaviour.')
+t('seqscalebad1', 'Attach a KEDA scale rule that uses the workload identity → deploy the container app with a minimum replica count → confirm replicas grow and drain → run a load test → cap the maximum replicas',
+  'A scale rule cannot be attached before the app exists, and the cap must exist before the test.')
+t('seqscalebad2', 'Run a load test → deploy the container app with a minimum replica count → attach a KEDA scale rule → cap the maximum replicas → confirm replicas grow and drain',
+  'The load test would run against nothing configured to scale.')
+t('seqscalebad3', 'Confirm replicas grow and drain → deploy the container app with a minimum replica count → attach a KEDA scale rule → run a load test → cap the maximum replicas',
+  'Verification cannot precede the deployment, the rule, and the test.')
+t('seqcosmosindex', 'Choose a high-cardinality partition key → set the indexing policy to the queried paths → choose autoscale throughput → query with the partition key → measure the request charge',
+  'Key and policy decisions come before the query that relies on them, and the charge is measured after the query runs.')
+t('seqcosmosindexbad1', 'Measure the request charge → choose a high-cardinality partition key → set the indexing policy to the queried paths → choose autoscale throughput → query with the partition key',
+  'The charge cannot be measured before the query and the model exist.')
+t('seqcosmosindexbad2', 'Query with the partition key → set the indexing policy to the queried paths → choose a high-cardinality partition key → choose autoscale throughput → measure the request charge',
+  'The query is written against a key and policy that have not been chosen yet.')
+t('seqcosmosindexbad3', 'Set the indexing policy to the queried paths → query with the partition key → choose a high-cardinality partition key → measure the request charge → choose autoscale throughput',
+  'A partition key must be chosen before a query can use it as a predicate.')

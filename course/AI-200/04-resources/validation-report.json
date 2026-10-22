@@ -1,16 +1,16 @@
 {
   "status": "PASS",
   "sets": 6,
-  "total_questions": 300,
+  "total_questions": 600,
   "checks": [
     "17-column header",
-    "50 items per set",
+    "100 items per set",
     "blueprint domain allocation per set",
     "four-option single-choice and ordering items",
     "five-option multi-select items with stated selection count",
     "two or three correct indices for multi-select",
     "per-option explanations",
-    "AI-103 study-guide references",
+    "AI-200 study-guide references",
     "source consistency",
     "normalized duplicate wording",
     "balanced single-answer slots"
@@ -26,98 +26,98 @@
   "files": [
     {
       "file": "03-practice-sets/set-1/practice-set-1.csv",
-      "questions": 50,
+      "questions": 100,
       "status": "PASS",
       "types": {
-        "multiple-choice": 38,
-        "multi-select": 8,
-        "ordering": 4
+        "multiple-choice": 76,
+        "multi-select": 16,
+        "ordering": 8
       },
       "domains": {
-        "Develop containerized solutions on Azure": 12,
-        "Develop AI solutions by using Azure data management services": 15,
-        "Connect to and consume Azure services": 12,
-        "Secure, monitor, troubleshoot Azure solutions": 11
+        "Develop containerized solutions on Azure": 24,
+        "Develop AI solutions by using Azure data management services": 30,
+        "Connect to and consume Azure services": 24,
+        "Secure, monitor, troubleshoot Azure solutions": 22
       }
     },
     {
       "file": "03-practice-sets/set-2/practice-set-2.csv",
-      "questions": 50,
+      "questions": 100,
       "status": "PASS",
       "types": {
-        "multiple-choice": 38,
-        "ordering": 4,
-        "multi-select": 8
+        "multiple-choice": 76,
+        "ordering": 8,
+        "multi-select": 16
       },
       "domains": {
-        "Develop containerized solutions on Azure": 12,
-        "Develop AI solutions by using Azure data management services": 15,
-        "Connect to and consume Azure services": 12,
-        "Secure, monitor, troubleshoot Azure solutions": 11
+        "Develop containerized solutions on Azure": 24,
+        "Develop AI solutions by using Azure data management services": 30,
+        "Connect to and consume Azure services": 24,
+        "Secure, monitor, troubleshoot Azure solutions": 22
       }
     },
     {
       "file": "03-practice-sets/set-3/practice-set-3.csv",
-      "questions": 50,
+      "questions": 100,
       "status": "PASS",
       "types": {
-        "multiple-choice": 38,
-        "multi-select": 8,
-        "ordering": 4
+        "multiple-choice": 76,
+        "multi-select": 16,
+        "ordering": 8
       },
       "domains": {
-        "Develop containerized solutions on Azure": 12,
-        "Develop AI solutions by using Azure data management services": 15,
-        "Connect to and consume Azure services": 12,
-        "Secure, monitor, troubleshoot Azure solutions": 11
+        "Develop containerized solutions on Azure": 24,
+        "Develop AI solutions by using Azure data management services": 30,
+        "Connect to and consume Azure services": 24,
+        "Secure, monitor, troubleshoot Azure solutions": 22
       }
     },
     {
       "file": "03-practice-sets/set-4/practice-set-4.csv",
-      "questions": 50,
+      "questions": 100,
       "status": "PASS",
       "types": {
-        "multiple-choice": 38,
-        "multi-select": 8,
-        "ordering": 4
+        "multiple-choice": 76,
+        "multi-select": 16,
+        "ordering": 8
       },
       "domains": {
-        "Develop containerized solutions on Azure": 12,
-        "Develop AI solutions by using Azure data management services": 15,
-        "Connect to and consume Azure services": 12,
-        "Secure, monitor, troubleshoot Azure solutions": 11
+        "Develop containerized solutions on Azure": 24,
+        "Develop AI solutions by using Azure data management services": 30,
+        "Connect to and consume Azure services": 24,
+        "Secure, monitor, troubleshoot Azure solutions": 22
       }
     },
     {
       "file": "03-practice-sets/set-5/practice-set-5.csv",
-      "questions": 50,
+      "questions": 100,
       "status": "PASS",
       "types": {
-        "multiple-choice": 38,
-        "multi-select": 8,
-        "ordering": 4
+        "multiple-choice": 76,
+        "multi-select": 16,
+        "ordering": 8
       },
       "domains": {
-        "Develop containerized solutions on Azure": 12,
-        "Develop AI solutions by using Azure data management services": 15,
-        "Connect to and consume Azure services": 12,
-        "Secure, monitor, troubleshoot Azure solutions": 11
+        "Develop containerized solutions on Azure": 24,
+        "Develop AI solutions by using Azure data management services": 30,
+        "Connect to and consume Azure services": 24,
+        "Secure, monitor, troubleshoot Azure solutions": 22
       }
     },
     {
       "file": "03-practice-sets/set-6/practice-set-6.csv",
-      "questions": 50,
+      "questions": 100,
       "status": "PASS",
       "types": {
-        "multiple-choice": 38,
-        "multi-select": 8,
-        "ordering": 4
+        "multiple-choice": 76,
+        "multi-select": 16,
+        "ordering": 8
       },
       "domains": {
-        "Develop containerized solutions on Azure": 12,
-        "Develop AI solutions by using Azure data management services": 15,
-        "Connect to and consume Azure services": 12,
-        "Secure, monitor, troubleshoot Azure solutions": 11
+        "Develop containerized solutions on Azure": 24,
+        "Develop AI solutions by using Azure data management services": 30,
+        "Connect to and consume Azure services": 24,
+        "Secure, monitor, troubleshoot Azure solutions": 22
       }
     }
   ],

@@ -13,7 +13,7 @@ from build import HEADER, ROOT, TYPE_PLAN, make_rows, render_test
 from terms import TERMS
 from validate import validate_rows
 
-ZIP = ROOT / 'AI-200-Azure-AI-Cloud-Developer-Associate-6x50.zip'
+ZIP = ROOT / 'AI-200-Azure-AI-Cloud-Developer-Associate-6x100.zip'
 
 
 def header_row(csv_path):
@@ -106,30 +106,30 @@ class SourceTests(unittest.TestCase):
     def test_allocation_is_inside_official_ranges(self):
         from bank import OFFICIAL_WEIGHTS
         for n, allocation in ALLOCATIONS.items():
-            self.assertEqual(sum(allocation.values()), 50)
+            self.assertEqual(sum(allocation.values()), 100)
             for domain, count in allocation.items():
-                pct = count / 50 * 100
+                pct = count / 100 * 100
                 low, high = OFFICIAL_WEIGHTS[domain]
                 self.assertGreaterEqual(pct, low, f'set {n} domain {domain}')
                 self.assertLessEqual(pct, high, f'set {n} domain {domain}')
 
-    def test_two_case_studies_per_exam(self):
+    def test_four_case_studies_per_exam(self):
         for n, rows in BANK.items():
             cases = Counter()
             for record in rows:
                 match = re.match(r'Case study — ([^:]+):', record['question'])
                 if match:
                     cases[match[1]] += 1
-            self.assertEqual(len(cases), 2, f'set {n}: {cases}')
+            self.assertEqual(len(cases), 4, f'set {n}: {cases}')
             self.assertEqual(set(cases.values()), {3}, f'set {n}: {cases}')
 
 
 class ArtifactTests(unittest.TestCase):
-    def test_each_exam_has_50_rows_and_17_columns(self):
+    def test_each_exam_has_100_rows_and_17_columns(self):
         for n in range(1, 7):
             path = ROOT / f'03-practice-sets/set-{n}/practice-set-{n}.csv'
             rows = header_row(path)
-            self.assertEqual(len(rows), 50, path.name)
+            self.assertEqual(len(rows), 100, path.name)
             self.assertEqual(list(rows[0]), HEADER, path.name)
             types = Counter(r['Question Type'] for r in rows)
             self.assertEqual(types, Counter(TYPE_PLAN), path.name)
@@ -147,15 +147,15 @@ class ArtifactTests(unittest.TestCase):
             path = ROOT / f'03-practice-sets/set-{n}/practice-set-{n}.md'
             text = path.read_text(encoding='utf-8')
             self.assertEqual(text, render_test(n, rows), path.name)
-            self.assertEqual(len(re.findall(r'^### \d+\. ', text, re.M)), 50)
-            self.assertEqual(text.count('## Case study — '), 2)
+            self.assertEqual(len(re.findall(r'^### \d+\. ', text, re.M)), 100)
+            self.assertEqual(text.count('## Case study — '), 4)
             self.assertIn('## Answer key and explanations', text)
 
     def test_set_readme_states_mix(self):
         for n in range(1, 7):
             text = (ROOT / f'03-practice-sets/set-{n}/README.md').read_text(encoding='utf-8')
-            self.assertIn('50 original items', text)
-            self.assertIn('8 multi-select', text)
+            self.assertIn('100 original items', text)
+            self.assertIn('16 multi-select', text)
             self.assertIn('700/1000', text)
 
     def test_manifest_matches_builder(self):
@@ -163,13 +163,13 @@ class ArtifactTests(unittest.TestCase):
         for n in range(1, 7):
             _, mapping = make_rows(n)
             self.assertEqual(manifest[str(n)], mapping, f'set {n}')
-        self.assertEqual(sum(len(v) for v in manifest.values()), 300)
+        self.assertEqual(sum(len(v) for v in manifest.values()), 600)
 
     def test_validation_report_passes(self):
         report = json.loads((ROOT / '04-resources/validation-report.json').read_text(encoding='utf-8'))
         self.assertEqual(report['status'], 'PASS')
         self.assertEqual(report['sets'], 6)
-        self.assertEqual(report['total_questions'], 300)
+        self.assertEqual(report['total_questions'], 600)
         self.assertEqual(report['errors'], [])
 
     def test_documents_exist(self):
@@ -183,10 +183,10 @@ class ArtifactTests(unittest.TestCase):
 
     def test_landing_page_has_no_stale_counts(self):
         text = (ROOT / '01-landing-page/landing-page.md').read_text(encoding='utf-8')
-        self.assertIn('300 original questions', text)
-        self.assertIn('12 / 15 / 12 / 11', text)
+        self.assertIn('600 original questions', text)
+        self.assertIn('24 / 30 / 24 / 22', text)
         self.assertIn('40–60', text)
-        self.assertNotIn('100 questions', text)
+        self.assertNotIn('50 questions', text)
 
     @unittest.skipUnless(ZIP.is_file(), 'package.py has not been run')
     def test_zip_contents_and_timestamps(self):

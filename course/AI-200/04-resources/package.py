@@ -5,7 +5,7 @@ import zipfile
 from build import ROOT, HEADER, make_rows, render_test
 from validate import validate_files
 
-ZIP_NAME = 'AI-200-Azure-AI-Cloud-Developer-Associate-6x50.zip'
+ZIP_NAME = 'AI-200-Azure-AI-Cloud-Developer-Associate-6x100.zip'
 
 
 def check_companion_files():
@@ -25,7 +25,7 @@ def check_companion_files():
     report = json.loads((ROOT / '04-resources/validation-report.json').read_text(encoding='utf-8'))
     if report.get('files') != summaries:
         raise ValueError('Stale validation report; rerun validate.py --report')
-    if report.get('status') != 'PASS' or report.get('sets') != 6 or report.get('total_questions') != 300:
+    if report.get('status') != 'PASS' or report.get('sets') != 6 or report.get('total_questions') != 600:
         raise ValueError('Expected a passing six-set validation report; run validate.py --report')
 
 

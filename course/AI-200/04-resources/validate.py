@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Offline export checks for the AI-103 practice sets.
+"""Offline export checks for the AI-200 practice sets.
 
 These checks confirm structural consistency, not independent factual or
 difficulty certification against the live Microsoft exam.
@@ -91,7 +91,7 @@ def validate_rows(rows, expected=None):
 
         overall = row.get('Overall Explanation', '')
         if GUIDE not in overall:
-            errors.append(f'{tag}: missing official AI-103 study-guide reference')
+            errors.append(f'{tag}: missing official AI-200 study-guide reference')
         if expected is not None and n <= len(expected):
             wanted = {k: expected[n - 1][k] for k in HEADER}
             if {k: row.get(k) for k in HEADER} != wanted:
@@ -148,7 +148,7 @@ def main():
                 'blueprint domain allocation per set', 'four-option single-choice and ordering items',
                 'five-option multi-select items with stated selection count',
                 'two or three correct indices for multi-select', 'per-option explanations',
-                'AI-103 study-guide references', 'source consistency',
+                'AI-200 study-guide references', 'source consistency',
                 'normalized duplicate wording', 'balanced single-answer slots'],
         limitations=['No independent factual certification',
                      'No difficulty calibration against the live exam',
