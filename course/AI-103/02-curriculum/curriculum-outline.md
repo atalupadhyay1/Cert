@@ -62,7 +62,7 @@ A 100-item exam is deliberately longer than the live 40–60 items. `60 × 50 = 
 |---|---:|---|
 | Single-choice | 38 | Decide the constraint first, then eliminate options that solve a different problem |
 | Multi-select | 8 | Count the required selections before reading options; reject "true but not asked" statements |
-| Ordering | 4 | Find the step that cannot move (provisioning, authorization, evaluation, transcription) and anchor the rest |
+| Sequencing (exported as multiple-choice) | 4 | Find the step that cannot move (provisioning, authorization, evaluation, transcription) and anchor the rest |
 | Case study | 2 × 3 | Read once, write the three or four hard constraints, then answer each item against them |
 
 ## Suggested eight-week schedule
@@ -92,9 +92,9 @@ A practice percentage is not a scaled exam score. Microsoft reports 700/1000 on 
 
 | Segment | Items | Suggested time (pace drill: 100 min) |
 |---|---:|---:|
-| First pass, single-choice and multi-select | 60 | 55 minutes |
-| Ordering items | 8 | 10 minutes |
+| First pass, multiple-choice and multi-select | 60 | 55 minutes |
+| Sequencing items (multiple-choice) | 8 | 10 minutes |
 | Case studies | 12 | 20 minutes |
-| Remaining single-choice and review | 20 | 15 minutes |
+| Remaining multiple-choice and review | 20 | 15 minutes |
 
 The real appointment is 120 minutes for 40–60 items, so a 100-item attempt cannot reuse that clock directly. The pace drill above is deliberately tighter than the real per-item allowance; the 150-minute option is for learning rather than timing.

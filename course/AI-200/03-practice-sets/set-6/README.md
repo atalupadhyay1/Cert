@@ -9,7 +9,7 @@
 | Connect to and consume Azure services | 24 |
 | Secure, monitor, troubleshoot Azure solutions | 22 |
 
-Item mix: 76 single-choice, 16 multi-select, 8 ordering items; 4 case studies of 3 questions. Microsoft typically uses 40–60 questions; this practice set is 100 — an expanded bank, not a length replica. Hot-area, drag-and-drop, labs, and adaptive problem-solution sets are not reproduced.
+Item mix: 84 multiple-choice (including 8 sequencing items), 16 multi-select; 4 case studies of 3 questions. Microsoft typically uses 40–60 questions; this practice set is 100 — an expanded bank, not a length replica. Hot-area, drag-and-drop, labs, and adaptive problem-solution sets are not reproduced.
 
 Upload `practice-set-6.csv`; use `practice-set-6.md` for offline review.
 

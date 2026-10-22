@@ -18,10 +18,17 @@ def case_name(text):
         return text[len(CASE_TAG):].split(':')[0].strip()
     return ''
 
+SEQUENCING = TYPE_PLAN['ordering']
+# Udemy's bulk importer accepts only these two labels. Sequencing items are
+# authored as 'ordering' internally and exported as multiple-choice, because
+# each one already offers four candidate sequences with a single key.
+EXPORT_PLAN = {'multiple-choice': TYPE_PLAN['multiple-choice'] + SEQUENCING,
+               'multi-select': TYPE_PLAN['multi-select']}
+ALLOWED_TYPES = ('multiple-choice', 'multi-select')
+
 def expected_type(record):
-    if record['kind']=='S': return 'multiple-choice'
     if record['kind'] in ('M2','M3'): return 'multi-select'
-    return 'ordering'
+    return 'multiple-choice'
 
 def make_rows(number):
     rng=random.Random(103000+number)
@@ -75,8 +82,9 @@ def make_rows(number):
 def render_test(number,rows):
     lines=[f'# Microsoft AI-103 — {TOPICS[number]}', '',
            f'Azure AI Apps and Agents Developer Associate · {len(rows)} questions · 120 minutes · passing target 700/1000', '',
-           f'Blueprint-weighted mock exam. Item mix: {TYPE_PLAN["multiple-choice"]} single-choice, {TYPE_PLAN["multi-select"]} multi-select (selection count stated), '
-           f'{TYPE_PLAN["ordering"]} ordering items rendered as answer choices, and {CASE_STUDIES} case studies of {CASE_SIZE} questions. '
+           f'Blueprint-weighted mock exam. Item mix: {EXPORT_PLAN["multiple-choice"]} multiple-choice (selection count stated where needed), '
+           f'{EXPORT_PLAN["multi-select"]} multi-select, and {CASE_STUDIES} case studies of {CASE_SIZE} questions. '
+           f'{SEQUENCING} of the multiple-choice items ask you to choose the correct candidate sequence. '
            'Hot-area, drag-and-drop UI, labs, and adaptive problem-solution sets cannot be reproduced in a CSV; see the README for the exact fidelity boundary.', '',
            'Original educational content, not actual, recalled, or copied Microsoft exam items.', '',
            '## Questions','']
@@ -167,7 +175,7 @@ def main():
             f'{len(rows)} original items · 120 minutes · passing target 700/1000 · blueprint-weighted.\n\n'
             '| Official domain | Questions |\n|---|---:|\n'
             + '\n'.join(f'| {DOMAINS[d]} | {counts[DOMAINS[d]]} |' for d in DOMAINS)
-            + f'\n\nItem mix: {types["multiple-choice"]} single-choice, {types["multi-select"]} multi-select, {types["ordering"]} ordering items; '
+            + f'\n\nItem mix: {types["multiple-choice"]} multiple-choice (including {SEQUENCING} sequencing items), {types["multi-select"]} multi-select; '
             f'{CASE_STUDIES} case studies of {CASE_SIZE} questions. '
             f'Microsoft typically uses 40–60 questions; this practice set is {len(rows)}, an expanded exam for broader coverage. '
             'Hot-area, drag-and-drop, labs, and adaptive problem-solution sets are not reproduced.\n\n'

@@ -35,7 +35,9 @@ Baseline: the official AI-103 study guide, **skills measured as of April 16, 202
 
 Every exam carries the same **28/33/13/13/13** allocation, so each one is a self-contained mock exam that sits inside all five published ranges, and the package total is the same 28 / 33 / 13 / 13 / 13 percent.
 
-Per exam: **76 single-choice**, **16 multi-select**, and **8 ordering** items, plus **4 case studies of 3 questions each** (the twelve case items are drawn from the single-choice slots). Multi-select items state the required selection count ("Select two"). Ordering items are rendered as four candidate sequences so they can be answered and scored in a CSV player.
+Per exam: **76 multiple-choice** and **16 multi-select** items, plus **4 case studies of 3 questions each** (the twelve case items are drawn from the multiple-choice slots). Multi-select items state the required selection count ("Select two"). Eight of the multiple-choice items are sequencing items: four candidate sequences are offered and exactly one is in the correct order.
+
+**Upload note.** Udemy's bulk importer accepts only `multiple-choice` and `multi-select` in the `Question Type` column, so the exported files contain 84 multiple-choice and 16 multi-select rows per exam. Sequencing items are authored as candidate orderings and therefore upload unchanged as multiple-choice.
 
 Not reproduced, and stated as such in every export: hot-area image selection, drag-and-drop UI, live labs and interactive components, adaptive problem-solution (yes/no) sets, and the exact 40–60 item count. Each practice exam is **100 items — deliberately larger than the live exam** — so the blueprint can be drilled twice without repeats; it is an expanded bank, not a claim about the real length, and the real 120-minute clock does not map directly to a 100-item attempt.
 

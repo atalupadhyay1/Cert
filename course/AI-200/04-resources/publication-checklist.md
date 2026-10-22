@@ -8,7 +8,7 @@
 - [ ] Confirm which interactive formats the live exam currently uses, and that the package still describes its boundary accurately.
 - [ ] Run `build.py`, `validate.py --report`, `package.py`, and the unittest suite; keep the passing report.
 - [ ] Confirm six CSVs each have 100 rows with the 24/30/24/22 allocation.
-- [ ] Confirm each CSV has 76 single-choice, 16 multi-select, and 8 ordering rows, and four case studies of three questions.
+- [ ] Confirm each CSV has 84 multiple-choice and 16 multi-select rows (the 8 sequencing items export as multiple-choice), and four case studies of three questions.
 - [ ] Confirm every multi-select stem states "Select two" or "Select three" and matches its key count.
 - [ ] Spot-check at least 20 items for technical accuracy, ambiguity, and uniqueness of the best answer.
 - [ ] Have a qualified reviewer check container, identity, networking, and messaging wording.

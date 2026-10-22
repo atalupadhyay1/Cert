@@ -11,7 +11,7 @@
 | # | Column | Content |
 |---:|---|---|
 | 1 | Question | Question stem; ends in a question mark, or in "Select two." / "Select three." for multi-select |
-| 2 | Question Type | `multiple-choice`, `multi-select`, or `ordering` |
+| 2 | Question Type | `multiple-choice` or `multi-select` only (Udemy importer constraint) |
 | 3–4 | Answer Option 1 / Explanation 1 | First populated option and its explanation |
 | 5–6 | Answer Option 2 / Explanation 2 | Second populated option and its explanation |
 | 7–8 | Answer Option 3 / Explanation 3 | Third populated option and its explanation |
@@ -30,7 +30,7 @@ The exported header has **17 columns** because the six option/explanation pairs 
 |---|---:|---|---|
 | `multiple-choice` | 4 | exactly one index, `1`–`4` | balanced across the four slots per exam |
 | `multi-select` | 5 | two or three comma-separated indices | stem must contain "Select two" or "Select three" matching the key |
-| `ordering` | 4 | exactly one index, `1`–`4` | every option must contain `→`, because each option is a candidate sequence |
+| sequencing (exported as `multiple-choice`) | 4 | exactly one index, `1`–`4` | every option must contain `→`, because each option is a candidate sequence |
 
 ## Content rules enforced
 
@@ -41,13 +41,13 @@ The exported header has **17 columns** because the six option/explanation pairs 
 - Overall explanation contains the official AI-103 study-guide anchor.
 - Domain label must match the authored source and the per-exam allocation (14/16/7/7/6).
 - 100 unique normalized stems per exam and 600 across the package.
-- 84 single-answer keys (76 single-choice plus 8 ordering) distributed across slots 1–4 with a max-minus-min of at most one.
+- 84 single-answer keys (76 multiple-choice plus 8 sequencing, all exported as multiple-choice) distributed across slots 1–4 with a max-minus-min of at most one.
 
 ## Reading and scoring multi-select items
 
 `Correct Answers = 3,5` means options 3 and 5 are required. There is no partial credit: an answer missing one key or containing an extra key is incorrect. The stem always states the count, so scoring code can reject an answer with the wrong number of selections before comparing indices.
 
-## Reading ordering items
+## Reading sequencing items
 
 Each option is a full candidate sequence using `→` between steps, for example:
 
@@ -55,7 +55,7 @@ Each option is a full candidate sequence using `→` between steps, for example:
 Capture audio → transcribe → translate text → synthesize speech → return audio
 ```
 
-Exactly one option is in the correct order. The others are plausible reorderings, usually by moving the step that logically cannot move — retrieval before indexing, execution before authorization, synthesis before transcription.
+Each option is a complete candidate sequence and exactly one is in the correct order. These items are exported with `Question Type` set to `multiple-choice` because the importer accepts no other single-answer label. The others are plausible reorderings, usually by moving the step that logically cannot move — retrieval before indexing, execution before authorization, synthesis before transcription.
 
 ## Editing workflow
 

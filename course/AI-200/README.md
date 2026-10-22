@@ -36,7 +36,9 @@ Baseline: the official AI-200 study guide, **skills measured as of October 7, 20
 
 Every exam carries the same **24 / 30 / 24 / 22** allocation, so each one is a self-contained mock exam inside the published ranges and the aggregate is the same 24 / 30 / 24 / 22 percent.
 
-Per exam: **76 single-choice**, **16 multi-select**, and **8 ordering** items, plus **4 case studies of 3 questions each** (the twelve case items come from the single-choice slots). Multi-select items state the required count ("Select two"). Ordering items are rendered as four candidate sequences so they can be answered and scored in a CSV player.
+Per exam: **76 multiple-choice** and **16 multi-select** items, plus **4 case studies of 3 questions each** (the twelve case items come from the multiple-choice slots). Multi-select items state the required count ("Select two"). Eight of the multiple-choice items are sequencing items: four candidate sequences are offered and exactly one is in the correct order.
+
+**Upload note.** Udemy's bulk importer accepts only `multiple-choice` and `multi-select` in the `Question Type` column, so each exported file contains 84 multiple-choice and 16 multi-select rows. Sequencing items are authored as candidate orderings and therefore upload unchanged as multiple-choice.
 
 Not reproduced, and stated in every export: hot-area image selection, drag-and-drop UI, live labs and interactive components, adaptive problem-solution (yes/no) sets, and the exact 40–60 item count.
 

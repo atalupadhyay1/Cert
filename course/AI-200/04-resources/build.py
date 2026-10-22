@@ -17,10 +17,17 @@ def case_name(text):
         return text[len(CASE_TAG):].split(':')[0].strip()
     return ''
 
+SEQUENCING = TYPE_PLAN['ordering']
+# Udemy's bulk importer accepts only these two labels. Sequencing items are
+# authored as 'ordering' internally and exported as multiple-choice, because
+# each one already offers four candidate sequences with a single key.
+EXPORT_PLAN = {'multiple-choice': TYPE_PLAN['multiple-choice'] + SEQUENCING,
+               'multi-select': TYPE_PLAN['multi-select']}
+ALLOWED_TYPES = ('multiple-choice', 'multi-select')
+
 def expected_type(record):
-    if record['kind']=='S': return 'multiple-choice'
     if record['kind'] in ('M2','M3'): return 'multi-select'
-    return 'ordering'
+    return 'multiple-choice'
 
 def make_rows(number):
     rng=random.Random(103000+number)
@@ -74,7 +81,7 @@ def make_rows(number):
 def render_test(number,rows):
     lines=[f'# Microsoft AI-200 — {TOPICS[number]}', '',
            'Azure AI Cloud Developer Associate · 100 questions · expanded practice bank · passing target 700/1000', '',
-           'Blueprint-weighted mock exam of 100 items. Item mix: 76 single-choice, 16 multi-select (selection count stated), 8 ordering items rendered as answer choices, and 4 case studies of 3 questions. '
+           'Blueprint-weighted mock exam of 100 items. Item mix: 84 multiple-choice (8 of them sequencing items with four candidate sequences), 16 multi-select (selection count stated), and 4 case studies of 3 questions. '
            'Hot-area, drag-and-drop UI, labs, and adaptive problem-solution sets cannot be reproduced in a CSV; see the README for the exact fidelity boundary.', '',
            'Original educational content, not actual, recalled, or copied Microsoft exam items.', '',
            '## Questions','']
@@ -165,7 +172,7 @@ def main():
             '100 original items · passing target 700/1000 · blueprint-weighted.\n\n'
             '| Official domain | Questions |\n|---|---:|\n'
             + '\n'.join(f'| {DOMAINS[d]} | {counts[DOMAINS[d]]} |' for d in DOMAINS)
-            + f'\n\nItem mix: {types["multiple-choice"]} single-choice, {types["multi-select"]} multi-select, {types["ordering"]} ordering items; 4 case studies of 3 questions. '
+            + f'\n\nItem mix: {types["multiple-choice"]} multiple-choice (including {SEQUENCING} sequencing items), {types["multi-select"]} multi-select; 4 case studies of 3 questions. '
             'Microsoft typically uses 40–60 questions; this practice set is 100 — an expanded bank, not a length replica. Hot-area, drag-and-drop, labs, and adaptive problem-solution sets are not reproduced.\n\n'
             f'Upload `practice-set-{number}.csv`; use `practice-set-{number}.md` for offline review.\n\n'
             'Practice target 700/1000 mirrors the published passing score, but a practice percentage is not a scaled exam score.\n',encoding='utf-8')

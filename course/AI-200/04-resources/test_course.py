@@ -9,7 +9,7 @@ from collections import Counter
 from pathlib import Path
 
 from bank import ALLOCATIONS, BANK, SKILLS, TOPICS, VALID_TASKS
-from build import HEADER, ROOT, TYPE_PLAN, make_rows, render_test
+from build import HEADER, ROOT, TYPE_PLAN, EXPORT_PLAN, ALLOWED_TYPES, make_rows, render_test
 from terms import TERMS
 from validate import validate_rows
 
@@ -55,7 +55,7 @@ class ValidatorTests(unittest.TestCase):
         self.corrupt(lambda r: next(x for x in r if x['Question'] == target['Question']).update({'Correct Answers': key}))
 
     def test_ordering_without_sequence_arrows(self):
-        target = next(r for r in self.rows if r['Question Type'] == 'ordering')
+        target = next(r for r in self.rows if '→' in r['Answer Option 4'])
         self.corrupt(lambda r: next(x for x in r if x['Question'] == target['Question']).update({'Answer Option 2': 'Plain text option'}))
 
     def test_duplicate_question(self):
@@ -132,7 +132,8 @@ class ArtifactTests(unittest.TestCase):
             self.assertEqual(len(rows), 100, path.name)
             self.assertEqual(list(rows[0]), HEADER, path.name)
             types = Counter(r['Question Type'] for r in rows)
-            self.assertEqual(types, Counter(TYPE_PLAN), path.name)
+            self.assertEqual(types, Counter(EXPORT_PLAN), path.name)
+            self.assertLessEqual(set(types), set(ALLOWED_TYPES), path.name)
 
     def test_csv_bytes_are_bom_and_lf(self):
         for n in range(1, 7):

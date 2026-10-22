@@ -10,10 +10,10 @@ import json
 import re
 from collections import Counter
 from pathlib import Path
-from build import ROOT, HEADER, DOMAINS, GUIDE, make_rows, TYPE_PLAN
+from build import ROOT, HEADER, DOMAINS, GUIDE, make_rows, TYPE_PLAN, EXPORT_PLAN, ALLOWED_TYPES
 
 TYPE_TOTAL = sum(TYPE_PLAN.values())
-SINGLE_ANSWER_TYPES = {'multiple-choice', 'ordering'}
+SINGLE_ANSWER_TYPES = {'multiple-choice', 'multi-select'}
 
 
 def normalize(text):
@@ -39,8 +39,10 @@ def validate_rows(rows, expected=None):
     if expected is not None and Counter(r.get('Domain') for r in rows) != Counter(r.get('Domain') for r in expected):
         errors.append('Domain counts differ from the authored blueprint allocation')
     types = Counter(r.get('Question Type') for r in rows)
-    if types != Counter(TYPE_PLAN):
-        errors.append(f'Item-type mix {dict(types)} does not match {TYPE_PLAN}')
+    if set(types) - set(ALLOWED_TYPES):
+        errors.append(f'Question Type must be one of {ALLOWED_TYPES}; found {sorted(set(types) - set(ALLOWED_TYPES))}')
+    if types != Counter(EXPORT_PLAN):
+        errors.append(f'Item-type mix {dict(types)} does not match {EXPORT_PLAN}')
 
     seen = set()
     positions = Counter()
@@ -86,8 +88,8 @@ def validate_rows(rows, expected=None):
                 if indices[0] > 4:
                     errors.append(f'{tag}: single-answer key must fall in slots 1-4')
                 positions[indices[0]] += 1
-            if qtype == 'ordering' and not all('→' in x for x in populated):
-                errors.append(f'{tag}: ordering options must render candidate sequences')
+            if any('→' in x for x in populated) and not all('→' in x for x in populated):
+                errors.append(f'{tag}: sequencing options must all render candidate sequences')
 
         overall = row.get('Overall Explanation', '')
         if GUIDE not in overall:
@@ -145,7 +147,8 @@ def main():
         status='FAIL' if failures else 'PASS', sets=len(paths),
         total_questions=sum(x['questions'] for x in summaries),
         checks=['17-column header', f'{TYPE_TOTAL} items per set',
-                'blueprint domain allocation per set', 'four-option single-choice and ordering items',
+                'blueprint domain allocation per set', 'four-option single-answer items including sequencing items',
+                'Question Type restricted to multiple-choice or multi-select',
                 'five-option multi-select items with stated selection count',
                 'two or three correct indices for multi-select', 'per-option explanations',
                 'AI-103 study-guide references', 'source consistency',

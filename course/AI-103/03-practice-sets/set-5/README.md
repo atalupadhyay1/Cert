@@ -10,7 +10,7 @@
 | Implement text analysis solutions | 13 |
 | Implement information extraction solutions | 13 |
 
-Item mix: 76 single-choice, 16 multi-select, 8 ordering items; 4 case studies of 3 questions. Microsoft typically uses 40–60 questions; this practice set is 100, an expanded exam for broader coverage. Hot-area, drag-and-drop, labs, and adaptive problem-solution sets are not reproduced.
+Item mix: 84 multiple-choice (including 8 sequencing items), 16 multi-select; 4 case studies of 3 questions. Microsoft typically uses 40–60 questions; this practice set is 100, an expanded exam for broader coverage. Hot-area, drag-and-drop, labs, and adaptive problem-solution sets are not reproduced.
 
 Upload `practice-set-5.csv`; use `practice-set-5.md` for offline review.
 

@@ -92,7 +92,7 @@ Numeric IDs are local study aids. Microsoft names objectives without this number
 |---|---|---|
 | Single-choice | Yes | `multiple-choice` with four options and one key (76 per exam) |
 | Multi-select | Yes | `multi-select` with five options, two or three keys, and a stated selection count (16 per exam) |
-| Drag-and-drop / ordering | Partially | `ordering` with four candidate sequences as options (8 per exam) |
+| Drag-and-drop / sequencing | Partially | Four candidate sequences as multiple-choice options (8 per exam) |
 | Case studies | Yes | Four per exam, three scored items each, shared scenario |
 | Hot-area | No | Requires image hotspots; cannot be scored in CSV |
 | Labs and interactive components | No | Requires a provisioned sandbox |
@@ -103,7 +103,7 @@ Numeric IDs are local study aids. Microsoft names objectives without this number
 - Every item states one deciding constraint and one defensible best answer.
 - Distractors are real capabilities that solve a different problem, not nonsense.
 - Multi-select items name the required count so the learner cannot under- or over-select by accident.
-- Ordering items anchor on a step that cannot move: provisioning before configuration, authorization before execution, transcription before translation, indexing before retrieval.
+- Sequencing items anchor on a step that cannot move: provisioning before configuration, authorization before execution, transcription before translation, indexing before retrieval.
 - Case-study items restate their specific constraint so they still read correctly outside the shared preamble.
 - Terminology follows current Microsoft naming (Microsoft Foundry, Foundry Agent Service, Content Understanding), with the older "Azure AI Foundry" name acknowledged where relevant.
 - No Microsoft sample, sandbox, or recall-derived item text is used. The sandbox link above was consulted only to understand item formats.

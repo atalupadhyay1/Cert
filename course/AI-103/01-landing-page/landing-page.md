@@ -2,7 +2,7 @@
 
 > **Course Title:** **AI-103: Azure AI Apps and Agents Developer Associate**
 >
-> **Course Subtitle:** **6 mock exams × 100 questions • Single-choice, multi-select, ordering and case studies • Explained**
+> **Course Subtitle:** **6 mock exams × 100 questions • Multiple-choice, multi-select, sequencing and case studies • Explained**
 
 Build developer-level judgment with **600 original questions across six full-length mock exams**, an explanation for every option, and a case-specific rationale.
 
@@ -25,7 +25,7 @@ AI-103: Azure AI Apps and Agents Developer Associate
 ### 2. Course Subtitle
 
 ```text
-6 mock exams × 100 questions • Single-choice, multi-select, ordering and case studies • Explained
+6 mock exams × 100 questions • Multiple-choice, multi-select, sequencing and case studies • Explained
 ```
 
 ### 3. Course Description
@@ -40,7 +40,7 @@ This is a developer exam. It expects working judgment about Microsoft Foundry (f
 WHAT YOU GET
 • Six original 100-question mock exams
 • Blueprint weighting on every exam: 28 / 33 / 13 / 13 / 13 across the five published domains
-• Mixed item types: 76 single-choice, 16 multi-select, 8 ordering items per exam
+• Mixed item types: 76 multiple-choice, 16 multi-select, with 8 of the multiple-choice items asking you to pick the correct candidate sequence
 • Four three-question case studies inside every exam
 • An explanation for every option plus a case-specific overall rationale
 • Local study-map skill anchors and the official study-guide reference on every item
@@ -57,6 +57,9 @@ These mock exams reproduce what a CSV player can score honestly:
 • Case studies: a shared scenario followed by three scored questions, exactly as a case-study block behaves in the exam.
 
 What is deliberately not reproduced, and is stated in every export: hot-area image selection, drag-and-drop UI, hands-on labs and interactive components, adaptive problem-solution (yes/no) sets, and the exact live item count.
+
+HOW THE FILES ARE EXPORTED
+Udemy's bulk question importer accepts only two `Question Type` values: `multiple-choice` and `multi-select`. Every file here therefore exports 84 multiple-choice and 16 multi-select items per exam. The eight sequencing items are authored as four candidate orderings with one correct answer, so they upload as ordinary multiple-choice items — no drag-and-drop UI is required and scoring stays exact.
 
 WHY EACH EXAM IS 100 ITEMS
 A 100-item exam is deliberately longer than the live 40–60 items. This is an expanded practice bank, not a length replica: the extra volume gives every sub-objective real coverage and lets you drill the same blueprint twice without repeating questions. Because the item count differs, do not read a practice duration as the real clock — see the pacing note below.
@@ -173,7 +176,7 @@ You have six full-length mock exams of 100 questions each, blueprint-weighted 28
 Each exam mixes item types the way the real exam does:
 • 76 single-choice questions — select ONE best answer.
 • 16 multi-select questions — the stem tells you "Select two"; enter both keys, for example 2,4.
-• 8 ordering questions — choose the candidate sequence that is in the correct order.
+• 8 sequencing questions, exported as multiple-choice — choose the candidate sequence that is in the correct order.
 • 4 case studies of 3 questions — read the shared scenario once, then answer all three.
 
 Suggested pacing: a 100-item exam is deliberately longer than the live 40–60 items, so use 100 minutes as a pace drill or 150 minutes for a full review attempt. Work through the exams in order, then repeat your weakest one cold.
@@ -197,7 +200,7 @@ Turn the result into a plan:
 • Rebuild the deciding constraint in your own words using a new scenario.
 • Revisit the mapped study area and the current official documentation.
 • Practise the pattern in a small Foundry project if you have access.
-• Review the item formats you found hardest: multi-select, ordering, and case studies.
+• Review the item formats you found hardest: multi-select, sequencing, and case studies.
 • Re-check the current study guide, fee, language list, and format before booking.
 
 Remember that the real exam is proctored, may include interactive components or labs, and reports 700/1000 as a scaled pass score. Practice percentages are not scaled scores, and completing this independent course does not award the Microsoft credential.
@@ -216,17 +219,17 @@ AI-103 fails developers at the seams, not in the middle of a definition: **a ret
 ```text
 Microsoft AI-103 — 600 Questions
 ├── EXAM 1 — Contoso support / Fabrikam claims / Tailspin Retail / Wingtip Insurance
-│   └── 100 items • 28 / 33 / 13 / 13 / 13 • 76 single-choice, 16 multi-select, 8 ordering, 4 case studies
+│   └── 100 items • 28 / 33 / 13 / 13 / 13 • 76 multiple-choice, 16 multi-select, 8 sequencing, 4 case studies
 ├── EXAM 2 — Healthcare delivery
-│   └── 100 items • 28 / 33 / 13 / 13 / 13 • 76 single-choice, 16 multi-select, 8 ordering, 4 case studies
+│   └── 100 items • 28 / 33 / 13 / 13 / 13 • 76 multiple-choice, 16 multi-select, 8 sequencing, 4 case studies
 ├── EXAM 3 — Financial services and insurance
-│   └── 100 items • 28 / 33 / 13 / 13 / 13 • 76 single-choice, 16 multi-select, 8 ordering, 4 case studies
+│   └── 100 items • 28 / 33 / 13 / 13 / 13 • 76 multiple-choice, 16 multi-select, 8 sequencing, 4 case studies
 ├── EXAM 4 — Manufacturing and supply chain
-│   └── 100 items • 28 / 33 / 13 / 13 / 13 • 76 single-choice, 16 multi-select, 8 ordering, 4 case studies
+│   └── 100 items • 28 / 33 / 13 / 13 / 13 • 76 multiple-choice, 16 multi-select, 8 sequencing, 4 case studies
 ├── EXAM 5 — Public sector and education
-│   └── 100 items • 28 / 33 / 13 / 13 / 13 • 76 single-choice, 16 multi-select, 8 ordering, 4 case studies
+│   └── 100 items • 28 / 33 / 13 / 13 / 13 • 76 multiple-choice, 16 multi-select, 8 sequencing, 4 case studies
 └── EXAM 6 — Cross-industry capstone
-    └── 100 items • 28 / 33 / 13 / 13 / 13 • 76 single-choice, 16 multi-select, 8 ordering, 4 case studies
+    └── 100 items • 28 / 33 / 13 / 13 / 13 • 76 multiple-choice, 16 multi-select, 8 sequencing, 4 case studies
 ```
 
 Includes instructor CSVs, Markdown question-and-answer copies, curriculum, source and coverage notes, reproducible export tooling, a validation report, and an offline ZIP. No live Udemy import or publication is implied.
@@ -255,7 +258,7 @@ Source: [AI-103 study guide](https://learn.microsoft.com/en-us/credentials/certi
 | Time | 120 minutes (140-minute seat) | 100 min pace drill or 150 min review |
 | Passing standard | 700 / 1000 scaled | No scaled score; percentage is study-only |
 | Delivery | Proctored, Pearson VUE | CSV or Markdown, self-scored |
-| Item types | Single-choice, multi-select, drag-and-drop/ordering, hot-area, case studies, adaptive problem-solution sets, possible labs | Single-choice, multi-select (count stated), ordering as candidate sequences, case studies |
+| Item types | Single-choice, multi-select, drag-and-drop/ordering, hot-area, case studies, adaptive problem-solution sets, possible labs | Multiple-choice (including sequencing as candidate sequences), multi-select (count stated), case studies |
 | Support material | Microsoft Learn available in split screen | Documentation links in every overall explanation |
 | Validity | 1 year, free renewal assessment | Not applicable |
 
@@ -321,7 +324,7 @@ These IDs are internal study aids. Microsoft names objectives without this numbe
 
 **Q: How many questions are included?**
 
-A: **600 across six exams of 100**, with 76 single-choice, 16 multi-select, 8 ordering, and 4 case studies of 3 questions per exam.
+A: **600 across six exams of 100**, with 76 multiple-choice, 16 multi-select, and 4 case studies of 3 questions per exam. Eight of the multiple-choice items per exam ask you to choose the correct candidate sequence.
 
 **Q: Is every exam blueprint-weighted?**
 
@@ -343,7 +346,7 @@ A: They need an interactive or provisioned environment. A CSV cannot render a ho
 
 A: The `Correct Answers` column lists every correct option index as a comma-separated value, for example `2,4`. The stem states the count ("Select two"), so a learner knows how many to choose.
 
-**Q: How are ordering questions scored?**
+**Q: How are sequencing questions scored and exported?**
 
 A: Four candidate sequences are offered as options A–D, and exactly one is in the correct order. That tests the same sequencing judgment as a drag-and-drop item without requiring a drag-and-drop player.
 

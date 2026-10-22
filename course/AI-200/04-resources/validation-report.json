@@ -6,7 +6,8 @@
     "17-column header",
     "100 items per set",
     "blueprint domain allocation per set",
-    "four-option single-choice and ordering items",
+    "four-option single-answer items including sequencing items",
+    "Question Type restricted to multiple-choice or multi-select",
     "five-option multi-select items with stated selection count",
     "two or three correct indices for multi-select",
     "per-option explanations",
@@ -29,9 +30,8 @@
       "questions": 100,
       "status": "PASS",
       "types": {
-        "multiple-choice": 76,
-        "multi-select": 16,
-        "ordering": 8
+        "multiple-choice": 84,
+        "multi-select": 16
       },
       "domains": {
         "Develop containerized solutions on Azure": 24,
@@ -45,8 +45,7 @@
       "questions": 100,
       "status": "PASS",
       "types": {
-        "multiple-choice": 76,
-        "ordering": 8,
+        "multiple-choice": 84,
         "multi-select": 16
       },
       "domains": {
@@ -61,9 +60,8 @@
       "questions": 100,
       "status": "PASS",
       "types": {
-        "multiple-choice": 76,
-        "multi-select": 16,
-        "ordering": 8
+        "multiple-choice": 84,
+        "multi-select": 16
       },
       "domains": {
         "Develop containerized solutions on Azure": 24,
@@ -77,9 +75,8 @@
       "questions": 100,
       "status": "PASS",
       "types": {
-        "multiple-choice": 76,
-        "multi-select": 16,
-        "ordering": 8
+        "multiple-choice": 84,
+        "multi-select": 16
       },
       "domains": {
         "Develop containerized solutions on Azure": 24,
@@ -93,9 +90,8 @@
       "questions": 100,
       "status": "PASS",
       "types": {
-        "multiple-choice": 76,
-        "multi-select": 16,
-        "ordering": 8
+        "multiple-choice": 84,
+        "multi-select": 16
       },
       "domains": {
         "Develop containerized solutions on Azure": 24,
@@ -109,9 +105,8 @@
       "questions": 100,
       "status": "PASS",
       "types": {
-        "multiple-choice": 76,
-        "multi-select": 16,
-        "ordering": 8
+        "multiple-choice": 84,
+        "multi-select": 16
       },
       "domains": {
         "Develop containerized solutions on Azure": 24,

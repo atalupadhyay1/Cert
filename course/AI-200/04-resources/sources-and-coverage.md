@@ -108,7 +108,7 @@ Numeric IDs are local study aids. Microsoft names objectives without this number
 |---|---|---|
 | Single-choice | Yes | `multiple-choice` with four options and one key |
 | Multi-select | Yes | `multi-select` with five options, two or three keys, and a stated selection count |
-| Drag-and-drop / ordering | Partially | `ordering` with four candidate sequences as options |
+| Drag-and-drop / sequencing | Partially | Four candidate sequences as multiple-choice options |
 | Case studies | Yes | Two per exam, three scored items each, shared scenario |
 | Hot-area | No | Requires image hotspots; cannot be scored in CSV |
 | Labs and interactive components | No | Requires a provisioned sandbox |

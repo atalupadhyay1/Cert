@@ -2,7 +2,7 @@
 
 Azure AI Cloud Developer Associate · 100 questions · expanded practice bank · passing target 700/1000
 
-Blueprint-weighted mock exam of 100 items. Item mix: 76 single-choice, 16 multi-select (selection count stated), 8 ordering items rendered as answer choices, and 4 case studies of 3 questions. Hot-area, drag-and-drop UI, labs, and adaptive problem-solution sets cannot be reproduced in a CSV; see the README for the exact fidelity boundary.
+Blueprint-weighted mock exam of 100 items. Item mix: 84 multiple-choice (8 of them sequencing items with four candidate sequences), 16 multi-select (selection count stated), and 4 case studies of 3 questions. Hot-area, drag-and-drop UI, labs, and adaptive problem-solution sets cannot be reproduced in a CSV; see the README for the exact fidelity boundary.
 
 Original educational content, not actual, recalled, or copied Microsoft exam items.
 

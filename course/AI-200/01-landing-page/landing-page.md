@@ -40,7 +40,7 @@ This is a developer exam about the back end of AI systems. It expects working ju
 WHAT YOU GET
 • Six original 100-question mock exams
 • Blueprint weighting on every exam: 24 / 30 / 24 / 22 across the four published domains
-• Mixed item types: 76 single-choice, 16 multi-select, 8 ordering items per exam
+• Mixed item types: 84 multiple-choice (8 of them sequencing items), 16 multi-select items per exam
 • Four three-question case studies inside every exam
 • An explanation for every option plus a case-specific overall rationale
 • Local study-map skill anchors and the official study-guide reference on every item
@@ -181,9 +181,9 @@ Welcome to your AI-200 practice course!
 You have six full-length mock exams of 100 questions each, blueprint-weighted 24 / 30 / 24 / 22 across the four published domains.
 
 Each exam mixes item types the way the real exam does:
-• 76 single-choice questions — select ONE best answer.
+• 84 multiple-choice questions — select ONE best answer.
 • 16 multi-select questions — the stem tells you "Select two"; enter both keys, for example 2,4.
-• 8 ordering questions — choose the candidate sequence that is in the correct order.
+• 8 of those ask you to choose the candidate sequence that is in the correct order; they upload as multiple-choice.
 • 4 case studies of 3 questions — read the shared scenario once, then answer all three.
 
 Suggested pacing: a 100-item exam is deliberately longer than the live 40–60 items, so use 100 minutes as a pace drill or 150 minutes for a review attempt. Work through the exams in order, then repeat your weakest one cold.
@@ -207,7 +207,7 @@ Turn the result into a plan:
 • Rebuild the deciding constraint in your own words using a new scenario.
 • Revisit the mapped study area and the current official documentation.
 • Practise the pattern in a small Azure subscription if you have access.
-• Review the item formats you found hardest: multi-select, ordering, and case studies.
+• Review the item formats you found hardest: multi-select, sequencing, and case studies.
 • Re-check the current study guide, fee, language list, and format before booking.
 
 Remember that the real exam is proctored, may include interactive components, and reports 700/1000 as a scaled pass score. Practice percentages are not scaled scores, and completing this independent course does not award the Microsoft credential.
@@ -226,17 +226,17 @@ AI-200 fails developers at the seams: **an image that runs versus an image you c
 ```text
 Microsoft AI-200 — 600 Questions
 ├── EXAM 1 — Retail recommendation platform
-│   └── 100 items • 24 / 30 / 24 / 22 • 76 single-choice, 16 multi-select, 8 ordering, 4 case studies
+│   └── 100 items • 24 / 30 / 24 / 22 • 84 multiple-choice, 16 multi-select, 4 case studies
 ├── EXAM 2 — Healthcare document intake
-│   └── 100 items • 24 / 30 / 24 / 22 • 76 single-choice, 16 multi-select, 8 ordering, 4 case studies
+│   └── 100 items • 24 / 30 / 24 / 22 • 84 multiple-choice, 16 multi-select, 4 case studies
 ├── EXAM 3 — Payments and fraud scoring
-│   └── 100 items • 24 / 30 / 24 / 22 • 76 single-choice, 16 multi-select, 8 ordering, 4 case studies
+│   └── 100 items • 24 / 30 / 24 / 22 • 84 multiple-choice, 16 multi-select, 4 case studies
 ├── EXAM 4 — Factory quality inspection
-│   └── 100 items • 24 / 30 / 24 / 22 • 76 single-choice, 16 multi-select, 8 ordering, 4 case studies
+│   └── 100 items • 24 / 30 / 24 / 22 • 84 multiple-choice, 16 multi-select, 4 case studies
 ├── EXAM 5 — Citizen document services
-│   └── 100 items • 24 / 30 / 24 / 22 • 76 single-choice, 16 multi-select, 8 ordering, 4 case studies
+│   └── 100 items • 24 / 30 / 24 / 22 • 84 multiple-choice, 16 multi-select, 4 case studies
 └── EXAM 6 — Global retail capstone
-    └── 100 items • 24 / 30 / 24 / 22 • 76 single-choice, 16 multi-select, 8 ordering, 4 case studies
+    └── 100 items • 24 / 30 / 24 / 22 • 84 multiple-choice, 16 multi-select, 4 case studies
 ```
 
 Includes instructor CSVs, Markdown question-and-answer copies, curriculum, source and coverage notes, reproducible export tooling, a validation report, and an offline ZIP. No live Udemy import or publication is implied.
@@ -264,8 +264,10 @@ Source: [AI-200 study guide](https://learn.microsoft.com/en-us/credentials/certi
 | Time | 120 minutes | 100 min pace drill or 150 min review |
 | Passing standard | 700 / 1000 scaled | No scaled score; percentage is study-only |
 | Delivery | Proctored, Pearson VUE | CSV or Markdown, self-scored |
-| Item types | Single-choice, multi-select, drag-and-drop/ordering, hot-area, case studies, adaptive problem-solution sets, possible interactive components | Single-choice, multi-select (count stated), ordering as candidate sequences, case studies |
+| Item types | Single-choice, multi-select, drag-and-drop/ordering, hot-area, case studies, adaptive problem-solution sets, possible interactive components | Multiple-choice (including sequencing as candidate sequences), multi-select (count stated), case studies |
 | Validity | 1 year, free renewal assessment | Not applicable |
+
+**How the files are exported.** Udemy's bulk importer accepts only two `Question Type` values: `multiple-choice` and `multi-select`. Every exam therefore exports 84 multiple-choice and 16 multi-select items. The eight sequencing items are authored as four candidate orderings with one correct answer, so they upload as ordinary multiple-choice items and still score exactly.
 
 **Why some formats are excluded.** Hot-area items require image hotspots, drag-and-drop requires a UI, labs require a provisioned environment, and adaptive problem-solution sets change the question sequence based on your previous answer. Forcing any of these into a CSV would break scoring or mislead learners, so they are excluded and disclosed rather than faked.
 
@@ -332,7 +334,7 @@ These IDs are internal study aids. Microsoft names objectives without this numbe
 
 **Q: How many questions are included?**
 
-A: **600 across six exams of 100**, with 76 single-choice, 16 multi-select, 8 ordering, and 4 case studies of 3 questions per exam.
+A: **600 across six exams of 100**, with 84 multiple-choice (8 of them sequencing items), 16 multi-select, and 4 case studies of 3 questions per exam.
 
 **Q: Is every exam blueprint-weighted?**
 
@@ -344,7 +346,7 @@ A: The study guide states 25–30% in the domain heading and 30–35% in its ski
 
 **Q: Do these reproduce the actual exam?**
 
-A: Not exactly, and the package says so. The live exam is typically 40–60 questions with possible interactive components. Practice exams are 100 items and reproduce the scoreable formats: single-choice, multi-select, ordering as candidate sequences, and case studies.
+A: Not exactly, and the package says so. The live exam is typically 40–60 questions with possible interactive components. Practice exams are 100 items and reproduce the scoreable formats: multiple-choice, multi-select, sequencing as candidate sequences, and case studies.
 
 **Q: Why 100 questions when the real exam has 40–60?**
 
@@ -358,7 +360,7 @@ A: They need an interactive or provisioned environment. A CSV cannot render a ho
 
 A: The `Correct Answers` column lists every correct option index as a comma-separated value, for example `2,4`. The stem states the count ("Select two"), so a learner knows how many to choose.
 
-**Q: How are ordering questions scored?**
+**Q: How are sequencing questions scored and exported?**
 
 A: Four candidate sequences are offered as options A–D, and exactly one is in the correct order. That tests the same sequencing judgment as a drag-and-drop item without requiring a drag-and-drop player.
 
