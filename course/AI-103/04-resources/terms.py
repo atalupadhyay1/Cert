@@ -187,3 +187,46 @@ t('private','Private networking with public access left enabled','Leaving the pu
 t('dns','Private DNS resolution configured for the endpoint','Name resolution alone does not block public access, so it must be paired with a private endpoint and public access disabled.')
 t('dedupe','Remove near-duplicate evidence before ranking','De-duplication frees context space that duplicates would otherwise consume, so the most informative evidence survives the budget.')
 t('translation','Translate every request before retrieval','Translating the request does not replace retrieval, grounding, or validation, so it cannot satisfy an evidence or citation requirement.')
+t('facetags','Generate a set of descriptive tags for each image','Tags support filtering and search across large image libraries. Tag vocabulary should be governed so synonyms do not fragment results.')
+t('imageretrieval','Index image embeddings and search by visual similarity','Visual search returns near-duplicate or stylistically similar images from an indexed library. It complements, rather than replaces, metadata filters.')
+t('moderationreview','Queue flagged generations for human moderation before release','Human moderation catches context that automated filters miss, at the cost of latency and reviewer load.')
+t('styleTransfer','Apply a consistent visual style to generated images','Style control keeps campaign output recognizable across many generations. It does not guarantee factual accuracy of depicted content.')
+t('keyphrases','Extract key phrases to summarize what a document covers','Key phrases support navigation, tagging, and clustering. They are not a substitute for a required structured field.')
+t('entitylinking','Link detected entities to a known entity catalog','Entity linking resolves ambiguous names to canonical records, which enables joins. It depends on catalog quality and disambiguation thresholds.')
+t('abstractive','Generate an abstractive summary in new wording','Abstractive summaries read naturally and compress long text, but they can introduce statements that the source does not support.')
+t('extractive','Select and return the most relevant source sentences','Extractive summaries stay verbatim and therefore auditable, at the cost of readability and length.')
+t('profanityfilter','Apply a profanity mask to generated text output','Masking keeps generated content presentable in regulated channels. It is a presentation control, not a safety evaluation of the underlying model.')
+t('chunkoverlap','Set chunk overlap so facts spanning a boundary stay retrievable','Overlap preserves context across chunk edges at the cost of duplicated index storage and more near-duplicate hits.')
+t('indexschema','Define index fields, attributes, and searchable versus filterable behavior','Field attributes decide what can be filtered, sorted, faceted, or retrieved, so schema choices constrain query design later.')
+t('pagination','Page results with continuation parameters for large result sets','Paging keeps responses bounded for clients and avoids timeouts on large matches. It is not a relevance control.')
+t('relevancetuning','Tune scoring and boosting against a labelled query set','Boosting and scoring changes should be measured on real queries. Untested tuning usually trades one query class for another.')
+t('filetool','Give the agent a file-search tool over approved document stores','A file tool retrieves from curated stores under configured access. It still depends on indexing quality and permission filters.')
+t('codeinterpreter','Enable a sandboxed code interpreter tool for calculations','Code execution handles quantitative work the model cannot do reliably in text. The sandbox must be isolated and output must be validated.')
+t('agentversion','Pin the agent definition version used by the deployment','Pinning makes behavior reproducible and rollback measurable. Unpinned agents can change silently when instructions or tools change.')
+t('longtermmemory','Persist durable user preferences in long-term memory','Long-term memory personalizes across sessions but raises retention, consent, and correction obligations.')
+t('commitgate','Block promotion in the pipeline when evaluation thresholds fail','An automated gate turns an evaluation result into a release decision. Thresholds need ownership or the gate becomes noise.')
+t('shadowdeploy','Send mirrored production traffic to a candidate without returning its answers','Shadow traffic compares a candidate against live behavior with no user impact. It requires careful handling of side-effecting calls.')
+t('canaryrollout','Shift a small traffic percentage to the new version first','A canary limits blast radius and produces real signal before full rollout. It needs a rollback criterion defined in advance.')
+t('budgetalert','Alert on spend thresholds per deployment or project','Spend alerts catch runaway usage before the invoice does. They are detection, not a hard spending cap.')
+t('regionpinning','Pin the model version available in the required region','A pinned version keeps behavior stable and satisfies residency, at the cost of slower access to newer capabilities.')
+t('videotranscript','Transcribe speech from video as part of analysis','Transcripts make video content searchable and reviewable. Alignment with frames is needed for precise event timing.')
+t('transliteration','Convert names between writing systems without translating meaning','Transliteration preserves pronunciation for names and addresses. It is not a substitute for translating meaning-bearing text.')
+t('seqgateok','Commit change → run the evaluation suite → block on failed thresholds → deploy a canary → promote after metrics hold',
+  'An evaluation gate before deployment, followed by a canary, keeps unmeasured changes away from all users.')
+t('seqgatebad1','Deploy a canary → commit change → promote after metrics hold → run the evaluation suite → block on failed thresholds',
+  'Deployment cannot precede the change, and evaluation must gate promotion rather than follow it.')
+t('seqgatebad2','Run the evaluation suite → deploy a canary → commit change → block on failed thresholds → promote after metrics hold',
+  'The change must exist before it can be evaluated or deployed.')
+t('seqgatebad3','Commit change → deploy a canary → promote after metrics hold → run the evaluation suite → block on failed thresholds',
+  'Evaluation after promotion cannot prevent a failed change from reaching everyone.')
+t('seqindexok','Connect the data source → define the index schema → attach the enrichment skillset → run the indexer → validate relevance on sample queries',
+  'Schema and enrichment must exist before indexing runs, and relevance is checked after the index is populated.')
+t('seqindexbad1','Run the indexer → connect the data source → define the index schema → attach the enrichment skillset → validate relevance on sample queries',
+  'An indexer cannot run before the source and schema exist.')
+t('seqindexbad2','Validate relevance on sample queries → run the indexer → connect the data source → define the index schema → attach the enrichment skillset',
+  'Relevance cannot be validated on an index that was never populated.')
+t('seqindexbad3','Attach the enrichment skillset → connect the data source → validate relevance on sample queries → define the index schema → run the indexer',
+  'The schema must exist before enrichment and relevance testing.')
+t('seedparam','Set a seed parameter for reproducible sampling where the provider supports it','A seed makes repeated sampling closer to reproducible, but it remains best effort and does not replace deterministic extraction settings.')
+t('stopsequence','Set a stop sequence so generation ends at the intended boundary','A stop sequence truncates output at a defined marker, which keeps parsers from receiving trailing commentary. It must not appear inside legitimate content.')
+t('speechsynthesisvoice','Select a specific synthesis voice for consistent spoken output','A named voice keeps a phone or kiosk channel recognizable across prompts. Voice availability and language coverage vary by region.')

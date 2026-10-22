@@ -2,9 +2,9 @@
 
 > **Course Title:** **AI-103: Azure AI Apps and Agents Developer Associate**
 >
-> **Course Subtitle:** **6 mock exams × 50 questions • Single-choice, multi-select, ordering and case studies • Explained**
+> **Course Subtitle:** **6 mock exams × 100 questions • Single-choice, multi-select, ordering and case studies • Explained**
 
-Build developer-level judgment with **300 original questions across six full-length mock exams**, an explanation for every option, and a case-specific rationale.
+Build developer-level judgment with **600 original questions across six full-length mock exams**, an explanation for every option, and a case-specific rationale.
 
 > **Version notice:** Baseline: the official AI-103 study guide, **skills measured as of April 16, 2026** (five domains; 25–30 / 30–35 / 10–15 / 10–15 / 10–15). Microsoft states that the exam is **typically 40–60 questions** in **120 minutes** (140-minute seat time) and may include interactive components or labs. Confirm the current guide, weights, fee, and item formats before you schedule.
 
@@ -25,7 +25,7 @@ AI-103: Azure AI Apps and Agents Developer Associate
 ### 2. Course Subtitle
 
 ```text
-6 mock exams × 50 questions • Single-choice, multi-select, ordering and case studies • Explained
+6 mock exams × 100 questions • Single-choice, multi-select, ordering and case studies • Explained
 ```
 
 ### 3. Course Description
@@ -33,22 +33,22 @@ AI-103: Azure AI Apps and Agents Developer Associate
 ```text
 Can you build an Azure AI application or agent that is grounded, evaluated, observable, secure, and affordable — not just impressive in a demo?
 
-Prepare for Microsoft AI-103 (Azure AI Apps and Agents Developer Associate) with 300 original questions across six full-length mock exams. Every exam is blueprint-weighted, so each one is a realistic 50-item rehearsal rather than a random topic dump.
+Prepare for Microsoft AI-103 (Azure AI Apps and Agents Developer Associate) with 600 original questions across six full-length mock exams of 100 items each. Every exam is blueprint-weighted, so each one is a coherent rehearsal of the whole blueprint rather than a random topic dump.
 
 This is a developer exam. It expects working judgment about Microsoft Foundry (formerly Azure AI Foundry), the Foundry Agent Service, retrieval over Azure AI Search, evaluation, monitoring, identity and networking, content safety, computer vision, speech, language, translation, and document or content extraction with Python.
 
 WHAT YOU GET
-• Six original 50-question mock exams
-• Blueprint weighting on every exam: 14 / 16 / 7 / 7 / 6 across the five published domains
-• Mixed item types: 38 single-choice, 8 multi-select, 4 ordering items per exam
-• Two three-question case studies inside every exam
+• Six original 100-question mock exams
+• Blueprint weighting on every exam: 28 / 33 / 13 / 13 / 13 across the five published domains
+• Mixed item types: 76 single-choice, 16 multi-select, 8 ordering items per exam
+• Four three-question case studies inside every exam
 • An explanation for every option plus a case-specific overall rationale
 • Local study-map skill anchors and the official study-guide reference on every item
 • Offline Markdown review copies alongside instructor CSV files
 • A reproducible ZIP, a validation report, and automated structural tests
 
 HOW THE ITEM MIX MATCHES THE REAL EXAM
-The live role-based exam is not 100 single-answer items. Microsoft's exam experience guidance describes 40–60 questions in 120 minutes with possible interactive components and labs, and candidates routinely see multi-select, drag-and-drop or ordering, hot-area, case-study, and adaptive problem-solution formats.
+The live role-based exam is not a wall of identical single-answer items. Microsoft's exam experience guidance describes 40–60 questions in 120 minutes with possible interactive components and labs, and candidates routinely see multi-select, drag-and-drop or ordering, hot-area, case-study, and adaptive problem-solution formats.
 
 These mock exams reproduce what a CSV player can score honestly:
 • Single-choice items with one best answer.
@@ -56,7 +56,10 @@ These mock exams reproduce what a CSV player can score honestly:
 • Ordering items rendered as four candidate sequences, so sequencing judgment is tested without a drag-and-drop UI.
 • Case studies: a shared scenario followed by three scored questions, exactly as a case-study block behaves in the exam.
 
-What is deliberately not reproduced, and is stated in every export: hot-area image selection, drag-and-drop UI, hands-on labs and interactive components, adaptive problem-solution (yes/no) sets, and the exact live item count. A 50-item exam is a documented practice design, not a claim about the real length.
+What is deliberately not reproduced, and is stated in every export: hot-area image selection, drag-and-drop UI, hands-on labs and interactive components, adaptive problem-solution (yes/no) sets, and the exact live item count.
+
+WHY EACH EXAM IS 100 ITEMS
+A 100-item exam is deliberately longer than the live 40–60 items. This is an expanded practice bank, not a length replica: the extra volume gives every sub-objective real coverage and lets you drill the same blueprint twice without repeating questions. Because the item count differs, do not read a practice duration as the real clock — see the pacing note below.
 
 THE SIX EXAMS
 
@@ -79,11 +82,11 @@ Citizen and student services: data residency, seasonal quota peaks, human oversi
 A group-wide assistant across four subsidiaries: shared model standards, private networking, least privilege per subsidiary, provisioned capacity, evaluation gates, governed tool calls, retrieval budgets, safety filters, watermarks, compliance framing, and reproducible release.
 
 EACH EXAM CONTAINS
-• 14 questions on Plan and manage an Azure AI solution
-• 16 questions on Implement generative AI and agentic solutions
-• 7 questions on Implement computer vision solutions
-• 7 questions on Implement text analysis solutions
-• 6 questions on Implement information extraction solutions
+• 28 questions on Plan and manage an Azure AI solution
+• 33 questions on Implement generative AI and agentic solutions
+• 13 questions on Implement computer vision solutions
+• 13 questions on Implement text analysis solutions
+• 13 questions on Implement information extraction solutions
 
 COVERAGE THAT IS EXPLICIT ABOUT ITS LIMITS
 All five published domains and 30 local study-map skills have mapped practice. Numeric skill IDs are local study aids, not Microsoft objective numbers. Mapping does not mean every sub-objective has equal depth, and the questions have not been psychometrically calibrated against the live exam.
@@ -92,9 +95,9 @@ HOW THE CERTIFICATION ACTUALLY WORKS
 The exam is proctored and typically contains 40–60 questions in a 120-minute appointment (140 minutes of seat time). Microsoft may include interactive components or labs; unscheduled breaks are not allowed in the middle of a lab or problem-solution set. Microsoft Learn documentation is available in a split screen during role-based exams, and the timer keeps running. The passing score is 700 out of 1000. The exam costs $165 USD, is available in ten languages, is valid for one year, and has a free renewal assessment. Retakes are permitted after 24 hours.
 
 HOW PRACTICE DIFFERS FROM THE SCORE
-Suggested practice duration is 120 minutes per 50-item exam, matching the real appointment length. Any percentage target you set is a study convention. Microsoft reports a scaled score of 700/1000, not a raw percentage, so a practice percentage is not a scaled exam score and no conversion is implied.
+A 100-item exam is more than twice the live item count, so the real 120-minute clock does not map directly. Use 100 minutes for a deliberate pace drill (tighter than the real per-item average), or 150 minutes for a full review attempt. Any percentage target you set is a study convention. Microsoft reports a scaled score of 700/1000, not a raw percentage, so a practice percentage is not a scaled exam score and no conversion is implied.
 
-Concepts and option definitions recur across exams for reinforcement. Three hundred distinct question stems do not mean three hundred independent concepts or six independent readiness estimates. No score, calibrated difficulty, lab completion, or certification result is guaranteed.
+Concepts and option definitions recur across exams for reinforcement. Six hundred distinct question stems do not mean six hundred independent concepts or six independent readiness estimates. No score, calibrated difficulty, lab completion, or certification result is guaranteed.
 
 VERSION BOUNDARY
 Baseline: the official AI-103 study guide, skills measured as of April 16, 2026. Azure AI capabilities, preview status, quotas, regional availability, and interfaces change quickly, and Microsoft Foundry has been renamed once already. Questions therefore target durable design reasoning and ask you to verify current supported behaviour instead of memorizing a console path or a price.
@@ -165,15 +168,15 @@ NOT THE RIGHT FIT FOR
 ```text
 Welcome to your AI-103 practice course!
 
-You have six full-length mock exams of 50 questions each, blueprint-weighted 14 / 16 / 7 / 7 / 6 across the five published domains.
+You have six full-length mock exams of 100 questions each, blueprint-weighted 28 / 33 / 13 / 13 / 13 across the five published domains.
 
 Each exam mixes item types the way the real exam does:
-• 38 single-choice questions — select ONE best answer.
-• 8 multi-select questions — the stem tells you "Select two"; enter both keys, for example 2,4.
-• 4 ordering questions — choose the candidate sequence that is in the correct order.
-• 2 case studies of 3 questions — read the shared scenario once, then answer all three.
+• 76 single-choice questions — select ONE best answer.
+• 16 multi-select questions — the stem tells you "Select two"; enter both keys, for example 2,4.
+• 8 ordering questions — choose the candidate sequence that is in the correct order.
+• 4 case studies of 3 questions — read the shared scenario once, then answer all three.
 
-Suggested pacing: 120 minutes per exam, matching the real appointment length. Work through the exams in order, then repeat your weakest one cold.
+Suggested pacing: a 100-item exam is deliberately longer than the live 40–60 items, so use 100 minutes as a pace drill or 150 minutes for a full review attempt. Work through the exams in order, then repeat your weakest one cold.
 
 For every miss, write down the constraint that decided the answer and why the closest alternative fails. That habit transfers to the exam more reliably than memorizing option letters.
 
@@ -211,19 +214,19 @@ AI-103 fails developers at the seams, not in the middle of a definition: **a ret
 ## 📦 What you get
 
 ```text
-Microsoft AI-103 — 300 Questions
-├── EXAM 1 — Contoso support / Fabrikam claims
-│   └── 50 items • 14 / 16 / 7 / 7 / 6 • 38 single-choice, 8 multi-select, 4 ordering, 2 case studies
+Microsoft AI-103 — 600 Questions
+├── EXAM 1 — Contoso support / Fabrikam claims / Tailspin Retail / Wingtip Insurance
+│   └── 100 items • 28 / 33 / 13 / 13 / 13 • 76 single-choice, 16 multi-select, 8 ordering, 4 case studies
 ├── EXAM 2 — Healthcare delivery
-│   └── 50 items • 14 / 16 / 7 / 7 / 6 • 38 single-choice, 8 multi-select, 4 ordering, 2 case studies
+│   └── 100 items • 28 / 33 / 13 / 13 / 13 • 76 single-choice, 16 multi-select, 8 ordering, 4 case studies
 ├── EXAM 3 — Financial services and insurance
-│   └── 50 items • 14 / 16 / 7 / 7 / 6 • 38 single-choice, 8 multi-select, 4 ordering, 2 case studies
+│   └── 100 items • 28 / 33 / 13 / 13 / 13 • 76 single-choice, 16 multi-select, 8 ordering, 4 case studies
 ├── EXAM 4 — Manufacturing and supply chain
-│   └── 50 items • 14 / 16 / 7 / 7 / 6 • 38 single-choice, 8 multi-select, 4 ordering, 2 case studies
+│   └── 100 items • 28 / 33 / 13 / 13 / 13 • 76 single-choice, 16 multi-select, 8 ordering, 4 case studies
 ├── EXAM 5 — Public sector and education
-│   └── 50 items • 14 / 16 / 7 / 7 / 6 • 38 single-choice, 8 multi-select, 4 ordering, 2 case studies
+│   └── 100 items • 28 / 33 / 13 / 13 / 13 • 76 single-choice, 16 multi-select, 8 ordering, 4 case studies
 └── EXAM 6 — Cross-industry capstone
-    └── 50 items • 14 / 16 / 7 / 7 / 6 • 38 single-choice, 8 multi-select, 4 ordering, 2 case studies
+    └── 100 items • 28 / 33 / 13 / 13 / 13 • 76 single-choice, 16 multi-select, 8 ordering, 4 case studies
 ```
 
 Includes instructor CSVs, Markdown question-and-answer copies, curriculum, source and coverage notes, reproducible export tooling, a validation report, and an offline ZIP. No live Udemy import or publication is implied.
@@ -234,13 +237,13 @@ Includes instructor CSVs, Markdown question-and-answer copies, curriculum, sourc
 
 | Official domain | Guide weight | Each exam | Package total |
 |---|---:|---:|---:|
-| 1. Plan and manage an Azure AI solution | 25–30% | 14 (28%) | 84 (28%) |
-| 2. Implement generative AI and agentic solutions | 30–35% | 16 (32%) | 96 (32%) |
-| 3. Implement computer vision solutions | 10–15% | 7 (14%) | 42 (14%) |
-| 4. Implement text analysis solutions | 10–15% | 7 (14%) | 42 (14%) |
-| 5. Implement information extraction solutions | 10–15% | 6 (12%) | 36 (12%) |
+| 1. Plan and manage an Azure AI solution | 25–30% | 28 (28%) | 168 (28%) |
+| 2. Implement generative AI and agentic solutions | 30–35% | 33 (33%) | 198 (33%) |
+| 3. Implement computer vision solutions | 10–15% | 13 (13%) | 78 (13%) |
+| 4. Implement text analysis solutions | 10–15% | 13 (13%) | 78 (13%) |
+| 5. Implement information extraction solutions | 10–15% | 13 (13%) | 78 (13%) |
 
-Every exam uses the same integer allocation, and every value sits inside the published range. That is intentional: with six 50-item exams, a per-exam allocation of 14 / 16 / 7 / 7 / 6 is the smallest whole-number split that keeps all five domains inside their ranges at once. It also means no exam is a "weighted" special case and the aggregate cannot drift.
+Every exam uses the same integer allocation, and every value sits inside the published range. Unlike a 50-item split, a 100-item split can sit at the centre of all three narrow ranges at once, so each exam is a proportional model of the blueprint and the aggregate cannot drift.
 
 Source: [AI-103 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103); [certification page](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/). Reviewed October 2026.
 
@@ -248,8 +251,8 @@ Source: [AI-103 study guide](https://learn.microsoft.com/en-us/credentials/certi
 
 | Dimension | Microsoft AI-103 | This package |
 |---|---|---|
-| Question count | Typically 40–60 | 50 per exam |
-| Time | 120 minutes (140-minute seat) | 120 minutes suggested |
+| Question count | Typically 40–60 | 100 per exam (expanded bank) |
+| Time | 120 minutes (140-minute seat) | 100 min pace drill or 150 min review |
 | Passing standard | 700 / 1000 scaled | No scaled score; percentage is study-only |
 | Delivery | Proctored, Pearson VUE | CSV or Markdown, self-scored |
 | Item types | Single-choice, multi-select, drag-and-drop/ordering, hot-area, case studies, adaptive problem-solution sets, possible labs | Single-choice, multi-select (count stated), ordering as candidate sequences, case studies |
@@ -260,42 +263,42 @@ Source: [AI-103 study guide](https://learn.microsoft.com/en-us/credentials/certi
 
 ## 🧪 How the case studies work
 
-Each exam contains two case studies of three questions. The three items share one scenario and are scored individually, which mirrors how a case-study block feels in the exam: read once, answer several linked questions, and keep the scenario constraints straight. Every case-study item also restates the specific constraint it tests, so the item still reads correctly in a CSV player that cannot display a shared preamble.
+Each exam contains four case studies of three questions. The three items in each block share one scenario and are scored individually, which mirrors how a case-study block feels in the exam: read once, answer several linked questions, and keep the scenario constraints straight. Every case-study item also restates the specific constraint it tests, so the item still reads correctly in a CSV player that cannot display a shared preamble.
 
 ## 🧠 Local skill map
 
 | Local ID | Study area | Domain | Items |
 |---|---|---|---:|
-| 1.1 | Selecting Foundry models and services | 1 | 13 |
-| 1.2 | Retrieval, memory, tool, and knowledge services | 1 | 10 |
-| 1.3 | Infrastructure, deployment, and CI/CD | 1 | 12 |
-| 1.4 | Quotas, scaling, and cost | 1 | 14 |
-| 1.5 | Monitoring performance, drift, safety, and grounding | 1 | 13 |
-| 1.6 | Security, identity, and networking | 1 | 10 |
-| 1.7 | Responsible AI controls and oversight | 1 | 12 |
-| 2.1 | Building generative applications | 2 | 15 |
-| 2.2 | Foundry SDK and project integration | 2 | 12 |
-| 2.3 | Evaluating models and applications | 2 | 14 |
-| 2.4 | Agent roles, goals, and tool schemas | 2 | 10 |
-| 2.5 | Agent tools, retrieval, memory, and function calling | 2 | 14 |
-| 2.6 | Multi-agent orchestration and safeguards | 2 | 13 |
-| 2.7 | Agent monitoring and error analysis | 2 | 11 |
-| 2.8 | Generation tuning and observability | 2 | 7 |
-| 3.1 | Image generation and editing | 3 | 10 |
+| 1.1 | Selecting Foundry models and services | 1 | 30 |
+| 1.2 | Retrieval, memory, tool, and knowledge services | 1 | 16 |
+| 1.3 | Infrastructure, deployment, and CI/CD | 1 | 32 |
+| 1.4 | Quotas, scaling, and cost | 1 | 26 |
+| 1.5 | Monitoring performance, drift, safety, and grounding | 1 | 25 |
+| 1.6 | Security, identity, and networking | 1 | 21 |
+| 1.7 | Responsible AI controls and oversight | 1 | 18 |
+| 2.1 | Building generative applications | 2 | 27 |
+| 2.2 | Foundry SDK and project integration | 2 | 28 |
+| 2.3 | Evaluating models and applications | 2 | 32 |
+| 2.4 | Agent roles, goals, and tool schemas | 2 | 15 |
+| 2.5 | Agent tools, retrieval, memory, and function calling | 2 | 28 |
+| 2.6 | Multi-agent orchestration and safeguards | 2 | 31 |
+| 2.7 | Agent monitoring and error analysis | 2 | 17 |
+| 2.8 | Generation tuning and observability | 2 | 20 |
+| 3.1 | Image generation and editing | 3 | 17 |
 | 3.2 | Video generation and editing | 3 | 7 |
-| 3.3 | Multimodal understanding and accessibility | 3 | 9 |
-| 3.4 | Visual extraction and video analysis | 3 | 9 |
-| 3.5 | Multimodal responsible AI | 3 | 7 |
-| 4.1 | Language-model text analysis | 4 | 12 |
-| 4.2 | Translation | 4 | 9 |
-| 4.3 | Speech solutions | 4 | 13 |
+| 3.3 | Multimodal understanding and accessibility | 3 | 16 |
+| 3.4 | Visual extraction and video analysis | 3 | 24 |
+| 3.5 | Multimodal responsible AI | 3 | 14 |
+| 4.1 | Language-model text analysis | 4 | 30 |
+| 4.2 | Translation | 4 | 16 |
+| 4.3 | Speech solutions | 4 | 24 |
 | 4.4 | Domain customization | 4 | 8 |
-| 5.1 | Content ingestion and indexing | 5 | 7 |
-| 5.2 | Search and grounding configuration | 5 | 6 |
-| 5.3 | Enrichment skills | 5 | 6 |
-| 5.4 | RAG ingestion and OCR | 5 | 6 |
-| 5.5 | Retrieval integration with agents | 5 | 3 |
-| 5.6 | Document and content extraction | 5 | 8 |
+| 5.1 | Content ingestion and indexing | 5 | 13 |
+| 5.2 | Search and grounding configuration | 5 | 18 |
+| 5.3 | Enrichment skills | 5 | 13 |
+| 5.4 | RAG ingestion and OCR | 5 | 11 |
+| 5.5 | Retrieval integration with agents | 5 | 4 |
+| 5.6 | Document and content extraction | 5 | 19 |
 
 These IDs are internal study aids. Microsoft names objectives without this numbering, and coverage counts describe practice emphasis rather than official sub-objective weighting.
 
@@ -318,15 +321,19 @@ These IDs are internal study aids. Microsoft names objectives without this numbe
 
 **Q: How many questions are included?**
 
-A: **300 across six exams of 50**, with 38 single-choice, 8 multi-select, 4 ordering, and 2 case studies of 3 questions per exam.
+A: **600 across six exams of 100**, with 76 single-choice, 16 multi-select, 8 ordering, and 4 case studies of 3 questions per exam.
 
 **Q: Is every exam blueprint-weighted?**
 
-A: Yes. All six use **14 / 16 / 7 / 7 / 6**, which is 28 / 32 / 14 / 14 / 12 percent — inside every published range (25–30 / 30–35 / 10–15 / 10–15 / 10–15).
+A: Yes. All six use **28 / 33 / 13 / 13 / 13**, which is 28 / 33 / 13 / 13 / 13 percent — inside every published range (25–30 / 30–35 / 10–15 / 10–15 / 10–15).
+
+**Q: Why 100 questions when the real exam has 40–60?**
+
+A: So every sub-objective gets real coverage and each blueprint can be drilled twice without repeats. It is an expanded bank, not a length replica, and the package says so rather than implying the live exam is longer.
 
 **Q: Do these reproduce the actual exam?**
 
-A: Not exactly, and the package says so. The live exam is typically 40–60 questions with possible labs and interactive components. Practice exams are 50 items and reproduce the scoreable formats: single-choice, multi-select, ordering as candidate sequences, and case studies.
+A: Not exactly, and the package says so. The live exam is typically 40–60 questions with possible labs and interactive components. Practice exams are 100 items and reproduce the scoreable formats: single-choice, multi-select, ordering as candidate sequences, and case studies.
 
 **Q: Why are hot-area, drag-and-drop, and labs missing?**
 

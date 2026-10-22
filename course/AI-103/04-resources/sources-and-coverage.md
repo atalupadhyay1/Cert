@@ -39,50 +39,50 @@ Not claimed anywhere in this package: that the practice exams contain the live i
 
 | Domain | Official range | Per exam | Percent | Package total |
 |---|---:|---:|---:|---:|
-| 1. Plan and manage an Azure AI solution | 25–30% | 14 | 28% | 84 |
-| 2. Implement generative AI and agentic solutions | 30–35% | 16 | 32% | 96 |
-| 3. Implement computer vision solutions | 10–15% | 7 | 14% | 42 |
-| 4. Implement text analysis solutions | 10–15% | 7 | 14% | 42 |
-| 5. Implement information extraction solutions | 10–15% | 6 | 12% | 36 |
+| 1. Plan and manage an Azure AI solution | 25–30% | 28 | 28% | 168 |
+| 2. Implement generative AI and agentic solutions | 30–35% | 33 | 33% | 198 |
+| 3. Implement computer vision solutions | 10–15% | 13 | 13% | 78 |
+| 4. Implement text analysis solutions | 10–15% | 13 | 13% | 78 |
+| 5. Implement information extraction solutions | 10–15% | 13 | 13% | 78 |
 
-Because all six exams share the same allocation, every exam is inside all five published ranges and the aggregate is exactly 28 / 32 / 14 / 14 / 12.
+Because all six exams share the same allocation, every exam is inside all five published ranges and the aggregate is exactly 28 / 33 / 13 / 13 / 13. A 100-item exam is larger than the live 40–60 items on purpose: the extra volume covers every sub-objective and lets the blueprint be drilled twice without repeating a question.
 
 ## Coverage against the published sub-objectives
 
-The study guide's sub-objectives were read directly and mapped into 30 local study areas. The table records the practice emphasis for each area; counts describe this bank, not official weighting.
+The study guide's sub-objectives were read directly and mapped into 30 local study areas. The table records the practice emphasis across all 600 items; counts describe this bank, not official weighting.
 
 | Local ID | Study area | Domain | Items | Official sub-objectives it supports |
 |---|---|---|---:|---|
-| 1.1 | Selecting Foundry models and services | 1 | 13 | Choose models and services by task, modality, region, cost, and lifecycle |
-| 1.2 | Retrieval, memory, tool, and knowledge services | 1 | 10 | Select retrieval, memory, tool, and knowledge components for the workload |
-| 1.3 | Infrastructure, deployment, and CI/CD | 1 | 12 | Provision resources, deploy models, automate releases, control connectivity |
-| 1.4 | Quotas, scaling, and cost | 1 | 14 | Plan quota and capacity; choose standard, batch, or provisioned throughput; optimize spend |
-| 1.5 | Monitoring performance, drift, safety, and grounding | 1 | 13 | Monitor quality, drift, safety, and groundedness; alert and regress |
-| 1.6 | Security, identity, and networking | 1 | 10 | Managed identity, least privilege, key management, private networking, egress |
-| 1.7 | Responsible AI controls and oversight | 1 | 12 | Content filters, guardrails, red teaming, human oversight, protected material |
-| 2.1 | Building generative applications | 2 | 15 | RAG, staged workflows, structured output, routing, prompting patterns |
-| 2.2 | Foundry SDK and project integration | 2 | 12 | Project endpoints, SDK usage, client authentication, token scoping |
-| 2.3 | Evaluating models and applications | 2 | 14 | Groundedness, relevance, safety, golden datasets, A/B and regression evaluation |
-| 2.4 | Agent roles, goals, and tool schemas | 2 | 10 | Role definition, system messages, tool contracts, persistent guidance |
-| 2.5 | Agent tools, retrieval, memory, and function calling | 2 | 14 | Function and OpenAPI tools, conversation state, secure execution order |
-| 2.6 | Multi-agent orchestration and safeguards | 2 | 13 | Sequential, parallel, manager, handoff, reflection, bounded autonomy |
-| 2.7 | Agent monitoring and error analysis | 2 | 11 | Tracing, alerting, incident triage, failing-step isolation |
-| 2.8 | Generation tuning and observability | 2 | 7 | Temperature, nucleus sampling, caching, deterministic extraction |
-| 3.1 | Image generation and editing | 3 | 10 | Generate and edit images; mask-based editing; brand constraints |
-| 3.2 | Video generation and editing | 3 | 7 | Generate and edit video; analyze events in footage |
-| 3.3 | Multimodal understanding and accessibility | 3 | 9 | Captions, alt text, visual question answering, structured fields |
-| 3.4 | Visual extraction and video analysis | 3 | 9 | Content Understanding modes, layout, single-task versus pro, object location |
-| 3.5 | Multimodal responsible AI | 3 | 7 | Visual safety filters, watermarking, brand policy, injected text in images |
-| 4.1 | Language-model text analysis | 4 | 12 | Summarization, PII, sentiment, topic, structured JSON output |
-| 4.2 | Translation | 4 | 9 | Machine translation, glossaries, terminology control, compliance framing |
-| 4.3 | Speech solutions | 4 | 13 | Speech-to-text, text-to-speech, custom speech, speech translation order |
-| 4.4 | Domain customization | 4 | 8 | Domain lexicons, compliance summarization, domain-tuned extraction |
-| 5.1 | Content ingestion and indexing | 5 | 7 | Indexers, push ingestion, deletion propagation |
-| 5.2 | Search and grounding configuration | 5 | 6 | Hybrid search, semantic ranking, security filters |
-| 5.3 | Enrichment skills | 5 | 6 | Skillsets and enrichment during indexing |
-| 5.4 | RAG ingestion and OCR | 5 | 6 | OCR, layout, reading order, chunking and embedding order |
-| 5.5 | Retrieval integration with agents | 5 | 3 | Context budgets, evidence selection, agent integration |
-| 5.6 | Document and content extraction | 5 | 8 | Prebuilt versus custom models, confidence thresholds, markdown output |
+| 1.1 | Selecting Foundry models and services | 30 | 13 | Choose models and services by task, modality, region, cost, and lifecycle |
+| 1.2 | Retrieval, memory, tool, and knowledge services | 16 | 10 | Select retrieval, memory, tool, and knowledge components for the workload |
+| 1.3 | Infrastructure, deployment, and CI/CD | 32 | 12 | Provision resources, deploy models, automate releases, control connectivity |
+| 1.4 | Quotas, scaling, and cost | 26 | 14 | Plan quota and capacity; choose standard, batch, or provisioned throughput; optimize spend |
+| 1.5 | Monitoring performance, drift, safety, and grounding | 25 | 13 | Monitor quality, drift, safety, and groundedness; alert and regress |
+| 1.6 | Security, identity, and networking | 21 | 10 | Managed identity, least privilege, key management, private networking, egress |
+| 1.7 | Responsible AI controls and oversight | 18 | 12 | Content filters, guardrails, red teaming, human oversight, protected material |
+| 2.1 | Building generative applications | 27 | 15 | RAG, staged workflows, structured output, routing, prompting patterns |
+| 2.2 | Foundry SDK and project integration | 28 | 12 | Project endpoints, SDK usage, client authentication, token scoping |
+| 2.3 | Evaluating models and applications | 32 | 14 | Groundedness, relevance, safety, golden datasets, A/B and regression evaluation |
+| 2.4 | Agent roles, goals, and tool schemas | 15 | 10 | Role definition, system messages, tool contracts, persistent guidance |
+| 2.5 | Agent tools, retrieval, memory, and function calling | 28 | 14 | Function and OpenAPI tools, conversation state, secure execution order |
+| 2.6 | Multi-agent orchestration and safeguards | 31 | 13 | Sequential, parallel, manager, handoff, reflection, bounded autonomy |
+| 2.7 | Agent monitoring and error analysis | 17 | 11 | Tracing, alerting, incident triage, failing-step isolation |
+| 2.8 | Generation tuning and observability | 20 | 7 | Temperature, nucleus sampling, caching, deterministic extraction |
+| 3.1 | Image generation and editing | 17 | 10 | Generate and edit images; mask-based editing; brand constraints |
+| 3.2 | Video generation and editing | 7 | 7 | Generate and edit video; analyze events in footage |
+| 3.3 | Multimodal understanding and accessibility | 16 | 9 | Captions, alt text, visual question answering, structured fields |
+| 3.4 | Visual extraction and video analysis | 24 | 9 | Content Understanding modes, layout, single-task versus pro, object location |
+| 3.5 | Multimodal responsible AI | 14 | 7 | Visual safety filters, watermarking, brand policy, injected text in images |
+| 4.1 | Language-model text analysis | 30 | 12 | Summarization, PII, sentiment, topic, structured JSON output |
+| 4.2 | Translation | 16 | 9 | Machine translation, glossaries, terminology control, compliance framing |
+| 4.3 | Speech solutions | 24 | 13 | Speech-to-text, text-to-speech, custom speech, speech translation order |
+| 4.4 | Domain customization | 8 | 8 | Domain lexicons, compliance summarization, domain-tuned extraction |
+| 5.1 | Content ingestion and indexing | 13 | 7 | Indexers, push ingestion, deletion propagation |
+| 5.2 | Search and grounding configuration | 18 | 6 | Hybrid search, semantic ranking, security filters |
+| 5.3 | Enrichment skills | 13 | 6 | Skillsets and enrichment during indexing |
+| 5.4 | RAG ingestion and OCR | 11 | 6 | OCR, layout, reading order, chunking and embedding order |
+| 5.5 | Retrieval integration with agents | 4 | 3 | Context budgets, evidence selection, agent integration |
+| 5.6 | Document and content extraction | 19 | 8 | Prebuilt versus custom models, confidence thresholds, markdown output |
 
 Numeric IDs are local study aids. Microsoft names objectives without this numbering.
 
@@ -90,10 +90,10 @@ Numeric IDs are local study aids. Microsoft names objectives without this number
 
 | Real-exam format | Included here | How |
 |---|---|---|
-| Single-choice | Yes | `multiple-choice` with four options and one key |
-| Multi-select | Yes | `multi-select` with five options, two or three keys, and a stated selection count |
-| Drag-and-drop / ordering | Partially | `ordering` with four candidate sequences as options |
-| Case studies | Yes | Two per exam, three scored items each, shared scenario |
+| Single-choice | Yes | `multiple-choice` with four options and one key (76 per exam) |
+| Multi-select | Yes | `multi-select` with five options, two or three keys, and a stated selection count (16 per exam) |
+| Drag-and-drop / ordering | Partially | `ordering` with four candidate sequences as options (8 per exam) |
+| Case studies | Yes | Four per exam, three scored items each, shared scenario |
 | Hot-area | No | Requires image hotspots; cannot be scored in CSV |
 | Labs and interactive components | No | Requires a provisioned sandbox |
 | Adaptive problem-solution sets | No | Changes item order by prior answer; not representable as a fixed set |

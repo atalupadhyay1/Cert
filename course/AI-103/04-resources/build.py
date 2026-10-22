@@ -3,7 +3,7 @@
 import csv, json, random
 from collections import Counter
 from pathlib import Path
-from bank import BANK, TERMS, TOPICS, VALID_TASKS, DOMAINS, ALLOCATIONS, SKILLS, TYPE_PLAN
+from bank import BANK, TERMS, TOPICS, VALID_TASKS, DOMAINS, ALLOCATIONS, SKILLS, TYPE_PLAN, CASE_STUDIES, ITEM_TOTAL
 ROOT=Path(__file__).resolve().parents[1]
 from sources import GUIDE, DOCS
 HEADER=['Question','Question Type']
@@ -11,6 +11,7 @@ for i in range(1,7): HEADER += [f'Answer Option {i}',f'Explanation {i}']
 HEADER += ['Correct Answers','Overall Explanation','Domain']
 
 CASE_TAG='Case study — '
+CASE_SIZE=3
 
 def case_name(text):
     if text.startswith(CASE_TAG):
@@ -73,8 +74,9 @@ def make_rows(number):
 
 def render_test(number,rows):
     lines=[f'# Microsoft AI-103 — {TOPICS[number]}', '',
-           'Azure AI Apps and Agents Developer Associate · 50 questions · 120 minutes · passing target 700/1000', '',
-           'Blueprint-weighted mock exam. Item mix: 38 single-choice, 8 multi-select (selection count stated), 4 ordering items rendered as answer choices, and 2 case studies of 3 questions. '
+           f'Azure AI Apps and Agents Developer Associate · {len(rows)} questions · 120 minutes · passing target 700/1000', '',
+           f'Blueprint-weighted mock exam. Item mix: {TYPE_PLAN["multiple-choice"]} single-choice, {TYPE_PLAN["multi-select"]} multi-select (selection count stated), '
+           f'{TYPE_PLAN["ordering"]} ordering items rendered as answer choices, and {CASE_STUDIES} case studies of {CASE_SIZE} questions. '
            'Hot-area, drag-and-drop UI, labs, and adaptive problem-solution sets cannot be reproduced in a CSV; see the README for the exact fidelity boundary.', '',
            'Original educational content, not actual, recalled, or copied Microsoft exam items.', '',
            '## Questions','']
@@ -83,7 +85,7 @@ def render_test(number,rows):
         case=row['_case']
         if case and case!=seen:
             lines += ['---', '', f'## Case study — {case}', '',
-                      'The next three questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.', '']
+                      f'The next {CASE_SIZE} questions refer to this scenario. Read the full scenario before answering; case-study items are scored individually.', '']
         seen=case or None
         stem=row['_stem']
         lines += [f'### {n}. {stem}', '', f'Domain: {row["Domain"]}', '']
@@ -106,16 +108,16 @@ def check_source():
     if {r['task'] for rs in BANK.values() for r in rs} != VALID_TASKS:
         raise ValueError('Source must cover every local study-map skill')
     for number,records in BANK.items():
-        if len(records)!=50:
-            raise ValueError(f'Test {number}: expected 50 authored items, found {len(records)}')
+        if len(records)!=ITEM_TOTAL:
+            raise ValueError(f'Test {number}: expected {ITEM_TOTAL} authored items, found {len(records)}')
         if Counter(r['domain'] for r in records)!=Counter(ALLOCATIONS[number]):
             raise ValueError(f'Test {number}: wrong domain allocation')
         kinds=Counter('ordering' if r['kind']=='O' else ('multi-select' if r['kind'] in ('M2','M3') else 'multiple-choice') for r in records)
         if kinds!=Counter(TYPE_PLAN):
             raise ValueError(f'Test {number}: wrong item-type mix {kinds}')
         cases=Counter(case_name(r['question']) for r in records if case_name(r['question']))
-        if len(cases)!=2 or set(cases.values())!={3}:
-            raise ValueError(f'Test {number}: expected 2 case studies of 3 questions, found {dict(cases)}')
+        if len(cases)!=CASE_STUDIES or set(cases.values())!={CASE_SIZE}:
+            raise ValueError(f'Test {number}: expected {CASE_STUDIES} case studies of {CASE_SIZE} questions, found {dict(cases)}')
         for item in records:
             if item['task'] not in VALID_TASKS:
                 raise ValueError(f'Unknown skill: {item["task"]}')
@@ -144,8 +146,8 @@ def check_source():
             if norm in stems:
                 raise ValueError(f'Duplicate question: {item["id"]}')
             stems.add(norm)
-    if len(stems)!=300:
-        raise ValueError(f'Expected 300 distinct stems, found {len(stems)}')
+    if len(stems)!=ITEM_TOTAL*len(BANK):
+        raise ValueError(f'Expected {ITEM_TOTAL*len(BANK)} distinct stems, found {len(stems)}')
 
 def main():
     check_source()
@@ -162,11 +164,13 @@ def main():
         types=Counter(row['Question Type'] for row in rows)
         (folder/'README.md').write_text(
             f'# {TOPICS[number]}: AI-103 mock exam\n\n'
-            '50 original items · 120 minutes · passing target 700/1000 · blueprint-weighted.\n\n'
+            f'{len(rows)} original items · 120 minutes · passing target 700/1000 · blueprint-weighted.\n\n'
             '| Official domain | Questions |\n|---|---:|\n'
             + '\n'.join(f'| {d} | {counts[d]} |' for d in DOMAINS)
-            + f'\n\nItem mix: {types["multiple-choice"]} single-choice, {types["multi-select"]} multi-select, 4 ordering items; 2 case studies of 3 questions. '
-            'Microsoft typically uses 40–60 questions; this practice set is 50. Hot-area, drag-and-drop, labs, and adaptive problem-solution sets are not reproduced.\n\n'
+            + f'\n\nItem mix: {types["multiple-choice"]} single-choice, {types["multi-select"]} multi-select, {types["ordering"]} ordering items; '
+            f'{CASE_STUDIES} case studies of {CASE_SIZE} questions. '
+            f'Microsoft typically uses 40–60 questions; this practice set is {len(rows)}, an expanded exam for broader coverage. '
+            'Hot-area, drag-and-drop, labs, and adaptive problem-solution sets are not reproduced.\n\n'
             f'Upload `practice-set-{number}.csv`; use `practice-set-{number}.md` for offline review.\n\n'
             'Practice target 700/1000 mirrors the published passing score, but a practice percentage is not a scaled exam score.\n',encoding='utf-8')
         manifest[str(number)]=mapping

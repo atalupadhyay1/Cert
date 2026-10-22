@@ -3,7 +3,7 @@
 ## File shape
 
 - One file per mock exam: `practice-set-1.csv` through `practice-set-6.csv`.
-- UTF-8 with BOM, LF line endings, comma-delimited, 17 columns, 50 data rows.
+- UTF-8 with BOM, LF line endings, comma-delimited, 17 columns, 100 data rows.
 - Header order is fixed and validated; reordering is rejected.
 
 ## Columns
@@ -40,8 +40,8 @@ The exported header has **17 columns** because the six option/explanation pairs 
 - Multi-select items mark every keyed option as `Correct.`
 - Overall explanation contains the official AI-103 study-guide anchor.
 - Domain label must match the authored source and the per-exam allocation (14/16/7/7/6).
-- 50 unique normalized stems per exam and 300 across the package.
-- 42 single-answer keys distributed across slots 1–4 with a max-minus-min of at most one.
+- 100 unique normalized stems per exam and 600 across the package.
+- 84 single-answer keys (76 single-choice plus 8 ordering) distributed across slots 1–4 with a max-minus-min of at most one.
 
 ## Reading and scoring multi-select items
 

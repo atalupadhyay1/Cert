@@ -1,4 +1,4 @@
-"""Load 300 authored AI-103 items. Source order is preserved; export shuffles options."""
+"""Load 600 authored AI-103 items. Source order is preserved; export shuffles options."""
 from pathlib import Path
 from terms import TERMS
 HERE=Path(__file__).resolve().parent
@@ -25,9 +25,11 @@ SKILLS={
  '5.4':'RAG Ingestion and OCR','5.5':'Retrieval Integration with Agents','5.6':'Document and Content Extraction'}
 VALID_TASKS=set(SKILLS)
 OFFICIAL_WEIGHTS={1:(25,30),2:(30,35),3:(10,15),4:(10,15),5:(10,15)}
-# 50-item tests: 28/32/14/14/12 percent, all inside published ranges.
-ALLOCATIONS={n:{1:14,2:16,3:7,4:7,5:6} for n in range(1,7)}
-TYPE_PLAN={'multiple-choice':38,'multi-select':8,'ordering':4}
+# 100-item tests: 28/33/13/13/13 percent, all inside the published ranges.
+ALLOCATIONS={n:{1:28,2:33,3:13,4:13,5:13} for n in range(1,7)}
+TYPE_PLAN={'multiple-choice':76,'multi-select':16,'ordering':8}
+CASE_STUDIES=4          # four case studies of three questions per exam
+ITEM_TOTAL=sum(TYPE_PLAN.values())
 BANK={}
 for number in TOPICS:
     records=[]
