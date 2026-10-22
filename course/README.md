@@ -82,6 +82,18 @@ This directory contains Udemy Practice Test Course packages for Claude/Anthropic
 - **Location:** [`course/AI-103/`](AI-103/README.md)
 - **Publication:** Expert technical review and account-level import preview required; no Udemy publication performed.
 
+### Microsoft AI-200: Developing AI Cloud Solutions on Azure
+
+- **Status:** Six 50-item mock exams; 300 original items with mixed formats and per-option explanations.
+- **Includes:** Udemy CSVs, offline review copies, comprehensive instructor landing page, curriculum, sources/coverage, QA suite, and reproducible ZIP.
+- **Organization:** Every exam is blueprint-weighted 12/15/12/11 across the four published domains (24/30/24/22 percent); 30 local study-map skills mapped to the guide sub-objectives.
+- **Item mix:** 38 single-choice, 8 multi-select with the selection count stated, 4 ordering items rendered as candidate sequences, and two 3-question case studies per exam.
+- **Baseline:** Official study guide, skills measured as of October 7, 2026; 40–60 questions typical, 120 minutes, 700/1000 scaled pass, $165 USD, proctored with possible interactive components. A 50-item practice exam is a documented design choice, not the live count.
+- **Weighting note:** the guide states 25–30% in the data-domain heading and 30–35% in its skills-at-a-glance list; the package fixes that domain at 30%, the only value inside both, and documents the reasoning.
+- **Format boundary:** Hot-area items, drag-and-drop UI, labs, and adaptive problem-solution sets are excluded and disclosed; practice percentages are not scaled exam scores.
+- **Location:** [`course/AI-200/`](AI-200/README.md)
+- **Publication:** Expert technical review and account-level import preview required; no Udemy publication performed.
+
 ### 1. **AB-100: Microsoft Certified Agentic AI Business Solutions Architect** *(in progress)*
 
 - **Status:** Scaffolding complete (landing page, curriculum, validator, set READMEs). Practice sets (Sets 1–6) to be built one per turn.

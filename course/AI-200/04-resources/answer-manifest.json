@@ -1,0 +1,6158 @@
+{
+  "1": [
+    {
+      "question": 1,
+      "id": "T1-Q001",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.1",
+      "kind": "S",
+      "correct_terms": [
+        "acr"
+      ],
+      "option_terms": [
+        "acrtask",
+        "acr",
+        "imagetag",
+        "acrretention"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 2,
+      "id": "T1-Q002",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.2",
+      "kind": "S",
+      "correct_terms": [
+        "acrtask"
+      ],
+      "option_terms": [
+        "slotswap",
+        "acrgeo",
+        "acrtask",
+        "acr"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 3,
+      "id": "T1-Q003",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.3",
+      "kind": "S",
+      "correct_terms": [
+        "appsetting"
+      ],
+      "option_terms": [
+        "slotswap",
+        "appsetting",
+        "kvref",
+        "appservice"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 4,
+      "id": "T1-Q004",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.4",
+      "kind": "S",
+      "correct_terms": [
+        "ingress"
+      ],
+      "option_terms": [
+        "containerapps",
+        "keda",
+        "ingress",
+        "revision"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 5,
+      "id": "T1-Q008",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.6",
+      "kind": "S",
+      "correct_terms": [
+        "manifest"
+      ],
+      "option_terms": [
+        "hpa",
+        "acrtask",
+        "aci",
+        "manifest"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 6,
+      "id": "T1-Q009",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.7",
+      "kind": "S",
+      "correct_terms": [
+        "connectivity"
+      ],
+      "option_terms": [
+        "diagnostic",
+        "probe",
+        "loganalytics",
+        "connectivity"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 7,
+      "id": "T1-Q010",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.1",
+      "kind": "M2",
+      "correct_terms": [
+        "acr",
+        "acrretention"
+      ],
+      "option_terms": [
+        "imagetag",
+        "slotswap",
+        "acrgeo",
+        "acr",
+        "acrretention"
+      ],
+      "correct_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "question": 8,
+      "id": "T1-Q011",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.6",
+      "kind": "M2",
+      "correct_terms": [
+        "manifest",
+        "probe"
+      ],
+      "option_terms": [
+        "aci",
+        "probe",
+        "hpa",
+        "cpuonly",
+        "manifest"
+      ],
+      "correct_indices": [
+        2,
+        5
+      ]
+    },
+    {
+      "question": 9,
+      "id": "T1-Q012",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.5",
+      "kind": "O",
+      "correct_terms": [
+        "seqcapp"
+      ],
+      "option_terms": [
+        "seqcappbad3",
+        "seqcappbad1",
+        "seqcappbad2",
+        "seqcapp"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 10,
+      "id": "T1-Q013",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.1",
+      "kind": "S",
+      "correct_terms": [
+        "crosspartition"
+      ],
+      "option_terms": [
+        "crosspartition",
+        "indexall",
+        "ru",
+        "partitionkey"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 11,
+      "id": "T1-Q014",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.2",
+      "kind": "S",
+      "correct_terms": [
+        "indexpolicy"
+      ],
+      "option_terms": [
+        "indexpolicy",
+        "indexall",
+        "autoscale",
+        "consistency"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 12,
+      "id": "T1-Q015",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.3",
+      "kind": "S",
+      "correct_terms": [
+        "sessionconsistency"
+      ],
+      "option_terms": [
+        "consistency",
+        "strongconsistency",
+        "sessionconsistency",
+        "eventualconsistency"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 13,
+      "id": "T1-Q016",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.4",
+      "kind": "S",
+      "correct_terms": [
+        "vectorcosmos"
+      ],
+      "option_terms": [
+        "pgvector",
+        "vectorcosmos",
+        "bruteforce",
+        "diskann"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 14,
+      "id": "T1-Q017",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.5",
+      "kind": "S",
+      "correct_terms": [
+        "changefeed"
+      ],
+      "option_terms": [
+        "changefeed",
+        "leasestore",
+        "eventgrid",
+        "duplicate"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 15,
+      "id": "T1-Q018",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.6",
+      "kind": "S",
+      "correct_terms": [
+        "pgschema"
+      ],
+      "option_terms": [
+        "pgcompute",
+        "pgschema",
+        "pgreplica",
+        "pgstorage"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 16,
+      "id": "T1-Q019",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.7",
+      "kind": "S",
+      "correct_terms": [
+        "hnsw"
+      ],
+      "option_terms": [
+        "seqscan",
+        "pgbouncer",
+        "ivfflat",
+        "hnsw"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 17,
+      "id": "T1-Q020",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.11",
+      "kind": "S",
+      "correct_terms": [
+        "redis"
+      ],
+      "option_terms": [
+        "redisttl",
+        "queuestorage",
+        "redis",
+        "pgreplica"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 18,
+      "id": "T1-Q021",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.10",
+      "kind": "S",
+      "correct_terms": [
+        "pool"
+      ],
+      "option_terms": [
+        "prepared",
+        "pgreplica",
+        "pool",
+        "pgbouncer"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 19,
+      "id": "T1-Q025",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.1",
+      "kind": "M2",
+      "correct_terms": [
+        "cosmosquery",
+        "leasestore"
+      ],
+      "option_terms": [
+        "autoscale",
+        "duplicate",
+        "indexall",
+        "cosmosquery",
+        "leasestore"
+      ],
+      "correct_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "question": 20,
+      "id": "T1-Q026",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.10",
+      "kind": "M2",
+      "correct_terms": [
+        "pool",
+        "pgbouncer"
+      ],
+      "option_terms": [
+        "pool",
+        "prepared",
+        "pgreplica",
+        "pgstorage",
+        "pgbouncer"
+      ],
+      "correct_indices": [
+        1,
+        5
+      ]
+    },
+    {
+      "question": 21,
+      "id": "T1-Q027",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.7",
+      "kind": "O",
+      "correct_terms": [
+        "seqpg"
+      ],
+      "option_terms": [
+        "seqpgbad3",
+        "seqpg",
+        "seqpgbad2",
+        "seqpgbad1"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 22,
+      "id": "T1-Q028",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "S",
+      "correct_terms": [
+        "sbsession"
+      ],
+      "option_terms": [
+        "peeklock",
+        "maxdelivery",
+        "sbsession",
+        "duplicate"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 23,
+      "id": "T1-Q029",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.2",
+      "kind": "S",
+      "correct_terms": [
+        "sbfilter"
+      ],
+      "option_terms": [
+        "egfilter",
+        "duplicate",
+        "egcustom",
+        "sbfilter"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 24,
+      "id": "T1-Q030",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.3",
+      "kind": "S",
+      "correct_terms": [
+        "maxdelivery"
+      ],
+      "option_terms": [
+        "maxdelivery",
+        "dlq",
+        "duplicate",
+        "peeklock"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 25,
+      "id": "T1-Q031",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.3",
+      "kind": "S",
+      "correct_terms": [
+        "idempotent"
+      ],
+      "option_terms": [
+        "prepared",
+        "durable",
+        "randdelete",
+        "idempotent"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 26,
+      "id": "T1-Q032",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.4",
+      "kind": "S",
+      "correct_terms": [
+        "egfilter"
+      ],
+      "option_terms": [
+        "duplicate",
+        "trigger",
+        "egfilter",
+        "sbfilter"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 27,
+      "id": "T1-Q033",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.4",
+      "kind": "S",
+      "correct_terms": [
+        "egretry"
+      ],
+      "option_terms": [
+        "egfilter",
+        "egcustom",
+        "egretry",
+        "eventhubs"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 28,
+      "id": "T1-Q034",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.5",
+      "kind": "S",
+      "correct_terms": [
+        "trigger"
+      ],
+      "option_terms": [
+        "binding",
+        "httptrigger",
+        "durable",
+        "trigger"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 29,
+      "id": "T1-Q035",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.6",
+      "kind": "S",
+      "correct_terms": [
+        "premiumplan"
+      ],
+      "option_terms": [
+        "consumptionplan",
+        "premiumplan",
+        "httptrigger",
+        "durable"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 30,
+      "id": "T1-Q036",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.2",
+      "kind": "M2",
+      "correct_terms": [
+        "sbtopic",
+        "sbfilter"
+      ],
+      "option_terms": [
+        "sbfilter",
+        "queuestorage",
+        "sbqueue",
+        "sbtopic",
+        "egfilter"
+      ],
+      "correct_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "question": 31,
+      "id": "T1-Q037",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.3",
+      "kind": "M2",
+      "correct_terms": [
+        "dlq",
+        "maxdelivery"
+      ],
+      "option_terms": [
+        "randdelete",
+        "dlq",
+        "prepared",
+        "maxdelivery",
+        "duplicate"
+      ],
+      "correct_indices": [
+        2,
+        4
+      ]
+    },
+    {
+      "question": 32,
+      "id": "T1-Q038",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.4",
+      "kind": "M2",
+      "correct_terms": [
+        "egcustom",
+        "egfilter"
+      ],
+      "option_terms": [
+        "sbfilter",
+        "eventhubs",
+        "egcustom",
+        "egfilter",
+        "egretry"
+      ],
+      "correct_indices": [
+        3,
+        4
+      ]
+    },
+    {
+      "question": 33,
+      "id": "T1-Q039",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "O",
+      "correct_terms": [
+        "seqmsg"
+      ],
+      "option_terms": [
+        "seqmsg",
+        "seqmsgbad1",
+        "seqmsgbad2",
+        "seqmsgbad3"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 34,
+      "id": "T1-Q040",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "S",
+      "correct_terms": [
+        "keyvault"
+      ],
+      "option_terms": [
+        "appsetting",
+        "versioned",
+        "keyvault",
+        "rbac"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 35,
+      "id": "T1-Q041",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "S",
+      "correct_terms": [
+        "rotation"
+      ],
+      "option_terms": [
+        "rotation",
+        "appsetting",
+        "versioned",
+        "managedidentity"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 36,
+      "id": "T1-Q042",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "S",
+      "correct_terms": [
+        "appconfig"
+      ],
+      "option_terms": [
+        "labels",
+        "appconfig",
+        "keyvault",
+        "appsetting"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 37,
+      "id": "T1-Q043",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "S",
+      "correct_terms": [
+        "appconfigrefresh"
+      ],
+      "option_terms": [
+        "appconfigrefresh",
+        "deployfunc",
+        "versioned",
+        "labels"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 38,
+      "id": "T1-Q044",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.3",
+      "kind": "S",
+      "correct_terms": [
+        "otel"
+      ],
+      "option_terms": [
+        "kql",
+        "otel",
+        "appinsights",
+        "diagnostic"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 39,
+      "id": "T1-Q045",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "S",
+      "correct_terms": [
+        "kqlsummarize"
+      ],
+      "option_terms": [
+        "kql",
+        "kqlsummarize",
+        "alert",
+        "kqltables"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 40,
+      "id": "T1-Q046",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "S",
+      "correct_terms": [
+        "kqltables"
+      ],
+      "option_terms": [
+        "kqltables",
+        "alert",
+        "appinsights",
+        "kqlsummarize"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 41,
+      "id": "T1-Q047",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "S",
+      "correct_terms": [
+        "alert"
+      ],
+      "option_terms": [
+        "kqlsummarize",
+        "diagnostic",
+        "appinsights",
+        "alert"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 42,
+      "id": "T1-Q048",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.5",
+      "kind": "S",
+      "correct_terms": [
+        "managedidentity"
+      ],
+      "option_terms": [
+        "managedidentity",
+        "appsetting",
+        "rbac",
+        "keyvault"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 43,
+      "id": "T1-Q049",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "M2",
+      "correct_terms": [
+        "keyvault",
+        "managedidentity"
+      ],
+      "option_terms": [
+        "versioned",
+        "appsetting",
+        "rotation",
+        "managedidentity",
+        "keyvault"
+      ],
+      "correct_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "question": 44,
+      "id": "T1-Q050",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "O",
+      "correct_terms": [
+        "seqkv"
+      ],
+      "option_terms": [
+        "seqkvbad3",
+        "seqkvbad1",
+        "seqkvbad2",
+        "seqkv"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 45,
+      "id": "T1-Q022",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.9",
+      "kind": "S",
+      "correct_terms": [
+        "metadatafilter"
+      ],
+      "option_terms": [
+        "metadatafilter",
+        "hnsw",
+        "postfilter",
+        "ivfflat"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 46,
+      "id": "T1-Q023",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.8",
+      "kind": "S",
+      "correct_terms": [
+        "pgcompute"
+      ],
+      "option_terms": [
+        "pgreplica",
+        "pgcompute",
+        "pgstorage",
+        "pgbouncer"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 47,
+      "id": "T1-Q024",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.12",
+      "kind": "S",
+      "correct_terms": [
+        "redisvector"
+      ],
+      "option_terms": [
+        "rediscachelock",
+        "redis",
+        "redissession",
+        "redisvector"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 48,
+      "id": "T1-Q005",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.4",
+      "kind": "S",
+      "correct_terms": [
+        "revision"
+      ],
+      "option_terms": [
+        "revision",
+        "slotswap",
+        "hpa",
+        "acrgeo"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 49,
+      "id": "T1-Q006",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.5",
+      "kind": "S",
+      "correct_terms": [
+        "kedaqueue"
+      ],
+      "option_terms": [
+        "cpuonly",
+        "kedaqueue",
+        "aci",
+        "hpa"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 50,
+      "id": "T1-Q007",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.3",
+      "kind": "S",
+      "correct_terms": [
+        "kvref"
+      ],
+      "option_terms": [
+        "imagetag",
+        "versioned",
+        "kvref",
+        "appsetting"
+      ],
+      "correct_indices": [
+        3
+      ]
+    }
+  ],
+  "2": [
+    {
+      "question": 1,
+      "id": "T2-Q001",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.1",
+      "kind": "S",
+      "correct_terms": [
+        "acr"
+      ],
+      "option_terms": [
+        "acr",
+        "acrgeo",
+        "acrtask",
+        "imagetag"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 2,
+      "id": "T2-Q002",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.2",
+      "kind": "S",
+      "correct_terms": [
+        "acrtask"
+      ],
+      "option_terms": [
+        "acrtask",
+        "acr",
+        "acrretention",
+        "slotswap"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 3,
+      "id": "T2-Q003",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.3",
+      "kind": "S",
+      "correct_terms": [
+        "appservice"
+      ],
+      "option_terms": [
+        "containerapps",
+        "appservice",
+        "aci",
+        "aks"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 4,
+      "id": "T2-Q004",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.3",
+      "kind": "S",
+      "correct_terms": [
+        "slotswap"
+      ],
+      "option_terms": [
+        "slotswap",
+        "appsetting",
+        "revision",
+        "imagetag"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 5,
+      "id": "T2-Q005",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.4",
+      "kind": "S",
+      "correct_terms": [
+        "minreplicas"
+      ],
+      "option_terms": [
+        "keda",
+        "hpa",
+        "minreplicas",
+        "revision"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 6,
+      "id": "T2-Q006",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.5",
+      "kind": "S",
+      "correct_terms": [
+        "keda"
+      ],
+      "option_terms": [
+        "aci",
+        "hpa",
+        "cpuonly",
+        "keda"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 7,
+      "id": "T2-Q007",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.6",
+      "kind": "S",
+      "correct_terms": [
+        "probe"
+      ],
+      "option_terms": [
+        "hpa",
+        "probe",
+        "manifest",
+        "aci"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 8,
+      "id": "T2-Q008",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.7",
+      "kind": "S",
+      "correct_terms": [
+        "loganalytics"
+      ],
+      "option_terms": [
+        "appinsights",
+        "connectivity",
+        "loganalytics",
+        "diagnostic"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 9,
+      "id": "T2-Q010",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.4",
+      "kind": "O",
+      "correct_terms": [
+        "seqaks"
+      ],
+      "option_terms": [
+        "seqaksbad3",
+        "seqaksbad1",
+        "seqaks",
+        "seqaksbad2"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 10,
+      "id": "T2-Q011",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.4",
+      "kind": "M2",
+      "correct_terms": [
+        "revision",
+        "containerapps"
+      ],
+      "option_terms": [
+        "containerapps",
+        "revision",
+        "aci",
+        "hpa",
+        "minreplicas"
+      ],
+      "correct_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "question": 11,
+      "id": "T2-Q012",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.6",
+      "kind": "M2",
+      "correct_terms": [
+        "manifest",
+        "probe"
+      ],
+      "option_terms": [
+        "cooldown",
+        "acrtask",
+        "probe",
+        "aci",
+        "manifest"
+      ],
+      "correct_indices": [
+        3,
+        5
+      ]
+    },
+    {
+      "question": 12,
+      "id": "T2-Q013",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.1",
+      "kind": "S",
+      "correct_terms": [
+        "cosmos"
+      ],
+      "option_terms": [
+        "pgvector",
+        "queuestorage",
+        "cosmos",
+        "redis"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 13,
+      "id": "T2-Q014",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.2",
+      "kind": "S",
+      "correct_terms": [
+        "autoscale"
+      ],
+      "option_terms": [
+        "indexall",
+        "consistency",
+        "ru",
+        "autoscale"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 14,
+      "id": "T2-Q015",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.4",
+      "kind": "S",
+      "correct_terms": [
+        "diskann"
+      ],
+      "option_terms": [
+        "diskann",
+        "bruteforce",
+        "hnsw",
+        "vectordimension"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 15,
+      "id": "T2-Q016",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.5",
+      "kind": "S",
+      "correct_terms": [
+        "leasestore"
+      ],
+      "option_terms": [
+        "duplicate",
+        "changefeed",
+        "leasestore",
+        "autoscale"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 16,
+      "id": "T2-Q018",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.7",
+      "kind": "S",
+      "correct_terms": [
+        "ivfflat"
+      ],
+      "option_terms": [
+        "hnsw",
+        "ivfflat",
+        "seqscan",
+        "pgworkmem"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 17,
+      "id": "T2-Q019",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.7",
+      "kind": "S",
+      "correct_terms": [
+        "vacuum"
+      ],
+      "option_terms": [
+        "pgworkmem",
+        "vacuum",
+        "pool",
+        "pgstorage"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 18,
+      "id": "T2-Q021",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.10",
+      "kind": "S",
+      "correct_terms": [
+        "pgbouncer"
+      ],
+      "option_terms": [
+        "pgbouncer",
+        "pgreplica",
+        "pool",
+        "prepared"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 19,
+      "id": "T2-Q022",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.11",
+      "kind": "S",
+      "correct_terms": [
+        "redisttl"
+      ],
+      "option_terms": [
+        "redisevict",
+        "redisclear",
+        "redisttl",
+        "redisinvalidate"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 20,
+      "id": "T2-Q024",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.3",
+      "kind": "S",
+      "correct_terms": [
+        "sessionconsistency"
+      ],
+      "option_terms": [
+        "strongconsistency",
+        "consistency",
+        "eventualconsistency",
+        "sessionconsistency"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 21,
+      "id": "T2-Q025",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.6",
+      "kind": "M2",
+      "correct_terms": [
+        "pgschema",
+        "metadatafilter"
+      ],
+      "option_terms": [
+        "metadatafilter",
+        "pgreplica",
+        "seqscan",
+        "postfilter",
+        "pgschema"
+      ],
+      "correct_indices": [
+        1,
+        5
+      ]
+    },
+    {
+      "question": 22,
+      "id": "T2-Q026",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.8",
+      "kind": "M2",
+      "correct_terms": [
+        "pgcompute",
+        "pgworkmem"
+      ],
+      "option_terms": [
+        "pgworkmem",
+        "pgbouncer",
+        "pgcompute",
+        "pgstorage",
+        "ivfflat"
+      ],
+      "correct_indices": [
+        1,
+        3
+      ]
+    },
+    {
+      "question": 23,
+      "id": "T2-Q027",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.4",
+      "kind": "O",
+      "correct_terms": [
+        "seqcosmos"
+      ],
+      "option_terms": [
+        "seqcosmosbad2",
+        "seqcosmos",
+        "seqcosmosbad3",
+        "seqcosmosbad1"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 24,
+      "id": "T2-Q028",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "S",
+      "correct_terms": [
+        "sbqueue"
+      ],
+      "option_terms": [
+        "sbqueue",
+        "sbtopic",
+        "queuestorage",
+        "eventhubs"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 25,
+      "id": "T2-Q029",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.2",
+      "kind": "S",
+      "correct_terms": [
+        "sbtopic"
+      ],
+      "option_terms": [
+        "queuestorage",
+        "egcustom",
+        "sbtopic",
+        "sbqueue"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 26,
+      "id": "T2-Q030",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.2",
+      "kind": "S",
+      "correct_terms": [
+        "sbprefetch"
+      ],
+      "option_terms": [
+        "sbsession",
+        "sbprefetch",
+        "duplicate",
+        "maxdelivery"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 27,
+      "id": "T2-Q032",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.4",
+      "kind": "S",
+      "correct_terms": [
+        "egsystemtopic"
+      ],
+      "option_terms": [
+        "egcustom",
+        "egsystemtopic",
+        "egfilter",
+        "egretry"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 28,
+      "id": "T2-Q033",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.4",
+      "kind": "S",
+      "correct_terms": [
+        "egfilter"
+      ],
+      "option_terms": [
+        "egcustom",
+        "sbfilter",
+        "egfilter",
+        "egretry"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 29,
+      "id": "T2-Q034",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.5",
+      "kind": "S",
+      "correct_terms": [
+        "binding"
+      ],
+      "option_terms": [
+        "trigger",
+        "binding",
+        "httptrigger",
+        "durable"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 30,
+      "id": "T2-Q035",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.6",
+      "kind": "S",
+      "correct_terms": [
+        "durable"
+      ],
+      "option_terms": [
+        "httptrigger",
+        "function",
+        "durable",
+        "durabletimeout"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 31,
+      "id": "T2-Q036",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.5",
+      "kind": "M2",
+      "correct_terms": [
+        "trigger",
+        "binding"
+      ],
+      "option_terms": [
+        "premiumplan",
+        "trigger",
+        "httptrigger",
+        "durable",
+        "binding"
+      ],
+      "correct_indices": [
+        2,
+        5
+      ]
+    },
+    {
+      "question": 32,
+      "id": "T2-Q037",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.6",
+      "kind": "M2",
+      "correct_terms": [
+        "premiumplan",
+        "funcidentity"
+      ],
+      "option_terms": [
+        "httptrigger",
+        "durable",
+        "consumptionplan",
+        "premiumplan",
+        "funcidentity"
+      ],
+      "correct_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "question": 33,
+      "id": "T2-Q038",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "O",
+      "correct_terms": [
+        "seqmsg"
+      ],
+      "option_terms": [
+        "seqmsgbad2",
+        "seqmsg",
+        "seqmsgbad3",
+        "seqmsgbad1"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 34,
+      "id": "T2-Q039",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "S",
+      "correct_terms": [
+        "keyvault"
+      ],
+      "option_terms": [
+        "appconfig",
+        "versioned",
+        "appsetting",
+        "keyvault"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 35,
+      "id": "T2-Q041",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "S",
+      "correct_terms": [
+        "appconfig"
+      ],
+      "option_terms": [
+        "appconfig",
+        "labels",
+        "keyvault",
+        "appconfigkvref"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 36,
+      "id": "T2-Q042",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "S",
+      "correct_terms": [
+        "appconfigrefresh"
+      ],
+      "option_terms": [
+        "appconfigrefresh",
+        "otelsampling",
+        "deployfunc",
+        "labels"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 37,
+      "id": "T2-Q043",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.3",
+      "kind": "S",
+      "correct_terms": [
+        "otel"
+      ],
+      "option_terms": [
+        "diagnostic",
+        "kql",
+        "appinsights",
+        "otel"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 38,
+      "id": "T2-Q044",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "S",
+      "correct_terms": [
+        "kqlproject"
+      ],
+      "option_terms": [
+        "kqlproject",
+        "kqlsummarize",
+        "kqlmaterialize",
+        "kqltables"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 39,
+      "id": "T2-Q045",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "S",
+      "correct_terms": [
+        "kqlsummarize"
+      ],
+      "option_terms": [
+        "kqlproject",
+        "kqlsummarize",
+        "kqlmaterialize",
+        "alert"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 40,
+      "id": "T2-Q046",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.5",
+      "kind": "S",
+      "correct_terms": [
+        "rbac"
+      ],
+      "option_terms": [
+        "rbac",
+        "keyvault",
+        "appsetting",
+        "managedidentity"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 41,
+      "id": "T2-Q047",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "O",
+      "correct_terms": [
+        "seqeg"
+      ],
+      "option_terms": [
+        "seqegbad3",
+        "seqeg",
+        "seqegbad2",
+        "seqegbad1"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 42,
+      "id": "T2-Q048",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.3",
+      "kind": "M2",
+      "correct_terms": [
+        "idempotent",
+        "maxdelivery"
+      ],
+      "option_terms": [
+        "idempotent",
+        "duplicate",
+        "maxdelivery",
+        "sbsession",
+        "randdelete"
+      ],
+      "correct_indices": [
+        1,
+        3
+      ]
+    },
+    {
+      "question": 43,
+      "id": "T2-Q049",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.3",
+      "kind": "M2",
+      "correct_terms": [
+        "otel",
+        "propagatetrace"
+      ],
+      "option_terms": [
+        "propagatetrace",
+        "kql",
+        "otelsampling",
+        "diagnostic",
+        "otel"
+      ],
+      "correct_indices": [
+        1,
+        5
+      ]
+    },
+    {
+      "question": 44,
+      "id": "T2-Q050",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.5",
+      "kind": "S",
+      "correct_terms": [
+        "privateendpoint"
+      ],
+      "option_terms": [
+        "managedidentity",
+        "diagnostic",
+        "privateendpoint",
+        "rbac"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 45,
+      "id": "T2-Q009",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.7",
+      "kind": "S",
+      "correct_terms": [
+        "connectivity"
+      ],
+      "option_terms": [
+        "privateendpoint",
+        "loganalytics",
+        "privatezone",
+        "connectivity"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 46,
+      "id": "T2-Q031",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.3",
+      "kind": "S",
+      "correct_terms": [
+        "dlq"
+      ],
+      "option_terms": [
+        "dlq",
+        "randdelete",
+        "duplicate",
+        "maxdelivery"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 47,
+      "id": "T2-Q040",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "S",
+      "correct_terms": [
+        "keyvaultaccess"
+      ],
+      "option_terms": [
+        "managedidentity",
+        "rbac",
+        "keyvaultpurge",
+        "keyvaultaccess"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 48,
+      "id": "T2-Q017",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.6",
+      "kind": "S",
+      "correct_terms": [
+        "pgvector"
+      ],
+      "option_terms": [
+        "redis",
+        "bruteforce",
+        "cosmos",
+        "pgvector"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 49,
+      "id": "T2-Q020",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.9",
+      "kind": "S",
+      "correct_terms": [
+        "metadatafilter"
+      ],
+      "option_terms": [
+        "postfilter",
+        "ivfflat",
+        "hnsw",
+        "metadatafilter"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 50,
+      "id": "T2-Q023",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.12",
+      "kind": "S",
+      "correct_terms": [
+        "redisvector"
+      ],
+      "option_terms": [
+        "redis",
+        "redissession",
+        "rediscachelock",
+        "redisvector"
+      ],
+      "correct_indices": [
+        4
+      ]
+    }
+  ],
+  "3": [
+    {
+      "question": 1,
+      "id": "T3-Q001",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.1",
+      "kind": "S",
+      "correct_terms": [
+        "acrgeo"
+      ],
+      "option_terms": [
+        "acrgeo",
+        "acrretention",
+        "acrtask",
+        "imagetag"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 2,
+      "id": "T3-Q002",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.2",
+      "kind": "S",
+      "correct_terms": [
+        "acrtask"
+      ],
+      "option_terms": [
+        "acrretention",
+        "acrtask",
+        "acrgeo",
+        "acr"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 3,
+      "id": "T3-Q003",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.3",
+      "kind": "S",
+      "correct_terms": [
+        "appservice"
+      ],
+      "option_terms": [
+        "aci",
+        "containerapps",
+        "appservice",
+        "aks"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 4,
+      "id": "T3-Q004",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.3",
+      "kind": "S",
+      "correct_terms": [
+        "kvref"
+      ],
+      "option_terms": [
+        "appsetting",
+        "kvref",
+        "appservice",
+        "slotswap"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 5,
+      "id": "T3-Q005",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.4",
+      "kind": "S",
+      "correct_terms": [
+        "containerappsenv"
+      ],
+      "option_terms": [
+        "containerappsenv",
+        "revision",
+        "keda",
+        "ingress"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 6,
+      "id": "T3-Q006",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.5",
+      "kind": "S",
+      "correct_terms": [
+        "kedascaleidentity"
+      ],
+      "option_terms": [
+        "keda",
+        "kedaqueue",
+        "cooldown",
+        "kedascaleidentity"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 7,
+      "id": "T3-Q007",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.6",
+      "kind": "S",
+      "correct_terms": [
+        "workloadidentity"
+      ],
+      "option_terms": [
+        "keyvault",
+        "probe",
+        "managedidentity",
+        "workloadidentity"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 8,
+      "id": "T3-Q009",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.1",
+      "kind": "M2",
+      "correct_terms": [
+        "acr",
+        "acrretention"
+      ],
+      "option_terms": [
+        "acrretention",
+        "acr",
+        "imagetag",
+        "slotswap",
+        "acrgeo"
+      ],
+      "correct_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "question": 9,
+      "id": "T3-Q010",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.1",
+      "kind": "S",
+      "correct_terms": [
+        "acr"
+      ],
+      "option_terms": [
+        "imagetag",
+        "acr",
+        "acrtask",
+        "acrgeo"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 10,
+      "id": "T3-Q011",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.4",
+      "kind": "M2",
+      "correct_terms": [
+        "revision",
+        "minreplicas"
+      ],
+      "option_terms": [
+        "aci",
+        "revision",
+        "minreplicas",
+        "keda",
+        "hpa"
+      ],
+      "correct_indices": [
+        2,
+        3
+      ]
+    },
+    {
+      "question": 11,
+      "id": "T3-Q012",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.4",
+      "kind": "O",
+      "correct_terms": [
+        "seqcapp"
+      ],
+      "option_terms": [
+        "seqcappbad3",
+        "seqcapp",
+        "seqcappbad2",
+        "seqcappbad1"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 12,
+      "id": "T3-Q013",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.1",
+      "kind": "S",
+      "correct_terms": [
+        "cosmos"
+      ],
+      "option_terms": [
+        "cosmos",
+        "ru",
+        "crosspartition",
+        "cosmosquery"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 13,
+      "id": "T3-Q014",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.2",
+      "kind": "S",
+      "correct_terms": [
+        "indexpolicy"
+      ],
+      "option_terms": [
+        "indexall",
+        "autoscale",
+        "cosmosttl",
+        "indexpolicy"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 14,
+      "id": "T3-Q015",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.3",
+      "kind": "S",
+      "correct_terms": [
+        "sessionconsistency"
+      ],
+      "option_terms": [
+        "eventualconsistency",
+        "sessionconsistency",
+        "strongconsistency",
+        "consistency"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 15,
+      "id": "T3-Q016",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.4",
+      "kind": "S",
+      "correct_terms": [
+        "vectordimension"
+      ],
+      "option_terms": [
+        "vectordimension",
+        "diskann",
+        "vectorcosmos",
+        "bruteforce"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 16,
+      "id": "T3-Q017",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.5",
+      "kind": "S",
+      "correct_terms": [
+        "changefeed"
+      ],
+      "option_terms": [
+        "changefeed",
+        "cosmosbatch",
+        "cosmosttl",
+        "leasestore"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 17,
+      "id": "T3-Q018",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.5",
+      "kind": "S",
+      "correct_terms": [
+        "cosmosbatch"
+      ],
+      "option_terms": [
+        "changefeed",
+        "cosmosttl",
+        "ru",
+        "cosmosbatch"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 18,
+      "id": "T3-Q019",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.6",
+      "kind": "S",
+      "correct_terms": [
+        "pgschema"
+      ],
+      "option_terms": [
+        "pgreplica",
+        "pgcompute",
+        "pgvector",
+        "pgschema"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 19,
+      "id": "T3-Q020",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.7",
+      "kind": "S",
+      "correct_terms": [
+        "pgexplain"
+      ],
+      "option_terms": [
+        "ivfflat",
+        "hnsw",
+        "pgexplain",
+        "pgworkmem"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 20,
+      "id": "T3-Q021",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.8",
+      "kind": "S",
+      "correct_terms": [
+        "pgstorage"
+      ],
+      "option_terms": [
+        "pgworkmem",
+        "pool",
+        "pgcompute",
+        "pgstorage"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 21,
+      "id": "T3-Q023",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.10",
+      "kind": "S",
+      "correct_terms": [
+        "prepared"
+      ],
+      "option_terms": [
+        "pool",
+        "prepared",
+        "pgbouncer",
+        "pgreplica"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 22,
+      "id": "T3-Q024",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.11",
+      "kind": "S",
+      "correct_terms": [
+        "redisinvalidate"
+      ],
+      "option_terms": [
+        "redisclear",
+        "redisevict",
+        "redisinvalidate",
+        "redisttl"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 23,
+      "id": "T3-Q025",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.12",
+      "kind": "S",
+      "correct_terms": [
+        "redisvector"
+      ],
+      "option_terms": [
+        "redisvector",
+        "redissession",
+        "rediscachelock",
+        "redis"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 24,
+      "id": "T3-Q026",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.7",
+      "kind": "M2",
+      "correct_terms": [
+        "hnsw",
+        "ivfflat"
+      ],
+      "option_terms": [
+        "seqscan",
+        "ivfflat",
+        "pgstorage",
+        "pgworkmem",
+        "hnsw"
+      ],
+      "correct_indices": [
+        2,
+        5
+      ]
+    },
+    {
+      "question": 25,
+      "id": "T3-Q027",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.5",
+      "kind": "O",
+      "correct_terms": [
+        "seqcosmos"
+      ],
+      "option_terms": [
+        "seqcosmosbad3",
+        "seqcosmosbad1",
+        "seqcosmosbad2",
+        "seqcosmos"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 26,
+      "id": "T3-Q028",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "S",
+      "correct_terms": [
+        "sbsession"
+      ],
+      "option_terms": [
+        "sbtopic",
+        "peeklock",
+        "sbqueue",
+        "sbsession"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 27,
+      "id": "T3-Q029",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.2",
+      "kind": "S",
+      "correct_terms": [
+        "sbtopic"
+      ],
+      "option_terms": [
+        "queuestorage",
+        "egcustom",
+        "sbqueue",
+        "sbtopic"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 28,
+      "id": "T3-Q031",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.3",
+      "kind": "S",
+      "correct_terms": [
+        "duplicate"
+      ],
+      "option_terms": [
+        "idempotent",
+        "duplicate",
+        "maxdelivery",
+        "sbsession"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 29,
+      "id": "T3-Q033",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.4",
+      "kind": "S",
+      "correct_terms": [
+        "egidentity"
+      ],
+      "option_terms": [
+        "egfilter",
+        "egidentity",
+        "egsystemtopic",
+        "egretry"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 30,
+      "id": "T3-Q034",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.5",
+      "kind": "S",
+      "correct_terms": [
+        "durable"
+      ],
+      "option_terms": [
+        "durable",
+        "trigger",
+        "httptrigger",
+        "durabletimeout"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 31,
+      "id": "T3-Q035",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.6",
+      "kind": "S",
+      "correct_terms": [
+        "durabletimeout"
+      ],
+      "option_terms": [
+        "premiumplan",
+        "httptrigger",
+        "consumptionplan",
+        "durabletimeout"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 32,
+      "id": "T3-Q036",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.2",
+      "kind": "M2",
+      "correct_terms": [
+        "sbfilter",
+        "sbscheduled"
+      ],
+      "option_terms": [
+        "dlq",
+        "sbscheduled",
+        "sbfilter",
+        "sbsession",
+        "duplicate"
+      ],
+      "correct_indices": [
+        2,
+        3
+      ]
+    },
+    {
+      "question": 33,
+      "id": "T3-Q037",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.3",
+      "kind": "M2",
+      "correct_terms": [
+        "dlq",
+        "maxdelivery"
+      ],
+      "option_terms": [
+        "duplicate",
+        "randdelete",
+        "maxdelivery",
+        "sbsession",
+        "dlq"
+      ],
+      "correct_indices": [
+        3,
+        5
+      ]
+    },
+    {
+      "question": 34,
+      "id": "T3-Q038",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.4",
+      "kind": "O",
+      "correct_terms": [
+        "seqeg"
+      ],
+      "option_terms": [
+        "seqegbad1",
+        "seqegbad2",
+        "seqeg",
+        "seqegbad3"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 35,
+      "id": "T3-Q039",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "S",
+      "correct_terms": [
+        "keyvault"
+      ],
+      "option_terms": [
+        "appconfig",
+        "appsetting",
+        "keyvault",
+        "versioned"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 36,
+      "id": "T3-Q041",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "S",
+      "correct_terms": [
+        "appconfigkvref"
+      ],
+      "option_terms": [
+        "keyvault",
+        "appsetting",
+        "appconfigkvref",
+        "appconfig"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 37,
+      "id": "T3-Q042",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "S",
+      "correct_terms": [
+        "labels"
+      ],
+      "option_terms": [
+        "appconfigrefresh",
+        "appconfig",
+        "labels",
+        "versioned"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 38,
+      "id": "T3-Q043",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.3",
+      "kind": "S",
+      "correct_terms": [
+        "otelsampling"
+      ],
+      "option_terms": [
+        "otel",
+        "otelcollector",
+        "otelsampling",
+        "propagatetrace"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 39,
+      "id": "T3-Q045",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "S",
+      "correct_terms": [
+        "kqlmaterialize"
+      ],
+      "option_terms": [
+        "kqlmaterialize",
+        "kqlproject",
+        "kqltables",
+        "kqlsummarize"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 40,
+      "id": "T3-Q046",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.5",
+      "kind": "S",
+      "correct_terms": [
+        "privateendpoint"
+      ],
+      "option_terms": [
+        "privateendpoint",
+        "managedidentity",
+        "privatezone",
+        "rbac"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 41,
+      "id": "T3-Q047",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.5",
+      "kind": "M2",
+      "correct_terms": [
+        "workloadidentity",
+        "rbac"
+      ],
+      "option_terms": [
+        "workloadidentity",
+        "privateendpoint",
+        "monitormetrics",
+        "rbac",
+        "keyvault"
+      ],
+      "correct_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "question": 42,
+      "id": "T3-Q048",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "M2",
+      "correct_terms": [
+        "keyvault",
+        "keyvaultaccess"
+      ],
+      "option_terms": [
+        "labels",
+        "keyvaultaccess",
+        "appconfig",
+        "versioned",
+        "keyvault"
+      ],
+      "correct_indices": [
+        2,
+        5
+      ]
+    },
+    {
+      "question": 43,
+      "id": "T3-Q049",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.3",
+      "kind": "O",
+      "correct_terms": [
+        "seqkv"
+      ],
+      "option_terms": [
+        "seqkvbad1",
+        "seqkv",
+        "seqkvbad2",
+        "seqkvbad3"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 44,
+      "id": "T3-Q050",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "M2",
+      "correct_terms": [
+        "sbsession",
+        "peeklock"
+      ],
+      "option_terms": [
+        "randdelete",
+        "sbsession",
+        "duplicate",
+        "sbfilter",
+        "peeklock"
+      ],
+      "correct_indices": [
+        2,
+        5
+      ]
+    },
+    {
+      "question": 45,
+      "id": "T3-Q022",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.9",
+      "kind": "S",
+      "correct_terms": [
+        "metadatafilter"
+      ],
+      "option_terms": [
+        "metadatafilter",
+        "hnsw",
+        "postfilter",
+        "seqscan"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 46,
+      "id": "T3-Q032",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.4",
+      "kind": "S",
+      "correct_terms": [
+        "egcustom"
+      ],
+      "option_terms": [
+        "egretry",
+        "egcustom",
+        "egfilter",
+        "egsystemtopic"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 47,
+      "id": "T3-Q040",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "S",
+      "correct_terms": [
+        "rotation"
+      ],
+      "option_terms": [
+        "rotation",
+        "keyvaultpurge",
+        "versioned",
+        "managedidentity"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 48,
+      "id": "T3-Q008",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.7",
+      "kind": "S",
+      "correct_terms": [
+        "connectivity"
+      ],
+      "option_terms": [
+        "probe",
+        "diagnostic",
+        "connectivity",
+        "loganalytics"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 49,
+      "id": "T3-Q030",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.3",
+      "kind": "S",
+      "correct_terms": [
+        "maxdelivery"
+      ],
+      "option_terms": [
+        "randdelete",
+        "duplicate",
+        "maxdelivery",
+        "peeklock"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 50,
+      "id": "T3-Q044",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "S",
+      "correct_terms": [
+        "monitormetrics"
+      ],
+      "option_terms": [
+        "alert",
+        "monitormetrics",
+        "kqlsummarize",
+        "kqlproject"
+      ],
+      "correct_indices": [
+        2
+      ]
+    }
+  ],
+  "4": [
+    {
+      "question": 1,
+      "id": "T4-Q001",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.1",
+      "kind": "S",
+      "correct_terms": [
+        "acrgeo"
+      ],
+      "option_terms": [
+        "acrgeo",
+        "acrtask",
+        "acrretention",
+        "imagetag"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 2,
+      "id": "T4-Q002",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.1",
+      "kind": "S",
+      "correct_terms": [
+        "acrretention"
+      ],
+      "option_terms": [
+        "acrtask",
+        "acrretention",
+        "imagetag",
+        "acrgeo"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 3,
+      "id": "T4-Q003",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.2",
+      "kind": "S",
+      "correct_terms": [
+        "acrtask"
+      ],
+      "option_terms": [
+        "acr",
+        "aci",
+        "acrtask",
+        "slotswap"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 4,
+      "id": "T4-Q004",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.3",
+      "kind": "S",
+      "correct_terms": [
+        "appsetting"
+      ],
+      "option_terms": [
+        "appservice",
+        "kvref",
+        "appsetting",
+        "slotswap"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 5,
+      "id": "T4-Q005",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.3",
+      "kind": "S",
+      "correct_terms": [
+        "slotswap"
+      ],
+      "option_terms": [
+        "revision",
+        "slotswap",
+        "imagetag",
+        "appsetting"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 6,
+      "id": "T4-Q006",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.5",
+      "kind": "S",
+      "correct_terms": [
+        "keda"
+      ],
+      "option_terms": [
+        "aci",
+        "keda",
+        "hpa",
+        "cpuonly"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 7,
+      "id": "T4-Q007",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.6",
+      "kind": "S",
+      "correct_terms": [
+        "manifest"
+      ],
+      "option_terms": [
+        "hpa",
+        "acrtask",
+        "manifest",
+        "probe"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 8,
+      "id": "T4-Q008",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.7",
+      "kind": "S",
+      "correct_terms": [
+        "loganalytics"
+      ],
+      "option_terms": [
+        "connectivity",
+        "diagnostic",
+        "appinsights",
+        "loganalytics"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 9,
+      "id": "T4-Q010",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.1",
+      "kind": "M2",
+      "correct_terms": [
+        "acr",
+        "acrtask"
+      ],
+      "option_terms": [
+        "acr",
+        "imagetag",
+        "acrgeo",
+        "slotswap",
+        "acrtask"
+      ],
+      "correct_indices": [
+        1,
+        5
+      ]
+    },
+    {
+      "question": 10,
+      "id": "T4-Q011",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.6",
+      "kind": "M2",
+      "correct_terms": [
+        "manifest",
+        "probe"
+      ],
+      "option_terms": [
+        "probe",
+        "cooldown",
+        "aci",
+        "manifest",
+        "hpa"
+      ],
+      "correct_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "question": 11,
+      "id": "T4-Q012",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.6",
+      "kind": "O",
+      "correct_terms": [
+        "seqaks"
+      ],
+      "option_terms": [
+        "seqaks",
+        "seqaksbad1",
+        "seqaksbad3",
+        "seqaksbad2"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 12,
+      "id": "T4-Q013",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.1",
+      "kind": "S",
+      "correct_terms": [
+        "cosmos"
+      ],
+      "option_terms": [
+        "cosmos",
+        "crosspartition",
+        "cosmosquery",
+        "ru"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 13,
+      "id": "T4-Q014",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.2",
+      "kind": "S",
+      "correct_terms": [
+        "ru"
+      ],
+      "option_terms": [
+        "indexall",
+        "autoscale",
+        "indexpolicy",
+        "ru"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 14,
+      "id": "T4-Q015",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.3",
+      "kind": "S",
+      "correct_terms": [
+        "sessionconsistency"
+      ],
+      "option_terms": [
+        "consistency",
+        "sessionconsistency",
+        "eventualconsistency",
+        "strongconsistency"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 15,
+      "id": "T4-Q016",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.4",
+      "kind": "S",
+      "correct_terms": [
+        "vectorcosmos"
+      ],
+      "option_terms": [
+        "bruteforce",
+        "diskann",
+        "vectordimension",
+        "vectorcosmos"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 16,
+      "id": "T4-Q017",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.5",
+      "kind": "S",
+      "correct_terms": [
+        "leasestore"
+      ],
+      "option_terms": [
+        "leasestore",
+        "duplicate",
+        "cosmosbatch",
+        "changefeed"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 17,
+      "id": "T4-Q018",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.6",
+      "kind": "S",
+      "correct_terms": [
+        "pgschema"
+      ],
+      "option_terms": [
+        "pgreplica",
+        "pgvector",
+        "pgschema",
+        "pgcompute"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 18,
+      "id": "T4-Q019",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.7",
+      "kind": "S",
+      "correct_terms": [
+        "hnsw"
+      ],
+      "option_terms": [
+        "pgworkmem",
+        "seqscan",
+        "hnsw",
+        "ivfflat"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 19,
+      "id": "T4-Q020",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.8",
+      "kind": "S",
+      "correct_terms": [
+        "pgcompute"
+      ],
+      "option_terms": [
+        "pgcompute",
+        "pgstorage",
+        "pgworkmem",
+        "pool"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 20,
+      "id": "T4-Q022",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.10",
+      "kind": "S",
+      "correct_terms": [
+        "pool"
+      ],
+      "option_terms": [
+        "pool",
+        "pgbouncer",
+        "pgreplica",
+        "prepared"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 21,
+      "id": "T4-Q023",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.11",
+      "kind": "S",
+      "correct_terms": [
+        "redisttl"
+      ],
+      "option_terms": [
+        "redisclear",
+        "redisttl",
+        "redisevict",
+        "redisinvalidate"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 22,
+      "id": "T4-Q024",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.12",
+      "kind": "S",
+      "correct_terms": [
+        "redisvector"
+      ],
+      "option_terms": [
+        "redis",
+        "rediscachelock",
+        "redissession",
+        "redisvector"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 23,
+      "id": "T4-Q025",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.1",
+      "kind": "M2",
+      "correct_terms": [
+        "cosmosquery",
+        "cosmosbatch"
+      ],
+      "option_terms": [
+        "cosmosquery",
+        "cosmosbatch",
+        "duplicate",
+        "leasestore",
+        "autoscale"
+      ],
+      "correct_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "question": 24,
+      "id": "T4-Q026",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.7",
+      "kind": "M2",
+      "correct_terms": [
+        "ivfflat",
+        "pgworkmem"
+      ],
+      "option_terms": [
+        "pgstorage",
+        "pgworkmem",
+        "seqscan",
+        "hnsw",
+        "ivfflat"
+      ],
+      "correct_indices": [
+        2,
+        5
+      ]
+    },
+    {
+      "question": 25,
+      "id": "T4-Q027",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.4",
+      "kind": "O",
+      "correct_terms": [
+        "seqcosmos"
+      ],
+      "option_terms": [
+        "seqcosmosbad3",
+        "seqcosmos",
+        "seqcosmosbad2",
+        "seqcosmosbad1"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 26,
+      "id": "T4-Q028",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "S",
+      "correct_terms": [
+        "sbqueue"
+      ],
+      "option_terms": [
+        "eventhubs",
+        "queuestorage",
+        "sbqueue",
+        "sbtopic"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 27,
+      "id": "T4-Q029",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "S",
+      "correct_terms": [
+        "sbsession"
+      ],
+      "option_terms": [
+        "maxdelivery",
+        "duplicate",
+        "peeklock",
+        "sbsession"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 28,
+      "id": "T4-Q030",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.2",
+      "kind": "S",
+      "correct_terms": [
+        "sbtopic"
+      ],
+      "option_terms": [
+        "egcustom",
+        "queuestorage",
+        "sbqueue",
+        "sbtopic"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 29,
+      "id": "T4-Q033",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.4",
+      "kind": "S",
+      "correct_terms": [
+        "egretry"
+      ],
+      "option_terms": [
+        "egfilter",
+        "egcustom",
+        "egidentity",
+        "egretry"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 30,
+      "id": "T4-Q034",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.5",
+      "kind": "S",
+      "correct_terms": [
+        "trigger"
+      ],
+      "option_terms": [
+        "trigger",
+        "durable",
+        "httptrigger",
+        "binding"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 31,
+      "id": "T4-Q035",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.5",
+      "kind": "S",
+      "correct_terms": [
+        "binding"
+      ],
+      "option_terms": [
+        "premiumplan",
+        "trigger",
+        "binding",
+        "durable"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 32,
+      "id": "T4-Q036",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.6",
+      "kind": "S",
+      "correct_terms": [
+        "premiumplan"
+      ],
+      "option_terms": [
+        "premiumplan",
+        "functionslot",
+        "durable",
+        "consumptionplan"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 33,
+      "id": "T4-Q037",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.2",
+      "kind": "M2",
+      "correct_terms": [
+        "sbtopic",
+        "sbfilter"
+      ],
+      "option_terms": [
+        "sbtopic",
+        "sbqueue",
+        "egfilter",
+        "sbfilter",
+        "queuestorage"
+      ],
+      "correct_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "question": 34,
+      "id": "T4-Q038",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.5",
+      "kind": "M2",
+      "correct_terms": [
+        "durable",
+        "trigger"
+      ],
+      "option_terms": [
+        "httptrigger",
+        "consumptionplan",
+        "durable",
+        "binding",
+        "trigger"
+      ],
+      "correct_indices": [
+        3,
+        5
+      ]
+    },
+    {
+      "question": 35,
+      "id": "T4-Q039",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "O",
+      "correct_terms": [
+        "seqmsg"
+      ],
+      "option_terms": [
+        "seqmsgbad1",
+        "seqmsgbad3",
+        "seqmsg",
+        "seqmsgbad2"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 36,
+      "id": "T4-Q040",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "S",
+      "correct_terms": [
+        "keyvault"
+      ],
+      "option_terms": [
+        "keyvault",
+        "versioned",
+        "appconfig",
+        "appsetting"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 37,
+      "id": "T4-Q041",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "S",
+      "correct_terms": [
+        "keyvaultaccess"
+      ],
+      "option_terms": [
+        "managedidentity",
+        "keyvaultpurge",
+        "rbac",
+        "keyvaultaccess"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 38,
+      "id": "T4-Q042",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "S",
+      "correct_terms": [
+        "appconfig"
+      ],
+      "option_terms": [
+        "appconfig",
+        "appconfigrefresh",
+        "keyvault",
+        "labels"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 39,
+      "id": "T4-Q043",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "S",
+      "correct_terms": [
+        "appconfigrefresh"
+      ],
+      "option_terms": [
+        "labels",
+        "versioned",
+        "appconfigrefresh",
+        "deployfunc"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 40,
+      "id": "T4-Q044",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.3",
+      "kind": "S",
+      "correct_terms": [
+        "otel"
+      ],
+      "option_terms": [
+        "diagnostic",
+        "otel",
+        "appinsights",
+        "kql"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 41,
+      "id": "T4-Q047",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.5",
+      "kind": "S",
+      "correct_terms": [
+        "rbac"
+      ],
+      "option_terms": [
+        "privateendpoint",
+        "rbac",
+        "managedidentity",
+        "keyvault"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 42,
+      "id": "T4-Q048",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.3",
+      "kind": "M2",
+      "correct_terms": [
+        "otel",
+        "propagatetrace"
+      ],
+      "option_terms": [
+        "propagatetrace",
+        "otelsampling",
+        "otel",
+        "diagnostic",
+        "kql"
+      ],
+      "correct_indices": [
+        1,
+        3
+      ]
+    },
+    {
+      "question": 43,
+      "id": "T4-Q049",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "M2",
+      "correct_terms": [
+        "keyvault",
+        "managedidentity"
+      ],
+      "option_terms": [
+        "managedidentity",
+        "labels",
+        "keyvault",
+        "versioned",
+        "appconfig"
+      ],
+      "correct_indices": [
+        1,
+        3
+      ]
+    },
+    {
+      "question": 44,
+      "id": "T4-Q050",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "O",
+      "correct_terms": [
+        "seqkv"
+      ],
+      "option_terms": [
+        "seqkvbad2",
+        "seqkvbad1",
+        "seqkvbad3",
+        "seqkv"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 45,
+      "id": "T4-Q021",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.9",
+      "kind": "S",
+      "correct_terms": [
+        "metadatafilter"
+      ],
+      "option_terms": [
+        "seqscan",
+        "postfilter",
+        "metadatafilter",
+        "hnsw"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 46,
+      "id": "T4-Q031",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.3",
+      "kind": "S",
+      "correct_terms": [
+        "dlq"
+      ],
+      "option_terms": [
+        "maxdelivery",
+        "dlq",
+        "duplicate",
+        "randdelete"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 47,
+      "id": "T4-Q046",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "S",
+      "correct_terms": [
+        "kqlsummarize"
+      ],
+      "option_terms": [
+        "kqlproject",
+        "kqlsummarize",
+        "kqlmaterialize",
+        "kqltables"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 48,
+      "id": "T4-Q009",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.7",
+      "kind": "S",
+      "correct_terms": [
+        "connectivity"
+      ],
+      "option_terms": [
+        "privateendpoint",
+        "connectivity",
+        "probe",
+        "privatezone"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 49,
+      "id": "T4-Q032",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.4",
+      "kind": "S",
+      "correct_terms": [
+        "egfilter"
+      ],
+      "option_terms": [
+        "sbfilter",
+        "duplicate",
+        "egretry",
+        "egfilter"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 50,
+      "id": "T4-Q045",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "S",
+      "correct_terms": [
+        "kql"
+      ],
+      "option_terms": [
+        "kql",
+        "monitormetrics",
+        "kqlsummarize",
+        "kqlproject"
+      ],
+      "correct_indices": [
+        1
+      ]
+    }
+  ],
+  "5": [
+    {
+      "question": 1,
+      "id": "T5-Q001",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.1",
+      "kind": "S",
+      "correct_terms": [
+        "acr"
+      ],
+      "option_terms": [
+        "acrretention",
+        "acr",
+        "acrtask",
+        "imagetag"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 2,
+      "id": "T5-Q002",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.2",
+      "kind": "S",
+      "correct_terms": [
+        "acrtask"
+      ],
+      "option_terms": [
+        "acr",
+        "slotswap",
+        "acrgeo",
+        "acrtask"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 3,
+      "id": "T5-Q003",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.3",
+      "kind": "S",
+      "correct_terms": [
+        "appservice"
+      ],
+      "option_terms": [
+        "aci",
+        "containerapps",
+        "aks",
+        "appservice"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 4,
+      "id": "T5-Q004",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.3",
+      "kind": "S",
+      "correct_terms": [
+        "kvref"
+      ],
+      "option_terms": [
+        "kvref",
+        "appsetting",
+        "slotswap",
+        "appservice"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 5,
+      "id": "T5-Q005",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.4",
+      "kind": "S",
+      "correct_terms": [
+        "revision"
+      ],
+      "option_terms": [
+        "slotswap",
+        "revision",
+        "keda",
+        "ingress"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 6,
+      "id": "T5-Q006",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.5",
+      "kind": "S",
+      "correct_terms": [
+        "cooldown"
+      ],
+      "option_terms": [
+        "cooldown",
+        "minreplicas",
+        "keda",
+        "hpa"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 7,
+      "id": "T5-Q007",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.6",
+      "kind": "S",
+      "correct_terms": [
+        "manifest"
+      ],
+      "option_terms": [
+        "manifest",
+        "aci",
+        "probe",
+        "hpa"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 8,
+      "id": "T5-Q009",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.7",
+      "kind": "S",
+      "correct_terms": [
+        "loganalytics"
+      ],
+      "option_terms": [
+        "diagnostic",
+        "connectivity",
+        "loganalytics",
+        "appinsights"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 9,
+      "id": "T5-Q010",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.4",
+      "kind": "M2",
+      "correct_terms": [
+        "revision",
+        "minreplicas"
+      ],
+      "option_terms": [
+        "minreplicas",
+        "revision",
+        "ingress",
+        "cooldown",
+        "hpa"
+      ],
+      "correct_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "question": 10,
+      "id": "T5-Q011",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.5",
+      "kind": "M2",
+      "correct_terms": [
+        "keda",
+        "kedaqueue"
+      ],
+      "option_terms": [
+        "hpa",
+        "keda",
+        "cpuonly",
+        "kedaqueue",
+        "aci"
+      ],
+      "correct_indices": [
+        2,
+        4
+      ]
+    },
+    {
+      "question": 11,
+      "id": "T5-Q012",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.4",
+      "kind": "O",
+      "correct_terms": [
+        "seqcapp"
+      ],
+      "option_terms": [
+        "seqcappbad2",
+        "seqcappbad1",
+        "seqcapp",
+        "seqcappbad3"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 12,
+      "id": "T5-Q013",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.1",
+      "kind": "S",
+      "correct_terms": [
+        "crosspartition"
+      ],
+      "option_terms": [
+        "cosmosquery",
+        "ru",
+        "indexpolicy",
+        "crosspartition"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 13,
+      "id": "T5-Q014",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.1",
+      "kind": "S",
+      "correct_terms": [
+        "cosmosquery"
+      ],
+      "option_terms": [
+        "autoscale",
+        "cosmosquery",
+        "leasestore",
+        "cosmosbatch"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 14,
+      "id": "T5-Q015",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.2",
+      "kind": "S",
+      "correct_terms": [
+        "indexpolicy"
+      ],
+      "option_terms": [
+        "cosmosttl",
+        "ru",
+        "indexall",
+        "indexpolicy"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 15,
+      "id": "T5-Q016",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.3",
+      "kind": "S",
+      "correct_terms": [
+        "eventualconsistency"
+      ],
+      "option_terms": [
+        "strongconsistency",
+        "consistency",
+        "eventualconsistency",
+        "sessionconsistency"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 16,
+      "id": "T5-Q017",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.5",
+      "kind": "S",
+      "correct_terms": [
+        "changefeed"
+      ],
+      "option_terms": [
+        "leasestore",
+        "changefeed",
+        "duplicate",
+        "cosmosbatch"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 17,
+      "id": "T5-Q018",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.6",
+      "kind": "S",
+      "correct_terms": [
+        "pgvector"
+      ],
+      "option_terms": [
+        "pgvector",
+        "redis",
+        "bruteforce",
+        "cosmos"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 18,
+      "id": "T5-Q019",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.7",
+      "kind": "S",
+      "correct_terms": [
+        "ivfflat"
+      ],
+      "option_terms": [
+        "seqscan",
+        "ivfflat",
+        "pgstorage",
+        "hnsw"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 19,
+      "id": "T5-Q020",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.8",
+      "kind": "S",
+      "correct_terms": [
+        "pgstorage"
+      ],
+      "option_terms": [
+        "pool",
+        "pgworkmem",
+        "pgstorage",
+        "pgcompute"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 20,
+      "id": "T5-Q022",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.10",
+      "kind": "S",
+      "correct_terms": [
+        "pgbouncer"
+      ],
+      "option_terms": [
+        "pgbouncer",
+        "pool",
+        "pgreplica",
+        "prepared"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 21,
+      "id": "T5-Q023",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.11",
+      "kind": "S",
+      "correct_terms": [
+        "redisinvalidate"
+      ],
+      "option_terms": [
+        "redisclear",
+        "redisevict",
+        "redisttl",
+        "redisinvalidate"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 22,
+      "id": "T5-Q024",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.12",
+      "kind": "S",
+      "correct_terms": [
+        "redissession"
+      ],
+      "option_terms": [
+        "redisvector",
+        "redis",
+        "redissession",
+        "rediscachelock"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 23,
+      "id": "T5-Q025",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.6",
+      "kind": "M2",
+      "correct_terms": [
+        "pgschema",
+        "metadatafilter"
+      ],
+      "option_terms": [
+        "pgcompute",
+        "pgschema",
+        "seqscan",
+        "metadatafilter",
+        "postfilter"
+      ],
+      "correct_indices": [
+        2,
+        4
+      ]
+    },
+    {
+      "question": 24,
+      "id": "T5-Q026",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.11",
+      "kind": "M2",
+      "correct_terms": [
+        "redis",
+        "redisvector"
+      ],
+      "option_terms": [
+        "rediscachelock",
+        "redis",
+        "redisvector",
+        "redisevict",
+        "redisttl"
+      ],
+      "correct_indices": [
+        2,
+        3
+      ]
+    },
+    {
+      "question": 25,
+      "id": "T5-Q027",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.7",
+      "kind": "O",
+      "correct_terms": [
+        "seqpg"
+      ],
+      "option_terms": [
+        "seqpgbad3",
+        "seqpgbad2",
+        "seqpg",
+        "seqpgbad1"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 26,
+      "id": "T5-Q028",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "S",
+      "correct_terms": [
+        "sbqueue"
+      ],
+      "option_terms": [
+        "queuestorage",
+        "sbqueue",
+        "eventhubs",
+        "sbtopic"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 27,
+      "id": "T5-Q029",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.2",
+      "kind": "S",
+      "correct_terms": [
+        "sbtopic"
+      ],
+      "option_terms": [
+        "queuestorage",
+        "sbtopic",
+        "egcustom",
+        "sbqueue"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 28,
+      "id": "T5-Q030",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.3",
+      "kind": "S",
+      "correct_terms": [
+        "idempotent"
+      ],
+      "option_terms": [
+        "idempotent",
+        "dlq",
+        "maxdelivery",
+        "duplicate"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 29,
+      "id": "T5-Q033",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.4",
+      "kind": "S",
+      "correct_terms": [
+        "egretry"
+      ],
+      "option_terms": [
+        "egidentity",
+        "egcustom",
+        "egfilter",
+        "egretry"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 30,
+      "id": "T5-Q034",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.5",
+      "kind": "S",
+      "correct_terms": [
+        "trigger"
+      ],
+      "option_terms": [
+        "durable",
+        "binding",
+        "trigger",
+        "httptrigger"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 31,
+      "id": "T5-Q035",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.6",
+      "kind": "S",
+      "correct_terms": [
+        "consumptionplan"
+      ],
+      "option_terms": [
+        "premiumplan",
+        "consumptionplan",
+        "functionslot",
+        "durable"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 32,
+      "id": "T5-Q036",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.6",
+      "kind": "S",
+      "correct_terms": [
+        "deployfunc"
+      ],
+      "option_terms": [
+        "premiumplan",
+        "durable",
+        "deployfunc",
+        "functionslot"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 33,
+      "id": "T5-Q037",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.3",
+      "kind": "M2",
+      "correct_terms": [
+        "dlq",
+        "maxdelivery"
+      ],
+      "option_terms": [
+        "duplicate",
+        "randdelete",
+        "maxdelivery",
+        "sbsession",
+        "dlq"
+      ],
+      "correct_indices": [
+        3,
+        5
+      ]
+    },
+    {
+      "question": 34,
+      "id": "T5-Q038",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.4",
+      "kind": "M2",
+      "correct_terms": [
+        "egcustom",
+        "egfilter"
+      ],
+      "option_terms": [
+        "egcustom",
+        "egfilter",
+        "sbfilter",
+        "egidentity",
+        "egretry"
+      ],
+      "correct_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "question": 35,
+      "id": "T5-Q039",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "O",
+      "correct_terms": [
+        "seqmsg"
+      ],
+      "option_terms": [
+        "seqmsgbad2",
+        "seqmsgbad3",
+        "seqmsg",
+        "seqmsgbad1"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 36,
+      "id": "T5-Q040",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "S",
+      "correct_terms": [
+        "keyvaultpurge"
+      ],
+      "option_terms": [
+        "rbac",
+        "keyvault",
+        "keyvaultpurge",
+        "versioned"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 37,
+      "id": "T5-Q041",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "S",
+      "correct_terms": [
+        "rotation"
+      ],
+      "option_terms": [
+        "rotation",
+        "appsetting",
+        "versioned",
+        "keyvaultaccess"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 38,
+      "id": "T5-Q042",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "S",
+      "correct_terms": [
+        "labels"
+      ],
+      "option_terms": [
+        "versioned",
+        "appconfigkvref",
+        "appconfigrefresh",
+        "labels"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 39,
+      "id": "T5-Q044",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.3",
+      "kind": "S",
+      "correct_terms": [
+        "otelcollector"
+      ],
+      "option_terms": [
+        "otel",
+        "otelcollector",
+        "otelsampling",
+        "propagatetrace"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 40,
+      "id": "T5-Q046",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.5",
+      "kind": "S",
+      "correct_terms": [
+        "privateendpoint"
+      ],
+      "option_terms": [
+        "managedidentity",
+        "privateendpoint",
+        "diagnostic",
+        "rbac"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 41,
+      "id": "T5-Q047",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.5",
+      "kind": "S",
+      "correct_terms": [
+        "managedidentity"
+      ],
+      "option_terms": [
+        "managedidentity",
+        "keyvault",
+        "rbac",
+        "appsetting"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 42,
+      "id": "T5-Q048",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.3",
+      "kind": "M2",
+      "correct_terms": [
+        "otel",
+        "propagatetrace"
+      ],
+      "option_terms": [
+        "kql",
+        "propagatetrace",
+        "otelsampling",
+        "otel",
+        "otelcollector"
+      ],
+      "correct_indices": [
+        2,
+        4
+      ]
+    },
+    {
+      "question": 43,
+      "id": "T5-Q049",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "M2",
+      "correct_terms": [
+        "kqlproject",
+        "monitormetrics"
+      ],
+      "option_terms": [
+        "alert",
+        "kqlproject",
+        "kqlsummarize",
+        "monitormetrics",
+        "kqlmaterialize"
+      ],
+      "correct_indices": [
+        2,
+        4
+      ]
+    },
+    {
+      "question": 44,
+      "id": "T5-Q050",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "O",
+      "correct_terms": [
+        "seqkv"
+      ],
+      "option_terms": [
+        "seqkvbad3",
+        "seqkv",
+        "seqkvbad2",
+        "seqkvbad1"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 45,
+      "id": "T5-Q021",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.9",
+      "kind": "S",
+      "correct_terms": [
+        "postfilter"
+      ],
+      "option_terms": [
+        "hnsw",
+        "metadatafilter",
+        "seqscan",
+        "postfilter"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 46,
+      "id": "T5-Q031",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.3",
+      "kind": "S",
+      "correct_terms": [
+        "dlq"
+      ],
+      "option_terms": [
+        "dlq",
+        "randdelete",
+        "sbsession",
+        "maxdelivery"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 47,
+      "id": "T5-Q043",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "S",
+      "correct_terms": [
+        "appconfigkvref"
+      ],
+      "option_terms": [
+        "appconfigkvref",
+        "appsetting",
+        "keyvault",
+        "appconfig"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 48,
+      "id": "T5-Q008",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.7",
+      "kind": "S",
+      "correct_terms": [
+        "connectivity"
+      ],
+      "option_terms": [
+        "loganalytics",
+        "privatezone",
+        "probe",
+        "connectivity"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 49,
+      "id": "T5-Q032",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.4",
+      "kind": "S",
+      "correct_terms": [
+        "egsystemtopic"
+      ],
+      "option_terms": [
+        "egsystemtopic",
+        "egfilter",
+        "egretry",
+        "egcustom"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 50,
+      "id": "T5-Q045",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "S",
+      "correct_terms": [
+        "kqltables"
+      ],
+      "option_terms": [
+        "alert",
+        "kqlproject",
+        "kqlsummarize",
+        "kqltables"
+      ],
+      "correct_indices": [
+        4
+      ]
+    }
+  ],
+  "6": [
+    {
+      "question": 1,
+      "id": "T6-Q001",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.1",
+      "kind": "S",
+      "correct_terms": [
+        "acrgeo"
+      ],
+      "option_terms": [
+        "acrtask",
+        "acrgeo",
+        "imagetag",
+        "acrretention"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 2,
+      "id": "T6-Q002",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.1",
+      "kind": "S",
+      "correct_terms": [
+        "imagetag"
+      ],
+      "option_terms": [
+        "acr",
+        "acrtask",
+        "acrgeo",
+        "imagetag"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 3,
+      "id": "T6-Q003",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.2",
+      "kind": "S",
+      "correct_terms": [
+        "acrtask"
+      ],
+      "option_terms": [
+        "acrtask",
+        "acr",
+        "slotswap",
+        "acrretention"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 4,
+      "id": "T6-Q004",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.3",
+      "kind": "S",
+      "correct_terms": [
+        "appservice"
+      ],
+      "option_terms": [
+        "aci",
+        "aks",
+        "containerapps",
+        "appservice"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 5,
+      "id": "T6-Q005",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.3",
+      "kind": "S",
+      "correct_terms": [
+        "slotswap"
+      ],
+      "option_terms": [
+        "kvref",
+        "revision",
+        "appsetting",
+        "slotswap"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 6,
+      "id": "T6-Q006",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.5",
+      "kind": "S",
+      "correct_terms": [
+        "kedaqueue"
+      ],
+      "option_terms": [
+        "kedaqueue",
+        "hpa",
+        "keda",
+        "cpuonly"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 7,
+      "id": "T6-Q007",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.6",
+      "kind": "S",
+      "correct_terms": [
+        "workloadidentity"
+      ],
+      "option_terms": [
+        "workloadidentity",
+        "managedidentity",
+        "keyvault",
+        "probe"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 8,
+      "id": "T6-Q009",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.7",
+      "kind": "S",
+      "correct_terms": [
+        "diagnostic"
+      ],
+      "option_terms": [
+        "loganalytics",
+        "diagnostic",
+        "appinsights",
+        "monitormetrics"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 9,
+      "id": "T6-Q010",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.1",
+      "kind": "M2",
+      "correct_terms": [
+        "acr",
+        "acrgeo"
+      ],
+      "option_terms": [
+        "acr",
+        "imagetag",
+        "acrgeo",
+        "acrretention",
+        "acrtask"
+      ],
+      "correct_indices": [
+        1,
+        3
+      ]
+    },
+    {
+      "question": 10,
+      "id": "T6-Q011",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.4",
+      "kind": "M2",
+      "correct_terms": [
+        "revision",
+        "minreplicas"
+      ],
+      "option_terms": [
+        "hpa",
+        "revision",
+        "slotswap",
+        "keda",
+        "minreplicas"
+      ],
+      "correct_indices": [
+        2,
+        5
+      ]
+    },
+    {
+      "question": 11,
+      "id": "T6-Q012",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.4",
+      "kind": "O",
+      "correct_terms": [
+        "seqcapp"
+      ],
+      "option_terms": [
+        "seqcappbad3",
+        "seqcapp",
+        "seqcappbad1",
+        "seqcappbad2"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 12,
+      "id": "T6-Q013",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.1",
+      "kind": "S",
+      "correct_terms": [
+        "cosmosquery"
+      ],
+      "option_terms": [
+        "cosmosbatch",
+        "ru",
+        "crosspartition",
+        "cosmosquery"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 13,
+      "id": "T6-Q014",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.2",
+      "kind": "S",
+      "correct_terms": [
+        "indexpolicy"
+      ],
+      "option_terms": [
+        "indexall",
+        "indexpolicy",
+        "ru",
+        "cosmosttl"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 14,
+      "id": "T6-Q015",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.3",
+      "kind": "S",
+      "correct_terms": [
+        "consistency"
+      ],
+      "option_terms": [
+        "sessionconsistency",
+        "consistency",
+        "strongconsistency",
+        "eventualconsistency"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 15,
+      "id": "T6-Q016",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.4",
+      "kind": "S",
+      "correct_terms": [
+        "diskann"
+      ],
+      "option_terms": [
+        "diskann",
+        "vectorcosmos",
+        "cosine",
+        "bruteforce"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 16,
+      "id": "T6-Q017",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.5",
+      "kind": "S",
+      "correct_terms": [
+        "changefeed"
+      ],
+      "option_terms": [
+        "leasestore",
+        "changefeed",
+        "cosmosbatch",
+        "duplicate"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 17,
+      "id": "T6-Q018",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.5",
+      "kind": "O",
+      "correct_terms": [
+        "seqcosmos"
+      ],
+      "option_terms": [
+        "seqcosmosbad1",
+        "seqcosmosbad3",
+        "seqcosmos",
+        "seqcosmosbad2"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 18,
+      "id": "T6-Q019",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.6",
+      "kind": "S",
+      "correct_terms": [
+        "pgvector"
+      ],
+      "option_terms": [
+        "cosmos",
+        "bruteforce",
+        "redis",
+        "pgvector"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 19,
+      "id": "T6-Q020",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.7",
+      "kind": "S",
+      "correct_terms": [
+        "hnsw"
+      ],
+      "option_terms": [
+        "ivfflat",
+        "hnsw",
+        "seqscan",
+        "pgworkmem"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 20,
+      "id": "T6-Q021",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.8",
+      "kind": "S",
+      "correct_terms": [
+        "pgcompute"
+      ],
+      "option_terms": [
+        "pgcompute",
+        "pgstorage",
+        "pgworkmem",
+        "pool"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 21,
+      "id": "T6-Q023",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.10",
+      "kind": "S",
+      "correct_terms": [
+        "pgbouncer"
+      ],
+      "option_terms": [
+        "pool",
+        "prepared",
+        "pgbouncer",
+        "pgreplica"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 22,
+      "id": "T6-Q024",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.11",
+      "kind": "S",
+      "correct_terms": [
+        "redisttl"
+      ],
+      "option_terms": [
+        "redisttl",
+        "redisinvalidate",
+        "redisevict",
+        "redisclear"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 23,
+      "id": "T6-Q026",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.3",
+      "kind": "M2",
+      "correct_terms": [
+        "sessionconsistency",
+        "eventualconsistency"
+      ],
+      "option_terms": [
+        "strongconsistency",
+        "consistency",
+        "ru",
+        "sessionconsistency",
+        "eventualconsistency"
+      ],
+      "correct_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "question": 24,
+      "id": "T6-Q027",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.7",
+      "kind": "M2",
+      "correct_terms": [
+        "ivfflat",
+        "pgworkmem"
+      ],
+      "option_terms": [
+        "pgworkmem",
+        "pgstorage",
+        "ivfflat",
+        "hnsw",
+        "seqscan"
+      ],
+      "correct_indices": [
+        1,
+        3
+      ]
+    },
+    {
+      "question": 25,
+      "id": "T6-Q028",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "S",
+      "correct_terms": [
+        "sbqueue"
+      ],
+      "option_terms": [
+        "sbtopic",
+        "eventhubs",
+        "queuestorage",
+        "sbqueue"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 26,
+      "id": "T6-Q029",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "S",
+      "correct_terms": [
+        "sbsession"
+      ],
+      "option_terms": [
+        "maxdelivery",
+        "duplicate",
+        "peeklock",
+        "sbsession"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 27,
+      "id": "T6-Q030",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.2",
+      "kind": "S",
+      "correct_terms": [
+        "sbfilter"
+      ],
+      "option_terms": [
+        "egfilter",
+        "duplicate",
+        "sbfilter",
+        "sbtopic"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 28,
+      "id": "T6-Q031",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.3",
+      "kind": "S",
+      "correct_terms": [
+        "idempotent"
+      ],
+      "option_terms": [
+        "dlq",
+        "idempotent",
+        "duplicate",
+        "maxdelivery"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 29,
+      "id": "T6-Q033",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.4",
+      "kind": "S",
+      "correct_terms": [
+        "egfilter"
+      ],
+      "option_terms": [
+        "egcustom",
+        "egretry",
+        "sbfilter",
+        "egfilter"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 30,
+      "id": "T6-Q035",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.5",
+      "kind": "S",
+      "correct_terms": [
+        "binding"
+      ],
+      "option_terms": [
+        "binding",
+        "premiumplan",
+        "trigger",
+        "durable"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 31,
+      "id": "T6-Q036",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.6",
+      "kind": "S",
+      "correct_terms": [
+        "premiumplan"
+      ],
+      "option_terms": [
+        "functionslot",
+        "durable",
+        "premiumplan",
+        "consumptionplan"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 32,
+      "id": "T6-Q037",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.2",
+      "kind": "M2",
+      "correct_terms": [
+        "sbtopic",
+        "sbfilter"
+      ],
+      "option_terms": [
+        "queuestorage",
+        "egfilter",
+        "sbtopic",
+        "sbfilter",
+        "sbqueue"
+      ],
+      "correct_indices": [
+        3,
+        4
+      ]
+    },
+    {
+      "question": 33,
+      "id": "T6-Q038",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.5",
+      "kind": "M2",
+      "correct_terms": [
+        "durable",
+        "durabletimeout"
+      ],
+      "option_terms": [
+        "httptrigger",
+        "consumptionplan",
+        "binding",
+        "durabletimeout",
+        "durable"
+      ],
+      "correct_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "question": 34,
+      "id": "T6-Q039",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "O",
+      "correct_terms": [
+        "seqmsg"
+      ],
+      "option_terms": [
+        "seqmsgbad1",
+        "seqmsgbad3",
+        "seqmsg",
+        "seqmsgbad2"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 35,
+      "id": "T6-Q040",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "S",
+      "correct_terms": [
+        "keyvault"
+      ],
+      "option_terms": [
+        "appconfig",
+        "keyvault",
+        "appsetting",
+        "versioned"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 36,
+      "id": "T6-Q041",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "S",
+      "correct_terms": [
+        "rotation"
+      ],
+      "option_terms": [
+        "rotation",
+        "keyvaultaccess",
+        "keyvaultpurge",
+        "versioned"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 37,
+      "id": "T6-Q042",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "S",
+      "correct_terms": [
+        "appconfigrefresh"
+      ],
+      "option_terms": [
+        "appconfigrefresh",
+        "labels",
+        "deployfunc",
+        "versioned"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 38,
+      "id": "T6-Q043",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "S",
+      "correct_terms": [
+        "labels"
+      ],
+      "option_terms": [
+        "appconfig",
+        "versioned",
+        "labels",
+        "appconfigkvref"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 39,
+      "id": "T6-Q044",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.3",
+      "kind": "S",
+      "correct_terms": [
+        "otelsampling"
+      ],
+      "option_terms": [
+        "otelcollector",
+        "otelsampling",
+        "otel",
+        "propagatetrace"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 40,
+      "id": "T6-Q046",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "S",
+      "correct_terms": [
+        "kqlmaterialize"
+      ],
+      "option_terms": [
+        "kqlsummarize",
+        "kqlproject",
+        "alert",
+        "kqlmaterialize"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 41,
+      "id": "T6-Q047",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.5",
+      "kind": "S",
+      "correct_terms": [
+        "rbac"
+      ],
+      "option_terms": [
+        "managedidentity",
+        "diagnostic",
+        "rbac",
+        "privateendpoint"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 42,
+      "id": "T6-Q048",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.3",
+      "kind": "M2",
+      "correct_terms": [
+        "otel",
+        "otelcollector"
+      ],
+      "option_terms": [
+        "otelcollector",
+        "otelsampling",
+        "kql",
+        "diagnostic",
+        "otel"
+      ],
+      "correct_indices": [
+        1,
+        5
+      ]
+    },
+    {
+      "question": 43,
+      "id": "T6-Q049",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.5",
+      "kind": "M2",
+      "correct_terms": [
+        "privateendpoint",
+        "workloadidentity"
+      ],
+      "option_terms": [
+        "keyvault",
+        "privateendpoint",
+        "rbac",
+        "monitormetrics",
+        "workloadidentity"
+      ],
+      "correct_indices": [
+        2,
+        5
+      ]
+    },
+    {
+      "question": 44,
+      "id": "T6-Q050",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "O",
+      "correct_terms": [
+        "seqkv"
+      ],
+      "option_terms": [
+        "seqkvbad3",
+        "seqkvbad1",
+        "seqkv",
+        "seqkvbad2"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 45,
+      "id": "T6-Q022",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.9",
+      "kind": "S",
+      "correct_terms": [
+        "metadatafilter"
+      ],
+      "option_terms": [
+        "metadatafilter",
+        "postfilter",
+        "seqscan",
+        "hnsw"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 46,
+      "id": "T6-Q025",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.12",
+      "kind": "S",
+      "correct_terms": [
+        "redisvector"
+      ],
+      "option_terms": [
+        "redis",
+        "redissession",
+        "redisvector",
+        "rediscachelock"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 47,
+      "id": "T6-Q034",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.4",
+      "kind": "S",
+      "correct_terms": [
+        "egcustom"
+      ],
+      "option_terms": [
+        "egsystemtopic",
+        "egretry",
+        "egfilter",
+        "egcustom"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 48,
+      "id": "T6-Q008",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.7",
+      "kind": "S",
+      "correct_terms": [
+        "connectivity"
+      ],
+      "option_terms": [
+        "privatezone",
+        "connectivity",
+        "probe",
+        "loganalytics"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 49,
+      "id": "T6-Q032",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.3",
+      "kind": "S",
+      "correct_terms": [
+        "dlq"
+      ],
+      "option_terms": [
+        "sbsession",
+        "randdelete",
+        "dlq",
+        "maxdelivery"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 50,
+      "id": "T6-Q045",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "S",
+      "correct_terms": [
+        "kqlproject"
+      ],
+      "option_terms": [
+        "kqlproject",
+        "kqlsummarize",
+        "monitormetrics",
+        "kqltables"
+      ],
+      "correct_indices": [
+        1
+      ]
+    }
+  ]
+}

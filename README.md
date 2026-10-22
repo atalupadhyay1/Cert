@@ -14,6 +14,7 @@ This repository contains Udemy practice-test course packages for Claude/Anthropi
 | **AI-500: Designing and Implementing Multi-Agent AI Solutions** | ✅ [6 sets generated and structurally validated](course/AI-500/README.md) | 6 | 600 |
 | **AWS Certified AI Practitioner (AIF-C01)** | ✅ [6 sets generated and structurally validated](course/AIF-C01/README.md) | 6 | 600 |
 | **Microsoft AI-103: Azure AI Apps and Agents Developer Associate** | ✅ [6 blueprint-weighted 50-item mock exams, mixed item types](course/AI-103/README.md) | 6 | 300 |
+| **Microsoft AI-200: Developing AI Cloud Solutions on Azure** | ✅ [6 blueprint-weighted 50-item mock exams, mixed item types](course/AI-200/README.md) | 6 | 300 |
 | **AB-900: Microsoft 365 Copilot and Agent Administration Fundamentals** | ✅ Set 1 ready (100 Q), Sets 2–6 coming | 6 | 600 (target) |
 | **AZ-900: Microsoft Azure Fundamentals** | ✅ All 6 sets at 100 Q | 6 | 600 |
 
