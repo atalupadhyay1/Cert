@@ -1,8 +1,18 @@
 # 🎓 Practice Test Course Packages
 
-This directory contains Udemy Practice Test Course packages for Claude/Anthropic, Google Cloud, AWS, and Microsoft certifications.
+This directory contains Udemy practice-test course packages for Claude/Anthropic, Google Cloud, and Microsoft certifications.
 
 ## 📦 Courses available
+
+| Course | Sets | Items | Per-item detail |
+|---|---|---:|---|
+| Claude Certified Associate — Foundations (CCAO-F) | 6 | 600 | Per-option explanations, guide references |
+| Claude Certified Developer — Foundations (CCDV-F) | 6 | 600 | Per-option explanations, guide references |
+| Claude Certified Architect — Foundations (CCAR-F) | 6 | 600 | Per-option explanations, guide references |
+| Google Cloud Professional Agentic Architect | 6 | 600 | Per-option explanations, guide references |
+| Google Cloud Generative AI Leader | 6 | 600 | Per-option explanations, guide references |
+| Microsoft AI-300 — Machine Learning Operations Engineer Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
+| Microsoft PL-300 — Power BI Data Analyst Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
 
 ### Claude Certified Associate — Foundations (CCAO-F)
 
@@ -53,68 +63,17 @@ This directory contains Udemy Practice Test Course packages for Claude/Anthropic
 - **Location:** [`course/Google-Gen-AI-Leader/`](Google-Gen-AI-Leader/README.md)
 - **Publication:** Final editorial and account-level import review required; no platform publication performed.
 
-### AI-500: Designing and Implementing Multi-Agent AI Solutions
+### Microsoft AI-300: Operationalizing Machine Learning and Generative AI Solutions
 
-- **Status:** Six 100-question sets generated, with answer explanations and Microsoft Learn references.
-- **Includes:** Udemy CSVs, offline review copies, reference-style landing page, curriculum, validation tools, and ZIP.
-- **Domain allocation per set:** 18 architecture / 33 development / 24 evaluation and monitoring / 25 security and deployment, within the official ranges.
-- **Audience:** Experienced practitioners working with Python, Microsoft Foundry, Azure, and agentic systems.
-- **Location:** [`course/AI-500/`](AI-500/README.md)
-- **Publication:** Final content review and Udemy account import preview required; no platform publication performed.
-
-### AWS Certified AI Practitioner (AIF-C01)
-
-- **Status:** Six 100-question sets generated; automated structural validation passed.
-- **Includes:** Udemy CSVs, offline review copies, explanations, AWS references, listing copy, curriculum, validator, and downloadable ZIP.
-- **Question mix:** 90 single-answer and 10 select-two per set; shared objectives deliberately recur with different scenarios.
-- **Domain weighting:** 20% / 24% / 28% / 14% / 14%.
-- **Location:** [`course/AIF-C01/`](AIF-C01/README.md)
-- **Publication:** Final editorial and Udemy account import review required; no platform upload performed.
-
-### Microsoft AI-103: Azure AI Apps and Agents Developer Associate
-
-- **Status:** Six 100-item mock exams; 600 original items with mixed formats and per-option explanations.
-- **Includes:** Udemy CSVs, offline review copies, comprehensive instructor landing page, curriculum, sources/coverage, QA suite, and reproducible ZIP.
-- **Organization:** Every exam is blueprint-weighted 28/33/13/13/13 across the five published domains (28/33/13/13/13 percent, all inside range); 30 local study-map skills mapped to the guide sub-objectives.
-- **Item mix:** 76 single-choice, 16 multi-select with the selection count stated, 8 ordering items rendered as candidate sequences, and four 3-question case studies per exam.
-- **Baseline:** Official study guide, skills measured as of April 16, 2026; 40–60 questions typical, 120 minutes (140-minute seat), 700/1000 scaled pass, $165 USD, proctored with possible interactive components. A 100-item practice exam is a documented expansion beyond the live 40–60 count, not the live count.
-- **Format boundary:** Hot-area items, drag-and-drop UI, labs, and adaptive problem-solution sets are excluded and disclosed; practice percentages are not scaled exam scores.
-- **Location:** [`course/AI-103/`](AI-103/README.md)
-- **Publication:** Expert technical review and account-level import preview required; no Udemy publication performed.
-
-### Microsoft AI-200: Developing AI Cloud Solutions on Azure
-
-- **Status:** Six 100-item mock exams; 600 original items with mixed formats and per-option explanations.
-- **Includes:** Udemy CSVs, offline review copies, comprehensive instructor landing page, curriculum, sources/coverage, QA suite, and reproducible ZIP.
-- **Organization:** Every exam is blueprint-weighted 24/30/24/22 across the four published domains (24/30/24/22 percent); 30 local study-map skills mapped to the guide sub-objectives.
-- **Item mix:** 76 single-choice, 16 multi-select with the selection count stated, 8 ordering items rendered as candidate sequences, and four 3-question case studies per exam.
-- **Baseline:** Official study guide, skills measured as of October 7, 2026; 40–60 questions typical, 120 minutes, 700/1000 scaled pass, $165 USD, proctored with possible interactive components. A 100-item practice exam is a documented expansion beyond the live 40–60 count, not the live count.
-- **Weighting note:** the guide states 25–30% in the data-domain heading and 30–35% in its skills-at-a-glance list; the package fixes that domain at 30%, the only value inside both, and documents the reasoning.
-- **Format boundary:** Hot-area items, drag-and-drop UI, labs, and adaptive problem-solution sets are excluded and disclosed; practice percentages are not scaled exam scores.
-- **Location:** [`course/AI-200/`](AI-200/README.md)
-- **Publication:** Expert technical review and account-level import preview required; no Udemy publication performed.
-
-### Microsoft AB-730: AI Business Professional
-
-- **Status:** Six 100-item mock exams; 600 original business-user items with mixed formats and per-option explanations.
-- **Includes:** Udemy CSVs, offline review copies, self-contained case CSVs, instructor landing page, curriculum, case-study upload guide, sources/coverage, QA suite, and reproducible ZIP.
-- **Organization:** Every exam is blueprint-weighted 28/24/24/24 across the four published domains (all inside 25–30 / 20–25 / 20–25 / 20–25); 38 local study-map skills mapped to the guide bullets, with one case study from each domain per exam.
+- **Status:** Six 100-item mock exams; 600 original MLOps/GenAIOps items with mixed formats and per-option explanations.
+- **Includes:** Udemy CSVs, offline review copies, self-contained case CSVs, a one-case sample upload, instructor landing page with per-practice-test names and full/trimmed descriptions, curriculum, case-study upload guide, sources/coverage, QA suite, and reproducible ZIP.
+- **Organization:** Every exam is blueprint-weighted 18/29/23/15/15 across the five published domains (18/29/23/15/15 percent, inside 15–20 / 25–30 / 20–25 / 10–15 / 10–15); 36 local study-map skills mapped to the guide sub-objectives, with four 3-question case studies per exam.
 - **Item mix:** 76 single-choice, 16 multi-select with the selection count stated, 8 sequencing items rendered as candidate sequences, and four 3-question case studies per exam.
-- **Baseline:** Official study guide, skills measured as of October 20, 2026 (four domains, including the new agents and Copilot Cowork area); 45-minute proctored assessment with no published item count, 700/1000 scaled pass, $99 USD list, no coding. Each 100-item practice exam is labelled an expanded bank, never as the live item count.
-- **Format boundary:** Hot-area items, drag-and-drop UI, labs, live tenant components, and adaptive problem-solution sets are excluded and disclosed; practice percentages are not scaled exam scores.
-- **Location:** [`course/AB-730/`](AB-730/README.md)
-- **Publication:** Expert business/legal review and account-level import preview required; no Udemy publication performed.
-
-### Microsoft AB-731: AI Transformation Leader
-
-- **Status:** Six 100-item mock exams; 600 original business-leader items with mixed formats and per-option explanations.
-- **Includes:** Udemy CSVs, offline review copies, instructor landing page, curriculum, sources/coverage, QA suite, and reproducible ZIP.
-- **Organization:** Every exam is blueprint-weighted 37/38/25 across the three published domains (37/38/25 percent, all inside 35–40 / 35–40 / 20–25); 30 local study-map skills mapped to the guide sub-objectives.
-- **Item mix:** 76 single-choice, 16 multi-select with the selection count stated, 8 ordering items rendered as candidate sequences, and four 3-question case studies per exam.
-- **Baseline:** Official study guide, skills measured as of July 22, 2026; 45-minute proctored assessment with no published item count, 700/1000 scaled pass, $99 USD, no coding. Each 100-item practice exam is labelled an expanded bank, never as the live item count.
-- **Format boundary:** Hot-area items, drag-and-drop UI, labs, and adaptive problem-solution sets are excluded and disclosed; practice percentages are not scaled exam scores.
-- **Location:** [`course/AB-731/`](AB-731/README.md)
-- **Publication:** Expert business/legal review and account-level import preview required; no Udemy publication performed.
+- **Baseline:** Official study guide, skills measured as of October 15, 2026; 700/1000 scaled pass, proctored. Microsoft publishes no item count and no duration on the study guide, so third-party figures (120 minutes, $165 USD, 40–60 items) are labelled as reported and never relied on. Each 100-item practice exam is labelled an expanded bank.
+- **Configuration note:** items deliberately show Bicep, `az ml` job YAML, GitHub Actions workflows, MLflow, prompt-flow structure, traffic splits, and evaluation settings, because AI-300 tests an engineer's configuration judgement. No item requires writing code from scratch.
+- **Format boundary:** Drag-and-drop UI, hot-area items, live labs, and adaptive problem-solution sets are excluded and disclosed; practice percentages are not scaled exam scores.
+- **Location:** [`course/AI-300/`](AI-300/README.md)
+- **Publication:** Expert technical review and account-level import preview required; no Udemy publication performed.
 
 ### Microsoft PL-300: Power BI Data Analyst Associate
 
@@ -127,64 +86,37 @@ This directory contains Udemy Practice Test Course packages for Claude/Anthropic
 - **Location:** [`course/PL-300/`](PL-300/README.md)
 - **Publication:** Expert technical review and account-level import preview required; no Udemy publication performed.
 
-### 1. **AB-100: Microsoft Certified Agentic AI Business Solutions Architect** *(in progress)*
-
-- **Status:** Scaffolding complete (landing page, curriculum, validator, set READMEs). Practice sets (Sets 1–6) to be built one per turn.
-- **Source:** Microsoft AB-100 study guide (skills measured as of October 14, 2026)
-- **Domain weighting:** 25–30% Plan / 25–30% Design / 40–45% Deploy
-- **Total when complete:** 600 questions across 6 sets
-- **Location:** `course/AB-100/`
-
-### 2. **AB-900: Microsoft 365 Copilot and Agent Administration Fundamentals** *(complete)*
-
-- **Status:** All 6 sets at 100 questions (validated)
-- **Source:** Microsoft AB-900 study guide (skills measured as of October 14, 2026)
-- **Domain weighting:** 30–35% M365 core features / 35–40% data protection & governance / 25–30% Copilot & agent administration
-- **Total:** 600 questions
-- **Location:** `course/` (files at root, not in a subfolder)
-
-### 3. **AZ-900: Microsoft Azure Fundamentals** *(complete)*
-
-- **Status:** All 6 sets at 100 questions (validated)
-- **Source:** Microsoft AZ-900 study guide
-- **Total:** 600 questions
-
 ---
 
 ## 📂 Folder structure (per course)
 
 ```
 course/
-├── AB-100/                ← AB-100 course package (sibling layout)
-│   ├── 01-landing-page/
-│   ├── 02-curriculum/
-│   ├── 03-practice-sets/set-1..6/
-│   └── 04-resources/
-├── 01-landing-page/       ← AB-900 course (lives at course/ root)
-├── 02-curriculum/
-├── 03-practice-sets/      ← 6 practice test sets (Sets 1–6) for AB-900
-│   ├── set-1/             ← 100-question production-ready CSV
-│   ├── set-2/             ← 100 questions
-│   ├── set-3/             ← 100 questions
-│   ├── set-4/             ← 100 questions
-│   ├── set-5/             ← 100 questions
-│   └── set-6/             ← 100 questions
-└── 04-resources/          ← Format spec, validator, summary (shared layout)
-    ├── csv-format-spec.md
-    ├── validate_csv.py
-    └── SUMMARY.md
+├── AI-300/                    ← one folder per certification, identical layout
+│   ├── 01-landing-page/       ← Udemy metadata, per-practice-test names and descriptions
+│   ├── 02-curriculum/         ← study arc, exam-by-exam plan, schedule
+│   ├── 03-practice-sets/      ← set-1 … set-6: CSV, Markdown review, set README,
+│   │                            plus case-embedded-set-N.csv
+│   ├── 04-resources/          ← authoring source, tooling, format spec, sources, docs
+│   └── 05-sample-upload/      ← one case-study block to test platform rendering
+├── PL-300/                    ← same layout
+├── CCAO-F/  CCDV-F/  CCAR-F/  ← Claude practice packages
+├── Google-Agentic-Architect/  ← Google Cloud packages
+├── Google-Gen-AI-Leader/
+└── check_csv_upload.py        ← repo-wide contract check for all course CSVs
 ```
 
 ## ✅ What every question includes
 
 - Per-option inline explanations (one sentence for why correct, one for each distractor)
-- Comprehensive Overall Explanation with a Microsoft Learn reference URL
+- Comprehensive Overall Explanation with the official guide reference, the local study-map skill, and a documentation link
 - Exact domain string from the official exam study guide
 - 1-based comma-separated Correct Answers
-- Mix of multiple-choice and multi-select (where the exam format requires)
+- Mix of multiple-choice and multi-select (where the exam format requires), with the selection count stated
 
 ## 🔧 How to use
 
-1. **Validate:** `python course/04-resources/validate_csv.py course/03-practice-sets/set-*/practice-set-*.csv`
-2. **Upload:** Drop each CSV into Udemy's Bulk Question Upload importer. No manual editing required.
-3. **Verify:** Each set's README lists the topic distribution, sub-topic coverage, and timing.
+1. **Validate one course:** from its `04-resources/` folder run `python build.py`, `python validate.py --report validation-report.json`, `python package.py`, and `python -m unittest test_course`.
+2. **Validate the import contract for every course:** from the repository root run `python course/check_csv_upload.py --all`.
+3. **Upload:** drop each CSV into Udemy's Bulk Question Upload importer, and load the case-study briefs as a lecture resource (see each course's `04-resources/case-study-upload-guide.md`).
+4. **Verify:** each set's README lists the domain distribution and item mix, and states what the package does not reproduce.
