@@ -113,6 +113,24 @@ class SourceTests(unittest.TestCase):
                 self.assertGreaterEqual(pct, low, f'set {n} domain {domain}')
                 self.assertLessEqual(pct, high, f'set {n} domain {domain}')
 
+    def test_sample_case_upload_matches_builder(self):
+        from cases import CASES
+        from build import make_rows
+        path = ROOT / '05-sample-upload/case-study-sample.csv'
+        with path.open(encoding='utf-8-sig', newline='') as f:
+            rows = list(csv.DictReader(f))
+        self.assertEqual(len(rows), 3)
+        self.assertEqual(list(rows[0]), HEADER)
+        source = [r for r in make_rows(4)[0] if r['_case'] == 'Northline Logistics']
+        self.assertEqual(len(source), 3)
+        for n, (written, built) in enumerate(zip(rows, source), 1):
+            self.assertIn(CASES['Northline Logistics'], written['Question'])
+            self.assertTrue(written['Question'].startswith(f'Case study — Northline Logistics ({n} of 3):'))
+            self.assertEqual(written['Correct Answers'], built['Correct Answers'])
+            for i in range(1, 7):
+                self.assertEqual(written[f'Answer Option {i}'], built[f'Answer Option {i}'])
+        self.assertEqual({r['Question Type'] for r in rows}, {'multiple-choice', 'multi-select'})
+
     def test_every_case_study_has_a_scenario(self):
         from cases import CASES
         for n, rows in BANK.items():

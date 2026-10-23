@@ -2,7 +2,7 @@
 
 Udemy has **no case-study question type**. Its practice-test builder offers **Multiple choice**, **Multiple selection**, and **Fill in the blanks**, and bulk upload accepts only `multiple-choice`, `multi-select`, and `fill-in-the-blank` in the `Question Type` column. A case study therefore has to be loaded as *ordinary questions plus the scenario text*, in one of the three routes below.
 
-Each exam in this course has **4 case studies × 3 questions = 12 case items** out of 100.
+Each exam in this course has **4 case studies × 3 questions = 12 case items** out of 100. If you want to see one block render before loading a whole exam, upload `05-sample-upload/case-study-sample.csv` first — see `05-sample-upload/README.md`.
 
 ---
 
