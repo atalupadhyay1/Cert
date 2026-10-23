@@ -94,6 +94,17 @@ This directory contains Udemy Practice Test Course packages for Claude/Anthropic
 - **Location:** [`course/AI-200/`](AI-200/README.md)
 - **Publication:** Expert technical review and account-level import preview required; no Udemy publication performed.
 
+### Microsoft AB-730: AI Business Professional
+
+- **Status:** Six 100-item mock exams; 600 original business-user items with mixed formats and per-option explanations.
+- **Includes:** Udemy CSVs, offline review copies, self-contained case CSVs, instructor landing page, curriculum, case-study upload guide, sources/coverage, QA suite, and reproducible ZIP.
+- **Organization:** Every exam is blueprint-weighted 28/24/24/24 across the four published domains (all inside 25–30 / 20–25 / 20–25 / 20–25); 38 local study-map skills mapped to the guide bullets, with one case study from each domain per exam.
+- **Item mix:** 76 single-choice, 16 multi-select with the selection count stated, 8 sequencing items rendered as candidate sequences, and four 3-question case studies per exam.
+- **Baseline:** Official study guide, skills measured as of October 20, 2026 (four domains, including the new agents and Copilot Cowork area); 45-minute proctored assessment with no published item count, 700/1000 scaled pass, $99 USD list, no coding. Each 100-item practice exam is labelled an expanded bank, never as the live item count.
+- **Format boundary:** Hot-area items, drag-and-drop UI, labs, live tenant components, and adaptive problem-solution sets are excluded and disclosed; practice percentages are not scaled exam scores.
+- **Location:** [`course/AB-730/`](AB-730/README.md)
+- **Publication:** Expert business/legal review and account-level import preview required; no Udemy publication performed.
+
 ### Microsoft AB-731: AI Transformation Leader
 
 - **Status:** Six 100-item mock exams; 600 original business-leader items with mixed formats and per-option explanations.
