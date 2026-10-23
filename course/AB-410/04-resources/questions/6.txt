@@ -1,0 +1,105 @@
+# AB-410 mock exam 6 — cross-industry capstone
+# --- domain 1: 28 (22 single, 4 multi, 2 sequencing)
+1.1|S|reqmap|oneapp,prototypefirst,customfirst|A group requirement spans an order app, an approval chain, a quote document, and a dashboard. What should be decided first?|Mapping requirements to components keeps the whole solution minimal.
+1.1|S|agentlessflow|builtinagent,customagent,prototypefirst|A discount approval must follow the same path every time. What should be used?|A deterministic process belongs in a flow.
+1.2|S|builtinagent|customagent,agentlessflow,pcfcontrol|Sales wants a helper that answers questions about orders. What should be evaluated first?|A built-in agent is maintained by the platform and carries less build cost.
+1.2|S|customagent|builtinagent,agentlessflow,plugincode|The built-in agent cannot reach the order data. What justifies a custom agent?|A custom agent earns its cost when the built-in one cannot reach the data.
+1.3|S|envtype|defaultenv,trialenv,oneenv|A group solution must sit in its own governed boundary. What decides the environment?|Environment type sets the boundary and licensing.
+1.3|S|managedprod|unmanagedprod,prodenvbuild,cloneenv|A release must be removable if a subsidiary rejects it. What should be imported into production?|A managed solution is locked, so it can be upgraded or removed predictably.
+1.3|S|solutionlayers|deletesolution,unmanagedprod,cloneenv|A component behaves unexpectedly after an import. What should be reviewed first?|Layers show which solution last changed a component.
+1.3|M2|publisher,solutionaware|cloneenv,devopsexport,unmanagedprod|A group solution must carry a stable prefix and move as one package. Which two practices apply? Select two.|The publisher fixes the prefix, and the solution is the unit of movement.
+1.4|S|dataworkspace|sharepointlist,standardtable,activitytable|A group order entity has no standard equivalent. Where should it be modelled?|The data workspace is where a new table is created.
+1.5|S|activitytable|standardtable,customtable,textdup|Calls, emails, and visits must appear on one timeline per order. Which table fits?|Activities inherit the timeline and the regarding relationship.
+1.5|S|tableprops|auditon,standardtable,rowsummary|An order must be owned by a team and keep its history. What decides that?|Ownership and auditing are table properties.
+1.6|S|globalchoice|choicecol,lookupcol,textdup|Order types must be identical in the order and quote tables. What should be used?|A global choice keeps one approved list across tables.
+1.6|S|autonumber|textdup,moneycol,calcnow|Every order needs a reference the customer can quote. What should be used?|An auto-number gives a readable, unique reference.
+1.6|M2|choicecol,lookupcol|textdup,moneycol,calcnow|A field must accept approved values and point at the account record. Which two column types apply? Select two.|A choice constrains the value, and a lookup carries the relationship.
+1.7|S|relationship|manytomany,parental,referential|An order has many lines and each line belongs to one order. How should that be modelled?|A one-to-many relationship with the lookup on the child is the standard shape.
+1.7|S|promptcol|rowsummary,calcnow,jswebresource|Each order needs an AI summary of its change history. What should be configured?|A prompt column generates a value per row.
+1.7|S|rowsummary|promptcol,calcnow,businessrule|A supervisor recap must condense the record's own notes. What should be configured?|A row summary condenses the record's own text.
+1.7|M2|promptcol,rowsummary|calcnow,jswebresource,calcformula|An order needs an AI summary per row and a condensed recap. Which two features apply? Select two.|The prompt column generates per row, and the row summary condenses the text.
+1.8|S|publicview|personalview,systemview,mainform|Every unit must see the same list of orders awaiting approval. What should be created?|A public view is shared with everyone who has access to the table.
+1.8|S|systemview|publicview,personalview,mainform|A maker edits the system view to reorder columns for one unit. What is the risk?|The system view is the fallback for every view and every app.
+1.9|S|secrole|teamowner,businessunit,fieldsecurity|A unit manager may see only their unit's orders. What grants that?|A security role grants privileges at a scope.
+1.9|S|fieldsecurity|secrole,teamowner,businessunit|A cost column must stay hidden from sales while the order stays visible. What should be used?|A field security profile hides a column without hiding the record.
+1.9|M2|secrole,fieldsecurity|teamowner,businessunit,publicview|A vendor may read orders but must never read the margin column. Which two controls apply? Select two.|The role grants table privileges, and the profile hides the column.
+1.1|O|seq_agent_ok|seq_agent_b1,seq_agent_b2,seq_agent_b3|A group must decide whether an agent is worth building. Which sequence is correct?|Coverage is tested with a pilot before committing to a custom build.
+1.3|O|seq_env_ok|seq_env_b1,seq_env_b2,seq_env_b3|A group solution must reach the right boundary under control. Which sequence is correct?|The boundary and licence decide the environment type, and the pipeline carries the result.
+# --- domain 2: 28 (22 single, 4 multi, 2 sequencing)
+2.1|S|formcolumns|formtabs,formscript,viewcolumns|An order form carries fifty columns and the team uses ten. What should change?|A form carries the working set of fields for the role.
+2.1|S|formscript|businessrule,plugincode,formtabs|A field must be hidden only on the sales form. What should be used?|A form script affects that form only.
+2.2|S|viewfilter|viewcolumns,viewfetch,publicview|A queue must show only orders awaiting approval this week. What decides that?|The filter decides which records are in the list.
+2.2|S|viewcolumns|viewfilter,viewfetch,publicview|A queue must be readable at a glance. What must be chosen first?|The columns decide what is readable without opening the record.
+2.2|M2|viewfilter,viewcolumns|viewfetch,publicview,personalview|A queue must show the right orders and be readable at a glance. Which two choices apply? Select two.|The filter decides the rows, and the columns make them readable.
+2.3|S|genpage|genpublish,genreplaceform,formtabs|A unit wants a first draft of a page for a brand-new product line. What should be created?|A generative page gets the layout close, and the maker owns the bindings.
+2.3|S|genpublish|genpage,genreplaceform,formscript|A generated page shows a cost column the audience should not read. What was missed?|An unreviewed generated page can bind to data the audience is not entitled to.
+2.4|S|appcompose|sitemap,appaccess,apponlyshare|The order app must expose four forms and three views. What decides that?|The app designer decides which components the app exposes.
+2.4|S|sitemap|appcompose,appaccess,apponlyshare|Users cannot find the approval area anywhere in the app. What should be configured?|The sitemap is the app's menu.
+2.5|S|dashboard|chart,chartfetch,viewfilter|A director wants the trend, the queue, and the count on one page. What should be assembled?|A dashboard composes several components onto one page.
+2.6|S|canvasfromdata|canvastablet,canvasphone,delegate|A field app must exist over two tables by Friday. What should the maker do first?|Generating from data gives working screens immediately.
+2.6|M2|delegate,responsive|localfilter,fixedwidth,collection|A field app must handle a large table and fit a phone and a tablet. Which two practices apply? Select two.|Delegation keeps the query on the source, and responsive containers fit both.
+2.7|S|responsive|fixedwidth,canvastablet,canvasphone|Field staff use phones while the office uses laptops, with one app for both. What should be used?|Responsive containers reflow so one app fits both.
+2.8|S|namedformula|udf,componentlib,copyscreen|The same order-value calculation appears on four screens. What should be used?|A named formula is reused by name instead of copied.
+2.8|S|componentlib|namedformula,udf,copyscreen|Three apps must share one group header. What should be used?|A component library is the reusable, versioned home for a shared control.
+2.8|M2|componentlib,namedformula|udf,copyscreen,fixedwidth|Two apps must share a header control and one pricing formula. Which two practices apply? Select two.|The library shares the control, and the named formula shares the calculation.
+2.9|S|iferror|trace,monitor,teststudio|An order save can fail on a timeout and the user sees nothing. What should be added?|IfError catches the failure and lets the app recover.
+2.9|S|clearme|collection,globalvar,contextvar|A previous user's orders remain visible after a handover. What must be added?|An un-cleared collection keeps the previous user's rows in memory.
+2.9|M2|globalvar,iferror|contextvar,collection,trace|A chosen unit must persist across screens and failures must be recoverable. Which two practices apply? Select two.|A global variable persists, and IfError handles the failure.
+2.10|S|teststudio|monitor,trace,iferror|A change to the order screen must not break the existing flow. What should be run first?|Test Studio captures the screens and formulas a regression would break.
+2.10|S|agentcomponent|agentiframenone,agentdirectapi,customagent|An account manager wants to ask about an order inside the app. What should be added?|The agent component adds a conversational surface to the app.
+2.4|O|seq_modelapp_ok|seq_modelapp_b1,seq_modelapp_b2,seq_modelapp_b3|An order app must be composed and released to the units. Which sequence is correct?|The app is composed from finished components, and access is granted last.
+2.10|O|seq_agentcanvas_ok|seq_agentcanvas_b1,seq_agentcanvas_b2,seq_agentcanvas_b3|A group wants an agent answering order questions inside its app. Which sequence is correct?|The agent is added to a working app, and its behaviour is tested before release.
+# --- domain 3: 44 (32 single, 8 multi, 4 sequencing)
+3.1|S|triggerauto|triggermanual,triggerschedule,triggerhttp|A new order must start the approval chain the moment it is submitted. What should be used?|An automated trigger runs without a user.
+3.1|S|triggermanual|triggerauto,triggerschedule,triggerhttp|A manager decides when to escalate a stuck order. What should be used?|A manual trigger gives the user the decision.
+3.1|S|triggerfilter|triggerevery,triggerauto,triggerhttp|A flow must run only when the order status becomes approved. What should be used?|A column filter stops irrelevant updates.
+3.2|S|connectorstandard|connectorpremium,connectorcustom,connectorexcel|The flow reads and writes Dataverse orders. Which connector fits?|The standard connector covers Dataverse natively.
+3.2|S|connectorcustom|connectorpremium,connectorstandard,connectorexcel|A subsidiary exposes an API with its own authentication. What should be built?|A custom connector wraps an authenticated API as a first-class action.
+3.3|S|approvalsequence|approvalparallel,approvaltype,approvalemail|An order above 50,000 needs the unit lead and then the group director. What should be built?|A second approval after the first adds a second-level sign-off.
+3.3|S|approvalparallel|approvalstart,approvaltype,approvalemail|The finance lead and the operations lead must both approve. What should be configured?|Parallel approvals requiring every response match that rule.
+3.4|S|parsejson|compose,applytoeach,condition|A returned body is opaque and the designer offers no properties. What should be added?|Parse JSON turns an opaque body into typed properties.
+3.4|S|applytoeach|condition,switch,dountil|A response contains sixty order lines that must each be updated. What should be used?|Apply to each iterates the array.
+3.5|S|condition|switch,applytoeach,dountil|A flow takes one of two paths based on the order value. What should be used?|A condition is the explicit branch for two paths.
+3.5|S|dountil|condition,switch,unboundedloop|A call to a slow subsidiary service may need three attempts. What should be used?|Do until repeats until the condition holds, with a count limit to stop a loop.
+3.6|S|runhistory|flowtest,resubmit,staticresult|The flow's error text is generic and no field is named. What exposes the input that failed?|The run history shows each action's inputs and outputs.
+3.6|S|flowtest|runhistory,resubmit,staticresult|A new approval flow must be proven with the real trigger payload. What should be done?|A production-shaped payload proves the expressions resolve.
+3.7|S|prompttemplate|promptblank,promptcopy,promptinputs|An order summary prompt must start from a tested instruction. What should be used?|A template carries a tested instruction and the input contract.
+3.7|S|promptblank|prompttemplate,promptcopy,promptinputs|A novel task has no template and the instruction must be written. What should be done?|A blank prompt is right when no template covers the task.
+3.8|S|promptinputs|promptknowledge,promptmodel,promptcopy|A prompt must be filled with the current order total on every call. What should be added?|Typed inputs become the parameters an app or flow supplies.
+3.8|S|promptknowledge|promptinputs,promptmodel,promptcopy|A summary must cite the approved order policy. What should be attached?|Knowledge retrieval grounds the answer in approved documents.
+3.9|S|promptmodel|promptinputs,promptknowledge,promptcopy|A summarisation prompt is overspecified for its task and costly to run. What should change?|Matching the model to the task controls cost.
+3.9|S|promptcopy|promptapp,promptflow,prompttemplate|The summary instruction is pasted into each app to tune it separately. What is the objection?|Copied prompt text drifts, so the same question gets different answers.
+3.10|S|promptapp|promptflow,promptcopy,promptmodel|An account manager must generate the summary while looking at the order. What should be used?|Consuming the published prompt keeps one instruction behind the app.
+3.10|S|promptflow|promptapp,promptinputs,promptcopy|A recap must be produced inside a scheduled flow and stored on the record. What should be used?|A flow can run a prompt as a step and store the result.
+3.11|S|businessrule|brscope,jswebresource,formscript|A reason must be captured whenever a line discount is applied. What should be configured?|A business rule enforces a condition or required field without code.
+3.11|S|brscope|businessrule,formscript,plugincode|A validation rule is bypassed when records are loaded by a data migration. What should change?|Table scope makes the rule apply to imports and flows.
+3.12|S|bpf|businessrule,calcrollup,bpfbranch|An order must move through five ordered stages with required information. What should be built?|A business process flow guides a record through stages.
+3.12|S|bpfbranch|bpfsame,bpf,calcformula|Two order types need different stages after the first. What should be used?|A branch covers two variants without a second process.
+3.13|S|calcformula|calcrollup,calcplugin,calcnow|An order margin must recalculate from two columns. What should be used?|A formula column evaluates a Power Fx expression.
+3.13|S|calcrollup|calcformula,calcplugin,calcnow|An account needs a running total of open order value. What should be used?|A rollup aggregates related rows on a schedule.
+3.14|S|logicpick|serverplugin,businessrule,calcformula|Some logic must run only on a form, some on every write, and some at read time. What settles the choice?|A mechanism is chosen by where the rule must hold.
+3.1|M2|triggerauto,triggerfilter|triggerschedule,triggerevery,triggerhttp|A flow must start on a new order but only for orders above the threshold. Which two features apply? Select two.|The automated trigger starts the run, and the filter stops irrelevant updates.
+3.3|M2|approvalstart,approvaltype|approvalemail,approvalsequence,triggerschedule|A release sign-off must pause the process and match the approval rule. Which two features apply? Select two.|The approval action pauses the run, and the type encodes who must respond.
+3.5|M2|scope,runafter|condition,switch,concurrency|Three dependent actions must share one failure path. Which two features apply? Select two.|A scope groups the steps, and run after makes the failure branch execute.
+3.6|M2|runhistory,flowtest|resubmit,staticresult,parsejson|A rejected order notification fails, and the corrected version must be proved. Which two practices apply? Select two.|The run history shows the wrong value, and a real payload proves the fix.
+3.7|M2|prompttemplate,promptknowledge|promptblank,promptcopy,promptmodel|A customer reply draft must follow a tested instruction and reference the policy. Which two features apply? Select two.|The template supplies the instruction, and knowledge grounds the answer.
+3.9|M2|promptmodel,promptinputs|promptcopy,promptknowledge,prompttemplate|A prompt must accept the account name at run time and use a model chosen for cost. Which two features apply? Select two.|Inputs are the parameters, and the model choice controls cost and quality.
+3.11|M2|businessrule,serverplugin|jswebresource,formscript,calcnow|A guard must catch bad data entered on forms and data sent by the nightly integration. Which two mechanisms apply? Select two.|A table-scope business rule covers imports, and a synchronous plug-in runs inside the save.
+3.13|M2|calcformula,calcrollup|calcplugin,calcnow,businessrule|A margin must recalculate and an account must show open order value. Which two column types apply? Select two.|A formula column recalculates, and a rollup aggregates children.
+3.1|O|seq_flow_ok|seq_flow_b1,seq_flow_b2,seq_flow_b3|An order approval workflow must reach production without wrong expressions. Which sequence is correct?|The event decides the trigger, and the real payload decides whether the expressions resolve.
+3.3|O|seq_approval_ok|seq_approval_b1,seq_approval_b2,seq_approval_b3|An order must be decided and the decision recorded. Which sequence is correct?|The branch reads the approval outcome, and the record update carries the decision.
+3.6|O|seq_flowdebug_ok|seq_flowdebug_b1,seq_flowdebug_b2,seq_flowdebug_b3|A failing order notification must be fixed with confidence. Which sequence is correct?|The run history turns a symptom into a specific wrong value.
+3.12|O|seq_bpf_ok|seq_bpf_b1,seq_bpf_b2,seq_bpf_b3|An order process must guide users through five stages. Which sequence is correct?|Stages and their required columns define the process.
+# --- case studies: 12 (three per scenario)
+1.3|S|pipeline|cloneenv,devopsexport,trialenv|Case study — Tahoma Winery Group: Four wineries must deploy the same solution repeatably. What should be used?|A pipeline runs the same solution through each stage and records it.
+2.2|S|publicview|personalview,systemview,quickcreate|Case study — Tahoma Winery Group: Every cellar hand must see the same movement list. What should be created?|A public view is shared with everyone who has access to the table.
+3.3|S|approvalstart|approvalemail,approvaltype,approvalsequence|Case study — Tahoma Winery Group: Moving wine between sites needs a recorded decision. What action fits?|The approval action pauses the run and resumes with the outcome.
+1.9|S|businessunit|secrole,teamowner,fieldsecurity|Case study — Munson Sporting Goods: A school district must not see another district's orders. What partitions the data?|Business units partition ownership, which separates districts.
+2.5|S|chart|dashboard,chartfetch,viewfilter|Case study — Munson Sporting Goods: A seasonal trend must reuse the existing view filter. What should be created?|A chart bound to a view reuses that view's filter.
+3.10|S|modelinflow|modelconsume,promptflow,promptapp|Case study — Munson Sporting Goods: A forecast model must be called from the flow and stored on the order. What should be used?|Calling the model from the flow and storing the result makes it auditable.
+2.6|S|delegate|localfilter,collection,canvasfromdata|Case study — Relecloud Telecom: A field app must search a large job table. What must the filter do?|Delegation keeps the query on the source.
+2.3|S|genpage|genpublish,genreplaceform,formtabs|Case study — Relecloud Telecom: Dispatchers want a daily board drafted from a description. What should be used?|A generative page gets the layout close quickly.
+3.4|S|applytoeach|condition,switch,dountil|Case study — Relecloud Telecom: A response contains forty job rows to update individually. What should be used?|Apply to each iterates the array.
+1.5|S|standardtable|activitytable,customtable,textdup|Case study — Bellows College: Applicant contacts must reuse the fields staff already know. What should be used?|Extending the standard table keeps the built-in relationships.
+2.8|S|udf|namedformula,componentlib,copyscreen|Case study — Bellows College: A rubric score calculation takes three inputs. What should be used?|A user-defined function accepts parameters and returns a value for reuse.
+3.11|S|businessrule|brscope,jswebresource,calcnow|Case study — Bellows College: A rejection reason must be required before the decision saves. What should be configured?|A business rule enforces a required field without code.

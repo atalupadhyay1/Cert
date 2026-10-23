@@ -12,13 +12,14 @@ This repository contains Udemy practice-test course packages for Claude/Anthropi
 | **Google Cloud Professional Agentic Architect** | ✅ [6 learning tests generated and structurally validated](course/Google-Agentic-Architect/README.md) | 6 | 600 |
 | **Google Cloud Generative AI Leader** | ✅ [6 topical tests rewritten and structurally validated](course/Google-Gen-AI-Leader/README.md) | 6 | 600 |
 | **Microsoft AI-300: Operationalizing Machine Learning and Generative AI Solutions** | ✅ [6 blueprint-weighted 100-item MLOps/GenAIOps exams, mixed item types](course/AI-300/README.md) | 6 | 600 |
+| **Microsoft AB-410: Building Intelligent Applications** | ✅ [6 blueprint-weighted 100-item app-builder exams, mixed item types](course/AB-410/README.md) | 6 | 600 |
 | **Microsoft PL-300: Power BI Data Analyst Associate** | ✅ [6 blueprint-weighted 100-item analyst exams, mixed item types](course/PL-300/README.md) | 6 | 600 |
 
 ## 📂 Structure
 
 ```
 course/
-├── AI-300/  PL-300/  CCAO-F/  CCDV-F/  CCAR-F/  Google-*/   ← one folder per certification
+├── AB-410/  AI-300/  PL-300/  CCAO-F/  CCDV-F/  CCAR-F/  Google-*/   ← one folder per certification
 │   ├── 01-landing-page/   — Udemy metadata, descriptions, landing page
 │   ├── 02-curriculum/     — Study arc and exam-by-exam plan
 │   ├── 03-practice-sets/  — set-1 … set-6: 100-item CSV, Markdown review, set README
