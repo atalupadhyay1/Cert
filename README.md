@@ -1,11 +1,23 @@
 # Cert — Udemy Practice Test Course Packages
 
-This repository contains complete, production-ready Udemy practice-test course packages for Microsoft certifications.
+This repository contains Udemy practice-test course packages for Claude/Anthropic, Google Cloud, AWS, and Microsoft certifications.
 
 ## 📦 Course packages
 
 | Course | Status | Sets | Total Qs |
 |---|---|---|---|
+| **Claude Certified Associate – Foundations (CCAO-F)** | ✅ [6 learning tests generated and structurally validated](course/CCAO-F/README.md) | 6 | 600 |
+| **Claude Certified Developer – Foundations (CCDV-F)** | ✅ [6 learning tests generated and structurally validated](course/CCDV-F/README.md) | 6 | 600 |
+| **Claude Certified Architect – Foundations (CCAR-F)** | ✅ [6 tests generated and structurally validated](course/CCAR-F/README.md) | 6 | 600 |
+| **Google Cloud Professional Agentic Architect** | ✅ [6 learning tests generated and structurally validated](course/Google-Agentic-Architect/README.md) | 6 | 600 |
+| **Google Cloud Generative AI Leader** | ✅ [6 topical tests rewritten and structurally validated](course/Google-Gen-AI-Leader/README.md) | 6 | 600 |
+| **AI-500: Designing and Implementing Multi-Agent AI Solutions** | ✅ [6 sets generated and structurally validated](course/AI-500/README.md) | 6 | 600 |
+| **AWS Certified AI Practitioner (AIF-C01)** | ✅ [6 sets generated and structurally validated](course/AIF-C01/README.md) | 6 | 600 |
+| **Microsoft AI-103: Azure AI Apps and Agents Developer Associate** | ✅ [6 blueprint-weighted 100-item mock exams, mixed item types](course/AI-103/README.md) | 6 | 600 |
+| **Microsoft AI-200: Developing AI Cloud Solutions on Azure** | ✅ [6 blueprint-weighted 100-item mock exams, mixed item types](course/AI-200/README.md) | 6 | 600 |
+| **Microsoft AB-620: AI Agent Builder Associate** | ✅ [6 blueprint-weighted 100-item builder exams, mixed item types](course/AB-620/README.md) | 6 | 600 |
+| **Microsoft AB-731: AI Transformation Leader** | ✅ [6 blueprint-weighted 100-item business-leader exams, mixed item types](course/AB-731/README.md) | 6 | 600 |
+| **Microsoft PL-300: Power BI Data Analyst Associate** | ✅ [6 blueprint-weighted 100-item analyst exams, mixed item types](course/PL-300/README.md) | 6 | 600 |
 | **AB-900: Microsoft 365 Copilot and Agent Administration Fundamentals** | ✅ Set 1 ready (100 Q), Sets 2–6 coming | 6 | 600 (target) |
 | **AZ-900: Microsoft Azure Fundamentals** | ✅ All 6 sets at 100 Q | 6 | 600 |
 

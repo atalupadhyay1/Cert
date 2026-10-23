@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "sets": 6,
+  "total_questions": 600,
+  "checks": [
+    "17-column header",
+    "100 questions per set",
+    "topical-source domain counts",
+    "four unique options",
+    "single-answer keys",
+    "per-option explanations",
+    "CCDV-F exam-guide references",
+    "source consistency",
+    "normalized duplicate wording",
+    "25 correct answers per slot"
+  ],
+  "limitations": [
+    "No independent factual certification",
+    "No difficulty calibration against real exam",
+    "No exhaustive semantic duplicate detection",
+    "No Udemy account import performed",
+    "No continuous live URL verification"
+  ],
+  "files": [
+    {
+      "file": "03-practice-sets/set-1/practice-set-1.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 100
+      },
+      "domains": {
+        "Applications and Integration": 100
+      }
+    },
+    {
+      "file": "03-practice-sets/set-2/practice-set-2.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 100
+      },
+      "domains": {
+        "Agents and Workflows": 50,
+        "Tools and MCPs": 50
+      }
+    },
+    {
+      "file": "03-practice-sets/set-3/practice-set-3.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 100
+      },
+      "domains": {
+        "Model Selection and Optimization": 100
+      }
+    },
+    {
+      "file": "03-practice-sets/set-4/practice-set-4.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 100
+      },
+      "domains": {
+        "Prompt and Context Engineering": 100
+      }
+    },
+    {
+      "file": "03-practice-sets/set-5/practice-set-5.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 100
+      },
+      "domains": {
+        "Security and Safety": 50,
+        "Claude Code": 25,
+        "Eval, Testing, and Debugging": 25
+      }
+    },
+    {
+      "file": "03-practice-sets/set-6/practice-set-6.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 100
+      },
+      "domains": {
+        "Model Selection and Optimization": 17,
+        "Agents and Workflows": 15,
+        "Prompt and Context Engineering": 11,
+        "Applications and Integration": 33,
+        "Eval, Testing, and Debugging": 3,
+        "Tools and MCPs": 10,
+        "Security and Safety": 8,
+        "Claude Code": 3
+      }
+    }
+  ],
+  "errors": []
+}

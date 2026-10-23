@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "sets": 6,
+  "total_questions": 600,
+  "checks": [
+    "17-column header",
+    "100 questions per set",
+    "topical-source domain counts",
+    "four unique options",
+    "single-answer keys",
+    "per-option explanations",
+    "Google exam-guide references",
+    "source consistency",
+    "normalized duplicate wording",
+    "25 correct answers per slot"
+  ],
+  "limitations": [
+    "No independent factual certification",
+    "No difficulty calibration against real exam",
+    "No exhaustive semantic duplicate detection",
+    "No Udemy account import performed",
+    "No continuous live URL verification"
+  ],
+  "files": [
+    {
+      "file": "03-practice-sets/set-1/practice-set-1.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 100
+      },
+      "domains": {
+        "Fundamentals of gen AI": 59,
+        "Techniques to improve gen AI model output": 31,
+        "Business strategies for a successful gen AI solution": 5,
+        "Google Cloud\u2019s gen AI offerings": 5
+      }
+    },
+    {
+      "file": "03-practice-sets/set-2/practice-set-2.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 100
+      },
+      "domains": {
+        "Fundamentals of gen AI": 7,
+        "Google Cloud\u2019s gen AI offerings": 62,
+        "Business strategies for a successful gen AI solution": 22,
+        "Techniques to improve gen AI model output": 9
+      }
+    },
+    {
+      "file": "03-practice-sets/set-3/practice-set-3.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 100
+      },
+      "domains": {
+        "Techniques to improve gen AI model output": 71,
+        "Google Cloud\u2019s gen AI offerings": 13,
+        "Business strategies for a successful gen AI solution": 10,
+        "Fundamentals of gen AI": 6
+      }
+    },
+    {
+      "file": "03-practice-sets/set-4/practice-set-4.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 100
+      },
+      "domains": {
+        "Business strategies for a successful gen AI solution": 40,
+        "Fundamentals of gen AI": 7,
+        "Google Cloud\u2019s gen AI offerings": 43,
+        "Techniques to improve gen AI model output": 10
+      }
+    },
+    {
+      "file": "03-practice-sets/set-5/practice-set-5.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 100
+      },
+      "domains": {
+        "Business strategies for a successful gen AI solution": 72,
+        "Techniques to improve gen AI model output": 16,
+        "Google Cloud\u2019s gen AI offerings": 12
+      }
+    },
+    {
+      "file": "03-practice-sets/set-6/practice-set-6.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 100
+      },
+      "domains": {
+        "Business strategies for a successful gen AI solution": 90,
+        "Fundamentals of gen AI": 3,
+        "Techniques to improve gen AI model output": 5,
+        "Google Cloud\u2019s gen AI offerings": 2
+      }
+    }
+  ],
+  "errors": []
+}

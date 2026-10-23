@@ -1,0 +1,101 @@
+# Custom agents: identity, orchestration, and registry: 100
+3.6|permfilter,metadatafilter,similarity,dedupe|A shared retrieval index serves users from different business units. What must be applied before results enter the prompt?|Authorization and tenant filters based on the requesting identity.
+3.6|retrievalquality,responsequality,trajectory,costtrack|A new chunking strategy increases retrieved evidence but lowers answer accuracy. What should be investigated?|Whether irrelevant or conflicting passages are crowding out the needed evidence.
+3.6|grounding,chunkid,rerank,similarity|An auditor asks which passage supported a specific sentence. What should the system provide?|A claim-level citation tied to a preserved chunk identifier.
+3.6|freshness,metadatafilter,dedupe,rerank|A superseded regulation remains retrievable because deletion never propagated. What should be fixed?|Source-to-index deletion handling and freshness verification.
+3.6|humanreview,autorater,threshold,grounding|A model-based grader scores answers highly, but experts disagree on edge cases. What should be done?|Calibrate the autorater against human judgments and adjust thresholds.
+3.6|permfilter,pab,iam,gateway|A user can open a document but not a restricted section within it. What should retrieval enforce?|Section-level authorization before content is assembled into context.
+3.6|retrievalquality,responsequality,trajectory,threshold|A team wants to know whether failures come from retrieval or generation. What should it measure separately?|Retrieval relevance and recall alongside response correctness.
+3.6|grounding,responsequality,humanreview,threshold|A well-sourced answer recommends an action requiring approval. What is the next control?|Route the recommendation to the accountable approver before execution.
+3.6|metadatafilter,chunkid,dedupe,freshness|Metadata labels are inconsistent across two source systems. What should happen before relying on them for filtering?|Normalize and validate metadata, or exclude unfilterable content.
+3.7|agentidentity,serviceaccount,iam,pab|An audit shows tool calls attributed to a generic shared account. What should be introduced?|Distinct agent identities with attributable authorization.
+3.7|pab,leastprivilege,iam,vpcsc|An agent needs one bucket but its identity can read the whole project. What should be applied?|A narrow role on the specific resource and a boundary that limits reach.
+3.7|oauth,token,secret,identityprop|A tool must act on behalf of a signed-in user with limited scope. What should be used?|A short-lived, scoped token representing the delegated authority.
+3.7|identityprop,iam,agentidentity,serviceaccount|A downstream service needs to know which end user initiated a request. What must be propagated?|Verified caller identity through the tool chain.
+3.7|vpcsc,egress,gateway,pab|A data perimeter blocks an unexpected service call from the agent. What should the team do?|Investigate the required path and update the boundary through approved change control.
+3.7|leastprivilege,iam,pab,audit|An agent's permissions have grown through temporary fixes. What should be done?|Review and reduce permissions to the current required set.
+3.7|secret,token,oauth,agentidentity|A tool credential is embedded in source code and logs. What should happen?|Move it to managed secret storage, rotate it, and remove it from logs.
+3.7|pab,gateway,registry,iam|An agent can reach a dataset outside its business purpose even though its role permits it. What control addresses this?|A principal access boundary that constrains the identity to approved resources.
+3.8|registry,agentcard,mcp,plugin|A platform team needs an inventory of approved agents and their owners. What should it maintain?|Agent Registry entries with ownership and capability metadata.
+3.8|mcp,agentcard,a2a,skill|An internal API should be callable by several agent frameworks through a standard interface. What should be built?|An MCP server with scoped tools and validation.
+3.8|agentcard,a2a,registry,mcp|A calling agent needs to decide whether a remote specialist can handle a task. What should it consult?|The remote agent's Agent Card and approved registry metadata.
+3.8|plugin,skill,hook,rule|A set of agent capabilities must be versioned and distributed together. What should package them?|A versioned plugin with reviewed dependencies.
+3.8|mcpserver,mcp,gateway,pab|A new MCP server will expose a write operation. What must it enforce?|Caller authorization, input validation, and an audit trail.
+3.8|registry,agentidentity,policy,audit|A deprecated agent still has active credentials and registry visibility. What should be done?|Retire the registry entry and revoke its access.
+3.8|mcp,skill,plugin,agentcard|A server needs to provide callable actions, reference documents, and reusable prompt templates. What MCP primitives map to these?|The MCP primitives map to tools for actions, resources for content, and prompts for reusable templates.
+3.8|agentcard,registry,a2a,mcp|A remote agent advertises a capability that no longer works. What is the consequence?|Callers may route tasks incorrectly, so capability metadata must be maintained and tested.
+3.9|a2a,mcp,agentcard,registry|Two agents from different vendors must exchange a long-running task. What should be evaluated?|A2A task exchange with explicit status and result handling.
+3.9|mcp,a2a,gateway,plugin|An agent needs structured access to an internal database, not another agent. What protocol fits?|MCP tools exposed by a governed server.
+3.9|agentcard,a2a,registry,mcp|A calling agent cannot discover a remote agent's endpoint or skills. What is missing?|Callers need published Agent Card metadata to discover the remote endpoint and supported skills.
+3.9|a2a,oauth,pab,gateway|A remote agent must not exceed the authority delegated by the caller. What should be implemented?|Scoped delegation and authorization at the remote boundary.
+3.9|mcp,mcpserver,plugin,skill|Several agent frameworks need the same tool contract. What should be standardized?|An MCP server exposing a consistent interface.
+3.9|a2a,parallel,sequential,handoff|A task must be delegated to a specialist and the result reconciled. What pattern fits?|An agent-to-agent exchange with explicit result handling.
+3.9|agentcard,registry,audit,gateway|A remote agent's skills change, but callers keep sending obsolete task types. What should be updated?|Its Agent Card and registry entry.
+3.9|mcp,a2a,agentcard,skill|A design says "use A2A to give the agent a weather lookup tool." What is the correction?|Tool access belongs to MCP; A2A is for agent interoperability.
+3.9|a2a,mcp,gateway,registry|A multi-agent system needs a standard way to represent task state and messages. What should be defined?|An interoperable task and message contract within the chosen protocol.
+3.10|router,handoff,parallel,loop|A request must be classified and sent to the right specialist. What pattern fits?|Routing based on the classification result.
+3.10|handoff,router,sequential,graph|A specialist returns partial work to the orchestrator. What should accompany the return?|Verified findings, remaining work, and explicit state.
+3.10|parallel,sequential,graph,loop|Four independent analyses must be combined. What pattern reduces total latency?|Parallel execution with a join before synthesis.
+3.10|graph,sequential,parallel,loop|A process has conditional branches that converge at a human approval. What pattern fits?|A graph with explicit branch and join semantics.
+3.10|loop,sequential,router,parallel|A refinement loop has no maximum iteration count. What is the risk?|Runaway cost and repeated unsafe actions; bound the loop and escalate.
+3.10|router,handoff,parallel,sequential|A high-risk request should not follow the standard automated path. What pattern fits?|Risk-based routing to a controlled human-review path.
+3.10|parallel,sequential,loop,graph|Two agents update the same record concurrently. What should be designed?|Coordinated access with conflict detection or serialization.
+3.10|handoff,session,artifact,memorybank|A multi-stage workflow loses the evidence gathered in earlier stages. What should carry it?|An explicit shared session or state contract with ownership.
+3.11|agentruntime,cloudrun,gkescale,cloudsql|A team wants managed agent hosting with integrated sessions and memory services. What should it evaluate?|Agent Runtime for the supported managed path.
+3.11|cloudrun,agentruntime,gkescale,workstations|A stateless container service must scale to zero between requests. What fits?|Cloud Run with externalized session storage.
+3.11|gkescale,cloudrun,agentruntime,stateless|A workload requires custom networking, node pools, and scheduling. What fits?|GKE with dedicated infrastructure and policies.
+3.11|stateless,sessionstore,redis,artifact|Session data is stored in process memory and lost during rolling deployments. What should change?|Externalize session state to a durable shared store.
+3.11|policy,guardrail,hitl,reviewimpact|Several agents must follow the same tool-use policy. Where should it be enforced?|Shared platform and code controls rather than duplicated prompt text.
+3.11|sessionstore,firestore,cloudsql,redis|A conversational service needs low-latency per-session documents. What storage fits?|A document-oriented store designed for session data.
+3.11|capacity,latencybudget,costtrack,rollout|An agent hits quota limits at peak concurrency. What should be planned?|Capacity headroom, quota increases, and graceful degradation.
+3.11|agentruntime,cloudrun,gkescale,timeout|A batch agent runs long asynchronous jobs. What should be evaluated?|A runtime and execution model suited to long-running work.
+3.6|grounding,responsequality,trajectory,autorater|A response is well cited but omits a required exception stated in a retrieved clause. What failed?|Completeness and faithful use of the retrieved evidence.
+3.6|retrievalquality,responsequality,permfilter,metadatafilter|A relevant document is missing because of an overly strict metadata filter. What should be reviewed?|Whether the filter reflects actual access and applicability requirements.
+3.6|humanreview,autorater,threshold,grounding|An automated groundedness score is high for an answer built on an unreliable source. What is missing?|Source-quality assessment in addition to citation support.
+3.6|permfilter,iam,pab,gateway|A retrieval service caches results without user context. What risk arises?|One user's authorized results may be served to another.
+3.6|chunkid,dedupe,grounding,rerank|Two sources contradict each other and both are valid for different dates. What should the answer do?|Explain the date-dependent difference and cite both.
+3.6|retrievalquality,trajectory,responsequality,costtrack|A team wants to know whether a new chunking strategy caused better answers. What should it isolate?|Retrieval metrics on a fixed query set before judging response quality.
+3.6|metadatafilter,permfilter,freshness,chunkid|A document's classification changed after indexing. What should happen?|Reindex or update metadata promptly so filters reflect the new classification.
+3.6|humanreview,grounding,responsequality,threshold|A high-stakes answer is accurate but recommends an irreversible action. What control remains?|The irreversible recommendation still requires accountable human approval before execution.
+3.7|agentidentity,iam,pab,oauth|A new agent is deployed with the default compute identity. What should change?|Replace the default identity with a dedicated agent identity limited to required permissions.
+3.7|oauth,token,secret,identityprop|A tool needs to call a Google API on behalf of a service, not a user. What identity pattern fits?|A dedicated service identity with short-lived credentials.
+3.7|pab,iam,leastprivilege,vpcsc|A boundary denies a resource the agent legitimately needs in production but not in test. What should be reviewed?|Use environment-specific permissions and boundary scope rather than widening production access.
+3.7|serviceaccount,agentidentity,audit,iam|An agent identity is deleted while its credentials remain valid. What should happen?|Revoke and rotate credentials immediately and verify no residual access.
+3.7|identityprop,oauth,gateway,agentcard|A remote agent calls a local tool but does not pass caller identity. What can go wrong?|The tool cannot apply user-specific authorization and may over-permit.
+3.7|leastprivilege,pab,iam,policy|An agent role includes permissions inherited from a broad group. What should be checked?|Effective permissions, not only directly granted roles.
+3.7|iam,audit,agentidentity,registry|A compliance review needs evidence of every identity used by an agent. What should be available?|Registry and audit records mapping agents to identities and actions.
+3.7|pab,gateway,egress,oauth|A boundary allows access to a dataset through one API but not another. What should be verified?|That all tool paths used by the agent are covered as intended.
+3.8|mcp,mcpserver,agentcard,plugin|An MCP server exposes a tool that returns raw database errors. What should change?|Return safe, structured errors without internal details.
+3.8|registry,agentcard,policy,audit|Two teams register agents with the same name. What should the registry enforce?|Unique identifiers, ownership, and version metadata.
+3.8|mcpserver,mcp,oauth,pab|An MCP server accepts unauthenticated requests from any agent. What should be added?|The server must authenticate callers and authorize each tool invocation separately.
+3.8|skill,plugin,hook,rule|A plugin bundles a tool with broad data access. What should review verify?|The tool's scope, credential use, and necessity.
+3.8|agentcard,a2a,registry,mcp|A remote agent has no published security scheme. What should callers do?|Treat it as untrusted and require an approved trust and auth path.
+3.8|registry,policy,gateway,audit|A registry entry points to a decommissioned endpoint. What should happen?|Update or retire the entry and prevent stale routing.
+3.8|mcp,gateway,modelarmor,dlp|An MCP server returns content from an untrusted external source. What should the agent do?|Treat it as untrusted data and screen or validate before acting on it.
+3.8|plugin,skill,registry,agentcard|A capability is distributed as a plugin without version pinning. What risk arises?|Unexpected behavior changes when dependencies update.
+3.9|a2a,agentcard,oauth,gateway|A remote agent requires delegated user authority. What should the request carry?|A scoped credential and verified caller identity.
+3.9|mcp,a2a,agentcard,registry|An A2A task needs progress updates and a final result. What should the contract define?|Task states, message formats, and terminal outcomes.
+3.9|agentcard,a2a,mcp,plugin|A remote agent claims capabilities broader than its authorization. What is the risk?|Callers may request actions it cannot legally perform, causing failures or misuse.
+3.9|a2a,gateway,pab,policy|A remote agent is outside the organization's trust boundary. What should be enforced?|Explicit trust, authentication, and data-sharing limits.
+3.9|mcp,mcpserver,oauth,identityprop|A tool server must distinguish read and write permissions. What should it enforce?|Per-tool scopes bound to the caller's authorization.
+3.9|a2a,sequential,parallel,handoff|A task delegates to a remote agent that cannot complete it. What should the contract provide?|A clear failure or partial-result state the caller can act on.
+3.9|agentcard,registry,audit,gateway|A remote agent silently changes its endpoint. What should be monitored?|Registry and Agent Card changes with alerting on unexpected updates.
+3.9|mcp,a2a,agentcard,modelarmor|A protocol message contains instructions that attempt to escalate privileges. What should happen?|Reject the request and enforce authorization outside the message content.
+3.10|router,parallel,handoff,graph|A request needs two specialists whose results must be merged. What pattern fits?|Parallel delegation followed by a defined merge step.
+3.10|sequential,parallel,graph,loop|A workflow must stop and wait for a human decision before continuing. What state design fits?|An explicit pending-approval state that blocks the next step.
+3.10|loop,router,parallel,handoff|A retry loop repeatedly sends the same failing request to a specialist. What should change?|Change the input or escalate after a bounded number of attempts.
+3.10|handoff,router,sequential,graph|An agent hands off a task without the original constraints. What should the handoff include?|The goal, constraints, evidence, and current state.
+3.10|graph,parallel,sequential,loop|A workflow's graph has a cycle with no exit condition. What should be added?|A bounded termination condition and failure path.
+3.10|router,handoff,parallel,sequential|A router sends high-risk cases to the same fast path as low-risk ones. What should change?|Route by risk to an appropriate review path.
+3.10|parallel,sequential,graph,handoff|Two parallel agents produce conflicting recommendations. What should the workflow do?|Apply an explicit reconciliation rule or escalate.
+3.10|loop,sequential,parallel,router|A planner and executor exchange tasks indefinitely. What should bound the interaction?|A maximum turn count, progress check, and escalation.
+3.10|handoff,memorybank,session,artifact|A handoff includes a large dataset by pasting it into the prompt. What is the better approach?|Pass a scoped artifact reference with access controls.
+3.11|agentruntime,cloudrun,gkescale,capacity|A managed agent runtime is selected for a simple stateless service. What trade-off should be reviewed?|Whether managed agent features justify the cost and operational model.
+3.11|cloudrun,agentruntime,gkescale,timeout|A request-driven agent exceeds serverless timeout limits during long tools. What should be designed?|Asynchronous work with job status and polling or callbacks.
+3.11|stateless,firestore,redis,sessionstore|A service needs conversation state shared across regions. What should be designed?|A durable, replicated or regional session strategy with consistency rules.
+3.11|policy,gateway,registry,agentidentity|An agent policy is enforced only inside the agent code. What is the risk?|Alternative tool paths may bypass it; enforce at shared platform layers too.
+3.11|capacity,latencybudget,rollout,costtrack|A new agent version increases per-request model calls. What should be evaluated before rollout?|Cost, latency, and quality against the prior baseline.
+3.11|gkescale,cloudrun,agentruntime,cloudsql|A team needs GPUs for self-hosted model inference inside its cluster. What fits?|GKE with appropriate accelerator node pools.
+3.11|sessionstore,redis,bigquery,gcs|A shared cache holds session data without encryption or TTL. What should be configured?|Encryption, access control, and expiry appropriate to the data.
+3.11|agentruntime,cloudrun,stateless,capacity|A managed runtime imposes concurrency limits lower than expected traffic. What should be planned?|Manage concurrency with queueing, backpressure, and approved quota adjustments.
+3.11|policy,guardrail,audit,gateway|An agent bypasses a shared policy by calling a tool directly. What should be changed?|Route tool access through enforced policy controls and restrict direct paths.

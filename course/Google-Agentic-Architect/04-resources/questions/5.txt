@@ -1,0 +1,101 @@
+# Securing and governing agentic workflows: 100
+5.1|oauth,token,serviceaccount,iam|An agent calls a third-party API on behalf of a user. What should secure the call?|A short-lived OAuth 2.0 token scoped to the required operation and audience.
+5.1|token,secret,oauth,audit|A tool token has broad scopes and a one-year lifetime. What should change?|Reduce scope and lifetime to what the workflow actually needs.
+5.1|serviceaccount,agentidentity,iam,pab|An agent runs under a shared service account used by several systems. What is the main problem?|Actions cannot be attributed, and compromise affects every system sharing it.
+5.1|agentidentity,iam,oauth,serviceaccount|A platform wants each deployed agent to have distinct, auditable access. What should it use?|A dedicated managed identity per agent.
+5.1|identityprop,oauth,iam,gateway|A downstream tool must apply the end user's permissions, not the agent's. What should be propagated?|Verified user identity with scoped delegated authority.
+5.1|oauth,token,secret,dlp|An agent requests a token with write access when it only reads. What principle is violated?|The token should carry only the minimum scope needed for the intended read operation.
+5.1|iam,serviceaccount,agentidentity,pab|An agent identity has project-level owner rights because setup was faster. What should happen?|Replace broad roles with narrowly scoped permissions.
+5.1|secret,redact,audit,dlp|A tool credential appears in an agent's prompt template. What should be done?|Remove it, move it to managed secret storage, and rotate it.
+5.1|oauth,identityprop,gateway,pab|A delegated token is accepted by a tool without checking audience or scope. What risk arises?|Token misuse beyond the intended service or action.
+5.1|token,audit,gateway,iam|An agent must call a tool repeatedly during a long task. What token design is appropriate?|Short-lived tokens refreshed through a controlled mechanism.
+5.1|serviceaccount,leastprivilege,iam,vpcsc|A service account can list all storage buckets but needs one. What should be applied?|A role scoped to the specific bucket or object prefix.
+5.1|identityprop,a2a,agentcard,registry|A remote agent needs to know which user authorized a delegated task. What should the request include?|Authenticated caller identity and explicit delegation scope.
+5.1|secret,dlp,redact,cmek|A team wants to avoid storing plaintext API keys in configuration. What should it use?|Secret Manager with access controls and rotation.
+5.1|iam,pab,gateway,audit|Permission changes for an agent are made without review. What control is missing?|Change review and audit for identity and role modifications.
+5.1|oauth,iam,serviceaccount,identityprop|An agent impersonates a user without their consent. What is wrong?|Delegation requires explicit authorization and scoped consent.
+5.1|token,secret,oauth,egress|A tool receives a token in a URL query string that is logged. What should change?|Pass credentials in a protected channel and exclude them from logs.
+5.2|pab,iam,leastprivilege,vpcsc|An agent has a legitimate role but should not reach data outside its business unit. What control fits?|A principal access boundary scoped to approved resources.
+5.2|leastprivilege,pab,iam,audit|An agent's permissions expanded during an incident and were never reduced. What should happen?|Review and remove unnecessary grants after the incident.
+5.2|vpcsc,pab,egress,gateway|A regulated workload must prevent data movement to unauthorized projects. What should be evaluated?|A service perimeter with appropriate ingress and egress rules.
+5.2|pab,gateway,registry,policy|A developer wants to bypass a principal access boundary to finish a task. What should happen?|Do not bypass the control; use the approved exception process.
+5.2|leastprivilege,iam,pab,serviceaccount|An agent can delete logs that would otherwise record its actions. What is the concern?|Separation of duties and tamper-resistant audit are missing.
+5.2|pab,vpcsc,iam,oauth|A principal access boundary is configured but not tested. What should be done?|Verify with representative allowed and denied access attempts.
+5.2|iam,leastprivilege,audit,policy|A role grants access to every dataset in a project. What should be used instead?|Grant resource-level or dataset-level permissions instead of project-wide access.
+5.2|vpcsc,egress,gateway,dlp|An agent must call an approved external API from inside a perimeter. What should be configured?|A documented, narrow egress path through approved controls.
+5.2|pab,agentidentity,serviceaccount,registry|An organization wants boundaries that follow the agent identity across environments. What should it design?|Environment-specific identities and boundaries with consistent policy intent.
+5.2|leastprivilege,pab,iam,capacity|A test agent shares production permissions. What should change?|Separate test identities and permissions from production.
+5.2|gateway,pab,iam,vpcsc|Traffic from an agent to an internal service crosses a boundary unexpectedly. What should be investigated?|Whether the service is in scope and whether the path is approved.
+5.2|iam,audit,leastprivilege,policy|A permission review shows unused grants but no owner. What should be established?|Named ownership and periodic access review.
+5.2|vpcsc,pab,cmek,dlp|A team assumes VPC Service Controls encrypts data at rest. What should be clarified?|Perimeter controls reduce exfiltration paths; encryption requires separate configuration.
+5.2|pab,leastprivilege,gateway,registry|A tool requires access that the boundary denies. What is the correct design response?|Evaluate the requirement and adjust the boundary or tool scope through approval.
+5.2|agentidentity,pab,iam,oauth|An agent's boundary is tied to a human account that changes roles. What risk arises?|Access changes unpredictably; use a dedicated agent identity.
+5.2|leastprivilege,audit,policy,capacity|A temporary elevated grant has no expiry. What should be added?|A time-bound expiry and automatic review.
+5.2|pab,vpcsc,gateway,egress|A boundary allows a broad API but the workflow needs one method. What should be narrowed?|The permitted operation and destination, not only the service.
+5.3|gateway,audit,egress,iam|A security team wants centralized observation of agent-to-tool traffic. What should it deploy?|Agent Gateway with logging and policy enforcement.
+5.3|audit,observability,gateway,dlp|An agent's outbound request contains customer data sent to an unapproved host. What control should catch it?|Egress restrictions and gateway inspection before the request leaves.
+5.3|gateway,pab,oauth,policy|A gateway allows an action because the caller is authenticated. Why is this insufficient?|Authentication does not establish authorization for that specific action.
+5.3|audit,gateway,observability,registry|An investigation needs the sequence of agent tool calls across services. What should be available?|Correlated gateway and trace logs with agent identity.
+5.3|egress,gateway,vpcsc,dlp|An agent can reach any internet host. What should be configured?|An allowlist of approved destinations with monitored egress.
+5.3|gateway,modelarmor,guardrail,hitl|A gateway blocks a request that matches a prompt-injection pattern. What should happen next?|Log the event, return a safe response, and alert if the pattern persists.
+5.3|audit,policy,gateway,reviewimpact|A high-impact tool is called outside business hours. What should the gateway enforce?|Policy-appropriate gating or alerting for the action and time window.
+5.3|gateway,registry,iam,pab|An unregistered agent attempts to call a governed tool. What should happen?|Deny the call and record the attempt.
+5.3|observability,gateway,audit,costtrack|Gateway logs contain full sensitive payloads. What should change?|Log metadata and redacted content under retention policy.
+5.3|gateway,hitl,approval,policy|A tool transfers funds above a threshold. What control should the gateway require?|An approval decision tied to the specific transaction.
+5.3|egress,secret,dlp,gateway|An agent tries to send data to a personal storage endpoint. What should prevent it?|Egress policy and destination allowlisting prevent connections to unapproved external hosts.
+5.3|audit,gateway,registry,agentcard|A remote agent calls a local tool without appearing in inventory. What is missing?|Registry visibility and gateway policy for remote callers.
+5.3|gateway,dlp,modelarmor,policy|A request contains sensitive data that policy forbids sending to an external tool. What should happen?|Inspect and block or redact before the request leaves the boundary.
+5.3|observability,audit,gateway,threshold|A team wants to detect anomalous tool-call volume per agent. What should it monitor?|Per-agent call rates and deviations from baseline.
+5.3|gateway,iam,pab,oauth|A gateway policy references a role that no longer exists. What should be done?|Update the policy and test the affected paths.
+5.3|gateway,registry,policy,audit|A new agent is deployed without gateway policy coverage. What risk arises?|Unmonitored or unauthorized traffic; require registration and policy before deployment.
+5.3|audit,gateway,observability,hitl|A blocked action is never reviewed. What operational gap exists?|No alerting or review path for denied high-risk attempts.
+5.4|modelarmor,guardrail,dlp,gateway|A public-facing agent receives prompts attempting jailbreaks. What layer should screen them?|Model Armor or an equivalent input safety control.
+5.4|dlp,modelarmor,redact,cmek|A response may contain sensitive identifiers that policy forbids exposing. What should screen it?|Sensitive Data Protection inspection and redaction before delivery.
+5.4|registry,policy,gateway,audit|An organization needs to know which agents and tools are approved for use. What should it maintain?|A registry with ownership, capability, and approval status.
+5.4|modelarmor,policy,hitl,guardrail|A model safety filter blocks a legitimate business request. What should the team do?|Review the policy and exception process rather than disable all protections.
+5.4|policy,guardrail,gateway,registry|A written policy says agents must not email external domains. How should it be enforced?|Restrict the tool and egress path in code and gateway policy.
+5.4|dlp,redact,cmek,modelarmor|A dataset contains payment card numbers that must not enter model context. What should be applied?|Detection and de-identification before model exposure.
+5.4|registry,agentcard,policy,audit|A capability is registered without an accountable owner. What risk arises?|No one maintains or retires it, and governance becomes unclear.
+5.4|modelarmor,gateway,guardrail,hitl|A safety control blocks malicious content but not an authorized destructive action. What is the lesson?|Safety filtering and authorization are different layers; enforce both.
+5.4|policy,reviewimpact,approval,audit|An exception to agent policy is granted verbally. What should be done?|Record a formal, time-bound exception with an accountable approver.
+5.4|dlp,redact,modelarmor,token|A response redacts names but leaves account numbers. What should improve?|Complete sensitive-data detection across the relevant categories.
+5.4|registry,policy,gateway,agentidentity|A retired agent remains in the registry with active permissions. What should happen?|Remove or mark it retired and revoke its access.
+5.4|guardrail,modelarmor,policy,hitl|A team wants defense in depth for prompt injection. What combination fits?|Input screening, instruction isolation, least privilege, and approval for high-impact tools.
+5.4|policy,gateway,audit,registry|A policy change is applied to one gateway route only. What should be verified?|All routes and agents covered by the policy intent.
+5.4|modelarmor,dlp,policy,redact|A safety tool returns a confidence score below the threshold. What should the workflow do?|Apply the defined fallback or review path rather than silently continue.
+5.4|cmek,dlp,vpcsc,pab|A compliance requirement specifies customer-managed keys for stored data. What should be configured?|CMEK on the relevant storage services with key lifecycle ownership.
+5.4|registry,agentcard,mcp,plugin|An MCP server is added without registry review. What governance step was skipped?|Approval and metadata review of the new capability.
+5.4|dlp,audit,policy,humanreview|Sensitive-data findings are logged with the raw values. What should change?|Log only the necessary finding metadata, not the sensitive content.
+5.5|guardrail,hitl,approval,policy|An agent can issue refunds up to a high value. What control fits?|Require human approval above a defined threshold.
+5.5|hitl,guardrail,reviewimpact,audit|A human approver receives only "approve refund?" with no context. What should be provided?|The evidence, amount, customer impact, and policy basis for the decision.
+5.5|approval,guardrail,hitl,oauth|An approval is recorded after the action has already executed. What is wrong?|The gate must precede the effect, not document it afterward.
+5.5|guardrail,policy,gateway,hitl|A destructive tool is available to an autonomous agent with no confirmation. What should be added?|A pre-action guardrail requiring explicit confirmation or approval.
+5.5|reviewimpact,hitl,autorater,threshold|An action affects a vulnerable customer group. What review approach fits?|Accountable human review with relevant policy expertise.
+5.5|hitl,guardrail,approval,audit|An approval token can be reused for multiple actions. What should change?|Bind approval to the specific action and make it single-use.
+5.5|guardrail,policy,modelarmor,gateway|A team relies only on prompt instructions to prevent data exfiltration. What is missing?|Technical controls on tools, egress, and authorization.
+5.5|approval,reviewimpact,hitl,registry|A high-risk action has no defined approver. What should be established?|A named accountable role and escalation path.
+5.5|guardrail,hitl,threshold,rollout|An agent's autonomy is increased without changing review controls. What should be done?|Reassess risk and approval thresholds for the new autonomy level.
+5.5|reviewimpact,humanreview,hitl,audit|A reviewer approves an action outside their authority. What control failed?|Approval authority was not verified against the action.
+5.5|guardrail,policy,gateway,dlp|A content filter blocks an entire category of legitimate requests. What should be done?|Tune the policy with evidence and provide an approved exception path.
+5.5|hitl,approval,guardrail,autorater|A system automatically approves actions when a model scores confidence high. Why is this risky?|Model confidence is not authorization or evidence of correctness.
+5.5|guardrail,policy,audit,reviewimpact|A guardrail triggers but the event is not recorded. What should be added?|Audit logging of the trigger, decision, and outcome.
+5.5|hitl,approval,gateway,oauth|A user approves an action through a channel that cannot verify identity. What is missing?|Approval must be authenticated, attributable, and bound to the specific action being approved.
+5.5|guardrail,reviewimpact,policy,threshold|A workflow has more approval steps than risk requires. What should be evaluated?|Whether each control is proportionate and adds real safety.
+5.5|approval,guardrail,hitl,modelarmor|An agent must not send external communications without review. What design fits?|Draft internally, require approval, then send through a controlled tool.
+5.5|reviewimpact,policy,audit,humanreview|A post-incident review finds the agent acted within permissions but against intent. What should change?|Tighten intent-level guardrails, tool scope, and approval criteria.
+5.6|redact,dlp,modelarmor,secret|A prompt includes customer personal data not needed for the task. What should happen?|Minimize or redact the data before it reaches the model.
+5.6|injection,guardrail,modelarmor,hitl|Retrieved content contains instructions to ignore the system prompt. What should the design assume?|Retrieved content is untrusted and cannot grant authority.
+5.6|consent,policy,redact,audit|A personalization feature wants to retain user preferences indefinitely. What should guide the design?|Purpose limitation, consent, and defined retention.
+5.6|secret,redact,cmek,token|A developer pastes an API key into a test prompt. What should happen?|Remove it, rotate the key, and use managed secret storage.
+5.6|egress,gateway,redact,policy|An agent can send retrieved documents to an external summarization service. What should be verified?|Whether the destination and data are approved, with egress and redaction controls.
+5.6|cmek,vpcsc,dlp,pab|A regulation requires control over encryption keys for agent data at rest. What should be configured?|CMEK with documented key lifecycle and access separation.
+5.6|redact,dlp,audit,consent|De-identification removes names but leaves rare combinations of attributes. What risk remains?|Rare combinations of indirect identifiers can still reidentify people after names are removed.
+5.6|injection,guardrail,tool,hitl|A malicious document asks the agent to call a delete tool. What should prevent harm?|Tool authorization and approval requirements outside the document text.
+5.6|consent,policy,redact,registry|A user requests deletion of data remembered by an agent. What should the design support?|Deletion across memory, session, and derived stores under policy.
+5.6|egress,secret,gateway,redact|An agent tries to upload a file to an unapproved bucket. What should block it?|Egress restrictions plus destination authorization prevent data leaving through an unapproved path.
+5.6|dlp,cmek,modelarmor,redact|A response includes a sensitive token that should never be shown. What layer should catch it?|Output inspection and redaction before delivery.
+5.6|injection,policy,guardrail,humanreview|A user instructs the agent to ignore data-access policy for an urgent request. What should happen?|Policy remains in force; escalate through the approved exception path.
+5.6|consent,audit,redact,dlp|A team wants to prove that personal data was minimized in evaluation samples. What should it retain?|Documented minimization decisions and non-sensitive evidence.
+5.6|secret,token,oauth,cmek|A rotation policy for agent credentials is undefined. What should be established?|Ownership, rotation cadence, and emergency revocation procedures.
+5.6|redact,dlp,modelarmor,consent|A support transcript contains health information irrelevant to the request. What should be done?|Remove unnecessary sensitive content before model processing.
+5.6|injection,gateway,policy,audit|An indirect prompt-injection attempt is detected in retrieved content. What should be recorded?|The source, detection, action taken, and affected workflow.

@@ -1,8 +1,120 @@
 # 🎓 Practice Test Course Packages
 
-This directory contains complete, production-ready Udemy Practice Test Course packages for Microsoft certifications.
+This directory contains Udemy Practice Test Course packages for Claude/Anthropic, Google Cloud, AWS, and Microsoft certifications.
 
 ## 📦 Courses available
+
+### Claude Certified Associate — Foundations (CCAO-F)
+
+- **Status:** Six 100-question learning tests; 600 original single-answer items with explanations.
+- **Includes:** Udemy CSVs, offline review copies, comprehensive instructor landing page, curriculum, sources/coverage, QA tools, and reproducible ZIP.
+- **Organization:** Five business-practice learning tests plus a seven-domain integrated review; 32 local study-map skill IDs mapped to named guide objectives.
+- **Baseline:** July 2026 v1.0 guide; updated exam announced for December 7, 2026, revised guide due November 17. Future-version coverage is not claimed.
+- **Format:** Expanded single-answer learning tests, not replicas of the 60-item multiple-choice/multiple-response exam; 720 is a scaled score, not a raw percentage.
+- **Location:** [`course/CCAO-F/`](CCAO-F/README.md)
+- **Publication:** Expert editorial, privacy, and governance review plus account-level import preview still required; no Udemy publication performed.
+
+### Claude Certified Developer — Foundations (CCDV-F)
+
+- **Status:** Six 100-question learning tests; 600 original single-answer items with explanations.
+- **Includes:** Udemy CSVs, offline review copies, comprehensive instructor landing page, curriculum, sources/coverage, QA tools, and reproducible ZIP.
+- **Organization:** Five focused learning tests plus an eight-domain integrated review; all 25 named skills mapped with local study IDs.
+- **Baseline:** July 2026 v1.0 guide; updated exam announced for December 7, 2026, revised guide due November 17. Future-version coverage is not claimed.
+- **Format:** Expanded single-answer learning tests, not replicas of the 53-item multiple-choice/multiple-response exam; practice targets are not scaled-score conversions.
+- **Location:** [`course/CCDV-F/`](CCDV-F/README.md)
+- **Publication:** Expert editorial review and account-level import preview still required; no Udemy publication performed.
+
+### Claude Certified Architect – Foundations (CCAR-F)
+
+- **Status:** Six original 100-question tests with per-option explanations and official guide objective references.
+- **Organization:** Five domain-focused tests plus one integrated review with 27/18/20/20/15 questions.
+- **Includes:** Udemy CSVs, offline reviews, comprehensive reference-style landing page, curriculum, source notes, validation tools, and ZIP.
+- **Format:** Four choices and ONE best answer; official exam multiple-response and scenario assembly are not reproduced.
+- **Scope:** Original architecture concept checks and production scenarios, not actual/recalled items or calibrated replicas. Concepts recur.
+- **Location:** [`course/CCAR-F/`](CCAR-F/README.md)
+- **Publication:** Final subject-matter and account-level import review required; no platform publication performed.
+
+### Google Cloud Professional Agentic Architect
+
+- **Status:** Six 100-question learning tests; 600 original single-answer items with explanations.
+- **Includes:** Udemy CSVs, offline review copies, comprehensive instructor landing page, curriculum, sources/coverage, QA tools, and reproducible ZIP.
+- **Organization:** Five focused learning tests plus a five-section integrated review; 32 local study-map skills mapped to the guide objectives.
+- **Baseline:** Current beta English exam guide (13/17/33/22/15). Beta closed September 30, 2026; Google announces GA in mid-November 2026. Future-blueprint coverage is not claimed.
+- **Format:** Expanded single-answer learning tests, not replicas of the hybrid certification; the proctored exam is complemented by separate required hands-on labs.
+- **Location:** [`course/Google-Agentic-Architect/`](Google-Agentic-Architect/README.md)
+- **Publication:** Expert technical review, account-level import preview, and hands-on lab practice still required; no Udemy publication performed.
+
+### Google Cloud Generative AI Leader
+
+- **Status:** Six topical 100-question multiple-choice tests, rewritten with original concept checks, short scenarios, explanations, and closest official guide references.
+- **Includes:** Udemy CSVs, offline review copies, reference-style landing page, curriculum, validation tools, and ZIP.
+- **Organization:** Foundations; Google services; prompting/grounding; applications/agents; responsible AI/security; strategy/value. Topical learning tests, not 30/35/20/15 exam-weighted mocks.
+- **Scope:** Original business-oriented practice with technical concept enrichment, not copied commercial/exam content or calibrated replicas; related concepts recur across topics.
+- **Location:** [`course/Google-Gen-AI-Leader/`](Google-Gen-AI-Leader/README.md)
+- **Publication:** Final editorial and account-level import review required; no platform publication performed.
+
+### AI-500: Designing and Implementing Multi-Agent AI Solutions
+
+- **Status:** Six 100-question sets generated, with answer explanations and Microsoft Learn references.
+- **Includes:** Udemy CSVs, offline review copies, reference-style landing page, curriculum, validation tools, and ZIP.
+- **Domain allocation per set:** 18 architecture / 33 development / 24 evaluation and monitoring / 25 security and deployment, within the official ranges.
+- **Audience:** Experienced practitioners working with Python, Microsoft Foundry, Azure, and agentic systems.
+- **Location:** [`course/AI-500/`](AI-500/README.md)
+- **Publication:** Final content review and Udemy account import preview required; no platform publication performed.
+
+### AWS Certified AI Practitioner (AIF-C01)
+
+- **Status:** Six 100-question sets generated; automated structural validation passed.
+- **Includes:** Udemy CSVs, offline review copies, explanations, AWS references, listing copy, curriculum, validator, and downloadable ZIP.
+- **Question mix:** 90 single-answer and 10 select-two per set; shared objectives deliberately recur with different scenarios.
+- **Domain weighting:** 20% / 24% / 28% / 14% / 14%.
+- **Location:** [`course/AIF-C01/`](AIF-C01/README.md)
+- **Publication:** Final editorial and Udemy account import review required; no platform upload performed.
+
+### Microsoft AI-103: Azure AI Apps and Agents Developer Associate
+
+- **Status:** Six 100-item mock exams; 600 original items with mixed formats and per-option explanations.
+- **Includes:** Udemy CSVs, offline review copies, comprehensive instructor landing page, curriculum, sources/coverage, QA suite, and reproducible ZIP.
+- **Organization:** Every exam is blueprint-weighted 28/33/13/13/13 across the five published domains (28/33/13/13/13 percent, all inside range); 30 local study-map skills mapped to the guide sub-objectives.
+- **Item mix:** 76 single-choice, 16 multi-select with the selection count stated, 8 ordering items rendered as candidate sequences, and four 3-question case studies per exam.
+- **Baseline:** Official study guide, skills measured as of April 16, 2026; 40–60 questions typical, 120 minutes (140-minute seat), 700/1000 scaled pass, $165 USD, proctored with possible interactive components. A 100-item practice exam is a documented expansion beyond the live 40–60 count, not the live count.
+- **Format boundary:** Hot-area items, drag-and-drop UI, labs, and adaptive problem-solution sets are excluded and disclosed; practice percentages are not scaled exam scores.
+- **Location:** [`course/AI-103/`](AI-103/README.md)
+- **Publication:** Expert technical review and account-level import preview required; no Udemy publication performed.
+
+### Microsoft AI-200: Developing AI Cloud Solutions on Azure
+
+- **Status:** Six 100-item mock exams; 600 original items with mixed formats and per-option explanations.
+- **Includes:** Udemy CSVs, offline review copies, comprehensive instructor landing page, curriculum, sources/coverage, QA suite, and reproducible ZIP.
+- **Organization:** Every exam is blueprint-weighted 24/30/24/22 across the four published domains (24/30/24/22 percent); 30 local study-map skills mapped to the guide sub-objectives.
+- **Item mix:** 76 single-choice, 16 multi-select with the selection count stated, 8 ordering items rendered as candidate sequences, and four 3-question case studies per exam.
+- **Baseline:** Official study guide, skills measured as of October 7, 2026; 40–60 questions typical, 120 minutes, 700/1000 scaled pass, $165 USD, proctored with possible interactive components. A 100-item practice exam is a documented expansion beyond the live 40–60 count, not the live count.
+- **Weighting note:** the guide states 25–30% in the data-domain heading and 30–35% in its skills-at-a-glance list; the package fixes that domain at 30%, the only value inside both, and documents the reasoning.
+- **Format boundary:** Hot-area items, drag-and-drop UI, labs, and adaptive problem-solution sets are excluded and disclosed; practice percentages are not scaled exam scores.
+- **Location:** [`course/AI-200/`](AI-200/README.md)
+- **Publication:** Expert technical review and account-level import preview required; no Udemy publication performed.
+
+### Microsoft AB-731: AI Transformation Leader
+
+- **Status:** Six 100-item mock exams; 600 original business-leader items with mixed formats and per-option explanations.
+- **Includes:** Udemy CSVs, offline review copies, instructor landing page, curriculum, sources/coverage, QA suite, and reproducible ZIP.
+- **Organization:** Every exam is blueprint-weighted 37/38/25 across the three published domains (37/38/25 percent, all inside 35–40 / 35–40 / 20–25); 30 local study-map skills mapped to the guide sub-objectives.
+- **Item mix:** 76 single-choice, 16 multi-select with the selection count stated, 8 ordering items rendered as candidate sequences, and four 3-question case studies per exam.
+- **Baseline:** Official study guide, skills measured as of July 22, 2026; 45-minute proctored assessment with no published item count, 700/1000 scaled pass, $99 USD, no coding. Each 100-item practice exam is labelled an expanded bank, never as the live item count.
+- **Format boundary:** Hot-area items, drag-and-drop UI, labs, and adaptive problem-solution sets are excluded and disclosed; practice percentages are not scaled exam scores.
+- **Location:** [`course/AB-731/`](AB-731/README.md)
+- **Publication:** Expert business/legal review and account-level import preview required; no Udemy publication performed.
+
+### Microsoft PL-300: Power BI Data Analyst Associate
+
+- **Status:** Six 100-item mock exams; 600 original analyst items with mixed formats and per-option explanations.
+- **Includes:** Udemy CSVs, offline review copies, instructor landing page, curriculum, sources/coverage, QA suite, and reproducible ZIP.
+- **Organization:** Every exam is blueprint-weighted 28/28/28/16 across the four published domains (28/28/28/16 percent, inside 25–30 / 25–30 / 25–30 / 15–20); 30 local study-map skills mapped to the guide sub-objectives.
+- **Item mix:** 76 single-choice, 16 multi-select with the selection count stated, 8 ordering items rendered as candidate sequences, and four 3-question case studies per exam.
+- **Baseline:** Official study guide, skills measured as of April 20, 2026; typically 40–60 questions in 100 minutes, 700/1000 scaled pass, $165 USD, proctored. A 100-item practice exam is a documented expansion, not the live count.
+- **Format boundary:** Hot-area items, drag-and-drop UI, labs, and adaptive problem-solution sets are excluded and disclosed; practice percentages are not scaled exam scores.
+- **Location:** [`course/PL-300/`](PL-300/README.md)
+- **Publication:** Expert technical review and account-level import preview required; no Udemy publication performed.
 
 ### 1. **AB-100: Microsoft Certified Agentic AI Business Solutions Architect** *(in progress)*
 

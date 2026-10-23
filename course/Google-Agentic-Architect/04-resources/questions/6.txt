@@ -1,0 +1,101 @@
+# Integrated architect scenarios and final review: 100
+1.1|stateworkflow,instructions,agentsearch,oauth|A retail bank wants a low-code agent to open disputes only after identity verification and manager approval. What should the workflow encode?|Explicit states and gated transitions for verification and approval before submission.
+1.1|fallbackprompt,stateworkflow,modelarmor,registry|A low-code agent cannot confirm a customer's eligibility for a program. What is the best response?|State the evidence gap and route to an approved human channel.
+1.2|instructions,fewshot,cot,embedding|A claims triage agent must consistently explain denials using approved categories. What should the design use?|System instructions with the approved category set and examples, plus verification.
+1.3|agentsearch,enterpriseconnect,accessscope,multimodal|A knowledge agent serves multiple regions with different product catalogs. What must the retrieval design enforce?|Region-scoped sources plus authorization-aware retrieval keep each catalog and user within approved boundaries.
+1.4|rollout,regression,threshold,audit|A low-code agent changes its escalation policy. What should precede release?|Regression evaluation, staged rollout, and audit evidence of the change.
+2.1|mcpserver,antigravity,agentscli,skill|A platform team wants coding agents to use approved build tools only. What should it provide?|Scoped MCP tools and a sandbox configuration limited to those tools.
+2.2|hook,rule,skill,plugin|A coding agent must never commit generated credentials. What is the strongest control?|A deterministic pre-commit secret scan that blocks the commit.
+2.3|sandbox,sandboxpolicy,workstations,gkesandbox|A coding agent will run untrusted repository tests. Where and how should it run?|In an ephemeral sandbox with restricted egress and no standing credentials.
+2.4|patch,refactor,reviewdiff,runtimeopt|An agent-generated security fix changes several unrelated modules. What should review require?|A narrowed, tested patch with unrelated changes removed.
+2.5|agentscli,registry,audit,gateway|A fleet of coding agents is deployed without inventory or ownership. What should be established?|Registry entries, identities, and auditable fleet operations.
+1.3|multimodal,chunking,embedding,rerank|A quality team wants an agent to answer questions about recorded calls. What is required first?|Reliable transcription and segmentation with preserved timestamps.
+1.2|cot,fewshot,instructions,memorybank|A low-code agent must explain a multi-step eligibility decision consistently. What should be configured?|A defined explanation structure with approved criteria and examples.
+1.4|abtest,threshold,observability,rollback|A prompt variant improves satisfaction but increases policy violations. What should guide adoption?|Block on the policy threshold regardless of satisfaction gains.
+2.1|skill,plugin,hook,rule|A repository needs a reusable migration procedure available to multiple agents. What should be created?|A reviewed skill with the procedure, examples, and validation steps.
+2.3|gkesandbox,workstations,sandbox,cloudrun|A regulated build platform needs tenant isolation and network policy. What environment fits?|GKE with dedicated namespaces or clusters and enforced policies.
+2.4|runtimeopt,refactor,patch,reviewdiff|An agent proposes performance improvements without a baseline. What should be required?|Measured baseline and evidence that behavior remains correct.
+2.5|subagent,handoff,router,parallel|A code review subagent finds a critical issue while implementation continues. What should happen?|Report findings to the orchestrator and block merge until resolved.
+2.2|plugin,skill,hook,subagent|An organization wants a standard capability bundle for secure code review. What should it distribute?|A versioned plugin with reviewed tools, checks, and guidance.
+2.1|mcpserver,mcp,agentcard,a2a|A coding agent needs a governed interface to an internal artifact repository. What should be built?|An MCP server with scoped read and write tools.
+1.1|stateworkflow,fallbackprompt,instructions,hitl|A low-code workflow must handle a user who abandons verification mid-flow. What should the design include?|A defined incomplete state with no access to protected data.
+2.3|sandboxpolicy,egress,iam,pab|A sandbox can download dependencies from any host. What should be narrowed?|Egress allowlisting to approved package sources.
+2.5|reviewdiff,audit,agentscli,registry|An audit asks who approved an agent-generated production change. What should be available?|Attributable review and approval records linked to the diff.
+3.1|llm,slm,modelgarden,costmodel|A document-understanding agent must handle long, ambiguous contracts with high accuracy. What should be evaluated?|A capable model with measured accuracy and cost per accepted extraction.
+3.1|slm,selfhosted,saas,latencybudget|A high-volume classification step must be cheap and fast with bounded labels. What is a reasonable candidate?|A smaller model evaluated on the constrained task.
+3.2|llmagent,toolcontract,sequential,parallel|An agent must call three APIs in a dependent order. What should the design specify?|A sequence with typed tool contracts and dependency-aware state.
+3.2|toolerror,timeout,loopguard,trace|A tool call times out after a write may have succeeded. What should the agent do?|Check for prior success before retrying, using idempotency or status lookup.
+3.3|memorybank,memorypolicy,session,artifact|A consumer assistant wants to remember preferences across sessions. What must accompany the feature?|Consent, retention limits, and inspection or deletion controls.
+3.3|session,state,stateless,sessionstore|A stateless service must support multi-turn conversations reliably. What should be added?|An external session store with a defined state schema.
+3.4|chunking,rerank,grounding,dedupe|A policy corpus has long sections and frequent duplicate boilerplate. What should the pipeline do?|Chunk by section, deduplicate, and rerank before grounding the answer.
+3.5|permfilter,metadatafilter,accessscope,vectordb|A shared vector index serves multiple tenants. What must happen before retrieval results are used?|Tenant and authorization filtering before context assembly.
+3.6|retrievalquality,responsequality,trajectory,grounding|An answer is correct but unsupported by the cited passage. Which quality dimension fails?|Groundedness, even though the final conclusion may be right.
+3.7|agentidentity,pab,leastprivilege,iam|An agent needs read access to one dataset and nothing else. What should be configured?|A dedicated identity with a narrow role and an appropriate boundary.
+3.8|registry,mcp,agentcard,plugin|An organization wants governed discovery of agents and their tools. What should it combine?|Registry metadata for agents and servers with reviewed ownership.
+3.9|a2a,mcp,agentcard,gateway|A specialist agent must receive a task from another agent and return results. What should be defined?|A2A task exchange with authenticated callers and explicit result handling.
+3.10|parallel,sequential,graph,router|A fraud review workflow needs independent checks followed by a decision. What pattern fits?|Parallel checks joined into a decision step.
+3.11|agentruntime,cloudrun,gkescale,stateless|A long-running agent needs managed hosting, sessions, and memory integration. What should be evaluated?|Agent Runtime with the required platform services.
+3.1|finetuned,llm,slm,opensource|A narrow extraction task has abundant labeled examples and a stable schema. What could improve consistency?|Tuning on representative data with held-out evaluation.
+3.2|adk,callback,guardrail,tool|A team wants code-level control over validation between model turns. What should it use?|Agent Development Kit callbacks around model and tool execution.
+3.3|state,memorybank,artifact,session|An agent stores a full transcript in durable memory for every user. What should be reconsidered?|Retention and minimization; not every turn belongs in long-term memory.
+3.4|embedding,hybrid,rerank,similarity|Queries include exact product codes and semantic descriptions. What retrieval design fits?|Hybrid retrieval with reranking of the combined candidates.
+3.5|ragengine,agentretrieval,agentsearch,vectordb|A team wants managed ingestion and retrieval components. What should it evaluate?|RAG Engine for supported managed pipeline components.
+3.6|humanreview,autorater,threshold,grounding|An automated judge disagrees with experts on high-impact answers. What should happen?|Calibrate or override the judge with human review for that category.
+3.7|oauth,identityprop,token,iam|A tool must act with the end user's delegated permissions. What should be implemented?|Scoped OAuth tokens with verified identity propagation.
+3.8|mcpserver,registry,policy,pab|A new MCP server exposes customer data to agents. What should precede approval?|Security review of authentication, authorization, validation, and logging.
+3.9|agentcard,registry,a2a,mcp|A remote agent's advertised capabilities are outdated. What should be updated?|The Agent Card and registry metadata.
+3.10|loop,graph,parallel,sequential|A refinement agent repeats the same failed action without progress. What should be added?|A bounded loop with progress checks and escalation.
+3.11|policy,gateway,registry,audit|A platform wants consistent policy across all deployed agents. Where should it enforce it?|Central gateway and platform policy rather than per-agent prompts.
+3.1|proprietary,opensource,selfhosted,saas|A vendor-specific capability is essential but creates lock-in risk. What should the architecture document?|Dependency, exit options, and data portability.
+3.2|sequential,parallel,graph,router|A workflow has a classification step followed by one of four specialist agents. What pattern fits?|Routing to a specialist after classification.
+3.6|permfilter,pab,gateway,iam|A retrieval result includes a document the user cannot access. What should have prevented it?|Authorization filtering before retrieval results enter the prompt.
+3.7|serviceaccount,agentidentity,leastprivilege,pab|Two agents share an identity, and one is compromised. What is the impact?|Both are affected, and actions cannot be cleanly attributed.
+3.8|agentcard,registry,mcp,plugin|An agent capability is published but has no owner or version. What risk arises?|Without an owner or version, behavior drifts and accountability for failures becomes unclear.
+3.10|handoff,router,parallel,graph|A specialist returns incomplete findings to the orchestrator. What should the handoff include?|Verified findings, unresolved work, and explicit state.
+3.11|capacity,latencybudget,costtrack,rollout|A managed agent runtime throttles at peak. What should be planned?|Quota headroom, backpressure, and graceful degradation.
+3.2|toolcontract,tool,hook,guardrail|A tool accepts arbitrary shell commands from the model. What should replace it?|Constrained operations with validated parameters and authorization.
+4.1|golden,edgecases,threshold,evalset|A release decision needs evidence from representative tasks and rare failures. What should the evaluation include?|A golden dataset plus deliberate edge and adversarial cases.
+4.2|trajectory,responsequality,grounding,retrievalquality|An agent achieves the right outcome through an unsafe tool sequence. What catches it?|Trajectory evaluation of tool calls and side effects.
+4.3|regression,threshold,onlineeval,rollout|A model update is released without evaluation. What should have happened?|Regression tests and a staged rollout against thresholds.
+4.4|agentruntime,cloudrun,gkescale,stateless|A stateless API agent must scale to zero. What runtime fits?|Cloud Run with externalized session state.
+4.5|loopguard,timeout,trace,drift|An agent repeatedly retries a failing tool. What should be implemented?|Bounded retries with loop detection and escalation.
+4.6|observability,costtrack,capacity,audit|A team needs to find the most expensive and failure-prone step. What should it use?|Traces and cost attribution by step.
+4.1|humanreview,golden,autorater,threshold|Experts disagree about the expected behavior for a sensitive case. What should happen?|Adjudicate and escalate rather than average incompatible expectations.
+4.2|autorater,humanreview,responsequality,threshold|A model judge favors verbose answers. What should be done?|Use explicit rubrics and calibrate against human scores.
+4.3|abtest,regression,capacity,rollout|A new agent version is faster but more expensive. What should the release gate compare?|Quality, latency, and cost against pre-agreed thresholds.
+4.4|gkescale,cloudrun,agentruntime,workstations|A workload needs custom networking and node isolation. What fits?|GKE with dedicated infrastructure and policy.
+4.5|drift,trace,observability,regression|Production quality declines after a retrieval index update. What should be checked?|Index contents, retrieval traces, and drift in evidence quality.
+4.6|rollout,threshold,abtest,humanreview|A canary shows a small but real quality regression. What should happen?|Pause expansion and investigate against the rollback criteria.
+4.1|evalset,regression,edgecases,golden|An incident reveals a missing test case. What should be added before the fix?|A regression case that reproduces the failure.
+4.2|retrievalquality,grounding,trajectory,responsequality|Answers are accurate but cite the wrong sections. What should improve?|Passage-level grounding and citation validation tie each claim to the section that actually supports it.
+4.3|onlineeval,observability,humanreview,threshold|Production sampling includes sensitive content. What should be designed?|Minimization, access control, and retention rules.
+4.4|sessionstore,redis,cloudsql,firestore|A service needs low-latency session documents. What storage fits?|A document store designed for session access.
+4.5|toolerror,timeout,loopguard,audit|A non-retryable permission error is retried repeatedly. What should change?|Classify the error and escalate instead of retrying.
+4.6|gateway,audit,policy,observability|An unapproved tool is called in production. What should detect and block it?|Gateway policy and registry enforcement with alerting.
+4.1|threshold,golden,evalset,capacity|A test suite grows without version control. What problem results?|Unversioned test suites produce irreproducible results and stale expectations over time.
+4.2|humanreview,autorater,trajectory,threshold|A high-impact recommendation passes automated metrics. What remains necessary?|A consequential action still needs human authorization before it takes effect.
+4.3|drift,regression,evalset,threshold|A new customer segment behaves differently. What should be updated?|Representative evaluation data and segment monitoring.
+4.6|capacity,latencybudget,costtrack,cloudrun|Cold starts violate tail latency goals. What should be evaluated?|Minimum instances and warm capacity against cost.
+5.1|oauth,token,iam,serviceaccount|An agent calls an external API on a user's behalf. What should secure the call?|A short-lived, scoped OAuth token with verified delegation.
+5.2|pab,leastprivilege,iam,vpcsc|An agent has broad project access but needs one dataset. What should be applied?|A narrow role and a principal access boundary.
+5.3|gateway,audit,egress,dlp|A security team needs visibility and control over agent egress. What should it deploy?|Agent Gateway with egress allowlisting and logging.
+5.4|modelarmor,dlp,policy,registry|A public agent needs layered protection against injection and data leakage. What combination fits?|Input screening, output inspection, least privilege, and tool authorization.
+5.5|hitl,guardrail,approval,reviewimpact|An agent can transfer money above a threshold. What control is required?|A pre-action human approval with transaction context.
+5.6|injection,redact,consent,secret|Retrieved content instructs the agent to reveal system credentials. What should happen?|Treat the content as untrusted and refuse; credentials must never be in prompt context.
+5.1|serviceaccount,agentidentity,pab,audit|An audit cannot attribute an action to a specific agent. What should change?|Dedicated agent identities with complete audit records.
+5.2|vpcsc,egress,gateway,cmek|A regulated workload must limit data exfiltration paths. What should be configured?|A service perimeter with narrow, approved egress.
+5.3|gateway,registry,policy,audit|An unregistered agent attempts a governed tool call. What should happen?|Deny and log the attempt, then remediate the deployment.
+5.4|dlp,redact,modelarmor,policy|A response contains account numbers that must not be exposed. What should catch them?|Output inspection and redaction before delivery.
+5.5|guardrail,hitl,approval,audit|An approval can be reused for multiple transactions. What should change?|Bind approval to one specific action and expire it.
+5.6|consent,memorypolicy,redact,audit|A user asks what the agent remembers and requests deletion. What must the system support?|Inspection, correction, and deletion across memory stores.
+5.1|identityprop,oauth,iam,gateway|A downstream tool must apply the end user's permissions. What should be propagated?|Verified user identity with scoped delegated authority.
+5.2|leastprivilege,iam,pab,serviceaccount|An incident response grants broad temporary access. What should follow?|Temporary access needs a time-bound expiry, review, and confirmed removal afterward.
+5.6|egress,gateway,redact,cmek|An agent tries to send customer data to a personal endpoint. What should prevent it?|Egress restrictions plus destination authorization prevent data leaving through an unapproved path.
+1.1|stateworkflow,instructions,parallel,router|A low-code agent must separate a quote request from a complaint before acting. What should the design include?|An explicit classification state with distinct transitions and fallbacks.
+1.2|fewshot,instructions,cot,embedding|A low-code agent must format denial reasons consistently for auditors. What should be configured?|Instructions plus representative examples of approved denial categories.
+1.3|enterpriseconnect,accessscope,agentsearch,multimodal|A support agent must use only the current region's contract templates. What should be enforced?|Region-scoped connectors and authorization-aware retrieval keep contract templates within the correct jurisdiction.
+1.4|threshold,regression,rollout,observability|A low-code agent's rejection rate rises after a template change. What should guide the response?|Compare against thresholds and roll back or fix based on evidence.
+2.1|mcpserver,mcp,skill,plugin|A coding agent needs an approved package registry and issue tracker. What should be configured?|Two narrowly scoped MCP tools with separate permissions.
+2.2|hook,rule,skill,plugin|A team wants security checks to run on every generated change. What should enforce them?|A required hook or CI gate that cannot be bypassed by the agent.
+2.3|sandbox,sandboxpolicy,gkesandbox,workstations|A coding agent must not read other tenants' repositories. What should be enforced?|Sandbox isolation with repository-scoped mounts and identity.
+2.4|refactor,patch,reviewdiff,runtimeopt|A broad refactor is needed, but the team wants reversible delivery. What should it do?|Split the work into reviewed, tested, reversible changes.
