@@ -17,6 +17,7 @@ This repository contains Udemy practice-test course packages for Claude/Anthropi
 | **Microsoft AI-200: Developing AI Cloud Solutions on Azure** | ✅ [6 blueprint-weighted 100-item mock exams, mixed item types](course/AI-200/README.md) | 6 | 600 |
 | **Microsoft AB-620: AI Agent Builder Associate** | ✅ [6 blueprint-weighted 100-item builder exams, mixed item types](course/AB-620/README.md) | 6 | 600 |
 | **Microsoft AB-731: AI Transformation Leader** | ✅ [6 blueprint-weighted 100-item business-leader exams, mixed item types](course/AB-731/README.md) | 6 | 600 |
+| **Microsoft AB-730: AI Business Professional** | ✅ [6 blueprint-weighted 100-item business-user exams, mixed item types](course/AB-730/README.md) | 6 | 600 |
 | **Microsoft PL-300: Power BI Data Analyst Associate** | ✅ [6 blueprint-weighted 100-item analyst exams, mixed item types](course/PL-300/README.md) | 6 | 600 |
 | **AB-900: Microsoft 365 Copilot and Agent Administration Fundamentals** | ✅ Set 1 ready (100 Q), Sets 2–6 coming | 6 | 600 (target) |
 | **AZ-900: Microsoft Azure Fundamentals** | ✅ All 6 sets at 100 Q | 6 | 600 |
