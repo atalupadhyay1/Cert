@@ -113,7 +113,7 @@ class SourceTests(unittest.TestCase):
                 self.assertGreaterEqual(pct, low, f'set {n} domain {domain}')
                 self.assertLessEqual(pct, high, f'set {n} domain {domain}')
 
-    def test_two_case_studies_per_exam(self):
+    def test_four_case_studies_per_exam(self):
         for n, rows in BANK.items():
             cases = Counter()
             for record in rows:
@@ -122,6 +122,52 @@ class SourceTests(unittest.TestCase):
                     cases[match[1]] += 1
             self.assertEqual(len(cases), 4, f'set {n}: {cases}')
             self.assertEqual(set(cases.values()), {3}, f'set {n}: {cases}')
+
+
+    def test_sample_case_upload_matches_builder(self):
+        from cases import CASES
+        from build import make_rows
+        path = ROOT / '05-sample-upload/case-study-sample.csv'
+        with path.open(encoding='utf-8-sig', newline='') as f:
+            rows = list(csv.DictReader(f))
+        self.assertEqual(len(rows), 3)
+        self.assertEqual(list(rows[0]), HEADER)
+        source = [r for r in make_rows(1)[0] if r['_case'] == 'Fabrikam claims']
+        self.assertEqual(len(source), 3)
+        for n, (written, built) in enumerate(zip(rows, source), 1):
+            self.assertIn(CASES['Fabrikam claims'], written['Question'])
+            self.assertTrue(written['Question'].startswith(f'Case study — Fabrikam claims ({n} of 3):'))
+            self.assertEqual(written['Correct Answers'], built['Correct Answers'])
+            for i in range(1, 7):
+                self.assertEqual(written[f'Answer Option {i}'], built[f'Answer Option {i}'])
+        self.assertEqual({r['Question Type'] for r in rows}, {'multiple-choice', 'multi-select'})
+
+    def test_every_case_study_has_a_scenario(self):
+        from cases import CASES
+        for n, rows in BANK.items():
+            for record in rows:
+                match = re.match(r'Case study — ([^:]+):', record['question'])
+                if match:
+                    self.assertIn(match[1], CASES, f'set {n}: {match[1]}')
+                    self.assertGreater(len(CASES[match[1]].split()), 40, match[1])
+        brief = (ROOT / '04-resources/case-studies.md').read_text(encoding='utf-8')
+        for name, text in CASES.items():
+            self.assertIn(f'### Case study — {name}', brief)
+            self.assertIn(text, brief)
+
+    def test_embedded_case_variant_repeats_scenario(self):
+        from cases import CASES
+        from build import render_case_embedded
+        rows, _ = make_rows(1)
+        embedded = render_case_embedded(1, rows)
+        self.assertEqual(len(embedded), 100)
+        claimed = set()
+        for row in embedded:
+            if row['_case']:
+                self.assertIn(CASES[row['_case']], row['Question'])
+                self.assertLess(len(row['Question']), 1000, row['_case'])
+                claimed.add(row['_case'])
+        self.assertEqual(len(claimed), 4)
 
 
 class ArtifactTests(unittest.TestCase):
@@ -179,7 +225,10 @@ class ArtifactTests(unittest.TestCase):
                          '04-resources/sources-and-coverage.md',
                          '04-resources/csv-format-spec.md',
                          '04-resources/publication-checklist.md',
-                         '04-resources/SUMMARY.md']:
+                         '04-resources/SUMMARY.md',
+                         '04-resources/case-studies.md',
+                         '05-sample-upload/case-study-sample.csv',
+                         '05-sample-upload/README.md']:
             self.assertTrue((ROOT / relative).is_file(), relative)
 
     def test_landing_page_has_no_stale_counts(self):
@@ -197,6 +246,8 @@ class ArtifactTests(unittest.TestCase):
                 self.assertIn(f'03-practice-sets/set-{n}/practice-set-{n}.csv', names)
             self.assertIn('01-landing-page/landing-page.md', names)
             self.assertIn('04-resources/answer-manifest.json', names)
+            self.assertIn('04-resources/case-studies.md', names)
+            self.assertIn('05-sample-upload/case-study-sample.csv', names)
             self.assertTrue(all(i.date_time == (1980, 1, 1, 0, 0, 0) for i in z.infolist()))
             self.assertFalse(any('__pycache__' in n for n in names))
             self.assertFalse(any(n.endswith('.zip') for n in names))

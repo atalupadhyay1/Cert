@@ -10,7 +10,7 @@ Baseline: the official AI-103 study guide, **skills measured as of April 16, 202
 - [Curriculum and six-test study sequence](02-curriculum/curriculum-outline.md).
 - [Download offline ZIP](AI-103-Azure-AI-Apps-and-Agents-Developer-Associate-6x100.zip).
 - [Official sources and coverage notes](04-resources/sources-and-coverage.md).
-- [Validation report](04-resources/validation-report.json), [CSV format specification](04-resources/csv-format-spec.md), [publication checklist](04-resources/publication-checklist.md), and [package summary](04-resources/SUMMARY.md).
+- [Validation report](04-resources/validation-report.json), [CSV format specification](04-resources/csv-format-spec.md), [publication checklist](04-resources/publication-checklist.md), [package summary](04-resources/SUMMARY.md), and the [case-study text bundle](04-resources/case-studies.md).
 
 ## Practice tests
 
@@ -22,6 +22,29 @@ Baseline: the official AI-103 study guide, **skills measured as of April 16, 202
 | 4 | Manufacturing: LineSight, Fabrikam Plant, Ironworks Plant, Apex Motors | [CSV](03-practice-sets/set-4/practice-set-4.csv) | [Markdown](03-practice-sets/set-4/practice-set-4.md) |
 | 5 | Public sector: CityHelp, CampusDesk, MetroPermits, StateLibrary | [CSV](03-practice-sets/set-5/practice-set-5.csv) | [Markdown](03-practice-sets/set-5/practice-set-5.md) |
 | 6 | Capstone: GroupAssist, WarrantyDesk, GlobalMart, NovaRetail | [CSV](03-practice-sets/set-6/practice-set-6.csv) | [Markdown](03-practice-sets/set-6/practice-set-6.md) |
+
+## 🧩 Where the case-study text lives
+
+Each exam has four case studies of three questions. The scenario is written once per case and is published in four places, so you can pick the route that fits how you teach:
+
+| Route | File | Use it when |
+|---|---|---|
+| Study copy | `03-practice-sets/set-N/practice-set-N.md` | The scenario appears in full under each `## Case study — <Name>` heading, followed by its three questions. This is the default offline review experience. |
+| Brief bundle | `04-resources/case-studies.md` | All 24 scenarios, each with its three questions and answer letters. Upload as a PDF or lecture resource, or paste one section into the practice-test description. |
+| Self-contained CSV | `03-practice-sets/set-N/case-embedded-set-N.csv` | Same 100 items and same answer keys, but every case-item stem repeats the scenario, so the questions still make sense if the platform shuffles them. |
+| Upload sample | `05-sample-upload/case-study-sample.csv` | One case study on its own — 3 rows, a multiple-choice pair around one multi-select item. Upload it to a scratch practice test first to see how the block renders before loading 100 questions. See [`05-sample-upload/README.md`](05-sample-upload/README.md). |
+
+Regenerate all of them with:
+
+```bash
+python build.py                 # study copies + case-studies.md
+python build.py --embed-case    # adds the six self-contained CSVs
+python make_sample.py           # rebuilds 05-sample-upload/case-study-sample.csv
+```
+
+The default `practice-set-N.csv` deliberately keeps short stems: a Udemy question field carries one block of text, and repeating a 70-word scenario inside it three times per case bloats the import and reads badly on a phone. The embedded variant exists for platforms that randomise item order — its longest stems are about 737 characters, so check your platform's question-length limit before choosing it.
+
+Scenario text lives in `04-resources/cases.py`; `build.py` refuses to run if a case name in `questions/*.txt` has no scenario, or if a scenario is unused.
 
 ## Scope and format
 
