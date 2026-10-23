@@ -12,6 +12,7 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 | Google Cloud Professional Agentic Architect | 6 | 600 | Per-option explanations, guide references |
 | Google Cloud Generative AI Leader | 6 | 600 | Per-option explanations, guide references |
 | Microsoft AI-300 — Machine Learning Operations Engineer Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
+| Microsoft AB-410 — Intelligent Applications Builder Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
 | Microsoft PL-300 — Power BI Data Analyst Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
 
 ### Claude Certified Associate — Foundations (CCAO-F)
@@ -75,6 +76,18 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 - **Location:** [`course/AI-300/`](AI-300/README.md)
 - **Publication:** Expert technical review and account-level import preview required; no Udemy publication performed.
 
+### Microsoft AB-410: Building Intelligent Applications
+
+- **Status:** Six 100-item mock exams; 600 original app-builder items with mixed formats and per-option explanations.
+- **Includes:** Udemy CSVs, offline review copies, self-contained case CSVs, a one-case sample upload, instructor landing page with per-practice-test names and full/trimmed descriptions, curriculum, case-study upload guide, sources/coverage, QA suite, and reproducible ZIP.
+- **Organization:** Every exam is blueprint-weighted 28/28/44 across the three published domains (28/28/44 percent, inside 25–30 / 25–30 / 40–45); 33 local study-map skills mapped to the guide sub-objectives, with four 3-question case studies per exam.
+- **Item mix:** 76 single-choice, 16 multi-select with the selection count stated, 8 sequencing items rendered as candidate sequences, and four 3-question case studies per exam.
+- **Baseline:** Official study guide, skills measured as of October 16, 2026; 700/1000 scaled pass, 120 minutes, $165 USD, proctored — duration and fee are Microsoft-published on the certification page, while the item count is not published at all. Each 100-item practice exam is labelled an expanded bank.
+- **Configuration note:** items deliberately show Power Fx, form and view definitions, trigger and connector choices, approvals, business-rule scope, calculated and rollup settings, prompt settings, and solution and ALM decisions, because AB-410 tests a builder's configuration judgement. No item requires building an app from scratch.
+- **Format boundary:** Drag-and-drop UI, hot-area items, live labs, interactive portal components, and adaptive problem-solution sets are excluded and disclosed; practice percentages are not scaled exam scores.
+- **Location:** [`course/AB-410/`](AB-410/README.md)
+- **Publication:** Expert technical review and account-level import preview required; no Udemy publication performed.
+
 ### Microsoft PL-300: Power BI Data Analyst Associate
 
 - **Status:** Six 100-item mock exams; 600 original analyst items with mixed formats and per-option explanations.
@@ -92,14 +105,14 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 
 ```
 course/
-├── AI-300/                    ← one folder per certification, identical layout
+├── AB-410/                    ← one folder per certification, identical layout
 │   ├── 01-landing-page/       ← Udemy metadata, per-practice-test names and descriptions
 │   ├── 02-curriculum/         ← study arc, exam-by-exam plan, schedule
 │   ├── 03-practice-sets/      ← set-1 … set-6: CSV, Markdown review, set README,
 │   │                            plus case-embedded-set-N.csv
 │   ├── 04-resources/          ← authoring source, tooling, format spec, sources, docs
 │   └── 05-sample-upload/      ← one case-study block to test platform rendering
-├── PL-300/                    ← same layout
+├── AI-300/  PL-300/           ← same layout
 ├── CCAO-F/  CCDV-F/  CCAR-F/  ← Claude practice packages
 ├── Google-Agentic-Architect/  ← Google Cloud packages
 ├── Google-Gen-AI-Leader/
