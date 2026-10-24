@@ -1,4 +1,4 @@
-# Full-Length Mock Exam 2: DP-700 mock exam
+# Full-Length Mock Exam 2: Governance, Lifecycle, and the Warehouse
 
 100 original items · passing target 700/1000 · blueprint-weighted.
 

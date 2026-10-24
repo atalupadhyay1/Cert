@@ -4,6 +4,15 @@ import csv, json, random, sys
 from collections import Counter
 from pathlib import Path
 from bank import BANK, TERMS, TOPICS, VALID_TASKS, DOMAINS, ALLOCATIONS, SKILLS, TYPE_PLAN, CASE_STUDIES, ITEM_TOTAL
+
+SUBTITLES = {
+    1: 'Lakehouse Foundations and Ingestion',
+    2: 'Governance, Lifecycle, and the Warehouse',
+    3: 'Real-Time Intelligence and Operational Monitoring',
+    4: 'Dimensional Modelling, History, and Multi-Workspace Governance',
+    5: 'Performance, Scale, and Reproducible Reporting',
+    6: 'Cross-Industry Capstone',
+}
 ROOT=Path(__file__).resolve().parents[1]
 from sources import GUIDE, DOCS
 from cases import CASES
@@ -219,7 +228,7 @@ def main():
         counts=Counter(row['Domain'] for row in rows)
         types=Counter(row['Question Type'] for row in rows)
         (folder/'README.md').write_text(
-            f'# {TOPICS[number]}: DP-700 mock exam\n\n'
+            f'# {TOPICS[number]}: {SUBTITLES[number]}\n\n'
             f'{len(rows)} original items · passing target 700/1000 · blueprint-weighted.\n\n'
             '| Official domain | Questions |\n|---|---:|\n'
             + '\n'.join(f'| {DOMAINS[d]} | {counts[DOMAINS[d]]} |' for d in DOMAINS)

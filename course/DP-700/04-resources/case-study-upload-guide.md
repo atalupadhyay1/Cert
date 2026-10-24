@@ -43,7 +43,7 @@ Do **not** upload both files into the same practice test. They contain the same 
 4. Paste the per-option explanation into the explanation field for each option, and the overall rationale into the overall explanation box.
 5. Repeat for the three items of the case, keeping the scenario wording identical in all three.
 
-Use this only when a case study needs an architecture diagram, a Power Fx block that loses its line breaks in a CSV cell, or a table the platform cannot render. It is slow, and any later edit has to be made twice.
+Use this only when a case study needs an architecture diagram, a PySpark or KQL block that loses its line breaks in a CSV cell, or a table the platform cannot render. It is slow, and any later edit has to be made twice.
 
 ---
 

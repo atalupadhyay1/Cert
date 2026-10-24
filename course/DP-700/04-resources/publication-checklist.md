@@ -32,7 +32,7 @@
 
 - [ ] State that items are original educational practice, not official or recalled exam content.
 - [ ] State that the package is independent and not endorsed by Microsoft.
-- [ ] Do not imply that passing these exams earns the certification or the Intelligent Applications Builder Associate credential.
+- [ ] Do not imply that passing these exams earns the certification or the Fabric Data Engineer Associate credential.
 - [ ] Do not imply that practice replicates the live exam's item count, drag-and-drop, lab, or interactive portal formats.
 - [ ] Do not claim Udemy import success, preview, or publication.
 - [ ] Avoid claiming a raw pass percentage, score conversion, or guaranteed readiness.

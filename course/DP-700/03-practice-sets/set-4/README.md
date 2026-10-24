@@ -1,4 +1,4 @@
-# Full-Length Mock Exam 4: DP-700 mock exam
+# Full-Length Mock Exam 4: Dimensional Modelling, History, and Multi-Workspace Governance
 
 100 original items · passing target 700/1000 · blueprint-weighted.
 
