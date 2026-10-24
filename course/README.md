@@ -13,6 +13,7 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 | Google Cloud Generative AI Leader | 6 | 600 | Per-option explanations, guide references |
 | Microsoft AI-300 — Machine Learning Operations Engineer Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
 | Microsoft AB-410 — Intelligent Applications Builder Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
+| Microsoft DP-700 — Fabric Data Engineer Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
 | Microsoft PL-300 — Power BI Data Analyst Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
 
 ### Claude Certified Associate — Foundations (CCAO-F)
@@ -88,6 +89,18 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 - **Location:** [`course/AB-410/`](AB-410/README.md)
 - **Publication:** Expert technical review and account-level import preview required; no Udemy publication performed.
 
+### Microsoft DP-700: Implementing Data Engineering Solutions Using Microsoft Fabric
+
+- **Status:** Six 100-item mock exams; 600 original Fabric data-engineering items with mixed formats and per-option explanations.
+- **Includes:** Udemy CSVs, offline review copies, self-contained case CSVs, a one-case sample upload, instructor landing page with per-practice-test names and full/trimmed descriptions, curriculum, case-study upload guide, sources/coverage, QA suite, and reproducible ZIP.
+- **Organization:** Every exam is blueprint-weighted 33/33/34 across the three published domains (inside 30–35 / 30–35 / 30–35); 40 local study-map skills mapped to the guide sub-objectives, with four 3-question case studies per exam.
+- **Item mix:** 76 single-choice, 16 multi-select with the selection count stated, 8 sequencing items rendered as candidate sequences, and four 3-question case studies per exam.
+- **Baseline:** Official study guide, skills measured as of October 19, 2026; 700/1000 scaled pass, 100 minutes, $165 USD, proctored — duration and fee are Microsoft-published on the certification page, while the item count is not published at all. Each 100-item practice exam is labelled an expanded bank.
+- **Configuration note:** items deliberately show Spark pool and environment settings, deployment rules, workspace and OneLake security scopes, shortcut and mirroring definitions, watermark and checkpoint patterns, Delta optimization steps, T-SQL and KQL fragments, and Spark join strategies, because DP-700 tests an engineer's configuration judgement. No item requires building a pipeline from scratch.
+- **Format boundary:** Drag-and-drop UI, hot-area items, live labs, interactive portal components, and adaptive problem-solution sets are excluded and disclosed; practice percentages are not scaled exam scores.
+- **Location:** [`course/DP-700/`](DP-700/README.md)
+- **Publication:** Expert technical review and account-level import preview required; no Udemy publication performed.
+
 ### Microsoft PL-300: Power BI Data Analyst Associate
 
 - **Status:** Six 100-item mock exams; 600 original analyst items with mixed formats and per-option explanations.
@@ -105,7 +118,7 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 
 ```
 course/
-├── AB-410/                    ← one folder per certification, identical layout
+├── AB-410/  DP-700/           ← one folder per certification, identical layout
 │   ├── 01-landing-page/       ← Udemy metadata, per-practice-test names and descriptions
 │   ├── 02-curriculum/         ← study arc, exam-by-exam plan, schedule
 │   ├── 03-practice-sets/      ← set-1 … set-6: CSV, Markdown review, set README,
