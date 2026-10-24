@@ -10,6 +10,7 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 | Claude Certified Developer — Foundations (CCDV-F) | 6 | 600 | Per-option explanations, guide references |
 | Claude Certified Architect — Foundations (CCAR-F) | 6 | 600 | Per-option explanations, guide references |
 | Google Cloud Professional Agentic Architect | 6 | 600 | Per-option explanations, guide references |
+| Google Professional Cloud Architect | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
 | Google Cloud Generative AI Leader | 6 | 600 | Per-option explanations, guide references |
 | Microsoft AI-300 — Machine Learning Operations Engineer Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
 | Microsoft AB-410 — Intelligent Applications Builder Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
@@ -55,6 +56,18 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 - **Format:** Expanded single-answer learning tests, not replicas of the hybrid certification; the proctored exam is complemented by separate required hands-on labs.
 - **Location:** [`course/Google-Agentic-Architect/`](Google-Agentic-Architect/README.md)
 - **Publication:** Expert technical review, account-level import preview, and hands-on lab practice still required; no Udemy publication performed.
+
+### Google Cloud Professional Cloud Architect
+
+- **Status:** Six 100-item mock exams; 600 original architect items with mixed formats and per-option explanations.
+- **Includes:** Udemy CSVs, offline review copies, self-contained case CSVs, a five-question case sample, instructor landing page with per-practice-test names and full/trimmed descriptions, curriculum, case-study upload guide, sources/coverage, QA suite, and reproducible ZIP.
+- **Organization:** Every exam is weighted **25 / 18 / 17 / 15 / 12 / 13**, the published 25 / 17.5 / 17.5 / 15 / 12.5 / 12.5 rounded to whole items; 42 local study-map skills mapped to the exam-guide sections, with four original five-question case studies per exam.
+- **Item mix:** 76 single-answer, 16 multi-select with the selection count stated, 8 sequencing items rendered as candidate orders, and four case studies of five questions (20% of items, inside Google's published 20–30% case-study share).
+- **Baseline:** Exam guide and certification page retrieved October 2026 — 2 hours, $200 USD plus tax, 50–60 questions, 2 case studies at 20–30%, **no published passing score**. Each 100-item practice exam is labelled an expanded bank, and no practice percentage is converted to a pass mark.
+- **Configuration note:** items deliberately show IAM conditions, organization policy constraints, Shared VPC and subnet design, Private Service Connect endpoints, lifecycle and retention settings, CMEK key rings, Terraform delivery, and release mechanics, because PCA tests an architect's configuration judgement. No item requires a live project or a paid edition.
+- **Format boundary:** The split-screen case-study panel, drag-and-drop ordering, lab tasks, and interactive console items are excluded and disclosed. The four official case studies are named but never reproduced; all 24 scenarios are original.
+- **Location:** [`course/Google-Professional-Cloud-Architect/`](Google-Professional-Cloud-Architect/README.md)
+- **Publication:** Expert technical review and account-level import preview required; no publication performed.
 
 ### Google Cloud Generative AI Leader
 
