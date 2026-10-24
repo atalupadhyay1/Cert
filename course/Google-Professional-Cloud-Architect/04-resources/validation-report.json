@@ -1,0 +1,132 @@
+{
+  "status": "PASS",
+  "sets": 6,
+  "total_questions": 600,
+  "checks": [
+    "17-column header",
+    "100 items per set",
+    "blueprint domain allocation per set",
+    "four-option single-answer items including sequencing items",
+    "Question Type restricted to multiple-choice or multi-select",
+    "five-option multi-select items with stated selection count",
+    "two or three correct indices for multi-select",
+    "per-option explanations",
+    "official exam-guide references",
+    "source consistency",
+    "normalized duplicate wording",
+    "balanced single-answer slots"
+  ],
+  "limitations": [
+    "No independent factual certification",
+    "No difficulty calibration against the live exam",
+    "No exhaustive semantic duplicate detection",
+    "No Udemy account import performed",
+    "Drag-and-drop, lab, and split-screen case-study item formats are not reproduced",
+    "No continuous live URL verification"
+  ],
+  "files": [
+    {
+      "file": "03-practice-sets/set-1/practice-set-1.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 84,
+        "multi-select": 16
+      },
+      "domains": {
+        "Designing and planning a cloud solution architecture": 25,
+        "Managing and provisioning a solution infrastructure": 18,
+        "Designing for security and compliance": 17,
+        "Analyzing and optimizing technical and business processes": 15,
+        "Managing implementation": 12,
+        "Ensuring solution and operations excellence": 13
+      }
+    },
+    {
+      "file": "03-practice-sets/set-2/practice-set-2.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 84,
+        "multi-select": 16
+      },
+      "domains": {
+        "Designing and planning a cloud solution architecture": 25,
+        "Managing and provisioning a solution infrastructure": 18,
+        "Designing for security and compliance": 17,
+        "Analyzing and optimizing technical and business processes": 15,
+        "Managing implementation": 12,
+        "Ensuring solution and operations excellence": 13
+      }
+    },
+    {
+      "file": "03-practice-sets/set-3/practice-set-3.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 84,
+        "multi-select": 16
+      },
+      "domains": {
+        "Designing and planning a cloud solution architecture": 25,
+        "Managing and provisioning a solution infrastructure": 18,
+        "Designing for security and compliance": 17,
+        "Analyzing and optimizing technical and business processes": 15,
+        "Managing implementation": 12,
+        "Ensuring solution and operations excellence": 13
+      }
+    },
+    {
+      "file": "03-practice-sets/set-4/practice-set-4.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 84,
+        "multi-select": 16
+      },
+      "domains": {
+        "Designing and planning a cloud solution architecture": 25,
+        "Managing and provisioning a solution infrastructure": 18,
+        "Designing for security and compliance": 17,
+        "Analyzing and optimizing technical and business processes": 15,
+        "Managing implementation": 12,
+        "Ensuring solution and operations excellence": 13
+      }
+    },
+    {
+      "file": "03-practice-sets/set-5/practice-set-5.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 84,
+        "multi-select": 16
+      },
+      "domains": {
+        "Designing and planning a cloud solution architecture": 25,
+        "Managing and provisioning a solution infrastructure": 18,
+        "Designing for security and compliance": 17,
+        "Analyzing and optimizing technical and business processes": 15,
+        "Managing implementation": 12,
+        "Ensuring solution and operations excellence": 13
+      }
+    },
+    {
+      "file": "03-practice-sets/set-6/practice-set-6.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 84,
+        "multi-select": 16
+      },
+      "domains": {
+        "Designing and planning a cloud solution architecture": 25,
+        "Managing and provisioning a solution infrastructure": 18,
+        "Designing for security and compliance": 17,
+        "Analyzing and optimizing technical and business processes": 15,
+        "Managing implementation": 12,
+        "Ensuring solution and operations excellence": 13
+      }
+    }
+  ],
+  "errors": []
+}
