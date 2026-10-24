@@ -69,6 +69,20 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 - **Location:** [`course/Google-Professional-Cloud-Architect/`](Google-Professional-Cloud-Architect/README.md)
 - **Publication:** Expert technical review and account-level import preview required; no publication performed.
 
+### Google Cloud Professional Machine Learning Engineer
+
+- **Status:** Six 100-item mock exams; 600 original ML engineering items with mixed formats and per-option explanations.
+- **Includes:** Udemy CSVs, offline review copies, a six-question mixed-format sample, instructor landing page with per-practice-test names and full/trimmed descriptions, curriculum, sources/coverage, QA suite, and reproducible ZIP.
+- **Organization:** Every exam is weighted **12 / 16 / 21 / 20 / 18 / 13**. Google publishes 13 / 16 / 21 / 20 / 18 / 13, which totals 101%, so the one-point overshoot is removed from the smallest section to fit a 100-item exam. 47 local study-map skills are mapped to the exam-guide sections.
+- **Item mix:** 84 single-answer and 16 multi-select items with the selection count stated. No sequencing items.
+- **No case studies:** the published PMLE format is 50–60 multiple-choice and multiple-select questions with no case-study component, unlike the Professional Cloud Architect exam. There is no `cases.py`, no case-embedded CSV, and no case-study document; the validator rejects case wording and the packager rejects a reinstated case file.
+- **Baseline:** Exam guide as of June 1, 2026, and the certification page retrieved October 2026 — 2 hours, $200 USD plus tax, 50–60 questions, English and Japanese, **no published passing score**. Each 100-item practice exam is labelled an expanded bank, and no practice percentage is converted to a pass mark.
+- **Vocabulary:** Gemini Enterprise Agent Platform (AutoML, Pipelines, Feature Store, Model Registry, Inference), Model Garden, Model Armor, BigQuery ML, Tabular Workflows, Ray. The superseded "Vertex AI Training" naming does not appear.
+- **Configuration note:** items deliberately show BigQuery ML SQL, AutoML budgets, feature-store reads, notebook runtime settings, pipeline steps, traffic splits, autoscaling bounds, retraining triggers, and monitoring thresholds, because PMLE tests an engineer's implementation judgement. No item requires a live project or a paid edition.
+- **Format boundary:** Lab tasks and interactive console items are excluded and disclosed.
+- **Location:** [`course/Google-Professional-ML-Engineer/`](Google-Professional-ML-Engineer/README.md)
+- **Publication:** Expert technical review and account-level import preview required; no publication performed.
+
 ### Google Cloud Generative AI Leader
 
 - **Status:** Six topical 100-question multiple-choice tests, rewritten with original concept checks, short scenarios, explanations, and closest official guide references.
