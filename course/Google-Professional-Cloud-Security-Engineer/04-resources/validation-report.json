@@ -1,0 +1,130 @@
+{
+  "status": "PASS",
+  "sets": 6,
+  "total_questions": 600,
+  "checks": [
+    "17-column header",
+    "100 items per set",
+    "blueprint domain allocation per set (25 / 22 / 23 / 19 / 11)",
+    "four-option single-answer items",
+    "Question Type restricted to multiple-choice or multi-select",
+    "five-option multi-select items with stated selection count",
+    "two correct indices for multi-select",
+    "per-option explanations",
+    "official exam-guide references",
+    "source consistency",
+    "no case-study wording",
+    "no sequencing items",
+    "cross-exam near-duplicate stems (token overlap <= 0.72)",
+    "bank-wide stem uniqueness",
+    "normalized duplicate wording",
+    "balanced single-answer slots"
+  ],
+  "limitations": [
+    "No independent factual certification",
+    "No difficulty calibration against the live exam",
+    "No exhaustive semantic duplicate detection",
+    "No Udemy account import performed",
+    "Lab tasks and any interactive item format are not reproduced",
+    "No continuous live URL verification"
+  ],
+  "files": [
+    {
+      "file": "03-practice-sets/set-1/practice-set-1.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 84,
+        "multi-select": 16
+      },
+      "domains": {
+        "Configuring Access": 25,
+        "Securing Communications and Establishing Boundary Protection": 22,
+        "Ensuring Data Protection": 23,
+        "Managing Operations": 19,
+        "Supporting Compliance Requirements": 11
+      }
+    },
+    {
+      "file": "03-practice-sets/set-2/practice-set-2.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 84,
+        "multi-select": 16
+      },
+      "domains": {
+        "Configuring Access": 25,
+        "Securing Communications and Establishing Boundary Protection": 22,
+        "Ensuring Data Protection": 23,
+        "Managing Operations": 19,
+        "Supporting Compliance Requirements": 11
+      }
+    },
+    {
+      "file": "03-practice-sets/set-3/practice-set-3.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 84,
+        "multi-select": 16
+      },
+      "domains": {
+        "Configuring Access": 25,
+        "Securing Communications and Establishing Boundary Protection": 22,
+        "Ensuring Data Protection": 23,
+        "Managing Operations": 19,
+        "Supporting Compliance Requirements": 11
+      }
+    },
+    {
+      "file": "03-practice-sets/set-4/practice-set-4.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 84,
+        "multi-select": 16
+      },
+      "domains": {
+        "Configuring Access": 25,
+        "Securing Communications and Establishing Boundary Protection": 22,
+        "Ensuring Data Protection": 23,
+        "Managing Operations": 19,
+        "Supporting Compliance Requirements": 11
+      }
+    },
+    {
+      "file": "03-practice-sets/set-5/practice-set-5.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 84,
+        "multi-select": 16
+      },
+      "domains": {
+        "Configuring Access": 25,
+        "Securing Communications and Establishing Boundary Protection": 22,
+        "Ensuring Data Protection": 23,
+        "Managing Operations": 19,
+        "Supporting Compliance Requirements": 11
+      }
+    },
+    {
+      "file": "03-practice-sets/set-6/practice-set-6.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 84,
+        "multi-select": 16
+      },
+      "domains": {
+        "Configuring Access": 25,
+        "Securing Communications and Establishing Boundary Protection": 22,
+        "Ensuring Data Protection": 23,
+        "Managing Operations": 19,
+        "Supporting Compliance Requirements": 11
+      }
+    }
+  ],
+  "errors": []
+}
