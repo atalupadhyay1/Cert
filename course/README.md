@@ -12,6 +12,7 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 | Google Cloud Professional Agentic Architect | 6 | 600 | Per-option explanations, guide references |
 | Google Professional Cloud Architect | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
 | Google Associate Data Practitioner | 6 | 600 | Per-option explanations, exact blueprint weighting, no case studies |
+| Google Professional Cloud Security Engineer | 6 | 600 | Per-option explanations, exact blueprint weighting, no case studies |
 | Google Cloud Generative AI Leader | 6 | 600 | Per-option explanations, guide references |
 | Microsoft AI-300 — Machine Learning Operations Engineer Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
 | Microsoft AB-410 — Intelligent Applications Builder Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
@@ -95,6 +96,19 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 - **Configuration note:** items deliberately show SQL, `gcloud` and `bq` commands, bucket lifecycle rules, IAM bindings, dataset options, Dataflow windowing, Composer DAG steps, Dataform configuration, and KMS key rings, because ADP tests a practitioner's configuration judgement. No item requires a live project or a paid edition.
 - **Format boundary:** Lab tasks and interactive console items are excluded and disclosed.
 - **Location:** [`course/Google-Associate-Data-Practitioner/`](Google-Associate-Data-Practitioner/README.md)
+- **Publication:** Expert technical review and account-level import preview required; no publication performed.
+
+### Google Professional Cloud Security Engineer
+
+- **Status:** Six 100-item mock exams; 600 original security engineering items with mixed formats and per-option explanations.
+- **Includes:** Udemy CSVs, offline review copies, a ten-question mixed-format sample (two items per domain), instructor landing page with per-practice-test names and full/trimmed descriptions, curriculum, sources/coverage, QA suite, and reproducible ZIP.
+- **Organization:** Every exam is weighted **25 / 22 / 23 / 19 / 11**. Google publishes 25 / 22 / 23 / 19 / 11, which totals **exactly 100%**, so no rounding correction was needed — unlike the Professional-level courses whose weights summed to 101%. Each per-exam count is asserted equal to its published weight, with no tolerance band. 48 local study-map skills are mapped to the five exam-guide sections.
+- **Item mix:** 84 single-answer and 16 multi-select items with the selection count stated; the 16 multi-select items are spread 4 / 4 / 4 / 3 / 1 across domains 1–5. No sequencing items.
+- **No case studies:** the published PCSE format is 50–60 multiple-choice and multiple-select questions with no case-study component. There is no `cases.py`, no case-embedded CSV, and no case-study document; the builder and validator reject case wording and the packager rejects a reinstated case file.
+- **Baseline:** Exam guide and certification page retrieved October 2026 — 2 hours, $200 USD plus tax, 50–60 questions, English and Japanese, no prerequisites, **no published passing score**. The page scopes the role to identity and access, resource hierarchy, data protection, network security, threat monitoring, security automation, AI workload security, supply chain security, and regulatory controls, so the publication checklist requires a scope and name re-check. Each 100-item practice exam is labelled an expanded bank, and no practice percentage is converted to a pass mark.
+- **Configuration note:** items deliberately show IAM conditions and deny policies, access levels, firewall attachment points, perimeter and restricted VIP choices, lifecycle and retention settings, key rings and rotation, log sinks, and admission policy behaviour, because PCSE tests an engineer's configuration judgement. No item requires a live project or a paid edition.
+- **Format boundary:** Lab tasks and interactive console items are excluded and disclosed.
+- **Location:** [`course/Google-Professional-Cloud-Security-Engineer/`](Google-Professional-Cloud-Security-Engineer/README.md)
 - **Publication:** Expert technical review and account-level import preview required; no publication performed.
 
 ### Google Cloud Generative AI Leader
