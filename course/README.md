@@ -11,6 +11,7 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 | Claude Certified Architect — Foundations (CCAR-F) | 6 | 600 | Per-option explanations, guide references |
 | Google Cloud Professional Agentic Architect | 6 | 600 | Per-option explanations, guide references |
 | Google Professional Cloud Architect | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
+| Google Associate Data Practitioner | 6 | 600 | Per-option explanations, exact blueprint weighting, no case studies |
 | Google Cloud Generative AI Leader | 6 | 600 | Per-option explanations, guide references |
 | Microsoft AI-300 — Machine Learning Operations Engineer Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
 | Microsoft AB-410 — Intelligent Applications Builder Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
@@ -81,6 +82,19 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 - **Configuration note:** items deliberately show BigQuery ML SQL, AutoML budgets, feature-store reads, notebook runtime settings, pipeline steps, traffic splits, autoscaling bounds, retraining triggers, and monitoring thresholds, because PMLE tests an engineer's implementation judgement. No item requires a live project or a paid edition.
 - **Format boundary:** Lab tasks and interactive console items are excluded and disclosed.
 - **Location:** [`course/Google-Professional-ML-Engineer/`](Google-Professional-ML-Engineer/README.md)
+- **Publication:** Expert technical review and account-level import preview required; no publication performed.
+
+### Google Cloud Associate Data Practitioner
+
+- **Status:** Six 100-item mock exams; 600 original data-practitioner items with mixed formats and per-option explanations.
+- **Includes:** Udemy CSVs, offline review copies, an eight-question mixed-format sample (two items per domain), instructor landing page with per-practice-test names and full/trimmed descriptions, curriculum, sources/coverage, QA suite, and reproducible ZIP.
+- **Organization:** Every exam is weighted **30 / 27 / 18 / 25**. Google publishes 30 / 27 / 18 / 25, which totals **exactly 100%**, so no rounding correction was needed — unlike the Professional-level courses here. Each per-exam count is asserted equal to its published weight, with no tolerance band. 42 local study-map skills are mapped to the four exam-guide sections.
+- **Item mix:** 84 single-answer and 16 multi-select items with the selection count stated; the 16 multi-select items are spread 5 / 4 / 3 / 4 across domains 1–4. No sequencing items.
+- **No case studies:** the published ADP format is 50–60 multiple-choice and multiple-select questions with no case-study component. There is no `cases.py`, no case-embedded CSV, and no case-study document; the builder and validator reject case wording and the packager rejects a reinstated case file.
+- **Baseline:** Exam guide v1.0 and the certification page retrieved October 2026 — 2 hours, $125 USD plus tax, 50–60 questions, English and Japanese, no prerequisites, 6+ months of experience recommended, **no published passing score**. The certification page also warns that the exam will soon reflect branding changes, so the publication checklist requires a product-name re-check. Each 100-item practice exam is labelled an expanded bank, and no practice percentage is converted to a pass mark.
+- **Configuration note:** items deliberately show SQL, `gcloud` and `bq` commands, bucket lifecycle rules, IAM bindings, dataset options, Dataflow windowing, Composer DAG steps, Dataform configuration, and KMS key rings, because ADP tests a practitioner's configuration judgement. No item requires a live project or a paid edition.
+- **Format boundary:** Lab tasks and interactive console items are excluded and disclosed.
+- **Location:** [`course/Google-Associate-Data-Practitioner/`](Google-Associate-Data-Practitioner/README.md)
 - **Publication:** Expert technical review and account-level import preview required; no publication performed.
 
 ### Google Cloud Generative AI Leader
