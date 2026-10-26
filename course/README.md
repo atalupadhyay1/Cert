@@ -16,6 +16,7 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 | Google Cloud Digital Leader | 6 | 600 | Per-option explanations, exact blueprint weighting, no case studies, no configuration objectives |
 | Google Professional Cloud DevOps Engineer | 6 | 600 | Per-option explanations, exact blueprint weighting, no case studies, configuration judged |
 | Google Professional Cloud Database Engineer | 6 | 600 | Per-option explanations, exact blueprint weighting, no case studies, configuration judged |
+| Google Professional Cloud Developer | 6 | 600 | Per-option explanations, exact blueprint weighting, no case studies, configuration judged |
 | Google Cloud Generative AI Leader | 6 | 600 | Per-option explanations, guide references |
 | Microsoft AI-300 — Machine Learning Operations Engineer Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
 | Microsoft AB-410 — Intelligent Applications Builder Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
@@ -140,6 +141,20 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 - **Time pressure, stated plainly:** 100 items in the published two hours is about **72 seconds per item**, against roughly **120–144 seconds** for the live 50–60 item paper. This bank therefore runs **slower** per item than the real exam, so a timed run is a comfortable rehearsal rather than a speed test.
 - **Format boundary:** Lab tasks, in-console exercises, and interactive item formats are excluded and disclosed; community statistics and the widely repeated third-party "about 70%" pass mark are not used, because Google publishes no passing score.
 - **Location:** [`course/Google-Professional-Cloud-Database-Engineer/`](Google-Professional-Cloud-Database-Engineer/README.md)
+- **Publication:** Expert technical review and account-level import preview required; no publication performed.
+
+### Google Professional Cloud Developer
+
+- **Status:** Six 100-item mock exams; 600 original cloud developer items with mixed formats and per-option explanations.
+- **Includes:** Udemy CSVs, offline review copies, an eight-question mixed-format sample (two items per domain), instructor landing page with per-practice-test names and full/trimmed descriptions, curriculum, sources/coverage, QA suite, and reproducible ZIP.
+- **Organization:** Every exam is weighted **32 / 23 / 24 / 21**. Google publishes ~32 / ~23 / ~24 / ~21, which totals **exactly 100%**, so no rounding correction was needed. Each per-exam count is asserted equal to its published weight, with no tolerance band. 39 local study-map skills are mapped to the four exam-guide sections and their nine objectives.
+- **Item mix:** 84 single-answer and 16 multi-select items with the selection count stated; the 16 multi-select items are spread 6 / 4 / 4 / 2 across domains 1–4. No sequencing items.
+- **No case studies:** the published PCD format is 50–60 multiple-choice and multiple-select questions with no case-study component. There is no `cases.py`, no case-embedded CSV, and no case-study document; the builder and validator reject case wording and the packager rejects a reinstated case file.
+- **Configuration in scope, judged not recited:** the guide devotes a whole section to configuring cloud-native applications for deployment, so items describe Cloud Run concurrency and instance bounds, CPU outside the request, ingress and unauthenticated access, jobs, GKE rollout bounds, probes, disruption budgets, pod and node autoscaling, IAM boundaries, invoker grants, build pipelines, image scanning and admission control — and ask what a team should decide and why. The test suite rejects console-instruction phrasing (`click`, `navigate to`, `in the console, select`), so nothing degrades into a click path.
+- **Baseline:** Current exam guide and certification page retrieved October 2026 — two hours, $200 USD plus tax, 50–60 questions, English and Japanese, no prerequisites (3+ years of industry experience including 1+ year designing and managing applications on Google Cloud recommended), **no published passing score**. Google describes renewal only by reference to its Renewal FAQs, so no duration or fee is restated; the page also notes the exam has been updated for recent branding changes, so the guide governs product names (Gemini Cloud Assist, AI coding assistants, MCP servers, Cloud Workstations, Direct VPC egress, Cloud Service Mesh, AlloyDB Auth Proxy). Each 100-item practice exam is labelled an expanded bank, and no practice percentage is converted to a pass mark.
+- **Time pressure, stated plainly:** 100 items in the published two hours is about **72 seconds per item**, against roughly **120–144 seconds** for the live 50–60 item paper. This bank therefore runs **slower** per item than the real exam, so a timed run is a comfortable rehearsal rather than a speed test.
+- **Format boundary:** Lab tasks, in-console exercises, and interactive item formats are excluded and disclosed; community statistics and third-party pass marks are not used, because Google publishes no passing score.
+- **Location:** [`course/Google-Professional-Cloud-Developer/`](Google-Professional-Cloud-Developer/README.md)
 - **Publication:** Expert technical review and account-level import preview required; no publication performed.
 
 ### Google Professional Cloud DevOps Engineer
