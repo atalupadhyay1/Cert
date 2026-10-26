@@ -1,6 +1,6 @@
 # Cert — Udemy Practice Test Course Packages
 
-This repository contains Udemy practice-test course packages for Claude/Anthropic, Google Cloud, and Microsoft certifications.
+This repository contains Udemy practice-test course packages for Claude/Anthropic, AWS, Google Cloud, and Microsoft certifications.
 
 ## 📦 Course packages
 
@@ -19,6 +19,7 @@ This repository contains Udemy practice-test course packages for Claude/Anthropi
 | **Google Professional Cloud Database Engineer** | ✅ [6 exact-weight 100-item database exams, multiple-choice and multiple-select, no case studies, configuration judged](course/Google-Professional-Cloud-Database-Engineer/README.md) | 6 | 600 |
 | **Google Professional Cloud Developer** | ✅ [6 exact-weight 100-item developer exams, multiple-choice and multiple-select, no case studies, configuration judged](course/Google-Professional-Cloud-Developer/README.md) | 6 | 600 |
 | **Google Professional Cloud Network Engineer** | ✅ [6 exact-weight 100-item network exams, multiple-choice and multiple-select, no case studies, configuration judged](course/Google-Professional-Cloud-Network-Engineer/README.md) | 6 | 600 |
+| **AWS Certified Cloud Practitioner (CLF-C02)** | ✅ [6 exact-length 65-item cloud-practitioner exams matching the live paper, multiple-choice and multiple-response, no case studies](course/AWS-Certified-Cloud-Practitioner/README.md) | 6 | 390 |
 | **Google Cloud Generative AI Leader** | ✅ [6 topical tests rewritten and structurally validated](course/Google-Gen-AI-Leader/README.md) | 6 | 600 |
 | **Microsoft AI-300: Operationalizing Machine Learning and Generative AI Solutions** | ✅ [6 blueprint-weighted 100-item MLOps/GenAIOps exams, mixed item types](course/AI-300/README.md) | 6 | 600 |
 | **Microsoft AB-410: Building Intelligent Applications** | ✅ [6 blueprint-weighted 100-item app-builder exams, mixed item types](course/AB-410/README.md) | 6 | 600 |
@@ -29,10 +30,10 @@ This repository contains Udemy practice-test course packages for Claude/Anthropi
 
 ```
 course/
-├── AB-410/  AI-300/  DP-700/  PL-300/  CCAO-F/  CCDV-F/  CCAR-F/  Google-*/  Google-Professional-Cloud-Architect/  Google-Professional-ML-Engineer/  Google-Associate-Data-Practitioner/  Google-Professional-Cloud-Security-Engineer/  Google-Cloud-Digital-Leader/  Google-Professional-Cloud-DevOps-Engineer/  Google-Professional-Cloud-Database-Engineer/  Google-Professional-Cloud-Developer/  Google-Professional-Cloud-Network-Engineer/   ← one folder per certification
+├── AB-410/  AI-300/  DP-700/  PL-300/  CCAO-F/  CCDV-F/  CCAR-F/  AWS-Certified-Cloud-Practitioner/  Google-*/  Google-Professional-Cloud-Architect/  Google-Professional-ML-Engineer/  Google-Associate-Data-Practitioner/  Google-Professional-Cloud-Security-Engineer/  Google-Cloud-Digital-Leader/  Google-Professional-Cloud-DevOps-Engineer/  Google-Professional-Cloud-Database-Engineer/  Google-Professional-Cloud-Developer/  Google-Professional-Cloud-Network-Engineer/   ← one folder per certification
 │   ├── 01-landing-page/   — Udemy metadata, descriptions, landing page
 │   ├── 02-curriculum/     — Study arc and exam-by-exam plan
-│   ├── 03-practice-sets/  — set-1 … set-6: 100-item CSV, Markdown review, set README
+│   ├── 03-practice-sets/  — set-1 … set-6: 65- or 100-item CSV, Markdown review, set README
 │   ├── 04-resources/      — Authoring source, build/validate/package/test tooling, docs
 │   └── 05-sample-upload/  — Small sample block for a platform render test
 ├── check_csv_upload.py    — Repo-wide import-contract check
