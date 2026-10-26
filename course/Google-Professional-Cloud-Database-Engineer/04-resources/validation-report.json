@@ -1,0 +1,125 @@
+{
+  "status": "PASS",
+  "sets": 6,
+  "total_questions": 600,
+  "checks": [
+    "17-column header",
+    "100 items per set",
+    "blueprint domain allocation per set (32 / 25 / 23 / 20)",
+    "four-option single-answer items",
+    "Question Type restricted to multiple-choice or multi-select",
+    "five-option multi-select items with stated selection count",
+    "two correct indices for multi-select",
+    "per-option explanations",
+    "official exam-guide references",
+    "source consistency",
+    "no case-study wording",
+    "no sequencing items",
+    "configuration described as a decision, never as console steps",
+    "cross-exam near-duplicate stems (token overlap <= 0.72)",
+    "bank-wide stem uniqueness",
+    "normalized duplicate wording",
+    "balanced single-answer slots"
+  ],
+  "limitations": [
+    "No independent factual certification",
+    "No difficulty calibration against the live exam",
+    "No exhaustive semantic duplicate detection",
+    "No Udemy account import performed",
+    "Configuration judgement is in scope on this exam; no live project or console session is reproduced",
+    "No continuous live URL verification"
+  ],
+  "files": [
+    {
+      "file": "03-practice-sets/set-1/practice-set-1.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 84,
+        "multi-select": 16
+      },
+      "domains": {
+        "Design Innovative, Scalable, and Highly Available Cloud Database Solutions": 32,
+        "Manage a Solution That Can Span Multiple Database Technologies": 25,
+        "Migrate Data Solutions": 23,
+        "Deploy Scalable and Highly Available Databases in Google Cloud": 20
+      }
+    },
+    {
+      "file": "03-practice-sets/set-2/practice-set-2.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 84,
+        "multi-select": 16
+      },
+      "domains": {
+        "Design Innovative, Scalable, and Highly Available Cloud Database Solutions": 32,
+        "Manage a Solution That Can Span Multiple Database Technologies": 25,
+        "Migrate Data Solutions": 23,
+        "Deploy Scalable and Highly Available Databases in Google Cloud": 20
+      }
+    },
+    {
+      "file": "03-practice-sets/set-3/practice-set-3.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 84,
+        "multi-select": 16
+      },
+      "domains": {
+        "Design Innovative, Scalable, and Highly Available Cloud Database Solutions": 32,
+        "Manage a Solution That Can Span Multiple Database Technologies": 25,
+        "Migrate Data Solutions": 23,
+        "Deploy Scalable and Highly Available Databases in Google Cloud": 20
+      }
+    },
+    {
+      "file": "03-practice-sets/set-4/practice-set-4.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 84,
+        "multi-select": 16
+      },
+      "domains": {
+        "Design Innovative, Scalable, and Highly Available Cloud Database Solutions": 32,
+        "Manage a Solution That Can Span Multiple Database Technologies": 25,
+        "Migrate Data Solutions": 23,
+        "Deploy Scalable and Highly Available Databases in Google Cloud": 20
+      }
+    },
+    {
+      "file": "03-practice-sets/set-5/practice-set-5.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multi-select": 16,
+        "multiple-choice": 84
+      },
+      "domains": {
+        "Design Innovative, Scalable, and Highly Available Cloud Database Solutions": 32,
+        "Manage a Solution That Can Span Multiple Database Technologies": 25,
+        "Migrate Data Solutions": 23,
+        "Deploy Scalable and Highly Available Databases in Google Cloud": 20
+      }
+    },
+    {
+      "file": "03-practice-sets/set-6/practice-set-6.csv",
+      "questions": 100,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 84,
+        "multi-select": 16
+      },
+      "domains": {
+        "Design Innovative, Scalable, and Highly Available Cloud Database Solutions": 32,
+        "Manage a Solution That Can Span Multiple Database Technologies": 25,
+        "Migrate Data Solutions": 23,
+        "Deploy Scalable and Highly Available Databases in Google Cloud": 20
+      }
+    }
+  ],
+  "errors": []
+}
