@@ -15,6 +15,7 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 | Google Professional Cloud Security Engineer | 6 | 600 | Per-option explanations, exact blueprint weighting, no case studies |
 | Google Cloud Digital Leader | 6 | 600 | Per-option explanations, exact blueprint weighting, no case studies, no configuration objectives |
 | Google Professional Cloud DevOps Engineer | 6 | 600 | Per-option explanations, exact blueprint weighting, no case studies, configuration judged |
+| Google Professional Cloud Database Engineer | 6 | 600 | Per-option explanations, exact blueprint weighting, no case studies, configuration judged |
 | Google Cloud Generative AI Leader | 6 | 600 | Per-option explanations, guide references |
 | Microsoft AI-300 — Machine Learning Operations Engineer Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
 | Microsoft AB-410 — Intelligent Applications Builder Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
@@ -125,6 +126,20 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 - **Time pressure, stated plainly:** a 100-item set in the published 90 minutes is about **54 seconds per item**, against roughly **90–108 seconds** for the live 50–60 item paper. This bank therefore runs **faster** than the real exam — the opposite of the Professional-level courses here — and every set README says so.
 - **Format boundary:** Lab tasks, console tasks, and interactive item formats are excluded and disclosed; community statistics from question-sharing sites are not used as evidence or marketing.
 - **Location:** [`course/Google-Cloud-Digital-Leader/`](Google-Cloud-Digital-Leader/README.md)
+- **Publication:** Expert technical review and account-level import preview required; no publication performed.
+
+### Google Professional Cloud Database Engineer
+
+- **Status:** Six 100-item mock exams; 600 original database engineering items with mixed formats and per-option explanations.
+- **Includes:** Udemy CSVs, offline review copies, an eight-question mixed-format sample (two items per domain), instructor landing page with per-practice-test names and full/trimmed descriptions, curriculum, sources/coverage, QA suite, and reproducible ZIP.
+- **Organization:** Every exam is weighted **32 / 25 / 23 / 20**. Google publishes ~32 / ~25 / ~23 / ~20, which totals **exactly 100%**, so no rounding correction was needed. Each per-exam count is asserted equal to its published weight, with no tolerance band. 51 local study-map skills are mapped to the four exam-guide sections, subdividing the migration and deployment sections because each publishes only one objective.
+- **Item mix:** 84 single-answer and 16 multi-select items with the selection count stated; the 16 multi-select items are spread 6 / 4 / 4 / 2 across domains 1–4. No sequencing items.
+- **No case studies:** the published PCDE format is 50–60 multiple-choice and multiple-select questions with no case-study component. There is no `cases.py`, no case-embedded CSV, and no case-study document; the builder and validator reject case wording and the packager rejects a reinstated case file.
+- **Configuration in scope, judged not recited:** the guide asks about HA and DR topology, connection and security configuration, backup and recovery design, replication and provisioning automation, so items describe those choices and ask what a team should do and why. The test suite rejects console-instruction phrasing (`click`, `navigate to`, `in the console, select`), so nothing degrades into a click path.
+- **Baseline:** Exam guide v1.2 and certification page retrieved October 2026 — two hours, $200 USD plus tax, 50–60 questions, English and Japanese, no prerequisites (5+ years of database and IT experience including 2 years of hands-on Google Cloud database work recommended), **no published passing score**. Google describes renewal only by reference to its Renewal FAQs, so no duration or fee is restated; the page also warns that the exam will be updated for recent branding changes, so the guide governs product names. Each 100-item practice exam is labelled an expanded bank, and no practice percentage is converted to a pass mark.
+- **Time pressure, stated plainly:** 100 items in the published two hours is about **72 seconds per item**, against roughly **120–144 seconds** for the live 50–60 item paper. This bank therefore runs **slower** per item than the real exam, so a timed run is a comfortable rehearsal rather than a speed test.
+- **Format boundary:** Lab tasks, in-console exercises, and interactive item formats are excluded and disclosed; community statistics and the widely repeated third-party "about 70%" pass mark are not used, because Google publishes no passing score.
+- **Location:** [`course/Google-Professional-Cloud-Database-Engineer/`](Google-Professional-Cloud-Database-Engineer/README.md)
 - **Publication:** Expert technical review and account-level import preview required; no publication performed.
 
 ### Google Professional Cloud DevOps Engineer
