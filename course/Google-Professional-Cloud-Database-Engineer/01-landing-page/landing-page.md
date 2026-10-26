@@ -60,44 +60,42 @@ IMPORTANT DISCLOSURES
 ### 4. What will students learn in your course?
 
 ```text
-• Choose between Cloud SQL, AlloyDB, Spanner, Bigtable, Firestore and Memorystore from workload shape, consistency model, latency and cost — not from product familiarity.
-• Size database compute and storage from measured metrics, and explain the performance and cost trade-offs of different machine types and storage classes.
-• Design availability topologies — zonal, regional high availability, cross-region replicas, multi-region configurations, secondary clusters — and state precisely which failure each one survives.
-• Judge connectivity and access decisions: private IP, Private Service Connect, Cloud SQL Auth Proxy, language connectors, IAM database authentication, session pooling, customer-managed keys and rotation, audit logging and locked sinks.
-• Diagnose slow queries, missing indexes, lock contention, quota limits and storage saturation using query plans, wait events, instance vitals and logs.
-• Design backup and recovery against a stated RTO and RPO: automated backups, point-in-time recovery, clones, exports and retention windows, plus what each mechanism cannot do.
-• Plan and execute migrations: same-engine and cross-engine Database Migration Service paths, schema and DDL conversion, rewriting procedural code and DML, change capture, reconciliation, cutover runbooks, reverse replication and decommissioning.
-• Deploy and operate resilient databases: provisioning from code, failover and promotion drills, read replicas and read pools, connection routing that follows the current primary, and standby headroom.
-• Control database cost deliberately: commitments on the steady baseline, right-sizing from observed peaks, idle-instance removal, storage class and retention choices, and how each saving trades against risk.
-• Practise 600 original questions with an explanation for every option, and build the habit of naming the constraint before choosing the mechanism.
+• Choose Cloud SQL, AlloyDB, Spanner, Bigtable or Firestore from workload shape.
+• Size compute and storage from measured peaks, not guesswork.
+• Pick an availability topology and name the failure it survives.
+• Judge access paths: private IP, PSC, Auth Proxy, IAM and CMEK.
+• Diagnose slow queries, lock contention and storage saturation.
+• Design backup and recovery against a stated RTO and RPO.
+• Plan migrations: tool choice, conversion, validation, cutover, fallback.
+• Run failover drills and read scaling that follows the primary.
+• Cut database cost on the baseline without buying risk.
 ```
 
 ### 5. What are the requirements or prerequisites for taking your course?
 
 ```text
-• No Google Cloud account, project, or billing setup is needed: every question is a written scenario, and nothing requires a console session.
+• No Google Cloud project or billing needed — every item is a written scenario.
 • No prerequisites, as Google states for this exam.
-• Recommended (not required) by Google: 5+ years of overall database and IT experience, including 2 years of hands-on experience with Google Cloud database solutions.
-• Basic SQL and relational literacy helps — reading queries with joins and filters, and understanding indexes, transactions and replication concepts.
-• Familiarity with at least one database engine (MySQL, PostgreSQL, SQL Server, or a NoSQL store) makes the scenarios easier to picture.
-• Helpful but not required: exposure to Google Cloud fundamentals such as projects, IAM, VPC networking and Cloud Monitoring.
-• A willingness to read the explanations, including for options you ruled out — that is where most of the learning happens.
+• Recommended (not required): 5+ years in database and IT work, 2 on Google Cloud.
+• Basic SQL and relational literacy helps you picture the scenarios.
+• Familiarity with one database engine makes the trade-offs concrete.
+• Willingness to read the explanations, including for the options you rejected.
 ```
 
 ### 6. Who is this course for?
 
 ```text
-• Database administrators and cloud database engineers preparing for the Professional Cloud Database Engineer exam.
-• Data engineers and solution architects who must choose between Google Cloud's managed database services under real constraints of availability, cost, latency and migration risk.
-• Cloud engineers running migration projects who need cutover, fallback and validation decisions to be second nature.
-• SRE and platform engineers responsible for backups, failover testing, read scaling and database cost.
-• Candidates retaking the exam who need scenario practice and explanation review rather than another video course.
+• Database administrators preparing for the Professional Cloud Database Engineer exam.
+• Data engineers who must choose a managed database under real constraints.
+• Cloud engineers running migrations who need cutover decisions to be routine.
+• SREs responsible for backups, failover testing and database cost.
+• Candidates retaking the exam who want scenario practice rather than another video course.
 
 NOT THE RIGHT FIT FOR
-• Anyone new to SQL or to relational modelling; the items assume working database vocabulary.
-• Learners expecting hands-on labs or a provisioned environment; this is written practice only, with no console exercises.
-• Anyone seeking actual or recalled exam questions, or a guaranteed pass; all 600 items are original and no passing score is published or promised.
-• Learners expecting case studies; the published format has none, so none are included.
+• Anyone new to SQL or relational modelling; the items assume working vocabulary.
+• Learners expecting hands-on labs; this is written practice only.
+• Anyone seeking actual or recalled exam questions, or a guaranteed pass.
+• Learners expecting case studies; the published format has none.
 ```
 
 ---
