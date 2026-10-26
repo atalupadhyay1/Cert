@@ -289,7 +289,9 @@ Udemy will not publish a course until three questions are answered. Every landin
 
 Each field carries at least three concrete items, no placeholders, and course-specific content rather than boilerplate. Every course's `test_course.py` (or the repo-level check) fails if a field is missing, empty, or reduced to fewer than three items:
 
+**Bullet style.** Field 4 bullets are one idea per line, not a paragraph with a bullet in front of it. The three newest Google Professional courses (Developer, Database Engineer, Network Engineer) use the short style the user asked for — roughly 60-70 characters per bullet, one decision each, no subordinate clauses. Older courses are being migrated to the same style as they are touched, so a long bullet in an untouched course is stale formatting rather than a different policy. When adding a course, write short bullets first; the trim is much cheaper than the rewrite.
+
 ```bash
-python3 course/check_landing_page_fields.py          # all courses: 16/16 PASS
+python3 course/check_landing_page_fields.py          # all courses: 18/18 PASS
 python3 course/check_landing_page_fields.py CCAO-F   # a single course
 ```
