@@ -115,7 +115,7 @@ https://cloud.google.com/learn/certification/agentic-architect
 • Secure tool execution, egress, data, and high-impact actions with layered controls.
 ```
 
-### 5. Course requirements or prerequisites
+### 5. What are the requirements or prerequisites for taking your course?
 
 ```text
 • Experience building, testing, deploying, and managing cloud solutions.

@@ -56,7 +56,7 @@ Business analysts, product and project managers, sales and marketing staff, solu
 30-day refund per platform policy. Nothing here guarantees a pass.
 ```
 
-### 4. What you will learn
+### 4. What will students learn in your course?
 
 ```text
 • Explain cloud benefits, transformation drivers, and the challenges that stall adoption in business language
@@ -70,7 +70,7 @@ Business analysts, product and project managers, sales and marketing staff, solu
 • Set SLIs, SLOs, and SLAs apart, and say what each one promises to whom
 ```
 
-### 5. Requirements
+### 5. What are the requirements or prerequisites for taking your course?
 
 ```text
 • No prerequisites, as Google states for this exam
@@ -78,7 +78,7 @@ Business analysts, product and project managers, sales and marketing staff, solu
 • Curiosity about how cloud services map to business outcomes; no Google Cloud account, project, or billing setup is needed to answer any question
 ```
 
-### 6. Who this course is for
+### 6. Who is this course for?
 
 ```text
 • Business analysts, product owners, and project managers preparing for the Cloud Digital Leader exam

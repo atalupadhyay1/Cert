@@ -55,7 +55,7 @@ Data practitioners, analysts, data engineers, and cloud administrators preparing
 30-day refund per platform policy. Nothing here guarantees a pass.
 ```
 
-### 4. What you will learn
+### 4. What will students learn in your course?
 
 ```text
 • Choose between ETL, ELT, and ETLT for a stated constraint, and pick the transfer or extraction tool that fits
@@ -68,7 +68,7 @@ Data practitioners, analysts, data engineers, and cloud administrators preparing
 • Manage the data lifecycle: storage classes, expiry rules, archiving, backup, replication, and customer-managed keys
 ```
 
-### 5. Requirements
+### 5. What are the requirements or prerequisites for taking your course?
 
 ```text
 • No prerequisites, as Google states for this exam
@@ -76,7 +76,7 @@ Data practitioners, analysts, data engineers, and cloud administrators preparing
 • Comfort with SQL helps; no Google Cloud account or paid project is needed to answer any question
 ```
 
-### 6. Who this course is for
+### 6. Who is this course for?
 
 ```text
 • Data practitioners and analysts preparing for the Associate Data Practitioner exam

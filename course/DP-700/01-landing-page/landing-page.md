@@ -103,27 +103,7 @@ Microsoft reports a scaled score of 700/1000, not a raw percentage, so a practic
 Concepts and option definitions recur across exams for reinforcement. Six hundred distinct question stems do not mean six hundred independent concepts or six independent readiness estimates. No score, calibrated difficulty, or certification result is guaranteed.
 ```
 
-### 4. Course Requirements
-
-```text
-No prior certification is required. The exam is written for data engineers who already load and transform data.
-Comfort with SQL helps, and familiarity with PySpark and a query language such as KQL helps for the streaming
-items, but every item explains the reasoning, so you can study from the questions themselves.
-No Fabric capacity, tenant, or Azure subscription is required to use this course.
-```
-
-### 5. Who This Course Is For
-
-```text
-• Data engineers preparing for DP-700 who can write a notebook but have not had to defend its design
-• Analytics engineers moving from Azure Data Factory or Synapse into Microsoft Fabric
-• BI developers who now own the lakehouse and warehouse layers, not just the report
-• Platform and governance staff who own workspace roles, OneLake security, labels, and audit evidence
-• Architects who must explain why a load, a store, or a shortcut is the right choice for the constraint
-• Anyone who wants to know why the plausible answer is wrong, not just which letter is right
-```
-
-### 6. What You Will Learn
+### 4. What will students learn in your course?
 
 ```text
 • Configure Spark pools, environments, domains, OneLake settings and Apache Airflow jobs so the workspace behaves predictably
@@ -142,6 +122,27 @@ No Fabric capacity, tenant, or Azure subscription is required to use this course
 • Diagnose pipeline, Dataflow, notebook, eventhouse, eventstream, T-SQL and shortcut errors from the right evidence
 • Optimize lakehouse tables, pipelines, the warehouse, Spark jobs and real-time queries, and prove the gain
 • Practise 600 original questions, including 24 case studies, with an explanation for every option
+```
+
+### 5. What are the requirements or prerequisites for taking your course?
+
+```text
+• No prior certification, Fabric capacity, tenant or Azure subscription is required to use this course.
+• The exam is written for data engineers who already load and transform data, so some pipeline experience helps.
+• Comfort with SQL is assumed for the warehouse and transformation items.
+• Familiarity with PySpark, and with a query language such as KQL, helps with the streaming items.
+• Every item explains its reasoning, so a new term can be studied from the question itself rather than a lab.
+```
+
+### 6. Who is this course for?
+
+```text
+• Data engineers preparing for DP-700 who can write a notebook but have not had to defend its design
+• Analytics engineers moving from Azure Data Factory or Synapse into Microsoft Fabric
+• BI developers who now own the lakehouse and warehouse layers, not just the report
+• Platform and governance staff who own workspace roles, OneLake security, labels, and audit evidence
+• Architects who must explain why a load, a store, or a shortcut is the right choice for the constraint
+• Anyone who wants to know why the plausible answer is wrong, not just which letter is right
 ```
 
 ### 7. Course Keywords / Tags

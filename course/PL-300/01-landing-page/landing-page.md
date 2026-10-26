@@ -102,31 +102,7 @@ A 100-item exam is more than the typical live count, so the real 100-minute cloc
 Concepts and option definitions recur across exams for reinforcement. Six hundred distinct question stems do not mean six hundred independent concepts or six independent readiness estimates. No score, calibrated difficulty, or certification result is guaranteed.
 ```
 
-### 4. Course Requirements
-
-```text
-Power BI Desktop is free to install, and no prior certification is required. Comfort with Excel-style data work and basic arithmetic on measures will make the material feel familiar.
-
-Helpful but not required:
-• Having built at least one report in Power BI Desktop
-• Access to a Power BI service workspace, even a trial
-• Basic familiarity with SQL or a data warehouse source
-
-You do not need an Azure subscription, a Fabric capacity, or a paid licence to study. Every question can be answered from the concepts, and the package states plainly where a capability depends on tenant settings or capacity.
-```
-
-### 5. Who This Course Is For
-
-```text
-• Analysts preparing for PL-300 who can build a report but want the model and the service to make sense
-• Excel and reporting professionals moving into Power BI as a primary tool
-• BI developers who inherited a model and need to explain why it is slow or wrong
-• Data stewards and analytics leads who own refresh, security, and distribution
-• Certification candidates who want scenario practice rather than menu recall
-• Anyone who wants to know why the plausible answer is wrong, not just which letter is right
-```
-
-### 6. What You Will Learn
+### 4. What will students learn in your course?
 
 ```text
 • Choose between Import, DirectQuery, DirectLake, Dual, and a live connection using freshness, volume, and source capacity
@@ -139,6 +115,30 @@ You do not need an Azure subscription, a Fabric capacity, or a paid licence to s
 • Secure content: workspace roles, apps and audiences, row-level security, sensitivity labels, endorsement, and item access
 • Operate content: gateways, scheduled and incremental refresh, dashboards, subscriptions, and alerts
 • Practise 600 original questions, including 24 case studies, with an explanation for every option
+```
+
+### 5. What are the requirements or prerequisites for taking your course?
+
+```text
+Power BI Desktop is free to install, and no prior certification is required. Comfort with Excel-style data work and basic arithmetic on measures will make the material feel familiar.
+
+Helpful but not required:
+• Having built at least one report in Power BI Desktop
+• Access to a Power BI service workspace, even a trial
+• Basic familiarity with SQL or a data warehouse source
+
+You do not need an Azure subscription, a Fabric capacity, or a paid licence to study. Every question can be answered from the concepts, and the package states plainly where a capability depends on tenant settings or capacity.
+```
+
+### 6. Who is this course for?
+
+```text
+• Analysts preparing for PL-300 who can build a report but want the model and the service to make sense
+• Excel and reporting professionals moving into Power BI as a primary tool
+• BI developers who inherited a model and need to explain why it is slow or wrong
+• Data stewards and analytics leads who own refresh, security, and distribution
+• Certification candidates who want scenario practice rather than menu recall
+• Anyone who wants to know why the plausible answer is wrong, not just which letter is right
 ```
 
 ### 7. Course Keywords / Tags

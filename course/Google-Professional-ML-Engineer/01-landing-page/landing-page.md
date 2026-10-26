@@ -55,7 +55,7 @@ ML engineers, data scientists, and platform engineers preparing for PMLE, plus a
 30-day refund per platform policy. Nothing here guarantees a pass.
 ```
 
-### 4. What you will learn
+### 4. What will students learn in your course?
 
 ```text
 • Choose between BigQuery ML, AutoML, custom training, and Model Garden models for a given constraint
@@ -68,7 +68,7 @@ ML engineers, data scientists, and platform engineers preparing for PMLE, plus a
 • Configure Model Armor, safety filters, explanations, and Model Monitoring, and distinguish the drift types
 ```
 
-### 5. Requirements
+### 5. What are the requirements or prerequisites for taking your course?
 
 ```text
 • Recommended (not required): 3+ years of industry experience, including 1+ year designing and managing ML solutions on Google Cloud
@@ -76,7 +76,7 @@ ML engineers, data scientists, and platform engineers preparing for PMLE, plus a
 • No Google Cloud account or paid project is needed to answer any question
 ```
 
-### 6. Who this course is for
+### 6. Who is this course for?
 
 ```text
 • ML engineers and data scientists preparing for the Professional Machine Learning Engineer exam

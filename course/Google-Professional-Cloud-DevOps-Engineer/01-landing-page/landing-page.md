@@ -56,7 +56,7 @@ DevOps engineers, SREs, platform engineers, and CI/CD or observability specialis
 30-day refund per platform policy. Nothing here guarantees a pass.
 ```
 
-### 4. What you will learn
+### 4. What will students learn in your course?
 
 ```text
 • Design a resource hierarchy and Shared VPC layout that many teams can live inside
@@ -70,7 +70,7 @@ DevOps engineers, SREs, platform engineers, and CI/CD or observability specialis
 • Apply FinOps: Spot where it is safe, commitments where it is predictable, recommenders where it is idle
 ```
 
-### 5. Requirements
+### 5. What are the requirements or prerequisites for taking your course?
 
 ```text
 • No prerequisites, as Google states for this exam
@@ -78,7 +78,7 @@ DevOps engineers, SREs, platform engineers, and CI/CD or observability specialis
 • Familiarity with CI/CD, containers and monitoring helps; no Google Cloud account, project, or billing setup is needed to answer any question
 ```
 
-### 6. Who this course is for
+### 6. Who is this course for?
 
 ```text
 • DevOps and platform engineers preparing for the Professional Cloud DevOps Engineer exam

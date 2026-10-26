@@ -246,3 +246,20 @@ course/
 2. **Validate the import contract for every course:** from the repository root run `python course/check_csv_upload.py --all`.
 3. **Upload:** drop each CSV into Udemy's Bulk Question Upload importer, and load the case-study briefs as a lecture resource (see each course's `04-resources/case-study-upload-guide.md`).
 4. **Verify:** each set's README lists the domain distribution and item mix, and states what the package does not reproduce.
+
+## Mandatory publishing fields
+
+Udemy will not publish a course until three questions are answered. Every landing page in this repository answers them under these exact headings, ordered as the form presents them:
+
+| # | Field | Where |
+|---:|---|---|
+| 4 | What will students learn in your course? | `01-landing-page/landing-page.md` |
+| 5 | What are the requirements or prerequisites for taking your course? | same file |
+| 6 | Who is this course for? | same file |
+
+Each field carries at least three concrete items, no placeholders, and course-specific content rather than boilerplate. Every course's `test_course.py` (or the repo-level check) fails if a field is missing, empty, or reduced to fewer than three items:
+
+```bash
+python3 course/check_landing_page_fields.py          # all courses: 16/16 PASS
+python3 course/check_landing_page_fields.py CCAO-F   # a single course
+```

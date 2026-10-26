@@ -105,32 +105,7 @@ Microsoft reports a scaled score of 700/1000, not a raw percentage, so a practic
 Concepts and option definitions recur across exams for reinforcement. Six hundred distinct question stems do not mean six hundred independent concepts or six independent readiness estimates. No score, calibrated difficulty, or certification result is guaranteed.
 ```
 
-### 4. Course Requirements
-
-```text
-No prior certification is required. The exam is written for engineers who build and operate machine learning and generative AI workloads on Azure, so the material assumes some exposure to that work.
-
-Helpful but not required:
-• Having trained or deployed at least one model on any platform
-• Having read a pipeline or CI/CD workflow definition
-• Basic familiarity with Azure resource groups and the Azure CLI
-• Comfort reading configuration files such as Bicep, YAML, or JSON
-
-You do not need an Azure subscription to study. Every item can be answered from the configuration and reasoning, and the explanation names any service dependency, quota, or preview constraint involved. Where a scenario uses `az ml`, Bicep, GitHub Actions, MLflow, or endpoint traffic splits, the question tests whether you would make the change — not whether you memorized a flag.
-```
-
-### 5. Who This Course Is For
-
-```text
-• Engineers preparing for AI-300 who can train a model but have not had to run one in production
-• Data scientists moving from notebooks into pipelines, registries, and endpoints
-• ML and platform engineers who own CI/CD, drift monitoring, and rollback
-• AI engineers building retrieval-augmented and agent-based systems who need an operational release process
-• Architects who must explain why a configuration is unsafe, unreproducible, or expensive
-• Anyone who wants to know why the plausible answer is wrong, not just which letter is right
-```
-
-### 6. What You Will Learn
+### 4. What will students learn in your course?
 
 ```text
 • Design workspaces, compute, and datastores so that environments, credentials, and assets cannot leak into each other
@@ -146,6 +121,31 @@ You do not need an Azure subscription to study. Every item can be answered from 
 • Observe and diagnose: span-level tracing, prompt logging, feedback loops, and continuous evaluation on sampled traffic
 • Control cost and latency without losing quality: token budgets, caching with TTL, routing, right-sizing, quantization, streaming, compression, and provisioned capacity
 • Practise 600 original questions, including 24 case studies, with an explanation for every option
+```
+
+### 5. What are the requirements or prerequisites for taking your course?
+
+```text
+No prior certification is required. The exam is written for engineers who build and operate machine learning and generative AI workloads on Azure, so the material assumes some exposure to that work.
+
+Helpful but not required:
+• Having trained or deployed at least one model on any platform
+• Having read a pipeline or CI/CD workflow definition
+• Basic familiarity with Azure resource groups and the Azure CLI
+• Comfort reading configuration files such as Bicep, YAML, or JSON
+
+You do not need an Azure subscription to study. Every item can be answered from the configuration and reasoning, and the explanation names any service dependency, quota, or preview constraint involved. Where a scenario uses `az ml`, Bicep, GitHub Actions, MLflow, or endpoint traffic splits, the question tests whether you would make the change — not whether you memorized a flag.
+```
+
+### 6. Who is this course for?
+
+```text
+• Engineers preparing for AI-300 who can train a model but have not had to run one in production
+• Data scientists moving from notebooks into pipelines, registries, and endpoints
+• ML and platform engineers who own CI/CD, drift monitoring, and rollback
+• AI engineers building retrieval-augmented and agent-based systems who need an operational release process
+• Architects who must explain why a configuration is unsafe, unreproducible, or expensive
+• Anyone who wants to know why the plausible answer is wrong, not just which letter is right
 ```
 
 ### 7. Course Keywords / Tags
