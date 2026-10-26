@@ -111,7 +111,7 @@ https://anthropic-partners.skilljar.com/claude-certified-associate-foundations-c
 • Diagnose underperforming prompts and optimize end-to-end workflow outcomes.
 ```
 
-### 5. Course requirements or prerequisites
+### 5. What are the requirements or prerequisites for taking your course?
 
 ```text
 • Comfort using Claude or a comparable AI assistant for everyday knowledge work.

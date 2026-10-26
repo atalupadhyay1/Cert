@@ -55,7 +55,7 @@ Cloud architects, platform engineers, and senior engineers preparing for PCA, pl
 30-day refund per platform policy. Nothing here guarantees a pass.
 ```
 
-### 4. What you will learn
+### 4. What will students learn in your course?
 
 ```text
 • Design a Google Cloud architecture that satisfies business and technical requirements
@@ -69,7 +69,7 @@ Cloud architects, platform engineers, and senior engineers preparing for PCA, pl
 • Answer case-study questions against a fixed scenario with several hard constraints
 ```
 
-### 5. Requirements
+### 5. What are the requirements or prerequisites for taking your course?
 
 ```text
 • Recommended (not required): 3+ years of industry experience, including 1+ year designing solutions on Google Cloud
@@ -77,7 +77,7 @@ Cloud architects, platform engineers, and senior engineers preparing for PCA, pl
 • No Google Cloud account or paid project is needed to answer any question
 ```
 
-### 6. Who this course is for
+### 6. Who is this course for?
 
 ```text
 • Architects and senior engineers preparing for the Professional Cloud Architect exam

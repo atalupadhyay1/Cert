@@ -33,7 +33,8 @@ course/
 │   ├── 03-practice-sets/  — set-1 … set-6: 100-item CSV, Markdown review, set README
 │   ├── 04-resources/      — Authoring source, build/validate/package/test tooling, docs
 │   └── 05-sample-upload/  — Small sample block for a platform render test
-└── check_csv_upload.py    — Repo-wide import-contract check
+├── check_csv_upload.py    — Repo-wide import-contract check
+└── check_landing_page_fields.py  — Repo-wide check for the three mandatory Udemy publishing fields
 ```
 
 ## ✅ Highlights
@@ -45,5 +46,6 @@ course/
   - Valid domain string matching the official exam study guide
 - **Format**: Udemy Bulk Question Uploader CSV format (17 columns, exact order)
 - **Validated** by each course's `validate.py` and `test_course.py`, plus `course/check_csv_upload.py` for the import contract
+- **Publishable** — every landing page answers the three mandatory Udemy fields (what students learn, requirements or prerequisites, who the course is for), enforced by `course/check_landing_page_fields.py`
 
 For full details see [`course/README.md`](./course/README.md).

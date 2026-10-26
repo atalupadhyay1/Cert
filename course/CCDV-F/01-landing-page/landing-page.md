@@ -110,7 +110,7 @@ https://anthropic-partners.skilljar.com/claude-certified-developer-foundations-c
 • Distinguish MCP tools, resources, prompts, transports, and appropriate customization choices.
 ```
 
-### 5. Course requirements or prerequisites
+### 5. What are the requirements or prerequisites for taking your course?
 
 ```text
 • Working familiarity with programming, REST APIs, JSON, Git, and testing.

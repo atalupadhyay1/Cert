@@ -1,59 +1,104 @@
-# Udemy course listing — Google Professional Cloud Database Engineer practice tests
+# 🚀 Google Professional Cloud Database Engineer — Practice Test Landing Page
 
-## Course title
+Six 100-item mock exams · 600 original questions · every option explained · no case studies, because the exam has none · configuration judged, not recited
 
-**Google Professional Cloud Database Engineer Practice Tests — 6 Full Exams, 600 Questions**
+This package is an independent study aid for the **Google Cloud Professional Cloud Database Engineer (PCDE)** exam, written for the engineer who has to decide *which* database, *which* availability topology, *which* migration tool, and *which* recovery mechanism fits a stated constraint.
 
-*Alternative shorter title:* Professional Cloud Database Engineer: 600 Practice Questions
+---
 
-## Subtitle / headline
+## 📋 Udemy Course Metadata (copy/paste into the course creation form)
 
+### 1. Course Title
+
+```text
+Google Professional Cloud Database Engineer Practice Tests — 6 Full Exams, 600 Questions
+```
+
+Alternative shorter title: Professional Cloud Database Engineer: 600 Practice Questions
+
+### 2. Course Subtitle
+
+```text
 Six blueprint-weighted practice exams with a written explanation for every answer option — Cloud SQL, AlloyDB, Spanner, Bigtable, Firestore, Memorystore, Database Migration Service and the operational decisions around them.
+```
 
-## Course description
+### 3. Course Description
 
-This course is **600 original questions** for the Google Cloud **Professional Cloud Database Engineer** exam, arranged as six 100-item mock exams. Every exam follows the published blueprint — **32 / 25 / 23 / 20** — and every item is followed by an explanation for **each option**, so a wrong answer tells you which idea was wrong rather than only that it was wrong.
+```text
+This course is 600 original questions for the Google Cloud Professional Cloud Database Engineer exam, arranged as six 100-item mock exams. Every exam follows the published blueprint — 32 / 25 / 23 / 20 — and every item is followed by an explanation for each option, so a wrong answer tells you which idea was wrong rather than only that it was wrong.
 
 The questions are written the way the exam is written: a short engineering situation, a stated constraint, and a decision. A team must fit a working set into memory without changing the machine type; a bank must survive a regional loss without losing acknowledged writes; a migration has a 20-minute window and a 5 TB source. You are asked what to do and why, not which menu contains a setting.
 
-### What makes this different
+WHAT MAKES THIS DIFFERENT
+• Blueprint-weighted, not topic-sampled: every exam allocates 32 / 25 / 23 / 20 items to the four official sections, and because those published weights total exactly 100% the allocation is the weight itself, with no rounding and no tolerance band.
+• Explanations for all options: correct options explain why they win, and distractors explain what they would break.
+• Original items only, written for this course. No recalled exam content and no question-bank copies.
+• No invented pass mark: Google does not publish a passing score for this exam, so none is stated and no practice percentage is converted into one.
+• No case studies: the published format has none, so none are imitated.
+• Configuration is judged, not dictated: items reason about HA topology, connection paths, backup and point-in-time recovery, replication and provisioning automation. Nothing is a click-by-click recipe and nothing needs a live project.
 
-- **Blueprint-weighted, not topic-sampled.** Every exam allocates 32 / 25 / 23 / 20 items to the four official sections. The published weights total exactly 100%, so the allocation is the weight itself — no rounding, no tolerance band.
-- **Explanations for all options.** Correct options explain why they win; distractors explain what they would break.
-- **Original items only.** Written for this course. No recalled exam content, no question-bank copies.
-- **No invented pass mark.** Google does not publish a passing score for this exam, so none is stated here and no practice percentage is converted into one.
-- **No case studies.** The published format has none, so none are imitated.
-- **Configuration is judged, not dictated.** This exam genuinely tests configuration decisions, so items reason about HA topology, connection paths, backup and point-in-time recovery, replication and provisioning automation. Nothing is a click-by-click recipe, and nothing needs a live project.
+WHAT YOU GET
+• Six full-length practice exams of 100 questions each, 84 single-answer and 16 multi-select per exam.
+• An explanation for every option, plus a rationale, the exam-guide section, the local study area and a primary reference on every question.
+• A blueprint that matches the published weights exactly on all six exams.
+• A 51-area study map mapped to the four official sections.
+• Study plan, eight-week schedule, two-hour time budget, scoring method and quick-reference sheets.
 
-### Who this is for
+EXAM FACTS THIS COURSE IS BUILT AROUND
+Verified against Google's certification page and exam guide in October 2026: two hours, $200 USD plus tax, 50–60 multiple-choice and multiple-select questions, offered in English and Japanese, no prerequisites (5+ years of database and IT experience including 2 years of hands-on Google Cloud database work is recommended), no published passing score, and no case-study component.
 
-Database administrators, data engineers, and cloud engineers preparing for the Professional Cloud Database Engineer exam, and anyone who has to choose between Cloud SQL, AlloyDB, Spanner, Bigtable, Firestore and Memorystore under real constraints of availability, cost, latency and migration risk.
+AN HONEST NOTE ON LENGTH AND TIMING
+The live exam asks 50–60 questions in two hours, which is roughly 120–144 seconds per question. Each practice exam here is 100 questions, a deliberately larger bank for broader coverage. Under the same two-hour clock that is about 72 seconds per question, so these sets run slower per item than the real exam and are a comfortable, thorough rehearsal rather than a time simulator. If you want pressure, shorten the clock deliberately.
 
-### What you get
+IMPORTANT DISCLOSURES
+• Independent educational content. Not affiliated with, endorsed by, or sponsored by Google. Google Cloud and the certification names are trademarks of Google LLC.
+• No claim of exam-day equivalence, no guarantee of a passing result, and no reproduction of live exam content.
+• The passing score is not published by Google and is therefore not stated anywhere in this course.
+• Product names follow the October 2026 exam guide; Google notes the exam will be updated for recent branding changes, so always confirm current names in the guide.
+```
 
-| Item | Detail |
-|---|---|
-| Practice exams | 6 full-length sets |
-| Questions | 600 originals (84 single-answer + 16 multi-select per exam) |
-| Explanations | One per option, plus a rationale, exam-guide section, and reference per question |
-| Blueprint | 32 / 25 / 23 / 20 on every exam, exactly as published |
-| Study map | 51 local study areas mapped to the four official sections |
-| Extras | Study plan, eight-week schedule, two-hour time budget, scoring method, quick-reference sheets |
+### 4. What will students learn in your course?
 
-### Exam facts this course is built around
+```text
+• Choose between Cloud SQL, AlloyDB, Spanner, Bigtable, Firestore and Memorystore from workload shape, consistency model, latency and cost — not from product familiarity.
+• Size database compute and storage from measured metrics, and explain the performance and cost trade-offs of different machine types and storage classes.
+• Design availability topologies — zonal, regional high availability, cross-region replicas, multi-region configurations, secondary clusters — and state precisely which failure each one survives.
+• Judge connectivity and access decisions: private IP, Private Service Connect, Cloud SQL Auth Proxy, language connectors, IAM database authentication, session pooling, customer-managed keys and rotation, audit logging and locked sinks.
+• Diagnose slow queries, missing indexes, lock contention, quota limits and storage saturation using query plans, wait events, instance vitals and logs.
+• Design backup and recovery against a stated RTO and RPO: automated backups, point-in-time recovery, clones, exports and retention windows, plus what each mechanism cannot do.
+• Plan and execute migrations: same-engine and cross-engine Database Migration Service paths, schema and DDL conversion, rewriting procedural code and DML, change capture, reconciliation, cutover runbooks, reverse replication and decommissioning.
+• Deploy and operate resilient databases: provisioning from code, failover and promotion drills, read replicas and read pools, connection routing that follows the current primary, and standby headroom.
+• Control database cost deliberately: commitments on the steady baseline, right-sizing from observed peaks, idle-instance removal, storage class and retention choices, and how each saving trades against risk.
+• Practise 600 original questions with an explanation for every option, and build the habit of naming the constraint before choosing the mechanism.
+```
 
-Verified against Google's certification page and exam guide in **October 2026**: **two hours**, **$200 USD plus tax**, **50–60 multiple-choice and multiple-select questions**, offered in **English and Japanese**, **no prerequisites** (5+ years of database and IT experience including 2 years of hands-on Google Cloud database work is recommended), **no published passing score**, and **no case-study component**.
+### 5. What are the requirements or prerequisites for taking your course?
 
-### An honest note on length and timing
+```text
+• No Google Cloud account, project, or billing setup is needed: every question is a written scenario, and nothing requires a console session.
+• No prerequisites, as Google states for this exam.
+• Recommended (not required) by Google: 5+ years of overall database and IT experience, including 2 years of hands-on experience with Google Cloud database solutions.
+• Basic SQL and relational literacy helps — reading queries with joins and filters, and understanding indexes, transactions and replication concepts.
+• Familiarity with at least one database engine (MySQL, PostgreSQL, SQL Server, or a NoSQL store) makes the scenarios easier to picture.
+• Helpful but not required: exposure to Google Cloud fundamentals such as projects, IAM, VPC networking and Cloud Monitoring.
+• A willingness to read the explanations, including for options you ruled out — that is where most of the learning happens.
+```
 
-The live exam asks **50–60 questions in two hours**, which is roughly **120–144 seconds per question**. Each practice exam here is **100 questions**, a deliberately larger bank for broader coverage. Under the same two-hour clock that is about **72 seconds per question** — so these sets run **slower per item** than the real exam and are a comfortable, thorough rehearsal rather than a time simulator. If you want pressure, shorten the clock deliberately.
+### 6. Who is this course for?
 
-### Important disclosures
+```text
+• Database administrators and cloud database engineers preparing for the Professional Cloud Database Engineer exam.
+• Data engineers and solution architects who must choose between Google Cloud's managed database services under real constraints of availability, cost, latency and migration risk.
+• Cloud engineers running migration projects who need cutover, fallback and validation decisions to be second nature.
+• SRE and platform engineers responsible for backups, failover testing, read scaling and database cost.
+• Candidates retaking the exam who need scenario practice and explanation review rather than another video course.
 
-- Independent educational content. Not affiliated with, endorsed by, or sponsored by Google. Google Cloud and the certification names are trademarks of Google LLC.
-- No claim of exam-day equivalence, no guarantee of a passing result, and no reproduction of live exam content.
-- Passing score is not published by Google and is therefore not stated anywhere in this course.
-- Product names follow the October 2026 exam guide; Google notes the exam will be updated for recent branding changes, so always confirm current names in the guide.
+NOT THE RIGHT FIT FOR
+• Anyone new to SQL or to relational modelling; the items assume working database vocabulary.
+• Learners expecting hands-on labs or a provisioned environment; this is written practice only, with no console exercises.
+• Anyone seeking actual or recalled exam questions, or a guaranteed pass; all 600 items are original and no passing score is published or promised.
+• Learners expecting case studies; the published format has none, so none are included.
+```
 
 ---
 

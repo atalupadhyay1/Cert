@@ -103,27 +103,7 @@ Microsoft reports a scaled score of 700/1000, not a raw percentage, so a practic
 Concepts and option definitions recur across exams for reinforcement. Six hundred distinct question stems do not mean six hundred independent concepts or six independent readiness estimates. No score, calibrated difficulty, or certification result is guaranteed.
 ```
 
-### 4. Course Requirements
-
-```text
-No prior certification is required. The exam is written for developers and makers who build apps, flows, and
-agents. Familiarity with tables and forms, basic Power Fx expressions, and the idea of an automated flow helps,
-but every item explains the reasoning, so you can study from the questions themselves.
-No Power Platform licence or tenant is required to use this course.
-```
-
-### 5. Who This Course Is For
-
-```text
-• Developers and makers preparing for AB-410 who have built an app but not had to defend its design
-• Power Platform consultants who must choose between a table, a form, a flow, a prompt, or a business rule
-• Citizen developers moving from a working prototype to a governed solution with environments and ALM
-• IT staff who own security roles, business units, and field security profiles
-• Architects who must explain why a component choice is unmaintainable, over-permissioned, or expensive
-• Anyone who wants to know why the plausible answer is wrong, not just which letter is right
-```
-
-### 6. What You Will Learn
+### 4. What will students learn in your course?
 
 ```text
 • Turn a requirement into the smallest set of components that satisfies it, and say what you rejected
@@ -140,6 +120,27 @@ No Power Platform licence or tenant is required to use this course.
 • Build prompts in AI Hub with inputs and knowledge, choose the right model, and consume prompts and models in apps and flows
 • Enforce business logic in the right place: business rules and their scope, business process flows, calculated, formula, and rollup columns
 • Practise 600 original questions, including 24 case studies, with an explanation for every option
+```
+
+### 5. What are the requirements or prerequisites for taking your course?
+
+```text
+• No prior certification and no Power Platform licence or tenant are required to use this course.
+• The exam is written for developers and makers who build apps, flows and agents, so some hands-on making helps.
+• Familiarity with tables and forms, basic Power Fx expressions, and the idea of an automated flow is helpful.
+• No environment or admin access is needed: every item is a written scenario with an explanation for each option.
+• Where a term is new, the explanation supplies the reasoning, so you can study from the questions themselves.
+```
+
+### 6. Who is this course for?
+
+```text
+• Developers and makers preparing for AB-410 who have built an app but not had to defend its design
+• Power Platform consultants who must choose between a table, a form, a flow, a prompt, or a business rule
+• Citizen developers moving from a working prototype to a governed solution with environments and ALM
+• IT staff who own security roles, business units, and field security profiles
+• Architects who must explain why a component choice is unmaintainable, over-permissioned, or expensive
+• Anyone who wants to know why the plausible answer is wrong, not just which letter is right
 ```
 
 ### 7. Course Keywords / Tags

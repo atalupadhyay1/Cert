@@ -248,6 +248,22 @@ class ArtifactTests(unittest.TestCase):
         self.assertFalse((ROOT / '04-resources/case-study-upload-guide.md').exists())
         self.assertFalse(list(ROOT.glob('03-practice-sets/set-*/case-embedded-*.csv')))
 
+    def test_landing_page_has_the_mandatory_publishing_fields(self):
+        # The three Udemy form fields a course cannot be published without.
+        text = (ROOT / '01-landing-page/landing-page.md').read_text(encoding='utf-8')
+        for heading in ('### 4. What will students learn in your course?',
+                        '### 5. What are the requirements or prerequisites for taking your course?',
+                        '### 6. Who is this course for?'):
+            self.assertIn(heading, text)
+        # Each field must carry at least three concrete bullets, not a placeholder.
+        for heading in ('### 4. What will students learn in your course?',
+                        '### 5. What are the requirements or prerequisites for taking your course?',
+                        '### 6. Who is this course for?'):
+            block = text.split(heading, 1)[1].split('\n### ', 1)[0]
+            self.assertGreaterEqual(block.count('\n• '), 3, heading)
+        self.assertNotIn('TODO', text)
+        self.assertNotIn('PLACEHOLDER', text)
+
     def test_landing_page_has_no_stale_counts(self):
         text = (ROOT / '01-landing-page/landing-page.md').read_text(encoding='utf-8')
         self.assertIn('600 original questions', text)

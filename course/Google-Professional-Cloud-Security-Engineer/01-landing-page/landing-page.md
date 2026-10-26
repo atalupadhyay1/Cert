@@ -55,7 +55,7 @@ Security engineers, cloud architects, platform engineers, and auditors preparing
 30-day refund per platform policy. Nothing here guarantees a pass.
 ```
 
-### 4. What you will learn
+### 4. What will students learn in your course?
 
 ```text
 • Federate the workforce, harden service accounts, and replace downloaded keys with short-lived credentials
@@ -69,7 +69,7 @@ Security engineers, cloud architects, platform engineers, and auditors preparing
 • Map a regulatory requirement to a control, an owner, and the evidence an auditor can test
 ```
 
-### 5. Requirements
+### 5. What are the requirements or prerequisites for taking your course?
 
 ```text
 • No prerequisites, as Google states for this exam
@@ -77,7 +77,7 @@ Security engineers, cloud architects, platform engineers, and auditors preparing
 • Familiarity with IAM, VPC networking, and encryption concepts helps; no Google Cloud account or paid project is needed to answer any question
 ```
 
-### 6. Who this course is for
+### 6. Who is this course for?
 
 ```text
 • Security engineers and cloud architects preparing for the Professional Cloud Security Engineer exam
