@@ -13,6 +13,7 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 | Google Professional Cloud Architect | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
 | Google Associate Data Practitioner | 6 | 600 | Per-option explanations, exact blueprint weighting, no case studies |
 | Google Professional Cloud Security Engineer | 6 | 600 | Per-option explanations, exact blueprint weighting, no case studies |
+| Google Cloud Digital Leader | 6 | 600 | Per-option explanations, exact blueprint weighting, no case studies, no configuration objectives |
 | Google Cloud Generative AI Leader | 6 | 600 | Per-option explanations, guide references |
 | Microsoft AI-300 — Machine Learning Operations Engineer Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
 | Microsoft AB-410 — Intelligent Applications Builder Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
@@ -109,6 +110,20 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 - **Configuration note:** items deliberately show IAM conditions and deny policies, access levels, firewall attachment points, perimeter and restricted VIP choices, lifecycle and retention settings, key rings and rotation, log sinks, and admission policy behaviour, because PCSE tests an engineer's configuration judgement. No item requires a live project or a paid edition.
 - **Format boundary:** Lab tasks and interactive console items are excluded and disclosed.
 - **Location:** [`course/Google-Professional-Cloud-Security-Engineer/`](Google-Professional-Cloud-Security-Engineer/README.md)
+- **Publication:** Expert technical review and account-level import preview required; no publication performed.
+
+### Google Cloud Digital Leader
+
+- **Status:** Six 100-item mock exams; 600 original business-and-technology items with mixed formats and per-option explanations.
+- **Includes:** Udemy CSVs, offline review copies, a twelve-question mixed-format sample (two items per domain), instructor landing page with per-practice-test names and full/trimmed descriptions, curriculum, sources/coverage, QA suite, and reproducible ZIP.
+- **Organization:** Every exam is weighted **18 / 18 / 18 / 18 / 18 / 10**. Google publishes ~18 / ~18 / ~18 / ~18 / ~18 / ~10, which totals **exactly 100%**, so no rounding correction was needed — the first six-domain course here where the weights are the item counts themselves. Each per-exam count is asserted equal to its published weight, with no tolerance band. 41 local study-map skills are mapped to the six exam-guide sections.
+- **Item mix:** 84 single-answer and 16 multi-select items with the selection count stated; the 16 multi-select items are spread 3 / 3 / 3 / 3 / 3 / 1 across domains 1–6. No sequencing items.
+- **No case studies:** the published CDL format is 50–60 multiple-choice and multiple-select questions with no case-study component. There is no `cases.py`, no case-embedded CSV, and no case-study document; the builder and validator reject case wording and the packager rejects a reinstated case file.
+- **No configuration objective:** Google's CDL guide assesses business value and use-case matching only, so the "configuration is in scope" paragraph used by the engineering courses was **deleted, not adapted**. No item asks for a resource setting, a policy body, or a role binding.
+- **Baseline:** Exam guide **launched August 12, 2026**, and the certification page, retrieved October 2026 — 90 minutes, $99 USD plus tax, 50–60 questions, English / Japanese / Spanish / Portuguese / French, no prerequisites (experience collaborating with technical professionals recommended), **no published passing score**. Validity 3 years; renewal is a 45-minute, $60, 20-question exam in English and Japanese or designated Google Skills courses and badges, and this bank is not calibrated to that instrument.
+- **Time pressure, stated plainly:** a 100-item set in the published 90 minutes is about **54 seconds per item**, against roughly **90–108 seconds** for the live 50–60 item paper. This bank therefore runs **faster** than the real exam — the opposite of the Professional-level courses here — and every set README says so.
+- **Format boundary:** Lab tasks, console tasks, and interactive item formats are excluded and disclosed; community statistics from question-sharing sites are not used as evidence or marketing.
+- **Location:** [`course/Google-Cloud-Digital-Leader/`](Google-Cloud-Digital-Leader/README.md)
 - **Publication:** Expert technical review and account-level import preview required; no publication performed.
 
 ### Google Cloud Generative AI Leader
