@@ -1,0 +1,131 @@
+{
+  "status": "PASS",
+  "sets": 6,
+  "total_questions": 450,
+  "checks": [
+    "17-column header",
+    "75 items per set",
+    "published domain allocation per set (31 / 26 / 20 / 12 / 11 percent, 23 / 20 / 15 / 9 / 8 items)",
+    "four-option single-answer items",
+    "Question Type restricted to multiple-choice or multi-select",
+    "five-option multiple-response items with stated selection count",
+    "two correct indices for multiple-response items",
+    "per-option explanations",
+    "official exam-guide references",
+    "source consistency",
+    "no case-study wording",
+    "no sequencing items",
+    "integration, safety, evaluation and optimisation choices only, never console steps or code listings",
+    "cross-exam near-duplicate stems (token overlap <= 0.72)",
+    "bank-wide stem uniqueness",
+    "normalized duplicate wording",
+    "balanced single-answer slots"
+  ],
+  "limitations": [
+    "No independent factual certification",
+    "No difficulty calibration against the live exam",
+    "No exhaustive semantic duplicate detection",
+    "No Udemy account import performed",
+    "Multiple-choice and multiple-response mix is an authoring choice because AWS publishes no split",
+    "No continuous live URL verification"
+  ],
+  "files": [
+    {
+      "file": "03-practice-sets/set-1/practice-set-1.csv",
+      "questions": 75,
+      "status": "PASS",
+      "types": {
+        "multi-select": 15,
+        "multiple-choice": 60
+      },
+      "domains": {
+        "Foundation Model Integration, Data Management, and Compliance": 23,
+        "Implementation and Integration": 20,
+        "AI Safety, Security, and Governance": 15,
+        "Operational Efficiency and Optimization for GenAI Applications": 9,
+        "Testing, Validation, and Troubleshooting": 8
+      }
+    },
+    {
+      "file": "03-practice-sets/set-2/practice-set-2.csv",
+      "questions": 75,
+      "status": "PASS",
+      "types": {
+        "multi-select": 15,
+        "multiple-choice": 60
+      },
+      "domains": {
+        "Foundation Model Integration, Data Management, and Compliance": 23,
+        "Implementation and Integration": 20,
+        "AI Safety, Security, and Governance": 15,
+        "Operational Efficiency and Optimization for GenAI Applications": 9,
+        "Testing, Validation, and Troubleshooting": 8
+      }
+    },
+    {
+      "file": "03-practice-sets/set-3/practice-set-3.csv",
+      "questions": 75,
+      "status": "PASS",
+      "types": {
+        "multi-select": 15,
+        "multiple-choice": 60
+      },
+      "domains": {
+        "Foundation Model Integration, Data Management, and Compliance": 23,
+        "Implementation and Integration": 20,
+        "AI Safety, Security, and Governance": 15,
+        "Operational Efficiency and Optimization for GenAI Applications": 9,
+        "Testing, Validation, and Troubleshooting": 8
+      }
+    },
+    {
+      "file": "03-practice-sets/set-4/practice-set-4.csv",
+      "questions": 75,
+      "status": "PASS",
+      "types": {
+        "multi-select": 15,
+        "multiple-choice": 60
+      },
+      "domains": {
+        "Foundation Model Integration, Data Management, and Compliance": 23,
+        "Implementation and Integration": 20,
+        "AI Safety, Security, and Governance": 15,
+        "Operational Efficiency and Optimization for GenAI Applications": 9,
+        "Testing, Validation, and Troubleshooting": 8
+      }
+    },
+    {
+      "file": "03-practice-sets/set-5/practice-set-5.csv",
+      "questions": 75,
+      "status": "PASS",
+      "types": {
+        "multi-select": 15,
+        "multiple-choice": 60
+      },
+      "domains": {
+        "Foundation Model Integration, Data Management, and Compliance": 23,
+        "Implementation and Integration": 20,
+        "AI Safety, Security, and Governance": 15,
+        "Operational Efficiency and Optimization for GenAI Applications": 9,
+        "Testing, Validation, and Troubleshooting": 8
+      }
+    },
+    {
+      "file": "03-practice-sets/set-6/practice-set-6.csv",
+      "questions": 75,
+      "status": "PASS",
+      "types": {
+        "multi-select": 15,
+        "multiple-choice": 60
+      },
+      "domains": {
+        "Foundation Model Integration, Data Management, and Compliance": 23,
+        "Implementation and Integration": 20,
+        "AI Safety, Security, and Governance": 15,
+        "Operational Efficiency and Optimization for GenAI Applications": 9,
+        "Testing, Validation, and Troubleshooting": 8
+      }
+    }
+  ],
+  "errors": []
+}
