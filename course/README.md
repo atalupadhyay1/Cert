@@ -19,6 +19,7 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 | Google Professional Cloud Developer | 6 | 600 | Per-option explanations, exact blueprint weighting, no case studies, configuration judged |
 | Google Professional Cloud Network Engineer | 6 | 600 | Per-option explanations, exact blueprint weighting, no case studies, configuration judged |
 | AWS Certified Cloud Practitioner (CLF-C02) | 6 | 390 | Per-option explanations, live 65-item paper length, no case studies |
+| AWS Certified Machine Learning Engineer – Associate (MLA-C02) | 6 | 390 | Per-option explanations, live 65-item paper length, no case studies |
 | Google Cloud Generative AI Leader | 6 | 600 | Per-option explanations, guide references |
 | Microsoft AI-300 — Machine Learning Operations Engineer Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
 | Microsoft AB-410 — Intelligent Applications Builder Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
@@ -202,6 +203,21 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 - **Location:** [`course/AWS-Certified-Cloud-Practitioner/`](AWS-Certified-Cloud-Practitioner/README.md)
 - **Publication:** Expert technical review and account-level import preview required; no Udemy publication performed.
 
+### AWS Certified Machine Learning Engineer – Associate (MLA-C02)
+
+- **Status:** Six 65-item mock exams; 390 original ML-engineer items with mixed formats and per-option explanations.
+- **Includes:** Udemy CSVs, offline review copies, a twelve-question mixed-format sample (three items per domain), instructor landing page with per-practice-test names and full/trimmed descriptions, curriculum, six-week schedule, scoring method, time budget, sources/coverage, QA suite, and reproducible ZIP.
+- **Organization:** Every exam is weighted **18 / 16 / 16 / 15** against the published **28 / 24 / 24 / 24 percent**. Those four weights total exactly 100; applied to 65 items they give 18.2 / 15.6 / 15.6 / 15.6, and because largest-remainder rounding would give 18 / 16 / 16 / 16 and overshoot the paper by one item, the spare item comes out of Domain 4. Every count is within 0.6 items of its published weight, and the allocation is asserted in the tests. 45 local study-map skills are mapped to the four domains.
+- **Item mix:** 50 multiple-choice and 15 multiple-response items per exam, with the selection count stated and the two correct indices spread 4 / 4 / 4 / 3 across domains 1–4. AWS publishes **no split** between the two item types, so this mix is labelled an authoring choice rather than presented as a published figure.
+- **Live paper length, not an expanded bank:** AWS publishes 65 questions in 130 minutes, of which 50 are scored and 15 are unscored, so each set is 65 items and runs at about **120 seconds per item** — the same pace as the appointment. The set READMEs note that a practice percentage measures all 65 items while 15 live items do not count.
+- **Scoring stated as published:** a **scaled score of 100–1000 with a minimum passing score of 720**, applied to the 50 scored items with compensatory scoring and no per-domain pass mark. Because 720 is scaled rather than a percentage of 65, no practice percentage is converted into it and no target percentage appears anywhere.
+- **No case studies:** the published MLA-C02 format is multiple choice and multiple response with no case-study component. There is no `cases.py`, no case-embedded CSV, and no case-study document; the builder and validator reject case wording and the packager rejects a reinstated case file.
+- **Implementation decisions only:** AWS lists end-to-end solution design, ML strategy and best practice, integration with a wide array of tools, and depth in two or more ML domains as out of scope, so items describe a production requirement and ask which store, model, tuning objective, inference pattern, scaling metric, monitor or control fits. The test suite rejects console-instruction phrasing (`click`, `navigate to`, `in the console, select`).
+- **Baseline:** Certification page and MLA-C02 exam guide retrieved October 2026 — 130 minutes, $150 USD, 65 questions (50 scored + 15 unscored), Pearson VUE or online proctoring, three-year validity, and at least one year with SageMaker AI, Amazon Bedrock and other ML engineering services recommended. MLA-C02 replaced MLA-C01 in English on 29 September 2026; while MLA-C02 is in beta it runs as 85 questions in 170 minutes for $75 USD in English only, extra items unscored and no pass/fail result, and that beta form is disclosed wherever the paper length is described.
+- **Format boundary:** Lab tasks, in-console exercises, and interactive item formats are excluded and disclosed; community statistics and third-party pass marks are not used as evidence or marketing.
+- **Location:** [`course/AWS-Certified-Machine-Learning-Engineer-Associate/`](AWS-Certified-Machine-Learning-Engineer-Associate/README.md)
+- **Publication:** Expert technical review and account-level import preview required; no Udemy publication performed.
+
 ### Google Cloud Generative AI Leader
 
 - **Status:** Six topical 100-question multiple-choice tests, rewritten with original concept checks, short scenarios, explanations, and closest official guide references.
@@ -306,9 +322,9 @@ Udemy will not publish a course until three questions are answered. Every landin
 
 Each field carries at least three concrete items, no placeholders, and course-specific content rather than boilerplate. Every course's `test_course.py` (or the repo-level check) fails if a field is missing, empty, or reduced to fewer than three items:
 
-**Bullet style.** Field 4 bullets are one idea per line, not a paragraph with a bullet in front of it. The newest courses (Google Professional Developer, Database Engineer and Network Engineer, plus AWS Cloud Practitioner) use the short style the user asked for — roughly 60-70 characters per bullet, one decision each, no subordinate clauses. Older courses are being migrated to the same style as they are touched, so a long bullet in an untouched course is stale formatting rather than a different policy. When adding a course, write short bullets first; the trim is much cheaper than the rewrite.
+**Bullet style.** Field 4 bullets are one idea per line, not a paragraph with a bullet in front of it. The newest courses (Google Professional Developer, Database Engineer and Network Engineer, plus AWS Cloud Practitioner and ML Engineer Associate) use the short style the user asked for — roughly 60-70 characters per bullet, one decision each, no subordinate clauses. Older courses are being migrated to the same style as they are touched, so a long bullet in an untouched course is stale formatting rather than a different policy. When adding a course, write short bullets first; the trim is much cheaper than the rewrite.
 
 ```bash
-python3 course/check_landing_page_fields.py          # all courses: 19/19 PASS
+python3 course/check_landing_page_fields.py          # all courses: 20/20 PASS
 python3 course/check_landing_page_fields.py CCAO-F   # a single course
 ```

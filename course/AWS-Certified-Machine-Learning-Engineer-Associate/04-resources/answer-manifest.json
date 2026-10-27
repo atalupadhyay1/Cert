@@ -1,0 +1,8084 @@
+{
+  "1": [
+    {
+      "question": 1,
+      "id": "T1-Q001",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.1",
+      "kind": "S",
+      "correct_terms": [
+        "dynamodb_lookup"
+      ],
+      "option_terms": [
+        "efs_shared",
+        "s3_parquet",
+        "fsx_lustre_high",
+        "dynamodb_lookup"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 2,
+      "id": "T1-Q002",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.1",
+      "kind": "S",
+      "correct_terms": [
+        "fsx_lustre_high"
+      ],
+      "option_terms": [
+        "s3_intelligent",
+        "efs_shared",
+        "fsx_lustre_high",
+        "ebs_gp3"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 3,
+      "id": "T1-Q003",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.2",
+      "kind": "S",
+      "correct_terms": [
+        "kinesis_streams"
+      ],
+      "option_terms": [
+        "kinesis_streams",
+        "glue_etl",
+        "firehose_delivery",
+        "lambda_transform"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 4,
+      "id": "T1-Q004",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.3",
+      "kind": "S",
+      "correct_terms": [
+        "s3_object_lock"
+      ],
+      "option_terms": [
+        "s3_glacier",
+        "s3_object_lock",
+        "s3_intelligent",
+        "s3_lifecycle"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 5,
+      "id": "T1-Q005",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.4",
+      "kind": "S",
+      "correct_terms": [
+        "s3_parquet"
+      ],
+      "option_terms": [
+        "s3_raw_json",
+        "s3_parquet",
+        "ebs_gp3",
+        "efs_shared"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 6,
+      "id": "T1-Q006",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.4",
+      "kind": "S",
+      "correct_terms": [
+        "s3_partitioned"
+      ],
+      "option_terms": [
+        "s3_lifecycle",
+        "efs_shared",
+        "s3_raw_json",
+        "s3_partitioned"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 7,
+      "id": "T1-Q007",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.5",
+      "kind": "S",
+      "correct_terms": [
+        "dms_replicate"
+      ],
+      "option_terms": [
+        "glue_etl",
+        "kinesis_streams",
+        "emr_spark",
+        "dms_replicate"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 8,
+      "id": "T1-Q008",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.5",
+      "kind": "M2",
+      "correct_terms": [
+        "glue_etl",
+        "glue_catalog"
+      ],
+      "option_terms": [
+        "emr_spark",
+        "databrew_recipe",
+        "data_wrangler",
+        "glue_catalog",
+        "glue_etl"
+      ],
+      "correct_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "question": 9,
+      "id": "T1-Q009",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.6",
+      "kind": "S",
+      "correct_terms": [
+        "feature_group_ingest"
+      ],
+      "option_terms": [
+        "feature_store_online",
+        "feature_group_ingest",
+        "glue_catalog",
+        "feature_store_offline"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 10,
+      "id": "T1-Q010",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.7",
+      "kind": "S",
+      "correct_terms": [
+        "standard_scaler"
+      ],
+      "option_terms": [
+        "log_transform",
+        "bin_ages",
+        "standard_scaler",
+        "one_hot"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 11,
+      "id": "T1-Q011",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.7",
+      "kind": "S",
+      "correct_terms": [
+        "stratified_split"
+      ],
+      "option_terms": [
+        "dedupe_rows",
+        "smote",
+        "shuffle_epochs",
+        "stratified_split"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 12,
+      "id": "T1-Q012",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.8",
+      "kind": "S",
+      "correct_terms": [
+        "opensearch_knn"
+      ],
+      "option_terms": [
+        "in_memory_faiss",
+        "s3_vectors",
+        "pgvector",
+        "opensearch_knn"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 13,
+      "id": "T1-Q013",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.8",
+      "kind": "M2",
+      "correct_terms": [
+        "embed_bedrock",
+        "opensearch_knn"
+      ],
+      "option_terms": [
+        "opensearch_knn",
+        "rerank_retrieval",
+        "embed_bedrock",
+        "s3_lifecycle",
+        "dynamodb_lookup"
+      ],
+      "correct_indices": [
+        1,
+        3
+      ]
+    },
+    {
+      "question": 14,
+      "id": "T1-Q014",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.9",
+      "kind": "S",
+      "correct_terms": [
+        "semantic_chunks"
+      ],
+      "option_terms": [
+        "chunk_metadata",
+        "semantic_chunks",
+        "fixed_chunks",
+        "tokenize_model"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 15,
+      "id": "T1-Q015",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.10",
+      "kind": "M2",
+      "correct_terms": [
+        "glue_dq",
+        "schema_contract"
+      ],
+      "option_terms": [
+        "glue_dq",
+        "databrew_recipe",
+        "schema_contract",
+        "profile_baseline",
+        "s3_lifecycle"
+      ],
+      "correct_indices": [
+        1,
+        3
+      ]
+    },
+    {
+      "question": 16,
+      "id": "T1-Q016",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.11",
+      "kind": "S",
+      "correct_terms": [
+        "ground_truth_auto"
+      ],
+      "option_terms": [
+        "augment_images",
+        "ground_truth_auto",
+        "ground_truth",
+        "redact_pii"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 17,
+      "id": "T1-Q017",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.12",
+      "kind": "S",
+      "correct_terms": [
+        "clarify_bias"
+      ],
+      "option_terms": [
+        "clarify_bias",
+        "stratified_split",
+        "augment_images",
+        "reweight_group"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 18,
+      "id": "T1-Q018",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.13",
+      "kind": "M2",
+      "correct_terms": [
+        "impute_median",
+        "clip_outliers"
+      ],
+      "option_terms": [
+        "one_hot",
+        "dedupe_rows",
+        "impute_median",
+        "clip_outliers",
+        "drop_nulls"
+      ],
+      "correct_indices": [
+        3,
+        4
+      ]
+    },
+    {
+      "question": 19,
+      "id": "T1-Q019",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.1",
+      "kind": "S",
+      "correct_terms": [
+        "xgboost_builtin"
+      ],
+      "option_terms": [
+        "linear_learner",
+        "knn_builtin",
+        "deepar",
+        "xgboost_builtin"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 20,
+      "id": "T1-Q020",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.1",
+      "kind": "S",
+      "correct_terms": [
+        "glass_box_model"
+      ],
+      "option_terms": [
+        "glass_box_model",
+        "ensemble",
+        "largest_model",
+        "xgboost_builtin"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 21,
+      "id": "T1-Q021",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.2",
+      "kind": "S",
+      "correct_terms": [
+        "claude_model"
+      ],
+      "option_terms": [
+        "claude_model",
+        "titan_embeddings",
+        "self_host_weights",
+        "nova_model"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 22,
+      "id": "T1-Q022",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.2",
+      "kind": "S",
+      "correct_terms": [
+        "titan_embeddings"
+      ],
+      "option_terms": [
+        "nova_model",
+        "claude_model",
+        "titan_embeddings",
+        "self_host_weights"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 23,
+      "id": "T1-Q023",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.3",
+      "kind": "S",
+      "correct_terms": [
+        "ft_lora"
+      ],
+      "option_terms": [
+        "continued_pretrain",
+        "prompt_first",
+        "ft_lora",
+        "ft_full"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 24,
+      "id": "T1-Q024",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.3",
+      "kind": "M2",
+      "correct_terms": [
+        "continued_pretrain",
+        "replay_samples"
+      ],
+      "option_terms": [
+        "distillation",
+        "replay_samples",
+        "continued_pretrain",
+        "prompt_first",
+        "ft_full"
+      ],
+      "correct_indices": [
+        2,
+        3
+      ]
+    },
+    {
+      "question": 25,
+      "id": "T1-Q025",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.4",
+      "kind": "S",
+      "correct_terms": [
+        "rag_over_ft"
+      ],
+      "option_terms": [
+        "ft_full",
+        "prompt_first",
+        "continued_pretrain",
+        "rag_over_ft"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 26,
+      "id": "T1-Q026",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.5",
+      "kind": "S",
+      "correct_terms": [
+        "textract"
+      ],
+      "option_terms": [
+        "comprehend",
+        "rekognition",
+        "transcribe",
+        "textract"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 27,
+      "id": "T1-Q027",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.6",
+      "kind": "S",
+      "correct_terms": [
+        "script_mode"
+      ],
+      "option_terms": [
+        "custom_container",
+        "script_mode",
+        "xgboost_builtin",
+        "jumpstart_model"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 28,
+      "id": "T1-Q028",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.7",
+      "kind": "S",
+      "correct_terms": [
+        "bayesian_search"
+      ],
+      "option_terms": [
+        "bayesian_search",
+        "grid_by_hand",
+        "random_search",
+        "early_stopping"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 29,
+      "id": "T1-Q029",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.7",
+      "kind": "M2",
+      "correct_terms": [
+        "amt",
+        "objective_metric"
+      ],
+      "option_terms": [
+        "warm_pool",
+        "grid_by_hand",
+        "amt",
+        "objective_metric",
+        "early_stopping"
+      ],
+      "correct_indices": [
+        3,
+        4
+      ]
+    },
+    {
+      "question": 30,
+      "id": "T1-Q030",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.8",
+      "kind": "M2",
+      "correct_terms": [
+        "checkpoint_s3",
+        "early_stopping"
+      ],
+      "option_terms": [
+        "checkpoint_s3",
+        "managed_spot",
+        "more_data",
+        "warm_pool",
+        "early_stopping"
+      ],
+      "correct_indices": [
+        1,
+        5
+      ]
+    },
+    {
+      "question": 31,
+      "id": "T1-Q031",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.9",
+      "kind": "S",
+      "correct_terms": [
+        "auc_metric"
+      ],
+      "option_terms": [
+        "rmse_metric",
+        "confusion_matrix",
+        "auc_metric",
+        "f1_metric"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 32,
+      "id": "T1-Q032",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.9",
+      "kind": "M2",
+      "correct_terms": [
+        "f1_metric",
+        "confusion_matrix"
+      ],
+      "option_terms": [
+        "auc_metric",
+        "pr_curve",
+        "confusion_matrix",
+        "rmse_metric",
+        "f1_metric"
+      ],
+      "correct_indices": [
+        3,
+        5
+      ]
+    },
+    {
+      "question": 33,
+      "id": "T1-Q033",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.10",
+      "kind": "S",
+      "correct_terms": [
+        "bertscore"
+      ],
+      "option_terms": [
+        "bertscore",
+        "bleu_metric",
+        "rmse_metric",
+        "rouge_metric"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 34,
+      "id": "T1-Q034",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.11",
+      "kind": "S",
+      "correct_terms": [
+        "pin_versions"
+      ],
+      "option_terms": [
+        "mlflow_tracking",
+        "model_registry",
+        "pin_versions",
+        "baseline_and_drift"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 35,
+      "id": "T1-Q035",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "S",
+      "correct_terms": [
+        "realtime_endpoint"
+      ],
+      "option_terms": [
+        "realtime_endpoint",
+        "serverless_inference",
+        "async_inference",
+        "batch_transform"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 36,
+      "id": "T1-Q036",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "M2",
+      "correct_terms": [
+        "batch_transform",
+        "async_inference"
+      ],
+      "option_terms": [
+        "provisioned_throughput",
+        "realtime_endpoint",
+        "batch_transform",
+        "serverless_inference",
+        "async_inference"
+      ],
+      "correct_indices": [
+        3,
+        5
+      ]
+    },
+    {
+      "question": 37,
+      "id": "T1-Q037",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.2",
+      "kind": "S",
+      "correct_terms": [
+        "multi_model_endpoint"
+      ],
+      "option_terms": [
+        "batch_transform",
+        "serverless_inference",
+        "multi_model_endpoint",
+        "multi_container"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 38,
+      "id": "T1-Q038",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.3",
+      "kind": "S",
+      "correct_terms": [
+        "custom_model_import"
+      ],
+      "option_terms": [
+        "custom_model_import",
+        "provisioned_throughput",
+        "jumpstart_model",
+        "self_host_weights"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 39,
+      "id": "T1-Q039",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.3",
+      "kind": "S",
+      "correct_terms": [
+        "provisioned_throughput"
+      ],
+      "option_terms": [
+        "compare_throughput",
+        "instance_rightsize",
+        "provisioned_throughput",
+        "ondemand_bedrock"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 40,
+      "id": "T1-Q040",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.4",
+      "kind": "S",
+      "correct_terms": [
+        "agent_deploy"
+      ],
+      "option_terms": [
+        "prompt_management",
+        "agent_state",
+        "kb_sync",
+        "agent_deploy"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 41,
+      "id": "T1-Q041",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.5",
+      "kind": "S",
+      "correct_terms": [
+        "ecr_image"
+      ],
+      "option_terms": [
+        "ecr_image",
+        "custom_container",
+        "codebuild",
+        "ecs_service"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 42,
+      "id": "T1-Q042",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.6",
+      "kind": "S",
+      "correct_terms": [
+        "target_tracking"
+      ],
+      "option_terms": [
+        "scale_to_zero",
+        "target_tracking",
+        "provisioned_concurrency",
+        "step_scaling_policy"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 43,
+      "id": "T1-Q043",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.6",
+      "kind": "M2",
+      "correct_terms": [
+        "target_tracking",
+        "gpu_metric_scaling"
+      ],
+      "option_terms": [
+        "target_tracking",
+        "step_scaling_policy",
+        "warm_pool",
+        "gpu_metric_scaling",
+        "scale_to_zero"
+      ],
+      "correct_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "question": 44,
+      "id": "T1-Q044",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.7",
+      "kind": "M2",
+      "correct_terms": [
+        "interface_endpoint",
+        "private_subnets"
+      ],
+      "option_terms": [
+        "private_subnets",
+        "interface_endpoint",
+        "restrict_sg",
+        "nat_gateway",
+        "open_ingress"
+      ],
+      "correct_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "question": 45,
+      "id": "T1-Q045",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.8",
+      "kind": "S",
+      "correct_terms": [
+        "codebuild"
+      ],
+      "option_terms": [
+        "codepipeline",
+        "codebuild",
+        "codedeploy",
+        "codecommit"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 46,
+      "id": "T1-Q046",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.8",
+      "kind": "M2",
+      "correct_terms": [
+        "codepipeline",
+        "test_gate"
+      ],
+      "option_terms": [
+        "codecommit",
+        "codeconnections",
+        "test_gate",
+        "codepipeline",
+        "codedeploy"
+      ],
+      "correct_indices": [
+        3,
+        4
+      ]
+    },
+    {
+      "question": 47,
+      "id": "T1-Q047",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.9",
+      "kind": "S",
+      "correct_terms": [
+        "model_registry"
+      ],
+      "option_terms": [
+        "mlflow_tracking",
+        "approval_gate",
+        "model_registry",
+        "prompt_management"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 48,
+      "id": "T1-Q048",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.10",
+      "kind": "S",
+      "correct_terms": [
+        "canary_release"
+      ],
+      "option_terms": [
+        "all_at_once",
+        "canary_release",
+        "linear_release",
+        "shadow_deploy"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 49,
+      "id": "T1-Q049",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.10",
+      "kind": "S",
+      "correct_terms": [
+        "shadow_deploy"
+      ],
+      "option_terms": [
+        "canary_release",
+        "all_at_once",
+        "ab_traffic_split",
+        "shadow_deploy"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 50,
+      "id": "T1-Q050",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.11",
+      "kind": "S",
+      "correct_terms": [
+        "sm_pipelines"
+      ],
+      "option_terms": [
+        "step_functions",
+        "sm_pipelines",
+        "codepipeline",
+        "eventbridge_schedule"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 51,
+      "id": "T1-Q051",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "S",
+      "correct_terms": [
+        "data_drift_monitor"
+      ],
+      "option_terms": [
+        "model_quality_monitor",
+        "bias_drift_monitor",
+        "attribution_drift_monitor",
+        "data_drift_monitor"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 52,
+      "id": "T1-Q052",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "M2",
+      "correct_terms": [
+        "model_quality_monitor",
+        "baseline_and_drift"
+      ],
+      "option_terms": [
+        "data_drift_monitor",
+        "cloudwatch_alarm",
+        "model_quality_monitor",
+        "genai_observability",
+        "baseline_and_drift"
+      ],
+      "correct_indices": [
+        3,
+        5
+      ]
+    },
+    {
+      "question": 53,
+      "id": "T1-Q053",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "S",
+      "correct_terms": [
+        "cloudwatch_alarm"
+      ],
+      "option_terms": [
+        "cloudwatch_dashboard",
+        "cloudwatch_alarm",
+        "logs_insights",
+        "xray_trace"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 54,
+      "id": "T1-Q054",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "S",
+      "correct_terms": [
+        "logs_insights"
+      ],
+      "option_terms": [
+        "cloudwatch_alarm",
+        "cloudwatch_dashboard",
+        "aws_config",
+        "logs_insights"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 55,
+      "id": "T1-Q055",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.3",
+      "kind": "S",
+      "correct_terms": [
+        "genai_observability"
+      ],
+      "option_terms": [
+        "cloudwatch_alarm",
+        "genai_observability",
+        "agentcore_observability",
+        "xray_trace"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 56,
+      "id": "T1-Q056",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "S",
+      "correct_terms": [
+        "savings_plan_inference"
+      ],
+      "option_terms": [
+        "savings_plan_inference",
+        "instance_rightsize",
+        "cost_explorer_ml",
+        "batch_for_offline"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 57,
+      "id": "T1-Q057",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "M2",
+      "correct_terms": [
+        "instance_rightsize",
+        "savings_plan_inference"
+      ],
+      "option_terms": [
+        "scale_to_zero",
+        "open_ingress",
+        "savings_plan_inference",
+        "instance_rightsize",
+        "largest_model"
+      ],
+      "correct_indices": [
+        3,
+        4
+      ]
+    },
+    {
+      "question": 58,
+      "id": "T1-Q058",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.5",
+      "kind": "S",
+      "correct_terms": [
+        "cap_output_tokens"
+      ],
+      "option_terms": [
+        "cache_embeddings",
+        "route_small_model",
+        "cap_output_tokens",
+        "trim_context"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 59,
+      "id": "T1-Q059",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.5",
+      "kind": "S",
+      "correct_terms": [
+        "trim_context"
+      ],
+      "option_terms": [
+        "trim_context",
+        "compare_throughput",
+        "cache_embeddings",
+        "cap_output_tokens"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 60,
+      "id": "T1-Q060",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.6",
+      "kind": "S",
+      "correct_terms": [
+        "least_privilege_bucket"
+      ],
+      "option_terms": [
+        "group_policy",
+        "iam_execution_role",
+        "least_privilege_bucket",
+        "root_for_ml"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 61,
+      "id": "T1-Q061",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.6",
+      "kind": "M2",
+      "correct_terms": [
+        "cross_account_role",
+        "iam_execution_role"
+      ],
+      "option_terms": [
+        "cross_account_role",
+        "group_policy",
+        "root_for_ml",
+        "long_lived_key",
+        "iam_execution_role"
+      ],
+      "correct_indices": [
+        1,
+        5
+      ]
+    },
+    {
+      "question": 62,
+      "id": "T1-Q062",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.7",
+      "kind": "S",
+      "correct_terms": [
+        "private_subnets"
+      ],
+      "option_terms": [
+        "private_subnets",
+        "interface_endpoint",
+        "nat_gateway",
+        "open_ingress"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 63,
+      "id": "T1-Q063",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.8",
+      "kind": "S",
+      "correct_terms": [
+        "kms_cmk"
+      ],
+      "option_terms": [
+        "kms_cmk",
+        "aws_config",
+        "secrets_manager",
+        "guardrails"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 64,
+      "id": "T1-Q064",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.9",
+      "kind": "S",
+      "correct_terms": [
+        "guardrails"
+      ],
+      "option_terms": [
+        "runtime_redaction",
+        "safety_screen",
+        "guardrails",
+        "inspector_scan"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 65,
+      "id": "T1-Q065",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.10",
+      "kind": "S",
+      "correct_terms": [
+        "cloudtrail"
+      ],
+      "option_terms": [
+        "aws_config",
+        "cloudtrail",
+        "logs_insights",
+        "xray_trace"
+      ],
+      "correct_indices": [
+        2
+      ]
+    }
+  ],
+  "2": [
+    {
+      "question": 1,
+      "id": "T2-Q001",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.1",
+      "kind": "S",
+      "correct_terms": [
+        "glue_catalog"
+      ],
+      "option_terms": [
+        "s3_parquet",
+        "fsx_lustre_high",
+        "efs_shared",
+        "glue_catalog"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 2,
+      "id": "T2-Q002",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.1",
+      "kind": "S",
+      "correct_terms": [
+        "ebs_gp3"
+      ],
+      "option_terms": [
+        "ebs_gp3",
+        "s3_intelligent",
+        "efs_shared",
+        "fsx_lustre_high"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 3,
+      "id": "T2-Q003",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.2",
+      "kind": "S",
+      "correct_terms": [
+        "msk_kafka"
+      ],
+      "option_terms": [
+        "firehose_delivery",
+        "lambda_transform",
+        "kinesis_streams",
+        "msk_kafka"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 4,
+      "id": "T2-Q004",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.3",
+      "kind": "S",
+      "correct_terms": [
+        "s3_lifecycle"
+      ],
+      "option_terms": [
+        "s3_intelligent",
+        "s3_glacier",
+        "s3_object_lock",
+        "s3_lifecycle"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 5,
+      "id": "T2-Q005",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.4",
+      "kind": "S",
+      "correct_terms": [
+        "s3_raw_json"
+      ],
+      "option_terms": [
+        "ebs_gp3",
+        "efs_shared",
+        "s3_raw_json",
+        "s3_parquet"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 6,
+      "id": "T2-Q006",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.4",
+      "kind": "S",
+      "correct_terms": [
+        "s3_partitioned"
+      ],
+      "option_terms": [
+        "efs_shared",
+        "s3_partitioned",
+        "s3_intelligent",
+        "s3_raw_json"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 7,
+      "id": "T2-Q007",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.5",
+      "kind": "M2",
+      "correct_terms": [
+        "databrew_recipe",
+        "glue_catalog"
+      ],
+      "option_terms": [
+        "data_wrangler",
+        "databrew_recipe",
+        "dms_replicate",
+        "emr_spark",
+        "glue_catalog"
+      ],
+      "correct_indices": [
+        2,
+        5
+      ]
+    },
+    {
+      "question": 8,
+      "id": "T2-Q008",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.5",
+      "kind": "S",
+      "correct_terms": [
+        "emr_spark"
+      ],
+      "option_terms": [
+        "glue_etl",
+        "emr_spark",
+        "databrew_recipe",
+        "lambda_transform"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 9,
+      "id": "T2-Q009",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.6",
+      "kind": "S",
+      "correct_terms": [
+        "feature_store_offline"
+      ],
+      "option_terms": [
+        "feature_store_online",
+        "feature_group_ingest",
+        "feature_store_offline",
+        "glue_catalog"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 10,
+      "id": "T2-Q010",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.7",
+      "kind": "M2",
+      "correct_terms": [
+        "fit_scaler_on_train",
+        "one_hot"
+      ],
+      "option_terms": [
+        "fit_scaler_on_train",
+        "log_transform",
+        "standard_scaler",
+        "bin_ages",
+        "one_hot"
+      ],
+      "correct_indices": [
+        1,
+        5
+      ]
+    },
+    {
+      "question": 11,
+      "id": "T2-Q011",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.7",
+      "kind": "S",
+      "correct_terms": [
+        "log_transform"
+      ],
+      "option_terms": [
+        "one_hot",
+        "bin_ages",
+        "standard_scaler",
+        "log_transform"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 12,
+      "id": "T2-Q012",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.8",
+      "kind": "M2",
+      "correct_terms": [
+        "pgvector",
+        "embed_bedrock"
+      ],
+      "option_terms": [
+        "embed_bedrock",
+        "s3_vectors",
+        "in_memory_faiss",
+        "opensearch_knn",
+        "pgvector"
+      ],
+      "correct_indices": [
+        1,
+        5
+      ]
+    },
+    {
+      "question": 13,
+      "id": "T2-Q013",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.8",
+      "kind": "S",
+      "correct_terms": [
+        "hybrid_retrieval"
+      ],
+      "option_terms": [
+        "hybrid_retrieval",
+        "pgvector",
+        "rerank_retrieval",
+        "opensearch_knn"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 14,
+      "id": "T2-Q014",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.9",
+      "kind": "S",
+      "correct_terms": [
+        "tokenize_model"
+      ],
+      "option_terms": [
+        "redact_pii",
+        "fixed_chunks",
+        "tokenize_model",
+        "semantic_chunks"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 15,
+      "id": "T2-Q015",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.10",
+      "kind": "S",
+      "correct_terms": [
+        "validate_pairs"
+      ],
+      "option_terms": [
+        "profile_baseline",
+        "validate_pairs",
+        "glue_dq",
+        "schema_contract"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 16,
+      "id": "T2-Q016",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.11",
+      "kind": "S",
+      "correct_terms": [
+        "ground_truth"
+      ],
+      "option_terms": [
+        "redact_pii",
+        "ground_truth_auto",
+        "ground_truth",
+        "augment_images"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 17,
+      "id": "T2-Q017",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.12",
+      "kind": "S",
+      "correct_terms": [
+        "reweight_group"
+      ],
+      "option_terms": [
+        "reweight_group",
+        "multimodal_balance",
+        "clarify_bias",
+        "stratified_split"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 18,
+      "id": "T2-Q018",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.13",
+      "kind": "M2",
+      "correct_terms": [
+        "dedupe_rows",
+        "smote"
+      ],
+      "option_terms": [
+        "smote",
+        "clip_outliers",
+        "impute_median",
+        "one_hot",
+        "dedupe_rows"
+      ],
+      "correct_indices": [
+        1,
+        5
+      ]
+    },
+    {
+      "question": 19,
+      "id": "T2-Q019",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.1",
+      "kind": "S",
+      "correct_terms": [
+        "random_cut_forest"
+      ],
+      "option_terms": [
+        "xgboost_builtin",
+        "linear_learner",
+        "deepar",
+        "random_cut_forest"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 20,
+      "id": "T2-Q020",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.1",
+      "kind": "S",
+      "correct_terms": [
+        "deepar"
+      ],
+      "option_terms": [
+        "deepar",
+        "xgboost_builtin",
+        "linear_learner",
+        "knn_builtin"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 21,
+      "id": "T2-Q021",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.2",
+      "kind": "S",
+      "correct_terms": [
+        "nova_model"
+      ],
+      "option_terms": [
+        "nova_model",
+        "self_host_weights",
+        "claude_model",
+        "titan_embeddings"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 22,
+      "id": "T2-Q022",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.2",
+      "kind": "S",
+      "correct_terms": [
+        "self_host_weights"
+      ],
+      "option_terms": [
+        "jumpstart_model",
+        "self_host_weights",
+        "nova_model",
+        "claude_model"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 23,
+      "id": "T2-Q023",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.3",
+      "kind": "M2",
+      "correct_terms": [
+        "ft_lora",
+        "prompt_first"
+      ],
+      "option_terms": [
+        "continued_pretrain",
+        "prompt_first",
+        "ft_full",
+        "distillation",
+        "ft_lora"
+      ],
+      "correct_indices": [
+        2,
+        5
+      ]
+    },
+    {
+      "question": 24,
+      "id": "T2-Q024",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.3",
+      "kind": "S",
+      "correct_terms": [
+        "ft_full"
+      ],
+      "option_terms": [
+        "ft_lora",
+        "distillation",
+        "continued_pretrain",
+        "ft_full"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 25,
+      "id": "T2-Q025",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.4",
+      "kind": "S",
+      "correct_terms": [
+        "rerank_retrieval"
+      ],
+      "option_terms": [
+        "chunk_metadata",
+        "hybrid_retrieval",
+        "parent_child_chunks",
+        "rerank_retrieval"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 26,
+      "id": "T2-Q026",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.5",
+      "kind": "S",
+      "correct_terms": [
+        "comprehend"
+      ],
+      "option_terms": [
+        "textract",
+        "comprehend",
+        "transcribe",
+        "rekognition"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 27,
+      "id": "T2-Q027",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.6",
+      "kind": "S",
+      "correct_terms": [
+        "jumpstart_model"
+      ],
+      "option_terms": [
+        "custom_container",
+        "xgboost_builtin",
+        "jumpstart_model",
+        "script_mode"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 28,
+      "id": "T2-Q028",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.7",
+      "kind": "S",
+      "correct_terms": [
+        "objective_metric"
+      ],
+      "option_terms": [
+        "objective_metric",
+        "grid_by_hand",
+        "random_search",
+        "early_stopping"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 29,
+      "id": "T2-Q029",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.7",
+      "kind": "M2",
+      "correct_terms": [
+        "amt",
+        "bayesian_search"
+      ],
+      "option_terms": [
+        "random_search",
+        "grid_by_hand",
+        "bayesian_search",
+        "amt",
+        "warm_pool"
+      ],
+      "correct_indices": [
+        3,
+        4
+      ]
+    },
+    {
+      "question": 30,
+      "id": "T2-Q030",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.8",
+      "kind": "M2",
+      "correct_terms": [
+        "more_data",
+        "regularise"
+      ],
+      "option_terms": [
+        "ensemble",
+        "train_longer",
+        "regularise",
+        "checkpoint_s3",
+        "more_data"
+      ],
+      "correct_indices": [
+        3,
+        5
+      ]
+    },
+    {
+      "question": 31,
+      "id": "T2-Q031",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.9",
+      "kind": "M2",
+      "correct_terms": [
+        "pr_curve",
+        "confusion_matrix"
+      ],
+      "option_terms": [
+        "confusion_matrix",
+        "accuracy_only",
+        "auc_metric",
+        "pr_curve",
+        "rmse_metric"
+      ],
+      "correct_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "question": 32,
+      "id": "T2-Q032",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.9",
+      "kind": "S",
+      "correct_terms": [
+        "rmse_metric"
+      ],
+      "option_terms": [
+        "bleu_metric",
+        "auc_metric",
+        "rmse_metric",
+        "f1_metric"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 33,
+      "id": "T2-Q033",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.10",
+      "kind": "S",
+      "correct_terms": [
+        "llm_judge"
+      ],
+      "option_terms": [
+        "human_review",
+        "rouge_metric",
+        "llm_judge",
+        "bleu_metric"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 34,
+      "id": "T2-Q034",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.11",
+      "kind": "S",
+      "correct_terms": [
+        "bedrock_eval_job"
+      ],
+      "option_terms": [
+        "mlflow_tracking",
+        "bedrock_eval_job",
+        "prompt_management",
+        "model_registry"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 35,
+      "id": "T2-Q035",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "M2",
+      "correct_terms": [
+        "realtime_endpoint",
+        "serverless_inference"
+      ],
+      "option_terms": [
+        "realtime_endpoint",
+        "async_inference",
+        "multi_model_endpoint",
+        "serverless_inference",
+        "batch_transform"
+      ],
+      "correct_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "question": 36,
+      "id": "T2-Q036",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "S",
+      "correct_terms": [
+        "batch_transform"
+      ],
+      "option_terms": [
+        "batch_transform",
+        "serverless_inference",
+        "realtime_endpoint",
+        "async_inference"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 37,
+      "id": "T2-Q037",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.2",
+      "kind": "S",
+      "correct_terms": [
+        "multi_container"
+      ],
+      "option_terms": [
+        "multi_model_endpoint",
+        "multi_container",
+        "serverless_inference",
+        "realtime_endpoint"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 38,
+      "id": "T2-Q038",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.3",
+      "kind": "S",
+      "correct_terms": [
+        "provisioned_throughput"
+      ],
+      "option_terms": [
+        "inference_recommender",
+        "compare_throughput",
+        "provisioned_throughput",
+        "ondemand_bedrock"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 39,
+      "id": "T2-Q039",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.3",
+      "kind": "S",
+      "correct_terms": [
+        "custom_model_import"
+      ],
+      "option_terms": [
+        "custom_model_import",
+        "jumpstart_model",
+        "provisioned_throughput",
+        "self_host_weights"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 40,
+      "id": "T2-Q040",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.4",
+      "kind": "S",
+      "correct_terms": [
+        "agent_state"
+      ],
+      "option_terms": [
+        "prompt_management",
+        "kb_sync",
+        "agent_deploy",
+        "agent_state"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 41,
+      "id": "T2-Q041",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.5",
+      "kind": "S",
+      "correct_terms": [
+        "batch_job"
+      ],
+      "option_terms": [
+        "ecs_service",
+        "batch_job",
+        "lambda_inference",
+        "eks_cluster"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 42,
+      "id": "T2-Q042",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.6",
+      "kind": "M2",
+      "correct_terms": [
+        "step_scaling_policy",
+        "provisioned_concurrency"
+      ],
+      "option_terms": [
+        "step_scaling_policy",
+        "scale_to_zero",
+        "target_tracking",
+        "provisioned_concurrency",
+        "gpu_metric_scaling"
+      ],
+      "correct_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "question": 43,
+      "id": "T2-Q043",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.6",
+      "kind": "S",
+      "correct_terms": [
+        "scale_to_zero"
+      ],
+      "option_terms": [
+        "warm_pool",
+        "target_tracking",
+        "scale_to_zero",
+        "step_scaling_policy"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 44,
+      "id": "T2-Q044",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.7",
+      "kind": "S",
+      "correct_terms": [
+        "restrict_sg"
+      ],
+      "option_terms": [
+        "open_ingress",
+        "interface_endpoint",
+        "restrict_sg",
+        "private_subnets"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 45,
+      "id": "T2-Q045",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.8",
+      "kind": "M2",
+      "correct_terms": [
+        "codepipeline",
+        "codebuild"
+      ],
+      "option_terms": [
+        "codecommit",
+        "codedeploy",
+        "codeconnections",
+        "codebuild",
+        "codepipeline"
+      ],
+      "correct_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "question": 46,
+      "id": "T2-Q046",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.8",
+      "kind": "S",
+      "correct_terms": [
+        "codeconnections"
+      ],
+      "option_terms": [
+        "codeconnections",
+        "codepipeline",
+        "codecommit",
+        "codebuild"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 47,
+      "id": "T2-Q047",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.9",
+      "kind": "S",
+      "correct_terms": [
+        "prompt_management"
+      ],
+      "option_terms": [
+        "model_registry",
+        "prompt_management",
+        "codecommit",
+        "mlflow_tracking"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 48,
+      "id": "T2-Q048",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.10",
+      "kind": "M2",
+      "correct_terms": [
+        "canary_release",
+        "linear_release"
+      ],
+      "option_terms": [
+        "blue_green",
+        "shadow_deploy",
+        "all_at_once",
+        "canary_release",
+        "linear_release"
+      ],
+      "correct_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "question": 49,
+      "id": "T2-Q049",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.10",
+      "kind": "S",
+      "correct_terms": [
+        "blue_green"
+      ],
+      "option_terms": [
+        "all_at_once",
+        "canary_release",
+        "blue_green",
+        "shadow_deploy"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 50,
+      "id": "T2-Q050",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.11",
+      "kind": "S",
+      "correct_terms": [
+        "eventbridge_schedule"
+      ],
+      "option_terms": [
+        "sm_pipelines",
+        "codepipeline",
+        "eventbridge_schedule",
+        "step_functions"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 51,
+      "id": "T2-Q051",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "S",
+      "correct_terms": [
+        "model_quality_monitor"
+      ],
+      "option_terms": [
+        "bias_drift_monitor",
+        "data_drift_monitor",
+        "attribution_drift_monitor",
+        "model_quality_monitor"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 52,
+      "id": "T2-Q052",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "M2",
+      "correct_terms": [
+        "data_drift_monitor",
+        "bias_drift_monitor"
+      ],
+      "option_terms": [
+        "cloudwatch_alarm",
+        "attribution_drift_monitor",
+        "bias_drift_monitor",
+        "data_drift_monitor",
+        "model_quality_monitor"
+      ],
+      "correct_indices": [
+        3,
+        4
+      ]
+    },
+    {
+      "question": 53,
+      "id": "T2-Q053",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "S",
+      "correct_terms": [
+        "cloudwatch_dashboard"
+      ],
+      "option_terms": [
+        "xray_trace",
+        "cloudwatch_dashboard",
+        "logs_insights",
+        "cloudwatch_alarm"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 54,
+      "id": "T2-Q054",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "S",
+      "correct_terms": [
+        "logs_insights"
+      ],
+      "option_terms": [
+        "logs_insights",
+        "aws_config",
+        "cloudwatch_dashboard",
+        "cloudwatch_alarm"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 55,
+      "id": "T2-Q055",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.3",
+      "kind": "S",
+      "correct_terms": [
+        "agentcore_observability"
+      ],
+      "option_terms": [
+        "xray_trace",
+        "agentcore_observability",
+        "genai_observability",
+        "cloudwatch_alarm"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 56,
+      "id": "T2-Q056",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "S",
+      "correct_terms": [
+        "cost_explorer_ml"
+      ],
+      "option_terms": [
+        "budgets_ml",
+        "batch_for_offline",
+        "savings_plan_inference",
+        "cost_explorer_ml"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 57,
+      "id": "T2-Q057",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "M2",
+      "correct_terms": [
+        "batch_for_offline",
+        "instance_rightsize"
+      ],
+      "option_terms": [
+        "batch_for_offline",
+        "largest_model",
+        "scale_to_zero",
+        "instance_rightsize",
+        "savings_plan_inference"
+      ],
+      "correct_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "question": 58,
+      "id": "T2-Q058",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.5",
+      "kind": "S",
+      "correct_terms": [
+        "cap_output_tokens"
+      ],
+      "option_terms": [
+        "route_small_model",
+        "trim_context",
+        "cache_embeddings",
+        "cap_output_tokens"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 59,
+      "id": "T2-Q059",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.5",
+      "kind": "S",
+      "correct_terms": [
+        "cache_embeddings"
+      ],
+      "option_terms": [
+        "cache_embeddings",
+        "compare_throughput",
+        "trim_context",
+        "route_small_model"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 60,
+      "id": "T2-Q060",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.6",
+      "kind": "M2",
+      "correct_terms": [
+        "scp_guardrail",
+        "group_policy"
+      ],
+      "option_terms": [
+        "long_lived_key",
+        "group_policy",
+        "root_for_ml",
+        "scp_guardrail",
+        "cross_account_role"
+      ],
+      "correct_indices": [
+        2,
+        4
+      ]
+    },
+    {
+      "question": 61,
+      "id": "T2-Q061",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.6",
+      "kind": "S",
+      "correct_terms": [
+        "bedrock_api_key"
+      ],
+      "option_terms": [
+        "group_policy",
+        "root_for_ml",
+        "long_lived_key",
+        "bedrock_api_key"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 62,
+      "id": "T2-Q062",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.7",
+      "kind": "S",
+      "correct_terms": [
+        "vpc_only_bucket"
+      ],
+      "option_terms": [
+        "vpc_only_bucket",
+        "restrict_sg",
+        "interface_endpoint",
+        "private_subnets"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 63,
+      "id": "T2-Q063",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.8",
+      "kind": "S",
+      "correct_terms": [
+        "secrets_manager"
+      ],
+      "option_terms": [
+        "aws_config",
+        "secrets_manager",
+        "guardrails",
+        "kms_cmk"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 64,
+      "id": "T2-Q064",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.9",
+      "kind": "S",
+      "correct_terms": [
+        "denied_topics"
+      ],
+      "option_terms": [
+        "denied_topics",
+        "safety_screen",
+        "guardrails",
+        "runtime_redaction"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 65,
+      "id": "T2-Q065",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.10",
+      "kind": "S",
+      "correct_terms": [
+        "inspector_scan"
+      ],
+      "option_terms": [
+        "cloudtrail",
+        "inspector_scan",
+        "codeguru_review",
+        "aws_config"
+      ],
+      "correct_indices": [
+        2
+      ]
+    }
+  ],
+  "3": [
+    {
+      "question": 1,
+      "id": "T3-Q001",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.1",
+      "kind": "S",
+      "correct_terms": [
+        "s3_parquet"
+      ],
+      "option_terms": [
+        "s3_parquet",
+        "s3_raw_json",
+        "ebs_gp3",
+        "fsx_lustre_high"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 2,
+      "id": "T3-Q002",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.1",
+      "kind": "S",
+      "correct_terms": [
+        "efs_shared"
+      ],
+      "option_terms": [
+        "efs_shared",
+        "s3_intelligent",
+        "fsx_lustre_high",
+        "ebs_gp3"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 3,
+      "id": "T3-Q003",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.2",
+      "kind": "S",
+      "correct_terms": [
+        "firehose_delivery"
+      ],
+      "option_terms": [
+        "kinesis_streams",
+        "firehose_delivery",
+        "lambda_transform",
+        "msk_kafka"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 4,
+      "id": "T3-Q004",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.3",
+      "kind": "S",
+      "correct_terms": [
+        "s3_glacier"
+      ],
+      "option_terms": [
+        "s3_object_lock",
+        "s3_glacier",
+        "s3_intelligent",
+        "s3_lifecycle"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 5,
+      "id": "T3-Q005",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.4",
+      "kind": "S",
+      "correct_terms": [
+        "s3_partitioned"
+      ],
+      "option_terms": [
+        "fsx_lustre_high",
+        "s3_raw_json",
+        "s3_parquet",
+        "s3_partitioned"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 6,
+      "id": "T3-Q006",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.4",
+      "kind": "S",
+      "correct_terms": [
+        "s3_raw_json"
+      ],
+      "option_terms": [
+        "s3_object_lock",
+        "s3_parquet",
+        "ebs_gp3",
+        "s3_raw_json"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 7,
+      "id": "T3-Q007",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.5",
+      "kind": "M2",
+      "correct_terms": [
+        "glue_etl",
+        "glue_catalog"
+      ],
+      "option_terms": [
+        "databrew_recipe",
+        "lambda_transform",
+        "emr_spark",
+        "glue_etl",
+        "glue_catalog"
+      ],
+      "correct_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "question": 8,
+      "id": "T3-Q008",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.5",
+      "kind": "S",
+      "correct_terms": [
+        "lambda_transform"
+      ],
+      "option_terms": [
+        "glue_etl",
+        "data_wrangler",
+        "emr_spark",
+        "lambda_transform"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 9,
+      "id": "T3-Q009",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.6",
+      "kind": "S",
+      "correct_terms": [
+        "feature_store_online"
+      ],
+      "option_terms": [
+        "feature_store_online",
+        "feature_group_ingest",
+        "glue_catalog",
+        "feature_store_offline"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 10,
+      "id": "T3-Q010",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.7",
+      "kind": "S",
+      "correct_terms": [
+        "impute_median"
+      ],
+      "option_terms": [
+        "impute_median",
+        "drop_nulls",
+        "clip_outliers",
+        "bin_ages"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 11,
+      "id": "T3-Q011",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.7",
+      "kind": "M2",
+      "correct_terms": [
+        "standard_scaler",
+        "stratified_split"
+      ],
+      "option_terms": [
+        "standard_scaler",
+        "stratified_split",
+        "bin_ages",
+        "shuffle_epochs",
+        "dedupe_rows"
+      ],
+      "correct_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "question": 12,
+      "id": "T3-Q012",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.8",
+      "kind": "S",
+      "correct_terms": [
+        "s3_vectors"
+      ],
+      "option_terms": [
+        "opensearch_knn",
+        "s3_vectors",
+        "in_memory_faiss",
+        "pgvector"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 13,
+      "id": "T3-Q013",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.8",
+      "kind": "M2",
+      "correct_terms": [
+        "embed_multimodal",
+        "opensearch_knn"
+      ],
+      "option_terms": [
+        "hybrid_retrieval",
+        "pgvector",
+        "opensearch_knn",
+        "embed_bedrock",
+        "embed_multimodal"
+      ],
+      "correct_indices": [
+        3,
+        5
+      ]
+    },
+    {
+      "question": 14,
+      "id": "T3-Q014",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.9",
+      "kind": "S",
+      "correct_terms": [
+        "redact_pii"
+      ],
+      "option_terms": [
+        "tokenize_model",
+        "chunk_metadata",
+        "redact_pii",
+        "semantic_chunks"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 15,
+      "id": "T3-Q015",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.10",
+      "kind": "M2",
+      "correct_terms": [
+        "glue_dq",
+        "profile_baseline"
+      ],
+      "option_terms": [
+        "glue_dq",
+        "schema_contract",
+        "s3_lifecycle",
+        "profile_baseline",
+        "databrew_recipe"
+      ],
+      "correct_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "question": 16,
+      "id": "T3-Q016",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.11",
+      "kind": "S",
+      "correct_terms": [
+        "ground_truth"
+      ],
+      "option_terms": [
+        "ground_truth",
+        "ground_truth_auto",
+        "redact_pii",
+        "dedupe_rows"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 17,
+      "id": "T3-Q017",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.12",
+      "kind": "S",
+      "correct_terms": [
+        "multimodal_balance"
+      ],
+      "option_terms": [
+        "reweight_group",
+        "clarify_bias",
+        "multimodal_balance",
+        "stratified_split"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 18,
+      "id": "T3-Q018",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.13",
+      "kind": "S",
+      "correct_terms": [
+        "clip_outliers"
+      ],
+      "option_terms": [
+        "drop_nulls",
+        "clip_outliers",
+        "impute_median",
+        "smote"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 19,
+      "id": "T3-Q019",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.1",
+      "kind": "S",
+      "correct_terms": [
+        "linear_learner"
+      ],
+      "option_terms": [
+        "random_cut_forest",
+        "xgboost_builtin",
+        "deepar",
+        "linear_learner"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 20,
+      "id": "T3-Q020",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.1",
+      "kind": "S",
+      "correct_terms": [
+        "ensemble"
+      ],
+      "option_terms": [
+        "ensemble",
+        "linear_learner",
+        "knn_builtin",
+        "xgboost_builtin"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 21,
+      "id": "T3-Q021",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.2",
+      "kind": "S",
+      "correct_terms": [
+        "titan_embeddings"
+      ],
+      "option_terms": [
+        "nova_model",
+        "claude_model",
+        "titan_embeddings",
+        "self_host_weights"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 22,
+      "id": "T3-Q022",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.2",
+      "kind": "S",
+      "correct_terms": [
+        "claude_model"
+      ],
+      "option_terms": [
+        "self_host_weights",
+        "nova_model",
+        "titan_embeddings",
+        "claude_model"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 23,
+      "id": "T3-Q023",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.3",
+      "kind": "S",
+      "correct_terms": [
+        "distillation"
+      ],
+      "option_terms": [
+        "distillation",
+        "ft_full",
+        "ft_lora",
+        "continued_pretrain"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 24,
+      "id": "T3-Q024",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.3",
+      "kind": "M2",
+      "correct_terms": [
+        "ft_lora",
+        "continued_pretrain"
+      ],
+      "option_terms": [
+        "ft_full",
+        "prompt_first",
+        "distillation",
+        "ft_lora",
+        "continued_pretrain"
+      ],
+      "correct_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "question": 25,
+      "id": "T3-Q025",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.4",
+      "kind": "S",
+      "correct_terms": [
+        "parent_child_chunks"
+      ],
+      "option_terms": [
+        "parent_child_chunks",
+        "chunk_metadata",
+        "fixed_chunks",
+        "semantic_chunks"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 26,
+      "id": "T3-Q026",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.5",
+      "kind": "S",
+      "correct_terms": [
+        "transcribe"
+      ],
+      "option_terms": [
+        "textract",
+        "comprehend",
+        "rekognition",
+        "transcribe"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 27,
+      "id": "T3-Q027",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.6",
+      "kind": "S",
+      "correct_terms": [
+        "custom_container"
+      ],
+      "option_terms": [
+        "jumpstart_model",
+        "xgboost_builtin",
+        "custom_container",
+        "script_mode"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 28,
+      "id": "T3-Q028",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.7",
+      "kind": "S",
+      "correct_terms": [
+        "early_stopping"
+      ],
+      "option_terms": [
+        "early_stopping",
+        "amt",
+        "grid_by_hand",
+        "objective_metric"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 29,
+      "id": "T3-Q029",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.7",
+      "kind": "M2",
+      "correct_terms": [
+        "objective_metric",
+        "amt"
+      ],
+      "option_terms": [
+        "objective_metric",
+        "random_search",
+        "amt",
+        "grid_by_hand",
+        "early_stopping"
+      ],
+      "correct_indices": [
+        1,
+        3
+      ]
+    },
+    {
+      "question": 30,
+      "id": "T3-Q030",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.8",
+      "kind": "M2",
+      "correct_terms": [
+        "model_parallel",
+        "checkpoint_s3"
+      ],
+      "option_terms": [
+        "managed_spot",
+        "checkpoint_s3",
+        "warm_pool",
+        "data_parallel",
+        "model_parallel"
+      ],
+      "correct_indices": [
+        2,
+        5
+      ]
+    },
+    {
+      "question": 31,
+      "id": "T3-Q031",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.9",
+      "kind": "S",
+      "correct_terms": [
+        "accuracy_only"
+      ],
+      "option_terms": [
+        "auc_metric",
+        "accuracy_only",
+        "f1_metric",
+        "pr_curve"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 32,
+      "id": "T3-Q032",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.9",
+      "kind": "M2",
+      "correct_terms": [
+        "f1_metric",
+        "confusion_matrix"
+      ],
+      "option_terms": [
+        "confusion_matrix",
+        "rmse_metric",
+        "accuracy_only",
+        "f1_metric",
+        "bleu_metric"
+      ],
+      "correct_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "question": 33,
+      "id": "T3-Q033",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.10",
+      "kind": "S",
+      "correct_terms": [
+        "human_review"
+      ],
+      "option_terms": [
+        "rouge_metric",
+        "human_review",
+        "llm_judge",
+        "bertscore"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 34,
+      "id": "T3-Q034",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.11",
+      "kind": "S",
+      "correct_terms": [
+        "mlflow_tracking"
+      ],
+      "option_terms": [
+        "prompt_management",
+        "model_registry",
+        "mlflow_tracking",
+        "bedrock_eval_job"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 35,
+      "id": "T3-Q035",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "S",
+      "correct_terms": [
+        "serverless_inference"
+      ],
+      "option_terms": [
+        "async_inference",
+        "batch_transform",
+        "serverless_inference",
+        "realtime_endpoint"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 36,
+      "id": "T3-Q036",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "M2",
+      "correct_terms": [
+        "realtime_endpoint",
+        "batch_transform"
+      ],
+      "option_terms": [
+        "async_inference",
+        "multi_model_endpoint",
+        "batch_transform",
+        "realtime_endpoint",
+        "serverless_inference"
+      ],
+      "correct_indices": [
+        3,
+        4
+      ]
+    },
+    {
+      "question": 37,
+      "id": "T3-Q037",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.2",
+      "kind": "S",
+      "correct_terms": [
+        "multi_model_endpoint"
+      ],
+      "option_terms": [
+        "multi_container",
+        "multi_model_endpoint",
+        "realtime_endpoint",
+        "batch_transform"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 38,
+      "id": "T3-Q038",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.3",
+      "kind": "S",
+      "correct_terms": [
+        "inference_recommender"
+      ],
+      "option_terms": [
+        "compare_throughput",
+        "ondemand_bedrock",
+        "custom_model_import",
+        "inference_recommender"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 39,
+      "id": "T3-Q039",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.3",
+      "kind": "S",
+      "correct_terms": [
+        "ondemand_bedrock"
+      ],
+      "option_terms": [
+        "compare_throughput",
+        "custom_model_import",
+        "ondemand_bedrock",
+        "provisioned_throughput"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 40,
+      "id": "T3-Q040",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.4",
+      "kind": "S",
+      "correct_terms": [
+        "kb_sync"
+      ],
+      "option_terms": [
+        "prompt_management",
+        "agent_state",
+        "kb_sync",
+        "agent_deploy"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 41,
+      "id": "T3-Q041",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.5",
+      "kind": "S",
+      "correct_terms": [
+        "ecs_service"
+      ],
+      "option_terms": [
+        "lambda_inference",
+        "ecs_service",
+        "batch_job",
+        "eks_cluster"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 42,
+      "id": "T3-Q042",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.6",
+      "kind": "S",
+      "correct_terms": [
+        "gpu_metric_scaling"
+      ],
+      "option_terms": [
+        "target_tracking",
+        "gpu_metric_scaling",
+        "step_scaling_policy",
+        "scale_to_zero"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 43,
+      "id": "T3-Q043",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.6",
+      "kind": "M2",
+      "correct_terms": [
+        "target_tracking",
+        "provisioned_concurrency"
+      ],
+      "option_terms": [
+        "step_scaling_policy",
+        "provisioned_concurrency",
+        "warm_pool",
+        "target_tracking",
+        "scale_to_zero"
+      ],
+      "correct_indices": [
+        2,
+        4
+      ]
+    },
+    {
+      "question": 44,
+      "id": "T3-Q044",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.7",
+      "kind": "S",
+      "correct_terms": [
+        "private_subnets"
+      ],
+      "option_terms": [
+        "restrict_sg",
+        "open_ingress",
+        "private_subnets",
+        "nat_gateway"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 45,
+      "id": "T3-Q045",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.8",
+      "kind": "M2",
+      "correct_terms": [
+        "codebuild",
+        "test_gate"
+      ],
+      "option_terms": [
+        "codedeploy",
+        "codebuild",
+        "codepipeline",
+        "codecommit",
+        "test_gate"
+      ],
+      "correct_indices": [
+        2,
+        5
+      ]
+    },
+    {
+      "question": 46,
+      "id": "T3-Q046",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.8",
+      "kind": "S",
+      "correct_terms": [
+        "codedeploy"
+      ],
+      "option_terms": [
+        "codebuild",
+        "codedeploy",
+        "codeconnections",
+        "codepipeline"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 47,
+      "id": "T3-Q047",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.9",
+      "kind": "S",
+      "correct_terms": [
+        "model_registry"
+      ],
+      "option_terms": [
+        "codecommit",
+        "mlflow_tracking",
+        "prompt_management",
+        "model_registry"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 48,
+      "id": "T3-Q048",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.10",
+      "kind": "S",
+      "correct_terms": [
+        "shadow_deploy"
+      ],
+      "option_terms": [
+        "shadow_deploy",
+        "canary_release",
+        "blue_green",
+        "all_at_once"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 49,
+      "id": "T3-Q049",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.10",
+      "kind": "M2",
+      "correct_terms": [
+        "canary_release",
+        "approval_gate"
+      ],
+      "option_terms": [
+        "all_at_once",
+        "approval_gate",
+        "shadow_deploy",
+        "linear_release",
+        "canary_release"
+      ],
+      "correct_indices": [
+        2,
+        5
+      ]
+    },
+    {
+      "question": 50,
+      "id": "T3-Q050",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.11",
+      "kind": "S",
+      "correct_terms": [
+        "step_functions"
+      ],
+      "option_terms": [
+        "codepipeline",
+        "step_functions",
+        "sm_pipelines",
+        "eventbridge_schedule"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 51,
+      "id": "T3-Q051",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "S",
+      "correct_terms": [
+        "attribution_drift_monitor"
+      ],
+      "option_terms": [
+        "attribution_drift_monitor",
+        "data_drift_monitor",
+        "model_quality_monitor",
+        "bias_drift_monitor"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 52,
+      "id": "T3-Q052",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "M2",
+      "correct_terms": [
+        "data_drift_monitor",
+        "model_quality_monitor"
+      ],
+      "option_terms": [
+        "bias_drift_monitor",
+        "cloudwatch_alarm",
+        "data_drift_monitor",
+        "model_quality_monitor",
+        "attribution_drift_monitor"
+      ],
+      "correct_indices": [
+        3,
+        4
+      ]
+    },
+    {
+      "question": 53,
+      "id": "T3-Q053",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "S",
+      "correct_terms": [
+        "logs_insights"
+      ],
+      "option_terms": [
+        "cloudwatch_alarm",
+        "xray_trace",
+        "logs_insights",
+        "cloudwatch_dashboard"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 54,
+      "id": "T3-Q054",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "S",
+      "correct_terms": [
+        "xray_trace"
+      ],
+      "option_terms": [
+        "aws_config",
+        "xray_trace",
+        "logs_insights",
+        "cloudwatch_dashboard"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 55,
+      "id": "T3-Q055",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.3",
+      "kind": "S",
+      "correct_terms": [
+        "genai_observability"
+      ],
+      "option_terms": [
+        "agentcore_observability",
+        "genai_observability",
+        "cloudwatch_alarm",
+        "xray_trace"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 56,
+      "id": "T3-Q056",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "S",
+      "correct_terms": [
+        "instance_rightsize"
+      ],
+      "option_terms": [
+        "cost_explorer_ml",
+        "savings_plan_inference",
+        "scale_to_zero",
+        "instance_rightsize"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 57,
+      "id": "T3-Q057",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "M2",
+      "correct_terms": [
+        "savings_plan_inference",
+        "cost_explorer_ml"
+      ],
+      "option_terms": [
+        "cost_explorer_ml",
+        "budgets_ml",
+        "instance_rightsize",
+        "savings_plan_inference",
+        "batch_for_offline"
+      ],
+      "correct_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "question": 58,
+      "id": "T3-Q058",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.5",
+      "kind": "S",
+      "correct_terms": [
+        "route_small_model"
+      ],
+      "option_terms": [
+        "route_small_model",
+        "cap_output_tokens",
+        "cache_embeddings",
+        "trim_context"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 59,
+      "id": "T3-Q059",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.5",
+      "kind": "S",
+      "correct_terms": [
+        "trim_context"
+      ],
+      "option_terms": [
+        "compare_throughput",
+        "cap_output_tokens",
+        "trim_context",
+        "cache_embeddings"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 60,
+      "id": "T3-Q060",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.6",
+      "kind": "M2",
+      "correct_terms": [
+        "root_for_ml",
+        "long_lived_key"
+      ],
+      "option_terms": [
+        "long_lived_key",
+        "group_policy",
+        "root_for_ml",
+        "cross_account_role",
+        "iam_execution_role"
+      ],
+      "correct_indices": [
+        1,
+        3
+      ]
+    },
+    {
+      "question": 61,
+      "id": "T3-Q061",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.6",
+      "kind": "S",
+      "correct_terms": [
+        "group_policy"
+      ],
+      "option_terms": [
+        "group_policy",
+        "long_lived_key",
+        "root_for_ml",
+        "cross_account_role"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 62,
+      "id": "T3-Q062",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.7",
+      "kind": "S",
+      "correct_terms": [
+        "restrict_sg"
+      ],
+      "option_terms": [
+        "open_ingress",
+        "interface_endpoint",
+        "restrict_sg",
+        "private_subnets"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 63,
+      "id": "T3-Q063",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.8",
+      "kind": "S",
+      "correct_terms": [
+        "kms_cmk"
+      ],
+      "option_terms": [
+        "secrets_manager",
+        "aws_config",
+        "guardrails",
+        "kms_cmk"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 64,
+      "id": "T3-Q064",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.9",
+      "kind": "S",
+      "correct_terms": [
+        "runtime_redaction"
+      ],
+      "option_terms": [
+        "safety_screen",
+        "guardrails",
+        "denied_topics",
+        "runtime_redaction"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 65,
+      "id": "T3-Q065",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.10",
+      "kind": "S",
+      "correct_terms": [
+        "aws_config"
+      ],
+      "option_terms": [
+        "logs_insights",
+        "cloudtrail",
+        "inspector_scan",
+        "aws_config"
+      ],
+      "correct_indices": [
+        4
+      ]
+    }
+  ],
+  "4": [
+    {
+      "question": 1,
+      "id": "T4-Q001",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.1",
+      "kind": "S",
+      "correct_terms": [
+        "kinesis_streams"
+      ],
+      "option_terms": [
+        "lambda_transform",
+        "msk_kafka",
+        "kinesis_streams",
+        "firehose_delivery"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 2,
+      "id": "T4-Q002",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.1",
+      "kind": "S",
+      "correct_terms": [
+        "s3_object_lock"
+      ],
+      "option_terms": [
+        "s3_lifecycle",
+        "s3_glacier",
+        "s3_object_lock",
+        "s3_intelligent"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 3,
+      "id": "T4-Q003",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.2",
+      "kind": "S",
+      "correct_terms": [
+        "lambda_transform"
+      ],
+      "option_terms": [
+        "glue_etl",
+        "emr_spark",
+        "lambda_transform",
+        "firehose_delivery"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 4,
+      "id": "T4-Q004",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.3",
+      "kind": "S",
+      "correct_terms": [
+        "s3_intelligent"
+      ],
+      "option_terms": [
+        "s3_glacier",
+        "s3_intelligent",
+        "s3_parquet",
+        "s3_lifecycle"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 5,
+      "id": "T4-Q005",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.4",
+      "kind": "M2",
+      "correct_terms": [
+        "s3_parquet",
+        "s3_partitioned"
+      ],
+      "option_terms": [
+        "s3_raw_json",
+        "efs_shared",
+        "ebs_gp3",
+        "s3_parquet",
+        "s3_partitioned"
+      ],
+      "correct_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "question": 6,
+      "id": "T4-Q006",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.4",
+      "kind": "S",
+      "correct_terms": [
+        "s3_raw_json"
+      ],
+      "option_terms": [
+        "s3_parquet",
+        "s3_partitioned",
+        "s3_raw_json",
+        "s3_object_lock"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 7,
+      "id": "T4-Q007",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.5",
+      "kind": "S",
+      "correct_terms": [
+        "glue_etl"
+      ],
+      "option_terms": [
+        "data_wrangler",
+        "glue_etl",
+        "databrew_recipe",
+        "emr_spark"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 8,
+      "id": "T4-Q008",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.5",
+      "kind": "S",
+      "correct_terms": [
+        "data_wrangler"
+      ],
+      "option_terms": [
+        "data_wrangler",
+        "lambda_transform",
+        "databrew_recipe",
+        "glue_etl"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 9,
+      "id": "T4-Q009",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.6",
+      "kind": "S",
+      "correct_terms": [
+        "feature_group_ingest"
+      ],
+      "option_terms": [
+        "feature_store_online",
+        "feature_group_ingest",
+        "feature_store_offline",
+        "glue_catalog"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 10,
+      "id": "T4-Q010",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.7",
+      "kind": "S",
+      "correct_terms": [
+        "bin_ages"
+      ],
+      "option_terms": [
+        "bin_ages",
+        "log_transform",
+        "standard_scaler",
+        "one_hot"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 11,
+      "id": "T4-Q011",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.7",
+      "kind": "M2",
+      "correct_terms": [
+        "one_hot",
+        "shuffle_epochs"
+      ],
+      "option_terms": [
+        "stratified_split",
+        "shuffle_epochs",
+        "one_hot",
+        "bin_ages",
+        "standard_scaler"
+      ],
+      "correct_indices": [
+        2,
+        3
+      ]
+    },
+    {
+      "question": 12,
+      "id": "T4-Q012",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.8",
+      "kind": "S",
+      "correct_terms": [
+        "in_memory_faiss"
+      ],
+      "option_terms": [
+        "s3_vectors",
+        "opensearch_knn",
+        "pgvector",
+        "in_memory_faiss"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 13,
+      "id": "T4-Q013",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.8",
+      "kind": "M2",
+      "correct_terms": [
+        "embed_finetune",
+        "rerank_retrieval"
+      ],
+      "option_terms": [
+        "embed_finetune",
+        "rerank_retrieval",
+        "embed_bedrock",
+        "hybrid_retrieval",
+        "opensearch_knn"
+      ],
+      "correct_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "question": 14,
+      "id": "T4-Q014",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.9",
+      "kind": "S",
+      "correct_terms": [
+        "fixed_chunks"
+      ],
+      "option_terms": [
+        "parent_child_chunks",
+        "semantic_chunks",
+        "chunk_metadata",
+        "fixed_chunks"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 15,
+      "id": "T4-Q015",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.10",
+      "kind": "S",
+      "correct_terms": [
+        "schema_contract"
+      ],
+      "option_terms": [
+        "dedupe_rows",
+        "profile_baseline",
+        "glue_dq",
+        "schema_contract"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 16,
+      "id": "T4-Q016",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.11",
+      "kind": "S",
+      "correct_terms": [
+        "ground_truth_auto"
+      ],
+      "option_terms": [
+        "augment_images",
+        "ground_truth",
+        "ground_truth_auto",
+        "multimodal_balance"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 17,
+      "id": "T4-Q017",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.12",
+      "kind": "S",
+      "correct_terms": [
+        "clarify_bias"
+      ],
+      "option_terms": [
+        "multimodal_balance",
+        "stratified_split",
+        "reweight_group",
+        "clarify_bias"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 18,
+      "id": "T4-Q018",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.13",
+      "kind": "M2",
+      "correct_terms": [
+        "class_weights",
+        "impute_median"
+      ],
+      "option_terms": [
+        "impute_median",
+        "class_weights",
+        "clip_outliers",
+        "drop_nulls",
+        "smote"
+      ],
+      "correct_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "question": 19,
+      "id": "T4-Q019",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.1",
+      "kind": "S",
+      "correct_terms": [
+        "knn_builtin"
+      ],
+      "option_terms": [
+        "random_cut_forest",
+        "xgboost_builtin",
+        "knn_builtin",
+        "deepar"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 20,
+      "id": "T4-Q020",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.1",
+      "kind": "S",
+      "correct_terms": [
+        "xgboost_builtin"
+      ],
+      "option_terms": [
+        "knn_builtin",
+        "linear_learner",
+        "xgboost_builtin",
+        "deepar"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 21,
+      "id": "T4-Q021",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.2",
+      "kind": "S",
+      "correct_terms": [
+        "nova_model"
+      ],
+      "option_terms": [
+        "nova_model",
+        "titan_embeddings",
+        "claude_model",
+        "self_host_weights"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 22,
+      "id": "T4-Q022",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.2",
+      "kind": "S",
+      "correct_terms": [
+        "self_host_weights"
+      ],
+      "option_terms": [
+        "claude_model",
+        "jumpstart_model",
+        "nova_model",
+        "self_host_weights"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 23,
+      "id": "T4-Q023",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.3",
+      "kind": "S",
+      "correct_terms": [
+        "prompt_first"
+      ],
+      "option_terms": [
+        "continued_pretrain",
+        "prompt_first",
+        "ft_full",
+        "ft_lora"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 24,
+      "id": "T4-Q024",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.3",
+      "kind": "M2",
+      "correct_terms": [
+        "ft_lora",
+        "replay_samples"
+      ],
+      "option_terms": [
+        "ft_lora",
+        "ft_full",
+        "distillation",
+        "replay_samples",
+        "continued_pretrain"
+      ],
+      "correct_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "question": 25,
+      "id": "T4-Q025",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.4",
+      "kind": "S",
+      "correct_terms": [
+        "hybrid_retrieval"
+      ],
+      "option_terms": [
+        "parent_child_chunks",
+        "hybrid_retrieval",
+        "rerank_retrieval",
+        "chunk_metadata"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 26,
+      "id": "T4-Q026",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.5",
+      "kind": "S",
+      "correct_terms": [
+        "rekognition"
+      ],
+      "option_terms": [
+        "rekognition",
+        "comprehend",
+        "transcribe",
+        "textract"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 27,
+      "id": "T4-Q027",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.6",
+      "kind": "S",
+      "correct_terms": [
+        "script_mode"
+      ],
+      "option_terms": [
+        "custom_container",
+        "jumpstart_model",
+        "script_mode",
+        "xgboost_builtin"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 28,
+      "id": "T4-Q028",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.7",
+      "kind": "S",
+      "correct_terms": [
+        "random_search"
+      ],
+      "option_terms": [
+        "bayesian_search",
+        "random_search",
+        "amt",
+        "objective_metric"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 29,
+      "id": "T4-Q029",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.7",
+      "kind": "M2",
+      "correct_terms": [
+        "amt",
+        "early_stopping"
+      ],
+      "option_terms": [
+        "random_search",
+        "early_stopping",
+        "objective_metric",
+        "grid_by_hand",
+        "amt"
+      ],
+      "correct_indices": [
+        2,
+        5
+      ]
+    },
+    {
+      "question": 30,
+      "id": "T4-Q030",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.8",
+      "kind": "M2",
+      "correct_terms": [
+        "data_parallel",
+        "warm_pool"
+      ],
+      "option_terms": [
+        "managed_spot",
+        "model_parallel",
+        "warm_pool",
+        "checkpoint_s3",
+        "data_parallel"
+      ],
+      "correct_indices": [
+        3,
+        5
+      ]
+    },
+    {
+      "question": 31,
+      "id": "T4-Q031",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.9",
+      "kind": "S",
+      "correct_terms": [
+        "pr_curve"
+      ],
+      "option_terms": [
+        "confusion_matrix",
+        "f1_metric",
+        "pr_curve",
+        "auc_metric"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 32,
+      "id": "T4-Q032",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.9",
+      "kind": "M2",
+      "correct_terms": [
+        "auc_metric",
+        "f1_metric"
+      ],
+      "option_terms": [
+        "accuracy_only",
+        "rmse_metric",
+        "bleu_metric",
+        "f1_metric",
+        "auc_metric"
+      ],
+      "correct_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "question": 33,
+      "id": "T4-Q033",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.10",
+      "kind": "S",
+      "correct_terms": [
+        "semantic_similarity"
+      ],
+      "option_terms": [
+        "bleu_metric",
+        "semantic_similarity",
+        "rouge_metric",
+        "rmse_metric"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 34,
+      "id": "T4-Q034",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.11",
+      "kind": "S",
+      "correct_terms": [
+        "baseline_and_drift"
+      ],
+      "option_terms": [
+        "mlflow_tracking",
+        "baseline_and_drift",
+        "bedrock_eval_job",
+        "model_registry"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 35,
+      "id": "T4-Q035",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "M2",
+      "correct_terms": [
+        "realtime_endpoint",
+        "async_inference"
+      ],
+      "option_terms": [
+        "multi_model_endpoint",
+        "realtime_endpoint",
+        "async_inference",
+        "batch_transform",
+        "serverless_inference"
+      ],
+      "correct_indices": [
+        2,
+        3
+      ]
+    },
+    {
+      "question": 36,
+      "id": "T4-Q036",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "S",
+      "correct_terms": [
+        "serverless_inference"
+      ],
+      "option_terms": [
+        "batch_transform",
+        "async_inference",
+        "realtime_endpoint",
+        "serverless_inference"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 37,
+      "id": "T4-Q037",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.2",
+      "kind": "S",
+      "correct_terms": [
+        "multi_model_endpoint"
+      ],
+      "option_terms": [
+        "realtime_endpoint",
+        "batch_transform",
+        "multi_container",
+        "multi_model_endpoint"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 38,
+      "id": "T4-Q038",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.3",
+      "kind": "S",
+      "correct_terms": [
+        "custom_model_import"
+      ],
+      "option_terms": [
+        "ondemand_bedrock",
+        "provisioned_throughput",
+        "inference_recommender",
+        "custom_model_import"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 39,
+      "id": "T4-Q039",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.3",
+      "kind": "S",
+      "correct_terms": [
+        "compare_throughput"
+      ],
+      "option_terms": [
+        "provisioned_throughput",
+        "inference_recommender",
+        "ondemand_bedrock",
+        "compare_throughput"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 40,
+      "id": "T4-Q040",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.4",
+      "kind": "S",
+      "correct_terms": [
+        "agent_deploy"
+      ],
+      "option_terms": [
+        "agent_state",
+        "prompt_management",
+        "kb_sync",
+        "agent_deploy"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 41,
+      "id": "T4-Q041",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.5",
+      "kind": "S",
+      "correct_terms": [
+        "hyperpod_cluster"
+      ],
+      "option_terms": [
+        "hyperpod_cluster",
+        "ecs_service",
+        "eks_cluster",
+        "batch_job"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 42,
+      "id": "T4-Q042",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.6",
+      "kind": "S",
+      "correct_terms": [
+        "step_scaling_policy"
+      ],
+      "option_terms": [
+        "scale_to_zero",
+        "step_scaling_policy",
+        "target_tracking",
+        "provisioned_concurrency"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 43,
+      "id": "T4-Q043",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.6",
+      "kind": "M2",
+      "correct_terms": [
+        "target_tracking",
+        "gpu_metric_scaling"
+      ],
+      "option_terms": [
+        "gpu_metric_scaling",
+        "step_scaling_policy",
+        "scale_to_zero",
+        "target_tracking",
+        "warm_pool"
+      ],
+      "correct_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "question": 44,
+      "id": "T4-Q044",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.7",
+      "kind": "S",
+      "correct_terms": [
+        "interface_endpoint"
+      ],
+      "option_terms": [
+        "nat_gateway",
+        "interface_endpoint",
+        "restrict_sg",
+        "open_ingress"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 45,
+      "id": "T4-Q045",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.8",
+      "kind": "M2",
+      "correct_terms": [
+        "codepipeline",
+        "codecommit"
+      ],
+      "option_terms": [
+        "codebuild",
+        "codeconnections",
+        "codecommit",
+        "codedeploy",
+        "codepipeline"
+      ],
+      "correct_indices": [
+        3,
+        5
+      ]
+    },
+    {
+      "question": 46,
+      "id": "T4-Q046",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.8",
+      "kind": "S",
+      "correct_terms": [
+        "codedeploy"
+      ],
+      "option_terms": [
+        "codebuild",
+        "test_gate",
+        "codedeploy",
+        "codepipeline"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 47,
+      "id": "T4-Q047",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.9",
+      "kind": "S",
+      "correct_terms": [
+        "model_registry"
+      ],
+      "option_terms": [
+        "model_registry",
+        "mlflow_tracking",
+        "prompt_management",
+        "codecommit"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 48,
+      "id": "T4-Q048",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.10",
+      "kind": "S",
+      "correct_terms": [
+        "all_at_once"
+      ],
+      "option_terms": [
+        "shadow_deploy",
+        "blue_green",
+        "all_at_once",
+        "canary_release"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 49,
+      "id": "T4-Q049",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.10",
+      "kind": "M2",
+      "correct_terms": [
+        "canary_release",
+        "linear_release"
+      ],
+      "option_terms": [
+        "shadow_deploy",
+        "canary_release",
+        "blue_green",
+        "linear_release",
+        "all_at_once"
+      ],
+      "correct_indices": [
+        2,
+        4
+      ]
+    },
+    {
+      "question": 50,
+      "id": "T4-Q050",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.11",
+      "kind": "S",
+      "correct_terms": [
+        "eventbridge_schedule"
+      ],
+      "option_terms": [
+        "eventbridge_schedule",
+        "step_functions",
+        "sm_pipelines",
+        "codepipeline"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 51,
+      "id": "T4-Q051",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "S",
+      "correct_terms": [
+        "data_drift_monitor"
+      ],
+      "option_terms": [
+        "data_drift_monitor",
+        "bias_drift_monitor",
+        "attribution_drift_monitor",
+        "model_quality_monitor"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 52,
+      "id": "T4-Q052",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "M2",
+      "correct_terms": [
+        "model_quality_monitor",
+        "attribution_drift_monitor"
+      ],
+      "option_terms": [
+        "attribution_drift_monitor",
+        "bias_drift_monitor",
+        "cloudwatch_alarm",
+        "data_drift_monitor",
+        "model_quality_monitor"
+      ],
+      "correct_indices": [
+        1,
+        5
+      ]
+    },
+    {
+      "question": 53,
+      "id": "T4-Q053",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "S",
+      "correct_terms": [
+        "cloudwatch_alarm"
+      ],
+      "option_terms": [
+        "cloudwatch_alarm",
+        "logs_insights",
+        "cloudwatch_dashboard",
+        "xray_trace"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 54,
+      "id": "T4-Q054",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "S",
+      "correct_terms": [
+        "cloudwatch_dashboard"
+      ],
+      "option_terms": [
+        "cloudwatch_dashboard",
+        "xray_trace",
+        "logs_insights",
+        "cloudwatch_alarm"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 55,
+      "id": "T4-Q055",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.3",
+      "kind": "S",
+      "correct_terms": [
+        "agentcore_observability"
+      ],
+      "option_terms": [
+        "agentcore_observability",
+        "cloudwatch_alarm",
+        "xray_trace",
+        "genai_observability"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 56,
+      "id": "T4-Q056",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "S",
+      "correct_terms": [
+        "batch_for_offline"
+      ],
+      "option_terms": [
+        "savings_plan_inference",
+        "batch_for_offline",
+        "scale_to_zero",
+        "instance_rightsize"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 57,
+      "id": "T4-Q057",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "M2",
+      "correct_terms": [
+        "instance_rightsize",
+        "savings_plan_inference"
+      ],
+      "option_terms": [
+        "instance_rightsize",
+        "cost_explorer_ml",
+        "savings_plan_inference",
+        "budgets_ml",
+        "batch_for_offline"
+      ],
+      "correct_indices": [
+        1,
+        3
+      ]
+    },
+    {
+      "question": 58,
+      "id": "T4-Q058",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.5",
+      "kind": "S",
+      "correct_terms": [
+        "cache_embeddings"
+      ],
+      "option_terms": [
+        "cache_embeddings",
+        "compare_throughput",
+        "route_small_model",
+        "trim_context"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 59,
+      "id": "T4-Q059",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.5",
+      "kind": "S",
+      "correct_terms": [
+        "cap_output_tokens"
+      ],
+      "option_terms": [
+        "route_small_model",
+        "trim_context",
+        "cache_embeddings",
+        "cap_output_tokens"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 60,
+      "id": "T4-Q060",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.6",
+      "kind": "M2",
+      "correct_terms": [
+        "iam_execution_role",
+        "least_privilege_bucket"
+      ],
+      "option_terms": [
+        "group_policy",
+        "iam_execution_role",
+        "least_privilege_bucket",
+        "long_lived_key",
+        "root_for_ml"
+      ],
+      "correct_indices": [
+        2,
+        3
+      ]
+    },
+    {
+      "question": 61,
+      "id": "T4-Q061",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.6",
+      "kind": "S",
+      "correct_terms": [
+        "cross_account_role"
+      ],
+      "option_terms": [
+        "group_policy",
+        "long_lived_key",
+        "cross_account_role",
+        "root_for_ml"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 62,
+      "id": "T4-Q062",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.7",
+      "kind": "S",
+      "correct_terms": [
+        "open_ingress"
+      ],
+      "option_terms": [
+        "restrict_sg",
+        "open_ingress",
+        "interface_endpoint",
+        "private_subnets"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 63,
+      "id": "T4-Q063",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.8",
+      "kind": "S",
+      "correct_terms": [
+        "secrets_manager"
+      ],
+      "option_terms": [
+        "secrets_manager",
+        "guardrails",
+        "kms_cmk",
+        "aws_config"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 64,
+      "id": "T4-Q064",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.9",
+      "kind": "S",
+      "correct_terms": [
+        "guardrails"
+      ],
+      "option_terms": [
+        "safety_screen",
+        "guardrails",
+        "denied_topics",
+        "runtime_redaction"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 65,
+      "id": "T4-Q065",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.10",
+      "kind": "S",
+      "correct_terms": [
+        "cloudtrail"
+      ],
+      "option_terms": [
+        "inspector_scan",
+        "aws_config",
+        "logs_insights",
+        "cloudtrail"
+      ],
+      "correct_indices": [
+        4
+      ]
+    }
+  ],
+  "5": [
+    {
+      "question": 1,
+      "id": "T5-Q001",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.1",
+      "kind": "M2",
+      "correct_terms": [
+        "dynamodb_lookup",
+        "opensearch_knn"
+      ],
+      "option_terms": [
+        "efs_shared",
+        "s3_parquet",
+        "fsx_lustre_high",
+        "dynamodb_lookup",
+        "opensearch_knn"
+      ],
+      "correct_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "question": 2,
+      "id": "T5-Q002",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.1",
+      "kind": "S",
+      "correct_terms": [
+        "fsx_lustre_high"
+      ],
+      "option_terms": [
+        "efs_shared",
+        "ebs_gp3",
+        "fsx_lustre_high",
+        "s3_parquet"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 3,
+      "id": "T5-Q003",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.2",
+      "kind": "S",
+      "correct_terms": [
+        "firehose_delivery"
+      ],
+      "option_terms": [
+        "kinesis_streams",
+        "lambda_transform",
+        "firehose_delivery",
+        "msk_kafka"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 4,
+      "id": "T5-Q004",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.3",
+      "kind": "S",
+      "correct_terms": [
+        "s3_lifecycle"
+      ],
+      "option_terms": [
+        "s3_glacier",
+        "s3_object_lock",
+        "s3_lifecycle",
+        "s3_intelligent"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 5,
+      "id": "T5-Q005",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.4",
+      "kind": "M2",
+      "correct_terms": [
+        "s3_parquet",
+        "s3_partitioned"
+      ],
+      "option_terms": [
+        "s3_intelligent",
+        "s3_raw_json",
+        "efs_shared",
+        "s3_parquet",
+        "s3_partitioned"
+      ],
+      "correct_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "question": 6,
+      "id": "T5-Q006",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.4",
+      "kind": "S",
+      "correct_terms": [
+        "s3_intelligent"
+      ],
+      "option_terms": [
+        "s3_partitioned",
+        "s3_parquet",
+        "s3_object_lock",
+        "s3_intelligent"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 7,
+      "id": "T5-Q007",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.5",
+      "kind": "S",
+      "correct_terms": [
+        "glue_etl"
+      ],
+      "option_terms": [
+        "databrew_recipe",
+        "glue_etl",
+        "dms_replicate",
+        "glue_catalog"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 8,
+      "id": "T5-Q008",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.5",
+      "kind": "S",
+      "correct_terms": [
+        "databrew_recipe"
+      ],
+      "option_terms": [
+        "databrew_recipe",
+        "lambda_transform",
+        "glue_etl",
+        "data_wrangler"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 9,
+      "id": "T5-Q009",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.6",
+      "kind": "S",
+      "correct_terms": [
+        "feature_store_online"
+      ],
+      "option_terms": [
+        "feature_store_offline",
+        "feature_store_online",
+        "feature_group_ingest",
+        "glue_catalog"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 10,
+      "id": "T5-Q010",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.7",
+      "kind": "S",
+      "correct_terms": [
+        "one_hot"
+      ],
+      "option_terms": [
+        "log_transform",
+        "standard_scaler",
+        "one_hot",
+        "bin_ages"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 11,
+      "id": "T5-Q011",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.7",
+      "kind": "M2",
+      "correct_terms": [
+        "standard_scaler",
+        "stratified_split"
+      ],
+      "option_terms": [
+        "one_hot",
+        "standard_scaler",
+        "shuffle_epochs",
+        "bin_ages",
+        "stratified_split"
+      ],
+      "correct_indices": [
+        2,
+        5
+      ]
+    },
+    {
+      "question": 12,
+      "id": "T5-Q012",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.8",
+      "kind": "S",
+      "correct_terms": [
+        "pgvector"
+      ],
+      "option_terms": [
+        "opensearch_knn",
+        "in_memory_faiss",
+        "pgvector",
+        "s3_vectors"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 13,
+      "id": "T5-Q013",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.8",
+      "kind": "M2",
+      "correct_terms": [
+        "embed_bedrock",
+        "hybrid_retrieval"
+      ],
+      "option_terms": [
+        "embed_bedrock",
+        "rerank_retrieval",
+        "hybrid_retrieval",
+        "s3_vectors",
+        "embed_finetune"
+      ],
+      "correct_indices": [
+        1,
+        3
+      ]
+    },
+    {
+      "question": 14,
+      "id": "T5-Q014",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.9",
+      "kind": "S",
+      "correct_terms": [
+        "parent_child_chunks"
+      ],
+      "option_terms": [
+        "fixed_chunks",
+        "parent_child_chunks",
+        "semantic_chunks",
+        "chunk_metadata"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 15,
+      "id": "T5-Q015",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.10",
+      "kind": "S",
+      "correct_terms": [
+        "profile_baseline"
+      ],
+      "option_terms": [
+        "profile_baseline",
+        "schema_contract",
+        "glue_dq",
+        "dedupe_rows"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 16,
+      "id": "T5-Q016",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.11",
+      "kind": "S",
+      "correct_terms": [
+        "ground_truth"
+      ],
+      "option_terms": [
+        "ground_truth_auto",
+        "ground_truth",
+        "dedupe_rows",
+        "redact_pii"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 17,
+      "id": "T5-Q017",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.12",
+      "kind": "S",
+      "correct_terms": [
+        "reweight_group"
+      ],
+      "option_terms": [
+        "reweight_group",
+        "multimodal_balance",
+        "clarify_bias",
+        "stratified_split"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 18,
+      "id": "T5-Q018",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.13",
+      "kind": "S",
+      "correct_terms": [
+        "dedupe_rows"
+      ],
+      "option_terms": [
+        "impute_median",
+        "dedupe_rows",
+        "smote",
+        "clip_outliers"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 19,
+      "id": "T5-Q019",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.1",
+      "kind": "S",
+      "correct_terms": [
+        "deepar"
+      ],
+      "option_terms": [
+        "linear_learner",
+        "xgboost_builtin",
+        "knn_builtin",
+        "deepar"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 20,
+      "id": "T5-Q020",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.1",
+      "kind": "S",
+      "correct_terms": [
+        "random_cut_forest"
+      ],
+      "option_terms": [
+        "ensemble",
+        "xgboost_builtin",
+        "deepar",
+        "random_cut_forest"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 21,
+      "id": "T5-Q021",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.2",
+      "kind": "S",
+      "correct_terms": [
+        "claude_model"
+      ],
+      "option_terms": [
+        "nova_model",
+        "self_host_weights",
+        "claude_model",
+        "titan_embeddings"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 22,
+      "id": "T5-Q022",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.2",
+      "kind": "S",
+      "correct_terms": [
+        "titan_embeddings"
+      ],
+      "option_terms": [
+        "self_host_weights",
+        "titan_embeddings",
+        "nova_model",
+        "claude_model"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 23,
+      "id": "T5-Q023",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.3",
+      "kind": "S",
+      "correct_terms": [
+        "continued_pretrain"
+      ],
+      "option_terms": [
+        "continued_pretrain",
+        "ft_lora",
+        "prompt_first",
+        "ft_full"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 24,
+      "id": "T5-Q024",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.3",
+      "kind": "M2",
+      "correct_terms": [
+        "ft_lora",
+        "replay_samples"
+      ],
+      "option_terms": [
+        "prompt_first",
+        "ft_full",
+        "replay_samples",
+        "distillation",
+        "ft_lora"
+      ],
+      "correct_indices": [
+        3,
+        5
+      ]
+    },
+    {
+      "question": 25,
+      "id": "T5-Q025",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.4",
+      "kind": "S",
+      "correct_terms": [
+        "chunk_metadata"
+      ],
+      "option_terms": [
+        "chunk_metadata",
+        "parent_child_chunks",
+        "semantic_chunks",
+        "fixed_chunks"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 26,
+      "id": "T5-Q026",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.5",
+      "kind": "S",
+      "correct_terms": [
+        "transcribe"
+      ],
+      "option_terms": [
+        "transcribe",
+        "comprehend",
+        "rekognition",
+        "textract"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 27,
+      "id": "T5-Q027",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.6",
+      "kind": "S",
+      "correct_terms": [
+        "jumpstart_model"
+      ],
+      "option_terms": [
+        "jumpstart_model",
+        "xgboost_builtin",
+        "custom_container",
+        "script_mode"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 28,
+      "id": "T5-Q028",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.7",
+      "kind": "S",
+      "correct_terms": [
+        "objective_metric"
+      ],
+      "option_terms": [
+        "objective_metric",
+        "grid_by_hand",
+        "early_stopping",
+        "random_search"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 29,
+      "id": "T5-Q029",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.7",
+      "kind": "M2",
+      "correct_terms": [
+        "amt",
+        "grid_by_hand"
+      ],
+      "option_terms": [
+        "objective_metric",
+        "amt",
+        "early_stopping",
+        "warm_pool",
+        "grid_by_hand"
+      ],
+      "correct_indices": [
+        2,
+        5
+      ]
+    },
+    {
+      "question": 30,
+      "id": "T5-Q030",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.8",
+      "kind": "M2",
+      "correct_terms": [
+        "regularise",
+        "more_data"
+      ],
+      "option_terms": [
+        "regularise",
+        "more_data",
+        "ensemble",
+        "train_longer",
+        "checkpoint_s3"
+      ],
+      "correct_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "question": 31,
+      "id": "T5-Q031",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.9",
+      "kind": "S",
+      "correct_terms": [
+        "rmse_metric"
+      ],
+      "option_terms": [
+        "f1_metric",
+        "bleu_metric",
+        "rmse_metric",
+        "auc_metric"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 32,
+      "id": "T5-Q032",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.9",
+      "kind": "M2",
+      "correct_terms": [
+        "auc_metric",
+        "pr_curve"
+      ],
+      "option_terms": [
+        "f1_metric",
+        "auc_metric",
+        "pr_curve",
+        "rmse_metric",
+        "confusion_matrix"
+      ],
+      "correct_indices": [
+        2,
+        3
+      ]
+    },
+    {
+      "question": 33,
+      "id": "T5-Q033",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.10",
+      "kind": "S",
+      "correct_terms": [
+        "rouge_metric"
+      ],
+      "option_terms": [
+        "semantic_similarity",
+        "bleu_metric",
+        "rouge_metric",
+        "bertscore"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 34,
+      "id": "T5-Q034",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.11",
+      "kind": "S",
+      "correct_terms": [
+        "bedrock_eval_job"
+      ],
+      "option_terms": [
+        "bedrock_eval_job",
+        "prompt_management",
+        "model_registry",
+        "mlflow_tracking"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 35,
+      "id": "T5-Q035",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "S",
+      "correct_terms": [
+        "realtime_endpoint"
+      ],
+      "option_terms": [
+        "batch_transform",
+        "serverless_inference",
+        "realtime_endpoint",
+        "async_inference"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 36,
+      "id": "T5-Q036",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "M2",
+      "correct_terms": [
+        "batch_transform",
+        "multi_model_endpoint"
+      ],
+      "option_terms": [
+        "serverless_inference",
+        "batch_transform",
+        "async_inference",
+        "realtime_endpoint",
+        "multi_model_endpoint"
+      ],
+      "correct_indices": [
+        2,
+        5
+      ]
+    },
+    {
+      "question": 37,
+      "id": "T5-Q037",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.2",
+      "kind": "S",
+      "correct_terms": [
+        "multi_container"
+      ],
+      "option_terms": [
+        "serverless_inference",
+        "multi_model_endpoint",
+        "realtime_endpoint",
+        "multi_container"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 38,
+      "id": "T5-Q038",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.3",
+      "kind": "S",
+      "correct_terms": [
+        "provisioned_throughput"
+      ],
+      "option_terms": [
+        "compare_throughput",
+        "provisioned_throughput",
+        "custom_model_import",
+        "ondemand_bedrock"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 39,
+      "id": "T5-Q039",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.3",
+      "kind": "S",
+      "correct_terms": [
+        "inference_recommender"
+      ],
+      "option_terms": [
+        "inference_recommender",
+        "provisioned_throughput",
+        "compare_throughput",
+        "ondemand_bedrock"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 40,
+      "id": "T5-Q040",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.4",
+      "kind": "S",
+      "correct_terms": [
+        "kb_sync"
+      ],
+      "option_terms": [
+        "agent_deploy",
+        "kb_sync",
+        "agent_state",
+        "prompt_management"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 41,
+      "id": "T5-Q041",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.5",
+      "kind": "S",
+      "correct_terms": [
+        "ecr_image"
+      ],
+      "option_terms": [
+        "codebuild",
+        "ecs_service",
+        "custom_container",
+        "ecr_image"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 42,
+      "id": "T5-Q042",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.6",
+      "kind": "S",
+      "correct_terms": [
+        "gpu_metric_scaling"
+      ],
+      "option_terms": [
+        "target_tracking",
+        "step_scaling_policy",
+        "scale_to_zero",
+        "gpu_metric_scaling"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 43,
+      "id": "T5-Q043",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.6",
+      "kind": "M2",
+      "correct_terms": [
+        "target_tracking",
+        "provisioned_concurrency"
+      ],
+      "option_terms": [
+        "step_scaling_policy",
+        "provisioned_concurrency",
+        "target_tracking",
+        "warm_pool",
+        "scale_to_zero"
+      ],
+      "correct_indices": [
+        2,
+        3
+      ]
+    },
+    {
+      "question": 44,
+      "id": "T5-Q044",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.7",
+      "kind": "S",
+      "correct_terms": [
+        "interface_endpoint"
+      ],
+      "option_terms": [
+        "open_ingress",
+        "interface_endpoint",
+        "private_subnets",
+        "nat_gateway"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 45,
+      "id": "T5-Q045",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.8",
+      "kind": "M2",
+      "correct_terms": [
+        "codebuild",
+        "codepipeline"
+      ],
+      "option_terms": [
+        "codeconnections",
+        "codebuild",
+        "codedeploy",
+        "codepipeline",
+        "codecommit"
+      ],
+      "correct_indices": [
+        2,
+        4
+      ]
+    },
+    {
+      "question": 46,
+      "id": "T5-Q046",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.8",
+      "kind": "S",
+      "correct_terms": [
+        "test_gate"
+      ],
+      "option_terms": [
+        "codedeploy",
+        "codepipeline",
+        "codebuild",
+        "test_gate"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 47,
+      "id": "T5-Q047",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.9",
+      "kind": "S",
+      "correct_terms": [
+        "prompt_management"
+      ],
+      "option_terms": [
+        "model_registry",
+        "mlflow_tracking",
+        "codecommit",
+        "prompt_management"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 48,
+      "id": "T5-Q048",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.10",
+      "kind": "S",
+      "correct_terms": [
+        "canary_release"
+      ],
+      "option_terms": [
+        "shadow_deploy",
+        "blue_green",
+        "all_at_once",
+        "canary_release"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 49,
+      "id": "T5-Q049",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.10",
+      "kind": "M2",
+      "correct_terms": [
+        "shadow_deploy",
+        "blue_green"
+      ],
+      "option_terms": [
+        "shadow_deploy",
+        "all_at_once",
+        "canary_release",
+        "blue_green",
+        "linear_release"
+      ],
+      "correct_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "question": 50,
+      "id": "T5-Q050",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.11",
+      "kind": "S",
+      "correct_terms": [
+        "sm_pipelines"
+      ],
+      "option_terms": [
+        "eventbridge_schedule",
+        "step_functions",
+        "codepipeline",
+        "sm_pipelines"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 51,
+      "id": "T5-Q051",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "S",
+      "correct_terms": [
+        "model_quality_monitor"
+      ],
+      "option_terms": [
+        "data_drift_monitor",
+        "attribution_drift_monitor",
+        "model_quality_monitor",
+        "bias_drift_monitor"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 52,
+      "id": "T5-Q052",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "M2",
+      "correct_terms": [
+        "data_drift_monitor",
+        "bias_drift_monitor"
+      ],
+      "option_terms": [
+        "attribution_drift_monitor",
+        "model_quality_monitor",
+        "data_drift_monitor",
+        "cloudwatch_alarm",
+        "bias_drift_monitor"
+      ],
+      "correct_indices": [
+        3,
+        5
+      ]
+    },
+    {
+      "question": 53,
+      "id": "T5-Q053",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "S",
+      "correct_terms": [
+        "logs_insights"
+      ],
+      "option_terms": [
+        "cloudwatch_dashboard",
+        "cloudwatch_alarm",
+        "xray_trace",
+        "logs_insights"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 54,
+      "id": "T5-Q054",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "S",
+      "correct_terms": [
+        "cloudwatch_alarm"
+      ],
+      "option_terms": [
+        "xray_trace",
+        "logs_insights",
+        "cloudwatch_alarm",
+        "cloudwatch_dashboard"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 55,
+      "id": "T5-Q055",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.3",
+      "kind": "S",
+      "correct_terms": [
+        "genai_observability"
+      ],
+      "option_terms": [
+        "genai_observability",
+        "cloudwatch_alarm",
+        "xray_trace",
+        "agentcore_observability"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 56,
+      "id": "T5-Q056",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "S",
+      "correct_terms": [
+        "cost_explorer_ml"
+      ],
+      "option_terms": [
+        "savings_plan_inference",
+        "cost_explorer_ml",
+        "instance_rightsize",
+        "batch_for_offline"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 57,
+      "id": "T5-Q057",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "M2",
+      "correct_terms": [
+        "batch_for_offline",
+        "instance_rightsize"
+      ],
+      "option_terms": [
+        "largest_model",
+        "savings_plan_inference",
+        "batch_for_offline",
+        "instance_rightsize",
+        "scale_to_zero"
+      ],
+      "correct_indices": [
+        3,
+        4
+      ]
+    },
+    {
+      "question": 58,
+      "id": "T5-Q058",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.5",
+      "kind": "S",
+      "correct_terms": [
+        "trim_context"
+      ],
+      "option_terms": [
+        "route_small_model",
+        "trim_context",
+        "cache_embeddings",
+        "cap_output_tokens"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 59,
+      "id": "T5-Q059",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.5",
+      "kind": "S",
+      "correct_terms": [
+        "route_small_model"
+      ],
+      "option_terms": [
+        "route_small_model",
+        "trim_context",
+        "cap_output_tokens",
+        "cache_embeddings"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 60,
+      "id": "T5-Q060",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.6",
+      "kind": "M2",
+      "correct_terms": [
+        "vpc_only_bucket",
+        "least_privilege_bucket"
+      ],
+      "option_terms": [
+        "group_policy",
+        "least_privilege_bucket",
+        "root_for_ml",
+        "vpc_only_bucket",
+        "long_lived_key"
+      ],
+      "correct_indices": [
+        2,
+        4
+      ]
+    },
+    {
+      "question": 61,
+      "id": "T5-Q061",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.6",
+      "kind": "S",
+      "correct_terms": [
+        "bedrock_api_key"
+      ],
+      "option_terms": [
+        "root_for_ml",
+        "bedrock_api_key",
+        "long_lived_key",
+        "group_policy"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 62,
+      "id": "T5-Q062",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.7",
+      "kind": "S",
+      "correct_terms": [
+        "restrict_sg"
+      ],
+      "option_terms": [
+        "interface_endpoint",
+        "open_ingress",
+        "private_subnets",
+        "restrict_sg"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 63,
+      "id": "T5-Q063",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.8",
+      "kind": "S",
+      "correct_terms": [
+        "kms_cmk"
+      ],
+      "option_terms": [
+        "kms_cmk",
+        "secrets_manager",
+        "aws_config",
+        "guardrails"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 64,
+      "id": "T5-Q064",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.9",
+      "kind": "S",
+      "correct_terms": [
+        "guardrails"
+      ],
+      "option_terms": [
+        "denied_topics",
+        "safety_screen",
+        "guardrails",
+        "runtime_redaction"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 65,
+      "id": "T5-Q065",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.10",
+      "kind": "S",
+      "correct_terms": [
+        "aws_config"
+      ],
+      "option_terms": [
+        "inspector_scan",
+        "aws_config",
+        "logs_insights",
+        "cloudtrail"
+      ],
+      "correct_indices": [
+        2
+      ]
+    }
+  ],
+  "6": [
+    {
+      "question": 1,
+      "id": "T6-Q001",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.1",
+      "kind": "S",
+      "correct_terms": [
+        "quota_increase"
+      ],
+      "option_terms": [
+        "lambda_transform",
+        "kinesis_shards",
+        "firehose_buffer",
+        "quota_increase"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 2,
+      "id": "T6-Q002",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.1",
+      "kind": "S",
+      "correct_terms": [
+        "dynamodb_lookup"
+      ],
+      "option_terms": [
+        "fsx_lustre_high",
+        "dynamodb_lookup",
+        "s3_parquet",
+        "opensearch_knn"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 3,
+      "id": "T6-Q003",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.2",
+      "kind": "S",
+      "correct_terms": [
+        "kinesis_shards"
+      ],
+      "option_terms": [
+        "glue_etl",
+        "kinesis_shards",
+        "firehose_delivery",
+        "msk_kafka"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 4,
+      "id": "T6-Q004",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.3",
+      "kind": "S",
+      "correct_terms": [
+        "s3_glacier"
+      ],
+      "option_terms": [
+        "s3_glacier",
+        "s3_lifecycle",
+        "s3_object_lock",
+        "s3_intelligent"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 5,
+      "id": "T6-Q005",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.4",
+      "kind": "M2",
+      "correct_terms": [
+        "s3_parquet",
+        "s3_partitioned"
+      ],
+      "option_terms": [
+        "s3_raw_json",
+        "s3_partitioned",
+        "ebs_gp3",
+        "efs_shared",
+        "s3_parquet"
+      ],
+      "correct_indices": [
+        2,
+        5
+      ]
+    },
+    {
+      "question": 6,
+      "id": "T6-Q006",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.4",
+      "kind": "S",
+      "correct_terms": [
+        "s3_raw_json"
+      ],
+      "option_terms": [
+        "s3_parquet",
+        "s3_partitioned",
+        "s3_raw_json",
+        "s3_object_lock"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 7,
+      "id": "T6-Q007",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.5",
+      "kind": "S",
+      "correct_terms": [
+        "emr_spark"
+      ],
+      "option_terms": [
+        "lambda_transform",
+        "glue_etl",
+        "databrew_recipe",
+        "emr_spark"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 8,
+      "id": "T6-Q008",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.5",
+      "kind": "S",
+      "correct_terms": [
+        "glue_etl"
+      ],
+      "option_terms": [
+        "glue_etl",
+        "data_wrangler",
+        "emr_spark",
+        "glue_catalog"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 9,
+      "id": "T6-Q009",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.6",
+      "kind": "S",
+      "correct_terms": [
+        "feature_store_offline"
+      ],
+      "option_terms": [
+        "glue_catalog",
+        "feature_store_offline",
+        "feature_store_online",
+        "feature_group_ingest"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 10,
+      "id": "T6-Q010",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.7",
+      "kind": "S",
+      "correct_terms": [
+        "standard_scaler"
+      ],
+      "option_terms": [
+        "bin_ages",
+        "standard_scaler",
+        "log_transform",
+        "one_hot"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 11,
+      "id": "T6-Q011",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.7",
+      "kind": "M2",
+      "correct_terms": [
+        "log_transform",
+        "stratified_split"
+      ],
+      "option_terms": [
+        "log_transform",
+        "stratified_split",
+        "shuffle_epochs",
+        "standard_scaler",
+        "one_hot"
+      ],
+      "correct_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "question": 12,
+      "id": "T6-Q012",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.8",
+      "kind": "S",
+      "correct_terms": [
+        "opensearch_knn"
+      ],
+      "option_terms": [
+        "in_memory_faiss",
+        "pgvector",
+        "opensearch_knn",
+        "s3_vectors"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 13,
+      "id": "T6-Q013",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.8",
+      "kind": "M2",
+      "correct_terms": [
+        "embed_bedrock",
+        "hybrid_retrieval"
+      ],
+      "option_terms": [
+        "embed_finetune",
+        "hybrid_retrieval",
+        "rerank_retrieval",
+        "embed_bedrock",
+        "opensearch_knn"
+      ],
+      "correct_indices": [
+        2,
+        4
+      ]
+    },
+    {
+      "question": 14,
+      "id": "T6-Q014",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.9",
+      "kind": "S",
+      "correct_terms": [
+        "semantic_chunks"
+      ],
+      "option_terms": [
+        "chunk_metadata",
+        "semantic_chunks",
+        "fixed_chunks",
+        "parent_child_chunks"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 15,
+      "id": "T6-Q015",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.10",
+      "kind": "M2",
+      "correct_terms": [
+        "glue_dq",
+        "profile_baseline"
+      ],
+      "option_terms": [
+        "schema_contract",
+        "databrew_recipe",
+        "s3_lifecycle",
+        "glue_dq",
+        "profile_baseline"
+      ],
+      "correct_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "question": 16,
+      "id": "T6-Q016",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.11",
+      "kind": "S",
+      "correct_terms": [
+        "ground_truth_auto"
+      ],
+      "option_terms": [
+        "ground_truth",
+        "ground_truth_auto",
+        "dedupe_rows",
+        "redact_pii"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 17,
+      "id": "T6-Q017",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.12",
+      "kind": "S",
+      "correct_terms": [
+        "multimodal_balance"
+      ],
+      "option_terms": [
+        "stratified_split",
+        "reweight_group",
+        "clarify_bias",
+        "multimodal_balance"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 18,
+      "id": "T6-Q018",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.13",
+      "kind": "S",
+      "correct_terms": [
+        "class_weights"
+      ],
+      "option_terms": [
+        "smote",
+        "drop_nulls",
+        "clip_outliers",
+        "class_weights"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 19,
+      "id": "T6-Q019",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.1",
+      "kind": "S",
+      "correct_terms": [
+        "deepar"
+      ],
+      "option_terms": [
+        "deepar",
+        "random_cut_forest",
+        "xgboost_builtin",
+        "linear_learner"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 20,
+      "id": "T6-Q020",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.1",
+      "kind": "S",
+      "correct_terms": [
+        "linear_learner"
+      ],
+      "option_terms": [
+        "ensemble",
+        "xgboost_builtin",
+        "knn_builtin",
+        "linear_learner"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 21,
+      "id": "T6-Q021",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.2",
+      "kind": "S",
+      "correct_terms": [
+        "nova_model"
+      ],
+      "option_terms": [
+        "nova_model",
+        "self_host_weights",
+        "claude_model",
+        "titan_embeddings"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 22,
+      "id": "T6-Q022",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.2",
+      "kind": "S",
+      "correct_terms": [
+        "titan_embeddings"
+      ],
+      "option_terms": [
+        "self_host_weights",
+        "claude_model",
+        "nova_model",
+        "titan_embeddings"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 23,
+      "id": "T6-Q023",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.3",
+      "kind": "S",
+      "correct_terms": [
+        "distillation"
+      ],
+      "option_terms": [
+        "continued_pretrain",
+        "distillation",
+        "ft_lora",
+        "ft_full"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 24,
+      "id": "T6-Q024",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.3",
+      "kind": "M2",
+      "correct_terms": [
+        "ft_lora",
+        "replay_samples"
+      ],
+      "option_terms": [
+        "continued_pretrain",
+        "ft_lora",
+        "prompt_first",
+        "replay_samples",
+        "ft_full"
+      ],
+      "correct_indices": [
+        2,
+        4
+      ]
+    },
+    {
+      "question": 25,
+      "id": "T6-Q025",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.4",
+      "kind": "S",
+      "correct_terms": [
+        "parent_child_chunks"
+      ],
+      "option_terms": [
+        "parent_child_chunks",
+        "fixed_chunks",
+        "chunk_metadata",
+        "semantic_chunks"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 26,
+      "id": "T6-Q026",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.5",
+      "kind": "S",
+      "correct_terms": [
+        "textract"
+      ],
+      "option_terms": [
+        "textract",
+        "transcribe",
+        "rekognition",
+        "comprehend"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 27,
+      "id": "T6-Q027",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.6",
+      "kind": "S",
+      "correct_terms": [
+        "script_mode"
+      ],
+      "option_terms": [
+        "jumpstart_model",
+        "script_mode",
+        "xgboost_builtin",
+        "custom_container"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 28,
+      "id": "T6-Q028",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.7",
+      "kind": "S",
+      "correct_terms": [
+        "early_stopping"
+      ],
+      "option_terms": [
+        "early_stopping",
+        "bayesian_search",
+        "amt",
+        "objective_metric"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 29,
+      "id": "T6-Q029",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.7",
+      "kind": "M2",
+      "correct_terms": [
+        "objective_metric",
+        "bayesian_search"
+      ],
+      "option_terms": [
+        "objective_metric",
+        "bayesian_search",
+        "grid_by_hand",
+        "random_search",
+        "early_stopping"
+      ],
+      "correct_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "question": 30,
+      "id": "T6-Q030",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.8",
+      "kind": "M2",
+      "correct_terms": [
+        "checkpoint_s3",
+        "warm_pool"
+      ],
+      "option_terms": [
+        "managed_spot",
+        "model_parallel",
+        "warm_pool",
+        "data_parallel",
+        "checkpoint_s3"
+      ],
+      "correct_indices": [
+        3,
+        5
+      ]
+    },
+    {
+      "question": 31,
+      "id": "T6-Q031",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.9",
+      "kind": "S",
+      "correct_terms": [
+        "confusion_matrix"
+      ],
+      "option_terms": [
+        "rmse_metric",
+        "auc_metric",
+        "confusion_matrix",
+        "f1_metric"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 32,
+      "id": "T6-Q032",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.9",
+      "kind": "M2",
+      "correct_terms": [
+        "auc_metric",
+        "rmse_metric"
+      ],
+      "option_terms": [
+        "accuracy_only",
+        "f1_metric",
+        "auc_metric",
+        "rmse_metric",
+        "bleu_metric"
+      ],
+      "correct_indices": [
+        3,
+        4
+      ]
+    },
+    {
+      "question": 33,
+      "id": "T6-Q033",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.10",
+      "kind": "S",
+      "correct_terms": [
+        "bertscore"
+      ],
+      "option_terms": [
+        "bertscore",
+        "rouge_metric",
+        "bleu_metric",
+        "rmse_metric"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 34,
+      "id": "T6-Q034",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.11",
+      "kind": "S",
+      "correct_terms": [
+        "pin_versions"
+      ],
+      "option_terms": [
+        "bedrock_eval_job",
+        "model_registry",
+        "pin_versions",
+        "mlflow_tracking"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 35,
+      "id": "T6-Q035",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "S",
+      "correct_terms": [
+        "async_inference"
+      ],
+      "option_terms": [
+        "serverless_inference",
+        "async_inference",
+        "realtime_endpoint",
+        "batch_transform"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 36,
+      "id": "T6-Q036",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "M2",
+      "correct_terms": [
+        "batch_transform",
+        "realtime_endpoint"
+      ],
+      "option_terms": [
+        "batch_transform",
+        "serverless_inference",
+        "multi_model_endpoint",
+        "realtime_endpoint",
+        "async_inference"
+      ],
+      "correct_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "question": 37,
+      "id": "T6-Q037",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.2",
+      "kind": "S",
+      "correct_terms": [
+        "multi_container"
+      ],
+      "option_terms": [
+        "realtime_endpoint",
+        "multi_model_endpoint",
+        "batch_transform",
+        "multi_container"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 38,
+      "id": "T6-Q038",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.3",
+      "kind": "S",
+      "correct_terms": [
+        "custom_model_import"
+      ],
+      "option_terms": [
+        "provisioned_throughput",
+        "jumpstart_model",
+        "custom_model_import",
+        "self_host_weights"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 39,
+      "id": "T6-Q039",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.3",
+      "kind": "S",
+      "correct_terms": [
+        "provisioned_throughput"
+      ],
+      "option_terms": [
+        "ondemand_bedrock",
+        "provisioned_throughput",
+        "inference_recommender",
+        "compare_throughput"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 40,
+      "id": "T6-Q040",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.4",
+      "kind": "S",
+      "correct_terms": [
+        "agent_state"
+      ],
+      "option_terms": [
+        "kb_sync",
+        "prompt_management",
+        "agent_state",
+        "agent_deploy"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 41,
+      "id": "T6-Q041",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.5",
+      "kind": "S",
+      "correct_terms": [
+        "eks_cluster"
+      ],
+      "option_terms": [
+        "batch_job",
+        "lambda_inference",
+        "eks_cluster",
+        "ecs_service"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 42,
+      "id": "T6-Q042",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.6",
+      "kind": "S",
+      "correct_terms": [
+        "scale_to_zero"
+      ],
+      "option_terms": [
+        "target_tracking",
+        "scale_to_zero",
+        "warm_pool",
+        "step_scaling_policy"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 43,
+      "id": "T6-Q043",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.6",
+      "kind": "M2",
+      "correct_terms": [
+        "gpu_metric_scaling",
+        "provisioned_concurrency"
+      ],
+      "option_terms": [
+        "gpu_metric_scaling",
+        "step_scaling_policy",
+        "target_tracking",
+        "provisioned_concurrency",
+        "scale_to_zero"
+      ],
+      "correct_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "question": 44,
+      "id": "T6-Q044",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.7",
+      "kind": "S",
+      "correct_terms": [
+        "private_subnets"
+      ],
+      "option_terms": [
+        "interface_endpoint",
+        "nat_gateway",
+        "private_subnets",
+        "open_ingress"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 45,
+      "id": "T6-Q045",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.8",
+      "kind": "M2",
+      "correct_terms": [
+        "codebuild",
+        "codeconnections"
+      ],
+      "option_terms": [
+        "codeconnections",
+        "codepipeline",
+        "codebuild",
+        "codecommit",
+        "codedeploy"
+      ],
+      "correct_indices": [
+        1,
+        3
+      ]
+    },
+    {
+      "question": 46,
+      "id": "T6-Q046",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.8",
+      "kind": "S",
+      "correct_terms": [
+        "codepipeline"
+      ],
+      "option_terms": [
+        "test_gate",
+        "codebuild",
+        "codedeploy",
+        "codepipeline"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 47,
+      "id": "T6-Q047",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.9",
+      "kind": "S",
+      "correct_terms": [
+        "model_registry"
+      ],
+      "option_terms": [
+        "mlflow_tracking",
+        "prompt_management",
+        "codecommit",
+        "model_registry"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 48,
+      "id": "T6-Q048",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.10",
+      "kind": "S",
+      "correct_terms": [
+        "all_at_once"
+      ],
+      "option_terms": [
+        "canary_release",
+        "linear_release",
+        "all_at_once",
+        "blue_green"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 49,
+      "id": "T6-Q049",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.10",
+      "kind": "M2",
+      "correct_terms": [
+        "canary_release",
+        "shadow_deploy"
+      ],
+      "option_terms": [
+        "blue_green",
+        "canary_release",
+        "all_at_once",
+        "shadow_deploy",
+        "linear_release"
+      ],
+      "correct_indices": [
+        2,
+        4
+      ]
+    },
+    {
+      "question": 50,
+      "id": "T6-Q050",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.11",
+      "kind": "S",
+      "correct_terms": [
+        "step_functions"
+      ],
+      "option_terms": [
+        "step_functions",
+        "codepipeline",
+        "sm_pipelines",
+        "eventbridge_schedule"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 51,
+      "id": "T6-Q051",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "S",
+      "correct_terms": [
+        "attribution_drift_monitor"
+      ],
+      "option_terms": [
+        "attribution_drift_monitor",
+        "bias_drift_monitor",
+        "data_drift_monitor",
+        "model_quality_monitor"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 52,
+      "id": "T6-Q052",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "M2",
+      "correct_terms": [
+        "model_quality_monitor",
+        "bias_drift_monitor"
+      ],
+      "option_terms": [
+        "attribution_drift_monitor",
+        "model_quality_monitor",
+        "cloudwatch_alarm",
+        "data_drift_monitor",
+        "bias_drift_monitor"
+      ],
+      "correct_indices": [
+        2,
+        5
+      ]
+    },
+    {
+      "question": 53,
+      "id": "T6-Q053",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "S",
+      "correct_terms": [
+        "xray_trace"
+      ],
+      "option_terms": [
+        "xray_trace",
+        "logs_insights",
+        "cloudwatch_dashboard",
+        "aws_config"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 54,
+      "id": "T6-Q054",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "S",
+      "correct_terms": [
+        "cloudwatch_dashboard"
+      ],
+      "option_terms": [
+        "logs_insights",
+        "xray_trace",
+        "cloudwatch_dashboard",
+        "cloudwatch_alarm"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 55,
+      "id": "T6-Q055",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.3",
+      "kind": "S",
+      "correct_terms": [
+        "agentcore_observability"
+      ],
+      "option_terms": [
+        "cloudwatch_alarm",
+        "xray_trace",
+        "genai_observability",
+        "agentcore_observability"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 56,
+      "id": "T6-Q056",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "S",
+      "correct_terms": [
+        "savings_plan_inference"
+      ],
+      "option_terms": [
+        "instance_rightsize",
+        "batch_for_offline",
+        "cost_explorer_ml",
+        "savings_plan_inference"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 57,
+      "id": "T6-Q057",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "M2",
+      "correct_terms": [
+        "instance_rightsize",
+        "batch_for_offline"
+      ],
+      "option_terms": [
+        "largest_model",
+        "batch_for_offline",
+        "scale_to_zero",
+        "instance_rightsize",
+        "savings_plan_inference"
+      ],
+      "correct_indices": [
+        2,
+        4
+      ]
+    },
+    {
+      "question": 58,
+      "id": "T6-Q058",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.5",
+      "kind": "S",
+      "correct_terms": [
+        "cache_embeddings"
+      ],
+      "option_terms": [
+        "route_small_model",
+        "cache_embeddings",
+        "trim_context",
+        "cap_output_tokens"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 59,
+      "id": "T6-Q059",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.5",
+      "kind": "S",
+      "correct_terms": [
+        "route_small_model"
+      ],
+      "option_terms": [
+        "cache_embeddings",
+        "trim_context",
+        "cap_output_tokens",
+        "route_small_model"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 60,
+      "id": "T6-Q060",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.6",
+      "kind": "M2",
+      "correct_terms": [
+        "iam_execution_role",
+        "least_privilege_bucket"
+      ],
+      "option_terms": [
+        "long_lived_key",
+        "group_policy",
+        "least_privilege_bucket",
+        "root_for_ml",
+        "iam_execution_role"
+      ],
+      "correct_indices": [
+        3,
+        5
+      ]
+    },
+    {
+      "question": 61,
+      "id": "T6-Q061",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.6",
+      "kind": "S",
+      "correct_terms": [
+        "cross_account_role"
+      ],
+      "option_terms": [
+        "group_policy",
+        "root_for_ml",
+        "cross_account_role",
+        "long_lived_key"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 62,
+      "id": "T6-Q062",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.7",
+      "kind": "S",
+      "correct_terms": [
+        "vpc_only_bucket"
+      ],
+      "option_terms": [
+        "vpc_only_bucket",
+        "interface_endpoint",
+        "private_subnets",
+        "restrict_sg"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 63,
+      "id": "T6-Q063",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.8",
+      "kind": "S",
+      "correct_terms": [
+        "secrets_manager"
+      ],
+      "option_terms": [
+        "secrets_manager",
+        "guardrails",
+        "aws_config",
+        "kms_cmk"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 64,
+      "id": "T6-Q064",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.9",
+      "kind": "S",
+      "correct_terms": [
+        "denied_topics"
+      ],
+      "option_terms": [
+        "runtime_redaction",
+        "safety_screen",
+        "denied_topics",
+        "guardrails"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 65,
+      "id": "T6-Q065",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.10",
+      "kind": "S",
+      "correct_terms": [
+        "inspector_scan"
+      ],
+      "option_terms": [
+        "cloudtrail",
+        "inspector_scan",
+        "aws_config",
+        "codeguru_review"
+      ],
+      "correct_indices": [
+        2
+      ]
+    }
+  ]
+}
