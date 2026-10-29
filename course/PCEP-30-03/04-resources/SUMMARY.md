@@ -1,0 +1,13 @@
+# PCEP-30-03 package summary
+
+This course covers the **PCEP™ – Certified Entry-Level Python Programmer (Exam PCEP-30-03)** certification from the OpenEDG Python Institute.
+
+- Six mock exams × 60 original questions = **360** completely fresh items (**0 stem overlap** with `PCEP-30-02`), all snippet outputs and exceptions verified on **CPython 3.11**.
+- **Pre-release & baseline notice (checked October 29, 2026):** OpenEDG Python Institute lists **PCEP-30-03** as **Pending Release (scheduled for October 31, 2026)** and describes it as a routine exam-version update under `PCEP-30-0x` that does not affect the five-year validity of credentials already earned. Because OpenEDG has not yet published a standalone `PCEP-30-03` block-weight table ahead of October 31, 2026, every exam baselines against the published `PCEP-30-0x` **18 / 29 / 25 / 28** percent syllabus (**11 / 17 / 15 / 17** items per exam, each within 0.4 items of its weight) and makes no claim about unpublished future blueprint changes.
+- Item mix per exam: **45 multiple-choice** (including **16 to 18 single-blank `____` gap-fill / code-fill items**, minimum floor **15**) and **15 five-option multiple-response items** (spread 3 / 4 / 4 / 4 across Blocks 1–4). Because the Python Institute publishes no fixed split across item formats, these counts are disclosed as authoring choices.
+- **Expanded 2× bank at live per-item pace:** the published `PCEP-30-0x` exam delivers 30 items in 40 minutes (+5 minutes NDA/tutorial), or ~80 seconds per item. Each practice exam here delivers 60 items in 80 minutes so all 42 study-map skills are exercised per sitting at the same ~80-second-per-item pace.
+- **Interactive format boundary:** drag-and-drop, sort, and multi-slot code-insertion widgets on OpenEDG TestNow™ cannot exist in Udemy's 17-column CSV and are disclosed as excluded; single-slot gap-fill and code-fill items are approximated via `____` stems.
+- **No case studies:** `PCEP-30-0x` has no case-study component, and `build.py`, `validate.py`, and `test_course.py` reject case wording or files.
+- **Scope boundary:** stays strictly inside entry-level PCEP (fundamentals, control flow, lists/tuples/dicts/strings, functions/generators/recursion/scope/exceptions); PCAP-31-03 topics (OOP classes, `pip`, file streams, closures) are excluded.
+- **Published PCEP-30-0x baseline & TestNow™ policies:** 30 questions, 40 minutes (+5 min NDA/tutorial), **70% cumulative average passing score** across all blocks, from **$69 USD** ($86 with retake, $95 with retake + practice test), OpenEDG TestNow™ browser delivery, **7-day retake waiting period** with unlimited retakes, no prerequisites, five-year validity.
+- Offline ZIP: `PCEP-30-03-6x60.zip`.

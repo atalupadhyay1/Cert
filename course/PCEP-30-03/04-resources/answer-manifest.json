@@ -1,0 +1,7484 @@
+{
+  "1": [
+    {
+      "question": 1,
+      "id": "T1-Q001",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.1",
+      "kind": "M2",
+      "correct_terms": [
+        "vm_bytecode_exec",
+        "pyc_cache_role"
+      ],
+      "option_terms": [
+        "pyc_cache_role",
+        "aot_elf_binary",
+        "pyc_native_machine",
+        "vm_bytecode_exec",
+        "interp_rollback_all"
+      ],
+      "correct_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "question": 2,
+      "id": "T1-Q002",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.2",
+      "kind": "S",
+      "correct_terms": [
+        "err_semantics"
+      ],
+      "option_terms": [
+        "err_pep8_style",
+        "err_semantics",
+        "err_syntax",
+        "err_lexis"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 3,
+      "id": "T1-Q003",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.3",
+      "kind": "M2",
+      "correct_terms": [
+        "kw_global",
+        "kw_yield"
+      ],
+      "option_terms": [
+        "kw_yield",
+        "id_case_false",
+        "id_builtin_sum",
+        "kw_global",
+        "id_soft_match"
+      ],
+      "correct_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "question": 4,
+      "id": "T1-Q004",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.4",
+      "kind": "M2",
+      "correct_terms": [
+        "lit_under_int",
+        "lit_hex_42"
+      ],
+      "option_terms": [
+        "lit_hex_42",
+        "lit_under_int",
+        "lit_bad_oct9",
+        "lit_bad_trail_under",
+        "lit_bad_leading0"
+      ],
+      "correct_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "question": 5,
+      "id": "T1-Q005",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.5",
+      "kind": "S",
+      "correct_terms": [
+        "id_valid_fx_rate"
+      ],
+      "option_terms": [
+        "id_bad_hyphen",
+        "id_bad_digit",
+        "id_bad_dollar",
+        "id_valid_fx_rate"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 6,
+      "id": "T1-Q006",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.6",
+      "kind": "S",
+      "correct_terms": [
+        "op_floordiv"
+      ],
+      "option_terms": [
+        "op_truediv",
+        "op_mod",
+        "op_floordiv",
+        "op_pow"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 7,
+      "id": "T1-Q007",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.7",
+      "kind": "S",
+      "correct_terms": [
+        "num_neg16"
+      ],
+      "option_terms": [
+        "exc_syntax",
+        "num_neg16",
+        "num_16",
+        "num_neg7"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 8,
+      "id": "T1-Q008",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.8",
+      "kind": "S",
+      "correct_terms": [
+        "op_lshift"
+      ],
+      "option_terms": [
+        "op_bit_xor",
+        "op_bit_and",
+        "op_rshift",
+        "op_lshift"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 9,
+      "id": "T1-Q009",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.9",
+      "kind": "S",
+      "correct_terms": [
+        "flt_imprecise_false"
+      ],
+      "option_terms": [
+        "exc_zero_div",
+        "flt_imprecise_false",
+        "flt_exact_true",
+        "exc_type"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 10,
+      "id": "T1-Q010",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.10",
+      "kind": "S",
+      "correct_terms": [
+        "io_sep_colon"
+      ],
+      "option_terms": [
+        "io_sep_colon",
+        "io_end_empty",
+        "io_sep_empty",
+        "io_end_comma"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 11,
+      "id": "T1-Q011",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 1,
+      "task": "1.11",
+      "kind": "S",
+      "correct_terms": [
+        "cast_float"
+      ],
+      "option_terms": [
+        "cast_bool",
+        "cast_int",
+        "cast_str",
+        "cast_float"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 12,
+      "id": "T1-Q012",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.1",
+      "kind": "S",
+      "correct_terms": [
+        "kw_elif"
+      ],
+      "option_terms": [
+        "kw_pass",
+        "kw_else",
+        "kw_elif",
+        "kw_while"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 13,
+      "id": "T1-Q013",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.1",
+      "kind": "S",
+      "correct_terms": [
+        "out_tier_silver"
+      ],
+      "option_terms": [
+        "out_tier_both",
+        "out_tier_gold",
+        "out_tier_silver",
+        "out_tier_bronze"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 14,
+      "id": "T1-Q014",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.2",
+      "kind": "S",
+      "correct_terms": [
+        "out_tier_both"
+      ],
+      "option_terms": [
+        "out_tier_gold",
+        "out_tier_silver",
+        "out_tier_both",
+        "out_loop_empty"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 15,
+      "id": "T1-Q015",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.2",
+      "kind": "M2",
+      "correct_terms": [
+        "tern_valid_fee",
+        "tern_valid_badge"
+      ],
+      "option_terms": [
+        "tern_valid_fee",
+        "tern_bad_order",
+        "tern_bad_c_style",
+        "tern_bad_no_else",
+        "tern_valid_badge"
+      ],
+      "correct_indices": [
+        1,
+        5
+      ]
+    },
+    {
+      "question": 16,
+      "id": "T1-Q016",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.3",
+      "kind": "M2",
+      "correct_terms": [
+        "falsy_empty_dict",
+        "falsy_zero_float"
+      ],
+      "option_terms": [
+        "falsy_empty_dict",
+        "truthy_neg_int",
+        "truthy_tuple_zero",
+        "falsy_zero_float",
+        "truthy_str_zero"
+      ],
+      "correct_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "question": 17,
+      "id": "T1-Q017",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.3",
+      "kind": "S",
+      "correct_terms": [
+        "out_status_warn"
+      ],
+      "option_terms": [
+        "out_loop_empty",
+        "out_status_warn",
+        "out_status_ok",
+        "out_status_alert"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 18,
+      "id": "T1-Q018",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.4",
+      "kind": "S",
+      "correct_terms": [
+        "kw_and"
+      ],
+      "option_terms": [
+        "kw_not",
+        "kw_and",
+        "kw_is",
+        "kw_or"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 19,
+      "id": "T1-Q019",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.4",
+      "kind": "S",
+      "correct_terms": [
+        "str_usd_default"
+      ],
+      "option_terms": [
+        "val_true",
+        "falsy_empty_str",
+        "str_usd_default",
+        "val_false"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 20,
+      "id": "T1-Q020",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.5",
+      "kind": "S",
+      "correct_terms": [
+        "kw_while"
+      ],
+      "option_terms": [
+        "kw_elif",
+        "kw_except",
+        "kw_for",
+        "kw_while"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 21,
+      "id": "T1-Q021",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.5",
+      "kind": "S",
+      "correct_terms": [
+        "num_18"
+      ],
+      "option_terms": [
+        "num_18",
+        "num_21",
+        "num_9",
+        "num_12"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 22,
+      "id": "T1-Q022",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.6",
+      "kind": "M2",
+      "correct_terms": [
+        "rng_4_items_a",
+        "rng_4_items_b"
+      ],
+      "option_terms": [
+        "rng_4_items_b",
+        "rng_5_items",
+        "rng_empty_pos",
+        "rng_empty_neg",
+        "rng_4_items_a"
+      ],
+      "correct_indices": [
+        1,
+        5
+      ]
+    },
+    {
+      "question": 23,
+      "id": "T1-Q023",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.6",
+      "kind": "S",
+      "correct_terms": [
+        "num_12"
+      ],
+      "option_terms": [
+        "num_20",
+        "num_6",
+        "num_16",
+        "num_12"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 24,
+      "id": "T1-Q024",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.7",
+      "kind": "S",
+      "correct_terms": [
+        "num_10"
+      ],
+      "option_terms": [
+        "num_24",
+        "exc_type",
+        "num_4",
+        "num_10"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 25,
+      "id": "T1-Q025",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.8",
+      "kind": "S",
+      "correct_terms": [
+        "kw_continue"
+      ],
+      "option_terms": [
+        "kw_continue",
+        "kw_pass",
+        "kw_break",
+        "kw_return"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 26,
+      "id": "T1-Q026",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.8",
+      "kind": "S",
+      "correct_terms": [
+        "kw_pass"
+      ],
+      "option_terms": [
+        "kw_raise",
+        "kw_break",
+        "kw_continue",
+        "kw_pass"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 27,
+      "id": "T1-Q027",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.9",
+      "kind": "M2",
+      "correct_terms": [
+        "loop_else_exhaust",
+        "loop_else_false_while"
+      ],
+      "option_terms": [
+        "loop_else_on_break",
+        "loop_else_on_exc",
+        "loop_else_false_while",
+        "loop_else_exhaust",
+        "loop_else_on_return"
+      ],
+      "correct_indices": [
+        3,
+        4
+      ]
+    },
+    {
+      "question": 28,
+      "id": "T1-Q028",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 2,
+      "task": "2.10",
+      "kind": "S",
+      "correct_terms": [
+        "num_6"
+      ],
+      "option_terms": [
+        "num_5",
+        "num_3",
+        "num_6",
+        "num_9"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 29,
+      "id": "T1-Q029",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "S",
+      "correct_terms": [
+        "lst_mid_20_30"
+      ],
+      "option_terms": [
+        "lst_stride_10_30_50",
+        "lst_neg_tail",
+        "lst_mid_20_30",
+        "exc_index"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 30,
+      "id": "T1-Q030",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "S",
+      "correct_terms": [
+        "lst_neg_rev_step"
+      ],
+      "option_terms": [
+        "lst_rev_4321",
+        "lst_neg_rev_step",
+        "lst_stride_10_30_50",
+        "exc_index"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 31,
+      "id": "T1-Q031",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.2",
+      "kind": "S",
+      "correct_terms": [
+        "lst_method_extend_id"
+      ],
+      "option_terms": [
+        "lst_method_pop_id",
+        "lst_method_extend_id",
+        "lst_method_append_id",
+        "lst_method_insert_id"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 32,
+      "id": "T1-Q032",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.2",
+      "kind": "M2",
+      "correct_terms": [
+        "lst_mut_sort",
+        "lst_mut_pop"
+      ],
+      "option_terms": [
+        "lst_mut_sort",
+        "lst_nonmut_slice",
+        "lst_nonmut_plus",
+        "lst_mut_pop",
+        "lst_nonmut_sorted"
+      ],
+      "correct_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "question": 33,
+      "id": "T1-Q033",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.3",
+      "kind": "S",
+      "correct_terms": [
+        "kw_del"
+      ],
+      "option_terms": [
+        "kw_del",
+        "kw_return",
+        "kw_from",
+        "kw_pass"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 34,
+      "id": "T1-Q034",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.4",
+      "kind": "M2",
+      "correct_terms": [
+        "lst_nonmut_slice",
+        "lst_copy_method"
+      ],
+      "option_terms": [
+        "lst_mut_pop",
+        "lst_nonmut_slice",
+        "lst_mut_sort",
+        "lst_alias_assign",
+        "lst_copy_method"
+      ],
+      "correct_indices": [
+        2,
+        5
+      ]
+    },
+    {
+      "question": 35,
+      "id": "T1-Q035",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.5",
+      "kind": "S",
+      "correct_terms": [
+        "lst_comp_squares_even"
+      ],
+      "option_terms": [
+        "lst_comp_squares_even",
+        "exc_syntax",
+        "lst_empty",
+        "lst_comp_squares_odd"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 36,
+      "id": "T1-Q036",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.6",
+      "kind": "S",
+      "correct_terms": [
+        "val_false"
+      ],
+      "option_terms": [
+        "val_none",
+        "exc_key",
+        "val_false",
+        "val_true"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 37,
+      "id": "T1-Q037",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.7",
+      "kind": "M2",
+      "correct_terms": [
+        "tup_singleton_comma",
+        "tup_bare_comma"
+      ],
+      "option_terms": [
+        "tup_parens_int",
+        "tup_singleton_comma",
+        "falsy_empty_dict",
+        "tup_bare_comma",
+        "tup_empty_ctor"
+      ],
+      "correct_indices": [
+        2,
+        4
+      ]
+    },
+    {
+      "question": 38,
+      "id": "T1-Q038",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.8",
+      "kind": "S",
+      "correct_terms": [
+        "tup_inner_list_ok"
+      ],
+      "option_terms": [
+        "exc_value",
+        "tup_inner_list_ok",
+        "exc_attr",
+        "exc_type"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 39,
+      "id": "T1-Q039",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.9",
+      "kind": "S",
+      "correct_terms": [
+        "dict_method_get"
+      ],
+      "option_terms": [
+        "dict_method_values",
+        "dict_method_keys",
+        "dict_method_get",
+        "dict_method_items"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 40,
+      "id": "T1-Q040",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.10",
+      "kind": "S",
+      "correct_terms": [
+        "num_6"
+      ],
+      "option_terms": [
+        "num_6",
+        "exc_type",
+        "num_2",
+        "num_3"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 41,
+      "id": "T1-Q041",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.11",
+      "kind": "M2",
+      "correct_terms": [
+        "str_escaped_quote",
+        "str_double_quote_apos"
+      ],
+      "option_terms": [
+        "str_bad_unescaped_apos",
+        "comment_slashstar",
+        "str_double_quote_apos",
+        "str_escaped_quote",
+        "str_bad_trailing_bs"
+      ],
+      "correct_indices": [
+        3,
+        4
+      ]
+    },
+    {
+      "question": 42,
+      "id": "T1-Q042",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.12",
+      "kind": "S",
+      "correct_terms": [
+        "str_method_find"
+      ],
+      "option_terms": [
+        "str_method_find",
+        "str_method_strip",
+        "str_method_index",
+        "str_method_split"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 43,
+      "id": "T1-Q043",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 3,
+      "task": "3.12",
+      "kind": "S",
+      "correct_terms": [
+        "str_immut_typeerr"
+      ],
+      "option_terms": [
+        "val_none",
+        "str_strip_res",
+        "str_immut_typeerr",
+        "exc_index"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 44,
+      "id": "T1-Q044",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "S",
+      "correct_terms": [
+        "kw_def"
+      ],
+      "option_terms": [
+        "kw_return",
+        "kw_bad_func",
+        "kw_lambda",
+        "kw_def"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 45,
+      "id": "T1-Q045",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "S",
+      "correct_terms": [
+        "val_none"
+      ],
+      "option_terms": [
+        "num_25",
+        "exc_type",
+        "val_none",
+        "num_0"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 46,
+      "id": "T1-Q046",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "S",
+      "correct_terms": [
+        "kw_yield"
+      ],
+      "option_terms": [
+        "kw_yield",
+        "kw_pass",
+        "kw_raise",
+        "kw_return"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 47,
+      "id": "T1-Q047",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "S",
+      "correct_terms": [
+        "gen_exhaust_empty"
+      ],
+      "option_terms": [
+        "gen_stop_iter",
+        "lst_1_2",
+        "exc_value",
+        "gen_exhaust_empty"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 48,
+      "id": "T1-Q048",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.3",
+      "kind": "S",
+      "correct_terms": [
+        "num_10"
+      ],
+      "option_terms": [
+        "num_10",
+        "num_24",
+        "exc_recursion",
+        "num_4"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 49,
+      "id": "T1-Q049",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.3",
+      "kind": "M2",
+      "correct_terms": [
+        "rec_base_needed",
+        "rec_step_converge"
+      ],
+      "option_terms": [
+        "mut_default_shared",
+        "rec_needs_yield",
+        "rec_base_needed",
+        "rec_step_converge",
+        "rec_needs_global"
+      ],
+      "correct_indices": [
+        3,
+        4
+      ]
+    },
+    {
+      "question": 50,
+      "id": "T1-Q050",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "S",
+      "correct_terms": [
+        "num_21"
+      ],
+      "option_terms": [
+        "num_21",
+        "exc_syntax",
+        "num_23",
+        "exc_type"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 51,
+      "id": "T1-Q051",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "M2",
+      "correct_terms": [
+        "arg_valid_kw_swap",
+        "arg_valid_mixed"
+      ],
+      "option_terms": [
+        "arg_valid_kw_swap",
+        "arg_valid_mixed",
+        "arg_bad_unknown_kw",
+        "arg_bad_pos_after_kw",
+        "arg_bad_dup_base"
+      ],
+      "correct_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "question": 52,
+      "id": "T1-Q052",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.5",
+      "kind": "S",
+      "correct_terms": [
+        "param_def_order_err"
+      ],
+      "option_terms": [
+        "param_def_valid_sig",
+        "param_def_order_err",
+        "exc_name",
+        "exc_type"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 53,
+      "id": "T1-Q053",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.5",
+      "kind": "S",
+      "correct_terms": [
+        "lst_1_2"
+      ],
+      "option_terms": [
+        "lst_1_2",
+        "exc_type",
+        "lst_2_only",
+        "lst_1_only"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 54,
+      "id": "T1-Q054",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.6",
+      "kind": "S",
+      "correct_terms": [
+        "kw_global"
+      ],
+      "option_terms": [
+        "kw_return",
+        "kw_global",
+        "kw_nonlocal",
+        "kw_from"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 55,
+      "id": "T1-Q055",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.6",
+      "kind": "M2",
+      "correct_terms": [
+        "scope_read_global_ok",
+        "scope_mutate_global_list"
+      ],
+      "option_terms": [
+        "scope_mutate_global_list",
+        "aot_elf_binary",
+        "scope_unbound_err",
+        "rec_needs_global",
+        "scope_read_global_ok"
+      ],
+      "correct_indices": [
+        1,
+        5
+      ]
+    },
+    {
+      "question": 56,
+      "id": "T1-Q056",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.7",
+      "kind": "S",
+      "correct_terms": [
+        "exc_arith"
+      ],
+      "option_terms": [
+        "exc_value",
+        "exc_arith",
+        "exc_syntax",
+        "exc_lookup"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 57,
+      "id": "T1-Q057",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.7",
+      "kind": "M2",
+      "correct_terms": [
+        "exc_sys_exit",
+        "exc_kb_interrupt"
+      ],
+      "option_terms": [
+        "exc_value",
+        "exc_zero_div",
+        "exc_sys_exit",
+        "exc_key",
+        "exc_kb_interrupt"
+      ],
+      "correct_indices": [
+        3,
+        5
+      ]
+    },
+    {
+      "question": 58,
+      "id": "T1-Q058",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.8",
+      "kind": "S",
+      "correct_terms": [
+        "kw_raise"
+      ],
+      "option_terms": [
+        "kw_finally",
+        "kw_except",
+        "kw_assert",
+        "kw_raise"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 59,
+      "id": "T1-Q059",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.8",
+      "kind": "S",
+      "correct_terms": [
+        "exc_value"
+      ],
+      "option_terms": [
+        "exc_value",
+        "exc_key",
+        "exc_type",
+        "exc_zero_div"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 60,
+      "id": "T1-Q060",
+      "topic": "Full-Length Mock Exam 1",
+      "domain": 4,
+      "task": "4.9",
+      "kind": "S",
+      "correct_terms": [
+        "try_out_try_else_fin"
+      ],
+      "option_terms": [
+        "try_out_try_fin_only",
+        "try_out_try_exc_fin",
+        "try_out_all_four",
+        "try_out_try_else_fin"
+      ],
+      "correct_indices": [
+        4
+      ]
+    }
+  ],
+  "2": [
+    {
+      "question": 1,
+      "id": "T2-Q001",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.1",
+      "kind": "S",
+      "correct_terms": [
+        "interp_syntax_before_run"
+      ],
+      "option_terms": [
+        "interp_rollback_all",
+        "interp_syntax_before_run",
+        "interp_syntax_at_line",
+        "aot_elf_binary"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 2,
+      "id": "T2-Q002",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.2",
+      "kind": "S",
+      "correct_terms": [
+        "err_syntax"
+      ],
+      "option_terms": [
+        "err_lexis",
+        "err_syntax",
+        "err_pep8_style",
+        "err_semantics"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 3,
+      "id": "T2-Q003",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.3",
+      "kind": "M2",
+      "correct_terms": [
+        "indent_4spaces",
+        "comment_hash"
+      ],
+      "option_terms": [
+        "comment_slashstar",
+        "indent_braces",
+        "comment_hash",
+        "err_pep8_style",
+        "indent_4spaces"
+      ],
+      "correct_indices": [
+        3,
+        5
+      ]
+    },
+    {
+      "question": 4,
+      "id": "T2-Q004",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.4",
+      "kind": "S",
+      "correct_terms": [
+        "flt_400_0"
+      ],
+      "option_terms": [
+        "exc_syntax",
+        "int_400",
+        "num_42",
+        "flt_400_0"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 5,
+      "id": "T2-Q005",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.5",
+      "kind": "M2",
+      "correct_terms": [
+        "id_valid_private",
+        "id_soft_case"
+      ],
+      "option_terms": [
+        "kw_lambda",
+        "id_bad_at",
+        "id_bad_hyphen",
+        "id_valid_private",
+        "id_soft_case"
+      ],
+      "correct_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "question": 6,
+      "id": "T2-Q006",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.6",
+      "kind": "S",
+      "correct_terms": [
+        "op_mod"
+      ],
+      "option_terms": [
+        "op_pow",
+        "op_truediv",
+        "op_floordiv",
+        "op_mod"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 7,
+      "id": "T2-Q007",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.7",
+      "kind": "S",
+      "correct_terms": [
+        "num_256"
+      ],
+      "option_terms": [
+        "num_16",
+        "num_256",
+        "num_64",
+        "num_32"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 8,
+      "id": "T2-Q008",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.8",
+      "kind": "M2",
+      "correct_terms": [
+        "op_bit_and",
+        "op_bit_xor"
+      ],
+      "option_terms": [
+        "op_bit_and",
+        "op_pow",
+        "op_bit_xor",
+        "op_floordiv",
+        "kw_and"
+      ],
+      "correct_indices": [
+        1,
+        3
+      ]
+    },
+    {
+      "question": 9,
+      "id": "T2-Q009",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.9",
+      "kind": "S",
+      "correct_terms": [
+        "op_imul"
+      ],
+      "option_terms": [
+        "op_imul",
+        "op_iadd",
+        "op_ifloordiv",
+        "op_pow"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 10,
+      "id": "T2-Q010",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.10",
+      "kind": "S",
+      "correct_terms": [
+        "io_sep_slash"
+      ],
+      "option_terms": [
+        "io_end_comma",
+        "io_end_bang",
+        "io_sep_slash",
+        "io_sep_colon"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 11,
+      "id": "T2-Q011",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 1,
+      "task": "1.11",
+      "kind": "S",
+      "correct_terms": [
+        "cast_str"
+      ],
+      "option_terms": [
+        "cast_int",
+        "cast_bool",
+        "cast_float",
+        "cast_str"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 12,
+      "id": "T2-Q012",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.1",
+      "kind": "S",
+      "correct_terms": [
+        "kw_else"
+      ],
+      "option_terms": [
+        "kw_else",
+        "kw_pass",
+        "kw_elif",
+        "kw_for"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 13,
+      "id": "T2-Q013",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.1",
+      "kind": "S",
+      "correct_terms": [
+        "out_status_ok"
+      ],
+      "option_terms": [
+        "out_status_ok",
+        "out_status_alert",
+        "out_status_crit",
+        "out_status_warn"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 14,
+      "id": "T2-Q014",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.2",
+      "kind": "S",
+      "correct_terms": [
+        "num_0"
+      ],
+      "option_terms": [
+        "val_true",
+        "num_0",
+        "exc_syntax",
+        "num_5"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 15,
+      "id": "T2-Q015",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.2",
+      "kind": "S",
+      "correct_terms": [
+        "out_status_warn"
+      ],
+      "option_terms": [
+        "out_tier_both",
+        "out_status_ok",
+        "out_status_alert",
+        "out_status_warn"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 16,
+      "id": "T2-Q016",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.3",
+      "kind": "M2",
+      "correct_terms": [
+        "truthy_str_false",
+        "truthy_list_empty_str"
+      ],
+      "option_terms": [
+        "truthy_str_false",
+        "falsy_empty_tuple",
+        "falsy_none_lit",
+        "falsy_empty_str",
+        "truthy_list_empty_str"
+      ],
+      "correct_indices": [
+        1,
+        5
+      ]
+    },
+    {
+      "question": 17,
+      "id": "T2-Q017",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.3",
+      "kind": "S",
+      "correct_terms": [
+        "val_true"
+      ],
+      "option_terms": [
+        "val_false",
+        "val_true",
+        "num_0",
+        "exc_value"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 18,
+      "id": "T2-Q018",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.4",
+      "kind": "M2",
+      "correct_terms": [
+        "cmp_chain_port",
+        "cmp_and_port"
+      ],
+      "option_terms": [
+        "cmp_assign_syntax",
+        "cmp_bitand_distinct_bug",
+        "cmp_or_bug",
+        "cmp_chain_port",
+        "cmp_and_port"
+      ],
+      "correct_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "question": 19,
+      "id": "T2-Q019",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.4",
+      "kind": "S",
+      "correct_terms": [
+        "kw_not"
+      ],
+      "option_terms": [
+        "kw_and",
+        "kw_not",
+        "kw_in",
+        "kw_or"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 20,
+      "id": "T2-Q020",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.5",
+      "kind": "S",
+      "correct_terms": [
+        "kw_while"
+      ],
+      "option_terms": [
+        "kw_elif",
+        "kw_with",
+        "kw_for",
+        "kw_while"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 21,
+      "id": "T2-Q021",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.5",
+      "kind": "M2",
+      "correct_terms": [
+        "while_fin_dec",
+        "while_fin_div"
+      ],
+      "option_terms": [
+        "while_fin_dec",
+        "while_inf_pass",
+        "while_inf_inc",
+        "while_inf_mod",
+        "while_fin_div"
+      ],
+      "correct_indices": [
+        1,
+        5
+      ]
+    },
+    {
+      "question": 22,
+      "id": "T2-Q022",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.6",
+      "kind": "M2",
+      "correct_terms": [
+        "rng_3_items_a",
+        "rng_3_items_b"
+      ],
+      "option_terms": [
+        "rng_3_items_a",
+        "rng_empty_pos",
+        "rng_4_items_a",
+        "rng_3_items_b",
+        "rng_2_items"
+      ],
+      "correct_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "question": 23,
+      "id": "T2-Q023",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.6",
+      "kind": "S",
+      "correct_terms": [
+        "lst_empty"
+      ],
+      "option_terms": [
+        "lst_empty",
+        "exc_value",
+        "lst_rev_4321",
+        "num_0"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 24,
+      "id": "T2-Q024",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.7",
+      "kind": "S",
+      "correct_terms": [
+        "num_3"
+      ],
+      "option_terms": [
+        "num_3",
+        "num_1",
+        "num_2",
+        "num_9"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 25,
+      "id": "T2-Q025",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.8",
+      "kind": "S",
+      "correct_terms": [
+        "kw_break"
+      ],
+      "option_terms": [
+        "kw_pass",
+        "kw_continue",
+        "kw_break",
+        "kw_else"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 26,
+      "id": "T2-Q026",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.8",
+      "kind": "S",
+      "correct_terms": [
+        "kw_continue"
+      ],
+      "option_terms": [
+        "kw_pass",
+        "kw_break",
+        "kw_return",
+        "kw_continue"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 27,
+      "id": "T2-Q027",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.9",
+      "kind": "S",
+      "correct_terms": [
+        "out_loop_clean"
+      ],
+      "option_terms": [
+        "out_loop_empty",
+        "exc_syntax",
+        "out_loop_clean",
+        "out_loop_halt"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 28,
+      "id": "T2-Q028",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 2,
+      "task": "2.10",
+      "kind": "S",
+      "correct_terms": [
+        "num_6"
+      ],
+      "option_terms": [
+        "num_8",
+        "num_2",
+        "num_5",
+        "num_6"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 29,
+      "id": "T2-Q029",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "S",
+      "correct_terms": [
+        "lst_rev_4321"
+      ],
+      "option_terms": [
+        "exc_index",
+        "lst_mid_20_30",
+        "lst_neg_tail",
+        "lst_rev_4321"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 30,
+      "id": "T2-Q030",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "S",
+      "correct_terms": [
+        "lst_overslice_ok"
+      ],
+      "option_terms": [
+        "lst_rev_4321",
+        "lst_empty",
+        "lst_overslice_ok",
+        "exc_index"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 31,
+      "id": "T2-Q031",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.2",
+      "kind": "S",
+      "correct_terms": [
+        "lst_method_insert_id"
+      ],
+      "option_terms": [
+        "lst_method_remove_id",
+        "lst_method_append_id",
+        "lst_method_insert_id",
+        "lst_method_extend_id"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 32,
+      "id": "T2-Q032",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.2",
+      "kind": "M2",
+      "correct_terms": [
+        "lst_mut_append",
+        "lst_mut_extend"
+      ],
+      "option_terms": [
+        "lst_nonmut_sorted",
+        "lst_nonmut_slice",
+        "lst_mut_append",
+        "lst_mut_extend",
+        "lst_nonmut_plus"
+      ],
+      "correct_indices": [
+        3,
+        4
+      ]
+    },
+    {
+      "question": 33,
+      "id": "T2-Q033",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.3",
+      "kind": "S",
+      "correct_terms": [
+        "lst_builtin_sorted_id"
+      ],
+      "option_terms": [
+        "lst_method_pop_id",
+        "lst_builtin_sorted_id",
+        "lst_method_remove_id",
+        "lst_method_insert_id"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 34,
+      "id": "T2-Q034",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.4",
+      "kind": "M2",
+      "correct_terms": [
+        "lst_copy_method",
+        "lst_copy_ctor"
+      ],
+      "option_terms": [
+        "lst_alias_assign",
+        "lst_copy_ctor",
+        "lst_mut_sort",
+        "lst_mut_remove",
+        "lst_copy_method"
+      ],
+      "correct_indices": [
+        2,
+        5
+      ]
+    },
+    {
+      "question": 35,
+      "id": "T2-Q035",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.5",
+      "kind": "S",
+      "correct_terms": [
+        "lst_comp_syntax_valid"
+      ],
+      "option_terms": [
+        "lst_comp_syntax_valid",
+        "lst_comp_syntax_bad_if",
+        "tern_bad_no_else",
+        "tern_bad_c_style"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 36,
+      "id": "T2-Q036",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.6",
+      "kind": "S",
+      "correct_terms": [
+        "kw_not_in"
+      ],
+      "option_terms": [
+        "kw_from",
+        "kw_is",
+        "kw_not_in",
+        "kw_elif"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 37,
+      "id": "T2-Q037",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.7",
+      "kind": "S",
+      "correct_terms": [
+        "exc_type"
+      ],
+      "option_terms": [
+        "exc_index",
+        "val_none",
+        "exc_type",
+        "exc_key"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 38,
+      "id": "T2-Q038",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.8",
+      "kind": "M2",
+      "correct_terms": [
+        "tup_hashable_key",
+        "tup_unhashable_inner"
+      ],
+      "option_terms": [
+        "dict_vals_check",
+        "tup_unhashable_inner",
+        "tup_hashable_key",
+        "indent_braces",
+        "flt_exact_true"
+      ],
+      "correct_indices": [
+        2,
+        3
+      ]
+    },
+    {
+      "question": 39,
+      "id": "T2-Q039",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.9",
+      "kind": "S",
+      "correct_terms": [
+        "num_2"
+      ],
+      "option_terms": [
+        "exc_key",
+        "num_2",
+        "num_3",
+        "num_1"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 40,
+      "id": "T2-Q040",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.10",
+      "kind": "M2",
+      "correct_terms": [
+        "dict_items_pairs",
+        "dict_keys_check"
+      ],
+      "option_terms": [
+        "dict_keys_check",
+        "lst_alias_assign",
+        "dict_vals_check",
+        "dict_items_pairs",
+        "tup_parens_int"
+      ],
+      "correct_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "question": 41,
+      "id": "T2-Q041",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.11",
+      "kind": "S",
+      "correct_terms": [
+        "str_escape_len_3"
+      ],
+      "option_terms": [
+        "str_escape_len_3",
+        "val_none",
+        "str_escape_len_4",
+        "exc_syntax"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 42,
+      "id": "T2-Q042",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.12",
+      "kind": "S",
+      "correct_terms": [
+        "str_method_strip"
+      ],
+      "option_terms": [
+        "str_method_index",
+        "str_method_strip",
+        "str_method_split",
+        "str_method_find"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 43,
+      "id": "T2-Q043",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 3,
+      "task": "3.12",
+      "kind": "S",
+      "correct_terms": [
+        "str_split_url"
+      ],
+      "option_terms": [
+        "lst_empty",
+        "exc_value",
+        "str_split_url",
+        "str_strip_res"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 44,
+      "id": "T2-Q044",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "M2",
+      "correct_terms": [
+        "fn_implicit_none",
+        "fn_early_return"
+      ],
+      "option_terms": [
+        "fn_implicit_none",
+        "flt_exact_true",
+        "rec_needs_global",
+        "rec_needs_yield",
+        "fn_early_return"
+      ],
+      "correct_indices": [
+        1,
+        5
+      ]
+    },
+    {
+      "question": 45,
+      "id": "T2-Q045",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "S",
+      "correct_terms": [
+        "fn_print_vs_return"
+      ],
+      "option_terms": [
+        "val_true",
+        "exc_name",
+        "exc_syntax",
+        "fn_print_vs_return"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 46,
+      "id": "T2-Q046",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "S",
+      "correct_terms": [
+        "gen_next_call"
+      ],
+      "option_terms": [
+        "cast_int",
+        "lst_builtin_sorted_id",
+        "lst_builtin_len_id",
+        "gen_next_call"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 47,
+      "id": "T2-Q047",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "M2",
+      "correct_terms": [
+        "gen_returns_iter",
+        "gen_pause_resume"
+      ],
+      "option_terms": [
+        "gen_pause_resume",
+        "gen_returns_iter",
+        "flt_exact_true",
+        "aot_elf_binary",
+        "rec_needs_yield"
+      ],
+      "correct_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "question": 48,
+      "id": "T2-Q048",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.3",
+      "kind": "S",
+      "correct_terms": [
+        "num_24"
+      ],
+      "option_terms": [
+        "num_24",
+        "num_10",
+        "num_120",
+        "exc_recursion"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 49,
+      "id": "T2-Q049",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.3",
+      "kind": "S",
+      "correct_terms": [
+        "rec_missing_base"
+      ],
+      "option_terms": [
+        "rec_missing_base",
+        "exc_syntax",
+        "num_0",
+        "val_none"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 50,
+      "id": "T2-Q050",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "S",
+      "correct_terms": [
+        "arg_pos_after_kw_err"
+      ],
+      "option_terms": [
+        "num_20",
+        "arg_dup_val_err",
+        "arg_pos_after_kw_err",
+        "val_none"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 51,
+      "id": "T2-Q051",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "S",
+      "correct_terms": [
+        "arg_dup_val_err"
+      ],
+      "option_terms": [
+        "arg_dup_val_err",
+        "arg_pos_after_kw_err",
+        "num_20",
+        "exc_key"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 52,
+      "id": "T2-Q052",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.5",
+      "kind": "M2",
+      "correct_terms": [
+        "mut_default_shared",
+        "mut_default_none_fix"
+      ],
+      "option_terms": [
+        "dict_vals_check",
+        "rec_needs_global",
+        "mut_default_shared",
+        "mut_default_none_fix",
+        "flt_exact_true"
+      ],
+      "correct_indices": [
+        3,
+        4
+      ]
+    },
+    {
+      "question": 53,
+      "id": "T2-Q053",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.5",
+      "kind": "S",
+      "correct_terms": [
+        "param_def_valid_sig"
+      ],
+      "option_terms": [
+        "tern_bad_c_style",
+        "param_def_valid_sig",
+        "param_def_bad_sig",
+        "arg_bad_pos_after_kw"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 54,
+      "id": "T2-Q054",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.6",
+      "kind": "S",
+      "correct_terms": [
+        "num_10"
+      ],
+      "option_terms": [
+        "num_10",
+        "num_42",
+        "exc_unbound",
+        "exc_name"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 55,
+      "id": "T2-Q055",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.6",
+      "kind": "S",
+      "correct_terms": [
+        "exc_unbound"
+      ],
+      "option_terms": [
+        "num_10",
+        "exc_key",
+        "num_11",
+        "exc_unbound"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 56,
+      "id": "T2-Q056",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.7",
+      "kind": "M2",
+      "correct_terms": [
+        "exc_index",
+        "exc_key"
+      ],
+      "option_terms": [
+        "exc_type",
+        "exc_key",
+        "exc_zero_div",
+        "exc_value",
+        "exc_index"
+      ],
+      "correct_indices": [
+        2,
+        5
+      ]
+    },
+    {
+      "question": 57,
+      "id": "T2-Q057",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.7",
+      "kind": "S",
+      "correct_terms": [
+        "exc_base"
+      ],
+      "option_terms": [
+        "exc_value",
+        "exc_lookup",
+        "exc_base",
+        "exc_arith"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 58,
+      "id": "T2-Q058",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.8",
+      "kind": "S",
+      "correct_terms": [
+        "exc_attr"
+      ],
+      "option_terms": [
+        "exc_attr",
+        "exc_value",
+        "exc_key",
+        "exc_index"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 59,
+      "id": "T2-Q059",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.8",
+      "kind": "S",
+      "correct_terms": [
+        "kw_assert"
+      ],
+      "option_terms": [
+        "kw_with",
+        "kw_assert",
+        "kw_raise",
+        "kw_except"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 60,
+      "id": "T2-Q060",
+      "topic": "Full-Length Mock Exam 2",
+      "domain": 4,
+      "task": "4.9",
+      "kind": "S",
+      "correct_terms": [
+        "kw_finally"
+      ],
+      "option_terms": [
+        "kw_else",
+        "kw_pass",
+        "kw_finally",
+        "kw_except"
+      ],
+      "correct_indices": [
+        3
+      ]
+    }
+  ],
+  "3": [
+    {
+      "question": 1,
+      "id": "T3-Q001",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.1",
+      "kind": "S",
+      "correct_terms": [
+        "interp_line_stop"
+      ],
+      "option_terms": [
+        "jit_browser_sandbox",
+        "interp_rollback_all",
+        "aot_elf_binary",
+        "interp_line_stop"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 2,
+      "id": "T3-Q002",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.2",
+      "kind": "S",
+      "correct_terms": [
+        "err_lexis"
+      ],
+      "option_terms": [
+        "err_syntax",
+        "err_pep8_style",
+        "err_semantics",
+        "err_lexis"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 3,
+      "id": "T3-Q003",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.3",
+      "kind": "M2",
+      "correct_terms": [
+        "kw_except",
+        "kw_finally"
+      ],
+      "option_terms": [
+        "id_case_none",
+        "id_builtin_dict",
+        "id_soft_match",
+        "kw_finally",
+        "kw_except"
+      ],
+      "correct_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "question": 4,
+      "id": "T3-Q004",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.4",
+      "kind": "M2",
+      "correct_terms": [
+        "lit_bin_13",
+        "lit_oct_23"
+      ],
+      "option_terms": [
+        "lit_bad_double_under",
+        "lit_bad_hex_g",
+        "lit_bin_13",
+        "lit_oct_23",
+        "lit_bad_bin2"
+      ],
+      "correct_indices": [
+        3,
+        4
+      ]
+    },
+    {
+      "question": 5,
+      "id": "T3-Q005",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.5",
+      "kind": "M2",
+      "correct_terms": [
+        "id_valid_seat_row",
+        "id_builtin_max"
+      ],
+      "option_terms": [
+        "id_bad_digit",
+        "id_valid_seat_row",
+        "id_builtin_max",
+        "kw_assert",
+        "id_bad_space"
+      ],
+      "correct_indices": [
+        2,
+        3
+      ]
+    },
+    {
+      "question": 6,
+      "id": "T3-Q006",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.6",
+      "kind": "S",
+      "correct_terms": [
+        "op_truediv"
+      ],
+      "option_terms": [
+        "op_floordiv",
+        "op_pow",
+        "op_truediv",
+        "op_mod"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 7,
+      "id": "T3-Q007",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.7",
+      "kind": "S",
+      "correct_terms": [
+        "num_12"
+      ],
+      "option_terms": [
+        "flt_3_0",
+        "num_12",
+        "num_3",
+        "num_13"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 8,
+      "id": "T3-Q008",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.8",
+      "kind": "S",
+      "correct_terms": [
+        "op_rshift"
+      ],
+      "option_terms": [
+        "op_bit_inv",
+        "op_bit_and",
+        "op_lshift",
+        "op_rshift"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 9,
+      "id": "T3-Q009",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.9",
+      "kind": "S",
+      "correct_terms": [
+        "op_iadd"
+      ],
+      "option_terms": [
+        "op_ifloordiv",
+        "op_mod",
+        "op_imul",
+        "op_iadd"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 10,
+      "id": "T3-Q010",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.10",
+      "kind": "S",
+      "correct_terms": [
+        "io_out_tags"
+      ],
+      "option_terms": [
+        "io_out_two_lines",
+        "io_out_tags_space",
+        "exc_type",
+        "io_out_tags"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 11,
+      "id": "T3-Q011",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 1,
+      "task": "1.11",
+      "kind": "S",
+      "correct_terms": [
+        "cast_int"
+      ],
+      "option_terms": [
+        "cast_str",
+        "cast_bool",
+        "cast_int",
+        "cast_float"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 12,
+      "id": "T3-Q012",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.1",
+      "kind": "S",
+      "correct_terms": [
+        "kw_elif"
+      ],
+      "option_terms": [
+        "kw_elif",
+        "kw_else",
+        "kw_for",
+        "kw_with"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 13,
+      "id": "T3-Q013",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.1",
+      "kind": "S",
+      "correct_terms": [
+        "out_tier_bronze"
+      ],
+      "option_terms": [
+        "out_loop_empty",
+        "out_tier_bronze",
+        "out_tier_silver",
+        "out_tier_gold"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 14,
+      "id": "T3-Q014",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.2",
+      "kind": "S",
+      "correct_terms": [
+        "num_5"
+      ],
+      "option_terms": [
+        "val_false",
+        "exc_syntax",
+        "num_5",
+        "num_0"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 15,
+      "id": "T3-Q015",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.2",
+      "kind": "S",
+      "correct_terms": [
+        "num_17"
+      ],
+      "option_terms": [
+        "num_17",
+        "num_12",
+        "num_10",
+        "num_15"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 16,
+      "id": "T3-Q016",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.3",
+      "kind": "M2",
+      "correct_terms": [
+        "falsy_empty_tuple",
+        "falsy_empty_list"
+      ],
+      "option_terms": [
+        "truthy_str_space",
+        "falsy_empty_tuple",
+        "falsy_empty_list",
+        "truthy_tuple_zero",
+        "truthy_dict_none"
+      ],
+      "correct_indices": [
+        2,
+        3
+      ]
+    },
+    {
+      "question": 17,
+      "id": "T3-Q017",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.3",
+      "kind": "S",
+      "correct_terms": [
+        "out_status_ok"
+      ],
+      "option_terms": [
+        "out_loop_empty",
+        "out_status_ok",
+        "exc_type",
+        "out_status_idle"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 18,
+      "id": "T3-Q018",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.4",
+      "kind": "S",
+      "correct_terms": [
+        "kw_or"
+      ],
+      "option_terms": [
+        "kw_or",
+        "kw_and",
+        "kw_not",
+        "kw_in"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 19,
+      "id": "T3-Q019",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.4",
+      "kind": "S",
+      "correct_terms": [
+        "val_true"
+      ],
+      "option_terms": [
+        "val_false",
+        "exc_type",
+        "val_true",
+        "num_0"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 20,
+      "id": "T3-Q020",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.5",
+      "kind": "S",
+      "correct_terms": [
+        "kw_while"
+      ],
+      "option_terms": [
+        "kw_while",
+        "kw_except",
+        "kw_elif",
+        "kw_for"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 21,
+      "id": "T3-Q021",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.5",
+      "kind": "M2",
+      "correct_terms": [
+        "while_fin_dec",
+        "while_fin_div"
+      ],
+      "option_terms": [
+        "while_fin_div",
+        "while_inf_mod",
+        "while_inf_inc",
+        "while_fin_dec",
+        "while_inf_pass"
+      ],
+      "correct_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "question": 22,
+      "id": "T3-Q022",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.6",
+      "kind": "S",
+      "correct_terms": [
+        "kw_for"
+      ],
+      "option_terms": [
+        "kw_while",
+        "kw_from",
+        "kw_with",
+        "kw_for"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 23,
+      "id": "T3-Q023",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.6",
+      "kind": "M2",
+      "correct_terms": [
+        "rng_empty_pos",
+        "rng_empty_neg"
+      ],
+      "option_terms": [
+        "rng_4_items_a",
+        "rng_5_items",
+        "rng_empty_neg",
+        "rng_3_items_a",
+        "rng_empty_pos"
+      ],
+      "correct_indices": [
+        3,
+        5
+      ]
+    },
+    {
+      "question": 24,
+      "id": "T3-Q024",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.7",
+      "kind": "S",
+      "correct_terms": [
+        "num_4"
+      ],
+      "option_terms": [
+        "num_2",
+        "num_4",
+        "exc_type",
+        "num_6"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 25,
+      "id": "T3-Q025",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.8",
+      "kind": "S",
+      "correct_terms": [
+        "kw_break"
+      ],
+      "option_terms": [
+        "kw_break",
+        "kw_pass",
+        "kw_return",
+        "kw_continue"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 26,
+      "id": "T3-Q026",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.8",
+      "kind": "S",
+      "correct_terms": [
+        "num_8"
+      ],
+      "option_terms": [
+        "num_6",
+        "num_8",
+        "num_14",
+        "num_2"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 27,
+      "id": "T3-Q027",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.9",
+      "kind": "M2",
+      "correct_terms": [
+        "loop_else_exhaust",
+        "loop_else_false_while"
+      ],
+      "option_terms": [
+        "loop_else_false_while",
+        "loop_else_on_exc",
+        "loop_else_on_break",
+        "loop_else_exhaust",
+        "loop_else_on_return"
+      ],
+      "correct_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "question": 28,
+      "id": "T3-Q028",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 2,
+      "task": "2.10",
+      "kind": "S",
+      "correct_terms": [
+        "num_12"
+      ],
+      "option_terms": [
+        "num_6",
+        "num_7",
+        "num_12",
+        "num_16"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 29,
+      "id": "T3-Q029",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "S",
+      "correct_terms": [
+        "lst_neg_tail"
+      ],
+      "option_terms": [
+        "lst_neg_tail",
+        "lst_mid_20_30",
+        "exc_index",
+        "lst_stride_10_30_50"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 30,
+      "id": "T3-Q030",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "S",
+      "correct_terms": [
+        "exc_index"
+      ],
+      "option_terms": [
+        "num_48",
+        "lst_empty",
+        "val_none",
+        "exc_index"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 31,
+      "id": "T3-Q031",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.2",
+      "kind": "S",
+      "correct_terms": [
+        "lst_method_pop_id"
+      ],
+      "option_terms": [
+        "lst_method_append_id",
+        "lst_method_pop_id",
+        "lst_method_extend_id",
+        "lst_method_insert_id"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 32,
+      "id": "T3-Q032",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.2",
+      "kind": "M2",
+      "correct_terms": [
+        "lst_mut_insert",
+        "lst_mut_remove"
+      ],
+      "option_terms": [
+        "lst_nonmut_slice",
+        "lst_mut_remove",
+        "lst_mut_insert",
+        "lst_nonmut_sorted",
+        "lst_nonmut_plus"
+      ],
+      "correct_indices": [
+        2,
+        3
+      ]
+    },
+    {
+      "question": 33,
+      "id": "T3-Q033",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.3",
+      "kind": "S",
+      "correct_terms": [
+        "lst_builtin_len_id"
+      ],
+      "option_terms": [
+        "lst_builtin_len_id",
+        "cast_str",
+        "lst_builtin_sorted_id",
+        "cast_int"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 34,
+      "id": "T3-Q034",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.4",
+      "kind": "M2",
+      "correct_terms": [
+        "lst_nonmut_slice",
+        "lst_copy_ctor"
+      ],
+      "option_terms": [
+        "lst_copy_ctor",
+        "lst_alias_assign",
+        "lst_nonmut_slice",
+        "lst_mut_remove",
+        "lst_mut_pop"
+      ],
+      "correct_indices": [
+        1,
+        3
+      ]
+    },
+    {
+      "question": 35,
+      "id": "T3-Q035",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.5",
+      "kind": "S",
+      "correct_terms": [
+        "lst_comp_squares_odd"
+      ],
+      "option_terms": [
+        "lst_empty",
+        "lst_comp_squares_even",
+        "lst_comp_squares_odd",
+        "exc_syntax"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 36,
+      "id": "T3-Q036",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.6",
+      "kind": "S",
+      "correct_terms": [
+        "kw_in"
+      ],
+      "option_terms": [
+        "kw_and",
+        "kw_for",
+        "kw_is",
+        "kw_in"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 37,
+      "id": "T3-Q037",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.7",
+      "kind": "M2",
+      "correct_terms": [
+        "tup_singleton_comma",
+        "tup_bare_comma"
+      ],
+      "option_terms": [
+        "tup_singleton_comma",
+        "tup_bare_comma",
+        "falsy_empty_list",
+        "tup_empty_ctor",
+        "tup_parens_int"
+      ],
+      "correct_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "question": 38,
+      "id": "T3-Q038",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.8",
+      "kind": "S",
+      "correct_terms": [
+        "num_3"
+      ],
+      "option_terms": [
+        "exc_attr",
+        "exc_type",
+        "num_3",
+        "num_2"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 39,
+      "id": "T3-Q039",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.9",
+      "kind": "S",
+      "correct_terms": [
+        "num_0"
+      ],
+      "option_terms": [
+        "num_1",
+        "val_none",
+        "num_0",
+        "exc_key"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 40,
+      "id": "T3-Q040",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.10",
+      "kind": "M2",
+      "correct_terms": [
+        "dict_values_view",
+        "dict_keys_view"
+      ],
+      "option_terms": [
+        "dict_values_view",
+        "dict_keys_view",
+        "dict_vals_check",
+        "tup_parens_int",
+        "lst_alias_assign"
+      ],
+      "correct_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "question": 41,
+      "id": "T3-Q041",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.11",
+      "kind": "S",
+      "correct_terms": [
+        "num_4"
+      ],
+      "option_terms": [
+        "exc_syntax",
+        "num_5",
+        "num_3",
+        "num_4"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 42,
+      "id": "T3-Q042",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.12",
+      "kind": "S",
+      "correct_terms": [
+        "str_method_replace"
+      ],
+      "option_terms": [
+        "str_method_strip",
+        "str_method_replace",
+        "str_method_split",
+        "str_method_find"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 43,
+      "id": "T3-Q043",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 3,
+      "task": "3.12",
+      "kind": "S",
+      "correct_terms": [
+        "str_ascii_order"
+      ],
+      "option_terms": [
+        "str_ascii_order",
+        "exc_type",
+        "str_ascii_false",
+        "val_none"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 44,
+      "id": "T3-Q044",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "S",
+      "correct_terms": [
+        "kw_return"
+      ],
+      "option_terms": [
+        "kw_pass",
+        "kw_yield",
+        "kw_return",
+        "kw_break"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 45,
+      "id": "T3-Q045",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "S",
+      "correct_terms": [
+        "fn_return_tuple"
+      ],
+      "option_terms": [
+        "fn_return_tuple",
+        "exc_syntax",
+        "exc_type",
+        "fn_implicit_none"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 46,
+      "id": "T3-Q046",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "S",
+      "correct_terms": [
+        "kw_yield"
+      ],
+      "option_terms": [
+        "kw_from",
+        "kw_yield",
+        "kw_return",
+        "kw_continue"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 47,
+      "id": "T3-Q047",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "S",
+      "correct_terms": [
+        "gen_stop_iter"
+      ],
+      "option_terms": [
+        "gen_stop_iter",
+        "exc_value",
+        "exc_index",
+        "val_none"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 48,
+      "id": "T3-Q048",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.3",
+      "kind": "S",
+      "correct_terms": [
+        "num_8"
+      ],
+      "option_terms": [
+        "exc_recursion",
+        "num_6",
+        "num_8",
+        "num_16"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 49,
+      "id": "T3-Q049",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.3",
+      "kind": "M2",
+      "correct_terms": [
+        "rec_base_needed",
+        "rec_step_converge"
+      ],
+      "option_terms": [
+        "rec_step_converge",
+        "rec_base_needed",
+        "rec_needs_global",
+        "aot_elf_binary",
+        "rec_needs_yield"
+      ],
+      "correct_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "question": 50,
+      "id": "T3-Q050",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "S",
+      "correct_terms": [
+        "exc_type"
+      ],
+      "option_terms": [
+        "exc_syntax",
+        "val_none",
+        "exc_type",
+        "num_10"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 51,
+      "id": "T3-Q051",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "M2",
+      "correct_terms": [
+        "arg_valid_kw_swap",
+        "arg_valid_mixed"
+      ],
+      "option_terms": [
+        "arg_valid_kw_swap",
+        "arg_bad_unknown_kw",
+        "arg_bad_pos_after_kw",
+        "arg_bad_dup_base",
+        "arg_valid_mixed"
+      ],
+      "correct_indices": [
+        1,
+        5
+      ]
+    },
+    {
+      "question": 52,
+      "id": "T3-Q052",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.5",
+      "kind": "S",
+      "correct_terms": [
+        "num_15"
+      ],
+      "option_terms": [
+        "exc_type",
+        "num_15",
+        "num_25",
+        "num_10"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 53,
+      "id": "T3-Q053",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.5",
+      "kind": "S",
+      "correct_terms": [
+        "num_6"
+      ],
+      "option_terms": [
+        "exc_type",
+        "exc_syntax",
+        "num_15",
+        "num_6"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 54,
+      "id": "T3-Q054",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.6",
+      "kind": "S",
+      "correct_terms": [
+        "kw_global"
+      ],
+      "option_terms": [
+        "kw_nonlocal",
+        "kw_global",
+        "kw_pass",
+        "kw_with"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 55,
+      "id": "T3-Q055",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.6",
+      "kind": "M2",
+      "correct_terms": [
+        "scope_shadow_local",
+        "scope_read_global_ok"
+      ],
+      "option_terms": [
+        "rec_needs_global",
+        "aot_elf_binary",
+        "scope_shadow_local",
+        "scope_read_global_ok",
+        "flt_exact_true"
+      ],
+      "correct_indices": [
+        3,
+        4
+      ]
+    },
+    {
+      "question": 56,
+      "id": "T3-Q056",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.7",
+      "kind": "S",
+      "correct_terms": [
+        "exc_lookup"
+      ],
+      "option_terms": [
+        "exc_lookup",
+        "exc_value",
+        "exc_arith",
+        "exc_syntax"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 57,
+      "id": "T3-Q057",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.7",
+      "kind": "S",
+      "correct_terms": [
+        "exc_unbound"
+      ],
+      "option_terms": [
+        "exc_key",
+        "exc_unbound",
+        "exc_index",
+        "exc_zero_div"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 58,
+      "id": "T3-Q058",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.8",
+      "kind": "S",
+      "correct_terms": [
+        "kw_raise"
+      ],
+      "option_terms": [
+        "kw_raise",
+        "kw_except",
+        "kw_pass",
+        "kw_finally"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 59,
+      "id": "T3-Q059",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.8",
+      "kind": "S",
+      "correct_terms": [
+        "exc_key"
+      ],
+      "option_terms": [
+        "exc_value",
+        "exc_index",
+        "exc_type",
+        "exc_key"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 60,
+      "id": "T3-Q060",
+      "topic": "Full-Length Mock Exam 3",
+      "domain": 4,
+      "task": "4.9",
+      "kind": "M2",
+      "correct_terms": [
+        "try_else_meaning",
+        "try_finally_meaning"
+      ],
+      "option_terms": [
+        "interp_rollback_all",
+        "try_out_all_four",
+        "try_finally_meaning",
+        "try_else_meaning",
+        "flt_exact_true"
+      ],
+      "correct_indices": [
+        3,
+        4
+      ]
+    }
+  ],
+  "4": [
+    {
+      "question": 1,
+      "id": "T4-Q001",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.1",
+      "kind": "M2",
+      "correct_terms": [
+        "vm_bytecode_exec",
+        "interp_syntax_before_run"
+      ],
+      "option_terms": [
+        "static_rom_linker",
+        "vm_bytecode_exec",
+        "interp_syntax_before_run",
+        "jit_browser_sandbox",
+        "aot_elf_binary"
+      ],
+      "correct_indices": [
+        2,
+        3
+      ]
+    },
+    {
+      "question": 2,
+      "id": "T4-Q002",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.2",
+      "kind": "S",
+      "correct_terms": [
+        "err_semantics"
+      ],
+      "option_terms": [
+        "err_pep8_style",
+        "err_lexis",
+        "err_syntax",
+        "err_semantics"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 3,
+      "id": "T4-Q003",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.3",
+      "kind": "M2",
+      "correct_terms": [
+        "kw_from",
+        "kw_with"
+      ],
+      "option_terms": [
+        "id_soft_case",
+        "id_builtin_sum",
+        "kw_from",
+        "id_case_false",
+        "kw_with"
+      ],
+      "correct_indices": [
+        3,
+        5
+      ]
+    },
+    {
+      "question": 4,
+      "id": "T4-Q004",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.4",
+      "kind": "M2",
+      "correct_terms": [
+        "lit_sci_float",
+        "lit_under_int"
+      ],
+      "option_terms": [
+        "lit_under_int",
+        "lit_sci_float",
+        "lit_bad_leading0",
+        "lit_bad_double_under",
+        "lit_bad_oct9"
+      ],
+      "correct_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "question": 5,
+      "id": "T4-Q005",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.5",
+      "kind": "S",
+      "correct_terms": [
+        "id_valid_temp"
+      ],
+      "option_terms": [
+        "id_bad_hyphen",
+        "id_valid_temp",
+        "id_bad_dot",
+        "id_bad_digit"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 6,
+      "id": "T4-Q006",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.6",
+      "kind": "S",
+      "correct_terms": [
+        "num_neg4"
+      ],
+      "option_terms": [
+        "num_4",
+        "num_neg4",
+        "num_neg3",
+        "flt_neg3_0"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 7,
+      "id": "T4-Q007",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.7",
+      "kind": "S",
+      "correct_terms": [
+        "num_16"
+      ],
+      "option_terms": [
+        "flt_4_0",
+        "num_neg16",
+        "num_16",
+        "num_8"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 8,
+      "id": "T4-Q008",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.8",
+      "kind": "S",
+      "correct_terms": [
+        "op_bit_inv"
+      ],
+      "option_terms": [
+        "op_bit_and",
+        "op_bit_xor",
+        "op_lshift",
+        "op_bit_inv"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 9,
+      "id": "T4-Q009",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.9",
+      "kind": "S",
+      "correct_terms": [
+        "op_ifloordiv"
+      ],
+      "option_terms": [
+        "op_ifloordiv",
+        "op_iadd",
+        "op_truediv",
+        "op_imul"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 10,
+      "id": "T4-Q010",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.10",
+      "kind": "S",
+      "correct_terms": [
+        "io_end_comma"
+      ],
+      "option_terms": [
+        "io_sep_slash",
+        "io_sep_colon",
+        "io_end_comma",
+        "io_end_bang"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 11,
+      "id": "T4-Q011",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 1,
+      "task": "1.11",
+      "kind": "S",
+      "correct_terms": [
+        "cast_ord"
+      ],
+      "option_terms": [
+        "cast_ord",
+        "cast_int",
+        "cast_str",
+        "cast_chr"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 12,
+      "id": "T4-Q012",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.1",
+      "kind": "S",
+      "correct_terms": [
+        "kw_elif"
+      ],
+      "option_terms": [
+        "kw_elif",
+        "kw_while",
+        "kw_from",
+        "kw_else"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 13,
+      "id": "T4-Q013",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.1",
+      "kind": "S",
+      "correct_terms": [
+        "out_status_crit"
+      ],
+      "option_terms": [
+        "out_status_alert",
+        "out_status_crit",
+        "out_status_ok",
+        "out_status_warn"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 14,
+      "id": "T4-Q014",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.2",
+      "kind": "M2",
+      "correct_terms": [
+        "tern_valid_fee",
+        "tern_valid_badge"
+      ],
+      "option_terms": [
+        "tern_valid_fee",
+        "tern_valid_badge",
+        "tern_bad_c_style",
+        "tern_bad_no_else",
+        "tern_bad_order"
+      ],
+      "correct_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "question": 15,
+      "id": "T4-Q015",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.2",
+      "kind": "S",
+      "correct_terms": [
+        "out_status_alert"
+      ],
+      "option_terms": [
+        "out_status_warn",
+        "out_status_alert",
+        "out_status_ok",
+        "out_loop_empty"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 16,
+      "id": "T4-Q016",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.3",
+      "kind": "M2",
+      "correct_terms": [
+        "truthy_str_zero",
+        "truthy_neg_int"
+      ],
+      "option_terms": [
+        "falsy_none_lit",
+        "truthy_neg_int",
+        "falsy_empty_dict",
+        "falsy_zero_float",
+        "truthy_str_zero"
+      ],
+      "correct_indices": [
+        2,
+        5
+      ]
+    },
+    {
+      "question": 17,
+      "id": "T4-Q017",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.3",
+      "kind": "S",
+      "correct_terms": [
+        "out_status_idle"
+      ],
+      "option_terms": [
+        "out_status_warn",
+        "out_status_ok",
+        "exc_type",
+        "out_status_idle"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 18,
+      "id": "T4-Q018",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.4",
+      "kind": "M2",
+      "correct_terms": [
+        "cmp_chain_zone",
+        "cmp_and_zone"
+      ],
+      "option_terms": [
+        "cmp_chain_zone",
+        "cmp_or_zone_bug",
+        "cmp_eq_zone_bug",
+        "cmp_bit_zone_bug",
+        "cmp_and_zone"
+      ],
+      "correct_indices": [
+        1,
+        5
+      ]
+    },
+    {
+      "question": 19,
+      "id": "T4-Q019",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.4",
+      "kind": "S",
+      "correct_terms": [
+        "kw_and"
+      ],
+      "option_terms": [
+        "kw_not",
+        "kw_is",
+        "kw_and",
+        "kw_or"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 20,
+      "id": "T4-Q020",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.5",
+      "kind": "S",
+      "correct_terms": [
+        "kw_while"
+      ],
+      "option_terms": [
+        "kw_elif",
+        "kw_for",
+        "kw_while",
+        "kw_pass"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 21,
+      "id": "T4-Q021",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.5",
+      "kind": "S",
+      "correct_terms": [
+        "num_3"
+      ],
+      "option_terms": [
+        "num_4",
+        "num_2",
+        "num_3",
+        "num_0"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 22,
+      "id": "T4-Q022",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.6",
+      "kind": "M2",
+      "correct_terms": [
+        "rng_4_items_a",
+        "rng_4_items_b"
+      ],
+      "option_terms": [
+        "rng_2_items",
+        "rng_4_items_b",
+        "rng_4_items_a",
+        "rng_5_items",
+        "rng_empty_pos"
+      ],
+      "correct_indices": [
+        2,
+        3
+      ]
+    },
+    {
+      "question": 23,
+      "id": "T4-Q023",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.6",
+      "kind": "S",
+      "correct_terms": [
+        "num_12"
+      ],
+      "option_terms": [
+        "num_12",
+        "num_7",
+        "num_15",
+        "num_8"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 24,
+      "id": "T4-Q024",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.7",
+      "kind": "S",
+      "correct_terms": [
+        "num_15"
+      ],
+      "option_terms": [
+        "num_15",
+        "num_3",
+        "num_5",
+        "exc_type"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 25,
+      "id": "T4-Q025",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.8",
+      "kind": "S",
+      "correct_terms": [
+        "kw_continue"
+      ],
+      "option_terms": [
+        "kw_continue",
+        "kw_break",
+        "kw_return",
+        "kw_pass"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 26,
+      "id": "T4-Q026",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.8",
+      "kind": "S",
+      "correct_terms": [
+        "kw_pass"
+      ],
+      "option_terms": [
+        "kw_break",
+        "kw_continue",
+        "kw_return",
+        "kw_pass"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 27,
+      "id": "T4-Q027",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.9",
+      "kind": "S",
+      "correct_terms": [
+        "out_loop_halt"
+      ],
+      "option_terms": [
+        "out_loop_empty",
+        "out_loop_clean",
+        "exc_syntax",
+        "out_loop_halt"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 28,
+      "id": "T4-Q028",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 2,
+      "task": "2.10",
+      "kind": "S",
+      "correct_terms": [
+        "num_3"
+      ],
+      "option_terms": [
+        "num_2",
+        "num_4",
+        "num_6",
+        "num_3"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 29,
+      "id": "T4-Q029",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "S",
+      "correct_terms": [
+        "lst_stride_15_35"
+      ],
+      "option_terms": [
+        "lst_stride_15_35",
+        "lst_stride_10_30_50",
+        "lst_mid_20_30",
+        "exc_index"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 30,
+      "id": "T4-Q030",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "S",
+      "correct_terms": [
+        "num_45"
+      ],
+      "option_terms": [
+        "num_45",
+        "exc_index",
+        "num_5",
+        "num_25"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 31,
+      "id": "T4-Q031",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.2",
+      "kind": "S",
+      "correct_terms": [
+        "lst_append_nested"
+      ],
+      "option_terms": [
+        "exc_type",
+        "val_none",
+        "lst_append_nested",
+        "lst_extend_flat"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 32,
+      "id": "T4-Q032",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.2",
+      "kind": "M2",
+      "correct_terms": [
+        "lst_mut_append",
+        "lst_mut_sort"
+      ],
+      "option_terms": [
+        "lst_nonmut_slice",
+        "lst_mut_sort",
+        "lst_nonmut_sorted",
+        "lst_mut_append",
+        "lst_nonmut_plus"
+      ],
+      "correct_indices": [
+        2,
+        4
+      ]
+    },
+    {
+      "question": 33,
+      "id": "T4-Q033",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.3",
+      "kind": "S",
+      "correct_terms": [
+        "kw_del"
+      ],
+      "option_terms": [
+        "kw_with",
+        "kw_pass",
+        "kw_from",
+        "kw_del"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 34,
+      "id": "T4-Q034",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.4",
+      "kind": "M2",
+      "correct_terms": [
+        "lst_copy_method",
+        "lst_nonmut_slice"
+      ],
+      "option_terms": [
+        "lst_mut_pop",
+        "lst_mut_append",
+        "lst_alias_assign",
+        "lst_nonmut_slice",
+        "lst_copy_method"
+      ],
+      "correct_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "question": 35,
+      "id": "T4-Q035",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.5",
+      "kind": "S",
+      "correct_terms": [
+        "num_3"
+      ],
+      "option_terms": [
+        "num_2",
+        "num_3",
+        "exc_syntax",
+        "num_5"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 36,
+      "id": "T4-Q036",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.6",
+      "kind": "S",
+      "correct_terms": [
+        "val_true"
+      ],
+      "option_terms": [
+        "val_false",
+        "val_none",
+        "val_true",
+        "exc_key"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 37,
+      "id": "T4-Q037",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.7",
+      "kind": "S",
+      "correct_terms": [
+        "num_30"
+      ],
+      "option_terms": [
+        "num_20",
+        "exc_value",
+        "num_30",
+        "num_10"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 38,
+      "id": "T4-Q038",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.8",
+      "kind": "M2",
+      "correct_terms": [
+        "tup_hashable_key",
+        "tup_unhashable_inner"
+      ],
+      "option_terms": [
+        "dict_vals_check",
+        "flt_exact_true",
+        "tup_hashable_key",
+        "tup_unhashable_inner",
+        "indent_braces"
+      ],
+      "correct_indices": [
+        3,
+        4
+      ]
+    },
+    {
+      "question": 39,
+      "id": "T4-Q039",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.9",
+      "kind": "S",
+      "correct_terms": [
+        "dict_method_get"
+      ],
+      "option_terms": [
+        "dict_method_values",
+        "dict_method_get",
+        "dict_method_items",
+        "dict_method_keys"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 40,
+      "id": "T4-Q040",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.10",
+      "kind": "S",
+      "correct_terms": [
+        "num_27"
+      ],
+      "option_terms": [
+        "num_2",
+        "num_27",
+        "exc_type",
+        "num_15"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 41,
+      "id": "T4-Q041",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.11",
+      "kind": "M2",
+      "correct_terms": [
+        "str_escaped_quote",
+        "str_double_quote_apos"
+      ],
+      "option_terms": [
+        "str_double_quote_apos",
+        "str_bad_unescaped_apos",
+        "comment_slashstar",
+        "str_escaped_quote",
+        "str_bad_trailing_bs"
+      ],
+      "correct_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "question": 42,
+      "id": "T4-Q042",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.12",
+      "kind": "S",
+      "correct_terms": [
+        "str_method_split"
+      ],
+      "option_terms": [
+        "str_method_split",
+        "str_method_strip",
+        "str_method_replace",
+        "str_method_find"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 43,
+      "id": "T4-Q043",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 3,
+      "task": "3.12",
+      "kind": "S",
+      "correct_terms": [
+        "str_slice_step2"
+      ],
+      "option_terms": [
+        "str_slice_rev",
+        "val_none",
+        "exc_index",
+        "str_slice_step2"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 44,
+      "id": "T4-Q044",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "S",
+      "correct_terms": [
+        "kw_def"
+      ],
+      "option_terms": [
+        "kw_lambda",
+        "kw_bad_func",
+        "kw_def",
+        "kw_bad_var"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 45,
+      "id": "T4-Q045",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "M2",
+      "correct_terms": [
+        "fn_implicit_none",
+        "fn_early_return"
+      ],
+      "option_terms": [
+        "rec_needs_global",
+        "flt_exact_true",
+        "fn_early_return",
+        "rec_needs_yield",
+        "fn_implicit_none"
+      ],
+      "correct_indices": [
+        3,
+        5
+      ]
+    },
+    {
+      "question": 46,
+      "id": "T4-Q046",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "S",
+      "correct_terms": [
+        "gen_next_call"
+      ],
+      "option_terms": [
+        "cast_ord",
+        "lst_builtin_len_id",
+        "cast_int",
+        "gen_next_call"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 47,
+      "id": "T4-Q047",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "M2",
+      "correct_terms": [
+        "gen_returns_iter",
+        "gen_pause_resume"
+      ],
+      "option_terms": [
+        "rec_needs_yield",
+        "gen_pause_resume",
+        "aot_elf_binary",
+        "gen_returns_iter",
+        "interp_rollback_all"
+      ],
+      "correct_indices": [
+        2,
+        4
+      ]
+    },
+    {
+      "question": 48,
+      "id": "T4-Q048",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.3",
+      "kind": "S",
+      "correct_terms": [
+        "num_7"
+      ],
+      "option_terms": [
+        "num_7",
+        "exc_recursion",
+        "num_12",
+        "num_3"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 49,
+      "id": "T4-Q049",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.3",
+      "kind": "S",
+      "correct_terms": [
+        "rec_missing_base"
+      ],
+      "option_terms": [
+        "exc_syntax",
+        "rec_missing_base",
+        "val_none",
+        "num_0"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 50,
+      "id": "T4-Q050",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "S",
+      "correct_terms": [
+        "flt_4_5"
+      ],
+      "option_terms": [
+        "exc_type",
+        "flt_4_5",
+        "exc_syntax",
+        "flt_3_5"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 51,
+      "id": "T4-Q051",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "S",
+      "correct_terms": [
+        "arg_pos_after_kw_err"
+      ],
+      "option_terms": [
+        "arg_dup_val_err",
+        "val_none",
+        "arg_pos_after_kw_err",
+        "flt_4_5"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 52,
+      "id": "T4-Q052",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.5",
+      "kind": "M2",
+      "correct_terms": [
+        "mut_default_shared",
+        "mut_default_none_fix"
+      ],
+      "option_terms": [
+        "mut_default_shared",
+        "rec_needs_global",
+        "flt_exact_true",
+        "mut_default_none_fix",
+        "dict_vals_check"
+      ],
+      "correct_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "question": 53,
+      "id": "T4-Q053",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.5",
+      "kind": "S",
+      "correct_terms": [
+        "param_def_order_err"
+      ],
+      "option_terms": [
+        "exc_type",
+        "param_def_order_err",
+        "param_def_valid_sig",
+        "exc_key"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 54,
+      "id": "T4-Q054",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.6",
+      "kind": "S",
+      "correct_terms": [
+        "kw_global"
+      ],
+      "option_terms": [
+        "kw_global",
+        "kw_from",
+        "kw_nonlocal",
+        "kw_pass"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 55,
+      "id": "T4-Q055",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.6",
+      "kind": "S",
+      "correct_terms": [
+        "num_25"
+      ],
+      "option_terms": [
+        "num_10",
+        "exc_unbound",
+        "num_25",
+        "exc_name"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 56,
+      "id": "T4-Q056",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.7",
+      "kind": "M2",
+      "correct_terms": [
+        "exc_sys_exit",
+        "exc_kb_interrupt"
+      ],
+      "option_terms": [
+        "exc_zero_div",
+        "exc_sys_exit",
+        "exc_type",
+        "exc_kb_interrupt",
+        "exc_index"
+      ],
+      "correct_indices": [
+        2,
+        4
+      ]
+    },
+    {
+      "question": 57,
+      "id": "T4-Q057",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.7",
+      "kind": "S",
+      "correct_terms": [
+        "exc_recursion"
+      ],
+      "option_terms": [
+        "exc_key",
+        "exc_index",
+        "exc_zero_div",
+        "exc_recursion"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 58,
+      "id": "T4-Q058",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.8",
+      "kind": "S",
+      "correct_terms": [
+        "exc_zero_div"
+      ],
+      "option_terms": [
+        "exc_key",
+        "exc_zero_div",
+        "exc_type",
+        "exc_value"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 59,
+      "id": "T4-Q059",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.8",
+      "kind": "S",
+      "correct_terms": [
+        "exc_name"
+      ],
+      "option_terms": [
+        "exc_name",
+        "exc_key",
+        "exc_attr",
+        "exc_value"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 60,
+      "id": "T4-Q060",
+      "topic": "Full-Length Mock Exam 4",
+      "domain": 4,
+      "task": "4.9",
+      "kind": "S",
+      "correct_terms": [
+        "try_tuple_syntax"
+      ],
+      "option_terms": [
+        "param_def_bad_sig",
+        "tern_bad_c_style",
+        "try_bad_comma_py2",
+        "try_tuple_syntax"
+      ],
+      "correct_indices": [
+        4
+      ]
+    }
+  ],
+  "5": [
+    {
+      "question": 1,
+      "id": "T5-Q001",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.1",
+      "kind": "M2",
+      "correct_terms": [
+        "pyc_cache_role",
+        "interp_line_stop"
+      ],
+      "option_terms": [
+        "interp_line_stop",
+        "pyc_native_machine",
+        "pyc_cache_role",
+        "pyc_encrypt_source",
+        "interp_rollback_all"
+      ],
+      "correct_indices": [
+        1,
+        3
+      ]
+    },
+    {
+      "question": 2,
+      "id": "T5-Q002",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.2",
+      "kind": "S",
+      "correct_terms": [
+        "err_syntax"
+      ],
+      "option_terms": [
+        "err_lexis",
+        "err_syntax",
+        "err_pep8_style",
+        "err_semantics"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 3,
+      "id": "T5-Q003",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.3",
+      "kind": "M2",
+      "correct_terms": [
+        "kw_nonlocal",
+        "kw_assert"
+      ],
+      "option_terms": [
+        "id_case_none",
+        "id_soft_match",
+        "kw_nonlocal",
+        "id_builtin_max",
+        "kw_assert"
+      ],
+      "correct_indices": [
+        3,
+        5
+      ]
+    },
+    {
+      "question": 4,
+      "id": "T5-Q004",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.4",
+      "kind": "M2",
+      "correct_terms": [
+        "lit_sci_pos",
+        "lit_bin_13"
+      ],
+      "option_terms": [
+        "lit_bad_leading0",
+        "lit_sci_pos",
+        "lit_bad_trail_under",
+        "lit_bin_13",
+        "lit_bad_hex_g"
+      ],
+      "correct_indices": [
+        2,
+        4
+      ]
+    },
+    {
+      "question": 5,
+      "id": "T5-Q005",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.5",
+      "kind": "S",
+      "correct_terms": [
+        "id_valid_lap"
+      ],
+      "option_terms": [
+        "id_bad_digit",
+        "id_valid_lap",
+        "id_bad_at",
+        "id_bad_space"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 6,
+      "id": "T5-Q006",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.6",
+      "kind": "S",
+      "correct_terms": [
+        "op_mod"
+      ],
+      "option_terms": [
+        "op_truediv",
+        "op_pow",
+        "op_floordiv",
+        "op_mod"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 7,
+      "id": "T5-Q007",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.7",
+      "kind": "S",
+      "correct_terms": [
+        "num_9"
+      ],
+      "option_terms": [
+        "num_3",
+        "num_neg9",
+        "num_9",
+        "num_19"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 8,
+      "id": "T5-Q008",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.8",
+      "kind": "S",
+      "correct_terms": [
+        "op_bit_or"
+      ],
+      "option_terms": [
+        "op_rshift",
+        "op_bit_and",
+        "op_bit_or",
+        "op_bit_xor"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 9,
+      "id": "T5-Q009",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.9",
+      "kind": "S",
+      "correct_terms": [
+        "str_num_252525"
+      ],
+      "option_terms": [
+        "exc_type",
+        "str_num_252525",
+        "str_num_1212",
+        "num_36"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 10,
+      "id": "T5-Q010",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.10",
+      "kind": "S",
+      "correct_terms": [
+        "io_sep_colon"
+      ],
+      "option_terms": [
+        "io_sep_slash",
+        "io_end_comma",
+        "io_end_empty",
+        "io_sep_colon"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 11,
+      "id": "T5-Q011",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 1,
+      "task": "1.11",
+      "kind": "S",
+      "correct_terms": [
+        "input_returns_str"
+      ],
+      "option_terms": [
+        "flt_2_0",
+        "input_returns_str",
+        "flt_0_0",
+        "input_returns_int"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 12,
+      "id": "T5-Q012",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.1",
+      "kind": "S",
+      "correct_terms": [
+        "kw_elif"
+      ],
+      "option_terms": [
+        "kw_for",
+        "kw_elif",
+        "kw_else",
+        "kw_pass"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 13,
+      "id": "T5-Q013",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.1",
+      "kind": "S",
+      "correct_terms": [
+        "out_tier_gold"
+      ],
+      "option_terms": [
+        "out_tier_gold",
+        "out_tier_bronze",
+        "out_tier_silver",
+        "out_tier_both"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 14,
+      "id": "T5-Q014",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.2",
+      "kind": "S",
+      "correct_terms": [
+        "kw_else"
+      ],
+      "option_terms": [
+        "kw_pass",
+        "kw_elif",
+        "kw_else",
+        "kw_while"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 15,
+      "id": "T5-Q015",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.2",
+      "kind": "S",
+      "correct_terms": [
+        "num_28"
+      ],
+      "option_terms": [
+        "num_20",
+        "num_25",
+        "num_28",
+        "num_23"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 16,
+      "id": "T5-Q016",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.3",
+      "kind": "M2",
+      "correct_terms": [
+        "falsy_empty_str",
+        "falsy_none_lit"
+      ],
+      "option_terms": [
+        "truthy_list_empty_str",
+        "truthy_str_zero",
+        "truthy_str_space",
+        "falsy_empty_str",
+        "falsy_none_lit"
+      ],
+      "correct_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "question": 17,
+      "id": "T5-Q017",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.3",
+      "kind": "S",
+      "correct_terms": [
+        "val_true"
+      ],
+      "option_terms": [
+        "val_false",
+        "exc_type",
+        "num_neg1",
+        "val_true"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 18,
+      "id": "T5-Q018",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.4",
+      "kind": "M2",
+      "correct_terms": [
+        "cmp_chain_zone",
+        "cmp_and_zone"
+      ],
+      "option_terms": [
+        "cmp_eq_zone_bug",
+        "cmp_chain_zone",
+        "cmp_or_zone_bug",
+        "cmp_and_zone",
+        "cmp_bit_zone_bug"
+      ],
+      "correct_indices": [
+        2,
+        4
+      ]
+    },
+    {
+      "question": 19,
+      "id": "T5-Q019",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.4",
+      "kind": "S",
+      "correct_terms": [
+        "str_guest_default"
+      ],
+      "option_terms": [
+        "val_none",
+        "falsy_empty_str",
+        "val_false",
+        "str_guest_default"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 20,
+      "id": "T5-Q020",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.5",
+      "kind": "S",
+      "correct_terms": [
+        "kw_while"
+      ],
+      "option_terms": [
+        "kw_with",
+        "kw_for",
+        "kw_elif",
+        "kw_while"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 21,
+      "id": "T5-Q021",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.5",
+      "kind": "S",
+      "correct_terms": [
+        "num_21"
+      ],
+      "option_terms": [
+        "num_28",
+        "num_15",
+        "num_6",
+        "num_21"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 22,
+      "id": "T5-Q022",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.6",
+      "kind": "M2",
+      "correct_terms": [
+        "rng_3_items_a",
+        "rng_3_items_b"
+      ],
+      "option_terms": [
+        "rng_3_items_a",
+        "rng_5_items",
+        "rng_empty_neg",
+        "rng_2_items",
+        "rng_3_items_b"
+      ],
+      "correct_indices": [
+        1,
+        5
+      ]
+    },
+    {
+      "question": 23,
+      "id": "T5-Q023",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.6",
+      "kind": "S",
+      "correct_terms": [
+        "num_20"
+      ],
+      "option_terms": [
+        "num_12",
+        "num_30",
+        "num_20",
+        "num_10"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 24,
+      "id": "T5-Q024",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.7",
+      "kind": "S",
+      "correct_terms": [
+        "num_14"
+      ],
+      "option_terms": [
+        "num_3",
+        "exc_type",
+        "num_14",
+        "num_12"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 25,
+      "id": "T5-Q025",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.8",
+      "kind": "S",
+      "correct_terms": [
+        "kw_continue"
+      ],
+      "option_terms": [
+        "kw_continue",
+        "kw_return",
+        "kw_pass",
+        "kw_break"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 26,
+      "id": "T5-Q026",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.8",
+      "kind": "S",
+      "correct_terms": [
+        "num_7"
+      ],
+      "option_terms": [
+        "num_7",
+        "num_16",
+        "num_3",
+        "num_9"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 27,
+      "id": "T5-Q027",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.9",
+      "kind": "M2",
+      "correct_terms": [
+        "loop_else_exhaust",
+        "loop_else_false_while"
+      ],
+      "option_terms": [
+        "loop_else_false_while",
+        "loop_else_exhaust",
+        "loop_else_on_exc",
+        "loop_else_on_break",
+        "loop_else_on_return"
+      ],
+      "correct_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "question": 28,
+      "id": "T5-Q028",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 2,
+      "task": "2.10",
+      "kind": "S",
+      "correct_terms": [
+        "num_9"
+      ],
+      "option_terms": [
+        "num_9",
+        "num_6",
+        "num_12",
+        "num_3"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 29,
+      "id": "T5-Q029",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "S",
+      "correct_terms": [
+        "lst_stride_10_30_50"
+      ],
+      "option_terms": [
+        "lst_stride_10_30_50",
+        "lst_mid_20_30",
+        "lst_neg_tail",
+        "exc_index"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 30,
+      "id": "T5-Q030",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "S",
+      "correct_terms": [
+        "num_20"
+      ],
+      "option_terms": [
+        "num_20",
+        "num_30",
+        "exc_index",
+        "num_10"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 31,
+      "id": "T5-Q031",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.2",
+      "kind": "S",
+      "correct_terms": [
+        "lst_method_remove_id"
+      ],
+      "option_terms": [
+        "lst_method_append_id",
+        "lst_method_remove_id",
+        "lst_method_insert_id",
+        "lst_method_pop_id"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 32,
+      "id": "T5-Q032",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.2",
+      "kind": "M2",
+      "correct_terms": [
+        "lst_mut_extend",
+        "lst_mut_pop"
+      ],
+      "option_terms": [
+        "lst_mut_extend",
+        "lst_mut_pop",
+        "lst_nonmut_sorted",
+        "lst_nonmut_plus",
+        "lst_nonmut_slice"
+      ],
+      "correct_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "question": 33,
+      "id": "T5-Q033",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.3",
+      "kind": "S",
+      "correct_terms": [
+        "lst_del_slice_res"
+      ],
+      "option_terms": [
+        "lst_del_slice_res",
+        "lst_empty",
+        "exc_index",
+        "lst_mid_20_30"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 34,
+      "id": "T5-Q034",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.4",
+      "kind": "M2",
+      "correct_terms": [
+        "lst_copy_method",
+        "lst_copy_ctor"
+      ],
+      "option_terms": [
+        "lst_alias_assign",
+        "lst_mut_insert",
+        "lst_mut_sort",
+        "lst_copy_ctor",
+        "lst_copy_method"
+      ],
+      "correct_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "question": 35,
+      "id": "T5-Q035",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.5",
+      "kind": "S",
+      "correct_terms": [
+        "kw_in"
+      ],
+      "option_terms": [
+        "kw_not",
+        "kw_in",
+        "kw_is",
+        "kw_with"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 36,
+      "id": "T5-Q036",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.6",
+      "kind": "S",
+      "correct_terms": [
+        "kw_not_in"
+      ],
+      "option_terms": [
+        "kw_elif",
+        "kw_and",
+        "kw_is",
+        "kw_not_in"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 37,
+      "id": "T5-Q037",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.7",
+      "kind": "S",
+      "correct_terms": [
+        "tup_parens_int"
+      ],
+      "option_terms": [
+        "tup_bare_comma",
+        "tup_parens_int",
+        "tup_singleton_comma",
+        "tup_empty_ctor"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 38,
+      "id": "T5-Q038",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.8",
+      "kind": "S",
+      "correct_terms": [
+        "exc_type"
+      ],
+      "option_terms": [
+        "tup_inner_list_ok",
+        "exc_key",
+        "val_none",
+        "exc_type"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 39,
+      "id": "T5-Q039",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.9",
+      "kind": "M2",
+      "correct_terms": [
+        "dict_get_default",
+        "dict_pop_default"
+      ],
+      "option_terms": [
+        "dict_pop_default",
+        "try_bad_comma_py2",
+        "dict_idx_keyerr",
+        "arg_bad_pos_after_kw",
+        "dict_get_default"
+      ],
+      "correct_indices": [
+        1,
+        5
+      ]
+    },
+    {
+      "question": 40,
+      "id": "T5-Q040",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.10",
+      "kind": "M2",
+      "correct_terms": [
+        "dict_items_pairs",
+        "dict_dup_key_last"
+      ],
+      "option_terms": [
+        "flt_exact_true",
+        "dict_vals_check",
+        "indent_braces",
+        "dict_items_pairs",
+        "dict_dup_key_last"
+      ],
+      "correct_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "question": 41,
+      "id": "T5-Q041",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.11",
+      "kind": "S",
+      "correct_terms": [
+        "num_65"
+      ],
+      "option_terms": [
+        "num_65",
+        "num_97",
+        "exc_type",
+        "num_42"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 42,
+      "id": "T5-Q042",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.12",
+      "kind": "S",
+      "correct_terms": [
+        "str_join_dash"
+      ],
+      "option_terms": [
+        "str_join_dash",
+        "tern_bad_c_style",
+        "str_join_wrong_inv",
+        "param_def_bad_sig"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 43,
+      "id": "T5-Q043",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 3,
+      "task": "3.12",
+      "kind": "S",
+      "correct_terms": [
+        "str_find_neg1"
+      ],
+      "option_terms": [
+        "exc_value",
+        "num_0",
+        "val_none",
+        "str_find_neg1"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 44,
+      "id": "T5-Q044",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "S",
+      "correct_terms": [
+        "kw_return"
+      ],
+      "option_terms": [
+        "kw_yield",
+        "kw_pass",
+        "kw_return",
+        "kw_continue"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 45,
+      "id": "T5-Q045",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "S",
+      "correct_terms": [
+        "val_none"
+      ],
+      "option_terms": [
+        "val_none",
+        "num_0",
+        "num_18",
+        "exc_type"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 46,
+      "id": "T5-Q046",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "S",
+      "correct_terms": [
+        "kw_yield"
+      ],
+      "option_terms": [
+        "kw_yield",
+        "kw_break",
+        "kw_return",
+        "kw_from"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 47,
+      "id": "T5-Q047",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "S",
+      "correct_terms": [
+        "num_10"
+      ],
+      "option_terms": [
+        "num_20",
+        "gen_exhaust_empty",
+        "gen_stop_iter",
+        "num_10"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 48,
+      "id": "T5-Q048",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.3",
+      "kind": "S",
+      "correct_terms": [
+        "num_15"
+      ],
+      "option_terms": [
+        "num_5",
+        "num_15",
+        "exc_recursion",
+        "num_120"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 49,
+      "id": "T5-Q049",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.3",
+      "kind": "M2",
+      "correct_terms": [
+        "rec_base_needed",
+        "rec_step_converge"
+      ],
+      "option_terms": [
+        "rec_base_needed",
+        "rec_needs_global",
+        "rec_step_converge",
+        "pyc_encrypt_source",
+        "rec_needs_yield"
+      ],
+      "correct_indices": [
+        1,
+        3
+      ]
+    },
+    {
+      "question": 50,
+      "id": "T5-Q050",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "M2",
+      "correct_terms": [
+        "arg_valid_kw_swap",
+        "arg_valid_mixed"
+      ],
+      "option_terms": [
+        "arg_valid_mixed",
+        "arg_bad_unknown_kw",
+        "arg_bad_pos_after_kw",
+        "arg_bad_dup_base",
+        "arg_valid_kw_swap"
+      ],
+      "correct_indices": [
+        1,
+        5
+      ]
+    },
+    {
+      "question": 51,
+      "id": "T5-Q051",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "S",
+      "correct_terms": [
+        "arg_dup_val_err"
+      ],
+      "option_terms": [
+        "arg_dup_val_err",
+        "val_none",
+        "arg_pos_after_kw_err",
+        "flt_2_5"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 52,
+      "id": "T5-Q052",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.5",
+      "kind": "S",
+      "correct_terms": [
+        "flt_2_5"
+      ],
+      "option_terms": [
+        "flt_6_0",
+        "num_5",
+        "flt_2_5",
+        "exc_type"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 53,
+      "id": "T5-Q053",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.5",
+      "kind": "S",
+      "correct_terms": [
+        "mut_out_two_calls"
+      ],
+      "option_terms": [
+        "val_none",
+        "lst_2_only",
+        "mut_out_two_calls",
+        "exc_type"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 54,
+      "id": "T5-Q054",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.6",
+      "kind": "S",
+      "correct_terms": [
+        "scope_unbound_err"
+      ],
+      "option_terms": [
+        "val_none",
+        "scope_unbound_err",
+        "scope_read_global_ok",
+        "scope_shadow_local"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 55,
+      "id": "T5-Q055",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.6",
+      "kind": "M2",
+      "correct_terms": [
+        "scope_read_global_ok",
+        "scope_mutate_global_list"
+      ],
+      "option_terms": [
+        "scope_read_global_ok",
+        "scope_mutate_global_list",
+        "pyc_native_machine",
+        "scope_unbound_err",
+        "rec_needs_global"
+      ],
+      "correct_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "question": 56,
+      "id": "T5-Q056",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.7",
+      "kind": "S",
+      "correct_terms": [
+        "exc_exception_cls"
+      ],
+      "option_terms": [
+        "exc_zero_div",
+        "exc_arith",
+        "exc_lookup",
+        "exc_exception_cls"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 57,
+      "id": "T5-Q057",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.7",
+      "kind": "S",
+      "correct_terms": [
+        "exc_indent"
+      ],
+      "option_terms": [
+        "exc_key",
+        "exc_value",
+        "exc_indent",
+        "exc_zero_div"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 58,
+      "id": "T5-Q058",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.8",
+      "kind": "S",
+      "correct_terms": [
+        "exc_assertion"
+      ],
+      "option_terms": [
+        "exc_value",
+        "exc_type",
+        "exc_assertion",
+        "exc_key"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 59,
+      "id": "T5-Q059",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.8",
+      "kind": "S",
+      "correct_terms": [
+        "kw_raise"
+      ],
+      "option_terms": [
+        "kw_with",
+        "kw_raise",
+        "kw_finally",
+        "kw_except"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 60,
+      "id": "T5-Q060",
+      "topic": "Full-Length Mock Exam 5",
+      "domain": 4,
+      "task": "4.9",
+      "kind": "M2",
+      "correct_terms": [
+        "try_order_broad_shadow",
+        "try_order_specific_first"
+      ],
+      "option_terms": [
+        "try_order_broad_shadow",
+        "interp_rollback_all",
+        "pyc_encrypt_source",
+        "try_order_specific_first",
+        "try_out_all_four"
+      ],
+      "correct_indices": [
+        1,
+        4
+      ]
+    }
+  ],
+  "6": [
+    {
+      "question": 1,
+      "id": "T6-Q001",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.1",
+      "kind": "S",
+      "correct_terms": [
+        "vm_bytecode_exec"
+      ],
+      "option_terms": [
+        "static_rom_linker",
+        "vm_bytecode_exec",
+        "aot_elf_binary",
+        "jit_browser_sandbox"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 2,
+      "id": "T6-Q002",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.2",
+      "kind": "S",
+      "correct_terms": [
+        "err_lexis"
+      ],
+      "option_terms": [
+        "err_syntax",
+        "err_pep8_style",
+        "err_semantics",
+        "err_lexis"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 3,
+      "id": "T6-Q003",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.3",
+      "kind": "M2",
+      "correct_terms": [
+        "kw_del",
+        "kw_lambda"
+      ],
+      "option_terms": [
+        "id_case_false",
+        "id_soft_case",
+        "kw_del",
+        "kw_lambda",
+        "id_builtin_dict"
+      ],
+      "correct_indices": [
+        3,
+        4
+      ]
+    },
+    {
+      "question": 4,
+      "id": "T6-Q004",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.4",
+      "kind": "M2",
+      "correct_terms": [
+        "lit_oct_23",
+        "lit_hex_42"
+      ],
+      "option_terms": [
+        "lit_bad_double_under",
+        "lit_hex_42",
+        "lit_oct_23",
+        "lit_bad_bin2",
+        "lit_bad_trail_under"
+      ],
+      "correct_indices": [
+        2,
+        3
+      ]
+    },
+    {
+      "question": 5,
+      "id": "T6-Q005",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.5",
+      "kind": "S",
+      "correct_terms": [
+        "id_valid_flour"
+      ],
+      "option_terms": [
+        "id_bad_hyphen",
+        "id_bad_dollar",
+        "id_valid_flour",
+        "id_bad_digit"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 6,
+      "id": "T6-Q006",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.6",
+      "kind": "S",
+      "correct_terms": [
+        "flt_neg4_0"
+      ],
+      "option_terms": [
+        "num_neg4",
+        "num_neg2",
+        "flt_neg3_0",
+        "flt_neg4_0"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 7,
+      "id": "T6-Q007",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.7",
+      "kind": "S",
+      "correct_terms": [
+        "num_81"
+      ],
+      "option_terms": [
+        "num_18",
+        "num_81",
+        "num_27",
+        "num_36"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 8,
+      "id": "T6-Q008",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.8",
+      "kind": "M2",
+      "correct_terms": [
+        "op_lshift",
+        "op_rshift"
+      ],
+      "option_terms": [
+        "op_pow",
+        "op_rshift",
+        "op_floordiv",
+        "op_lshift",
+        "kw_and"
+      ],
+      "correct_indices": [
+        2,
+        4
+      ]
+    },
+    {
+      "question": 9,
+      "id": "T6-Q009",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.9",
+      "kind": "S",
+      "correct_terms": [
+        "op_imul"
+      ],
+      "option_terms": [
+        "op_mod",
+        "op_iadd",
+        "op_ifloordiv",
+        "op_imul"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 10,
+      "id": "T6-Q010",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.10",
+      "kind": "S",
+      "correct_terms": [
+        "io_out_url"
+      ],
+      "option_terms": [
+        "io_out_tags",
+        "io_out_two_lines",
+        "io_out_url",
+        "exc_type"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 11,
+      "id": "T6-Q011",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 1,
+      "task": "1.11",
+      "kind": "S",
+      "correct_terms": [
+        "cast_chr"
+      ],
+      "option_terms": [
+        "cast_int",
+        "cast_chr",
+        "cast_float",
+        "cast_ord"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 12,
+      "id": "T6-Q012",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.1",
+      "kind": "S",
+      "correct_terms": [
+        "kw_elif"
+      ],
+      "option_terms": [
+        "kw_else",
+        "kw_elif",
+        "kw_while",
+        "kw_with"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 13,
+      "id": "T6-Q013",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.1",
+      "kind": "S",
+      "correct_terms": [
+        "out_status_warn"
+      ],
+      "option_terms": [
+        "out_status_alert",
+        "out_status_crit",
+        "out_status_warn",
+        "out_status_ok"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 14,
+      "id": "T6-Q014",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.2",
+      "kind": "M2",
+      "correct_terms": [
+        "tern_valid_fee",
+        "tern_valid_badge"
+      ],
+      "option_terms": [
+        "tern_bad_c_style",
+        "tern_bad_order",
+        "tern_valid_fee",
+        "tern_bad_no_else",
+        "tern_valid_badge"
+      ],
+      "correct_indices": [
+        3,
+        5
+      ]
+    },
+    {
+      "question": 15,
+      "id": "T6-Q015",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.2",
+      "kind": "S",
+      "correct_terms": [
+        "num_16"
+      ],
+      "option_terms": [
+        "num_11",
+        "num_14",
+        "num_16",
+        "num_10"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 16,
+      "id": "T6-Q016",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.3",
+      "kind": "M2",
+      "correct_terms": [
+        "truthy_tuple_zero",
+        "truthy_dict_none"
+      ],
+      "option_terms": [
+        "truthy_dict_none",
+        "falsy_empty_dict",
+        "falsy_empty_tuple",
+        "truthy_tuple_zero",
+        "falsy_zero_float"
+      ],
+      "correct_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "question": 17,
+      "id": "T6-Q017",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.3",
+      "kind": "S",
+      "correct_terms": [
+        "out_status_idle"
+      ],
+      "option_terms": [
+        "out_status_idle",
+        "out_status_ok",
+        "exc_type",
+        "out_status_warn"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 18,
+      "id": "T6-Q018",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.4",
+      "kind": "S",
+      "correct_terms": [
+        "kw_not"
+      ],
+      "option_terms": [
+        "kw_not",
+        "kw_is",
+        "kw_or",
+        "kw_and"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 19,
+      "id": "T6-Q019",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.4",
+      "kind": "S",
+      "correct_terms": [
+        "val_false"
+      ],
+      "option_terms": [
+        "val_false",
+        "exc_type",
+        "val_true",
+        "num_0"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 20,
+      "id": "T6-Q020",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.5",
+      "kind": "S",
+      "correct_terms": [
+        "kw_while"
+      ],
+      "option_terms": [
+        "kw_pass",
+        "kw_elif",
+        "kw_while",
+        "kw_for"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 21,
+      "id": "T6-Q021",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.5",
+      "kind": "M2",
+      "correct_terms": [
+        "while_fin_dec",
+        "while_fin_div"
+      ],
+      "option_terms": [
+        "while_inf_mod",
+        "while_inf_pass",
+        "while_fin_dec",
+        "while_inf_inc",
+        "while_fin_div"
+      ],
+      "correct_indices": [
+        3,
+        5
+      ]
+    },
+    {
+      "question": 22,
+      "id": "T6-Q022",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.6",
+      "kind": "M2",
+      "correct_terms": [
+        "rng_empty_pos",
+        "rng_empty_neg"
+      ],
+      "option_terms": [
+        "rng_4_items_b",
+        "rng_3_items_a",
+        "rng_empty_neg",
+        "rng_empty_pos",
+        "rng_5_items"
+      ],
+      "correct_indices": [
+        3,
+        4
+      ]
+    },
+    {
+      "question": 23,
+      "id": "T6-Q023",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.6",
+      "kind": "S",
+      "correct_terms": [
+        "num_18"
+      ],
+      "option_terms": [
+        "num_27",
+        "num_12",
+        "num_18",
+        "num_9"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 24,
+      "id": "T6-Q024",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.7",
+      "kind": "S",
+      "correct_terms": [
+        "num_2"
+      ],
+      "option_terms": [
+        "num_5",
+        "exc_type",
+        "num_3",
+        "num_2"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 25,
+      "id": "T6-Q025",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.8",
+      "kind": "S",
+      "correct_terms": [
+        "kw_break"
+      ],
+      "option_terms": [
+        "kw_return",
+        "kw_break",
+        "kw_continue",
+        "kw_pass"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 26,
+      "id": "T6-Q026",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.8",
+      "kind": "S",
+      "correct_terms": [
+        "kw_pass"
+      ],
+      "option_terms": [
+        "kw_raise",
+        "kw_pass",
+        "kw_break",
+        "kw_continue"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 27,
+      "id": "T6-Q027",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.9",
+      "kind": "S",
+      "correct_terms": [
+        "out_loop_clean"
+      ],
+      "option_terms": [
+        "out_loop_empty",
+        "out_loop_halt",
+        "out_loop_clean",
+        "exc_syntax"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 28,
+      "id": "T6-Q028",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 2,
+      "task": "2.10",
+      "kind": "S",
+      "correct_terms": [
+        "num_8"
+      ],
+      "option_terms": [
+        "num_8",
+        "num_4",
+        "num_12",
+        "num_6"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 29,
+      "id": "T6-Q029",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "S",
+      "correct_terms": [
+        "lst_mid_20_30"
+      ],
+      "option_terms": [
+        "exc_index",
+        "lst_neg_tail",
+        "lst_rev_4321",
+        "lst_mid_20_30"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 30,
+      "id": "T6-Q030",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.1",
+      "kind": "S",
+      "correct_terms": [
+        "lst_extend_flat"
+      ],
+      "option_terms": [
+        "exc_type",
+        "val_none",
+        "lst_extend_flat",
+        "lst_append_nested"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 31,
+      "id": "T6-Q031",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.2",
+      "kind": "S",
+      "correct_terms": [
+        "lst_method_append_id"
+      ],
+      "option_terms": [
+        "lst_method_append_id",
+        "lst_method_remove_id",
+        "lst_method_extend_id",
+        "lst_method_pop_id"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 32,
+      "id": "T6-Q032",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.2",
+      "kind": "M2",
+      "correct_terms": [
+        "lst_mut_insert",
+        "lst_mut_sort"
+      ],
+      "option_terms": [
+        "lst_mut_sort",
+        "lst_mut_insert",
+        "lst_nonmut_plus",
+        "lst_nonmut_sorted",
+        "lst_nonmut_slice"
+      ],
+      "correct_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "question": 33,
+      "id": "T6-Q033",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.3",
+      "kind": "S",
+      "correct_terms": [
+        "kw_del"
+      ],
+      "option_terms": [
+        "kw_del",
+        "kw_with",
+        "kw_from",
+        "kw_pass"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 34,
+      "id": "T6-Q034",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.4",
+      "kind": "M2",
+      "correct_terms": [
+        "lst_nonmut_slice",
+        "lst_copy_method"
+      ],
+      "option_terms": [
+        "lst_mut_remove",
+        "lst_alias_assign",
+        "lst_nonmut_slice",
+        "lst_mut_pop",
+        "lst_copy_method"
+      ],
+      "correct_indices": [
+        3,
+        5
+      ]
+    },
+    {
+      "question": 35,
+      "id": "T6-Q035",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.5",
+      "kind": "S",
+      "correct_terms": [
+        "kw_for"
+      ],
+      "option_terms": [
+        "kw_for",
+        "kw_elif",
+        "kw_while",
+        "kw_with"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 36,
+      "id": "T6-Q036",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.6",
+      "kind": "S",
+      "correct_terms": [
+        "kw_in"
+      ],
+      "option_terms": [
+        "kw_in",
+        "kw_or",
+        "kw_is",
+        "kw_not"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 37,
+      "id": "T6-Q037",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.7",
+      "kind": "M2",
+      "correct_terms": [
+        "tup_singleton_comma",
+        "tup_bare_comma"
+      ],
+      "option_terms": [
+        "falsy_empty_dict",
+        "tup_singleton_comma",
+        "tup_empty_ctor",
+        "tup_parens_int",
+        "tup_bare_comma"
+      ],
+      "correct_indices": [
+        2,
+        5
+      ]
+    },
+    {
+      "question": 38,
+      "id": "T6-Q038",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.8",
+      "kind": "S",
+      "correct_terms": [
+        "num_neg6"
+      ],
+      "option_terms": [
+        "exc_type",
+        "num_neg6",
+        "num_neg2",
+        "num_5"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 39,
+      "id": "T6-Q039",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.9",
+      "kind": "M2",
+      "correct_terms": [
+        "dict_get_default",
+        "dict_pop_default"
+      ],
+      "option_terms": [
+        "dict_pop_default",
+        "try_bad_comma_py2",
+        "dict_get_default",
+        "dict_idx_keyerr",
+        "arg_bad_dup_base"
+      ],
+      "correct_indices": [
+        1,
+        3
+      ]
+    },
+    {
+      "question": 40,
+      "id": "T6-Q040",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.10",
+      "kind": "S",
+      "correct_terms": [
+        "dict_method_items"
+      ],
+      "option_terms": [
+        "lst_method_pop_id",
+        "dict_method_get",
+        "str_method_find",
+        "dict_method_items"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 41,
+      "id": "T6-Q041",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.11",
+      "kind": "S",
+      "correct_terms": [
+        "str_slice_rev"
+      ],
+      "option_terms": [
+        "str_slice_step2",
+        "str_slice_rev",
+        "exc_index",
+        "val_none"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 42,
+      "id": "T6-Q042",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.12",
+      "kind": "S",
+      "correct_terms": [
+        "str_upper_lower"
+      ],
+      "option_terms": [
+        "str_ascii_false",
+        "dict_vals_check",
+        "flt_exact_true",
+        "str_upper_lower"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 43,
+      "id": "T6-Q043",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 3,
+      "task": "3.12",
+      "kind": "S",
+      "correct_terms": [
+        "str_method_find"
+      ],
+      "option_terms": [
+        "str_method_index",
+        "str_method_split",
+        "str_method_replace",
+        "str_method_find"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 44,
+      "id": "T6-Q044",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "S",
+      "correct_terms": [
+        "kw_def"
+      ],
+      "option_terms": [
+        "kw_bad_func",
+        "kw_bad_var",
+        "kw_lambda",
+        "kw_def"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 45,
+      "id": "T6-Q045",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.1",
+      "kind": "M2",
+      "correct_terms": [
+        "fn_implicit_none",
+        "fn_return_tuple"
+      ],
+      "option_terms": [
+        "rec_needs_global",
+        "fn_return_tuple",
+        "rec_needs_yield",
+        "flt_exact_true",
+        "fn_implicit_none"
+      ],
+      "correct_indices": [
+        2,
+        5
+      ]
+    },
+    {
+      "question": 46,
+      "id": "T6-Q046",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "S",
+      "correct_terms": [
+        "kw_yield"
+      ],
+      "option_terms": [
+        "kw_return",
+        "kw_yield",
+        "kw_break",
+        "kw_pass"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 47,
+      "id": "T6-Q047",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.2",
+      "kind": "M2",
+      "correct_terms": [
+        "gen_returns_iter",
+        "gen_pause_resume"
+      ],
+      "option_terms": [
+        "aot_elf_binary",
+        "interp_rollback_all",
+        "gen_returns_iter",
+        "gen_pause_resume",
+        "pyc_encrypt_source"
+      ],
+      "correct_indices": [
+        3,
+        4
+      ]
+    },
+    {
+      "question": 48,
+      "id": "T6-Q048",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.3",
+      "kind": "S",
+      "correct_terms": [
+        "num_120"
+      ],
+      "option_terms": [
+        "exc_recursion",
+        "num_15",
+        "num_120",
+        "num_24"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 49,
+      "id": "T6-Q049",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.3",
+      "kind": "S",
+      "correct_terms": [
+        "rec_missing_base"
+      ],
+      "option_terms": [
+        "rec_missing_base",
+        "num_0",
+        "exc_syntax",
+        "val_none"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 50,
+      "id": "T6-Q050",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "S",
+      "correct_terms": [
+        "num_32"
+      ],
+      "option_terms": [
+        "num_32",
+        "exc_syntax",
+        "exc_type",
+        "num_24"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 51,
+      "id": "T6-Q051",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.4",
+      "kind": "S",
+      "correct_terms": [
+        "exc_type"
+      ],
+      "option_terms": [
+        "num_32",
+        "exc_key",
+        "exc_type",
+        "val_none"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 52,
+      "id": "T6-Q052",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.5",
+      "kind": "M2",
+      "correct_terms": [
+        "mut_default_shared",
+        "mut_default_none_fix"
+      ],
+      "option_terms": [
+        "pyc_encrypt_source",
+        "mut_default_none_fix",
+        "flt_exact_true",
+        "mut_default_shared",
+        "rec_needs_global"
+      ],
+      "correct_indices": [
+        2,
+        4
+      ]
+    },
+    {
+      "question": 53,
+      "id": "T6-Q053",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.5",
+      "kind": "S",
+      "correct_terms": [
+        "flt_3_5"
+      ],
+      "option_terms": [
+        "flt_3_5",
+        "num_3",
+        "exc_type",
+        "flt_2_5"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 54,
+      "id": "T6-Q054",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.6",
+      "kind": "S",
+      "correct_terms": [
+        "kw_global"
+      ],
+      "option_terms": [
+        "kw_with",
+        "kw_global",
+        "kw_nonlocal",
+        "kw_from"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 55,
+      "id": "T6-Q055",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.6",
+      "kind": "S",
+      "correct_terms": [
+        "num_13"
+      ],
+      "option_terms": [
+        "exc_unbound",
+        "num_3",
+        "exc_name",
+        "num_13"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 56,
+      "id": "T6-Q056",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.7",
+      "kind": "S",
+      "correct_terms": [
+        "exc_arith"
+      ],
+      "option_terms": [
+        "exc_lookup",
+        "exc_key",
+        "exc_arith",
+        "exc_value"
+      ],
+      "correct_indices": [
+        3
+      ]
+    },
+    {
+      "question": 57,
+      "id": "T6-Q057",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.7",
+      "kind": "S",
+      "correct_terms": [
+        "exc_lookup"
+      ],
+      "option_terms": [
+        "exc_syntax",
+        "exc_lookup",
+        "exc_type",
+        "exc_arith"
+      ],
+      "correct_indices": [
+        2
+      ]
+    },
+    {
+      "question": 58,
+      "id": "T6-Q058",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.8",
+      "kind": "S",
+      "correct_terms": [
+        "kw_assert"
+      ],
+      "option_terms": [
+        "kw_assert",
+        "kw_finally",
+        "kw_except",
+        "kw_from"
+      ],
+      "correct_indices": [
+        1
+      ]
+    },
+    {
+      "question": 59,
+      "id": "T6-Q059",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.8",
+      "kind": "S",
+      "correct_terms": [
+        "exc_value"
+      ],
+      "option_terms": [
+        "exc_index",
+        "exc_key",
+        "exc_type",
+        "exc_value"
+      ],
+      "correct_indices": [
+        4
+      ]
+    },
+    {
+      "question": 60,
+      "id": "T6-Q060",
+      "topic": "Full-Length Mock Exam 6",
+      "domain": 4,
+      "task": "4.9",
+      "kind": "M2",
+      "correct_terms": [
+        "try_out_try_exc_fin",
+        "try_finally_meaning"
+      ],
+      "option_terms": [
+        "flt_exact_true",
+        "try_finally_meaning",
+        "try_out_try_exc_fin",
+        "try_out_all_four",
+        "interp_rollback_all"
+      ],
+      "correct_indices": [
+        2,
+        3
+      ]
+    }
+  ]
+}
