@@ -27,6 +27,7 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 | Microsoft AB-410 — Intelligent Applications Builder Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
 | Microsoft DP-700 — Fabric Data Engineer Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
 | Microsoft PL-300 — Power BI Data Analyst Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
+| Microsoft AZ-204 — Developing Solutions for Microsoft Azure | 6 | 600 | Per-option explanations, Jan 2026 blueprint weighting, `____` SDK/CLI/XML/KQL fills, `→` sequences, 24 case studies, July 31, 2026 retirement / AI-200 notice |
 | PCEP™ – Certified Entry-Level Python Programmer (PCEP-30-02) | 6 | 360 | Per-option explanations, CPython-verified, `____` code-fill items, 2x live bank at live pace, no case studies |
 | PCEP™ – Certified Entry-Level Python Programmer (PCEP-30-03) | 6 | 360 | Per-option explanations, 360 fresh CPython-verified items, `____` code-fill items, 2x live bank at live pace, pre-release `PCEP-30-0x` baseline |
 
@@ -329,6 +330,17 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 - **Format & scope boundary:** interactive drag-and-drop, sort, and multi-slot code-insertion widgets on OpenEDG TestNow™ cannot exist in a 17-column CSV and are excluded and disclosed; `PCEP-30-0x` has no case studies; PCAP-31-03 topics (classes/OOP, `pip`, file streams, closures) are kept out of scope.
 - **Location:** [`course/PCEP-30-03/`](PCEP-30-03/README.md)
 - **Publication:** Post-October 31, 2026 syllabus check, expert technical review, and account-level import preview required; no Udemy publication performed.
+
+### Microsoft AZ-204 — Developing Solutions for Microsoft Azure
+
+- **Status:** Six 100-item full-length mock exams; 600 original Azure developer items with mixed formats, code/CLI/XML/JSON/KQL completions, ordered sequences, case studies, and per-option explanations.
+- **Includes:** Udemy CSVs (`practice-set-N.csv` and self-contained `case-embedded-set-N.csv`), offline Markdown review copies, a 12-question case-study sample upload, instructor landing page, 37-skill curriculum outline, case-study upload guide, sources/coverage, QA suite, and reproducible `AZ-204-6x100.zip`.
+- **Organization:** Every exam is weighted **28 / 18 / 19 / 10 / 25** across the five official January 14, 2026 AZ-204 functional groups (25–30% / 15–20% / 15–20% / 5–10% / 20–25% = 100%); all 37 local study-map skills are practiced in every exam, and retired pre-2026 topics (VMs, Logic Apps, Notification Hubs, Azure CDN, and Azure Cache for Redis) are excluded.
+- **Item mix & pattern parity:** 84 exported `multiple-choice` items (76 single-answer + 8 four-step `→` sequence items, balanced 21 / 21 / 21 / 21 across slots A–D, including 28–33 `____` completion items and 6–9 `Proposed solution:` evaluations per set), 16 `multi-select` items (13 five-option `Select two.` + 3 six-option `Select three.`, spread 4 / 3 / 3 / 2 / 4 across Domains 1–5), and four 3-question original enterprise case studies per exam (24 scenarios total; zero Microsoft named scenarios).
+- **Retirement & credential transition notice (checked October 29, 2026):** Microsoft **retired Exam AZ-204 (`Microsoft Certified: Azure Developer Associate`) on July 31, 2026** and introduced **Exam AI-200 (`Azure AI Cloud Developer Associate`)** as its successor. Historical exam policies are stated transparently (100-minute exam time, 40–60 live questions, $165 USD in the US, scaled passing score `700 / 1000` — never equated to a raw percentage).
+- **Format boundary:** Interactive Pearson VUE drag-and-drop tiles, inline hot-area code dropdowns, split-pane tabbed case exhibits, live labs, and locked non-returnable Yes/No series cannot be imported via Udemy CSV and are adapted into text-complete stems and explicit candidate options.
+- **Location:** [`course/AZ-204/`](AZ-204/README.md)
+- **Publication:** Expert Azure developer review and account-level Udemy import preview required; no platform publication performed.
 
 ---
 
