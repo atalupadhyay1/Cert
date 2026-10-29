@@ -24,6 +24,14 @@ FIELDS = (
     ('audience', re.compile(r'^#{2,3}\s*(?:\d+\.\s*)?who (?:is )?this course (?:is )?for', re.I | re.M),
      'Who is this course for?'),
 )
+PROSE_SECTIONS = (
+    ('description', re.compile(r'^#{2,3}\s*(?:\d+\.\s*)?course description', re.I | re.M),
+     'Course Description'),
+    ('welcome', re.compile(r'^#{2,3}\s*.*welcome message', re.I | re.M),
+     'Welcome Message'),
+    ('congratulations', re.compile(r'^#{2,3}\s*.*congratulations message', re.I | re.M),
+     'Congratulations Message'),
+)
 PLACEHOLDERS = ('TODO', 'TBD', 'PLACEHOLDER', 'lorem ipsum')
 
 
@@ -52,6 +60,17 @@ def check(path):
         items = len(re.findall(r'^\s*(?:[•\-*]|\d+\.)\s+\S', body, re.M))
         if items < 3:
             problems.append(f'only {items} item(s) in: {label} (need at least 3)')
+    for name, pattern, label in PROSE_SECTIONS:
+        match = pattern.search(text)
+        if not match:
+            problems.append(f'missing section: {label}')
+            continue
+        body = section_body(text, match).strip()
+        if len(body) < 80:
+            problems.append(f'too short or empty section: {label}')
+            continue
+        if re.search(r'\b(?:TODO|TBD|PLACEHOLDER)\b', body) or 'lorem ipsum' in body.casefold():
+            problems.append(f'placeholder token in: {label}')
     return problems
 
 
