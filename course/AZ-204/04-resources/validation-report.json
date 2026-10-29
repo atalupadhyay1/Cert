@@ -1,0 +1,353 @@
+{
+  "exam": "AZ-204",
+  "title": "Developing Solutions for Microsoft Azure",
+  "total_questions": 600,
+  "sets": 6,
+  "questions_per_set": 100,
+  "skills_covered": 37,
+  "case_studies_total": 24,
+  "terms_total": 167,
+  "unused_terms": 0,
+  "max_stem_jaccard": 0.6429,
+  "max_stem_jaccard_pair": [
+    "T3-Q078",
+    "T6-Q079"
+  ],
+  "set_reports": {
+    "set-1": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Develop Azure compute solutions": 28,
+          "Develop for Azure storage": 18,
+          "Implement Azure security": 19,
+          "Monitor, troubleshoot, and optimize Azure solutions": 10,
+          "Connect to and consume Azure services and third-party services": 25
+        },
+        "types": {
+          "multi-select": 16,
+          "multiple-choice": 84
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 357
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Develop Azure compute solutions": 28,
+          "Develop for Azure storage": 18,
+          "Implement Azure security": 19,
+          "Monitor, troubleshoot, and optimize Azure solutions": 10,
+          "Connect to and consume Azure services and third-party services": 25
+        },
+        "types": {
+          "multi-select": 16,
+          "multiple-choice": 84
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 751
+      },
+      "code_completion_items": 28,
+      "proposed_solution_items": 8,
+      "cases": [
+        "Vespera Retail",
+        "Kova Footwear",
+        "BriskCart Loyalty",
+        "Cinder Coffee Roasters"
+      ]
+    },
+    "set-2": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Develop Azure compute solutions": 28,
+          "Develop for Azure storage": 18,
+          "Implement Azure security": 19,
+          "Monitor, troubleshoot, and optimize Azure solutions": 10,
+          "Connect to and consume Azure services and third-party services": 25
+        },
+        "types": {
+          "multi-select": 16,
+          "multiple-choice": 84
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 363
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Develop Azure compute solutions": 28,
+          "Develop for Azure storage": 18,
+          "Implement Azure security": 19,
+          "Monitor, troubleshoot, and optimize Azure solutions": 10,
+          "Connect to and consume Azure services and third-party services": 25
+        },
+        "types": {
+          "multi-select": 16,
+          "multiple-choice": 84
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 706
+      },
+      "code_completion_items": 33,
+      "proposed_solution_items": 9,
+      "cases": [
+        "Aurelia Health",
+        "Trellis Diagnostics",
+        "Vireo Specialty Pharmacy",
+        "Solace Telemed"
+      ]
+    },
+    "set-3": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Develop Azure compute solutions": 28,
+          "Develop for Azure storage": 18,
+          "Implement Azure security": 19,
+          "Monitor, troubleshoot, and optimize Azure solutions": 10,
+          "Connect to and consume Azure services and third-party services": 25
+        },
+        "types": {
+          "multi-select": 16,
+          "multiple-choice": 84
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 363
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Develop Azure compute solutions": 28,
+          "Develop for Azure storage": 18,
+          "Implement Azure security": 19,
+          "Monitor, troubleshoot, and optimize Azure solutions": 10,
+          "Connect to and consume Azure services and third-party services": 25
+        },
+        "types": {
+          "multi-select": 16,
+          "multiple-choice": 84
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 669
+      },
+      "code_completion_items": 31,
+      "proposed_solution_items": 6,
+      "cases": [
+        "Crestline Clearing",
+        "Halcyon Custody",
+        "Pillar Remit",
+        "Bramble Insure"
+      ]
+    },
+    "set-4": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Develop Azure compute solutions": 28,
+          "Develop for Azure storage": 18,
+          "Implement Azure security": 19,
+          "Monitor, troubleshoot, and optimize Azure solutions": 10,
+          "Connect to and consume Azure services and third-party services": 25
+        },
+        "types": {
+          "multi-select": 16,
+          "multiple-choice": 84
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 335
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Develop Azure compute solutions": 28,
+          "Develop for Azure storage": 18,
+          "Implement Azure security": 19,
+          "Monitor, troubleshoot, and optimize Azure solutions": 10,
+          "Connect to and consume Azure services and third-party services": 25
+        },
+        "types": {
+          "multi-select": 16,
+          "multiple-choice": 84
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 694
+      },
+      "code_completion_items": 33,
+      "proposed_solution_items": 6,
+      "cases": [
+        "Strider ColdChain",
+        "Mariner PortOps",
+        "Zephyr Parcel",
+        "Aegis Rail"
+      ]
+    },
+    "set-5": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Develop Azure compute solutions": 28,
+          "Develop for Azure storage": 18,
+          "Implement Azure security": 19,
+          "Monitor, troubleshoot, and optimize Azure solutions": 10,
+          "Connect to and consume Azure services and third-party services": 25
+        },
+        "types": {
+          "multi-select": 16,
+          "multiple-choice": 84
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 331
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Develop Azure compute solutions": 28,
+          "Develop for Azure storage": 18,
+          "Implement Azure security": 19,
+          "Monitor, troubleshoot, and optimize Azure solutions": 10,
+          "Connect to and consume Azure services and third-party services": 25
+        },
+        "types": {
+          "multi-select": 16,
+          "multiple-choice": 84
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 680
+      },
+      "code_completion_items": 33,
+      "proposed_solution_items": 6,
+      "cases": [
+        "QuillSign SaaS",
+        "Pulsar Metrics",
+        "Loomis Cloud ERP",
+        "Cobalt FieldService"
+      ]
+    },
+    "set-6": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Develop Azure compute solutions": 28,
+          "Develop for Azure storage": 18,
+          "Implement Azure security": 19,
+          "Monitor, troubleshoot, and optimize Azure solutions": 10,
+          "Connect to and consume Azure services and third-party services": 25
+        },
+        "types": {
+          "multi-select": 16,
+          "multiple-choice": 84
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 337
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Develop Azure compute solutions": 28,
+          "Develop for Azure storage": 18,
+          "Implement Azure security": 19,
+          "Monitor, troubleshoot, and optimize Azure solutions": 10,
+          "Connect to and consume Azure services and third-party services": 25
+        },
+        "types": {
+          "multi-select": 16,
+          "multiple-choice": 84
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 661
+      },
+      "code_completion_items": 33,
+      "proposed_solution_items": 6,
+      "cases": [
+        "Lyric Arena Ticketing",
+        "NovaGrid Energy",
+        "EmberPlay Studios",
+        "Prism Newsroom"
+      ]
+    },
+    "sample": {
+      "rows": 12,
+      "domains": {
+        "Connect to and consume Azure services and third-party services": 4,
+        "Develop Azure compute solutions": 2,
+        "Monitor, troubleshoot, and optimize Azure solutions": 1,
+        "Implement Azure security": 3,
+        "Develop for Azure storage": 2
+      },
+      "types": {
+        "multiple-choice": 12
+      },
+      "single_slots": {
+        "A": 1,
+        "B": 2,
+        "C": 6,
+        "D": 3
+      },
+      "max_question_chars": 751
+    }
+  },
+  "passed": true,
+  "error_count": 0,
+  "errors": []
+}
