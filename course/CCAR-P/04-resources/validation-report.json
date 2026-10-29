@@ -1,0 +1,135 @@
+{
+  "status": "PASS",
+  "sets": 6,
+  "total_questions": 378,
+  "checks": [
+    "17-column Udemy Bulk Question Uploader header",
+    "63 items per set matching the live CCAR-P paper length",
+    "7-domain blueprint allocation per set (11 / 8 / 12 / 10 / 9 / 9 / 4)",
+    "48 four-option multiple-choice items balanced 12 / 12 / 12 / 12 across slots 1-4",
+    "12 five-option Select-two and 3 six-option Select-three multiple-response items",
+    "structured adaptations of suitability, sound-practice, and Pre/Model/Post layer categorization items",
+    "per-option explanations and official CCAR-P Exam Guide (v1.0) + Anthropic doc references",
+    "no multi-question case-study blocks and no console-click instructions",
+    "cross-exam near-duplicate stem gate (content-word Jaccard <= 0.72 across 378 items)",
+    "bank-wide normalized stem uniqueness"
+  ],
+  "limitations": [
+    "No independent Anthropic review or endorsement",
+    "No psychometric difficulty calibration against the live scaled 100\u20131,000 exam",
+    "Interactive Pearson VUE Hotspot / matrix table widgets are adapted into MC and multi-select stems because Udemy CSV supports only multiple-choice and multi-select",
+    "Aligned to CCAR-P Exam Guide v1.0 (July 2026); Anthropic announced an exam update effective December 7, 2026 (guide due November 17, 2026)",
+    "No live Udemy account import performed"
+  ],
+  "files": [
+    {
+      "file": "03-practice-sets/set-1/practice-set-1.csv",
+      "questions": 63,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 48,
+        "multi-select": 15
+      },
+      "domains": {
+        "Solution Design & Architecture": 11,
+        "Claude Models, Prompting & Context Engineering": 8,
+        "Integration": 12,
+        "Evaluation, Testing & Optimization": 10,
+        "Governance, Safety & Risk Management": 9,
+        "Stakeholder Communication & Lifecycle Management": 9,
+        "Developer Productivity & Operational Enablement": 4
+      }
+    },
+    {
+      "file": "03-practice-sets/set-2/practice-set-2.csv",
+      "questions": 63,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 48,
+        "multi-select": 15
+      },
+      "domains": {
+        "Solution Design & Architecture": 11,
+        "Claude Models, Prompting & Context Engineering": 8,
+        "Integration": 12,
+        "Evaluation, Testing & Optimization": 10,
+        "Governance, Safety & Risk Management": 9,
+        "Stakeholder Communication & Lifecycle Management": 9,
+        "Developer Productivity & Operational Enablement": 4
+      }
+    },
+    {
+      "file": "03-practice-sets/set-3/practice-set-3.csv",
+      "questions": 63,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 48,
+        "multi-select": 15
+      },
+      "domains": {
+        "Solution Design & Architecture": 11,
+        "Claude Models, Prompting & Context Engineering": 8,
+        "Integration": 12,
+        "Evaluation, Testing & Optimization": 10,
+        "Governance, Safety & Risk Management": 9,
+        "Stakeholder Communication & Lifecycle Management": 9,
+        "Developer Productivity & Operational Enablement": 4
+      }
+    },
+    {
+      "file": "03-practice-sets/set-4/practice-set-4.csv",
+      "questions": 63,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 48,
+        "multi-select": 15
+      },
+      "domains": {
+        "Solution Design & Architecture": 11,
+        "Claude Models, Prompting & Context Engineering": 8,
+        "Integration": 12,
+        "Evaluation, Testing & Optimization": 10,
+        "Governance, Safety & Risk Management": 9,
+        "Stakeholder Communication & Lifecycle Management": 9,
+        "Developer Productivity & Operational Enablement": 4
+      }
+    },
+    {
+      "file": "03-practice-sets/set-5/practice-set-5.csv",
+      "questions": 63,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 48,
+        "multi-select": 15
+      },
+      "domains": {
+        "Solution Design & Architecture": 11,
+        "Claude Models, Prompting & Context Engineering": 8,
+        "Integration": 12,
+        "Evaluation, Testing & Optimization": 10,
+        "Governance, Safety & Risk Management": 9,
+        "Stakeholder Communication & Lifecycle Management": 9,
+        "Developer Productivity & Operational Enablement": 4
+      }
+    },
+    {
+      "file": "03-practice-sets/set-6/practice-set-6.csv",
+      "questions": 63,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 48,
+        "multi-select": 15
+      },
+      "domains": {
+        "Solution Design & Architecture": 11,
+        "Claude Models, Prompting & Context Engineering": 8,
+        "Integration": 12,
+        "Evaluation, Testing & Optimization": 10,
+        "Governance, Safety & Risk Management": 9,
+        "Stakeholder Communication & Lifecycle Management": 9,
+        "Developer Productivity & Operational Enablement": 4
+      }
+    }
+  ],
+  "errors": []
+}
