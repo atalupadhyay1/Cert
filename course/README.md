@@ -28,6 +28,7 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 | Microsoft DP-700 — Fabric Data Engineer Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
 | Microsoft PL-300 — Power BI Data Analyst Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
 | Microsoft AZ-204 — Developing Solutions for Microsoft Azure | 6 | 600 | Per-option explanations, Jan 2026 blueprint weighting, `____` SDK/CLI/XML/KQL fills, `→` sequences, 24 case studies, July 31, 2026 retirement / AI-200 notice |
+| Microsoft AZ-400 — Designing and Implementing Microsoft DevOps Solutions | 6 | 600 | Per-option explanations, Jul 2026 blueprint weighting, `____` YAML/CLI/Bicep/Git/KQL fills, `→` sequences, 24 case studies, AZ-104/AZ-204 prereq & Feb 1, 2027 retirement / AZ-401 notice |
 | PCEP™ – Certified Entry-Level Python Programmer (PCEP-30-02) | 6 | 360 | Per-option explanations, CPython-verified, `____` code-fill items, 2x live bank at live pace, no case studies |
 | PCEP™ – Certified Entry-Level Python Programmer (PCEP-30-03) | 6 | 360 | Per-option explanations, 360 fresh CPython-verified items, `____` code-fill items, 2x live bank at live pace, pre-release `PCEP-30-0x` baseline |
 
@@ -341,6 +342,17 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 - **Format boundary:** Interactive Pearson VUE drag-and-drop tiles, inline hot-area code dropdowns, split-pane tabbed case exhibits, live labs, and locked non-returnable Yes/No series cannot be imported via Udemy CSV and are adapted into text-complete stems and explicit candidate options.
 - **Location:** [`course/AZ-204/`](AZ-204/README.md)
 - **Publication:** Expert Azure developer review and account-level Udemy import preview required; no platform publication performed.
+
+### Microsoft AZ-400 — Designing and Implementing Microsoft DevOps Solutions
+
+- **Status:** Six 100-item full-length mock exams; 600 original DevOps Engineer Expert items with mixed formats, YAML/CLI/Bicep/Git/KQL completions, ordered sequences, case studies, and per-option explanations.
+- **Includes:** Udemy CSVs (`practice-set-N.csv` and self-contained `case-embedded-set-N.csv`), offline Markdown review copies, a 12-question case-study sample upload, instructor landing page, 34-skill curriculum outline, case-study upload guide, sources/coverage, QA suite, and reproducible `AZ-400-6x100.zip`.
+- **Organization:** Every exam is weighted **12 / 13 / 52 / 14 / 9** across the five official July 27, 2026 AZ-400 functional groups (10–15% / 10–15% / 50–55% / 10–15% / 5–10% = 100%); all 34 local study-map skills are practiced in every exam, and obsolete TFS/TFVC/MMA trivia is excluded in favor of Azure DevOps + GitHub Enterprise, Managed DevOps Pools, Workload Identity Federation (OIDC), GHAS/GHAzDO, Defender for Cloud DevOps Security, Bicep Deployment Stacks, Azure Machine Configuration, Azure Deployment Environments, and AMA Data Collection Rules.
+- **Item mix & pattern parity:** 84 exported `multiple-choice` items (76 single-answer + 8 four-step `→` sequence items, balanced 21 / 21 / 21 / 21 across slots A–D, including 17–29 `____` completion items and 6–7 `Proposed solution:` evaluations per set), 16 `multi-select` items (13 five-option `Select two.` + 3 six-option `Select three.`, spread 2 / 2 / 8 / 2 / 2 across Domains 1–5), and four 3-question original enterprise DevOps case studies per exam (24 scenarios total; zero Microsoft named scenarios).
+- **Prerequisite & scheduled retirement notice (checked October 29, 2026):** Earning `Microsoft Certified: DevOps Engineer Expert` requires passing **AZ-400** plus holding an active **AZ-104** (`Azure Administrator Associate`) or active pre-retirement **AZ-204** (`Azure Developer Associate`) certification. Exam AZ-400 is live today (`100 min` / `120 min` if labs active, `40–60` questions, `$165 USD` in the US, scaled passing score `700 / 1000` — never equated to a raw percentage) and scheduled to **retire on February 1, 2027**, succeeded by **Exam AZ-401 (`Designing and Implementing Microsoft Agentic DevOps Solutions` -> `Agentic DevOps Engineer Expert`)**.
+- **Format boundary:** Interactive Pearson VUE drag-and-drop tiles, inline hot-area dropdowns, split-pane tabbed case exhibits, live labs, and locked non-returnable Yes/No series cannot be imported via Udemy CSV and are adapted into text-complete stems and explicit candidate options.
+- **Location:** [`course/AZ-400/`](AZ-400/README.md)
+- **Publication:** Expert DevOps engineering review and account-level Udemy import preview required; no platform publication performed.
 
 ---
 
