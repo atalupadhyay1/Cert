@@ -1,0 +1,126 @@
+{
+  "status": "PASS",
+  "sets": 6,
+  "total_questions": 360,
+  "checks": [
+    "17-column header",
+    "60 items per set",
+    "published block allocation per set (18 / 29 / 25 / 28 percent, 11 / 17 / 15 / 17 items)",
+    "four-option single-answer items",
+    "at least 15 single-blank (____) gap-fill / code-fill items per set",
+    "Question Type restricted to multiple-choice or multi-select",
+    "five-option multiple-response items with stated selection count",
+    "two correct indices for multiple-response items",
+    "per-option explanations",
+    "official exam-syllabus references",
+    "source consistency",
+    "no case-study wording",
+    "CPython 3.11 verified outputs and exception behaviours",
+    "cross-exam near-duplicate stems (token overlap <= 0.72)",
+    "bank-wide stem uniqueness",
+    "normalized duplicate wording",
+    "balanced single-answer slots"
+  ],
+  "limitations": [
+    "No independent psychometric calibration against the live exam",
+    "Interactive drag-and-drop, sort, and multi-slot code-insertion widgets are excluded by the CSV contract",
+    "No exhaustive semantic duplicate detection",
+    "No Udemy account import performed",
+    "Multiple-choice, gap-fill-styled, and multiple-response counts are authoring choices because the Python Institute publishes no fixed split",
+    "PCEP-30-03 is scheduled for release on October 31, 2026; this package targets PCEP-30-02",
+    "No continuous live URL verification"
+  ],
+  "files": [
+    {
+      "file": "03-practice-sets/set-1/practice-set-1.csv",
+      "questions": 60,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 45,
+        "multi-select": 15
+      },
+      "domains": {
+        "Computer Programming and Python Fundamentals": 11,
+        "Control Flow \u2013 Conditional Blocks and Loops": 17,
+        "Data Collections \u2013 Tuples, Dictionaries, Lists, and Strings": 15,
+        "Functions and Exceptions": 17
+      }
+    },
+    {
+      "file": "03-practice-sets/set-2/practice-set-2.csv",
+      "questions": 60,
+      "status": "PASS",
+      "types": {
+        "multi-select": 15,
+        "multiple-choice": 45
+      },
+      "domains": {
+        "Computer Programming and Python Fundamentals": 11,
+        "Control Flow \u2013 Conditional Blocks and Loops": 17,
+        "Data Collections \u2013 Tuples, Dictionaries, Lists, and Strings": 15,
+        "Functions and Exceptions": 17
+      }
+    },
+    {
+      "file": "03-practice-sets/set-3/practice-set-3.csv",
+      "questions": 60,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 45,
+        "multi-select": 15
+      },
+      "domains": {
+        "Computer Programming and Python Fundamentals": 11,
+        "Control Flow \u2013 Conditional Blocks and Loops": 17,
+        "Data Collections \u2013 Tuples, Dictionaries, Lists, and Strings": 15,
+        "Functions and Exceptions": 17
+      }
+    },
+    {
+      "file": "03-practice-sets/set-4/practice-set-4.csv",
+      "questions": 60,
+      "status": "PASS",
+      "types": {
+        "multi-select": 15,
+        "multiple-choice": 45
+      },
+      "domains": {
+        "Computer Programming and Python Fundamentals": 11,
+        "Control Flow \u2013 Conditional Blocks and Loops": 17,
+        "Data Collections \u2013 Tuples, Dictionaries, Lists, and Strings": 15,
+        "Functions and Exceptions": 17
+      }
+    },
+    {
+      "file": "03-practice-sets/set-5/practice-set-5.csv",
+      "questions": 60,
+      "status": "PASS",
+      "types": {
+        "multiple-choice": 45,
+        "multi-select": 15
+      },
+      "domains": {
+        "Computer Programming and Python Fundamentals": 11,
+        "Control Flow \u2013 Conditional Blocks and Loops": 17,
+        "Data Collections \u2013 Tuples, Dictionaries, Lists, and Strings": 15,
+        "Functions and Exceptions": 17
+      }
+    },
+    {
+      "file": "03-practice-sets/set-6/practice-set-6.csv",
+      "questions": 60,
+      "status": "PASS",
+      "types": {
+        "multi-select": 15,
+        "multiple-choice": 45
+      },
+      "domains": {
+        "Computer Programming and Python Fundamentals": 11,
+        "Control Flow \u2013 Conditional Blocks and Loops": 17,
+        "Data Collections \u2013 Tuples, Dictionaries, Lists, and Strings": 15,
+        "Functions and Exceptions": 17
+      }
+    }
+  ],
+  "errors": []
+}
