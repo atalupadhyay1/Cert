@@ -1,0 +1,339 @@
+{
+  "exam": "DP-600",
+  "title": "Implementing Analytics Solutions Using Microsoft Fabric",
+  "credential": "Microsoft Certified: Fabric Analytics Engineer Associate",
+  "study_guide_baseline": "October 19, 2026",
+  "prerequisites": "None (Associate-level certification)",
+  "total_questions": 600,
+  "sets": 6,
+  "questions_per_set": 100,
+  "skills_covered": 41,
+  "domain_allocation_per_set": {
+    "Maintain a data analytics solution": 26,
+    "Prepare data": 47,
+    "Implement and manage semantic models": 27
+  },
+  "export_type_plan": {
+    "multiple-choice": 84,
+    "multi-select": 16
+  },
+  "total_terms": 206,
+  "used_terms": 206,
+  "unused_terms": 0,
+  "total_cases": 24,
+  "max_stem_jaccard": 0.6667,
+  "max_jaccard_pair": [
+    "T1-Q025",
+    "T4-Q026"
+  ],
+  "set_reports": {
+    "set-1": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Maintain a data analytics solution": 26,
+          "Prepare data": 47,
+          "Implement and manage semantic models": 27
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 367
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Maintain a data analytics solution": 26,
+          "Prepare data": 47,
+          "Implement and manage semantic models": 27
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 660
+      },
+      "code_completion_items": 24,
+      "proposed_solution_items": 7,
+      "cases": [
+        "Solstice Apparel",
+        "CartVerve Marketplace",
+        "ShelfPulse POS",
+        "LoomCraft Home"
+      ]
+    },
+    "set-2": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Maintain a data analytics solution": 26,
+          "Prepare data": 47,
+          "Implement and manage semantic models": 27
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 342
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Maintain a data analytics solution": 26,
+          "Prepare data": 47,
+          "Implement and manage semantic models": 27
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 675
+      },
+      "code_completion_items": 24,
+      "proposed_solution_items": 8,
+      "cases": [
+        "AetherCare Health",
+        "BioTrace Diagnostics",
+        "MedBridge Claims",
+        "VitalsCore Analytics"
+      ]
+    },
+    "set-3": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Maintain a data analytics solution": 26,
+          "Prepare data": 47,
+          "Implement and manage semantic models": 27
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 328
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Maintain a data analytics solution": 26,
+          "Prepare data": 47,
+          "Implement and manage semantic models": 27
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 609
+      },
+      "code_completion_items": 23,
+      "proposed_solution_items": 8,
+      "cases": [
+        "ClearLedger Bank",
+        "FraudShield Pay",
+        "Meridian Wealth",
+        "SwiftSettle FX"
+      ]
+    },
+    "set-4": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Maintain a data analytics solution": 26,
+          "Prepare data": 47,
+          "Implement and manage semantic models": 27
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 354
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Maintain a data analytics solution": 26,
+          "Prepare data": 47,
+          "Implement and manage semantic models": 27
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 643
+      },
+      "code_completion_items": 21,
+      "proposed_solution_items": 7,
+      "cases": [
+        "TorqueLine Motors",
+        "ColdHaul Logistics",
+        "GridWorks Components",
+        "HarborPort Freight"
+      ]
+    },
+    "set-5": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Maintain a data analytics solution": 26,
+          "Prepare data": 47,
+          "Implement and manage semantic models": 27
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 311
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Maintain a data analytics solution": 26,
+          "Prepare data": 47,
+          "Implement and manage semantic models": 27
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 624
+      },
+      "code_completion_items": 24,
+      "proposed_solution_items": 6,
+      "cases": [
+        "CineWave Stream",
+        "AdPulse Attribution",
+        "PressLine Digital",
+        "SoundStage Live"
+      ]
+    },
+    "set-6": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Maintain a data analytics solution": 26,
+          "Prepare data": 47,
+          "Implement and manage semantic models": 27
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 370
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Maintain a data analytics solution": 26,
+          "Prepare data": 47,
+          "Implement and manage semantic models": 27
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 671
+      },
+      "code_completion_items": 23,
+      "proposed_solution_items": 6,
+      "cases": [
+        "SunGrid Renewables",
+        "TelcoBeam Networks",
+        "CivicWorks Transit",
+        "AquaSpan Utilities"
+      ]
+    },
+    "sample": {
+      "rows": 12,
+      "domains": {
+        "Prepare data": 5,
+        "Maintain a data analytics solution": 3,
+        "Implement and manage semantic models": 4
+      },
+      "types": {
+        "multiple-choice": 12
+      },
+      "single_slots": {
+        "A": 2,
+        "B": 3,
+        "C": 4,
+        "D": 3
+      },
+      "max_question_chars": 660
+    }
+  },
+  "error_count": 0,
+  "errors": []
+}
