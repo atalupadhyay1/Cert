@@ -1,0 +1,355 @@
+{
+  "exam": "AZ-400",
+  "title": "Designing and Implementing Microsoft DevOps Solutions",
+  "study_guide_baseline": "July 27, 2026",
+  "scheduled_retirement": "February 1, 2027 (succeeded by Exam AZ-401)",
+  "total_questions": 600,
+  "sets": 6,
+  "questions_per_set": 100,
+  "skills_covered": 34,
+  "case_studies_total": 24,
+  "terms_total": 277,
+  "unused_terms": 0,
+  "max_stem_jaccard": 0.6364,
+  "max_stem_jaccard_pair": [
+    "T2-Q080",
+    "T5-Q012"
+  ],
+  "set_reports": {
+    "set-1": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Design and implement processes and communications": 12,
+          "Design and implement a source control strategy": 13,
+          "Design and implement build and release pipelines": 52,
+          "Develop a security and compliance plan": 14,
+          "Implement an instrumentation strategy": 9
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 338
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Design and implement processes and communications": 12,
+          "Design and implement a source control strategy": 13,
+          "Design and implement build and release pipelines": 52,
+          "Develop a security and compliance plan": 14,
+          "Implement an instrumentation strategy": 9
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 673
+      },
+      "code_completion_items": 17,
+      "proposed_solution_items": 7,
+      "cases": [
+        "KestrelPay",
+        "MintLedger",
+        "VaultWire",
+        "SilverCrest Treasury"
+      ]
+    },
+    "set-2": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Design and implement processes and communications": 12,
+          "Design and implement a source control strategy": 13,
+          "Design and implement build and release pipelines": 52,
+          "Develop a security and compliance plan": 14,
+          "Implement an instrumentation strategy": 9
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 328
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Design and implement processes and communications": 12,
+          "Design and implement a source control strategy": 13,
+          "Design and implement build and release pipelines": 52,
+          "Develop a security and compliance plan": 14,
+          "Implement an instrumentation strategy": 9
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 709
+      },
+      "code_completion_items": 29,
+      "proposed_solution_items": 6,
+      "cases": [
+        "Veridian Clinical",
+        "HelixPath Genomics",
+        "CuraBridge EHR",
+        "PulsePoint MedTech"
+      ]
+    },
+    "set-3": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Design and implement processes and communications": 12,
+          "Design and implement a source control strategy": 13,
+          "Design and implement build and release pipelines": 52,
+          "Develop a security and compliance plan": 14,
+          "Implement an instrumentation strategy": 9
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 322
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Design and implement processes and communications": 12,
+          "Design and implement a source control strategy": 13,
+          "Design and implement build and release pipelines": 52,
+          "Develop a security and compliance plan": 14,
+          "Implement an instrumentation strategy": 9
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 657
+      },
+      "code_completion_items": 23,
+      "proposed_solution_items": 6,
+      "cases": [
+        "AeroSpan Avionics",
+        "PolarFreight IoT",
+        "HarborLine Customs",
+        "RailPulse Dispatch"
+      ]
+    },
+    "set-4": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Design and implement processes and communications": 12,
+          "Design and implement a source control strategy": 13,
+          "Design and implement build and release pipelines": 52,
+          "Develop a security and compliance plan": 14,
+          "Implement an instrumentation strategy": 9
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 309
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Design and implement processes and communications": 12,
+          "Design and implement a source control strategy": 13,
+          "Design and implement build and release pipelines": 52,
+          "Develop a security and compliance plan": 14,
+          "Implement an instrumentation strategy": 9
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 584
+      },
+      "code_completion_items": 28,
+      "proposed_solution_items": 6,
+      "cases": [
+        "ForgeStack Cloud",
+        "LumenSign SaaS",
+        "StrataBI Analytics",
+        "Keystone Identity"
+      ]
+    },
+    "set-5": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Design and implement processes and communications": 12,
+          "Design and implement a source control strategy": 13,
+          "Design and implement build and release pipelines": 52,
+          "Develop a security and compliance plan": 14,
+          "Implement an instrumentation strategy": 9
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 397
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Design and implement processes and communications": 12,
+          "Design and implement a source control strategy": 13,
+          "Design and implement build and release pipelines": 52,
+          "Develop a security and compliance plan": 14,
+          "Implement an instrumentation strategy": 9
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 641
+      },
+      "code_completion_items": 22,
+      "proposed_solution_items": 6,
+      "cases": [
+        "VelvetCart Commerce",
+        "CrateLogic Warehouse",
+        "BistroDirect FoodTech",
+        "PeakGear Outdoors"
+      ]
+    },
+    "set-6": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Design and implement processes and communications": 12,
+          "Design and implement a source control strategy": 13,
+          "Design and implement build and release pipelines": 52,
+          "Develop a security and compliance plan": 14,
+          "Implement an instrumentation strategy": 9
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 328
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Design and implement processes and communications": 12,
+          "Design and implement a source control strategy": 13,
+          "Design and implement build and release pipelines": 52,
+          "Develop a security and compliance plan": 14,
+          "Implement an instrumentation strategy": 9
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 684
+      },
+      "code_completion_items": 26,
+      "proposed_solution_items": 6,
+      "cases": [
+        "RiftForge Interactive",
+        "VoltEdge GridOps",
+        "StreamPulse Media",
+        "BeaconCast News"
+      ]
+    },
+    "sample": {
+      "rows": 12,
+      "domains": {
+        "Design and implement processes and communications": 2,
+        "Develop a security and compliance plan": 2,
+        "Design and implement a source control strategy": 3,
+        "Design and implement build and release pipelines": 5
+      },
+      "types": {
+        "multiple-choice": 11,
+        "multi-select": 1
+      },
+      "single_slots": {
+        "A": 3,
+        "B": 3,
+        "C": 3,
+        "D": 2
+      },
+      "max_question_chars": 673
+    }
+  },
+  "passed": true,
+  "error_count": 0,
+  "errors": []
+}
