@@ -195,6 +195,24 @@ class TestAZ401Course(unittest.TestCase):
                 self.assertIn(f'AZ-401/03-practice-sets/set-{n}/practice-set-{n}.csv', names)
                 self.assertIn(f'AZ-401/03-practice-sets/set-{n}/case-embedded-set-{n}.csv', names)
                 self.assertIn(f'AZ-401/03-practice-sets/set-{n}/practice-set-{n}.md', names)
+            self.assertEqual(
+                zf.read('AZ-401/01-landing-page/landing-page.md'),
+                (ROOT / '01-landing-page/landing-page.md').read_bytes(),
+                'ZIP landing-page.md is stale; re-run package.py',
+            )
+
+    def test_landing_page_exam_descriptions_and_messages_complete(self):
+        lp = (ROOT / '01-landing-page/landing-page.md').read_text(encoding='utf-8')
+        for heading in ('Welcome Message', 'Congratulations Message', 'Blueprint Allocation', 'Frequently Asked Questions'):
+            self.assertIn(heading, lp)
+        for n in range(1, 7):
+            self.assertIn(f'practice-test-{n}', lp)
+        full_blocks = re.findall(r'\*\*Full description\*\*\s+```text\n(.*?)\n```', lp, re.S)
+        trimmed_blocks = re.findall(r'\*\*Trimmed description\*\*\s+```text\n(.*?)\n```', lp, re.S)
+        self.assertEqual(len(full_blocks), 6)
+        self.assertEqual(len(trimmed_blocks), 6)
+        for idx, t in enumerate(trimmed_blocks, 1):
+            self.assertLessEqual(len(t), 200, f'Trimmed description {idx} exceeds 200 chars ({len(t)})')
 
 
 if __name__ == '__main__':
