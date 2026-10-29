@@ -25,6 +25,7 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 | Google Cloud Generative AI Leader | 6 | 600 | Per-option explanations, guide references |
 | Microsoft AI-300 — Machine Learning Operations Engineer Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
 | Microsoft AB-410 — Intelligent Applications Builder Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
+| Microsoft DP-600 — Implementing Analytics Solutions Using Microsoft Fabric | 6 | 600 | Per-option explanations, Oct 19, 2026 blueprint weighting (`26/47/27`), Lakehouse/Warehouse/Eventhouse, Direct Lake on OneLake vs SQL, OneLake security, SQL/KQL/DAX/PySpark/M/TMDL `____` fills, `→` sequences, 24 case studies |
 | Microsoft DP-700 — Fabric Data Engineer Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
 | Microsoft PL-300 — Power BI Data Analyst Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
 | Microsoft AZ-204 — Developing Solutions for Microsoft Azure | 6 | 600 | Per-option explanations, Jan 2026 blueprint weighting, `____` SDK/CLI/XML/KQL fills, `→` sequences, 24 case studies, July 31, 2026 retirement / AI-200 notice |
@@ -365,6 +366,17 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 - **Format boundary:** Interactive Pearson VUE drag-and-drop tiles, inline hot-area dropdowns, split-pane tabbed case exhibits, live labs, and locked non-returnable Yes/No series cannot be imported via Udemy CSV and are adapted into text-complete stems and explicit candidate options.
 - **Location:** [`course/AZ-401/`](AZ-401/README.md)
 - **Publication:** Expert Agentic DevOps engineering review and account-level Udemy import preview required; no platform publication performed.
+
+### Microsoft DP-600 — Implementing Analytics Solutions Using Microsoft Fabric
+
+- **Status:** Six 100-item full-length mock exams; 600 original Fabric Analytics Engineer Associate items (0 overlap with AZ-204/AZ-400/AZ-401) with mixed formats, SQL/KQL/DAX/PySpark/Power Query M/TMDL completions, ordered sequences, case studies, and per-option explanations.
+- **Includes:** Udemy CSVs (`practice-set-N.csv` and self-contained `case-embedded-set-N.csv`), offline Markdown review copies, a 12-question case-study sample upload, complete instructor landing page (with Official Exam Overview, Fields 1–6, Welcome & Congratulations messages, and 6 exam descriptions), 41-skill curriculum outline, case-study upload guide, sources/coverage, QA suite, and reproducible `DP-600-6x100.zip`.
+- **Organization:** Every exam is weighted **26 / 47 / 27** across the three official October 19, 2026 DP-600 functional groups (`Maintain a data analytics solution` 25–30%, `Prepare data` 45–50%, `Implement and manage semantic models` 25–30% = 100%); all 41 official skills (`1.1`–`3.12`) are practiced in every exam across **SQL**, **KQL**, and **DAX**, including OneLake security single-role RLS+CLS, Purview sensitivity labels, `.pbip` (`TMDL` + `PBIR`) & `Variable library` ALM, XMLA `Read Write` + ALM Toolkit + TMSL `dataOnly` refreshes, OneLake catalog (`Explore`/`Govern`) & Real-Time hub, Shortcuts/Mirroring/Fast Copy/Eventstream, Eventhouse `OneLake availability`, Warehouse Time Travel & zero-copy clones, Direct Lake on OneLake vs SQL (and TMDL migration), Calculation Groups, Dynamic Format Strings, Field Parameters, and DAX Studio FE/SE optimization.
+- **Item mix & pattern parity:** 84 exported `multiple-choice` items (76 single-answer + 8 four-step `→` sequence items, balanced 21 / 21 / 21 / 21 across slots A–D, including 21–24 `____` completion items and 6–8 `Proposed solution:` evaluations per set), 16 `multi-select` items (13 five-option `Select two.` + 3 six-option `Select three.`, spread 4 / 8 / 4 across Domains 1–3), and four 3-question original enterprise Microsoft Fabric case studies per exam (24 scenarios total; zero Microsoft named scenarios).
+- **Credential & scoring notice (checked October 30, 2026):** Passing Exam DP-600 awards `Microsoft Certified: Fabric Analytics Engineer Associate` directly (Associate-level; no prerequisite certification required). Microsoft reports a `700 / 1000` criterion-referenced scaled score (never equated to a raw percentage) over `100` minutes exam time with split-screen `learn.microsoft.com` open-book access in non-lab sections.
+- **Format boundary:** Interactive Pearson VUE drag-and-drop tiles, inline hot-area dropdowns, split-pane tabbed case exhibits, live labs, and locked non-returnable Yes/No series cannot be imported via Udemy CSV and are adapted into text-complete stems and explicit candidate options.
+- **Location:** [`course/DP-600/`](DP-600/README.md)
+- **Publication:** Expert Fabric analytics engineering review and account-level Udemy import preview required; no platform publication performed.
 
 ---
 
