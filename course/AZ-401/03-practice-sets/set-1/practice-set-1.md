@@ -1,0 +1,1887 @@
+# Microsoft Exam AZ-401: Designing and Implementing Microsoft Agentic DevOps Solutions — Full-Length Mock Exam 1
+
+Exam AZ-401 (AI-Native FinTech Settlement, MCP Work-Item Loops, and gh-ado2gh Enterprise Cutovers) · 100 questions · 100-minute recommended timing · Microsoft scaled passing score 700 / 1000
+
+> **Blueprint, Prerequisite & Beta Notice:** Aligned to the official **October 13, 2026** AZ-401 study guide (`Microsoft Certified: Agentic DevOps Engineer Expert`). Exam AZ-401 is currently in **public beta** (through **November 9, 2026**, GA targeted **December 2026**, succeeding **AZ-400** which retires **February 1, 2027**). Earning the Expert certification requires passing **AZ-401** plus holding an active **GH-300 (`GitHub Copilot`)** or **AZ-104 (`Azure Administrator Associate`)** certification.
+
+Blueprint-weighted mock exam: 84 `multiple-choice` items (including 8 four-step `→` sequence items, `____` YAML/JSON/Bicep/KQL/CLI completion items, and `Proposed solution:` evaluations), 16 `multi-select` items (`Select two.` / `Select three.`), and 4 original 3-question enterprise Agentic DevOps case studies (12 case items).
+
+Platform fidelity note: Udemy CSV imports support `multiple-choice` and `multi-select` only. Interactive Microsoft exam widgets (drag-and-drop sequence tiles, inline hot-area YAML/JSON/Bicep/KQL dropdowns, split-pane tabbed case exhibits, live labs, and locked non-returnable Yes/No problem-solution series) are adapted into text-complete stems and explicit candidate options. Raw practice percentages do not convert to Microsoft scaled scores (`100–1000`, pass `700`).
+
+100% original educational content authored from official Microsoft Learn and GitHub Docs — never recalled live items or copied Microsoft named case studies.
+
+## Questions
+
+### 1. A regulated clearinghouse division requires native Azure Boards work item types for formal `Requirement`, `Change Request`, `Risk`, and `Review` records to satisfy external SOX auditors. Which built-in Azure Boards process should you select?
+
+Domain: Design and implement processes and communications
+
+- A. Azure Boards Agile process (`Epic -> Feature -> User Story -> Task` and `Bug` tracked on backlogs or tasks)
+- B. Azure Boards Scrum process (`Epic -> Feature -> Product Backlog Item / Bug -> Task` committed per Sprint)
+- C. Trunk-Based Development with short-lived branches (`< 24h`) merging frequently into `main` behind Azure App Configuration feature flags
+- D. Azure Boards CMMI process (`Requirement`, formal `Change Request`, `Review`, and `Risk` work item types)
+
+### 2. Release leads complain that email notifications from 40 microservices bury urgent production YAML stage approvals. How should you surface interactive approval cards and stage failures inside their release Microsoft Teams channel without noise?
+
+Domain: Design and implement processes and communications
+
+- A. Subscribe a Microsoft Teams channel using the Azure Pipelines app filtered to `Run stage waiting for approval` and `Run stage state changed (Failed)`
+- B. Calendar Versioning (`YYYY.0M.MICRO`, e.g., `2026.10.2`) suited for time-bound rule packs, OS images, or continuously delivered platform snapshots
+- C. Track large binary assets (`*.psd`, `*.onnx`, `*.pak`) via Git Large File Storage (`git lfs track`) and enable `lfs: true` in checkout steps
+- D. Assign free `Stakeholder` access level in Azure DevOps to external advisors or executives who only view/create Boards work items and dashboards without Repos access
+
+### 3. Portfolio directors reviewing quarterly compliance `Epics` in Azure Boards want live progress bars showing completed child `Features` and `User Stories` without manual status spreadsheets. Which capability should you enable?
+
+Domain: Design and implement processes and communications
+
+- A. Enable `git clone --filter=blob:none --no-checkout` with `git sparse-checkout set <service-dir>` for monorepo pipelines and agent workspaces
+- B. `::add-mask::` (GitHub Actions workflow command registering a runtime string with the runner log scrubber)
+- C. Azure Boards Backlog Rollup columns backed by Analytics linking `Epic -> Feature -> Story/PBI -> Task` hierarchies
+- D. Configure Application Insights Adaptive Sampling (preserving 100% of exceptions/errors while sampling high-volume HTTP 200 traces) plus Daily Cap alerting
+
+### 4. An enterprise audit requires verifiable flow-of-work controls from initial requirement grooming through production release when both humans and coding agents contribute code. Which two practices establish end-to-end quality and audit traceability? Select two.
+
+Domain: Design and implement processes and communications
+
+- A. Git Flow with persistent `develop`, `main`, `feature/*`, `release/*`, and `hotfix/*` branches (adds dual-trunk merge overhead for continuous delivery)
+- B. Azure App Configuration `Microsoft.TimeWindow` feature filter activating promotional logic at an exact UTC start/end window without redeploying containers
+- C. Enforce explicit Definition of Ready (testable acceptance criteria) and Definition of Done (automated tests, security scans, telemetry, docs) on Boards states
+- D. Link Azure Boards Requirements to Test Cases (`Tested By`), GitHub PRs (`AB#`), build runs, and release stages for end-to-end auditability
+- E. Increment the `PATCH` or `prerelease` version (`1.2.1`) because published `package@version` coordinates in Azure Artifacts are permanently immutable
+
+### 5. Your VP of Engineering asks for a single DORA velocity metric measuring the elapsed hours from a developer or agent pushing the first commit on a branch until that code runs in production. Which metric should you report?
+
+Domain: Design and implement processes and communications
+
+- A. Mean Time to Restore / Failed Deployment Recovery Time (average elapsed time from production incident detection to full service restoration)
+- B. Change Failure Rate (percentage of production deployments causing degraded service, rollback, or emergency hotfix)
+- C. Cumulative Flow Diagram (CFD) combined with explicit Kanban column Work-in-Progress (WIP) limits to expose bottleneck queues
+- D. Lead Time for Changes (elapsed duration from first commit or PR creation to successful production deployment)
+
+### 6. Engineering managers want to ask natural-language questions in VS Code chat such as "Which high-priority payment bugs reopened more than twice this sprint?" and execute validated queries against Azure Boards. What should you configure?
+
+Domain: Design and implement processes and communications
+
+- A. Execute `az deployment group what-if` in a pre-deploy CI/CD job so reviewers and Copilot PR checks inspect exact `Create`, `Modify`, and `Delete` resource changes before apply
+- B. Use `git filter-repo --invert-paths --path <sensitive-file>` (or `--replace-text`) to purge sensitive files/strings across all commits, tags, and branches
+- C. Use GitHub Copilot with the Azure DevOps MCP server (`wit` tools) to translate natural-language KPI questions into validated WIQL work-item queries
+- D. Upload binary `.pfx` / `.p12` certificates or SSH keys to Azure Pipelines `Library -> Secure Files` and consume via `DownloadSecureFile@1` (auto-purged post-job)
+
+### 7. Leadership wants to evaluate whether rolling out GitHub Copilot coding agents actually improved engineering throughput and release stability rather than merely inflating lines of code written. Which measurement approach should you implement?
+
+Domain: Design and implement processes and communications
+
+- A. Mark environment-specific connection strings and feature endpoints as `Deployment slot setting` (slot-pinned) so they remain bound to each slot across VIP swaps
+- B. Azure Artifacts Universal Packages (`UniversalPackages@0`) for deduplicated storage and versioned transfer of multi-gigabyte non-language bundles
+- C. Query the GitHub Copilot Usage & Metrics API alongside PR lead-time and CI pass-rate telemetry to correlate AI adoption with delivery outcomes
+- D. Inspect `git reflog` (or Azure Repos / GitHub pushed-ref activity APIs) to locate the orphaned commit SHA after an accidental hard reset or branch deletion and recreate the branch
+
+### 8. On your payment team Kanban board, the `Code Review` band on the chart widens every week while downstream deployment remains idle. Which metric visual and board policy pair directly diagnoses and constrains this queue?
+
+Domain: Design and implement processes and communications
+
+- A. Generate a self-contained EF Core migration bundle (`dotnet ef migrations bundle`) in CI and execute it as an idempotent pre-deploy job using Managed Identity / OIDC
+- B. Assign `Basic + Test Plans` access level to QA leads who author test suites, configure test plans, and execute exploratory sessions (vs `Basic` for developers)
+- C. Calendar Versioning (`YYYY.0M.MICRO`, e.g., `2026.10.2`) suited for time-bound rule packs, OS images, or continuously delivered platform snapshots
+- D. Cumulative Flow Diagram (CFD) combined with explicit Kanban column Work-in-Progress (WIP) limits to expose bottleneck queues
+
+### 9. Every repository in your fintech org uses custom `.NET 9` Result types and xUnit naming conventions, and Copilot Chat repeatedly suggests `throw new Exception()` boilerplate instead. Which file injects repo-wide conventions into every Copilot session automatically?
+
+Domain: Design and implement processes and communications
+
+- A. Publish OCI container images and SDKs to GitHub Packages (`ghcr.io/<org>/<image>`) linked with granular repository permissions and `GITHUB_TOKEN` / OIDC
+- B. Configure the Azure SRE Agent alert reinvestigation cooldown window (`3 hours` default, tunable `1-24 hours`) so recurring alerts do not spawn duplicate parallel investigations
+- C. Create `.github/copilot-instructions.md` at the repository root containing concise build, test, architecture, and security conventions
+- D. Deploy additive backward-compatible SQL schema changes (`Expand -> Migrate -> Contract`) via `SqlAzureDacpacDeployment@1` with `BlockOnPossibleDataLoss=true`
+
+### 10. You create `.github/instructions/bicep-security.instructions.md` so Terraform and C# edits do not waste prompt tokens on Bicep rules. Complete the YAML frontmatter key: `____: "infra/**/*.bicep"` — which property scopes the instruction file?
+
+Domain: Design and implement processes and communications
+
+- A. `applyTo` (YAML frontmatter glob property inside `.github/instructions/<name>.instructions.md`, e.g., `applyTo: "**/*.bicep"`)
+- B. `extends` (top-level Azure Pipelines YAML keyword inheriting mandatory security stages/jobs enforced by Required Template checks)
+- C. `what-if` (`az deployment group what-if` subcommand previewing ARM resource creations, modifications, and deletions)
+- D. `safe-outputs` (declarative frontmatter block in `gh-aw` `.md` workflows isolating write actions like `create-pull-request` and `add-comment`)
+
+### 11. Your platform security team is rolling out GitHub Copilot cloud agent across 60 regulated payment repositories. In which sequence should you establish instructions, runtime setup, network guardrails, and PR governance?
+
+Domain: Design and implement processes and communications
+
+- A. Place `copilot-setup-steps.yml` only on an unmerged feature branch → let the requester self-approve agent PRs → disable agent firewall → leave `mcp.json` unprotected
+- B. Grant Copilot direct push rights to `main` → turn off CodeQL/secret pre-checks → delete session log links from commits → disable branch rulesets
+- C. Author `.github/copilot-instructions.md` and `SKILL.md` → commit `copilot-setup-steps.yml` on default branch → enable agent firewall allowlists → protect agent/MCP files and enforce human PR review in Rulesets
+- D. Use `workflow_call` reusable workflows inside `copilot-setup-steps.yml` → set `timeout-minutes: 180` → hardcode secrets in `AGENTS.md` → bypass all status checks
+
+### 12. You are packaging a reusable OpenAPI breaking-change checker for GitHub Copilot agents and want to prevent runaway reasoning loops when schema validation fails. Which two configurations should you implement? Select two.
+
+Domain: Design and implement processes and communications
+
+- A. Azure App Configuration `Microsoft.TimeWindow` feature filter activating promotional logic at an exact UTC start/end window without redeploying containers
+- B. Package reusable multi-step workflows and scripts inside `.github/skills/<skill-name>/SKILL.md` with YAML frontmatter `name` and `description`
+- C. Specify bounded verification loops (lint -> unit test -> typecheck), explicit non-goals, and `timeout-minutes` (`<= 59` in setup steps) for agent tasks
+- D. Git Flow with persistent `develop`, `main`, `feature/*`, `release/*`, and `hotfix/*` branches (adds dual-trunk merge overhead for continuous delivery)
+- E. Assign free `Stakeholder` access level in Azure DevOps to external advisors or executives who only view/create Boards work items and dashboards without Repos access
+
+### 13. A security architect asks what repository permissions the built-in GitHub MCP server grants to GitHub Copilot cloud agent out of the box when no custom `COPILOT_MCP_*` secrets are configured. What is the accurate behavior?
+
+Domain: Design and implement processes and communications
+
+- A. Rely on the built-in GitHub MCP server in Copilot cloud agent, which authenticates automatically with a read-only token scoped only to the current repository
+- B. Authenticate the Azure SRE Agent ServiceNow connector (`itil` role / OAuth) and specify a mandatory `assignment_group` so the agent indexes and triages only that teams incidents
+- C. Connect GitHub Enterprise and Azure DevOps organizations to Microsoft Defender for Cloud (DevOps Security) to correlate code/IaC/container SARIF findings with live cloud attack paths
+- D. Configure `ghcr.io/github/github-mcp-server` (or remote GitHub MCP) using `COPILOT_MCP_GITHUB_APP_*` secrets in the `copilot` environment for cross-repo access
+
+### 14. You need GitHub Copilot cloud agent to read Azure Boards acceptance criteria and failed Azure Pipelines logs secretlessly using `@azure-devops/mcp`. Which four-step setup sequence should you execute?
+
+Domain: Design and implement processes and communications
+
+- A. Commit a 5-year classic PAT inside `README.md` → skip `copilot-setup-steps.yml` → grant `tools: ["*"]` on prod DBs → disable branch protection on `main`
+- B. Disable the cloud agent firewall completely → paste org admin passwords in `.vscode/settings.json` → delete Azure Boards → run manual SQL edits in prod
+- C. Configure Entra OIDC for the `copilot` environment → run `azure/login` (`id-token: write`) in `copilot-setup-steps.yml` → register `@azure-devops/mcp` (`-a azcli`) with scoped `tools` → invoke Copilot on tasks
+- D. Rename the job `setup-env` instead of `copilot-setup-steps` → omit `id-token: write` → install `@azure-devops/mcp` globally on prod VMs → merge unreviewed
+
+### 15. Settlement product owners want to trigger draft pull requests straight from groomed Azure Boards stories while ensuring prompt-injected work-item descriptions cannot delete pipelines via MCP. Which two controls should you combine? Select two.
+
+Domain: Design and implement processes and communications
+
+- A. Assign or invoke GitHub Copilot cloud agent directly from an Azure Boards work item linked to the GitHub repository so it opens a traceable draft PR
+- B. Restrict the MCP server configuration `tools` array (for example `["wit-get-work-item", "pipelines-get-build-log"]`) instead of granting wildcard `["*"]` write tools
+- C. Git Flow with persistent `develop`, `main`, `feature/*`, `release/*`, and `hotfix/*` branches (adds dual-trunk merge overhead for continuous delivery)
+- D. Never checkout and execute untrusted fork PR code (`actions/checkout` on `github.event.pull_request.head.sha`) inside a privileged `pull_request_target` workflow with secrets
+- E. Azure Artifacts Universal Packages (`UniversalPackages@0`) for deduplicated storage and versioned transfer of multi-gigabyte non-language bundles
+
+### 16. Your settlement microservice squad deploys four times daily to production and wants to eliminate multi-week merge conflicts from long-lived `develop` branches while hiding unfinished UI changes. Which branching strategy fits best?
+
+Domain: Design and implement a source control strategy
+
+- A. Track large binary assets (`*.psd`, `*.onnx`, `*.pak`) via Git Large File Storage (`git lfs track`) and enable `lfs: true` in checkout steps
+- B. Git Flow with persistent `develop`, `main`, `feature/*`, `release/*`, and `hotfix/*` branches (adds dual-trunk merge overhead for continuous delivery)
+- C. Trunk-Based Development with short-lived branches (`< 24h`) merging frequently into `main` behind Azure App Configuration feature flags
+- D. Trunk-Based Development with immutable `release/x.y` branches cut for supported minor versions and cherry-picked hotfixes from `main`
+
+### 17. A senior engineer runs two local GitHub Copilot CLI sessions simultaneously—one refactoring `ledger-core` and another writing `audit-export` tests—and wants zero `.git/index.lock` or branch-switching interference without cloning a 6 GB repo twice. Which Git feature solves this?
+
+Domain: Design and implement a source control strategy
+
+- A. Enforce `Squash merge` on `main` so noisy intermediate WIP / agent iteration commits collapse into one atomic commit per PR
+- B. Execute `gh ado2gh migrate-repo --ado-org <src> --ado-team-project <proj> --ado-repo <repo> --github-org <dst> --github-repo <repo>` after `lock-ado-repo`
+- C. Enable `git clone --filter=blob:none --no-checkout` with `git sparse-checkout set <service-dir>` for monorepo pipelines and agent workspaces
+- D. Use `git worktree add ../wt-task -b feat/task origin/main` so multiple local CLI coding agents work concurrently in isolated directories sharing one `.git` object store
+
+### 18. Your enterprise banking SDK must ship security patches for both `v3.1` and `v3.2` customer installations while engineers integrate `v4.0` features continuously on `main`. Which branching model supports parallel version maintenance cleanly?
+
+Domain: Design and implement a source control strategy
+
+- A. GitHub Flow (`main` is always deployable; short-lived topic/agent branches merge via pull request after automated CI checks and review)
+- B. Trunk-Based Development with immutable `release/x.y` branches cut for supported minor versions and cherry-picked hotfixes from `main`
+- C. Configure GitHub Autolink references (`TICKET-<num>`) and `Closes #<issue>` keywords to maintain bidirectional repo-to-tracker traceability
+- D. Remove finished agent working directories with `git worktree remove <path>` and clean stale metadata via `git worktree prune`
+
+### 19. You want every pull request targeting `main` across 25 GitHub repositories—and every subsequent commit pushed to open PRs—to receive automated AI defect feedback before human code owners inspect the diff. Which Ruleset setting should you enable?
+
+Domain: Design and implement a source control strategy
+
+- A. Enable `Automatically request Copilot code review` (with `Review new pushes`) inside a GitHub Organization or Repository Branch Ruleset targeting `main`
+- B. Create GPG/SSH-signed annotated Git tags (`git tag -s v2.4.0 -m "..."`) protected by Tag Rulesets so CI/CD builds immutable releases from verified refs
+- C. Configure GitHub Copilot CLI hooks in `.github/hooks/*.json` (`preToolUse` / `userPromptSubmitted`) to block destructive shell commands and log audit events
+- D. Configure an Azure Repos Branch Policy on `main` requiring Build Validation, `Minimum number of reviewers >= 2`, `Check for linked work items`, and comment resolution
+
+### 20. Proposed solution: A developer assigns Issue #209 to GitHub Copilot cloud agent, waits for Copilot to open a draft PR targeting `main` (which requires 1 approving review), marks it ready, and approves the PR themselves to merge immediately. Does this satisfy GitHubs Copilot cloud agent approval safeguard?
+
+Domain: Design and implement a source control strategy
+
+- A. Run `git revert <commit-sha>` in a pull request to undo a faulty commit on protected `main` without rewriting shared public Git history
+- B. Enforce required pull request reviews where the human who assigned the task to GitHub Copilot cloud agent cannot approve that agent-created PR alone
+- C. Ensure `Bypass policies when pushing` and `Bypass policies when completing pull requests` are set to `Not set` / `Deny` for standard `Contributors`
+- D. Enforce `Rebase and fast-forward` (`Require linear history`) to preserve individual verified commits without merge-bubble commits
+
+### 21. Twelve human and Copilot pull requests pass unit tests individually against `main`, but two merged PRs break compilation together because one renamed an interface method the second called. Which GitHub feature prevents this broken-trunk race?
+
+Domain: Design and implement a source control strategy
+
+- A. Configure GitHub Autolink references (`TICKET-<num>`) and `Closes #<issue>` keywords to maintain bidirectional repo-to-tracker traceability
+- B. Enable GitHub Merge Queue (`merge_group` trigger) on `main` so approved PRs validate sequentially or in batches against the exact combined target state
+- C. Enforce `Squash merge` on `main` so noisy intermediate WIP / agent iteration commits collapse into one atomic commit per PR
+- D. Track large binary assets (`*.psd`, `*.onnx`, `*.pak`) via Git Large File Storage (`git lfs track`) and enable `lfs: true` in checkout steps
+
+### 22. Security auditors reviewing your agentic SDLC require safeguards ensuring neither external PRs nor autonomous coding agents can silently alter `.github/copilot-instructions.md`, `mcp.json`, or merge without accountable human review. Which two controls should you enforce? Select two.
+
+Domain: Design and implement a source control strategy
+
+- A. Configure a GitHub Push/File-Path Ruleset + `CODEOWNERS` protecting `.github/workflows/**`, `.github/copilot-instructions.md`, `SKILL.md`, `AGENTS.md`, and `mcp.json`
+- B. Require pull request reviews from `CODEOWNERS` plus at least one human reviewer with write access on non-human / Copilot-authored pull requests
+- C. Ensure `Bypass policies when pushing` and `Bypass policies when completing pull requests` are set to `Not set` / `Deny` for standard `Contributors`
+- D. Git Flow with persistent `develop`, `main`, `feature/*`, `release/*`, and `hotfix/*` branches (adds dual-trunk merge overhead for continuous delivery)
+- E. Never checkout and execute untrusted fork PR code (`actions/checkout` on `github.event.pull_request.head.sha`) inside a privileged `pull_request_target` workflow with secrets
+
+### 23. Proposed solution: To guarantee zero unformatted C# files or missing `AB#` links ever enter `main`, you distribute a `.githooks/pre-commit` script without adding any server-side CI or Branch Ruleset checks. Does this meet compliance enforcement requirements?
+
+Domain: Design and implement a source control strategy
+
+- A. Commit versioned client hooks in `.githooks/` (`pre-commit`, `commit-msg`) paired with `git config core.hooksPath .githooks` AND enforce server-side CI/Ruleset checks
+- B. Calendar Versioning (`YYYY.0M.MICRO`, e.g., `2026.10.2`) suited for time-bound rule packs, OS images, or continuously delivered platform snapshots
+- C. Enable OpenTelemetry / Application Insights SDKs propagating W3C Trace Context (`traceparent`) across HTTP gateways, Service Bus queues, and AKS microservices
+- D. Assign free `Stakeholder` access level in Azure DevOps to external advisors or executives who only view/create Boards work items and dashboards without Repos access
+
+### 24. You author `.github/hooks/guardrails.json` so GitHub Copilot CLI synchronously evaluates shell arguments and blocks `rm -rf` or `az group delete` before execution. Complete the hook event key: `"hooks": { "____": [...] }` — which hook event runs before tool execution?
+
+Domain: Design and implement a source control strategy
+
+- A. `preToolUse` (GitHub Copilot CLI hook event in `.github/hooks/*.json` evaluated synchronously before any shell/MCP tool executes)
+- B. `applyTo` (YAML frontmatter glob property inside `.github/instructions/<name>.instructions.md`, e.g., `applyTo: "**/*.bicep"`)
+- C. `@Release` (Azure Artifacts feed view suffix `feedName@Release` isolating verified production-ready immutable packages)
+- D. `what-if` (`az deployment group what-if` subcommand previewing ARM resource creations, modifications, and deletions)
+
+### 25. Compliance auditors require cryptographic proof of who cut release `v5.2.0` and assurance that nobody can silently move the `v5.2.0` tag to a different commit later. What should you configure?
+
+Domain: Design and implement a source control strategy
+
+- A. Enforce `Squash merge` on `main` so noisy intermediate WIP / agent iteration commits collapse into one atomic commit per PR
+- B. Remove finished agent working directories with `git worktree remove <path>` and clean stale metadata via `git worktree prune`
+- C. Create GPG/SSH-signed annotated Git tags (`git tag -s v2.4.0 -m "..."`) protected by Tag Rulesets so CI/CD builds immutable releases from verified refs
+- D. Configure an Azure DevOps Service Hook (`Work item updated` / `Build completed`) posting signed JSON payloads to external receivers
+
+### 26. During a dry-run Azure Repos-to-GitHub migration with `gh ado2gh`, two hotfix commits pushed mid-migration were missing on GitHub and one oversized PR attachment was skipped. Which two operational steps address these behaviors for production cutover? Select two.
+
+Domain: Design and implement a source control strategy
+
+- A. Azure App Configuration `Microsoft.TimeWindow` feature filter activating promotional logic at an exact UTC start/end window without redeploying containers
+- B. Run `gh ado2gh download-logs` (or `--download-migration-logs`) to archive detailed GitHub Enterprise Importer audit and warning logs for every migrated repo
+- C. Git Flow with persistent `develop`, `main`, `feature/*`, `release/*`, and `hotfix/*` branches (adds dual-trunk merge overhead for continuous delivery)
+- D. Freeze writes on the source Azure DevOps repository (`lock-ado-repo`) during cutover because `gh ado2gh` / GEI does not support incremental delta migrations
+- E. Mark environment-specific connection strings and feature endpoints as `Deployment slot setting` (slot-pinned) so they remain bound to each slot across VIP swaps
+
+### 27. Last month a transient outage on `nuget.org` broke 19 payment CI builds even though none of the projects changed external dependencies. How should you configure Azure Artifacts so restored public NuGet packages stay cached internally?
+
+Domain: Design and implement build and release pipelines
+
+- A. Azure Artifacts Universal Packages (`UniversalPackages@0`) for deduplicated storage and versioned transfer of multi-gigabyte non-language bundles
+- B. Single Azure Artifacts feed with Upstream Sources enabled (`npmjs.com`, `nuget.org`, `pypi.org`) so resolved public packages are cached immutably
+- C. Publish OCI container images and SDKs to GitHub Packages (`ghcr.io/<org>/<image>`) linked with granular repository permissions and `GITHUB_TOKEN` / OIDC
+- D. Track large binary assets (`*.psd`, `*.onnx`, `*.pak`) via Git Large File Storage (`git lfs track`) and enable `lfs: true` in checkout steps
+
+### 28. Production financial builds must never restore unvetted CI NuGet builds sitting in `@Local`. Complete the `NuGetCommand@2` feed specification: `vstsFeed: 'quantledger/settlement-packages____'` — which view suffix enforces promoted-only restores?
+
+Domain: Design and implement build and release pipelines
+
+- A. `@Release` (Azure Artifacts feed view suffix `feedName@Release` isolating verified production-ready immutable packages)
+- B. `::add-mask::` (GitHub Actions workflow command registering a runtime string with the runner log scrubber)
+- C. `applyTo` (YAML frontmatter glob property inside `.github/instructions/<name>.instructions.md`, e.g., `applyTo: "**/*.bicep"`)
+- D. `what-if` (`az deployment group what-if` subcommand previewing ARM resource creations, modifications, and deletions)
+
+### 29. Your microservices live on GitHub Enterprise Cloud and publish OCI container images signed with SLSA provenance attestations using job-scoped `GITHUB_TOKEN` permissions (`packages: write`). Which package registry integrates natively?
+
+Domain: Design and implement build and release pipelines
+
+- A. Publish versioned organizational Bicep modules (`br:corp.azurecr.io/bicep/aks:v2.1`) to a private Azure Container Registry (or Azure Verified Modules)
+- B. Azure Artifacts Universal Packages (`UniversalPackages@0`) for deduplicated storage and versioned transfer of multi-gigabyte non-language bundles
+- C. Publish OCI container images and SDKs to GitHub Packages (`ghcr.io/<org>/<image>`) linked with granular repository permissions and `GITHUB_TOKEN` / OIDC
+- D. Upload binary `.pfx` / `.p12` certificates or SSH keys to Azure Pipelines `Library -> Secure Files` and consume via `DownloadSecureFile@1` (auto-purged post-job)
+
+### 30. Your internal `Settlement.Contracts` NuGet library removed a deprecated `ClearAsync(string)` overload that breaks downstream callers at compile time. Under Semantic Versioning (`2.4.1`), which version number must you publish next?
+
+Domain: Design and implement build and release pipelines
+
+- A. Deploy container images by immutable SHA-256 manifest digest (`ghcr.io/org/api@sha256:...`) rather than mutable `:latest` tags
+- B. Apply tiered retention (`7-14 days` for ephemeral PR artifacts, `30 days` for unpromoted CI builds, and explicit Retention Leases / `@Release` views on production releases)
+- C. Calendar Versioning (`YYYY.0M.MICRO`, e.g., `2026.10.2`) suited for time-bound rule packs, OS images, or continuously delivered platform snapshots
+- D. Semantic Versioning (`MAJOR.MINOR.PATCH-prerelease+build`, e.g., `2.4.1-beta.3`) signaling breaking (`MAJOR`), additive (`MINOR`), and fix (`PATCH`) API changes
+
+### 31. Proposed solution: After publishing `Ledger.Core 1.8.0` to Azure Artifacts, an engineer spots a typo in XML docs, deletes `1.8.0` from the feed UI, and re-runs `dotnet nuget push` for `1.8.0`. Will the push succeed?
+
+Domain: Design and implement build and release pipelines
+
+- A. Run `git revert <commit-sha>` in a pull request to undo a faulty commit on protected `main` without rewriting shared public Git history
+- B. Publish CI candidate packages to the `@Local` view of the Azure Artifacts feed before automated integration and security gates complete
+- C. Increment the `PATCH` or `prerelease` version (`1.2.1`) because published `package@version` coordinates in Azure Artifacts are permanently immutable
+- D. Calendar Versioning (`YYYY.0M.MICRO`, e.g., `2026.10.2`) suited for time-bound rule packs, OS images, or continuously delivered platform snapshots
+
+### 32. Security policy forbids deploying mutable `:latest` container tags because an unapproved rebuild overwritten mid-rollout caused `Ring 2` to run different binaries than `Ring 1`. How should deployment manifests reference images?
+
+Domain: Design and implement build and release pipelines
+
+- A. Configure `actions/cache@v4` (or `setup-node` / `setup-dotnet` caching) keyed on `${{ runner.os }}-deps-${{ hashFiles('**/package-lock.json') }}` with `restore-keys` fallback
+- B. Semantic Versioning (`MAJOR.MINOR.PATCH-prerelease+build`, e.g., `2.4.1-beta.3`) signaling breaking (`MAJOR`), additive (`MINOR`), and fix (`PATCH`) API changes
+- C. Azure Artifacts Universal Packages (`UniversalPackages@0`) for deduplicated storage and versioned transfer of multi-gigabyte non-language bundles
+- D. Deploy container images by immutable SHA-256 manifest digest (`ghcr.io/org/api@sha256:...`) rather than mutable `:latest` tags
+
+### 33. Release engineers want GitHub Copilot to inspect the past 30 failed staging runs in Azure Pipelines and draft an automated pre-production quality gate checking error rates and critical bugs. Which integration gives Copilot live pipeline and work-item context?
+
+Domain: Design and implement build and release pipelines
+
+- A. Configure Application Insights Adaptive Sampling (preserving 100% of exceptions/errors while sampling high-volume HTTP 200 traces) plus Daily Cap alerting
+- B. Use `git worktree add ../wt-task -b feat/task origin/main` so multiple local CLI coding agents work concurrently in isolated directories sharing one `.git` object store
+- C. Assign free `Stakeholder` access level in Azure DevOps to external advisors or executives who only view/create Boards work items and dashboards without Repos access
+- D. Use GitHub Copilot connected to Azure DevOps / GitHub MCP servers to inspect historical pipeline failure logs and generate automated quality/release gate definitions
+
+### 34. Between `Canary` and `Global` YAML stages, you want the pipeline to pause for 15 minutes and abort automatically if any Sev0 or Sev1 Azure Monitor alert fires against the payment AKS cluster. What should you configure?
+
+Domain: Design and implement build and release pipelines
+
+- A. Mark environment-specific connection strings and feature endpoints as `Deployment slot setting` (slot-pinned) so they remain bound to each slot across VIP swaps
+- B. Configure an Azure Pipelines Environment `Invoke REST API` / `Query Azure Monitor Alerts` check between deployment rings with `Timeout > Evaluation delay + interval`
+- C. Configure an Azure Repos Branch Policy on `main` requiring Build Validation, `Minimum number of reviewers >= 2`, `Check for linked work items`, and comment resolution
+- D. Run `pre-commit` hooks executing linter, secret-pattern detection, and unit smoke checks locally before commits are created
+
+### 35. Before quarter-end settlement peaks, your CI/CD pipeline must simulate 8,000 RPS from Azure VNet injectors and fail the stage automatically if `p90(response_time_ms) > 250` or error rate exceeds `0.5%`. Which service and YAML gate should you use?
+
+Domain: Design and implement build and release pipelines
+
+- A. Enable Azure Pipelines flaky test detection and use GitHub Copilot + MCP test-run tools to isolate nondeterministic timing/state dependencies into tracked bugs
+- B. Execute headless Playwright end-to-end tests sharded across parallel matrix runners (`--shard=${{ matrix.shard }}`) capturing trace/video artifacts on failure
+- C. Configure `PublishTestResults@2` (with `condition: succeededOrFailed()`) exporting JUnit/TRX XML so failed builds still surface test failure stack traces and Boards links
+- D. Run `AzureLoadTest@1` (or `azure/load-testing@v1`) in staging YAML with declarative `failureCriteria` (`p90(response_time_ms) > 300`, `percentage(error) > 1`)
+
+### 36. Your squad uses GitHub Copilot and MCP tools to modernize pipeline tests for a PostgreSQL ledger API; today mocked unit tests miss SQL constraint bugs, and failed test runs show empty `Tests` tabs in Azure DevOps. Which two changes fix both gaps? Select two.
+
+Domain: Design and implement build and release pipelines
+
+- A. Run Ephemeral Docker `Testcontainers` integration tests inside CI jobs against real PostgreSQL/Redis containers before mocking external third-party APIs
+- B. Configure `PublishTestResults@2` (with `condition: succeededOrFailed()`) exporting JUnit/TRX XML so failed builds still surface test failure stack traces and Boards links
+- C. Azure App Configuration `Microsoft.TimeWindow` feature filter activating promotional logic at an exact UTC start/end window without redeploying containers
+- D. Assign free `Stakeholder` access level in Azure DevOps to external advisors or executives who only view/create Boards work items and dashboards without Repos access
+- E. Calendar Versioning (`YYYY.0M.MICRO`, e.g., `2026.10.2`) suited for time-bound rule packs, OS images, or continuously delivered platform snapshots
+
+### 37. After running `dotnet test --collect:"XPlat Code Coverage"`, your team wants pipeline coverage trends published and GitHub Copilot (via MCP) to generate unit tests specifically for uncovered conditional branches in open PRs. Which workflow achieves this?
+
+Domain: Design and implement build and release pipelines
+
+- A. Run `AzureLoadTest@1` (or `azure/load-testing@v1`) in staging YAML with declarative `failureCriteria` (`p90(response_time_ms) > 300`, `percentage(error) > 1`)
+- B. Track large binary assets (`*.psd`, `*.onnx`, `*.pak`) via Git Large File Storage (`git lfs track`) and enable `lfs: true` in checkout steps
+- C. Azure Artifacts Universal Packages (`UniversalPackages@0`) for deduplicated storage and versioned transfer of multi-gigabyte non-language bundles
+- D. Run Cobertura/OpenCover instrumentation with `PublishCodeCoverageResults@2` and use Copilot + MCP tools to generate targeted unit tests for uncovered PR diff paths
+
+### 38. A 9-year-old payment repository has `51%` overall line coverage; enforcing an `80%` repository-wide coverage gate overnight blocked urgent patches, yet leadership wants all newly written code tested thoroughly. Which policy balances both needs?
+
+Domain: Design and implement build and release pipelines
+
+- A. Enable Azure Pipelines flaky test detection and use GitHub Copilot + MCP test-run tools to isolate nondeterministic timing/state dependencies into tracked bugs
+- B. Apply tiered retention (`7-14 days` for ephemeral PR artifacts, `30 days` for unpromoted CI builds, and explicit Retention Leases / `@Release` views on production releases)
+- C. Enforce a Pull Request Status Policy requiring `>= 80%` diff code coverage on newly changed lines while ratcheting legacy baseline coverage upward
+- D. Set `trigger: batch: true` on high-commit `main` CI pipelines when runner capacity is constrained so queued commits consolidate while a run is active
+
+### 39. Your Azure Pipelines jobs must deploy to private-endpoint SQL servers inside an Azure VNet using fresh, stateless VM images per build without your team patching self-hosted Linux VMs every month. Which agent infrastructure should you choose?
+
+Domain: Design and implement build and release pipelines
+
+- A. Enable `git clone --filter=blob:none --no-checkout` with `git sparse-checkout set <service-dir>` for monorepo pipelines and agent workspaces
+- B. Assign free `Stakeholder` access level in Azure DevOps to external advisors or executives who only view/create Boards work items and dashboards without Repos access
+- C. Publish OCI container images and SDKs to GitHub Packages (`ghcr.io/<org>/<image>`) linked with granular repository permissions and `GITHUB_TOKEN` / OIDC
+- D. Deploy Azure Managed DevOps Pools injected into your private VNet with stateless ephemeral (`Fresh agent every time`) VM images and predictive scaling
+
+### 40. Platform engineers run 400 private GitHub Actions builds hourly that need private AKS cluster egress and strict single-job container isolation scaling down to zero overnight. Which runner architecture fits best?
+
+Domain: Design and implement build and release pipelines
+
+- A. Deploy Actions Runner Controller (ARC) Runner Scale Sets on AKS creating single-use ephemeral Kubernetes runner pods inside your private network
+- B. Azure Artifacts Universal Packages (`UniversalPackages@0`) for deduplicated storage and versioned transfer of multi-gigabyte non-language bundles
+- C. Use `git worktree add ../wt-task -b feat/task origin/main` so multiple local CLI coding agents work concurrently in isolated directories sharing one `.git` object store
+- D. Assign `Basic + Test Plans` access level to QA leads who author test suites, configure test plans, and execute exploratory sessions (vs `Basic` for developers)
+
+### 41. Platform security requires every Azure Pipelines YAML file targeting `production` to inherit mandatory secret-scanning and SBOM jobs enforced by an Environment Required Template check. Complete line 4 of `azure-pipelines.yml`: `____: templates/secure-prod.yml@sec` — which keyword is required?
+
+Domain: Design and implement build and release pipelines
+
+- A. `what-if` (`az deployment group what-if` subcommand previewing ARM resource creations, modifications, and deletions)
+- B. `extends` (top-level Azure Pipelines YAML keyword inheriting mandatory security stages/jobs enforced by Required Template checks)
+- C. `@Release` (Azure Artifacts feed view suffix `feedName@Release` isolating verified production-ready immutable packages)
+- D. `applyTo` (YAML frontmatter glob property inside `.github/instructions/<name>.instructions.md`, e.g., `applyTo: "**/*.bicep"`)
+
+### 42. Your `Build` stage computes an immutable container digest and sets `echo "##vso[task.setvariable variable=imgSha;____]$DIGEST"`, but the downstream `Deploy_Prod` stage reads an empty string. Which flag is missing?
+
+Domain: Design and implement build and release pipelines
+
+- A. `cancel-in-progress: true` (GitHub Actions `concurrency` property terminating older queued/running jobs on the same PR ref)
+- B. `isOutput=true` (`##vso[task.setvariable variable=x;isOutput=true]` flag exposing an Azure Pipelines variable across jobs and stages)
+- C. `::add-mask::` (GitHub Actions workflow command registering a runtime string with the runner log scrubber)
+- D. `-a azcli` (authentication flag on `npx -y @azure-devops/mcp <org> -a azcli` reusing the OIDC Azure CLI session from `copilot-setup-steps`)
+
+### 43. After `Build` succeeds, `Deploy_UK` and `Deploy_US` must execute concurrently, and `Global_Reconcile` must start only after both regional stages succeed. How should you configure stage dependencies?
+
+Domain: Design and implement build and release pipelines
+
+- A. Scope YAML `trigger.paths.include` / `on.push.paths` to `services/payments/**` and `libs/shared/**` so unrelated monorepo commits skip unnecessary builds
+- B. Declare `concurrency: { group: ${{ github.workflow }}-${{ github.ref }}, cancel-in-progress: true }` on pull request workflows while keeping `cancel-in-progress: false` on prod deploys
+- C. Set `trigger: batch: true` on high-commit `main` CI pipelines when runner capacity is constrained so queued commits consolidate while a run is active
+- D. Configure regional deploy stages with `dependsOn: [Build]` to run in parallel, followed by `GlobalSmoke` with `dependsOn: [Deploy_East, Deploy_West, Deploy_EU]`
+
+### 44. An engineer uses GitHub Copilot Chat to translate a 14-step build runbook into a multi-stage YAML pipeline and wants to catch invalid task inputs or compile-time expression typos before committing. What validation step should they run?
+
+Domain: Design and implement build and release pipelines
+
+- A. Use GitHub Copilot with workspace/MCP context to scaffold multi-stage YAML pipelines and validate schema via the Azure Pipelines `Preview` REST API or `actionlint`
+- B. Use `git filter-repo --invert-paths --path <sensitive-file>` (or `--replace-text`) to purge sensitive files/strings across all commits, tags, and branches
+- C. Associate the target Azure subscription with an Azure Monitor Workspace (AMW) so Azure Copilot Observability Agent can create and persist unified Azure Monitor Issues
+- D. Configure the Azure SRE Agent alert reinvestigation cooldown window (`3 hours` default, tunable `1-24 hours`) so recurring alerts do not spawn duplicate parallel investigations
+
+### 45. Auditors reviewing `Deploy_Prod` require that the developer who triggered a YAML run cannot approve its production deployment, deploys occur only between 01:00–04:00 UTC, and connection secrets come dynamically from Key Vault. Which two YAML capabilities satisfy this? Select two.
+
+Domain: Design and implement build and release pipelines
+
+- A. Configure YAML `environment: production` with Approvals (`approvers cannot approve their own runs`), Business Hours check, and Exclusive Lock (`runLatest`)
+- B. Link an Azure Pipelines Variable Group to Azure Key Vault with Pipeline Permissions restricted to authorized YAML pipelines and secret variables auto-masked
+- C. Git Flow with persistent `develop`, `main`, `feature/*`, `release/*`, and `hotfix/*` branches (adds dual-trunk merge overhead for continuous delivery)
+- D. Publish CI candidate packages to the `@Local` view of the Azure Artifacts feed before automated integration and security gates complete
+- E. Never checkout and execute untrusted fork PR code (`actions/checkout` on `github.event.pull_request.head.sha`) inside a privileged `pull_request_target` workflow with secrets
+
+### 46. Proposed solution: Dependabot opens a pull request directly modifying pinned action SHAs inside `.github/workflows/doc-audit.lock.yml` without touching `doc-audit.md`, and a maintainer merges it directly. Does this follow GitHub Agentic Workflows (`gh-aw`) maintenance rules?
+
+Domain: Design and implement build and release pipelines
+
+- A. Update pinned action SHAs inside `.lock.yml` exclusively via `gh aw update-actions` / `gh aw compile` rather than merging raw Dependabot edits to `.lock.yml`
+- B. Install the official GitHub CLI extension `gh extension install github/gh-ado2gh` and authenticate via scoped `ADO_PAT` and `GH_PAT` environment variables
+- C. Use `git filter-repo --invert-paths --path <sensitive-file>` (or `--replace-text`) to purge sensitive files/strings across all commits, tags, and branches
+- D. Execute `az deployment group what-if` in a pre-deploy CI/CD job so reviewers and Copilot PR checks inspect exact `Create`, `Modify`, and `Delete` resource changes before apply
+
+### 47. Your platform team wants to deploy a scheduled GitHub Agentic Workflow (`gh-aw`) that inspects CI flakiness and opens reviewable draft PRs safely. Which four-step workflow should you follow?
+
+Domain: Design and implement build and release pipelines
+
+- A. Install `github/gh-aw` extension → author `.github/workflows/<name>.md` with `permissions: read-all` and `safe-outputs` → run `gh aw compile` generating `<name>.lock.yml` → commit `.md` and `.lock.yml` via PR
+- B. Commit `.md` under `/docs` without `.lock.yml` → disable Actions runners → store OpenAI keys in plaintext frontmatter → push straight to `main`
+- C. Hand-edit `.lock.yml` directly without `.md` source → set `permissions: write-all` on the agent job → merge Dependabot `.lock.yml` pin PRs directly → skip `gh aw compile`
+- D. Replace all deterministic `dotnet build` and prod deploy YAML with uncompiled `.md` prose → grant prod secrets to untrusted issue comments → skip PR review → deploy directly
+
+### 48. An architect proposes replacing all deterministic `dotnet publish` and production Bicep deploy workflows with a single `permissions: write-all` LLM prompt workflow. Which two `gh-aw` design principles explain why you should reject that proposal? Select two.
+
+Domain: Design and implement build and release pipelines
+
+- A. Never checkout and execute untrusted fork PR code (`actions/checkout` on `github.event.pull_request.head.sha`) inside a privileged `pull_request_target` workflow with secrets
+- B. Run the `gh-aw` AI reasoning job in a sandboxed container with `permissions: read-all` (or `contents: read`) and network firewall isolation by default
+- C. Use GitHub Agentic Workflows (`gh-aw`) for judgment-driven triage, doc drift sync, and CI failure root-cause reports while keeping deterministic YAML for compilation, signing, and prod deploys
+- D. Assign free `Stakeholder` access level in Azure DevOps to external advisors or executives who only view/create Boards work items and dashboards without Repos access
+- E. Git Flow with persistent `develop`, `main`, `feature/*`, `release/*`, and `hotfix/*` branches (adds dual-trunk merge overhead for continuous delivery)
+
+### 49. You deploy a rewritten fraud-scoring container to Azure Container Apps and want only `5%` of live payment requests routed to the new revision for 30 minutes before shifting `100%` of traffic. Which deployment pattern should you implement?
+
+Domain: Design and implement build and release pipelines
+
+- A. Canary deployment routing 5%-10% of live traffic via Azure Container Apps revision weights (or Front Door / Service Mesh) while evaluating p95 latency and HTTP 5xx gates
+- B. Blue-Green deployment using Azure App Service Deployment Slots (`staging` warmed via `applicationInitialization` + smoke tests, then instant VIP swap to `Production`)
+- C. Azure App Configuration `Microsoft.TimeWindow` feature filter activating promotional logic at an exact UTC start/end window without redeploying containers
+- D. Branch `hotfix/*` from the production release tag (or merge to `main` + cherry-pick to `release/x.y`) through an expedited pipeline retaining mandatory security scans and smoke tests
+
+### 50. During an App Service `staging -> Production` VIP swap, your live API accidentally began writing transactions to the `staging-sqldb` database configured in App Settings. Which setting prevents environment-specific connection strings from moving during a swap?
+
+Domain: Design and implement build and release pipelines
+
+- A. A/B experimentation pairing Azure App Configuration variant feature flags with Application Insights custom business conversion events
+- B. Configure `website_swap_warmup_ping_path` / `applicationInitialization` health endpoints and verify HTTP 200 readiness before completing App Service slot swaps
+- C. Mark environment-specific connection strings and feature endpoints as `Deployment slot setting` (slot-pinned) so they remain bound to each slot across VIP swaps
+- D. Configure Kubernetes `RollingUpdate` (`maxUnavailable: 0, maxSurge: 25%`) paired with `readinessProbe` and `PodDisruptionBudget` on AKS deployments
+
+### 51. Product managers want a new instant-wire UI enabled for `100%` of internal `@aegisclear.com` testers, `15%` of UK customers (with sticky user sessions), and `0%` of US customers without redeploying containers. Which capability provides this?
+
+Domain: Design and implement build and release pipelines
+
+- A. Azure App Configuration `Microsoft.TimeWindow` feature filter activating promotional logic at an exact UTC start/end window without redeploying containers
+- B. Azure App Configuration Feature Manager with `Microsoft.Targeting` filters enabling features incrementally by user IDs, Entra groups, and rollout percentages
+- C. Deploy container images by immutable SHA-256 manifest digest (`ghcr.io/org/api@sha256:...`) rather than mutable `:latest` tags
+- D. Deploy Bicep templates via Azure Deployment Stacks (`az stack group create`) with `--action-on-unmanage deleteResources` and `--deny-settings-mode denyWriteAndDelete`
+
+### 52. A Sev1 currency-rounding bug hits `v4.1.0` in production while `main` already contains 18 unshipped `v4.2` features. How should you ship an emergency fix within 30 minutes without releasing unfinished `v4.2` code or skipping security scans?
+
+Domain: Design and implement build and release pipelines
+
+- A. Branch `hotfix/*` from the production release tag (or merge to `main` + cherry-pick to `release/x.y`) through an expedited pipeline retaining mandatory security scans and smoke tests
+- B. Azure Artifacts Universal Packages (`UniversalPackages@0`) for deduplicated storage and versioned transfer of multi-gigabyte non-language bundles
+- C. Git Flow with persistent `develop`, `main`, `feature/*`, `release/*`, and `hotfix/*` branches (adds dual-trunk merge overhead for continuous delivery)
+- D. Publish CI candidate packages to the `@Local` view of the Azure Artifacts feed before automated integration and security gates complete
+
+### 53. You are designing progressive exposure across `Canary`, `EarlyAdopter`, and `Global` AKS clusters for a high-throughput settlement engine. Which four-step release sequence enforces artifact immutability and automated health gating?
+
+Domain: Design and implement build and release pipelines
+
+- A. Build once and publish one `@sha256` artifact → deploy to `Canary` (5%) with Release Annotations → evaluate automated Azure Monitor alert/KQL gates over bake window → promote same digest to `Global`
+- B. Stop production App Service for 20 minutes → upload unversioned ZIPs from a laptop → skip staging warm-up → enable monitoring afterward
+- C. Set gate timeout shorter than evaluation delay → override failing Sev1 alerts manually → maintain separate Git forks per ring → skip annotations
+- D. Deploy straight to 100% of `Global` users → rebuild source from `HEAD` in every stage → check telemetry manually next week → deploy `Canary` last
+
+### 54. Regulated treasury portals on Azure App Service + Azure SQL suffer 45-second cold-start HTTP 503 spikes and broken queries whenever column-renaming `DACPAC` scripts run during deployments. Which three practices achieve zero-downtime releases with instant rollback? Select three.
+
+Domain: Design and implement build and release pipelines
+
+- A. Blue-Green deployment using Azure App Service Deployment Slots (`staging` warmed via `applicationInitialization` + smoke tests, then instant VIP swap to `Production`)
+- B. Configure `website_swap_warmup_ping_path` / `applicationInitialization` health endpoints and verify HTTP 200 readiness before completing App Service slot swaps
+- C. Deploy additive backward-compatible SQL schema changes (`Expand -> Migrate -> Contract`) via `SqlAzureDacpacDeployment@1` with `BlockOnPossibleDataLoss=true`
+- D. Never checkout and execute untrusted fork PR code (`actions/checkout` on `github.event.pull_request.head.sha`) inside a privileged `pull_request_target` workflow with secrets
+- E. Git Flow with persistent `develop`, `main`, `feature/*`, `release/*`, and `hotfix/*` branches (adds dual-trunk merge overhead for continuous delivery)
+- F. Publish CI candidate packages to the `@Local` view of the Azure Artifacts feed before automated integration and security gates complete
+
+### 55. Platform engineering wants 75 developers and Copilot sandbox tasks to spin up pre-approved, auto-expiring dev/test resource topologies from a Bicep catalog using Managed Identities without granting developers subscription `Contributor`/`Owner` rights. Which Azure service fits?
+
+Domain: Design and implement build and release pipelines
+
+- A. Enforce guest OS baselines across Azure and Arc-enabled servers using Azure Policy Machine Configuration (`Guest Configuration`) packages audited continuously in Azure Resource Graph
+- B. Reference secrets dynamically via `getSecret()` on an existing Key Vault resource inside `.bicepparam` / Bicep modules with `@secure()` parameters
+- C. Assign free `Stakeholder` access level in Azure DevOps to external advisors or executives who only view/create Boards work items and dashboards without Repos access
+- D. Use Azure Deployment Environments (ADE) backed by catalog Bicep templates and per-environment Managed Identities so developers self-provision governed, auto-expiring sandboxes
+
+### 56. You want to eliminate manual Azure Portal firewall edits in production and automatically clean up removed child resources when Bicep templates evolve. Which four-step IaC workflow should you implement?
+
+Domain: Design and implement build and release pipelines
+
+- A. Run `az bicep build` linter and IaC scans on PRs → authenticate pre-deploy via OIDC → execute `az deployment group what-if` resource diff → apply `az stack group create` with `denyWriteAndDelete`
+- B. Run `az deployment group create --mode Complete` blindly in prod → inspect `what-if` afterward → export manual portal edits → commit secrets in params
+- C. Grant all developers subscription `Owner` in prod → edit NSGs manually in Azure Portal → skip Bicep linter → disable Deployment Stack deny settings
+- D. Run `az bicep decompile` in production without auth → skip `what-if` → delete resource groups nightly → store state in wiki tables
+
+### 57. Your cloud governance board is standardizing Bicep across 40 repos: teams must share versioned modules privately, block manual portal edits on deployed resources, and pass SQL admin passwords without cleartext in `.bicepparam` files. Which three capabilities meet all requirements? Select three.
+
+Domain: Design and implement build and release pipelines
+
+- A. Assign free `Stakeholder` access level in Azure DevOps to external advisors or executives who only view/create Boards work items and dashboards without Repos access
+- B. Calendar Versioning (`YYYY.0M.MICRO`, e.g., `2026.10.2`) suited for time-bound rule packs, OS images, or continuously delivered platform snapshots
+- C. Deploy Bicep templates via Azure Deployment Stacks (`az stack group create`) with `--action-on-unmanage deleteResources` and `--deny-settings-mode denyWriteAndDelete`
+- D. Track large binary assets (`*.psd`, `*.onnx`, `*.pak`) via Git Large File Storage (`git lfs track`) and enable `lfs: true` in checkout steps
+- E. Reference secrets dynamically via `getSecret()` on an existing Key Vault resource inside `.bicepparam` / Bicep modules with `@secure()` parameters
+- F. Publish versioned organizational Bicep modules (`br:corp.azurecr.io/bicep/aks:v2.1`) to a private Azure Container Registry (or Azure Verified Modules)
+
+### 58. When Copilot or a developer pushes three rapid fixup commits to an open PR branch, older 18-minute CI runs keep hogging runners. Complete the GitHub Actions block: `concurrency: { group: pr-${{ github.ref }}, ____ }` — which setting aborts superseded PR runs?
+
+Domain: Design and implement build and release pipelines
+
+- A. `id-token: write` (GitHub Actions job permission required for `azure/login@v2` to request an OIDC JWT for Entra federation)
+- B. `cancel-in-progress: true` (GitHub Actions `concurrency` property terminating older queued/running jobs on the same PR ref)
+- C. `isOutput=true` (`##vso[task.setvariable variable=x;isOutput=true]` flag exposing an Azure Pipelines variable across jobs and stages)
+- D. `@Release` (Azure Artifacts feed view suffix `feedName@Release` isolating verified production-ready immutable packages)
+
+### 59. Hosted `ubuntu-latest` workflows spend 4 minutes downloading identical npm packages on every run because the cache key uses `${{ github.sha }}`. How should you key `actions/cache@v4` for deterministic hits and automatic invalidation?
+
+Domain: Design and implement build and release pipelines
+
+- A. Azure Artifacts Universal Packages (`UniversalPackages@0`) for deduplicated storage and versioned transfer of multi-gigabyte non-language bundles
+- B. Set `trigger: batch: true` on high-commit `main` CI pipelines when runner capacity is constrained so queued commits consolidate while a run is active
+- C. Apply tiered retention (`7-14 days` for ephemeral PR artifacts, `30 days` for unpromoted CI builds, and explicit Retention Leases / `@Release` views on production releases)
+- D. Configure `actions/cache@v4` (or `setup-node` / `setup-dotnet` caching) keyed on `${{ runner.os }}-deps-${{ hashFiles('**/package-lock.json') }}` with `restore-keys` fallback
+
+### 60. Pipeline analytics show `SettlementTimeoutTests` fails intermittently on `14%` of green code changes due to `Thread.Sleep(200)` clock assumptions, causing engineers to blindly re-run failed pipelines. What is the disciplined remediation?
+
+Domain: Design and implement build and release pipelines
+
+- A. Mark environment-specific connection strings and feature endpoints as `Deployment slot setting` (slot-pinned) so they remain bound to each slot across VIP swaps
+- B. Enable Azure Pipelines flaky test detection and use GitHub Copilot + MCP test-run tools to isolate nondeterministic timing/state dependencies into tracked bugs
+- C. Enforce a Pull Request Status Policy requiring `>= 80%` diff code coverage on newly changed lines while ratcheting legacy baseline coverage upward
+- D. Deploy container images by immutable SHA-256 manifest digest (`ghcr.io/org/api@sha256:...`) rather than mutable `:latest` tags
+
+### 61. Your CIO asks you to cut CI/CD storage bills by 40%, reduce runner queue backlogs during commit storms on `main`, and pinpoint which pipeline tasks regressed `p95` build duration this quarter. Which three practices address all three goals? Select three.
+
+Domain: Design and implement build and release pipelines
+
+- A. Set `trigger: batch: true` on high-commit `main` CI pipelines when runner capacity is constrained so queued commits consolidate while a run is active
+- B. Apply tiered retention (`7-14 days` for ephemeral PR artifacts, `30 days` for unpromoted CI builds, and explicit Retention Leases / `@Release` views on production releases)
+- C. Never checkout and execute untrusted fork PR code (`actions/checkout` on `github.event.pull_request.head.sha`) inside a privileged `pull_request_target` workflow with secrets
+- D. Review Azure Pipelines / GitHub Actions Workflow Insights (`Pass rate`, `p95 duration`, task timeline bottlenecks, and flaky failures) to target caching and sharding optimizations
+- E. Assign free `Stakeholder` access level in Azure DevOps to external advisors or executives who only view/create Boards work items and dashboards without Repos access
+- F. Git Flow with persistent `develop`, `main`, `feature/*`, `release/*`, and `hotfix/*` branches (adds dual-trunk merge overhead for continuous delivery)
+
+### 62. Six production Azure Pipelines failed simultaneously at midnight because a manual 12-month Entra Service Principal client secret expired. How should you eliminate secret expiration outages permanently in Azure DevOps?
+
+Domain: Design and implement a security and compliance plan
+
+- A. Assign free `Stakeholder` access level in Azure DevOps to external advisors or executives who only view/create Boards work items and dashboards without Repos access
+- B. Create an Azure Resource Manager service connection using `Workload Identity federation (automatic)` scoped to the target resource group and restricted via Pipeline Permissions
+- C. Azure Artifacts Universal Packages (`UniversalPackages@0`) for deduplicated storage and versioned transfer of multi-gigabyte non-language bundles
+- D. When a PAT is unavoidable for legacy CLI tooling, issue a short-lived Fine-Grained PAT (`<= 30 days`) scoped to specific repositories and minimum permissions
+
+### 63. Proposed solution: To let an org-wide compliance bot open pull requests across 50 GitHub repositories, you generate a classic PAT under your Lead Architects personal account with `repo` and `admin:org` scopes. Is this resilient enterprise practice?
+
+Domain: Design and implement a security and compliance plan
+
+- A. Authenticate cross-repository org automation with an installation-scoped GitHub App minting 1-hour installation tokens (`actions/create-github-app-token`) instead of personal PATs
+- B. Track large binary assets (`*.psd`, `*.onnx`, `*.pak`) via Git Large File Storage (`git lfs track`) and enable `lfs: true` in checkout steps
+- C. When a PAT is unavoidable for legacy CLI tooling, issue a short-lived Fine-Grained PAT (`<= 30 days`) scoped to specific repositories and minimum permissions
+- D. Assign `Basic + Test Plans` access level to QA leads who author test suites, configure test plans, and execute exploratory sessions (vs `Basic` for developers)
+
+### 64. You are configuring secretless production deployments from GitHub Actions (`environment: production`) to an Azure resource group. Which four-step setup enforces least-privilege Workload Identity Federation?
+
+Domain: Design and implement a security and compliance plan
+
+- A. Set `permissions: contents: write` only → commit `.pfx` files to Git → run `az login` interactively → add federated credentials after prod fails
+- B. Use `pull_request_target` checking out untrusted fork code → inject prod OIDC environment → skip reviewer approvals → push straight to prod
+- C. Create a 24-month client secret → omit `id-token: write` → allow wildcard `*` federated subjects → grant subscription `Owner` to all PR branches
+- D. Assign least-privilege Azure RBAC to a Managed Identity → configure federated subject `repo:<org>/<repo>:environment:production` → set `id-token: write` on the job → run `azure/login@v2` with zero secrets
+
+### 65. Your zero-trust review flags workflows running with default write-all `GITHUB_TOKEN` permissions and Azure App Services storing Entra client secrets in config files. Which two architectural standards remediate both findings? Select two.
+
+Domain: Design and implement a security and compliance plan
+
+- A. Never checkout and execute untrusted fork PR code (`actions/checkout` on `github.event.pull_request.head.sha`) inside a privileged `pull_request_target` workflow with secrets
+- B. Publish CI candidate packages to the `@Local` view of the Azure Artifacts feed before automated integration and security gates complete
+- C. Set top-level workflow `permissions: {}` (or `contents: read`) and elevate `GITHUB_TOKEN` scopes (`packages: write`, `pull-requests: write`) only on specific jobs requiring them
+- D. Ensure `Bypass policies when pushing` and `Bypass policies when completing pull requests` are set to `Not set` / `Deny` for standard `Contributors`
+- E. Prefer Managed Identities for Azure-hosted resources and Workload Identity Federation for external CI/CD (GitHub Actions / ADO), avoiding secret-backed Service Principals
+
+### 66. External PCI compliance auditors need to view Azure Boards dashboards, read Epics, and log audit findings in your private Azure DevOps project without costing license fees or seeing Azure Repos source code. Which access level should you assign?
+
+Domain: Design and implement a security and compliance plan
+
+- A. Configure `.github/CODEOWNERS` mapping critical paths (`infra/**`, `.github/**`, `auth/**`) to security and platform teams with required owner review
+- B. Enable `Limit job authorization scope to current project for non-release and release pipelines` and `Protect access to repositories in YAML pipelines` at the org level
+- C. Assign `Basic + Test Plans` access level to QA leads who author test suites, configure test plans, and execute exploratory sessions (vs `Basic` for developers)
+- D. Assign free `Stakeholder` access level in Azure DevOps to external advisors or executives who only view/create Boards work items and dashboards without Repos access
+
+### 67. A penetration test reveals that a YAML pipeline in the `Sandbox` Azure DevOps project used its default `Build Service` token to clone confidential C# repositories in the `CoreSettlement` project of the same org. Which org setting blocks this lateral movement?
+
+Domain: Design and implement a security and compliance plan
+
+- A. Assign free `Stakeholder` access level in Azure DevOps to external advisors or executives who only view/create Boards work items and dashboards without Repos access
+- B. Single Azure Artifacts feed with Upstream Sources enabled (`npmjs.com`, `nuget.org`, `pypi.org`) so resolved public packages are cached immutably
+- C. Enforce `Squash merge` on `main` so noisy intermediate WIP / agent iteration commits collapse into one atomic commit per PR
+- D. Enable `Limit job authorization scope to current project for non-release and release pipelines` and `Protect access to repositories in YAML pipelines` at the org level
+
+### 68. Two newly hired QA architects must create Azure Test Plans, configure static/requirement-based test suites, and run web test-runner exploratory sessions, while 30 developers only run unit tests in CI. Which license assignment minimizes cost?
+
+Domain: Design and implement a security and compliance plan
+
+- A. Commit versioned client hooks in `.githooks/` (`pre-commit`, `commit-msg`) paired with `git config core.hooksPath .githooks` AND enforce server-side CI/Ruleset checks
+- B. Assign free `Stakeholder` access level in Azure DevOps to external advisors or executives who only view/create Boards work items and dashboards without Repos access
+- C. Assign `Basic + Test Plans` access level to QA leads who author test suites, configure test plans, and execute exploratory sessions (vs `Basic` for developers)
+- D. When a PAT is unavoidable for legacy CLI tooling, issue a short-lived Fine-Grained PAT (`<= 30 days`) scoped to specific repositories and minimum permissions
+
+### 69. You configure a custom MCP server for GitHub Copilot cloud agent that needs an API key injected from the repository `copilot` GitHub Environment without hardcoding secrets in `mcp.json`. Complete the required secret name prefix: `____SENTRY_AUTH_TOKEN` — what prefix must the secret use?
+
+Domain: Design and implement a security and compliance plan
+
+- A. `what-if` (`az deployment group what-if` subcommand previewing ARM resource creations, modifications, and deletions)
+- B. `COPILOT_MCP_` (required secret/variable name prefix inside the `copilot` GitHub Environment for MCP server credentials)
+- C. `safe-outputs` (declarative frontmatter block in `gh-aw` `.md` workflows isolating write actions like `create-pull-request` and `add-comment`)
+- D. `applyTo` (YAML frontmatter glob property inside `.github/instructions/<name>.instructions.md`, e.g., `applyTo: "**/*.bicep"`)
+
+### 70. A custom shell step fetches a short-lived signing token `SIGN_TOK` via `curl` and passes it to a subsequent step, accidentally echoing it when debug tracing runs. Complete the command: `echo "____$SIGN_TOK"` — which workflow command scrubs the value from all logs?
+
+Domain: Design and implement a security and compliance plan
+
+- A. `::add-mask::` (GitHub Actions workflow command registering a runtime string with the runner log scrubber)
+- B. `id-token: write` (GitHub Actions job permission required for `azure/login@v2` to request an OIDC JWT for Entra federation)
+- C. `cancel-in-progress: true` (GitHub Actions `concurrency` property terminating older queued/running jobs on the same PR ref)
+- D. `@Release` (Azure Artifacts feed view suffix `feedName@Release` isolating verified production-ready immutable packages)
+
+### 71. Mobile release pipelines in Azure DevOps require an Apple `.p12` binary signing certificate authorized for a single YAML pipeline and automatically wiped from the agent disk after the job finishes. Where should you store the `.p12` file?
+
+Domain: Design and implement a security and compliance plan
+
+- A. Use `AzureKeyVault@2` (`SecretsFilter: "sql-conn,signing-key"`, `RunAsPreJob: false`) or `Azure/get-keyvault-secrets` over OIDC fetching only required named secrets at deploy time
+- B. Store production deployment secrets inside a protected GitHub Environment (`production`) gated by required human reviewers and deployment branch rules (`main` only)
+- C. Promote fully validated immutable packages to the `@Release` feed view and configure production builds to restore exclusively from `feed@Release`
+- D. Upload binary `.pfx` / `.p12` certificates or SSH keys to Azure Pipelines `Library -> Secure Files` and consume via `DownloadSecureFile@1` (auto-purged post-job)
+
+### 72. Your deployment Managed Identity only reads two connection strings from Azure Key Vault, yet legacy Vault Access Policies currently grant it `Delete` and `Set` permissions across all 90 vault secrets. How should you enforce least privilege?
+
+Domain: Design and implement a security and compliance plan
+
+- A. Never checkout and execute untrusted fork PR code (`actions/checkout` on `github.event.pull_request.head.sha`) inside a privileged `pull_request_target` workflow with secrets
+- B. Enable `Azure role-based access control` on Key Vault granting deploy identities `Key Vault Secrets User` (read-only) and reserving `Key Vault Secrets Officer` for rotation pipelines
+- C. Assign free `Stakeholder` access level in Azure DevOps to external advisors or executives who only view/create Boards work items and dashboards without Repos access
+- D. Azure Artifacts Universal Packages (`UniversalPackages@0`) for deduplicated storage and versioned transfer of multi-gigabyte non-language bundles
+
+### 73. Yesterday a contractor accidentally pushed an internal Stripe live key to a feature branch, triggering a 4-hour incident response. Which GitHub Advanced Security / GHAzDO feature rejects pushes containing high-confidence or custom-pattern secrets synchronously at `git push` time?
+
+Domain: Design and implement a security and compliance plan
+
+- A. Enable GHAS / GHAzDO Secret Scanning with Push Protection plus custom org regex patterns so commits containing credentials are rejected synchronously on `git push`
+- B. Enable CodeQL semantic code scanning (Default or Advanced setup) on PRs and scheduled `main` runs, surfacing SARIF dataflow alerts in the GitHub/ADO `Security` tab
+- C. Use `git filter-repo --invert-paths --path <sensitive-file>` (or `--replace-text`) to purge sensitive files/strings across all commits, tags, and branches
+- D. Scan built container images with Trivy / Defender CLI in CI (`--exit-code 1 --severity HIGH,CRITICAL`) uploading SARIF reports before pushing to ACR or `ghcr.io`
+
+### 74. Your CISO wants to prioritize fixing the 6 CodeQL and container CVEs running on internet-exposed production AKS pods with Key Vault access ahead of 400 CVEs in offline internal tools. Which integration correlates repo SARIF findings with live Azure runtime attack paths?
+
+Domain: Design and implement a security and compliance plan
+
+- A. Generate SPDX / CycloneDX SBOMs (`ManifestGeneratorTask@0` or `actions/attest-build-provenance`) signed with OIDC provenance attestations on every release build
+- B. Run `actions/dependency-review-action@v4` on pull requests configured with `fail-on-severity: high` and `deny-licenses: [AGPL-3.0, GPL-3.0]` alongside Dependabot updates
+- C. Run Cobertura/OpenCover instrumentation with `PublishCodeCoverageResults@2` and use Copilot + MCP tools to generate targeted unit tests for uncovered PR diff paths
+- D. Connect GitHub Enterprise and Azure DevOps organizations to Microsoft Defender for Cloud (DevOps Security) to correlate code/IaC/container SARIF findings with live cloud attack paths
+
+### 75. Compliance officers ask what automated security checks GitHub Copilot cloud agent executes on code it writes before presenting a pull request for human review. Which built-in validation occurs inside the cloud agent workflow?
+
+Domain: Design and implement a security and compliance plan
+
+- A. Inspect `git reflog` (or Azure Repos / GitHub pushed-ref activity APIs) to locate the orphaned commit SHA after an accidental hard reset or branch deletion and recreate the branch
+- B. Assign free `Stakeholder` access level in Azure DevOps to external advisors or executives who only view/create Boards work items and dashboards without Repos access
+- C. Leverage GitHub Copilot cloud agents built-in pre-PR validation (CodeQL SAST, GitHub Advisory Database dependency checks, and secret scanning) on agent-generated commits
+- D. Calendar Versioning (`YYYY.0M.MICRO`, e.g., `2026.10.2`) suited for time-bound rule packs, OS images, or continuously delivered platform snapshots
+
+### 76. Legal and AppSec require every GitHub pull request to fail automatically if a developer or coding agent introduces either a SQL-injection taint flow in C# code or a new npm package licensed under `AGPL-3.0`. Which two PR checks enforce both rules? Select two.
+
+Domain: Design and implement a security and compliance plan
+
+- A. Run `actions/dependency-review-action@v4` on pull requests configured with `fail-on-severity: high` and `deny-licenses: [AGPL-3.0, GPL-3.0]` alongside Dependabot updates
+- B. Publish CI candidate packages to the `@Local` view of the Azure Artifacts feed before automated integration and security gates complete
+- C. Enable CodeQL semantic code scanning (Default or Advanced setup) on PRs and scheduled `main` runs, surfacing SARIF dataflow alerts in the GitHub/ADO `Security` tab
+- D. Git Flow with persistent `develop`, `main`, `feature/*`, `release/*`, and `hotfix/*` branches (adds dual-trunk merge overhead for continuous delivery)
+- E. Never checkout and execute untrusted fork PR code (`actions/checkout` on `github.event.pull_request.head.sha`) inside a privileged `pull_request_target` workflow with secrets
+
+### 77. Security operations needs real-time KQL alerts in Microsoft Sentinel whenever anyone modifies Azure DevOps branch-policy permissions, deletes a service connection, or changes Variable Group ACLs. What should you configure?
+
+Domain: Implement an instrumentation strategy
+
+- A. Configure an Azure DevOps Dashboard combining Lead Time, Cycle Time, Cumulative Flow, Deployment Frequency, and Sprint Burndown Analytics widgets
+- B. Use GitHub Insights, Pull Request / Actions Performance metrics, and custom Issues/Projects charts to track PR review turnaround, queue wait times, and CI failure trends
+- C. Configure Azure DevOps Auditing Streaming (and GitHub Enterprise Audit Log Streaming) forwarding admin/permission/secret events into Azure Monitor Log Analytics / Sentinel
+- D. Configure Application Insights Adaptive Sampling (preserving 100% of exceptions/errors while sampling high-volume HTTP 200 traces) plus Daily Cap alerting
+
+### 78. Your VP wants a unified Azure Workbook correlating GitHub Actions `workflow_run` / `deployment_status` durations and failure rates across 80 repositories alongside production AKS latency. How should you ingest the GitHub platform events?
+
+Domain: Implement an instrumentation strategy
+
+- A. Use `git worktree add ../wt-task -b feat/task origin/main` so multiple local CLI coding agents work concurrently in isolated directories sharing one `.git` object store
+- B. Mark environment-specific connection strings and feature endpoints as `Deployment slot setting` (slot-pinned) so they remain bound to each slot across VIP swaps
+- C. Subscribe a GitHub Organization Webhook (`workflow_run`, `deployment_status`) to an Azure Monitor Logs Ingestion endpoint to chart enterprise-wide DORA metrics in Azure Workbooks
+- D. Assign free `Stakeholder` access level in Azure DevOps to external advisors or executives who only view/create Boards work items and dashboards without Repos access
+
+### 79. Engineering leads suspect pull requests wait 36 hours for first human review even after Copilot code review finishes in 2 minutes. Which native GitHub platform analytics view tracks PR review turnaround and Actions queue wait trends?
+
+Domain: Implement an instrumentation strategy
+
+- A. Deploy additive backward-compatible SQL schema changes (`Expand -> Migrate -> Contract`) via `SqlAzureDacpacDeployment@1` with `BlockOnPossibleDataLoss=true`
+- B. Azure Artifacts Universal Packages (`UniversalPackages@0`) for deduplicated storage and versioned transfer of multi-gigabyte non-language bundles
+- C. Use GitHub Insights, Pull Request / Actions Performance metrics, and custom Issues/Projects charts to track PR review turnaround, queue wait times, and CI failure trends
+- D. Upload binary `.pfx` / `.p12` certificates or SSH keys to Azure Pipelines `Library -> Secure Files` and consume via `DownloadSecureFile@1` (auto-purged post-job)
+
+### 80. Nightly compliance builds occasionally fail silently over weekends until Monday standup. How should you trigger automated PagerDuty/Teams alerts whenever `main` pipeline pass rates fall below `90%` in a 1-hour window?
+
+Domain: Implement an instrumentation strategy
+
+- A. Track large binary assets (`*.psd`, `*.onnx`, `*.pak`) via Git Large File Storage (`git lfs track`) and enable `lfs: true` in checkout steps
+- B. Reference secrets dynamically via `getSecret()` on an existing Key Vault resource inside `.bicepparam` / Bicep modules with `@secure()` parameters
+- C. Forward Azure DevOps / GitHub Actions diagnostic and webhook events into Log Analytics and trigger an Azure Monitor Scheduled Query Alert on repeated `main` build or prod stage failures
+- D. Calendar Versioning (`YYYY.0M.MICRO`, e.g., `2026.10.2`) suited for time-bound rule packs, OS images, or continuously delivered platform snapshots
+
+### 81. Proposed solution: A junior developer with `Reader` access only on `rg-dev` opens Azure Copilot Observability Agent chat and asks it to inspect `rg-prod-settlement` Application Insights logs where they have no Azure RBAC role. Will the agent return the production logs?
+
+Domain: Implement an instrumentation strategy
+
+- A. Provision an Azure Copilot Observability Agent resource with custom topology/runbook instructions and opt in to autonomous background alert correlation
+- B. Use `git filter-repo --invert-paths --path <sensitive-file>` (or `--replace-text`) to purge sensitive files/strings across all commits, tags, and branches
+- C. Authenticate the Azure SRE Agent ServiceNow connector (`itil` role / OAuth) and specify a mandatory `assignment_group` so the agent indexes and triages only that teams incidents
+- D. Invoke Azure Copilot Observability Agent on-demand from Azure Copilot chat or Application Insights / AKS blades, operating strictly within the signed-in users Azure RBAC, PIM, and resource locks
+
+### 82. Your CISO and SRE director ask two questions before approving Azure Copilot Observability Agent for autonomous alert correlation: what Azure resource is needed beyond zero-setup chat, and whether customer prompts/telemetry train public foundation models. Which two statements are accurate? Select two.
+
+Domain: Implement an instrumentation strategy
+
+- A. Azure Artifacts Universal Packages (`UniversalPackages@0`) for deduplicated storage and versioned transfer of multi-gigabyte non-language bundles
+- B. Git Flow with persistent `develop`, `main`, `feature/*`, `release/*`, and `hotfix/*` branches (adds dual-trunk merge overhead for continuous delivery)
+- C. Never checkout and execute untrusted fork PR code (`actions/checkout` on `github.event.pull_request.head.sha`) inside a privileged `pull_request_target` workflow with secrets
+- D. Provision an Azure Copilot Observability Agent resource with custom topology/runbook instructions and opt in to autonomous background alert correlation
+- E. Rely on Microsofts enterprise data boundary guarantee that customer prompts, telemetry, and outputs in Azure Copilot Observability Agent are never used to train foundation models
+
+### 83. Proposed solution: An SRE tries to connect a single Azure SRE Agent instance simultaneously to both PagerDuty and ServiceNow as active native incident management platforms at the same time. Is that configuration supported?
+
+Domain: Implement an instrumentation strategy
+
+- A. Configure Scheduled Tasks in Azure SRE Agent to run proactive daily drift checks, certificate expiry audits, and capacity health summaries outside active incidents
+- B. Deploy container images by immutable SHA-256 manifest digest (`ghcr.io/org/api@sha256:...`) rather than mutable `:latest` tags
+- C. Assign free `Stakeholder` access level in Azure DevOps to external advisors or executives who only view/create Boards work items and dashboards without Repos access
+- D. Connect Azure SRE Agent (`sre.azure.com`) to its active incident platform (`Azure Monitor`, `PagerDuty`, or `ServiceNow` — one incident platform per agent at a time)
+
+### 84. A 1-minute metric alert on CPU saturation fires 25 times during a database failover, and you want Azure SRE Agent to investigate the root cause once without launching 24 duplicate parallel agent investigations. Which setting prevents duplicate loops?
+
+Domain: Implement an instrumentation strategy
+
+- A. Configure `actions/cache@v4` (or `setup-node` / `setup-dotnet` caching) keyed on `${{ runner.os }}-deps-${{ hashFiles('**/package-lock.json') }}` with `restore-keys` fallback
+- B. Configure Scheduled Tasks in Azure SRE Agent to run proactive daily drift checks, certificate expiry audits, and capacity health summaries outside active incidents
+- C. Configure the Azure SRE Agent alert reinvestigation cooldown window (`3 hours` default, tunable `1-24 hours`) so recurring alerts do not spawn duplicate parallel investigations
+- D. Mark environment-specific connection strings and feature endpoints as `Deployment slot setting` (slot-pinned) so they remain bound to each slot across VIP swaps
+
+### 85. After connecting Azure SRE Agent to ServiceNow, zero Treasury incidents are being triaged automatically, and compliance requires human operator sign-off before any pod restart or scaling command executes in prod. Which two configurations solve both requirements? Select two.
+
+Domain: Implement an instrumentation strategy
+
+- A. Git Flow with persistent `develop`, `main`, `feature/*`, `release/*`, and `hotfix/*` branches (adds dual-trunk merge overhead for continuous delivery)
+- B. Publish CI candidate packages to the `@Local` view of the Azure Artifacts feed before automated integration and security gates complete
+- C. Ensure `Bypass policies when pushing` and `Bypass policies when completing pull requests` are set to `Not set` / `Deny` for standard `Contributors`
+- D. Create an Incident Response Plan in Azure SRE Agent specifying alert filters (service, severity, title), linked runbook instructions, and the target autonomy level
+- E. Configure the Incident Response Plan autonomy level to `Review` (human-in-the-loop approval before remediation) in production before graduating low-risk tasks to `Autonomous`
+
+### 86. Checkout requests pass from Azure API Management through an AKS `.NET` API onto Azure Service Bus and an async worker pod, but the Application Insights Application Map shows three disconnected islands. What correlates the end-to-end call graph?
+
+Domain: Implement an instrumentation strategy
+
+- A. Apply tiered retention (`7-14 days` for ephemeral PR artifacts, `30 days` for unpromoted CI builds, and explicit Retention Leases / `@Release` views on production releases)
+- B. Deploy the Azure Monitor Agent (AMA) governed by Data Collection Rules (DCRs) with workspace transformation KQL dropping verbose `Debug` lines at ingestion
+- C. Configure Application Insights Adaptive Sampling (preserving 100% of exceptions/errors while sampling high-volume HTTP 200 traces) plus Daily Cap alerting
+- D. Enable OpenTelemetry / Application Insights SDKs propagating W3C Trace Context (`traceparent`) across HTTP gateways, Service Bus queues, and AKS microservices
+
+### 87. An auditor reviewing a merged PR authored by GitHub Copilot cloud agent asks how to inspect the exact reasoning steps, MCP tool calls, and commands the agent ran during that session. Where are those logs preserved and linked?
+
+Domain: Implement an instrumentation strategy
+
+- A. Inspect `git reflog` (or Azure Repos / GitHub pushed-ref activity APIs) to locate the orphaned commit SHA after an accidental hard reset or branch deletion and recreate the branch
+- B. Inspect GitHub Copilot cloud agent session logs via the `Copilot` tab / verified commit trailer links (or `gh agent-task view --log`) to audit reasoning, MCP tool calls, and token usage
+- C. Mark environment-specific connection strings and feature endpoints as `Deployment slot setting` (slot-pinned) so they remain bound to each slot across VIP swaps
+- D. Azure Artifacts Universal Packages (`UniversalPackages@0`) for deduplicated storage and versioned transfer of multi-gigabyte non-language bundles
+
+### 88. During a live incident, on-call engineers want to query Log Analytics using plain-English questions while still verifying the exact KQL executed, and automatically see vertical deployment markers on latency graphs. Which two capabilities should they use? Select two.
+
+Domain: Implement an instrumentation strategy
+
+- A. Git Flow with persistent `develop`, `main`, `feature/*`, `release/*`, and `hotfix/*` branches (adds dual-trunk merge overhead for continuous delivery)
+- B. Calendar Versioning (`YYYY.0M.MICRO`, e.g., `2026.10.2`) suited for time-bound rule packs, OS images, or continuously delivered platform snapshots
+- C. Emit Application Insights Release Annotations from CD pipelines on every ring promotion so Azure SRE Agent and performance charts correlate metric shifts with exact build versions
+- D. Interrogate Log Analytics and Application Insights via natural-language prompts in Azure Copilot / Observability Agent, inspecting and executing the generated KQL query
+- E. Assign free `Stakeholder` access level in Azure DevOps to external advisors or executives who only view/create Boards work items and dashboards without Repos access
+
+---
+
+## Case study — AegisClear Payments
+
+AegisClear Payments tracks compliance Epics in Azure Boards while hosting .NET 9 settlement APIs in GitHub Enterprise Cloud. Engineers invoke GitHub Copilot cloud agent from work items using the Azure DevOps MCP server, enforce human code-owner sign-off on agent PRs, and authenticate workflows to private AKS clusters via OIDC without client secrets.
+
+The next 3 questions refer to **AegisClear Payments**. Read the scenario brief once, then answer each item independently.
+
+### 89. Settlement engineers merge pull requests in GitHub Enterprise Cloud and want the linked Azure Boards User Story #4812 to transition automatically to `Resolved` without manual board updates. Which commit or PR convention should they standardize?
+
+Domain: Design and implement processes and communications
+
+- A. Calendar Versioning (`YYYY.0M.MICRO`, e.g., `2026.10.2`) suited for time-bound rule packs, OS images, or continuously delivered platform snapshots
+- B. Include `Fixes AB#<WorkItemID>` in the GitHub pull request description or commit message with the Azure Boards GitHub App connected
+- C. Assign free `Stakeholder` access level in Azure DevOps to external advisors or executives who only view/create Boards work items and dashboards without Repos access
+- D. Git Flow with persistent `develop`, `main`, `feature/*`, `release/*`, and `hotfix/*` branches (adds dual-trunk merge overhead for continuous delivery)
+
+### 90. Inside `.github/workflows/copilot-setup-steps.yml`, `azure/login@v2` authenticates via OIDC first, and the repo MCP config starts `npx -y @azure-devops/mcp aegisclear ____` so no interactive browser login blocks the headless runner. Which flag completes the command?
+
+Domain: Design and implement processes and communications
+
+- A. `git worktree add` (creates an isolated working directory on a separate branch sharing the same local `.git` repository)
+- B. `-a azcli` (authentication flag on `npx -y @azure-devops/mcp <org> -a azcli` reusing the OIDC Azure CLI session from `copilot-setup-steps`)
+- C. `git filter-repo` (command-line tool rewriting Git history across all refs to purge leaked credentials or large files)
+- D. `--all` (flag on `gh ado2gh generate-script` that rewires pipelines, configures Azure Boards links, and maps teams/permissions)
+
+### 91. A GitHub Actions job deploying to private AKS via `azure/login@v2` fails with `Unable to get ACTIONS_ID_TOKEN_REQUEST_URL env variable`. Complete the job block: `permissions: { contents: read, ____ }` — which permission is missing?
+
+Domain: Design and implement a security and compliance plan
+
+- A. `cancel-in-progress: true` (GitHub Actions `concurrency` property terminating older queued/running jobs on the same PR ref)
+- B. `id-token: write` (GitHub Actions job permission required for `azure/login@v2` to request an OIDC JWT for Entra federation)
+- C. `applyTo` (YAML frontmatter glob property inside `.github/instructions/<name>.instructions.md`, e.g., `applyTo: "**/*.bicep"`)
+- D. `isOutput=true` (`##vso[task.setvariable variable=x;isOutput=true]` flag exposing an Azure Pipelines variable across jobs and stages)
+
+---
+
+## Case study — CrestVault Risk
+
+CrestVault Risk runs fraud-scoring containers on AKS monitored by Application Insights and Azure Monitor. Alert storms overwhelm night shifts, so operations wants background AI alert correlation creating unified Azure Monitor Issues plus KQL / natural-language analysis of p95 latency spikes after canary rollouts.
+
+The next 3 questions refer to **CrestVault Risk**. Read the scenario brief once, then answer each item independently.
+
+### 92. Operations wants Azure Copilot Observability Agent to group correlated AKS and Application Insights alert storms into unified **Azure Monitor Issues** (`[crestvault-api]` prefix). Which subscription prerequisite is mandatory to enable Azure Monitor Issues?
+
+Domain: Implement an instrumentation strategy
+
+- A. Associate the target Azure subscription with an Azure Monitor Workspace (AMW) so Azure Copilot Observability Agent can create and persist unified Azure Monitor Issues
+- B. Remove finished agent working directories with `git worktree remove <path>` and clean stale metadata via `git worktree prune`
+- C. Single Azure Artifacts feed with Upstream Sources enabled (`npmjs.com`, `nuget.org`, `pypi.org`) so resolved public packages are cached immutably
+- D. Assign free `Stakeholder` access level in Azure DevOps to external advisors or executives who only view/create Boards work items and dashboards without Repos access
+
+### 93. Night-shift operators want to move from ad-hoc chat queries to autonomous background alert correlation in Azure Copilot Observability Agent with service-specific topology rules. Which four-step rollout sequence is required?
+
+Domain: Implement an instrumentation strategy
+
+- A. Delete all Log Analytics workspaces → expect the agent to bypass caller Azure RBAC and locks → skip AMW association → auto-execute unreviewed prod deletions
+- B. Provision Observability Agent in an unsupported region without Azure Copilot access → unlink subscriptions from AMW → disable all alert rules → expect issues
+- C. Verify Azure Copilot access and telemetry RBAC → associate the subscription with an Azure Monitor Workspace (AMW) → provision an Observability Agent resource with instructions → enable autonomous Issues
+- D. Export prompts to train public foundation models → deploy retired OMS/MMA agents → skip Observability Agent resource for autonomous mode → ignore Issues tab
+
+### 94. After a canary rollout, `avg(DurationMs)` looks normal (`42 ms`), so an SRE writes a KQL query on `AppRequests` over the last hour to expose tail-latency spikes: `summarize p95 = ____ by bin(TimeGenerated, 5m)` — which function completes the query?
+
+Domain: Implement an instrumentation strategy
+
+- A. `-a azcli` (authentication flag on `npx -y @azure-devops/mcp <org> -a azcli` reusing the OIDC Azure CLI session from `copilot-setup-steps`)
+- B. `percentile(DurationMs, 95)` (KQL aggregation function inside `summarize` calculating 95th-percentile request tail latency)
+- C. `::add-mask::` (GitHub Actions workflow command registering a runtime string with the runner log scrubber)
+- D. `what-if` (`az deployment group what-if` subcommand previewing ARM resource creations, modifications, and deletions)
+
+---
+
+## Case study — NovaPay Treasury
+
+NovaPay Treasury deploys Bicep landing zones and SQL schemas through multi-stage YAML pipelines. Copilot coding agent needs preinstalled `.NET 9` and Bicep CLIs inside its ephemeral Actions environment, and on-call SREs use Azure SRE Agent integrated with ServiceNow to propose mitigations for human review.
+
+The next 3 questions refer to **NovaPay Treasury**. Read the scenario brief once, then answer each item independently.
+
+### 95. Copilot coding agent fails to validate Bicep and `.NET 9` code because those SDKs are absent before its session starts. Complete `.github/workflows/copilot-setup-steps.yml` on `main`: `jobs: ____:` — what exact job name must you use?
+
+Domain: Design and implement build and release pipelines
+
+- A. `copilot-setup-steps` (single job name inside `.github/workflows/copilot-setup-steps.yml` on the default branch)
+- B. `extends` (top-level Azure Pipelines YAML keyword inheriting mandatory security stages/jobs enforced by Required Template checks)
+- C. `safe-outputs` (declarative frontmatter block in `gh-aw` `.md` workflows isolating write actions like `create-pull-request` and `add-comment`)
+- D. `applyTo` (YAML frontmatter glob property inside `.github/instructions/<name>.instructions.md`, e.g., `applyTo: "**/*.bicep"`)
+
+### 96. Before applying Bicep changes to production networking, your YAML pipeline runs `az deployment group ____ --resource-group rg-prod --template-file main.bicep` so reviewers verify zero unintended NSG deletions. Which subcommand completes the CLI call?
+
+Domain: Design and implement build and release pipelines
+
+- A. `safe-outputs` (declarative frontmatter block in `gh-aw` `.md` workflows isolating write actions like `create-pull-request` and `add-comment`)
+- B. `what-if` (`az deployment group what-if` subcommand previewing ARM resource creations, modifications, and deletions)
+- C. `applyTo` (YAML frontmatter glob property inside `.github/instructions/<name>.instructions.md`, e.g., `applyTo: "**/*.bicep"`)
+- D. `::add-mask::` (GitHub Actions workflow command registering a runtime string with the runner log scrubber)
+
+### 97. You connect Azure SRE Agent to NovaPays enterprise ServiceNow instance (`itil` OAuth) containing 14,000 tickets across HR, Facilities, and IT. Which mandatory ServiceNow filter field must you specify so the agent indexes only Treasury SRE incidents?
+
+Domain: Implement an instrumentation strategy
+
+- A. `applyTo` (YAML frontmatter glob property inside `.github/instructions/<name>.instructions.md`, e.g., `applyTo: "**/*.bicep"`)
+- B. `assignment_group` (mandatory ServiceNow filter field when connecting Azure SRE Agent to a ServiceNow instance)
+- C. `what-if` (`az deployment group what-if` subcommand previewing ARM resource creations, modifications, and deletions)
+- D. `safe-outputs` (declarative frontmatter block in `gh-aw` `.md` workflows isolating write actions like `create-pull-request` and `add-comment`)
+
+---
+
+## Case study — QuantLedger Cloud
+
+QuantLedger Cloud is migrating 38 Git repositories from Azure DevOps to GitHub Enterprise Cloud while keeping Azure Boards active. Teams want automated daily AI issue-triage workflows running read-only in GitHub Actions with sanitized comment outputs, plus immutable NuGet promotions to `@Release` feed views.
+
+The next 3 questions refer to **QuantLedger Cloud**. Read the scenario brief once, then answer each item independently.
+
+### 98. Platform engineers generate a PowerShell cutover script using `gh ado2gh generate-script --ado-org quantledger --github-org quantledger-cloud ____` so Azure Pipelines service connections, teams, and Azure Boards links rewire automatically. Which flag completes the command?
+
+Domain: Design and implement a source control strategy
+
+- A. `id-token: write` (GitHub Actions job permission required for `azure/login@v2` to request an OIDC JWT for Entra federation)
+- B. `-a azcli` (authentication flag on `npx -y @azure-devops/mcp <org> -a azcli` reusing the OIDC Azure CLI session from `copilot-setup-steps`)
+- C. `--all` (flag on `gh ado2gh generate-script` that rewires pipelines, configures Azure Boards links, and maps teams/permissions)
+- D. `cancel-in-progress: true` (GitHub Actions `concurrency` property terminating older queued/running jobs on the same PR ref)
+
+### 99. You are planning the weekend cutover of 38 active Git repositories from Azure DevOps to GitHub Enterprise Cloud using `gh ado2gh`. Which four-step execution sequence follows official migration guidance?
+
+Domain: Design and implement a source control strategy
+
+- A. Run `gh ado2gh inventory-report` with scoped `ADO_PAT`/`GH_PAT` → run `gh ado2gh generate-script --all` and test in sandbox → freeze source writes (`lock-ado-repo`) → run cutover script and `download-logs`
+- B. Copy `.git` folders over email ZIPs → recreate all branches manually without PR metadata → hardcode expired PATs → skip pipeline and Boards rewiring
+- C. Delete Azure Repos immediately before migrating → allow heavy concurrent pushes expecting automatic delta sync → paste PATs into source files → skip trial org testing
+- D. Run production cutover first without inventory → leave `ADO_PAT` empty → migrate into public personal accounts → audit permissions next quarter
+
+### 100. You author `.github/workflows/daily-issue-triage.md` with `permissions: read-all` so the AI agent cannot mutate the repo directly, while allowing sanitized issue comments and labels. Complete the frontmatter block: `____: add-comment: max: 1` — which key isolates write actions?
+
+Domain: Design and implement build and release pipelines
+
+- A. `applyTo` (YAML frontmatter glob property inside `.github/instructions/<name>.instructions.md`, e.g., `applyTo: "**/*.bicep"`)
+- B. `safe-outputs` (declarative frontmatter block in `gh-aw` `.md` workflows isolating write actions like `create-pull-request` and `add-comment`)
+- C. `copilot-setup-steps` (single job name inside `.github/workflows/copilot-setup-steps.yml` on the default branch)
+- D. `extends` (top-level Azure Pipelines YAML keyword inheriting mandatory security stages/jobs enforced by Required Template checks)
+
+---
+
+## Answer key and explanations
+
+### Question 1 — D
+
+Answer: Azure Boards CMMI process (`Requirement`, formal `Change Request`, `Review`, and `Risk` work item types). Only the CMMI process provides first-class Requirement, Change Request, Risk, and Review work item types out of the box. CMMI provides formal Requirements, Change Requests, Risks, and Reviews required by regulated compliance audits. Local study-map skill 1.1 (Design Traceability, Feedback Cycles, Notifications, and Flow of Work Across Plan/Build/Deploy/Operate with Azure Boards), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/training/modules/manage-ado-mcp-server/ & https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers
+
+- **A:** Incorrect for this requirement. The Agile process models User Stories estimated in Story Points alongside Tasks and configurable Bug backlog behavior. Why the keyed choice wins: Only the CMMI process provides first-class Requirement, Change Request, Risk, and Review work item types out of the box.
+- **B:** Incorrect for this requirement. The Scrum process tracks PBIs and Bugs directly on the Product Backlog with effort points and sprint burndown velocity. Why the keyed choice wins: Only the CMMI process provides first-class Requirement, Change Request, Risk, and Review work item types out of the box.
+- **C:** Incorrect for this requirement. Trunk-based development minimizes merge drift and pairs with runtime feature flags to decouple code integration from customer release. Why the keyed choice wins: Only the CMMI process provides first-class Requirement, Change Request, Risk, and Review work item types out of the box.
+- **D:** Correct. CMMI provides formal Requirements, Change Requests, Risks, and Reviews required by regulated compliance audits. In this scenario: Only the CMMI process provides first-class Requirement, Change Request, Risk, and Review work item types out of the box.
+
+### Question 2 — A
+
+Answer: Subscribe a Microsoft Teams channel using the Azure Pipelines app filtered to `Run stage waiting for approval` and `Run stage state changed (Failed)`. Filtering the official Azure Pipelines app for Microsoft Teams to pending approvals and failed stages delivers actionable Adaptive Cards without spam. Targeted Azure Pipelines Teams subscriptions surface actionable Adaptive Cards for pending approvals and failed stages without noise. Local study-map skill 1.1 (Design Traceability, Feedback Cycles, Notifications, and Flow of Work Across Plan/Build/Deploy/Operate with Azure Boards), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/training/modules/manage-ado-mcp-server/ & https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers
+
+- **A:** Correct. Targeted Azure Pipelines Teams subscriptions surface actionable Adaptive Cards for pending approvals and failed stages without noise. In this scenario: Filtering the official Azure Pipelines app for Microsoft Teams to pending approvals and failed stages delivers actionable Adaptive Cards without spam.
+- **B:** Incorrect for this requirement. CalVer encodes release chronology directly in version identifiers when date freshness matters more than library API contracts. Why the keyed choice wins: Filtering the official Azure Pipelines app for Microsoft Teams to pending approvals and failed stages delivers actionable Adaptive Cards without spam.
+- **C:** Incorrect for this requirement. Git LFS stores pointer files in Git while offloading multi-megabyte binary blobs to dedicated object storage. Why the keyed choice wins: Filtering the official Azure Pipelines app for Microsoft Teams to pending approvals and failed stages delivers actionable Adaptive Cards without spam.
+- **D:** Incorrect for this requirement. Stakeholder licenses cost $0 and allow Azure Boards collaboration while preventing source-code access in private projects. Why the keyed choice wins: Filtering the official Azure Pipelines app for Microsoft Teams to pending approvals and failed stages delivers actionable Adaptive Cards without spam.
+
+### Question 3 — C
+
+Answer: Azure Boards Backlog Rollup columns backed by Analytics linking `Epic -> Feature -> Story/PBI -> Task` hierarchies. Analytics-backed Backlog Rollup columns automatically aggregate child work-item completion counts and Story Points onto parent Features and Epics. Analytics-backed Rollup columns aggregate child completion percentages and story-point totals directly onto parent Features and Epics. Local study-map skill 1.1 (Design Traceability, Feedback Cycles, Notifications, and Flow of Work Across Plan/Build/Deploy/Operate with Azure Boards), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/training/modules/manage-ado-mcp-server/ & https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers
+
+- **A:** Incorrect for this requirement. Partial blobless clones plus sparse-checkout dramatically cut checkout time and disk I/O in large monorepos. Why the keyed choice wins: Analytics-backed Backlog Rollup columns automatically aggregate child work-item completion counts and Story Points onto parent Features and Epics.
+- **B:** Incorrect for this requirement. `echo "::add-mask::$VAL"` prevents dynamic secrets from printing in cleartext step logs. Why the keyed choice wins: Analytics-backed Backlog Rollup columns automatically aggregate child work-item completion counts and Story Points onto parent Features and Epics.
+- **C:** Correct. Analytics-backed Rollup columns aggregate child completion percentages and story-point totals directly onto parent Features and Epics. In this scenario: Analytics-backed Backlog Rollup columns automatically aggregate child work-item completion counts and Story Points onto parent Features and Epics.
+- **D:** Incorrect for this requirement. Adaptive sampling controls ingestion cost under traffic bursts without losing error diagnostics or skewing telemetry counts. Why the keyed choice wins: Analytics-backed Backlog Rollup columns automatically aggregate child work-item completion counts and Story Points onto parent Features and Epics.
+
+### Question 4 — C, D
+
+Answers: Enforce explicit Definition of Ready (testable acceptance criteria) and Definition of Done (automated tests, security scans, telemetry, docs) on Boards states; Link Azure Boards Requirements to Test Cases (`Tested By`), GitHub PRs (`AB#`), build runs, and release stages for end-to-end auditability. Explicit DoR/DoD state criteria define clear acceptance gates while linking Requirements, Test Cases, PRs, builds, and releases creates full audit traceability. Local study-map skill 1.1 (Design Traceability, Feedback Cycles, Notifications, and Flow of Work Across Plan/Build/Deploy/Operate with Azure Boards), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/training/modules/manage-ado-mcp-server/ & https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers
+
+- **A:** Incorrect for this requirement. Git Flow suits scheduled versioned shrink-wrap releases but slows high-frequency CI/CD compared to Trunk-Based Development or GitHub Flow. Why the keyed choice wins: Explicit DoR/DoD state criteria define clear acceptance gates while linking Requirements, Test Cases, PRs, builds, and releases creates full audit traceability.
+- **B:** Incorrect for this requirement. `Microsoft.TimeWindow` toggles time-bound launch capabilities cleanly at runtime. Why the keyed choice wins: Explicit DoR/DoD state criteria define clear acceptance gates while linking Requirements, Test Cases, PRs, builds, and releases creates full audit traceability.
+- **C:** Correct. Clear DoR and DoD policies give both human engineers and coding agents unambiguous quality thresholds across Plan, Build, Deploy, and Operate phases. In this scenario: Explicit DoR/DoD state criteria define clear acceptance gates while linking Requirements, Test Cases, PRs, builds, and releases creates full audit traceability.
+- **D:** Correct. End-to-end work-item, test, PR, artifact, and deployment links let auditors trace every production change back to an approved requirement and test run. In this scenario: Explicit DoR/DoD state criteria define clear acceptance gates while linking Requirements, Test Cases, PRs, builds, and releases creates full audit traceability.
+- **E:** Incorrect for this requirement. Once a version is published to Azure Artifacts, that exact version number can never be overwritten even if unlisted or deleted. Why the keyed choice wins: Explicit DoR/DoD state criteria define clear acceptance gates while linking Requirements, Test Cases, PRs, builds, and releases creates full audit traceability.
+
+### Question 5 — D
+
+Answer: Lead Time for Changes (elapsed duration from first commit or PR creation to successful production deployment). Lead Time for Changes specifically tracks commit-to-production delivery duration across code review, CI, and release stages. Lead Time for Changes measures delivery pipeline velocity from code commit to running in production. Local study-map skill 1.2 (Translate Business KPIs into DevOps Success Metrics and Implement AI-Assisted WIQL/Analytics Queries), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/training/modules/manage-ado-mcp-server/ & https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers
+
+- **A:** Incorrect for this requirement. MTTR measures operational resilience, observability speed, and rollback/remediation responsiveness. Why the keyed choice wins: Lead Time for Changes specifically tracks commit-to-production delivery duration across code review, CI, and release stages.
+- **B:** Incorrect for this requirement. Change Failure Rate measures release quality and pre-production validation effectiveness. Why the keyed choice wins: Lead Time for Changes specifically tracks commit-to-production delivery duration across code review, CI, and release stages.
+- **C:** Incorrect for this requirement. Widening CFD bands highlight stage queues, and WIP limits prevent context-switching overload. Why the keyed choice wins: Lead Time for Changes specifically tracks commit-to-production delivery duration across code review, CI, and release stages.
+- **D:** Correct. Lead Time for Changes measures delivery pipeline velocity from code commit to running in production. In this scenario: Lead Time for Changes specifically tracks commit-to-production delivery duration across code review, CI, and release stages.
+
+### Question 6 — C
+
+Answer: Use GitHub Copilot with the Azure DevOps MCP server (`wit` tools) to translate natural-language KPI questions into validated WIQL work-item queries. Connecting GitHub Copilot to the Azure DevOps MCP server work-item tools translates natural-language prompts into accurate WIQL queries. Azure DevOps MCP work-item tools let Copilot generate and execute accurate WIQL queries over Boards state transitions, bugs, and cycle metrics. Local study-map skill 1.2 (Translate Business KPIs into DevOps Success Metrics and Implement AI-Assisted WIQL/Analytics Queries), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/training/modules/manage-ado-mcp-server/ & https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers
+
+- **A:** Incorrect for this requirement. ARM `what-if` previews live Azure state mutations against target resource groups before executing changes. Why the keyed choice wins: Connecting GitHub Copilot to the Azure DevOps MCP server work-item tools translates natural-language prompts into accurate WIQL queries.
+- **B:** Incorrect for this requirement. `git filter-repo` is the Git-recommended history rewrite tool replacing legacy `git filter-branch` for removing leaked data or oversized blobs. Why the keyed choice wins: Connecting GitHub Copilot to the Azure DevOps MCP server work-item tools translates natural-language prompts into accurate WIQL queries.
+- **C:** Correct. Azure DevOps MCP work-item tools let Copilot generate and execute accurate WIQL queries over Boards state transitions, bugs, and cycle metrics. In this scenario: Connecting GitHub Copilot to the Azure DevOps MCP server work-item tools translates natural-language prompts into accurate WIQL queries.
+- **D:** Incorrect for this requirement. Secure Files encrypt binary certificates at rest, enforce pipeline authorization checks, and delete temporary agent files after job completion. Why the keyed choice wins: Connecting GitHub Copilot to the Azure DevOps MCP server work-item tools translates natural-language prompts into accurate WIQL queries.
+
+### Question 7 — C
+
+Answer: Query the GitHub Copilot Usage & Metrics API alongside PR lead-time and CI pass-rate telemetry to correlate AI adoption with delivery outcomes. Correlating GitHub Copilot Usage & Metrics API data with PR Lead Time, Change Failure Rate, and CI pass rates measures real delivery impact. Pairing Copilot adoption/acceptance telemetry with DORA and quality metrics prevents vanity metrics (such as raw lines of code) from distorting evaluation. Local study-map skill 1.2 (Translate Business KPIs into DevOps Success Metrics and Implement AI-Assisted WIQL/Analytics Queries), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/training/modules/manage-ado-mcp-server/ & https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers
+
+- **A:** Incorrect for this requirement. Slot-pinned settings prevent staging database URLs or canary flags from swapping into `Production`. Why the keyed choice wins: Correlating GitHub Copilot Usage & Metrics API data with PR Lead Time, Change Failure Rate, and CI pass rates measures real delivery impact.
+- **B:** Incorrect for this requirement. Universal Packages efficiently version and deduplicate large ML weights, simulation binaries, or SDK archives up to terabyte scale. Why the keyed choice wins: Correlating GitHub Copilot Usage & Metrics API data with PR Lead Time, Change Failure Rate, and CI pass rates measures real delivery impact.
+- **C:** Correct. Pairing Copilot adoption/acceptance telemetry with DORA and quality metrics prevents vanity metrics (such as raw lines of code) from distorting evaluation. In this scenario: Correlating GitHub Copilot Usage & Metrics API data with PR Lead Time, Change Failure Rate, and CI pass rates measures real delivery impact.
+- **D:** Incorrect for this requirement. `git reflog` records local HEAD/tip movements prior to garbage collection so accidentally dropped commits can be restored cleanly. Why the keyed choice wins: Correlating GitHub Copilot Usage & Metrics API data with PR Lead Time, Change Failure Rate, and CI pass rates measures real delivery impact.
+
+### Question 8 — D
+
+Answer: Cumulative Flow Diagram (CFD) combined with explicit Kanban column Work-in-Progress (WIP) limits to expose bottleneck queues. A Cumulative Flow Diagram exposes widening stage queues and column WIP limits stop engineers from starting new items before clearing reviews. Widening CFD bands highlight stage queues, and WIP limits prevent context-switching overload. Local study-map skill 1.2 (Translate Business KPIs into DevOps Success Metrics and Implement AI-Assisted WIQL/Analytics Queries), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/training/modules/manage-ado-mcp-server/ & https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers
+
+- **A:** Incorrect for this requirement. Pre-compiled EF migration bundles run deterministically inside isolated deploy stages without requiring SDK source compilation on prod targets. Why the keyed choice wins: A Cumulative Flow Diagram exposes widening stage queues and column WIP limits stop engineers from starting new items before clearing reviews.
+- **B:** Incorrect for this requirement. Executing tests from the board works with `Basic`, whereas authoring/managing Test Plans and Test Suites requires `Basic + Test Plans`. Why the keyed choice wins: A Cumulative Flow Diagram exposes widening stage queues and column WIP limits stop engineers from starting new items before clearing reviews.
+- **C:** Incorrect for this requirement. CalVer encodes release chronology directly in version identifiers when date freshness matters more than library API contracts. Why the keyed choice wins: A Cumulative Flow Diagram exposes widening stage queues and column WIP limits stop engineers from starting new items before clearing reviews.
+- **D:** Correct. Widening CFD bands highlight stage queues, and WIP limits prevent context-switching overload. In this scenario: A Cumulative Flow Diagram exposes widening stage queues and column WIP limits stop engineers from starting new items before clearing reviews.
+
+### Question 9 — C
+
+Answer: Create `.github/copilot-instructions.md` at the repository root containing concise build, test, architecture, and security conventions. `.github/copilot-instructions.md` provides persistent repository-wide build, architecture, and coding rules across Copilot Chat, review, and cloud agent runs. `.github/copilot-instructions.md` automatically injects repository-wide guidance into GitHub Copilot Chat, code review, and cloud coding agent sessions. Local study-map skill 1.3 (Create AI-Assisted Project Documentation (Wikis, Mermaid, CODEOWNERS) and Specify Agentic Primitives, Skills, and Loop Restrictions), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/training/modules/manage-ado-mcp-server/ & https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers
+
+- **A:** Incorrect for this requirement. GitHub Container Registry (`ghcr.io`) integrates natively with GitHub Actions permissions, Cosign/attestations, and org visibility controls. Why the keyed choice wins: `.github/copilot-instructions.md` provides persistent repository-wide build, architecture, and coding rules across Copilot Chat, review, and cloud agent runs.
+- **B:** Incorrect for this requirement. Alert reinvestigation cooldown suppresses redundant agent loops when a noisy metric alert fires repeatedly during an ongoing incident. Why the keyed choice wins: `.github/copilot-instructions.md` provides persistent repository-wide build, architecture, and coding rules across Copilot Chat, review, and cloud agent runs.
+- **C:** Correct. `.github/copilot-instructions.md` automatically injects repository-wide guidance into GitHub Copilot Chat, code review, and cloud coding agent sessions. In this scenario: `.github/copilot-instructions.md` provides persistent repository-wide build, architecture, and coding rules across Copilot Chat, review, and cloud agent runs.
+- **D:** Incorrect for this requirement. Additive N-1 compatible schema changes prevent downtime during concurrent Blue/Green or rolling application updates. Why the keyed choice wins: `.github/copilot-instructions.md` provides persistent repository-wide build, architecture, and coding rules across Copilot Chat, review, and cloud agent runs.
+
+### Question 10 — A
+
+Answer: `applyTo` (YAML frontmatter glob property inside `.github/instructions/<name>.instructions.md`, e.g., `applyTo: "**/*.bicep"`). The `applyTo` YAML frontmatter property binds custom `.instructions.md` files to matching repository path globs. `applyTo` scopes custom Copilot instruction files to matching repository file globs. Local study-map skill 1.3 (Create AI-Assisted Project Documentation (Wikis, Mermaid, CODEOWNERS) and Specify Agentic Primitives, Skills, and Loop Restrictions), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/training/modules/manage-ado-mcp-server/ & https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers
+
+- **A:** Correct. `applyTo` scopes custom Copilot instruction files to matching repository file globs. In this scenario: The `applyTo` YAML frontmatter property binds custom `.instructions.md` files to matching repository path globs.
+- **B:** Incorrect for this requirement. `extends:` locks downstream pipelines into a governed platform template contract. Why the keyed choice wins: The `applyTo` YAML frontmatter property binds custom `.instructions.md` files to matching repository path globs.
+- **C:** Incorrect for this requirement. `what-if` calculates live infrastructure diffs before applying Bicep templates. Why the keyed choice wins: The `applyTo` YAML frontmatter property binds custom `.instructions.md` files to matching repository path globs.
+- **D:** Incorrect for this requirement. `safe-outputs` runs sanitized GitHub write operations in separate permission-scoped jobs outside the sandboxed LLM container. Why the keyed choice wins: The `applyTo` YAML frontmatter property binds custom `.instructions.md` files to matching repository path globs.
+
+### Question 11 — C
+
+Answer: Author `.github/copilot-instructions.md` and `SKILL.md` → commit `copilot-setup-steps.yml` on default branch → enable agent firewall allowlists → protect agent/MCP files and enforce human PR review in Rulesets. Enterprise governance layers instructions and `copilot-setup-steps.yml` on the default branch with firewall allowlists and Ruleset human PR approval. Layered instructions + deterministic `copilot-setup-steps.yml` + network allowlisting + Ruleset protection/human sign-off secure enterprise agentic coding. Local study-map skill 1.3 (Create AI-Assisted Project Documentation (Wikis, Mermaid, CODEOWNERS) and Specify Agentic Primitives, Skills, and Loop Restrictions), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/training/modules/manage-ado-mcp-server/ & https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers
+
+- **A:** Incorrect for this requirement. `copilot-setup-steps.yml` is ignored until merged to the default branch, and unprotected `mcp.json` or self-approved agent PRs create governance gaps. Why the keyed choice wins: Enterprise governance layers instructions and `copilot-setup-steps.yml` on the default branch with firewall allowlists and Ruleset human PR approval.
+- **B:** Incorrect for this requirement. Copilot cloud agent works on isolated `copilot/*` branches and opens draft PRs requiring human review and status checks before merging to `main`. Why the keyed choice wins: Enterprise governance layers instructions and `copilot-setup-steps.yml` on the default branch with firewall allowlists and Ruleset human PR approval.
+- **C:** Correct. Layered instructions + deterministic `copilot-setup-steps.yml` + network allowlisting + Ruleset protection/human sign-off secure enterprise agentic coding. In this scenario: Enterprise governance layers instructions and `copilot-setup-steps.yml` on the default branch with firewall allowlists and Ruleset human PR approval.
+- **D:** Incorrect for this requirement. `copilot-setup-steps.yml` does not support reusable workflows (use composite actions instead) and caps `timeout-minutes` at 59. Why the keyed choice wins: Enterprise governance layers instructions and `copilot-setup-steps.yml` on the default branch with firewall allowlists and Ruleset human PR approval.
+
+### Question 12 — B, C
+
+Answers: Package reusable multi-step workflows and scripts inside `.github/skills/<skill-name>/SKILL.md` with YAML frontmatter `name` and `description`; Specify bounded verification loops (lint -> unit test -> typecheck), explicit non-goals, and `timeout-minutes` (`<= 59` in setup steps) for agent tasks. Packaging workflows in `.github/skills/<name>/SKILL.md` loads instructions on demand while bounded lint/test loops and timeouts prevent runaway agent runs. Local study-map skill 1.3 (Create AI-Assisted Project Documentation (Wikis, Mermaid, CODEOWNERS) and Specify Agentic Primitives, Skills, and Loop Restrictions), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/training/modules/manage-ado-mcp-server/ & https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers
+
+- **A:** Incorrect for this requirement. `Microsoft.TimeWindow` toggles time-bound launch capabilities cleanly at runtime. Why the keyed choice wins: Packaging workflows in `.github/skills/<name>/SKILL.md` loads instructions on demand while bounded lint/test loops and timeouts prevent runaway agent runs.
+- **B:** Correct. Copilot dynamically loads a repository `SKILL.md` (and bundled helper scripts) on demand when the task matches its `description`, saving baseline context tokens. In this scenario: Packaging workflows in `.github/skills/<name>/SKILL.md` loads instructions on demand while bounded lint/test loops and timeouts prevent runaway agent runs.
+- **C:** Correct. Clear acceptance tests, explicit non-goals, and step timeouts prevent runaway agentic loops and wasted Actions compute minutes. In this scenario: Packaging workflows in `.github/skills/<name>/SKILL.md` loads instructions on demand while bounded lint/test loops and timeouts prevent runaway agent runs.
+- **D:** Incorrect for this requirement. Git Flow suits scheduled versioned shrink-wrap releases but slows high-frequency CI/CD compared to Trunk-Based Development or GitHub Flow. Why the keyed choice wins: Packaging workflows in `.github/skills/<name>/SKILL.md` loads instructions on demand while bounded lint/test loops and timeouts prevent runaway agent runs.
+- **E:** Incorrect for this requirement. Stakeholder licenses cost $0 and allow Azure Boards collaboration while preventing source-code access in private projects. Why the keyed choice wins: Packaging workflows in `.github/skills/<name>/SKILL.md` loads instructions on demand while bounded lint/test loops and timeouts prevent runaway agent runs.
+
+### Question 13 — A
+
+Answer: Rely on the built-in GitHub MCP server in Copilot cloud agent, which authenticates automatically with a read-only token scoped only to the current repository. By default, the built-in GitHub MCP server runs with an automatically provisioned read-only token restricted solely to the current repository. By default, Copilot cloud agent includes a built-in GitHub MCP server restricted to read-only operations on the repository where the task runs. Local study-map skill 1.4 (Configure Azure DevOps & GitHub MCP Servers, Webhook/Skill Integrations, and GitHub Copilot Cloud Agent for Azure Boards), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/training/modules/manage-ado-mcp-server/ & https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers
+
+- **A:** Correct. By default, Copilot cloud agent includes a built-in GitHub MCP server restricted to read-only operations on the repository where the task runs. In this scenario: By default, the built-in GitHub MCP server runs with an automatically provisioned read-only token restricted solely to the current repository.
+- **B:** Incorrect for this requirement. Azure SRE Agents ServiceNow integration requires specifying an `assignment_group` to scope incident polling and prevent org-wide ticket noise. Why the keyed choice wins: By default, the built-in GitHub MCP server runs with an automatically provisioned read-only token restricted solely to the current repository.
+- **C:** Incorrect for this requirement. Defender for Cloud DevOps Security bridges CNAPP runtime context (internet exposure, identity privileges) with repository vulnerabilities for risk-prioritized remediation and PR annotations. Why the keyed choice wins: By default, the built-in GitHub MCP server runs with an automatically provisioned read-only token restricted solely to the current repository.
+- **D:** Incorrect for this requirement. When Copilot cloud agent needs cross-repository context, an installation-scoped GitHub App passed via `COPILOT_MCP_*` secrets grants auditable, short-lived access. Why the keyed choice wins: By default, the built-in GitHub MCP server runs with an automatically provisioned read-only token restricted solely to the current repository.
+
+### Question 14 — C
+
+Answer: Configure Entra OIDC for the `copilot` environment → run `azure/login` (`id-token: write`) in `copilot-setup-steps.yml` → register `@azure-devops/mcp` (`-a azcli`) with scoped `tools` → invoke Copilot on tasks. Federated OIDC on the `copilot` environment + `azure/login` in `copilot-setup-steps` + `-a azcli` with scoped MCP `tools` enables secretless cloud-agent access. Copilot cloud agent authenticates to Azure in `copilot-setup-steps.yml` (`copilot` environment OIDC) before starting `@azure-devops/mcp` with scoped tool allowlists. Local study-map skill 1.4 (Configure Azure DevOps & GitHub MCP Servers, Webhook/Skill Integrations, and GitHub Copilot Cloud Agent for Azure Boards), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/training/modules/manage-ado-mcp-server/ & https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers
+
+- **A:** Incorrect for this requirement. Plaintext PATs in Git violate secret hygiene, and skipping `copilot-setup-steps.yml` leaves the cloud agent unauthenticated to Azure CLI. Why the keyed choice wins: Federated OIDC on the `copilot` environment + `azure/login` in `copilot-setup-steps` + `-a azcli` with scoped MCP `tools` enables secretless cloud-agent access.
+- **B:** Incorrect for this requirement. Disabling network guardrails and hardcoding admin passwords create severe data-exfiltration and privilege-escalation risks. Why the keyed choice wins: Federated OIDC on the `copilot` environment + `azure/login` in `copilot-setup-steps` + `-a azcli` with scoped MCP `tools` enables secretless cloud-agent access.
+- **C:** Correct. Copilot cloud agent authenticates to Azure in `copilot-setup-steps.yml` (`copilot` environment OIDC) before starting `@azure-devops/mcp` with scoped tool allowlists. In this scenario: Federated OIDC on the `copilot` environment + `azure/login` in `copilot-setup-steps` + `-a azcli` with scoped MCP `tools` enables secretless cloud-agent access.
+- **D:** Incorrect for this requirement. Copilot cloud agent ignores `.github/workflows/copilot-setup-steps.yml` unless the job is named `copilot-setup-steps` on the default branch. Why the keyed choice wins: Federated OIDC on the `copilot` environment + `azure/login` in `copilot-setup-steps` + `-a azcli` with scoped MCP `tools` enables secretless cloud-agent access.
+
+### Question 15 — A, B
+
+Answers: Assign or invoke GitHub Copilot cloud agent directly from an Azure Boards work item linked to the GitHub repository so it opens a traceable draft PR; Restrict the MCP server configuration `tools` array (for example `["wit-get-work-item", "pipelines-get-build-log"]`) instead of granting wildcard `["*"]` write tools. Invoking Copilot Cloud Agent for Azure Boards creates linked draft PRs while restricting MCP `tools` to explicit read/triage operations blocks destructive actions. Local study-map skill 1.4 (Configure Azure DevOps & GitHub MCP Servers, Webhook/Skill Integrations, and GitHub Copilot Cloud Agent for Azure Boards), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/training/modules/manage-ado-mcp-server/ & https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers
+
+- **A:** Correct. GitHub Copilot Cloud Agent for Azure Boards reads work-item acceptance criteria, works on a `copilot/*` branch, and links its draft PR back to the work item. In this scenario: Invoking Copilot Cloud Agent for Azure Boards creates linked draft PRs while restricting MCP `tools` to explicit read/triage operations blocks destructive actions.
+- **B:** Correct. Scoping MCP `tools` to least-privilege read/triage operations prevents prompt-injected agents from mutating unrelated pipelines or deleting work items. In this scenario: Invoking Copilot Cloud Agent for Azure Boards creates linked draft PRs while restricting MCP `tools` to explicit read/triage operations blocks destructive actions.
+- **C:** Incorrect for this requirement. Git Flow suits scheduled versioned shrink-wrap releases but slows high-frequency CI/CD compared to Trunk-Based Development or GitHub Flow. Why the keyed choice wins: Invoking Copilot Cloud Agent for Azure Boards creates linked draft PRs while restricting MCP `tools` to explicit read/triage operations blocks destructive actions.
+- **D:** Incorrect for this requirement. `pull_request_target` runs in the base repo context with write token/secret access, so running untrusted fork scripts enables instant secret exfiltration. Why the keyed choice wins: Invoking Copilot Cloud Agent for Azure Boards creates linked draft PRs while restricting MCP `tools` to explicit read/triage operations blocks destructive actions.
+- **E:** Incorrect for this requirement. Universal Packages efficiently version and deduplicate large ML weights, simulation binaries, or SDK archives up to terabyte scale. Why the keyed choice wins: Invoking Copilot Cloud Agent for Azure Boards creates linked draft PRs while restricting MCP `tools` to explicit read/triage operations blocks destructive actions.
+
+### Question 16 — C
+
+Answer: Trunk-Based Development with short-lived branches (`< 24h`) merging frequently into `main` behind Azure App Configuration feature flags. Trunk-Based Development merges short-lived branches into `main` multiple times per day behind runtime Azure App Configuration feature flags. Trunk-based development minimizes merge drift and pairs with runtime feature flags to decouple code integration from customer release. Local study-map skill 2.1 (Design Branching Strategies Including Trunk-Based, Feature, Release, Git Flow, GitHub Flow, and Git Worktrees), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://docs.github.com/en/migrations/ado/migrate-your-repositories-from-azure-devops-to-github & https://docs.github.com/en/copilot/concepts/security-governance-and-network-settings/risks-and-mitigations
+
+- **A:** Incorrect for this requirement. Git LFS stores pointer files in Git while offloading multi-megabyte binary blobs to dedicated object storage. Why the keyed choice wins: Trunk-Based Development merges short-lived branches into `main` multiple times per day behind runtime Azure App Configuration feature flags.
+- **B:** Incorrect for this requirement. Git Flow suits scheduled versioned shrink-wrap releases but slows high-frequency CI/CD compared to Trunk-Based Development or GitHub Flow. Why the keyed choice wins: Trunk-Based Development merges short-lived branches into `main` multiple times per day behind runtime Azure App Configuration feature flags.
+- **C:** Correct. Trunk-based development minimizes merge drift and pairs with runtime feature flags to decouple code integration from customer release. In this scenario: Trunk-Based Development merges short-lived branches into `main` multiple times per day behind runtime Azure App Configuration feature flags.
+- **D:** Incorrect for this requirement. Release branches isolate multi-version customer maintenance (`v2.3`, `v2.4`) without stalling continuous feature integration on `main`. Why the keyed choice wins: Trunk-Based Development merges short-lived branches into `main` multiple times per day behind runtime Azure App Configuration feature flags.
+
+### Question 17 — D
+
+Answer: Use `git worktree add ../wt-task -b feat/task origin/main` so multiple local CLI coding agents work concurrently in isolated directories sharing one `.git` object store. `git worktree add` creates separate working directories on distinct branches backed by one shared `.git` object store. `git worktree` creates separate checked-out working directories backed by one local repository, preventing branch-switching and index lock collisions across parallel agents. Local study-map skill 2.1 (Design Branching Strategies Including Trunk-Based, Feature, Release, Git Flow, GitHub Flow, and Git Worktrees), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://docs.github.com/en/migrations/ado/migrate-your-repositories-from-azure-devops-to-github & https://docs.github.com/en/copilot/concepts/security-governance-and-network-settings/risks-and-mitigations
+
+- **A:** Incorrect for this requirement. Squash merge keeps `main` clean, linear, and trivial to revert (`git revert <sha>`) regardless of how many commits occurred on the PR branch. Why the keyed choice wins: `git worktree add` creates separate working directories on distinct branches backed by one shared `.git` object store.
+- **B:** Incorrect for this requirement. `gh ado2gh migrate-repo` migrates Git commits, branches, PRs, and review history for an individual Azure DevOps repository into GitHub. Why the keyed choice wins: `git worktree add` creates separate working directories on distinct branches backed by one shared `.git` object store.
+- **C:** Incorrect for this requirement. Partial blobless clones plus sparse-checkout dramatically cut checkout time and disk I/O in large monorepos. Why the keyed choice wins: `git worktree add` creates separate working directories on distinct branches backed by one shared `.git` object store.
+- **D:** Correct. `git worktree` creates separate checked-out working directories backed by one local repository, preventing branch-switching and index lock collisions across parallel agents. In this scenario: `git worktree add` creates separate working directories on distinct branches backed by one shared `.git` object store.
+
+### Question 18 — B
+
+Answer: Trunk-Based Development with immutable `release/x.y` branches cut for supported minor versions and cherry-picked hotfixes from `main`. Cutting immutable `release/3.1` and `release/3.2` branches from `main` isolates customer patch streams without blocking trunk velocity. Release branches isolate multi-version customer maintenance (`v2.3`, `v2.4`) without stalling continuous feature integration on `main`. Local study-map skill 2.1 (Design Branching Strategies Including Trunk-Based, Feature, Release, Git Flow, GitHub Flow, and Git Worktrees), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://docs.github.com/en/migrations/ado/migrate-your-repositories-from-azure-devops-to-github & https://docs.github.com/en/copilot/concepts/security-governance-and-network-settings/risks-and-mitigations
+
+- **A:** Incorrect for this requirement. GitHub Flow keeps a single continuously deployable default branch ideal for SaaS microservices and cloud agent PR workflows. Why the keyed choice wins: Cutting immutable `release/3.1` and `release/3.2` branches from `main` isolates customer patch streams without blocking trunk velocity.
+- **B:** Correct. Release branches isolate multi-version customer maintenance (`v2.3`, `v2.4`) without stalling continuous feature integration on `main`. In this scenario: Cutting immutable `release/3.1` and `release/3.2` branches from `main` isolates customer patch streams without blocking trunk velocity.
+- **C:** Incorrect for this requirement. Autolink references turn ticket prefixes in commits and PRs into clickable external tracker links while `Closes #N` resolves GitHub Issues on merge. Why the keyed choice wins: Cutting immutable `release/3.1` and `release/3.2` branches from `main` isolates customer patch streams without blocking trunk velocity.
+- **D:** Incorrect for this requirement. Cleaning up completed worktrees unlocks branch refs and keeps local developer workstations tidy after parallel agent sessions finish. Why the keyed choice wins: Cutting immutable `release/3.1` and `release/3.2` branches from `main` isolates customer patch streams without blocking trunk velocity.
+
+### Question 19 — A
+
+Answer: Enable `Automatically request Copilot code review` (with `Review new pushes`) inside a GitHub Organization or Repository Branch Ruleset targeting `main`. Enabling `Automatically request Copilot code review` with `Review new pushes` in an Org Branch Ruleset reviews initial PRs and follow-up commits automatically. Branch rulesets can automatically trigger GitHub Copilot code review on PR creation and every subsequent push before human reviewers sign off. Local study-map skill 2.2 (Implement PR Workflows, Merge Restrictions, and Branch Policies / Rulesets for GitHub Copilot), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://docs.github.com/en/migrations/ado/migrate-your-repositories-from-azure-devops-to-github & https://docs.github.com/en/copilot/concepts/security-governance-and-network-settings/risks-and-mitigations
+
+- **A:** Correct. Branch rulesets can automatically trigger GitHub Copilot code review on PR creation and every subsequent push before human reviewers sign off. In this scenario: Enabling `Automatically request Copilot code review` with `Review new pushes` in an Org Branch Ruleset reviews initial PRs and follow-up commits automatically.
+- **B:** Incorrect for this requirement. Signed annotated tags combined with Tag Protection Rulesets prevent tag retargeting (`force-push`) and establish cryptographic release provenance. Why the keyed choice wins: Enabling `Automatically request Copilot code review` with `Review new pushes` in an Org Branch Ruleset reviews initial PRs and follow-up commits automatically.
+- **C:** Incorrect for this requirement. Copilot CLI lifecycle hooks (`sessionStart`, `userPromptSubmitted`, `preToolUse`) enforce deterministic policy checks before agent tool execution. Why the keyed choice wins: Enabling `Automatically request Copilot code review` with `Review new pushes` in an Org Branch Ruleset reviews initial PRs and follow-up commits automatically.
+- **D:** Incorrect for this requirement. Azure Repos branch policies block direct pushes and enforce green CI builds, peer review, and `AB#` traceability prior to completion. Why the keyed choice wins: Enabling `Automatically request Copilot code review` with `Review new pushes` in an Org Branch Ruleset reviews initial PRs and follow-up commits automatically.
+
+### Question 20 — B
+
+Answer: Enforce required pull request reviews where the human who assigned the task to GitHub Copilot cloud agent cannot approve that agent-created PR alone. No; the user who requested GitHub Copilot cloud agent to create a PR cannot approve that PR to satisfy required branch protection reviews, ensuring independent human sign-off. GitHub blocks the user who initiated a Copilot cloud agent PR from serving as the sole required approver, ensuring independent human oversight. Local study-map skill 2.2 (Implement PR Workflows, Merge Restrictions, and Branch Policies / Rulesets for GitHub Copilot), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://docs.github.com/en/migrations/ado/migrate-your-repositories-from-azure-devops-to-github & https://docs.github.com/en/copilot/concepts/security-governance-and-network-settings/risks-and-mitigations
+
+- **A:** Incorrect for this requirement. `git revert` creates a new inverse commit preserving linear auditability and avoiding force-pushes on shared branches. Why the keyed choice wins: No; the user who requested GitHub Copilot cloud agent to create a PR cannot approve that PR to satisfy required branch protection reviews, ensuring independent human sign-off.
+- **B:** Correct. GitHub blocks the user who initiated a Copilot cloud agent PR from serving as the sole required approver, ensuring independent human oversight. In this scenario: No; the user who requested GitHub Copilot cloud agent to create a PR cannot approve that PR to satisfy required branch protection reviews, ensuring independent human sign-off.
+- **C:** Incorrect for this requirement. Granting policy bypass permissions to standard contributors defeats branch protection, required reviews, and compliance audit controls. Why the keyed choice wins: No; the user who requested GitHub Copilot cloud agent to create a PR cannot approve that PR to satisfy required branch protection reviews, ensuring independent human sign-off.
+- **D:** Incorrect for this requirement. Linear rebase preserves granular commit history while avoiding non-linear merge commits. Why the keyed choice wins: No; the user who requested GitHub Copilot cloud agent to create a PR cannot approve that PR to satisfy required branch protection reviews, ensuring independent human sign-off.
+
+### Question 21 — B
+
+Answer: Enable GitHub Merge Queue (`merge_group` trigger) on `main` so approved PRs validate sequentially or in batches against the exact combined target state. GitHub Merge Queue validates each queued PR against the combined ahead-of-line changes via `merge_group` events before updating `main`. Merge Queue eliminates semantic `skew` breakage when high-velocity human and Copilot PRs pass CI individually against stale `main` commits. Local study-map skill 2.2 (Implement PR Workflows, Merge Restrictions, and Branch Policies / Rulesets for GitHub Copilot), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://docs.github.com/en/migrations/ado/migrate-your-repositories-from-azure-devops-to-github & https://docs.github.com/en/copilot/concepts/security-governance-and-network-settings/risks-and-mitigations
+
+- **A:** Incorrect for this requirement. Autolink references turn ticket prefixes in commits and PRs into clickable external tracker links while `Closes #N` resolves GitHub Issues on merge. Why the keyed choice wins: GitHub Merge Queue validates each queued PR against the combined ahead-of-line changes via `merge_group` events before updating `main`.
+- **B:** Correct. Merge Queue eliminates semantic `skew` breakage when high-velocity human and Copilot PRs pass CI individually against stale `main` commits. In this scenario: GitHub Merge Queue validates each queued PR against the combined ahead-of-line changes via `merge_group` events before updating `main`.
+- **C:** Incorrect for this requirement. Squash merge keeps `main` clean, linear, and trivial to revert (`git revert <sha>`) regardless of how many commits occurred on the PR branch. Why the keyed choice wins: GitHub Merge Queue validates each queued PR against the combined ahead-of-line changes via `merge_group` events before updating `main`.
+- **D:** Incorrect for this requirement. Git LFS stores pointer files in Git while offloading multi-megabyte binary blobs to dedicated object storage. Why the keyed choice wins: GitHub Merge Queue validates each queued PR against the combined ahead-of-line changes via `merge_group` events before updating `main`.
+
+### Question 22 — A, B
+
+Answers: Require pull request reviews from `CODEOWNERS` plus at least one human reviewer with write access on non-human / Copilot-authored pull requests; Configure a GitHub Push/File-Path Ruleset + `CODEOWNERS` protecting `.github/workflows/**`, `.github/copilot-instructions.md`, `SKILL.md`, `AGENTS.md`, and `mcp.json`. Protecting agent/MCP/workflow paths via Rulesets + CODEOWNERS and requiring human reviewer sign-off on non-human PRs prevents self-modifying agent tampering. Local study-map skill 2.2 (Implement PR Workflows, Merge Restrictions, and Branch Policies / Rulesets for GitHub Copilot), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://docs.github.com/en/migrations/ado/migrate-your-repositories-from-azure-devops-to-github & https://docs.github.com/en/copilot/concepts/security-governance-and-network-settings/risks-and-mitigations
+
+- **A:** Correct. Protecting agent instruction, skill, MCP, and workflow files prevents unreviewed PRs or compromised branches from hijacking future agent runs. In this scenario: Protecting agent/MCP/workflow paths via Rulesets + CODEOWNERS and requiring human reviewer sign-off on non-human PRs prevents self-modifying agent tampering.
+- **B:** Correct. Copilot code review leaves `Comment` feedback rather than `Approve`, so required human reviews ensure accountable sign-off before merging agent PRs. In this scenario: Protecting agent/MCP/workflow paths via Rulesets + CODEOWNERS and requiring human reviewer sign-off on non-human PRs prevents self-modifying agent tampering.
+- **C:** Incorrect for this requirement. Granting policy bypass permissions to standard contributors defeats branch protection, required reviews, and compliance audit controls. Why the keyed choice wins: Protecting agent/MCP/workflow paths via Rulesets + CODEOWNERS and requiring human reviewer sign-off on non-human PRs prevents self-modifying agent tampering.
+- **D:** Incorrect for this requirement. Git Flow suits scheduled versioned shrink-wrap releases but slows high-frequency CI/CD compared to Trunk-Based Development or GitHub Flow. Why the keyed choice wins: Protecting agent/MCP/workflow paths via Rulesets + CODEOWNERS and requiring human reviewer sign-off on non-human PRs prevents self-modifying agent tampering.
+- **E:** Incorrect for this requirement. `pull_request_target` runs in the base repo context with write token/secret access, so running untrusted fork scripts enables instant secret exfiltration. Why the keyed choice wins: Protecting agent/MCP/workflow paths via Rulesets + CODEOWNERS and requiring human reviewer sign-off on non-human PRs prevents self-modifying agent tampering.
+
+### Question 23 — A
+
+Answer: Commit versioned client hooks in `.githooks/` (`pre-commit`, `commit-msg`) paired with `git config core.hooksPath .githooks` AND enforce server-side CI/Ruleset checks. No; developers or scripts can bypass client-side Git hooks via `git commit --no-verify`, so versioned `.githooks/` must be paired with server-side CI/Ruleset enforcement. Versioned `.githooks/` catch formatting/secret mistakes locally in milliseconds, while server-side Rulesets/CI enforce compliance even if `--no-verify` is used. Local study-map skill 2.3 (Configure Repository Permissions, Tags, Deep-Link Traceability, and Automated Client/CLI Git Hooks), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://docs.github.com/en/migrations/ado/migrate-your-repositories-from-azure-devops-to-github & https://docs.github.com/en/copilot/concepts/security-governance-and-network-settings/risks-and-mitigations
+
+- **A:** Correct. Versioned `.githooks/` catch formatting/secret mistakes locally in milliseconds, while server-side Rulesets/CI enforce compliance even if `--no-verify` is used. In this scenario: No; developers or scripts can bypass client-side Git hooks via `git commit --no-verify`, so versioned `.githooks/` must be paired with server-side CI/Ruleset enforcement.
+- **B:** Incorrect for this requirement. CalVer encodes release chronology directly in version identifiers when date freshness matters more than library API contracts. Why the keyed choice wins: No; developers or scripts can bypass client-side Git hooks via `git commit --no-verify`, so versioned `.githooks/` must be paired with server-side CI/Ruleset enforcement.
+- **C:** Incorrect for this requirement. W3C `traceparent` correlates distributed `AppRequests` and `AppDependencies` under a single `operation_Id` on the Application Map. Why the keyed choice wins: No; developers or scripts can bypass client-side Git hooks via `git commit --no-verify`, so versioned `.githooks/` must be paired with server-side CI/Ruleset enforcement.
+- **D:** Incorrect for this requirement. Stakeholder licenses cost $0 and allow Azure Boards collaboration while preventing source-code access in private projects. Why the keyed choice wins: No; developers or scripts can bypass client-side Git hooks via `git commit --no-verify`, so versioned `.githooks/` must be paired with server-side CI/Ruleset enforcement.
+
+### Question 24 — A
+
+Answer: `preToolUse` (GitHub Copilot CLI hook event in `.github/hooks/*.json` evaluated synchronously before any shell/MCP tool executes). The `preToolUse` hook event intercepts every Copilot CLI tool call prior to execution and can deny dangerous commands deterministically. `preToolUse` hooks can inspect tool arguments and return `deny` before destructive commands run. Local study-map skill 2.3 (Configure Repository Permissions, Tags, Deep-Link Traceability, and Automated Client/CLI Git Hooks), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://docs.github.com/en/migrations/ado/migrate-your-repositories-from-azure-devops-to-github & https://docs.github.com/en/copilot/concepts/security-governance-and-network-settings/risks-and-mitigations
+
+- **A:** Correct. `preToolUse` hooks can inspect tool arguments and return `deny` before destructive commands run. In this scenario: The `preToolUse` hook event intercepts every Copilot CLI tool call prior to execution and can deny dangerous commands deterministically.
+- **B:** Incorrect for this requirement. `applyTo` scopes custom Copilot instruction files to matching repository file globs. Why the keyed choice wins: The `preToolUse` hook event intercepts every Copilot CLI tool call prior to execution and can deny dangerous commands deterministically.
+- **C:** Incorrect for this requirement. Restoring from `feedName@Release` blocks unvetted `@Local` or `@Prerelease` packages from entering production builds. Why the keyed choice wins: The `preToolUse` hook event intercepts every Copilot CLI tool call prior to execution and can deny dangerous commands deterministically.
+- **D:** Incorrect for this requirement. `what-if` calculates live infrastructure diffs before applying Bicep templates. Why the keyed choice wins: The `preToolUse` hook event intercepts every Copilot CLI tool call prior to execution and can deny dangerous commands deterministically.
+
+### Question 25 — C
+
+Answer: Create GPG/SSH-signed annotated Git tags (`git tag -s v2.4.0 -m "..."`) protected by Tag Rulesets so CI/CD builds immutable releases from verified refs. GPG/SSH-signed annotated tags (`git tag -s`) enforced by a GitHub Tag Protection Ruleset guarantee immutable, verifiable release refs. Signed annotated tags combined with Tag Protection Rulesets prevent tag retargeting (`force-push`) and establish cryptographic release provenance. Local study-map skill 2.3 (Configure Repository Permissions, Tags, Deep-Link Traceability, and Automated Client/CLI Git Hooks), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://docs.github.com/en/migrations/ado/migrate-your-repositories-from-azure-devops-to-github & https://docs.github.com/en/copilot/concepts/security-governance-and-network-settings/risks-and-mitigations
+
+- **A:** Incorrect for this requirement. Squash merge keeps `main` clean, linear, and trivial to revert (`git revert <sha>`) regardless of how many commits occurred on the PR branch. Why the keyed choice wins: GPG/SSH-signed annotated tags (`git tag -s`) enforced by a GitHub Tag Protection Ruleset guarantee immutable, verifiable release refs.
+- **B:** Incorrect for this requirement. Cleaning up completed worktrees unlocks branch refs and keeps local developer workstations tidy after parallel agent sessions finish. Why the keyed choice wins: GPG/SSH-signed annotated tags (`git tag -s`) enforced by a GitHub Tag Protection Ruleset guarantee immutable, verifiable release refs.
+- **C:** Correct. Signed annotated tags combined with Tag Protection Rulesets prevent tag retargeting (`force-push`) and establish cryptographic release provenance. In this scenario: GPG/SSH-signed annotated tags (`git tag -s`) enforced by a GitHub Tag Protection Ruleset guarantee immutable, verifiable release refs.
+- **D:** Incorrect for this requirement. Service Hooks push event-driven JSON notifications immediately without brittle polling loops. Why the keyed choice wins: GPG/SSH-signed annotated tags (`git tag -s`) enforced by a GitHub Tag Protection Ruleset guarantee immutable, verifiable release refs.
+
+### Question 26 — B, D
+
+Answers: Freeze writes on the source Azure DevOps repository (`lock-ado-repo`) during cutover because `gh ado2gh` / GEI does not support incremental delta migrations; Run `gh ado2gh download-logs` (or `--download-migration-logs`) to archive detailed GitHub Enterprise Importer audit and warning logs for every migrated repo. Locking source repos (`lock-ado-repo`) prevents missed mid-cutover commits because GEI has no delta sync, and `gh ado2gh download-logs` surfaces attachment/metadata warnings. Local study-map skill 2.4 (Perform Azure DevOps-to-GitHub Repository Migrations (gh ado2gh) and Recover or Purge Git History Data), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://docs.github.com/en/migrations/ado/migrate-your-repositories-from-azure-devops-to-github & https://docs.github.com/en/copilot/concepts/security-governance-and-network-settings/risks-and-mitigations
+
+- **A:** Incorrect for this requirement. `Microsoft.TimeWindow` toggles time-bound launch capabilities cleanly at runtime. Why the keyed choice wins: Locking source repos (`lock-ado-repo`) prevents missed mid-cutover commits because GEI has no delta sync, and `gh ado2gh download-logs` surfaces attachment/metadata warnings.
+- **B:** Correct. Downloading migration logs lets platform engineers verify PR metadata fidelity and troubleshoot skipped attachments or user mappings. In this scenario: Locking source repos (`lock-ado-repo`) prevents missed mid-cutover commits because GEI has no delta sync, and `gh ado2gh download-logs` surfaces attachment/metadata warnings.
+- **C:** Incorrect for this requirement. Git Flow suits scheduled versioned shrink-wrap releases but slows high-frequency CI/CD compared to Trunk-Based Development or GitHub Flow. Why the keyed choice wins: Locking source repos (`lock-ado-repo`) prevents missed mid-cutover commits because GEI has no delta sync, and `gh ado2gh download-logs` surfaces attachment/metadata warnings.
+- **D:** Correct. GitHub Enterprise Importer performs a point-in-time snapshot migration with no delta sync, so locking the source repo prevents lost mid-cutover commits. In this scenario: Locking source repos (`lock-ado-repo`) prevents missed mid-cutover commits because GEI has no delta sync, and `gh ado2gh download-logs` surfaces attachment/metadata warnings.
+- **E:** Incorrect for this requirement. Slot-pinned settings prevent staging database URLs or canary flags from swapping into `Production`. Why the keyed choice wins: Locking source repos (`lock-ado-repo`) prevents missed mid-cutover commits because GEI has no delta sync, and `gh ado2gh download-logs` surfaces attachment/metadata warnings.
+
+### Question 27 — B
+
+Answer: Single Azure Artifacts feed with Upstream Sources enabled (`npmjs.com`, `nuget.org`, `pypi.org`) so resolved public packages are cached immutably. Enabling Upstream Sources on a single Azure Artifacts feed caches resolved `nuget.org` packages immutably inside your organization feed. Upstream Sources cache external OSS dependencies inside your Azure Artifacts feed, protecting CI builds if public registries suffer outages or package yanks. Local study-map skill 3.1 (Recommend Azure Artifacts and GitHub Packages Feeds, Upstream Sources, and @Local/@Prerelease/@Release Views), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Incorrect for this requirement. Universal Packages efficiently version and deduplicate large ML weights, simulation binaries, or SDK archives up to terabyte scale. Why the keyed choice wins: Enabling Upstream Sources on a single Azure Artifacts feed caches resolved `nuget.org` packages immutably inside your organization feed.
+- **B:** Correct. Upstream Sources cache external OSS dependencies inside your Azure Artifacts feed, protecting CI builds if public registries suffer outages or package yanks. In this scenario: Enabling Upstream Sources on a single Azure Artifacts feed caches resolved `nuget.org` packages immutably inside your organization feed.
+- **C:** Incorrect for this requirement. GitHub Container Registry (`ghcr.io`) integrates natively with GitHub Actions permissions, Cosign/attestations, and org visibility controls. Why the keyed choice wins: Enabling Upstream Sources on a single Azure Artifacts feed caches resolved `nuget.org` packages immutably inside your organization feed.
+- **D:** Incorrect for this requirement. Git LFS stores pointer files in Git while offloading multi-megabyte binary blobs to dedicated object storage. Why the keyed choice wins: Enabling Upstream Sources on a single Azure Artifacts feed caches resolved `nuget.org` packages immutably inside your organization feed.
+
+### Question 28 — A
+
+Answer: `@Release` (Azure Artifacts feed view suffix `feedName@Release` isolating verified production-ready immutable packages). Appending `@Release` restricts package restoration exclusively to versions explicitly promoted to the `@Release` feed view. Restoring from `feedName@Release` blocks unvetted `@Local` or `@Prerelease` packages from entering production builds. Local study-map skill 3.1 (Recommend Azure Artifacts and GitHub Packages Feeds, Upstream Sources, and @Local/@Prerelease/@Release Views), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Correct. Restoring from `feedName@Release` blocks unvetted `@Local` or `@Prerelease` packages from entering production builds. In this scenario: Appending `@Release` restricts package restoration exclusively to versions explicitly promoted to the `@Release` feed view.
+- **B:** Incorrect for this requirement. `echo "::add-mask::$VAL"` prevents dynamic secrets from printing in cleartext step logs. Why the keyed choice wins: Appending `@Release` restricts package restoration exclusively to versions explicitly promoted to the `@Release` feed view.
+- **C:** Incorrect for this requirement. `applyTo` scopes custom Copilot instruction files to matching repository file globs. Why the keyed choice wins: Appending `@Release` restricts package restoration exclusively to versions explicitly promoted to the `@Release` feed view.
+- **D:** Incorrect for this requirement. `what-if` calculates live infrastructure diffs before applying Bicep templates. Why the keyed choice wins: Appending `@Release` restricts package restoration exclusively to versions explicitly promoted to the `@Release` feed view.
+
+### Question 29 — C
+
+Answer: Publish OCI container images and SDKs to GitHub Packages (`ghcr.io/<org>/<image>`) linked with granular repository permissions and `GITHUB_TOKEN` / OIDC. GitHub Packages Container Registry (`ghcr.io`) binds directly to GitHub repository permissions, `GITHUB_TOKEN`, and OIDC attestations. GitHub Container Registry (`ghcr.io`) integrates natively with GitHub Actions permissions, Cosign/attestations, and org visibility controls. Local study-map skill 3.1 (Recommend Azure Artifacts and GitHub Packages Feeds, Upstream Sources, and @Local/@Prerelease/@Release Views), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Incorrect for this requirement. Private ACR Bicep registries distribute governed, reusable infrastructure building blocks across application repositories. Why the keyed choice wins: GitHub Packages Container Registry (`ghcr.io`) binds directly to GitHub repository permissions, `GITHUB_TOKEN`, and OIDC attestations.
+- **B:** Incorrect for this requirement. Universal Packages efficiently version and deduplicate large ML weights, simulation binaries, or SDK archives up to terabyte scale. Why the keyed choice wins: GitHub Packages Container Registry (`ghcr.io`) binds directly to GitHub repository permissions, `GITHUB_TOKEN`, and OIDC attestations.
+- **C:** Correct. GitHub Container Registry (`ghcr.io`) integrates natively with GitHub Actions permissions, Cosign/attestations, and org visibility controls. In this scenario: GitHub Packages Container Registry (`ghcr.io`) binds directly to GitHub repository permissions, `GITHUB_TOKEN`, and OIDC attestations.
+- **D:** Incorrect for this requirement. Secure Files encrypt binary certificates at rest, enforce pipeline authorization checks, and delete temporary agent files after job completion. Why the keyed choice wins: GitHub Packages Container Registry (`ghcr.io`) binds directly to GitHub repository permissions, `GITHUB_TOKEN`, and OIDC attestations.
+
+### Question 30 — D
+
+Answer: Semantic Versioning (`MAJOR.MINOR.PATCH-prerelease+build`, e.g., `2.4.1-beta.3`) signaling breaking (`MAJOR`), additive (`MINOR`), and fix (`PATCH`) API changes. Breaking public API removals require incrementing the `MAJOR` version (`3.0.0`) under Semantic Versioning. SemVer communicates backward-compatibility guarantees so downstream consumers automate safe dependency upgrades. Local study-map skill 3.2 (Design Dependency and Pipeline Artifact Versioning Strategies (SemVer, CalVer, Immutability, OCI Digests)), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Incorrect for this requirement. Pinning `@sha256` digests guarantees every deployment ring runs the exact scanned OCI image layer set. Why the keyed choice wins: Breaking public API removals require incrementing the `MAJOR` version (`3.0.0`) under Semantic Versioning.
+- **B:** Incorrect for this requirement. Tiered retention controls storage billing while preserving compliance-mandated artifacts currently running in production. Why the keyed choice wins: Breaking public API removals require incrementing the `MAJOR` version (`3.0.0`) under Semantic Versioning.
+- **C:** Incorrect for this requirement. CalVer encodes release chronology directly in version identifiers when date freshness matters more than library API contracts. Why the keyed choice wins: Breaking public API removals require incrementing the `MAJOR` version (`3.0.0`) under Semantic Versioning.
+- **D:** Correct. SemVer communicates backward-compatibility guarantees so downstream consumers automate safe dependency upgrades. In this scenario: Breaking public API removals require incrementing the `MAJOR` version (`3.0.0`) under Semantic Versioning.
+
+### Question 31 — C
+
+Answer: Increment the `PATCH` or `prerelease` version (`1.2.1`) because published `package@version` coordinates in Azure Artifacts are permanently immutable. No; Azure Artifacts enforces permanent version immutability so `1.8.0` cannot be republished even after deletion—you must bump to `1.8.1`. Once a version is published to Azure Artifacts, that exact version number can never be overwritten even if unlisted or deleted. Local study-map skill 3.2 (Design Dependency and Pipeline Artifact Versioning Strategies (SemVer, CalVer, Immutability, OCI Digests)), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Incorrect for this requirement. `git revert` creates a new inverse commit preserving linear auditability and avoiding force-pushes on shared branches. Why the keyed choice wins: No; Azure Artifacts enforces permanent version immutability so `1.8.0` cannot be republished even after deletion—you must bump to `1.8.1`.
+- **B:** Incorrect for this requirement. `@Local` holds newly published internal packages prior to quality promotion. Why the keyed choice wins: No; Azure Artifacts enforces permanent version immutability so `1.8.0` cannot be republished even after deletion—you must bump to `1.8.1`.
+- **C:** Correct. Once a version is published to Azure Artifacts, that exact version number can never be overwritten even if unlisted or deleted. In this scenario: No; Azure Artifacts enforces permanent version immutability so `1.8.0` cannot be republished even after deletion—you must bump to `1.8.1`.
+- **D:** Incorrect for this requirement. CalVer encodes release chronology directly in version identifiers when date freshness matters more than library API contracts. Why the keyed choice wins: No; Azure Artifacts enforces permanent version immutability so `1.8.0` cannot be republished even after deletion—you must bump to `1.8.1`.
+
+### Question 32 — D
+
+Answer: Deploy container images by immutable SHA-256 manifest digest (`ghcr.io/org/api@sha256:...`) rather than mutable `:latest` tags. Pinning immutable SHA-256 manifest digests (`@sha256:...`) guarantees bit-for-bit identical container layers across every deployment ring. Pinning `@sha256` digests guarantees every deployment ring runs the exact scanned OCI image layer set. Local study-map skill 3.2 (Design Dependency and Pipeline Artifact Versioning Strategies (SemVer, CalVer, Immutability, OCI Digests)), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Incorrect for this requirement. Hashing immutable lockfiles maximizes deterministic cache hit rates while automatically invalidating caches whenever dependencies change. Why the keyed choice wins: Pinning immutable SHA-256 manifest digests (`@sha256:...`) guarantees bit-for-bit identical container layers across every deployment ring.
+- **B:** Incorrect for this requirement. SemVer communicates backward-compatibility guarantees so downstream consumers automate safe dependency upgrades. Why the keyed choice wins: Pinning immutable SHA-256 manifest digests (`@sha256:...`) guarantees bit-for-bit identical container layers across every deployment ring.
+- **C:** Incorrect for this requirement. Universal Packages efficiently version and deduplicate large ML weights, simulation binaries, or SDK archives up to terabyte scale. Why the keyed choice wins: Pinning immutable SHA-256 manifest digests (`@sha256:...`) guarantees bit-for-bit identical container layers across every deployment ring.
+- **D:** Correct. Pinning `@sha256` digests guarantees every deployment ring runs the exact scanned OCI image layer set. In this scenario: Pinning immutable SHA-256 manifest digests (`@sha256:...`) guarantees bit-for-bit identical container layers across every deployment ring.
+
+### Question 33 — D
+
+Answer: Use GitHub Copilot connected to Azure DevOps / GitHub MCP servers to inspect historical pipeline failure logs and generate automated quality/release gate definitions. Connecting GitHub Copilot to Azure DevOps / GitHub MCP servers exposes build logs, pipeline definitions, and work-item states for accurate gate generation. MCP tools give Copilot live context on pipeline definitions, build logs, and alert metrics so it scaffolds accurate quality and release gates. Local study-map skill 3.3 (Design and Implement Automated Quality and Release Gates Using GitHub Copilot and MCP Servers), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Incorrect for this requirement. Adaptive sampling controls ingestion cost under traffic bursts without losing error diagnostics or skewing telemetry counts. Why the keyed choice wins: Connecting GitHub Copilot to Azure DevOps / GitHub MCP servers exposes build logs, pipeline definitions, and work-item states for accurate gate generation.
+- **B:** Incorrect for this requirement. `git worktree` creates separate checked-out working directories backed by one local repository, preventing branch-switching and index lock collisions across parallel agents. Why the keyed choice wins: Connecting GitHub Copilot to Azure DevOps / GitHub MCP servers exposes build logs, pipeline definitions, and work-item states for accurate gate generation.
+- **C:** Incorrect for this requirement. Stakeholder licenses cost $0 and allow Azure Boards collaboration while preventing source-code access in private projects. Why the keyed choice wins: Connecting GitHub Copilot to Azure DevOps / GitHub MCP servers exposes build logs, pipeline definitions, and work-item states for accurate gate generation.
+- **D:** Correct. MCP tools give Copilot live context on pipeline definitions, build logs, and alert metrics so it scaffolds accurate quality and release gates. In this scenario: Connecting GitHub Copilot to Azure DevOps / GitHub MCP servers exposes build logs, pipeline definitions, and work-item states for accurate gate generation.
+
+### Question 34 — B
+
+Answer: Configure an Azure Pipelines Environment `Invoke REST API` / `Query Azure Monitor Alerts` check between deployment rings with `Timeout > Evaluation delay + interval`. Adding an automated `Query Azure Monitor Alerts` / REST check on the target YAML Environment with `Timeout` exceeding evaluation delay halts unhealthy promotions. Automated post-deploy Azure Monitor checks halt ring progression automatically whenever error rate or latency alerts fire. Local study-map skill 3.3 (Design and Implement Automated Quality and Release Gates Using GitHub Copilot and MCP Servers), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Incorrect for this requirement. Slot-pinned settings prevent staging database URLs or canary flags from swapping into `Production`. Why the keyed choice wins: Adding an automated `Query Azure Monitor Alerts` / REST check on the target YAML Environment with `Timeout` exceeding evaluation delay halts unhealthy promotions.
+- **B:** Correct. Automated post-deploy Azure Monitor checks halt ring progression automatically whenever error rate or latency alerts fire. In this scenario: Adding an automated `Query Azure Monitor Alerts` / REST check on the target YAML Environment with `Timeout` exceeding evaluation delay halts unhealthy promotions.
+- **C:** Incorrect for this requirement. Azure Repos branch policies block direct pushes and enforce green CI builds, peer review, and `AB#` traceability prior to completion. Why the keyed choice wins: Adding an automated `Query Azure Monitor Alerts` / REST check on the target YAML Environment with `Timeout` exceeding evaluation delay halts unhealthy promotions.
+- **D:** Incorrect for this requirement. Local `pre-commit` hooks shift feedback left before code ever leaves the developer workstation. Why the keyed choice wins: Adding an automated `Query Azure Monitor Alerts` / REST check on the target YAML Environment with `Timeout` exceeding evaluation delay halts unhealthy promotions.
+
+### Question 35 — D
+
+Answer: Run `AzureLoadTest@1` (or `azure/load-testing@v1`) in staging YAML with declarative `failureCriteria` (`p90(response_time_ms) > 300`, `percentage(error) > 1`). Azure Load Testing (`AzureLoadTest@1` / `azure/load-testing@v1`) executes distributed JMeter/Locust scripts with declarative `failureCriteria`. Azure Load Testing evaluates server-side telemetry and JMeter/Locust percentile thresholds automatically as a repeatable CI/CD gate. Local study-map skill 3.4 (Design Unit, Integration, UI, and Azure Load Testing Strategies and Configure Pipeline Test Tasks via Copilot and MCP), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Incorrect for this requirement. Quarantining and fixing flaky tests restores developer trust in red CI builds without blinding pipelines to genuine regressions. Why the keyed choice wins: Azure Load Testing (`AzureLoadTest@1` / `azure/load-testing@v1`) executes distributed JMeter/Locust scripts with declarative `failureCriteria`.
+- **B:** Incorrect for this requirement. Sharded Playwright tests compress UI regression wall-clock time while preserving rich failure traces for Copilot or human debugging. Why the keyed choice wins: Azure Load Testing (`AzureLoadTest@1` / `azure/load-testing@v1`) executes distributed JMeter/Locust scripts with declarative `failureCriteria`.
+- **C:** Incorrect for this requirement. `succeededOrFailed()` ensures test result XML is uploaded even when unit or integration test suites exit with non-zero status. Why the keyed choice wins: Azure Load Testing (`AzureLoadTest@1` / `azure/load-testing@v1`) executes distributed JMeter/Locust scripts with declarative `failureCriteria`.
+- **D:** Correct. Azure Load Testing evaluates server-side telemetry and JMeter/Locust percentile thresholds automatically as a repeatable CI/CD gate. In this scenario: Azure Load Testing (`AzureLoadTest@1` / `azure/load-testing@v1`) executes distributed JMeter/Locust scripts with declarative `failureCriteria`.
+
+### Question 36 — A, B
+
+Answers: Run Ephemeral Docker `Testcontainers` integration tests inside CI jobs against real PostgreSQL/Redis containers before mocking external third-party APIs; Configure `PublishTestResults@2` (with `condition: succeededOrFailed()`) exporting JUnit/TRX XML so failed builds still surface test failure stack traces and Boards links. Ephemeral Docker `Testcontainers` validate real PostgreSQL queries in CI, and `PublishTestResults@2` with `succeededOrFailed()` uploads TRX/JUnit results even on failure. Local study-map skill 3.4 (Design Unit, Integration, UI, and Azure Load Testing Strategies and Configure Pipeline Test Tasks via Copilot and MCP), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Correct. Testcontainers catch real SQL dialect, serialization, and migration defects quickly without shared brittle staging environments. In this scenario: Ephemeral Docker `Testcontainers` validate real PostgreSQL queries in CI, and `PublishTestResults@2` with `succeededOrFailed()` uploads TRX/JUnit results even on failure.
+- **B:** Correct. `succeededOrFailed()` ensures test result XML is uploaded even when unit or integration test suites exit with non-zero status. In this scenario: Ephemeral Docker `Testcontainers` validate real PostgreSQL queries in CI, and `PublishTestResults@2` with `succeededOrFailed()` uploads TRX/JUnit results even on failure.
+- **C:** Incorrect for this requirement. `Microsoft.TimeWindow` toggles time-bound launch capabilities cleanly at runtime. Why the keyed choice wins: Ephemeral Docker `Testcontainers` validate real PostgreSQL queries in CI, and `PublishTestResults@2` with `succeededOrFailed()` uploads TRX/JUnit results even on failure.
+- **D:** Incorrect for this requirement. Stakeholder licenses cost $0 and allow Azure Boards collaboration while preventing source-code access in private projects. Why the keyed choice wins: Ephemeral Docker `Testcontainers` validate real PostgreSQL queries in CI, and `PublishTestResults@2` with `succeededOrFailed()` uploads TRX/JUnit results even on failure.
+- **E:** Incorrect for this requirement. CalVer encodes release chronology directly in version identifiers when date freshness matters more than library API contracts. Why the keyed choice wins: Ephemeral Docker `Testcontainers` validate real PostgreSQL queries in CI, and `PublishTestResults@2` with `succeededOrFailed()` uploads TRX/JUnit results even on failure.
+
+### Question 37 — D
+
+Answer: Run Cobertura/OpenCover instrumentation with `PublishCodeCoverageResults@2` and use Copilot + MCP tools to generate targeted unit tests for uncovered PR diff paths. Publishing Cobertura XML with `PublishCodeCoverageResults@2` and pairing Copilot with MCP PR-diff/test tools targets newly uncovered branches directly. Combining coverage reporting with Copilot + MCP PR diff inspection focuses test generation on newly modified, high-risk branches. Local study-map skill 3.5 (Implement Code Coverage and PR Diff Coverage Analysis Using GitHub Copilot and MCP Servers), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Incorrect for this requirement. Azure Load Testing evaluates server-side telemetry and JMeter/Locust percentile thresholds automatically as a repeatable CI/CD gate. Why the keyed choice wins: Publishing Cobertura XML with `PublishCodeCoverageResults@2` and pairing Copilot with MCP PR-diff/test tools targets newly uncovered branches directly.
+- **B:** Incorrect for this requirement. Git LFS stores pointer files in Git while offloading multi-megabyte binary blobs to dedicated object storage. Why the keyed choice wins: Publishing Cobertura XML with `PublishCodeCoverageResults@2` and pairing Copilot with MCP PR-diff/test tools targets newly uncovered branches directly.
+- **C:** Incorrect for this requirement. Universal Packages efficiently version and deduplicate large ML weights, simulation binaries, or SDK archives up to terabyte scale. Why the keyed choice wins: Publishing Cobertura XML with `PublishCodeCoverageResults@2` and pairing Copilot with MCP PR-diff/test tools targets newly uncovered branches directly.
+- **D:** Correct. Combining coverage reporting with Copilot + MCP PR diff inspection focuses test generation on newly modified, high-risk branches. In this scenario: Publishing Cobertura XML with `PublishCodeCoverageResults@2` and pairing Copilot with MCP PR-diff/test tools targets newly uncovered branches directly.
+
+### Question 38 — C
+
+Answer: Enforce a Pull Request Status Policy requiring `>= 80%` diff code coverage on newly changed lines while ratcheting legacy baseline coverage upward. Enforcing an `80%` Pull Request diff code coverage gate on modified lines prevents new untested debt without freezing legacy files. Diff coverage gates stop new untested code immediately without freezing legacy repositories below global coverage targets. Local study-map skill 3.5 (Implement Code Coverage and PR Diff Coverage Analysis Using GitHub Copilot and MCP Servers), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Incorrect for this requirement. Quarantining and fixing flaky tests restores developer trust in red CI builds without blinding pipelines to genuine regressions. Why the keyed choice wins: Enforcing an `80%` Pull Request diff code coverage gate on modified lines prevents new untested debt without freezing legacy files.
+- **B:** Incorrect for this requirement. Tiered retention controls storage billing while preserving compliance-mandated artifacts currently running in production. Why the keyed choice wins: Enforcing an `80%` Pull Request diff code coverage gate on modified lines prevents new untested debt without freezing legacy files.
+- **C:** Correct. Diff coverage gates stop new untested code immediately without freezing legacy repositories below global coverage targets. In this scenario: Enforcing an `80%` Pull Request diff code coverage gate on modified lines prevents new untested debt without freezing legacy files.
+- **D:** Incorrect for this requirement. `batch: true` coalesces rapid bursts of commits into combined validation runs instead of queuing dozens of redundant builds. Why the keyed choice wins: Enforcing an `80%` Pull Request diff code coverage gate on modified lines prevents new untested debt without freezing legacy files.
+
+### Question 39 — D
+
+Answer: Deploy Azure Managed DevOps Pools injected into your private VNet with stateless ephemeral (`Fresh agent every time`) VM images and predictive scaling. Azure Managed DevOps Pools inject Microsoft-managed stateless VM agents directly into your Azure VNet with zero OS maintenance burden. Managed DevOps Pools deliver private VNet reachability and custom tool images without the OS patching burden of classic self-hosted VMs. Local study-map skill 3.6 (Select Azure Pipelines vs. GitHub Actions and Design Hosted, Managed DevOps Pool, and Ephemeral ARC Runner Infrastructure), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Incorrect for this requirement. Partial blobless clones plus sparse-checkout dramatically cut checkout time and disk I/O in large monorepos. Why the keyed choice wins: Azure Managed DevOps Pools inject Microsoft-managed stateless VM agents directly into your Azure VNet with zero OS maintenance burden.
+- **B:** Incorrect for this requirement. Stakeholder licenses cost $0 and allow Azure Boards collaboration while preventing source-code access in private projects. Why the keyed choice wins: Azure Managed DevOps Pools inject Microsoft-managed stateless VM agents directly into your Azure VNet with zero OS maintenance burden.
+- **C:** Incorrect for this requirement. GitHub Container Registry (`ghcr.io`) integrates natively with GitHub Actions permissions, Cosign/attestations, and org visibility controls. Why the keyed choice wins: Azure Managed DevOps Pools inject Microsoft-managed stateless VM agents directly into your Azure VNet with zero OS maintenance burden.
+- **D:** Correct. Managed DevOps Pools deliver private VNet reachability and custom tool images without the OS patching burden of classic self-hosted VMs. In this scenario: Azure Managed DevOps Pools inject Microsoft-managed stateless VM agents directly into your Azure VNet with zero OS maintenance burden.
+
+### Question 40 — A
+
+Answer: Deploy Actions Runner Controller (ARC) Runner Scale Sets on AKS creating single-use ephemeral Kubernetes runner pods inside your private network. Actions Runner Controller (ARC) Runner Scale Sets spin up ephemeral single-use Kubernetes runner pods inside your private AKS VNet and scale to zero when idle. ARC autoscales zero-to-N ephemeral GitHub Actions pods inside private AKS clusters and destroys each pod cleanly after one job. Local study-map skill 3.6 (Select Azure Pipelines vs. GitHub Actions and Design Hosted, Managed DevOps Pool, and Ephemeral ARC Runner Infrastructure), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Correct. ARC autoscales zero-to-N ephemeral GitHub Actions pods inside private AKS clusters and destroys each pod cleanly after one job. In this scenario: Actions Runner Controller (ARC) Runner Scale Sets spin up ephemeral single-use Kubernetes runner pods inside your private AKS VNet and scale to zero when idle.
+- **B:** Incorrect for this requirement. Universal Packages efficiently version and deduplicate large ML weights, simulation binaries, or SDK archives up to terabyte scale. Why the keyed choice wins: Actions Runner Controller (ARC) Runner Scale Sets spin up ephemeral single-use Kubernetes runner pods inside your private AKS VNet and scale to zero when idle.
+- **C:** Incorrect for this requirement. `git worktree` creates separate checked-out working directories backed by one local repository, preventing branch-switching and index lock collisions across parallel agents. Why the keyed choice wins: Actions Runner Controller (ARC) Runner Scale Sets spin up ephemeral single-use Kubernetes runner pods inside your private AKS VNet and scale to zero when idle.
+- **D:** Incorrect for this requirement. Executing tests from the board works with `Basic`, whereas authoring/managing Test Plans and Test Suites requires `Basic + Test Plans`. Why the keyed choice wins: Actions Runner Controller (ARC) Runner Scale Sets spin up ephemeral single-use Kubernetes runner pods inside your private AKS VNet and scale to zero when idle.
+
+### Question 41 — B
+
+Answer: `extends` (top-level Azure Pipelines YAML keyword inheriting mandatory security stages/jobs enforced by Required Template checks). Top-level `extends:` forces the pipeline to execute inside the governed platform template contract verified by Required Template checks. `extends:` locks downstream pipelines into a governed platform template contract. Local study-map skill 3.7 (Develop Multi-Stage YAML Pipelines with GitHub Copilot, Triggers, Parallelism, Templates, Variable Groups, and Environment Checks), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Incorrect for this requirement. `what-if` calculates live infrastructure diffs before applying Bicep templates. Why the keyed choice wins: Top-level `extends:` forces the pipeline to execute inside the governed platform template contract verified by Required Template checks.
+- **B:** Correct. `extends:` locks downstream pipelines into a governed platform template contract. In this scenario: Top-level `extends:` forces the pipeline to execute inside the governed platform template contract verified by Required Template checks.
+- **C:** Incorrect for this requirement. Restoring from `feedName@Release` blocks unvetted `@Local` or `@Prerelease` packages from entering production builds. Why the keyed choice wins: Top-level `extends:` forces the pipeline to execute inside the governed platform template contract verified by Required Template checks.
+- **D:** Incorrect for this requirement. `applyTo` scopes custom Copilot instruction files to matching repository file globs. Why the keyed choice wins: Top-level `extends:` forces the pipeline to execute inside the governed platform template contract verified by Required Template checks.
+
+### Question 42 — B
+
+Answer: `isOutput=true` (`##vso[task.setvariable variable=x;isOutput=true]` flag exposing an Azure Pipelines variable across jobs and stages). `isOutput=true` is required to expose an Azure Pipelines `setvariable` output across separate jobs and downstream `stageDependencies`. Omitting `isOutput=true` restricts `setvariable` scope to the current job only. Local study-map skill 3.7 (Develop Multi-Stage YAML Pipelines with GitHub Copilot, Triggers, Parallelism, Templates, Variable Groups, and Environment Checks), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Incorrect for this requirement. `cancel-in-progress: true` stops stale PR runs automatically whenever a developer or agent pushes a newer commit. Why the keyed choice wins: `isOutput=true` is required to expose an Azure Pipelines `setvariable` output across separate jobs and downstream `stageDependencies`.
+- **B:** Correct. Omitting `isOutput=true` restricts `setvariable` scope to the current job only. In this scenario: `isOutput=true` is required to expose an Azure Pipelines `setvariable` output across separate jobs and downstream `stageDependencies`.
+- **C:** Incorrect for this requirement. `echo "::add-mask::$VAL"` prevents dynamic secrets from printing in cleartext step logs. Why the keyed choice wins: `isOutput=true` is required to expose an Azure Pipelines `setvariable` output across separate jobs and downstream `stageDependencies`.
+- **D:** Incorrect for this requirement. `-a azcli` instructs `@azure-devops/mcp` to obtain tokens from the pre-authenticated `az login` session without interactive browser prompts. Why the keyed choice wins: `isOutput=true` is required to expose an Azure Pipelines `setvariable` output across separate jobs and downstream `stageDependencies`.
+
+### Question 43 — D
+
+Answer: Configure regional deploy stages with `dependsOn: [Build]` to run in parallel, followed by `GlobalSmoke` with `dependsOn: [Deploy_East, Deploy_West, Deploy_EU]`. Setting `dependsOn: [Build]` on both regional stages and `dependsOn: [Deploy_UK, Deploy_US]` on `Global_Reconcile` models parallel fan-out and fan-in. Explicit `dependsOn` arrays express fan-out parallelism followed by fan-in synchronization in multi-stage YAML. Local study-map skill 3.7 (Develop Multi-Stage YAML Pipelines with GitHub Copilot, Triggers, Parallelism, Templates, Variable Groups, and Environment Checks), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Incorrect for this requirement. Path-filtered triggers dramatically cut runner queue contention and CI cost in multi-service monorepos. Why the keyed choice wins: Setting `dependsOn: [Build]` on both regional stages and `dependsOn: [Deploy_UK, Deploy_US]` on `Global_Reconcile` models parallel fan-out and fan-in.
+- **B:** Incorrect for this requirement. Canceling superseded PR runs reclaims runner minutes immediately without ever aborting mid-flight production deployments. Why the keyed choice wins: Setting `dependsOn: [Build]` on both regional stages and `dependsOn: [Deploy_UK, Deploy_US]` on `Global_Reconcile` models parallel fan-out and fan-in.
+- **C:** Incorrect for this requirement. `batch: true` coalesces rapid bursts of commits into combined validation runs instead of queuing dozens of redundant builds. Why the keyed choice wins: Setting `dependsOn: [Build]` on both regional stages and `dependsOn: [Deploy_UK, Deploy_US]` on `Global_Reconcile` models parallel fan-out and fan-in.
+- **D:** Correct. Explicit `dependsOn` arrays express fan-out parallelism followed by fan-in synchronization in multi-stage YAML. In this scenario: Setting `dependsOn: [Build]` on both regional stages and `dependsOn: [Deploy_UK, Deploy_US]` on `Global_Reconcile` models parallel fan-out and fan-in.
+
+### Question 44 — A
+
+Answer: Use GitHub Copilot with workspace/MCP context to scaffold multi-stage YAML pipelines and validate schema via the Azure Pipelines `Preview` REST API or `actionlint`. Validating the generated YAML against the Azure Pipelines `Preview` REST endpoint (or `actionlint` for GitHub Actions) verifies schema and expression syntax pre-commit. Validating AI-generated YAML against the compiler/linter catches invalid task inputs and expression scoping bugs before merging. Local study-map skill 3.7 (Develop Multi-Stage YAML Pipelines with GitHub Copilot, Triggers, Parallelism, Templates, Variable Groups, and Environment Checks), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Correct. Validating AI-generated YAML against the compiler/linter catches invalid task inputs and expression scoping bugs before merging. In this scenario: Validating the generated YAML against the Azure Pipelines `Preview` REST endpoint (or `actionlint` for GitHub Actions) verifies schema and expression syntax pre-commit.
+- **B:** Incorrect for this requirement. `git filter-repo` is the Git-recommended history rewrite tool replacing legacy `git filter-branch` for removing leaked data or oversized blobs. Why the keyed choice wins: Validating the generated YAML against the Azure Pipelines `Preview` REST endpoint (or `actionlint` for GitHub Actions) verifies schema and expression syntax pre-commit.
+- **C:** Incorrect for this requirement. Subscription association with an Azure Monitor Workspace (AMW) is mandatory to enable Azure Monitor Issues for Observability Agent investigations. Why the keyed choice wins: Validating the generated YAML against the Azure Pipelines `Preview` REST endpoint (or `actionlint` for GitHub Actions) verifies schema and expression syntax pre-commit.
+- **D:** Incorrect for this requirement. Alert reinvestigation cooldown suppresses redundant agent loops when a noisy metric alert fires repeatedly during an ongoing incident. Why the keyed choice wins: Validating the generated YAML against the Azure Pipelines `Preview` REST endpoint (or `actionlint` for GitHub Actions) verifies schema and expression syntax pre-commit.
+
+### Question 45 — A, B
+
+Answers: Configure YAML `environment: production` with Approvals (`approvers cannot approve their own runs`), Business Hours check, and Exclusive Lock (`runLatest`); Link an Azure Pipelines Variable Group to Azure Key Vault with Pipeline Permissions restricted to authorized YAML pipelines and secret variables auto-masked. YAML `environment: production` Approvals + Business Hours checks enforce separation of duties and windows, while Key Vault-linked Variable Groups pull masked secrets at runtime. Local study-map skill 3.7 (Develop Multi-Stage YAML Pipelines with GitHub Copilot, Triggers, Parallelism, Templates, Variable Groups, and Environment Checks), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Correct. YAML Environment checks enforce separation of duties, maintenance windows, and serialized deployment state outside repo YAML. In this scenario: YAML `environment: production` Approvals + Business Hours checks enforce separation of duties and windows, while Key Vault-linked Variable Groups pull masked secrets at runtime.
+- **B:** Correct. Key Vault-backed Variable Groups fetch current secrets dynamically at runtime and restrict consumption to explicitly authorized pipelines. In this scenario: YAML `environment: production` Approvals + Business Hours checks enforce separation of duties and windows, while Key Vault-linked Variable Groups pull masked secrets at runtime.
+- **C:** Incorrect for this requirement. Git Flow suits scheduled versioned shrink-wrap releases but slows high-frequency CI/CD compared to Trunk-Based Development or GitHub Flow. Why the keyed choice wins: YAML `environment: production` Approvals + Business Hours checks enforce separation of duties and windows, while Key Vault-linked Variable Groups pull masked secrets at runtime.
+- **D:** Incorrect for this requirement. `@Local` holds newly published internal packages prior to quality promotion. Why the keyed choice wins: YAML `environment: production` Approvals + Business Hours checks enforce separation of duties and windows, while Key Vault-linked Variable Groups pull masked secrets at runtime.
+- **E:** Incorrect for this requirement. `pull_request_target` runs in the base repo context with write token/secret access, so running untrusted fork scripts enables instant secret exfiltration. Why the keyed choice wins: YAML `environment: production` Approvals + Business Hours checks enforce separation of duties and windows, while Key Vault-linked Variable Groups pull masked secrets at runtime.
+
+### Question 46 — A
+
+Answer: Update pinned action SHAs inside `.lock.yml` exclusively via `gh aw update-actions` / `gh aw compile` rather than merging raw Dependabot edits to `.lock.yml`. No; `.lock.yml` is compiler-owned output—action pins must be updated via `gh aw update-actions` / `gh aw compile` so `.md` and `.lock.yml` stay synchronized and verified. Raw edits to `.lock.yml` diverge from the `.md` source specification; `gh aw compile` / `gh aw update-actions` preserves compiler guardrails. Local study-map skill 3.8 (Design and Implement GitHub Agentic Workflows (gh-aw Markdown Frontmatter, gh aw compile, Read-Only Sandbox, safe-outputs)), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Correct. Raw edits to `.lock.yml` diverge from the `.md` source specification; `gh aw compile` / `gh aw update-actions` preserves compiler guardrails. In this scenario: No; `.lock.yml` is compiler-owned output—action pins must be updated via `gh aw update-actions` / `gh aw compile` so `.md` and `.lock.yml` stay synchronized and verified.
+- **B:** Incorrect for this requirement. `gh-ado2gh` (powered by GitHub Enterprise Importer) is Microsoft and GitHubs official CLI tool for migrating Azure Repos to GitHub Enterprise Cloud. Why the keyed choice wins: No; `.lock.yml` is compiler-owned output—action pins must be updated via `gh aw update-actions` / `gh aw compile` so `.md` and `.lock.yml` stay synchronized and verified.
+- **C:** Incorrect for this requirement. `git filter-repo` is the Git-recommended history rewrite tool replacing legacy `git filter-branch` for removing leaked data or oversized blobs. Why the keyed choice wins: No; `.lock.yml` is compiler-owned output—action pins must be updated via `gh aw update-actions` / `gh aw compile` so `.md` and `.lock.yml` stay synchronized and verified.
+- **D:** Incorrect for this requirement. ARM `what-if` previews live Azure state mutations against target resource groups before executing changes. Why the keyed choice wins: No; `.lock.yml` is compiler-owned output—action pins must be updated via `gh aw update-actions` / `gh aw compile` so `.md` and `.lock.yml` stay synchronized and verified.
+
+### Question 47 — A
+
+Answer: Install `github/gh-aw` extension → author `.github/workflows/<name>.md` with `permissions: read-all` and `safe-outputs` → run `gh aw compile` generating `<name>.lock.yml` → commit `.md` and `.lock.yml` via PR. Installing `gh-aw` -> authoring `.md` with `permissions: read-all` and `safe-outputs` -> running `gh aw compile` -> committing `.md` + `.lock.yml` enforces sandboxed agent execution. `gh aw compile` validates YAML frontmatter and emits a hardened `.lock.yml` with read-only sandboxed agent execution and separate `safe-outputs` write jobs. Local study-map skill 3.8 (Design and Implement GitHub Agentic Workflows (gh-aw Markdown Frontmatter, gh aw compile, Read-Only Sandbox, safe-outputs)), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Correct. `gh aw compile` validates YAML frontmatter and emits a hardened `.lock.yml` with read-only sandboxed agent execution and separate `safe-outputs` write jobs. In this scenario: Installing `gh-aw` -> authoring `.md` with `permissions: read-all` and `safe-outputs` -> running `gh aw compile` -> committing `.md` + `.lock.yml` enforces sandboxed agent execution.
+- **B:** Incorrect for this requirement. GitHub Actions executes the compiled `.github/workflows/<name>.lock.yml` file, and model keys belong in encrypted repository/environment secrets. Why the keyed choice wins: Installing `gh-aw` -> authoring `.md` with `permissions: read-all` and `safe-outputs` -> running `gh aw compile` -> committing `.md` + `.lock.yml` enforces sandboxed agent execution.
+- **C:** Incorrect for this requirement. `.lock.yml` is compiler-managed and must never be hand-edited or updated without `gh aw compile` / `gh aw update-actions`, and `write-all` breaks sandboxing. Why the keyed choice wins: Installing `gh-aw` -> authoring `.md` with `permissions: read-all` and `safe-outputs` -> running `gh aw compile` -> committing `.md` + `.lock.yml` enforces sandboxed agent execution.
+- **D:** Incorrect for this requirement. GitHub Agentic Workflows complement rather than replace deterministic build/deploy pipelines, and untrusted inputs require read-only + `safe-outputs` isolation. Why the keyed choice wins: Installing `gh-aw` -> authoring `.md` with `permissions: read-all` and `safe-outputs` -> running `gh aw compile` -> committing `.md` + `.lock.yml` enforces sandboxed agent execution.
+
+### Question 48 — B, C
+
+Answers: Run the `gh-aw` AI reasoning job in a sandboxed container with `permissions: read-all` (or `contents: read`) and network firewall isolation by default; Use GitHub Agentic Workflows (`gh-aw`) for judgment-driven triage, doc drift sync, and CI failure root-cause reports while keeping deterministic YAML for compilation, signing, and prod deploys. `gh-aw` agents run sandboxed with `permissions: read-all` by default for prompt-injection safety and complement—never replace—deterministic build, signing, and prod release pipelines. Local study-map skill 3.8 (Design and Implement GitHub Agentic Workflows (gh-aw Markdown Frontmatter, gh aw compile, Read-Only Sandbox, safe-outputs)), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Incorrect for this requirement. `pull_request_target` runs in the base repo context with write token/secret access, so running untrusted fork scripts enables instant secret exfiltration. Why the keyed choice wins: `gh-aw` agents run sandboxed with `permissions: read-all` by default for prompt-injection safety and complement—never replace—deterministic build, signing, and prod release pipelines.
+- **B:** Correct. Running the agent job read-only prevents prompt injection inside untrusted issue/PR text from directly mutating repository code or secrets. In this scenario: `gh-aw` agents run sandboxed with `permissions: read-all` by default for prompt-injection safety and complement—never replace—deterministic build, signing, and prod release pipelines.
+- **C:** Correct. Agentic workflows augment deterministic CI/CD where reasoning helps, whereas reproducible compilation, artifact signing, and prod rollouts must remain deterministic. In this scenario: `gh-aw` agents run sandboxed with `permissions: read-all` by default for prompt-injection safety and complement—never replace—deterministic build, signing, and prod release pipelines.
+- **D:** Incorrect for this requirement. Stakeholder licenses cost $0 and allow Azure Boards collaboration while preventing source-code access in private projects. Why the keyed choice wins: `gh-aw` agents run sandboxed with `permissions: read-all` by default for prompt-injection safety and complement—never replace—deterministic build, signing, and prod release pipelines.
+- **E:** Incorrect for this requirement. Git Flow suits scheduled versioned shrink-wrap releases but slows high-frequency CI/CD compared to Trunk-Based Development or GitHub Flow. Why the keyed choice wins: `gh-aw` agents run sandboxed with `permissions: read-all` by default for prompt-injection safety and complement—never replace—deterministic build, signing, and prod release pipelines.
+
+### Question 49 — A
+
+Answer: Canary deployment routing 5%-10% of live traffic via Azure Container Apps revision weights (or Front Door / Service Mesh) while evaluating p95 latency and HTTP 5xx gates. Canary deployment splits a small percentage of live revision traffic to validate tail latency and error rates before full rollout. Canary traffic splitting limits real-world blast radius to a small traffic slice before progressive promotion. Local study-map skill 3.9 (Design Blue-Green, Canary, Ring, Feature-Flag, A/B, Zero-Downtime, Hotfix, and Container/Binary/Database Deployments), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Correct. Canary traffic splitting limits real-world blast radius to a small traffic slice before progressive promotion. In this scenario: Canary deployment splits a small percentage of live revision traffic to validate tail latency and error rates before full rollout.
+- **B:** Incorrect for this requirement. Blue-Green slot swaps shift 100% of live traffic seamlessly after warm-up while keeping the previous `Blue` build warm for instant swap-back. Why the keyed choice wins: Canary deployment splits a small percentage of live revision traffic to validate tail latency and error rates before full rollout.
+- **C:** Incorrect for this requirement. `Microsoft.TimeWindow` toggles time-bound launch capabilities cleanly at runtime. Why the keyed choice wins: Canary deployment splits a small percentage of live revision traffic to validate tail latency and error rates before full rollout.
+- **D:** Incorrect for this requirement. Expedited hotfix paths skip unrelated queued feature work without bypassing security scanning, peer review, or back-merge discipline. Why the keyed choice wins: Canary deployment splits a small percentage of live revision traffic to validate tail latency and error rates before full rollout.
+
+### Question 50 — C
+
+Answer: Mark environment-specific connection strings and feature endpoints as `Deployment slot setting` (slot-pinned) so they remain bound to each slot across VIP swaps. Marking the connection string as a `Deployment slot setting` (slot-pinned) binds it permanently to its respective slot across swaps. Slot-pinned settings prevent staging database URLs or canary flags from swapping into `Production`. Local study-map skill 3.9 (Design Blue-Green, Canary, Ring, Feature-Flag, A/B, Zero-Downtime, Hotfix, and Container/Binary/Database Deployments), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Incorrect for this requirement. A/B testing measures statistically significant user behavior or conversion lift across randomized cohorts. Why the keyed choice wins: Marking the connection string as a `Deployment slot setting` (slot-pinned) binds it permanently to its respective slot across swaps.
+- **B:** Incorrect for this requirement. Warming DI caches, JIT code, and DB pools on `/healthz` eliminates cold-start latency spikes during slot swaps. Why the keyed choice wins: Marking the connection string as a `Deployment slot setting` (slot-pinned) binds it permanently to its respective slot across swaps.
+- **C:** Correct. Slot-pinned settings prevent staging database URLs or canary flags from swapping into `Production`. In this scenario: Marking the connection string as a `Deployment slot setting` (slot-pinned) binds it permanently to its respective slot across swaps.
+- **D:** Incorrect for this requirement. Zero `maxUnavailable` with readiness probes ensures new pods pass health checks before old pods drain connections. Why the keyed choice wins: Marking the connection string as a `Deployment slot setting` (slot-pinned) binds it permanently to its respective slot across swaps.
+
+### Question 51 — B
+
+Answer: Azure App Configuration Feature Manager with `Microsoft.Targeting` filters enabling features incrementally by user IDs, Entra groups, and rollout percentages. Azure App Configuration Feature Manager with `Microsoft.Targeting` filters rolls out features deterministically by users, groups, and cohort percentages. `Microsoft.Targeting` decouples code deployment from feature activation and guarantees sticky cohort assignment. Local study-map skill 3.9 (Design Blue-Green, Canary, Ring, Feature-Flag, A/B, Zero-Downtime, Hotfix, and Container/Binary/Database Deployments), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Incorrect for this requirement. `Microsoft.TimeWindow` toggles time-bound launch capabilities cleanly at runtime. Why the keyed choice wins: Azure App Configuration Feature Manager with `Microsoft.Targeting` filters rolls out features deterministically by users, groups, and cohort percentages.
+- **B:** Correct. `Microsoft.Targeting` decouples code deployment from feature activation and guarantees sticky cohort assignment. In this scenario: Azure App Configuration Feature Manager with `Microsoft.Targeting` filters rolls out features deterministically by users, groups, and cohort percentages.
+- **C:** Incorrect for this requirement. Pinning `@sha256` digests guarantees every deployment ring runs the exact scanned OCI image layer set. Why the keyed choice wins: Azure App Configuration Feature Manager with `Microsoft.Targeting` filters rolls out features deterministically by users, groups, and cohort percentages.
+- **D:** Incorrect for this requirement. ARM Deployment Stacks manage multi-resource lifecycles atomically and block unauthorized manual portal drift via deny assignments. Why the keyed choice wins: Azure App Configuration Feature Manager with `Microsoft.Targeting` filters rolls out features deterministically by users, groups, and cohort percentages.
+
+### Question 52 — A
+
+Answer: Branch `hotfix/*` from the production release tag (or merge to `main` + cherry-pick to `release/x.y`) through an expedited pipeline retaining mandatory security scans and smoke tests. Branching `hotfix/4.1.1` from tag `v4.1.0` through an expedited pipeline retaining mandatory security/smoke checks fixes prod cleanly before cherry-picking back to `main`. Expedited hotfix paths skip unrelated queued feature work without bypassing security scanning, peer review, or back-merge discipline. Local study-map skill 3.9 (Design Blue-Green, Canary, Ring, Feature-Flag, A/B, Zero-Downtime, Hotfix, and Container/Binary/Database Deployments), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Correct. Expedited hotfix paths skip unrelated queued feature work without bypassing security scanning, peer review, or back-merge discipline. In this scenario: Branching `hotfix/4.1.1` from tag `v4.1.0` through an expedited pipeline retaining mandatory security/smoke checks fixes prod cleanly before cherry-picking back to `main`.
+- **B:** Incorrect for this requirement. Universal Packages efficiently version and deduplicate large ML weights, simulation binaries, or SDK archives up to terabyte scale. Why the keyed choice wins: Branching `hotfix/4.1.1` from tag `v4.1.0` through an expedited pipeline retaining mandatory security/smoke checks fixes prod cleanly before cherry-picking back to `main`.
+- **C:** Incorrect for this requirement. Git Flow suits scheduled versioned shrink-wrap releases but slows high-frequency CI/CD compared to Trunk-Based Development or GitHub Flow. Why the keyed choice wins: Branching `hotfix/4.1.1` from tag `v4.1.0` through an expedited pipeline retaining mandatory security/smoke checks fixes prod cleanly before cherry-picking back to `main`.
+- **D:** Incorrect for this requirement. `@Local` holds newly published internal packages prior to quality promotion. Why the keyed choice wins: Branching `hotfix/4.1.1` from tag `v4.1.0` through an expedited pipeline retaining mandatory security/smoke checks fixes prod cleanly before cherry-picking back to `main`.
+
+### Question 53 — A
+
+Answer: Build once and publish one `@sha256` artifact → deploy to `Canary` (5%) with Release Annotations → evaluate automated Azure Monitor alert/KQL gates over bake window → promote same digest to `Global`. Building one `@sha256` artifact -> deploying to `Canary` with Release Annotations -> evaluating Azure Monitor gates across bake time -> promoting the same digest protects blast radius. Promoting a single immutable artifact across widening rings gated by live Azure Monitor telemetry limits blast radius and guarantees provenance. Local study-map skill 3.9 (Design Blue-Green, Canary, Ring, Feature-Flag, A/B, Zero-Downtime, Hotfix, and Container/Binary/Database Deployments), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Correct. Promoting a single immutable artifact across widening rings gated by live Azure Monitor telemetry limits blast radius and guarantees provenance. In this scenario: Building one `@sha256` artifact -> deploying to `Canary` with Release Annotations -> evaluating Azure Monitor gates across bake time -> promoting the same digest protects blast radius.
+- **B:** Incorrect for this requirement. Manual laptop uploads and cold outages violate immutable zero-downtime CI/CD principles. Why the keyed choice wins: Building one `@sha256` artifact -> deploying to `Canary` with Release Annotations -> evaluating Azure Monitor gates across bake time -> promoting the same digest protects blast radius.
+- **C:** Incorrect for this requirement. Gate timeout must exceed delay + interval, and per-ring Git forks cause severe code divergence. Why the keyed choice wins: Building one `@sha256` artifact -> deploying to `Canary` with Release Annotations -> evaluating Azure Monitor gates across bake time -> promoting the same digest protects blast radius.
+- **D:** Incorrect for this requirement. Rebuilding per stage breaks binary equivalence, and deploying 100% first eliminates progressive blast-radius protection. Why the keyed choice wins: Building one `@sha256` artifact -> deploying to `Canary` with Release Annotations -> evaluating Azure Monitor gates across bake time -> promoting the same digest protects blast radius.
+
+### Question 54 — A, B, C
+
+Answers: Blue-Green deployment using Azure App Service Deployment Slots (`staging` warmed via `applicationInitialization` + smoke tests, then instant VIP swap to `Production`); Configure `website_swap_warmup_ping_path` / `applicationInitialization` health endpoints and verify HTTP 200 readiness before completing App Service slot swaps; Deploy additive backward-compatible SQL schema changes (`Expand -> Migrate -> Contract`) via `SqlAzureDacpacDeployment@1` with `BlockOnPossibleDataLoss=true`. Blue-Green deployment slots + `applicationInitialization` warm-up pings + additive N-1 compatible (`Expand -> Contract`) SQL changes eliminate cold starts and schema outages. Local study-map skill 3.9 (Design Blue-Green, Canary, Ring, Feature-Flag, A/B, Zero-Downtime, Hotfix, and Container/Binary/Database Deployments), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Correct. Blue-Green slot swaps shift 100% of live traffic seamlessly after warm-up while keeping the previous `Blue` build warm for instant swap-back. In this scenario: Blue-Green deployment slots + `applicationInitialization` warm-up pings + additive N-1 compatible (`Expand -> Contract`) SQL changes eliminate cold starts and schema outages.
+- **B:** Correct. Warming DI caches, JIT code, and DB pools on `/healthz` eliminates cold-start latency spikes during slot swaps. In this scenario: Blue-Green deployment slots + `applicationInitialization` warm-up pings + additive N-1 compatible (`Expand -> Contract`) SQL changes eliminate cold starts and schema outages.
+- **C:** Correct. Additive N-1 compatible schema changes prevent downtime during concurrent Blue/Green or rolling application updates. In this scenario: Blue-Green deployment slots + `applicationInitialization` warm-up pings + additive N-1 compatible (`Expand -> Contract`) SQL changes eliminate cold starts and schema outages.
+- **D:** Incorrect for this requirement. `pull_request_target` runs in the base repo context with write token/secret access, so running untrusted fork scripts enables instant secret exfiltration. Why the keyed choice wins: Blue-Green deployment slots + `applicationInitialization` warm-up pings + additive N-1 compatible (`Expand -> Contract`) SQL changes eliminate cold starts and schema outages.
+- **E:** Incorrect for this requirement. Git Flow suits scheduled versioned shrink-wrap releases but slows high-frequency CI/CD compared to Trunk-Based Development or GitHub Flow. Why the keyed choice wins: Blue-Green deployment slots + `applicationInitialization` warm-up pings + additive N-1 compatible (`Expand -> Contract`) SQL changes eliminate cold starts and schema outages.
+- **F:** Incorrect for this requirement. `@Local` holds newly published internal packages prior to quality promotion. Why the keyed choice wins: Blue-Green deployment slots + `applicationInitialization` warm-up pings + additive N-1 compatible (`Expand -> Contract`) SQL changes eliminate cold starts and schema outages.
+
+### Question 55 — D
+
+Answer: Use Azure Deployment Environments (ADE) backed by catalog Bicep templates and per-environment Managed Identities so developers self-provision governed, auto-expiring sandboxes. Azure Deployment Environments (ADE) provisions governed, self-service catalog environments via per-environment identities and automatic expiration policies. ADE lets developers spin up compliant dev/test infrastructure on demand without granting raw subscription `Owner` permissions. Local study-map skill 3.10 (Recommend and Implement IaC and Configuration Management (Bicep, ARM what-if, Deployment Stacks, ADE, Machine Configuration)), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Incorrect for this requirement. Azure Machine Configuration audits and remediates inside-VM OS/security settings natively via Azure Policy across cloud and hybrid Arc servers. Why the keyed choice wins: Azure Deployment Environments (ADE) provisions governed, self-service catalog environments via per-environment identities and automatic expiration policies.
+- **B:** Incorrect for this requirement. `@secure()` + Key Vault `getSecret()` keeps sensitive values out of Git parameter files and ARM deployment history. Why the keyed choice wins: Azure Deployment Environments (ADE) provisions governed, self-service catalog environments via per-environment identities and automatic expiration policies.
+- **C:** Incorrect for this requirement. Stakeholder licenses cost $0 and allow Azure Boards collaboration while preventing source-code access in private projects. Why the keyed choice wins: Azure Deployment Environments (ADE) provisions governed, self-service catalog environments via per-environment identities and automatic expiration policies.
+- **D:** Correct. ADE lets developers spin up compliant dev/test infrastructure on demand without granting raw subscription `Owner` permissions. In this scenario: Azure Deployment Environments (ADE) provisions governed, self-service catalog environments via per-environment identities and automatic expiration policies.
+
+### Question 56 — A
+
+Answer: Run `az bicep build` linter and IaC scans on PRs → authenticate pre-deploy via OIDC → execute `az deployment group what-if` resource diff → apply `az stack group create` with `denyWriteAndDelete`. Linting/scanning Bicep on PRs -> OIDC preflight auth -> `what-if` preview -> `az stack group create` with `denyWriteAndDelete` blocks drift and manages lifecycles atomically. Combining Bicep linting, live `what-if` diffing, and ARM Deployment Stacks prevents both destructive surprises and manual portal configuration drift. Local study-map skill 3.10 (Recommend and Implement IaC and Configuration Management (Bicep, ARM what-if, Deployment Stacks, ADE, Machine Configuration)), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Correct. Combining Bicep linting, live `what-if` diffing, and ARM Deployment Stacks prevents both destructive surprises and manual portal configuration drift. In this scenario: Linting/scanning Bicep on PRs -> OIDC preflight auth -> `what-if` preview -> `az stack group create` with `denyWriteAndDelete` blocks drift and manages lifecycles atomically.
+- **B:** Incorrect for this requirement. Blind `Complete` mode deployments risk deleting existing resources omitted from the template before any `what-if` review. Why the keyed choice wins: Linting/scanning Bicep on PRs -> OIDC preflight auth -> `what-if` preview -> `az stack group create` with `denyWriteAndDelete` blocks drift and manages lifecycles atomically.
+- **C:** Incorrect for this requirement. Manual portal edits with broad `Owner` rights create untracked drift and bypass PR security checks. Why the keyed choice wins: Linting/scanning Bicep on PRs -> OIDC preflight auth -> `what-if` preview -> `az stack group create` with `denyWriteAndDelete` blocks drift and manages lifecycles atomically.
+- **D:** Incorrect for this requirement. `decompile` is a local JSON-to-Bicep conversion helper, not a live ARM preflight or deployment mechanism. Why the keyed choice wins: Linting/scanning Bicep on PRs -> OIDC preflight auth -> `what-if` preview -> `az stack group create` with `denyWriteAndDelete` blocks drift and manages lifecycles atomically.
+
+### Question 57 — C, E, F
+
+Answers: Deploy Bicep templates via Azure Deployment Stacks (`az stack group create`) with `--action-on-unmanage deleteResources` and `--deny-settings-mode denyWriteAndDelete`; Publish versioned organizational Bicep modules (`br:corp.azurecr.io/bicep/aks:v2.1`) to a private Azure Container Registry (or Azure Verified Modules); Reference secrets dynamically via `getSecret()` on an existing Key Vault resource inside `.bicepparam` / Bicep modules with `@secure()` parameters. Private ACR Bicep registries share versioned modules, Deployment Stacks (`denyWriteAndDelete`) block manual drift, and `@secure()` Key Vault `getSecret()` references protect secrets. Local study-map skill 3.10 (Recommend and Implement IaC and Configuration Management (Bicep, ARM what-if, Deployment Stacks, ADE, Machine Configuration)), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Incorrect for this requirement. Stakeholder licenses cost $0 and allow Azure Boards collaboration while preventing source-code access in private projects. Why the keyed choice wins: Private ACR Bicep registries share versioned modules, Deployment Stacks (`denyWriteAndDelete`) block manual drift, and `@secure()` Key Vault `getSecret()` references protect secrets.
+- **B:** Incorrect for this requirement. CalVer encodes release chronology directly in version identifiers when date freshness matters more than library API contracts. Why the keyed choice wins: Private ACR Bicep registries share versioned modules, Deployment Stacks (`denyWriteAndDelete`) block manual drift, and `@secure()` Key Vault `getSecret()` references protect secrets.
+- **C:** Correct. ARM Deployment Stacks manage multi-resource lifecycles atomically and block unauthorized manual portal drift via deny assignments. In this scenario: Private ACR Bicep registries share versioned modules, Deployment Stacks (`denyWriteAndDelete`) block manual drift, and `@secure()` Key Vault `getSecret()` references protect secrets.
+- **D:** Incorrect for this requirement. Git LFS stores pointer files in Git while offloading multi-megabyte binary blobs to dedicated object storage. Why the keyed choice wins: Private ACR Bicep registries share versioned modules, Deployment Stacks (`denyWriteAndDelete`) block manual drift, and `@secure()` Key Vault `getSecret()` references protect secrets.
+- **E:** Correct. `@secure()` + Key Vault `getSecret()` keeps sensitive values out of Git parameter files and ARM deployment history. In this scenario: Private ACR Bicep registries share versioned modules, Deployment Stacks (`denyWriteAndDelete`) block manual drift, and `@secure()` Key Vault `getSecret()` references protect secrets.
+- **F:** Correct. Private ACR Bicep registries distribute governed, reusable infrastructure building blocks across application repositories. In this scenario: Private ACR Bicep registries share versioned modules, Deployment Stacks (`denyWriteAndDelete`) block manual drift, and `@secure()` Key Vault `getSecret()` references protect secrets.
+
+### Question 58 — B
+
+Answer: `cancel-in-progress: true` (GitHub Actions `concurrency` property terminating older queued/running jobs on the same PR ref). `cancel-in-progress: true` immediately terminates older queued or active workflow runs within the same PR concurrency group. `cancel-in-progress: true` stops stale PR runs automatically whenever a developer or agent pushes a newer commit. Local study-map skill 3.11 (Maintain Pipelines: Health Monitoring, Flaky Tests, Caching, Concurrency Cancellation, Cost Optimization, and Artifact Retention), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Incorrect for this requirement. Without `id-token: write`, the GitHub runner cannot mint an OIDC token for secretless Azure login. Why the keyed choice wins: `cancel-in-progress: true` immediately terminates older queued or active workflow runs within the same PR concurrency group.
+- **B:** Correct. `cancel-in-progress: true` stops stale PR runs automatically whenever a developer or agent pushes a newer commit. In this scenario: `cancel-in-progress: true` immediately terminates older queued or active workflow runs within the same PR concurrency group.
+- **C:** Incorrect for this requirement. Omitting `isOutput=true` restricts `setvariable` scope to the current job only. Why the keyed choice wins: `cancel-in-progress: true` immediately terminates older queued or active workflow runs within the same PR concurrency group.
+- **D:** Incorrect for this requirement. Restoring from `feedName@Release` blocks unvetted `@Local` or `@Prerelease` packages from entering production builds. Why the keyed choice wins: `cancel-in-progress: true` immediately terminates older queued or active workflow runs within the same PR concurrency group.
+
+### Question 59 — D
+
+Answer: Configure `actions/cache@v4` (or `setup-node` / `setup-dotnet` caching) keyed on `${{ runner.os }}-deps-${{ hashFiles('**/package-lock.json') }}` with `restore-keys` fallback. Keying on `${{ runner.os }}-deps-${{ hashFiles('**/package-lock.json') }}` reuses cached dependencies across commits until lockfiles change. Hashing immutable lockfiles maximizes deterministic cache hit rates while automatically invalidating caches whenever dependencies change. Local study-map skill 3.11 (Maintain Pipelines: Health Monitoring, Flaky Tests, Caching, Concurrency Cancellation, Cost Optimization, and Artifact Retention), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Incorrect for this requirement. Universal Packages efficiently version and deduplicate large ML weights, simulation binaries, or SDK archives up to terabyte scale. Why the keyed choice wins: Keying on `${{ runner.os }}-deps-${{ hashFiles('**/package-lock.json') }}` reuses cached dependencies across commits until lockfiles change.
+- **B:** Incorrect for this requirement. `batch: true` coalesces rapid bursts of commits into combined validation runs instead of queuing dozens of redundant builds. Why the keyed choice wins: Keying on `${{ runner.os }}-deps-${{ hashFiles('**/package-lock.json') }}` reuses cached dependencies across commits until lockfiles change.
+- **C:** Incorrect for this requirement. Tiered retention controls storage billing while preserving compliance-mandated artifacts currently running in production. Why the keyed choice wins: Keying on `${{ runner.os }}-deps-${{ hashFiles('**/package-lock.json') }}` reuses cached dependencies across commits until lockfiles change.
+- **D:** Correct. Hashing immutable lockfiles maximizes deterministic cache hit rates while automatically invalidating caches whenever dependencies change. In this scenario: Keying on `${{ runner.os }}-deps-${{ hashFiles('**/package-lock.json') }}` reuses cached dependencies across commits until lockfiles change.
+
+### Question 60 — B
+
+Answer: Enable Azure Pipelines flaky test detection and use GitHub Copilot + MCP test-run tools to isolate nondeterministic timing/state dependencies into tracked bugs. Enabling flaky test detection/quarantine while using Copilot + MCP test logs to eliminate nondeterministic timing dependencies restores signal trust. Quarantining and fixing flaky tests restores developer trust in red CI builds without blinding pipelines to genuine regressions. Local study-map skill 3.11 (Maintain Pipelines: Health Monitoring, Flaky Tests, Caching, Concurrency Cancellation, Cost Optimization, and Artifact Retention), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Incorrect for this requirement. Slot-pinned settings prevent staging database URLs or canary flags from swapping into `Production`. Why the keyed choice wins: Enabling flaky test detection/quarantine while using Copilot + MCP test logs to eliminate nondeterministic timing dependencies restores signal trust.
+- **B:** Correct. Quarantining and fixing flaky tests restores developer trust in red CI builds without blinding pipelines to genuine regressions. In this scenario: Enabling flaky test detection/quarantine while using Copilot + MCP test logs to eliminate nondeterministic timing dependencies restores signal trust.
+- **C:** Incorrect for this requirement. Diff coverage gates stop new untested code immediately without freezing legacy repositories below global coverage targets. Why the keyed choice wins: Enabling flaky test detection/quarantine while using Copilot + MCP test logs to eliminate nondeterministic timing dependencies restores signal trust.
+- **D:** Incorrect for this requirement. Pinning `@sha256` digests guarantees every deployment ring runs the exact scanned OCI image layer set. Why the keyed choice wins: Enabling flaky test detection/quarantine while using Copilot + MCP test logs to eliminate nondeterministic timing dependencies restores signal trust.
+
+### Question 61 — A, B, D
+
+Answers: Review Azure Pipelines / GitHub Actions Workflow Insights (`Pass rate`, `p95 duration`, task timeline bottlenecks, and flaky failures) to target caching and sharding optimizations; Apply tiered retention (`7-14 days` for ephemeral PR artifacts, `30 days` for unpromoted CI builds, and explicit Retention Leases / `@Release` views on production releases); Set `trigger: batch: true` on high-commit `main` CI pipelines when runner capacity is constrained so queued commits consolidate while a run is active. Workflow Insights (`p95` duration) locates slow tasks, tiered artifact retention + production Retention Leases cut storage waste, and `batch: true` coalesces queued `main` runs. Local study-map skill 3.11 (Maintain Pipelines: Health Monitoring, Flaky Tests, Caching, Concurrency Cancellation, Cost Optimization, and Artifact Retention), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Correct. `batch: true` coalesces rapid bursts of commits into combined validation runs instead of queuing dozens of redundant builds. In this scenario: Workflow Insights (`p95` duration) locates slow tasks, tiered artifact retention + production Retention Leases cut storage waste, and `batch: true` coalesces queued `main` runs.
+- **B:** Correct. Tiered retention controls storage billing while preserving compliance-mandated artifacts currently running in production. In this scenario: Workflow Insights (`p95` duration) locates slow tasks, tiered artifact retention + production Retention Leases cut storage waste, and `batch: true` coalesces queued `main` runs.
+- **C:** Incorrect for this requirement. `pull_request_target` runs in the base repo context with write token/secret access, so running untrusted fork scripts enables instant secret exfiltration. Why the keyed choice wins: Workflow Insights (`p95` duration) locates slow tasks, tiered artifact retention + production Retention Leases cut storage waste, and `batch: true` coalesces queued `main` runs.
+- **D:** Correct. Data-driven task duration and failure analytics pinpoint slow steps and flaky tests with the highest ROI. In this scenario: Workflow Insights (`p95` duration) locates slow tasks, tiered artifact retention + production Retention Leases cut storage waste, and `batch: true` coalesces queued `main` runs.
+- **E:** Incorrect for this requirement. Stakeholder licenses cost $0 and allow Azure Boards collaboration while preventing source-code access in private projects. Why the keyed choice wins: Workflow Insights (`p95` duration) locates slow tasks, tiered artifact retention + production Retention Leases cut storage waste, and `batch: true` coalesces queued `main` runs.
+- **F:** Incorrect for this requirement. Git Flow suits scheduled versioned shrink-wrap releases but slows high-frequency CI/CD compared to Trunk-Based Development or GitHub Flow. Why the keyed choice wins: Workflow Insights (`p95` duration) locates slow tasks, tiered artifact retention + production Retention Leases cut storage waste, and `batch: true` coalesces queued `main` runs.
+
+### Question 62 — B
+
+Answer: Create an Azure Resource Manager service connection using `Workload Identity federation (automatic)` scoped to the target resource group and restricted via Pipeline Permissions. Converting ARM service connections to `Workload Identity federation (automatic)` replaces static client secrets with short-lived OIDC assertions. Workload Identity Federation eliminates expiring service-principal secrets and secret-rotation outages in Azure DevOps. Local study-map skill 4.1 (Design Entra Managed Identities, Service Principals, GitHub Apps/Tokens, and Secretless OIDC Workload Identity Federation), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/defender-for-cloud/devops-security-overview & https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/customize-the-agent-environment
+
+- **A:** Incorrect for this requirement. Stakeholder licenses cost $0 and allow Azure Boards collaboration while preventing source-code access in private projects. Why the keyed choice wins: Converting ARM service connections to `Workload Identity federation (automatic)` replaces static client secrets with short-lived OIDC assertions.
+- **B:** Correct. Workload Identity Federation eliminates expiring service-principal secrets and secret-rotation outages in Azure DevOps. In this scenario: Converting ARM service connections to `Workload Identity federation (automatic)` replaces static client secrets with short-lived OIDC assertions.
+- **C:** Incorrect for this requirement. Universal Packages efficiently version and deduplicate large ML weights, simulation binaries, or SDK archives up to terabyte scale. Why the keyed choice wins: Converting ARM service connections to `Workload Identity federation (automatic)` replaces static client secrets with short-lived OIDC assertions.
+- **D:** Incorrect for this requirement. Fine-grained PATs sharply narrow repository and permission blast radius compared to broad classic `repo`-scoped PATs. Why the keyed choice wins: Converting ARM service connections to `Workload Identity federation (automatic)` replaces static client secrets with short-lived OIDC assertions.
+
+### Question 63 — A
+
+Answer: Authenticate cross-repository org automation with an installation-scoped GitHub App minting 1-hour installation tokens (`actions/create-github-app-token`) instead of personal PATs. No; personal PATs break when the employee leaves and grant excessive user-wide privileges—use an installation-scoped GitHub App minting 1-hour tokens instead. GitHub Apps provide bot-attributed audit trails, fine-grained repository permissions, and short-lived 1-hour tokens independent of human accounts. Local study-map skill 4.1 (Design Entra Managed Identities, Service Principals, GitHub Apps/Tokens, and Secretless OIDC Workload Identity Federation), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/defender-for-cloud/devops-security-overview & https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/customize-the-agent-environment
+
+- **A:** Correct. GitHub Apps provide bot-attributed audit trails, fine-grained repository permissions, and short-lived 1-hour tokens independent of human accounts. In this scenario: No; personal PATs break when the employee leaves and grant excessive user-wide privileges—use an installation-scoped GitHub App minting 1-hour tokens instead.
+- **B:** Incorrect for this requirement. Git LFS stores pointer files in Git while offloading multi-megabyte binary blobs to dedicated object storage. Why the keyed choice wins: No; personal PATs break when the employee leaves and grant excessive user-wide privileges—use an installation-scoped GitHub App minting 1-hour tokens instead.
+- **C:** Incorrect for this requirement. Fine-grained PATs sharply narrow repository and permission blast radius compared to broad classic `repo`-scoped PATs. Why the keyed choice wins: No; personal PATs break when the employee leaves and grant excessive user-wide privileges—use an installation-scoped GitHub App minting 1-hour tokens instead.
+- **D:** Incorrect for this requirement. Executing tests from the board works with `Basic`, whereas authoring/managing Test Plans and Test Suites requires `Basic + Test Plans`. Why the keyed choice wins: No; personal PATs break when the employee leaves and grant excessive user-wide privileges—use an installation-scoped GitHub App minting 1-hour tokens instead.
+
+### Question 64 — D
+
+Answer: Assign least-privilege Azure RBAC to a Managed Identity → configure federated subject `repo:<org>/<repo>:environment:production` → set `id-token: write` on the job → run `azure/login@v2` with zero secrets. Assigning least-privilege RBAC to a Managed Identity -> scoping federated subject to `environment:production` -> setting `id-token: write` -> running `azure/login@v2` removes all stored secrets. Exact `environment:production` federated subject matching + `id-token: write` enables short-lived OIDC token exchange without static client secrets. Local study-map skill 4.1 (Design Entra Managed Identities, Service Principals, GitHub Apps/Tokens, and Secretless OIDC Workload Identity Federation), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/defender-for-cloud/devops-security-overview & https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/customize-the-agent-environment
+
+- **A:** Incorrect for this requirement. `contents: write` cannot mint OIDC tokens, and interactive logins or committed `.pfx` files fail secure automation. Why the keyed choice wins: Assigning least-privilege RBAC to a Managed Identity -> scoping federated subject to `environment:production` -> setting `id-token: write` -> running `azure/login@v2` removes all stored secrets.
+- **B:** Incorrect for this requirement. Executing untrusted fork code inside privileged contexts exposes environment tokens to supply-chain attacks. Why the keyed choice wins: Assigning least-privilege RBAC to a Managed Identity -> scoping federated subject to `environment:production` -> setting `id-token: write` -> running `azure/login@v2` removes all stored secrets.
+- **C:** Incorrect for this requirement. Client secrets reintroduce rotation risk, Entra blocks wildcard `*` subjects, and `Owner` on PR branches violates least privilege. Why the keyed choice wins: Assigning least-privilege RBAC to a Managed Identity -> scoping federated subject to `environment:production` -> setting `id-token: write` -> running `azure/login@v2` removes all stored secrets.
+- **D:** Correct. Exact `environment:production` federated subject matching + `id-token: write` enables short-lived OIDC token exchange without static client secrets. In this scenario: Assigning least-privilege RBAC to a Managed Identity -> scoping federated subject to `environment:production` -> setting `id-token: write` -> running `azure/login@v2` removes all stored secrets.
+
+### Question 65 — C, E
+
+Answers: Prefer Managed Identities for Azure-hosted resources and Workload Identity Federation for external CI/CD (GitHub Actions / ADO), avoiding secret-backed Service Principals; Set top-level workflow `permissions: {}` (or `contents: read`) and elevate `GITHUB_TOKEN` scopes (`packages: write`, `pull-requests: write`) only on specific jobs requiring them. Using Managed Identities for Azure workloads + OIDC for CI/CD eliminates client secrets, while top-level `permissions: {}` with job-scoped `GITHUB_TOKEN` enforces least privilege. Local study-map skill 4.1 (Design Entra Managed Identities, Service Principals, GitHub Apps/Tokens, and Secretless OIDC Workload Identity Federation), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/defender-for-cloud/devops-security-overview & https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/customize-the-agent-environment
+
+- **A:** Incorrect for this requirement. `pull_request_target` runs in the base repo context with write token/secret access, so running untrusted fork scripts enables instant secret exfiltration. Why the keyed choice wins: Using Managed Identities for Azure workloads + OIDC for CI/CD eliminates client secrets, while top-level `permissions: {}` with job-scoped `GITHUB_TOKEN` enforces least privilege.
+- **B:** Incorrect for this requirement. `@Local` holds newly published internal packages prior to quality promotion. Why the keyed choice wins: Using Managed Identities for Azure workloads + OIDC for CI/CD eliminates client secrets, while top-level `permissions: {}` with job-scoped `GITHUB_TOKEN` enforces least privilege.
+- **C:** Correct. Least-privilege job-scoped `GITHUB_TOKEN` permissions limit blast radius if a third-party action or script behaves unexpectedly. In this scenario: Using Managed Identities for Azure workloads + OIDC for CI/CD eliminates client secrets, while top-level `permissions: {}` with job-scoped `GITHUB_TOKEN` enforces least privilege.
+- **D:** Incorrect for this requirement. Granting policy bypass permissions to standard contributors defeats branch protection, required reviews, and compliance audit controls. Why the keyed choice wins: Using Managed Identities for Azure workloads + OIDC for CI/CD eliminates client secrets, while top-level `permissions: {}` with job-scoped `GITHUB_TOKEN` enforces least privilege.
+- **E:** Correct. Eliminating password/certificate-backed Service Principals removes credential theft and expiration risks across both runtime and CI/CD. In this scenario: Using Managed Identities for Azure workloads + OIDC for CI/CD eliminates client secrets, while top-level `permissions: {}` with job-scoped `GITHUB_TOKEN` enforces least privilege.
+
+### Question 66 — D
+
+Answer: Assign free `Stakeholder` access level in Azure DevOps to external advisors or executives who only view/create Boards work items and dashboards without Repos access. Free `Stakeholder` access permits Azure Boards work-item and dashboard collaboration while blocking private Azure Repos access. Stakeholder licenses cost $0 and allow Azure Boards collaboration while preventing source-code access in private projects. Local study-map skill 4.2 (Configure Azure DevOps Service Connections, Permissions, Access Levels, Teams, and GitHub Enterprise Agent Governance), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/defender-for-cloud/devops-security-overview & https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/customize-the-agent-environment
+
+- **A:** Incorrect for this requirement. `CODEOWNERS` automatically requests and enforces domain-owner sign-off whenever human or AI pull requests touch sensitive paths. Why the keyed choice wins: Free `Stakeholder` access permits Azure Boards work-item and dashboard collaboration while blocking private Azure Repos access.
+- **B:** Incorrect for this requirement. Project-scoped build tokens block compromised pipelines in one project from reading source repositories across the entire Azure DevOps organization. Why the keyed choice wins: Free `Stakeholder` access permits Azure Boards work-item and dashboard collaboration while blocking private Azure Repos access.
+- **C:** Incorrect for this requirement. Executing tests from the board works with `Basic`, whereas authoring/managing Test Plans and Test Suites requires `Basic + Test Plans`. Why the keyed choice wins: Free `Stakeholder` access permits Azure Boards work-item and dashboard collaboration while blocking private Azure Repos access.
+- **D:** Correct. Stakeholder licenses cost $0 and allow Azure Boards collaboration while preventing source-code access in private projects. In this scenario: Free `Stakeholder` access permits Azure Boards work-item and dashboard collaboration while blocking private Azure Repos access.
+
+### Question 67 — D
+
+Answer: Enable `Limit job authorization scope to current project for non-release and release pipelines` and `Protect access to repositories in YAML pipelines` at the org level. Enabling `Limit job authorization scope to current project` and `Protect access to repositories in YAML pipelines` confines build tokens to authorized project scopes. Project-scoped build tokens block compromised pipelines in one project from reading source repositories across the entire Azure DevOps organization. Local study-map skill 4.2 (Configure Azure DevOps Service Connections, Permissions, Access Levels, Teams, and GitHub Enterprise Agent Governance), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/defender-for-cloud/devops-security-overview & https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/customize-the-agent-environment
+
+- **A:** Incorrect for this requirement. Stakeholder licenses cost $0 and allow Azure Boards collaboration while preventing source-code access in private projects. Why the keyed choice wins: Enabling `Limit job authorization scope to current project` and `Protect access to repositories in YAML pipelines` confines build tokens to authorized project scopes.
+- **B:** Incorrect for this requirement. Upstream Sources cache external OSS dependencies inside your Azure Artifacts feed, protecting CI builds if public registries suffer outages or package yanks. Why the keyed choice wins: Enabling `Limit job authorization scope to current project` and `Protect access to repositories in YAML pipelines` confines build tokens to authorized project scopes.
+- **C:** Incorrect for this requirement. Squash merge keeps `main` clean, linear, and trivial to revert (`git revert <sha>`) regardless of how many commits occurred on the PR branch. Why the keyed choice wins: Enabling `Limit job authorization scope to current project` and `Protect access to repositories in YAML pipelines` confines build tokens to authorized project scopes.
+- **D:** Correct. Project-scoped build tokens block compromised pipelines in one project from reading source repositories across the entire Azure DevOps organization. In this scenario: Enabling `Limit job authorization scope to current project` and `Protect access to repositories in YAML pipelines` confines build tokens to authorized project scopes.
+
+### Question 68 — C
+
+Answer: Assign `Basic + Test Plans` access level to QA leads who author test suites, configure test plans, and execute exploratory sessions (vs `Basic` for developers). Assigning `Basic + Test Plans` only to the 2 QA architects who author test plans/suites while keeping the 30 developers on `Basic` (or Visual Studio subscriptions) optimizes licensing. Executing tests from the board works with `Basic`, whereas authoring/managing Test Plans and Test Suites requires `Basic + Test Plans`. Local study-map skill 4.2 (Configure Azure DevOps Service Connections, Permissions, Access Levels, Teams, and GitHub Enterprise Agent Governance), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/defender-for-cloud/devops-security-overview & https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/customize-the-agent-environment
+
+- **A:** Incorrect for this requirement. Versioned `.githooks/` catch formatting/secret mistakes locally in milliseconds, while server-side Rulesets/CI enforce compliance even if `--no-verify` is used. Why the keyed choice wins: Assigning `Basic + Test Plans` only to the 2 QA architects who author test plans/suites while keeping the 30 developers on `Basic` (or Visual Studio subscriptions) optimizes licensing.
+- **B:** Incorrect for this requirement. Stakeholder licenses cost $0 and allow Azure Boards collaboration while preventing source-code access in private projects. Why the keyed choice wins: Assigning `Basic + Test Plans` only to the 2 QA architects who author test plans/suites while keeping the 30 developers on `Basic` (or Visual Studio subscriptions) optimizes licensing.
+- **C:** Correct. Executing tests from the board works with `Basic`, whereas authoring/managing Test Plans and Test Suites requires `Basic + Test Plans`. In this scenario: Assigning `Basic + Test Plans` only to the 2 QA architects who author test plans/suites while keeping the 30 developers on `Basic` (or Visual Studio subscriptions) optimizes licensing.
+- **D:** Incorrect for this requirement. Fine-grained PATs sharply narrow repository and permission blast radius compared to broad classic `repo`-scoped PATs. Why the keyed choice wins: Assigning `Basic + Test Plans` only to the 2 QA architects who author test plans/suites while keeping the 30 developers on `Basic` (or Visual Studio subscriptions) optimizes licensing.
+
+### Question 69 — B
+
+Answer: `COPILOT_MCP_` (required secret/variable name prefix inside the `copilot` GitHub Environment for MCP server credentials). Copilot cloud agent only exposes `copilot` environment secrets/variables prefixed with `COPILOT_MCP_` to configured MCP server processes. Local study-map skill 4.3 (Manage Sensitive Information in Automation: Azure Key Vault, Secure Files, GitHub Environment Secrets, and Log Masking), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/defender-for-cloud/devops-security-overview & https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/customize-the-agent-environment
+
+- **A:** Incorrect for this requirement. `what-if` calculates live infrastructure diffs before applying Bicep templates. Why the keyed choice wins: Copilot cloud agent only exposes `copilot` environment secrets/variables prefixed with `COPILOT_MCP_` to configured MCP server processes.
+- **B:** Correct. In this scenario: Copilot cloud agent only exposes `copilot` environment secrets/variables prefixed with `COPILOT_MCP_` to configured MCP server processes.
+- **C:** Incorrect for this requirement. `safe-outputs` runs sanitized GitHub write operations in separate permission-scoped jobs outside the sandboxed LLM container. Why the keyed choice wins: Copilot cloud agent only exposes `copilot` environment secrets/variables prefixed with `COPILOT_MCP_` to configured MCP server processes.
+- **D:** Incorrect for this requirement. `applyTo` scopes custom Copilot instruction files to matching repository file globs. Why the keyed choice wins: Copilot cloud agent only exposes `copilot` environment secrets/variables prefixed with `COPILOT_MCP_` to configured MCP server processes.
+
+### Question 70 — A
+
+Answer: `::add-mask::` (GitHub Actions workflow command registering a runtime string with the runner log scrubber). Emitting `::add-mask::` registers the dynamic string with the GitHub Actions runner log scrubber immediately before any output occurs. `echo "::add-mask::$VAL"` prevents dynamic secrets from printing in cleartext step logs. Local study-map skill 4.3 (Manage Sensitive Information in Automation: Azure Key Vault, Secure Files, GitHub Environment Secrets, and Log Masking), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/defender-for-cloud/devops-security-overview & https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/customize-the-agent-environment
+
+- **A:** Correct. `echo "::add-mask::$VAL"` prevents dynamic secrets from printing in cleartext step logs. In this scenario: Emitting `::add-mask::` registers the dynamic string with the GitHub Actions runner log scrubber immediately before any output occurs.
+- **B:** Incorrect for this requirement. Without `id-token: write`, the GitHub runner cannot mint an OIDC token for secretless Azure login. Why the keyed choice wins: Emitting `::add-mask::` registers the dynamic string with the GitHub Actions runner log scrubber immediately before any output occurs.
+- **C:** Incorrect for this requirement. `cancel-in-progress: true` stops stale PR runs automatically whenever a developer or agent pushes a newer commit. Why the keyed choice wins: Emitting `::add-mask::` registers the dynamic string with the GitHub Actions runner log scrubber immediately before any output occurs.
+- **D:** Incorrect for this requirement. Restoring from `feedName@Release` blocks unvetted `@Local` or `@Prerelease` packages from entering production builds. Why the keyed choice wins: Emitting `::add-mask::` registers the dynamic string with the GitHub Actions runner log scrubber immediately before any output occurs.
+
+### Question 71 — D
+
+Answer: Upload binary `.pfx` / `.p12` certificates or SSH keys to Azure Pipelines `Library -> Secure Files` and consume via `DownloadSecureFile@1` (auto-purged post-job). Azure Pipelines `Library -> Secure Files` (`DownloadSecureFile@1`) encrypts binary certificates at rest, enforces pipeline permissions, and purges temp files post-job. Secure Files encrypt binary certificates at rest, enforce pipeline authorization checks, and delete temporary agent files after job completion. Local study-map skill 4.3 (Manage Sensitive Information in Automation: Azure Key Vault, Secure Files, GitHub Environment Secrets, and Log Masking), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/defender-for-cloud/devops-security-overview & https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/customize-the-agent-environment
+
+- **A:** Incorrect for this requirement. Fetching named Key Vault secrets just-in-time over OIDC avoids wildcard `SecretsFilter: "*"` over-exposure and keeps secrets out of Git. Why the keyed choice wins: Azure Pipelines `Library -> Secure Files` (`DownloadSecureFile@1`) encrypts binary certificates at rest, enforces pipeline permissions, and purges temp files post-job.
+- **B:** Incorrect for this requirement. Environment secrets remain inaccessible to untrusted PR workflows and unlock only after environment branch/approval checks pass. Why the keyed choice wins: Azure Pipelines `Library -> Secure Files` (`DownloadSecureFile@1`) encrypts binary certificates at rest, enforces pipeline permissions, and purges temp files post-job.
+- **C:** Incorrect for this requirement. Feed views (`@Local -> @Prerelease -> @Release`) enforce artifact promotion governance without recompiling binaries. Why the keyed choice wins: Azure Pipelines `Library -> Secure Files` (`DownloadSecureFile@1`) encrypts binary certificates at rest, enforces pipeline permissions, and purges temp files post-job.
+- **D:** Correct. Secure Files encrypt binary certificates at rest, enforce pipeline authorization checks, and delete temporary agent files after job completion. In this scenario: Azure Pipelines `Library -> Secure Files` (`DownloadSecureFile@1`) encrypts binary certificates at rest, enforces pipeline permissions, and purges temp files post-job.
+
+### Question 72 — B
+
+Answer: Enable `Azure role-based access control` on Key Vault granting deploy identities `Key Vault Secrets User` (read-only) and reserving `Key Vault Secrets Officer` for rotation pipelines. Migrating Key Vault to `Azure role-based access control` and granting `Key Vault Secrets User` scoped to specific secrets restricts the identity to read-only access. Key Vault RBAC separates read-only secret consumption (`Secrets User`) from secret mutation (`Secrets Officer`) at individual secret scope. Local study-map skill 4.3 (Manage Sensitive Information in Automation: Azure Key Vault, Secure Files, GitHub Environment Secrets, and Log Masking), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/defender-for-cloud/devops-security-overview & https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/customize-the-agent-environment
+
+- **A:** Incorrect for this requirement. `pull_request_target` runs in the base repo context with write token/secret access, so running untrusted fork scripts enables instant secret exfiltration. Why the keyed choice wins: Migrating Key Vault to `Azure role-based access control` and granting `Key Vault Secrets User` scoped to specific secrets restricts the identity to read-only access.
+- **B:** Correct. Key Vault RBAC separates read-only secret consumption (`Secrets User`) from secret mutation (`Secrets Officer`) at individual secret scope. In this scenario: Migrating Key Vault to `Azure role-based access control` and granting `Key Vault Secrets User` scoped to specific secrets restricts the identity to read-only access.
+- **C:** Incorrect for this requirement. Stakeholder licenses cost $0 and allow Azure Boards collaboration while preventing source-code access in private projects. Why the keyed choice wins: Migrating Key Vault to `Azure role-based access control` and granting `Key Vault Secrets User` scoped to specific secrets restricts the identity to read-only access.
+- **D:** Incorrect for this requirement. Universal Packages efficiently version and deduplicate large ML weights, simulation binaries, or SDK archives up to terabyte scale. Why the keyed choice wins: Migrating Key Vault to `Azure role-based access control` and granting `Key Vault Secrets User` scoped to specific secrets restricts the identity to read-only access.
+
+### Question 73 — A
+
+Answer: Enable GHAS / GHAzDO Secret Scanning with Push Protection plus custom org regex patterns so commits containing credentials are rejected synchronously on `git push`. Secret Scanning Push Protection intercepts commits containing known or custom-regex credentials during `git push` before they enter remote history. Push Protection prevents high-confidence secrets from ever landing in remote repository history. Local study-map skill 4.4 (Automate Security & Compliance Scanning (GHAS/GHAzDO, Push Protection, CodeQL, Dependabot, Defender for Cloud DevOps)), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/defender-for-cloud/devops-security-overview & https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/customize-the-agent-environment
+
+- **A:** Correct. Push Protection prevents high-confidence secrets from ever landing in remote repository history. In this scenario: Secret Scanning Push Protection intercepts commits containing known or custom-regex credentials during `git push` before they enter remote history.
+- **B:** Incorrect for this requirement. CodeQL analyzes AST and taint dataflow to catch SQLi, SSRF, XSS, and deserialization flaws prior to merge. Why the keyed choice wins: Secret Scanning Push Protection intercepts commits containing known or custom-regex credentials during `git push` before they enter remote history.
+- **C:** Incorrect for this requirement. `git filter-repo` is the Git-recommended history rewrite tool replacing legacy `git filter-branch` for removing leaked data or oversized blobs. Why the keyed choice wins: Secret Scanning Push Protection intercepts commits containing known or custom-regex credentials during `git push` before they enter remote history.
+- **D:** Incorrect for this requirement. Pre-push OCI image scanning stops vulnerable OS packages and application layers before registries distribute them. Why the keyed choice wins: Secret Scanning Push Protection intercepts commits containing known or custom-regex credentials during `git push` before they enter remote history.
+
+### Question 74 — D
+
+Answer: Connect GitHub Enterprise and Azure DevOps organizations to Microsoft Defender for Cloud (DevOps Security) to correlate code/IaC/container SARIF findings with live cloud attack paths. Connecting GitHub and Azure DevOps to Microsoft Defender for Cloud (DevOps Security) correlates code-to-cloud findings with live internet exposure and identity risks. Defender for Cloud DevOps Security bridges CNAPP runtime context (internet exposure, identity privileges) with repository vulnerabilities for risk-prioritized remediation and PR annotations. Local study-map skill 4.4 (Automate Security & Compliance Scanning (GHAS/GHAzDO, Push Protection, CodeQL, Dependabot, Defender for Cloud DevOps)), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/defender-for-cloud/devops-security-overview & https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/customize-the-agent-environment
+
+- **A:** Incorrect for this requirement. Signed SBOMs and SLSA build attestations prove artifact origin and enable rapid zero-day CVE impact queries. Why the keyed choice wins: Connecting GitHub and Azure DevOps to Microsoft Defender for Cloud (DevOps Security) correlates code-to-cloud findings with live internet exposure and identity risks.
+- **B:** Incorrect for this requirement. Dependency Review blocks newly introduced vulnerable packages and disallowed copyleft licenses directly inside the pull request. Why the keyed choice wins: Connecting GitHub and Azure DevOps to Microsoft Defender for Cloud (DevOps Security) correlates code-to-cloud findings with live internet exposure and identity risks.
+- **C:** Incorrect for this requirement. Combining coverage reporting with Copilot + MCP PR diff inspection focuses test generation on newly modified, high-risk branches. Why the keyed choice wins: Connecting GitHub and Azure DevOps to Microsoft Defender for Cloud (DevOps Security) correlates code-to-cloud findings with live internet exposure and identity risks.
+- **D:** Correct. Defender for Cloud DevOps Security bridges CNAPP runtime context (internet exposure, identity privileges) with repository vulnerabilities for risk-prioritized remediation and PR annotations. In this scenario: Connecting GitHub and Azure DevOps to Microsoft Defender for Cloud (DevOps Security) correlates code-to-cloud findings with live internet exposure and identity risks.
+
+### Question 75 — C
+
+Answer: Leverage GitHub Copilot cloud agents built-in pre-PR validation (CodeQL SAST, GitHub Advisory Database dependency checks, and secret scanning) on agent-generated commits. Copilot cloud agent automatically runs CodeQL SAST, GitHub Advisory Database dependency checks, and secret scanning on its generated changes prior to PR handoff. Copilot cloud agent automatically scans its own generated changes with CodeQL, Advisory DB, and secret detection before finalizing pull requests. Local study-map skill 4.4 (Automate Security & Compliance Scanning (GHAS/GHAzDO, Push Protection, CodeQL, Dependabot, Defender for Cloud DevOps)), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/defender-for-cloud/devops-security-overview & https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/customize-the-agent-environment
+
+- **A:** Incorrect for this requirement. `git reflog` records local HEAD/tip movements prior to garbage collection so accidentally dropped commits can be restored cleanly. Why the keyed choice wins: Copilot cloud agent automatically runs CodeQL SAST, GitHub Advisory Database dependency checks, and secret scanning on its generated changes prior to PR handoff.
+- **B:** Incorrect for this requirement. Stakeholder licenses cost $0 and allow Azure Boards collaboration while preventing source-code access in private projects. Why the keyed choice wins: Copilot cloud agent automatically runs CodeQL SAST, GitHub Advisory Database dependency checks, and secret scanning on its generated changes prior to PR handoff.
+- **C:** Correct. Copilot cloud agent automatically scans its own generated changes with CodeQL, Advisory DB, and secret detection before finalizing pull requests. In this scenario: Copilot cloud agent automatically runs CodeQL SAST, GitHub Advisory Database dependency checks, and secret scanning on its generated changes prior to PR handoff.
+- **D:** Incorrect for this requirement. CalVer encodes release chronology directly in version identifiers when date freshness matters more than library API contracts. Why the keyed choice wins: Copilot cloud agent automatically runs CodeQL SAST, GitHub Advisory Database dependency checks, and secret scanning on its generated changes prior to PR handoff.
+
+### Question 76 — A, C
+
+Answers: Enable CodeQL semantic code scanning (Default or Advanced setup) on PRs and scheduled `main` runs, surfacing SARIF dataflow alerts in the GitHub/ADO `Security` tab; Run `actions/dependency-review-action@v4` on pull requests configured with `fail-on-severity: high` and `deny-licenses: [AGPL-3.0, GPL-3.0]` alongside Dependabot updates. CodeQL semantic code scanning detects SQLi dataflow flaws, and `actions/dependency-review-action` blocks vulnerable or `AGPL-3.0`-licensed dependencies on PRs. Local study-map skill 4.4 (Automate Security & Compliance Scanning (GHAS/GHAzDO, Push Protection, CodeQL, Dependabot, Defender for Cloud DevOps)), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/defender-for-cloud/devops-security-overview & https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/customize-the-agent-environment
+
+- **A:** Correct. Dependency Review blocks newly introduced vulnerable packages and disallowed copyleft licenses directly inside the pull request. In this scenario: CodeQL semantic code scanning detects SQLi dataflow flaws, and `actions/dependency-review-action` blocks vulnerable or `AGPL-3.0`-licensed dependencies on PRs.
+- **B:** Incorrect for this requirement. `@Local` holds newly published internal packages prior to quality promotion. Why the keyed choice wins: CodeQL semantic code scanning detects SQLi dataflow flaws, and `actions/dependency-review-action` blocks vulnerable or `AGPL-3.0`-licensed dependencies on PRs.
+- **C:** Correct. CodeQL analyzes AST and taint dataflow to catch SQLi, SSRF, XSS, and deserialization flaws prior to merge. In this scenario: CodeQL semantic code scanning detects SQLi dataflow flaws, and `actions/dependency-review-action` blocks vulnerable or `AGPL-3.0`-licensed dependencies on PRs.
+- **D:** Incorrect for this requirement. Git Flow suits scheduled versioned shrink-wrap releases but slows high-frequency CI/CD compared to Trunk-Based Development or GitHub Flow. Why the keyed choice wins: CodeQL semantic code scanning detects SQLi dataflow flaws, and `actions/dependency-review-action` blocks vulnerable or `AGPL-3.0`-licensed dependencies on PRs.
+- **E:** Incorrect for this requirement. `pull_request_target` runs in the base repo context with write token/secret access, so running untrusted fork scripts enables instant secret exfiltration. Why the keyed choice wins: CodeQL semantic code scanning detects SQLi dataflow flaws, and `actions/dependency-review-action` blocks vulnerable or `AGPL-3.0`-licensed dependencies on PRs.
+
+### Question 77 — C
+
+Answer: Configure Azure DevOps Auditing Streaming (and GitHub Enterprise Audit Log Streaming) forwarding admin/permission/secret events into Azure Monitor Log Analytics / Sentinel. Streaming Azure DevOps Auditing events (and GitHub Enterprise Audit Logs) to Azure Monitor Log Analytics / Sentinel enables real-time KQL detection over admin events. Streaming platform audit logs to Log Analytics enables tamper-evident retention and KQL anomaly alerting on permission escalations or bypassed policies. Local study-map skill 5.1 (Configure Flow/DORA Dashboards, Azure Monitor & Log Analytics Integration, GitHub Insights, and Pipeline Event Alerts), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/azure/sre-agent/overview & https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-overview
+
+- **A:** Incorrect for this requirement. Native Analytics widgets provide real-time engineering flow and DORA visibility directly from Boards and Pipelines data. Why the keyed choice wins: Streaming Azure DevOps Auditing events (and GitHub Enterprise Audit Logs) to Azure Monitor Log Analytics / Sentinel enables real-time KQL detection over admin events.
+- **B:** Incorrect for this requirement. GitHub Insights and Projects charts surface PR review bottlenecks and Actions runner saturation natively across repositories. Why the keyed choice wins: Streaming Azure DevOps Auditing events (and GitHub Enterprise Audit Logs) to Azure Monitor Log Analytics / Sentinel enables real-time KQL detection over admin events.
+- **C:** Correct. Streaming platform audit logs to Log Analytics enables tamper-evident retention and KQL anomaly alerting on permission escalations or bypassed policies. In this scenario: Streaming Azure DevOps Auditing events (and GitHub Enterprise Audit Logs) to Azure Monitor Log Analytics / Sentinel enables real-time KQL detection over admin events.
+- **D:** Incorrect for this requirement. Adaptive sampling controls ingestion cost under traffic bursts without losing error diagnostics or skewing telemetry counts. Why the keyed choice wins: Streaming Azure DevOps Auditing events (and GitHub Enterprise Audit Logs) to Azure Monitor Log Analytics / Sentinel enables real-time KQL detection over admin events.
+
+### Question 78 — C
+
+Answer: Subscribe a GitHub Organization Webhook (`workflow_run`, `deployment_status`) to an Azure Monitor Logs Ingestion endpoint to chart enterprise-wide DORA metrics in Azure Workbooks. Subscribing an Organization Webhook (`workflow_run`, `deployment_status`) to an Azure Monitor Logs Ingestion endpoint lands CI/CD telemetry directly in Log Analytics. Ingesting `workflow_run` and `deployment_status` events into Log Analytics unifies GitHub Actions and Azure runtime telemetry in one KQL workspace. Local study-map skill 5.1 (Configure Flow/DORA Dashboards, Azure Monitor & Log Analytics Integration, GitHub Insights, and Pipeline Event Alerts), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/azure/sre-agent/overview & https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-overview
+
+- **A:** Incorrect for this requirement. `git worktree` creates separate checked-out working directories backed by one local repository, preventing branch-switching and index lock collisions across parallel agents. Why the keyed choice wins: Subscribing an Organization Webhook (`workflow_run`, `deployment_status`) to an Azure Monitor Logs Ingestion endpoint lands CI/CD telemetry directly in Log Analytics.
+- **B:** Incorrect for this requirement. Slot-pinned settings prevent staging database URLs or canary flags from swapping into `Production`. Why the keyed choice wins: Subscribing an Organization Webhook (`workflow_run`, `deployment_status`) to an Azure Monitor Logs Ingestion endpoint lands CI/CD telemetry directly in Log Analytics.
+- **C:** Correct. Ingesting `workflow_run` and `deployment_status` events into Log Analytics unifies GitHub Actions and Azure runtime telemetry in one KQL workspace. In this scenario: Subscribing an Organization Webhook (`workflow_run`, `deployment_status`) to an Azure Monitor Logs Ingestion endpoint lands CI/CD telemetry directly in Log Analytics.
+- **D:** Incorrect for this requirement. Stakeholder licenses cost $0 and allow Azure Boards collaboration while preventing source-code access in private projects. Why the keyed choice wins: Subscribing an Organization Webhook (`workflow_run`, `deployment_status`) to an Azure Monitor Logs Ingestion endpoint lands CI/CD telemetry directly in Log Analytics.
+
+### Question 79 — C
+
+Answer: Use GitHub Insights, Pull Request / Actions Performance metrics, and custom Issues/Projects charts to track PR review turnaround, queue wait times, and CI failure trends. GitHub Insights and custom Projects/Pull Request metrics charts visualize time-to-first-review, merge lead times, and runner queue bottlenecks natively. GitHub Insights and Projects charts surface PR review bottlenecks and Actions runner saturation natively across repositories. Local study-map skill 5.1 (Configure Flow/DORA Dashboards, Azure Monitor & Log Analytics Integration, GitHub Insights, and Pipeline Event Alerts), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/azure/sre-agent/overview & https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-overview
+
+- **A:** Incorrect for this requirement. Additive N-1 compatible schema changes prevent downtime during concurrent Blue/Green or rolling application updates. Why the keyed choice wins: GitHub Insights and custom Projects/Pull Request metrics charts visualize time-to-first-review, merge lead times, and runner queue bottlenecks natively.
+- **B:** Incorrect for this requirement. Universal Packages efficiently version and deduplicate large ML weights, simulation binaries, or SDK archives up to terabyte scale. Why the keyed choice wins: GitHub Insights and custom Projects/Pull Request metrics charts visualize time-to-first-review, merge lead times, and runner queue bottlenecks natively.
+- **C:** Correct. GitHub Insights and Projects charts surface PR review bottlenecks and Actions runner saturation natively across repositories. In this scenario: GitHub Insights and custom Projects/Pull Request metrics charts visualize time-to-first-review, merge lead times, and runner queue bottlenecks natively.
+- **D:** Incorrect for this requirement. Secure Files encrypt binary certificates at rest, enforce pipeline authorization checks, and delete temporary agent files after job completion. Why the keyed choice wins: GitHub Insights and custom Projects/Pull Request metrics charts visualize time-to-first-review, merge lead times, and runner queue bottlenecks natively.
+
+### Question 80 — C
+
+Answer: Forward Azure DevOps / GitHub Actions diagnostic and webhook events into Log Analytics and trigger an Azure Monitor Scheduled Query Alert on repeated `main` build or prod stage failures. Sending pipeline diagnostic logs to Log Analytics and configuring an Azure Monitor Scheduled Query Alert notifies on-call engineers immediately on sustained failures. Centralizing pipeline telemetry in Log Analytics enables correlated KQL alerting when CI pass rates decline or release stages fail. Local study-map skill 5.1 (Configure Flow/DORA Dashboards, Azure Monitor & Log Analytics Integration, GitHub Insights, and Pipeline Event Alerts), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/azure/sre-agent/overview & https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-overview
+
+- **A:** Incorrect for this requirement. Git LFS stores pointer files in Git while offloading multi-megabyte binary blobs to dedicated object storage. Why the keyed choice wins: Sending pipeline diagnostic logs to Log Analytics and configuring an Azure Monitor Scheduled Query Alert notifies on-call engineers immediately on sustained failures.
+- **B:** Incorrect for this requirement. `@secure()` + Key Vault `getSecret()` keeps sensitive values out of Git parameter files and ARM deployment history. Why the keyed choice wins: Sending pipeline diagnostic logs to Log Analytics and configuring an Azure Monitor Scheduled Query Alert notifies on-call engineers immediately on sustained failures.
+- **C:** Correct. Centralizing pipeline telemetry in Log Analytics enables correlated KQL alerting when CI pass rates decline or release stages fail. In this scenario: Sending pipeline diagnostic logs to Log Analytics and configuring an Azure Monitor Scheduled Query Alert notifies on-call engineers immediately on sustained failures.
+- **D:** Incorrect for this requirement. CalVer encodes release chronology directly in version identifiers when date freshness matters more than library API contracts. Why the keyed choice wins: Sending pipeline diagnostic logs to Log Analytics and configuring an Azure Monitor Scheduled Query Alert notifies on-call engineers immediately on sustained failures.
+
+### Question 81 — D
+
+Answer: Invoke Azure Copilot Observability Agent on-demand from Azure Copilot chat or Application Insights / AKS blades, operating strictly within the signed-in users Azure RBAC, PIM, and resource locks. No; Azure Copilot Observability Agent operates strictly within the signed-in users Azure RBAC, PIM, Policy, and resource-lock boundaries and never elevates caller access. On-demand Observability Agent investigations require zero pre-provisioning and never bypass the callers Azure RBAC permissions, Policies, or locks. Local study-map skill 5.2 (Deploy and Configure Azure Copilot Observability Agent (On-Demand RBAC Investigations, AMW Association, Autonomous Issues)), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/azure/sre-agent/overview & https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-overview
+
+- **A:** Incorrect for this requirement. While interactive chat works without setup, background autonomous alert correlation and custom operational instructions require an Observability Agent resource. Why the keyed choice wins: No; Azure Copilot Observability Agent operates strictly within the signed-in users Azure RBAC, PIM, Policy, and resource-lock boundaries and never elevates caller access.
+- **B:** Incorrect for this requirement. `git filter-repo` is the Git-recommended history rewrite tool replacing legacy `git filter-branch` for removing leaked data or oversized blobs. Why the keyed choice wins: No; Azure Copilot Observability Agent operates strictly within the signed-in users Azure RBAC, PIM, Policy, and resource-lock boundaries and never elevates caller access.
+- **C:** Incorrect for this requirement. Azure SRE Agents ServiceNow integration requires specifying an `assignment_group` to scope incident polling and prevent org-wide ticket noise. Why the keyed choice wins: No; Azure Copilot Observability Agent operates strictly within the signed-in users Azure RBAC, PIM, Policy, and resource-lock boundaries and never elevates caller access.
+- **D:** Correct. On-demand Observability Agent investigations require zero pre-provisioning and never bypass the callers Azure RBAC permissions, Policies, or locks. In this scenario: No; Azure Copilot Observability Agent operates strictly within the signed-in users Azure RBAC, PIM, Policy, and resource-lock boundaries and never elevates caller access.
+
+### Question 82 — D, E
+
+Answers: Provision an Azure Copilot Observability Agent resource with custom topology/runbook instructions and opt in to autonomous background alert correlation; Rely on Microsofts enterprise data boundary guarantee that customer prompts, telemetry, and outputs in Azure Copilot Observability Agent are never used to train foundation models. Background autonomous correlation requires provisioning an Observability Agent resource, and customer prompts/telemetry are never used to train foundation models. Local study-map skill 5.2 (Deploy and Configure Azure Copilot Observability Agent (On-Demand RBAC Investigations, AMW Association, Autonomous Issues)), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/azure/sre-agent/overview & https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-overview
+
+- **A:** Incorrect for this requirement. Universal Packages efficiently version and deduplicate large ML weights, simulation binaries, or SDK archives up to terabyte scale. Why the keyed choice wins: Background autonomous correlation requires provisioning an Observability Agent resource, and customer prompts/telemetry are never used to train foundation models.
+- **B:** Incorrect for this requirement. Git Flow suits scheduled versioned shrink-wrap releases but slows high-frequency CI/CD compared to Trunk-Based Development or GitHub Flow. Why the keyed choice wins: Background autonomous correlation requires provisioning an Observability Agent resource, and customer prompts/telemetry are never used to train foundation models.
+- **C:** Incorrect for this requirement. `pull_request_target` runs in the base repo context with write token/secret access, so running untrusted fork scripts enables instant secret exfiltration. Why the keyed choice wins: Background autonomous correlation requires provisioning an Observability Agent resource, and customer prompts/telemetry are never used to train foundation models.
+- **D:** Correct. While interactive chat works without setup, background autonomous alert correlation and custom operational instructions require an Observability Agent resource. In this scenario: Background autonomous correlation requires provisioning an Observability Agent resource, and customer prompts/telemetry are never used to train foundation models.
+- **E:** Correct. Azure Copilot Observability Agent keeps telemetry within enterprise compliance boundaries and never trains public/foundation LLMs on customer data. In this scenario: Background autonomous correlation requires provisioning an Observability Agent resource, and customer prompts/telemetry are never used to train foundation models.
+
+### Question 83 — D
+
+Answer: Connect Azure SRE Agent (`sre.azure.com`) to its active incident platform (`Azure Monitor`, `PagerDuty`, or `ServiceNow` — one incident platform per agent at a time). No; each Azure SRE Agent instance connects to one primary incident management platform (`Azure Monitor`, `PagerDuty`, or `ServiceNow`) at a time. Local study-map skill 5.3 (Deploy, Configure, and Resolve Issues with Azure SRE Agent (Monitor/PagerDuty/ServiceNow, Response Plans, Autonomy & Cooldown)), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/azure/sre-agent/overview & https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-overview
+
+- **A:** Incorrect for this requirement. Scheduled Tasks extend Azure SRE Agent beyond reactive firefighting into proactive recurring reliability checks. Why the keyed choice wins: No; each Azure SRE Agent instance connects to one primary incident management platform (`Azure Monitor`, `PagerDuty`, or `ServiceNow`) at a time.
+- **B:** Incorrect for this requirement. Pinning `@sha256` digests guarantees every deployment ring runs the exact scanned OCI image layer set. Why the keyed choice wins: No; each Azure SRE Agent instance connects to one primary incident management platform (`Azure Monitor`, `PagerDuty`, or `ServiceNow`) at a time.
+- **C:** Incorrect for this requirement. Stakeholder licenses cost $0 and allow Azure Boards collaboration while preventing source-code access in private projects. Why the keyed choice wins: No; each Azure SRE Agent instance connects to one primary incident management platform (`Azure Monitor`, `PagerDuty`, or `ServiceNow`) at a time.
+- **D:** Correct. In this scenario: No; each Azure SRE Agent instance connects to one primary incident management platform (`Azure Monitor`, `PagerDuty`, or `ServiceNow`) at a time.
+
+### Question 84 — C
+
+Answer: Configure the Azure SRE Agent alert reinvestigation cooldown window (`3 hours` default, tunable `1-24 hours`) so recurring alerts do not spawn duplicate parallel investigations. Azure SRE Agents alert reinvestigation cooldown (`3 hours` default, configurable `1–24 hours`) suppresses repeat investigations for the same recurring alert. Alert reinvestigation cooldown suppresses redundant agent loops when a noisy metric alert fires repeatedly during an ongoing incident. Local study-map skill 5.3 (Deploy, Configure, and Resolve Issues with Azure SRE Agent (Monitor/PagerDuty/ServiceNow, Response Plans, Autonomy & Cooldown)), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/azure/sre-agent/overview & https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-overview
+
+- **A:** Incorrect for this requirement. Hashing immutable lockfiles maximizes deterministic cache hit rates while automatically invalidating caches whenever dependencies change. Why the keyed choice wins: Azure SRE Agents alert reinvestigation cooldown (`3 hours` default, configurable `1–24 hours`) suppresses repeat investigations for the same recurring alert.
+- **B:** Incorrect for this requirement. Scheduled Tasks extend Azure SRE Agent beyond reactive firefighting into proactive recurring reliability checks. Why the keyed choice wins: Azure SRE Agents alert reinvestigation cooldown (`3 hours` default, configurable `1–24 hours`) suppresses repeat investigations for the same recurring alert.
+- **C:** Correct. Alert reinvestigation cooldown suppresses redundant agent loops when a noisy metric alert fires repeatedly during an ongoing incident. In this scenario: Azure SRE Agents alert reinvestigation cooldown (`3 hours` default, configurable `1–24 hours`) suppresses repeat investigations for the same recurring alert.
+- **D:** Incorrect for this requirement. Slot-pinned settings prevent staging database URLs or canary flags from swapping into `Production`. Why the keyed choice wins: Azure SRE Agents alert reinvestigation cooldown (`3 hours` default, configurable `1–24 hours`) suppresses repeat investigations for the same recurring alert.
+
+### Question 85 — D, E
+
+Answers: Create an Incident Response Plan in Azure SRE Agent specifying alert filters (service, severity, title), linked runbook instructions, and the target autonomy level; Configure the Incident Response Plan autonomy level to `Review` (human-in-the-loop approval before remediation) in production before graduating low-risk tasks to `Autonomous`. Creating an Incident Response Plan activates alert scanning/matching, and setting its autonomy mode to `Review` enforces human approval before remediation runs. Local study-map skill 5.3 (Deploy, Configure, and Resolve Issues with Azure SRE Agent (Monitor/PagerDuty/ServiceNow, Response Plans, Autonomy & Cooldown)), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/azure/sre-agent/overview & https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-overview
+
+- **A:** Incorrect for this requirement. Git Flow suits scheduled versioned shrink-wrap releases but slows high-frequency CI/CD compared to Trunk-Based Development or GitHub Flow. Why the keyed choice wins: Creating an Incident Response Plan activates alert scanning/matching, and setting its autonomy mode to `Review` enforces human approval before remediation runs.
+- **B:** Incorrect for this requirement. `@Local` holds newly published internal packages prior to quality promotion. Why the keyed choice wins: Creating an Incident Response Plan activates alert scanning/matching, and setting its autonomy mode to `Review` enforces human approval before remediation runs.
+- **C:** Incorrect for this requirement. Granting policy bypass permissions to standard contributors defeats branch protection, required reviews, and compliance audit controls. Why the keyed choice wins: Creating an Incident Response Plan activates alert scanning/matching, and setting its autonomy mode to `Review` enforces human approval before remediation runs.
+- **D:** Correct. Without at least one matching Incident Response Plan, Azure SRE Agent will not automatically scan or triage incoming platform incidents. In this scenario: Creating an Incident Response Plan activates alert scanning/matching, and setting its autonomy mode to `Review` enforces human approval before remediation runs.
+- **E:** Correct. `Review` mode lets Azure SRE Agent diagnose root cause and propose `az`/K8s mitigations while requiring explicit operator approval prior to execution. In this scenario: Creating an Incident Response Plan activates alert scanning/matching, and setting its autonomy mode to `Review` enforces human approval before remediation runs.
+
+### Question 86 — D
+
+Answer: Enable OpenTelemetry / Application Insights SDKs propagating W3C Trace Context (`traceparent`) across HTTP gateways, Service Bus queues, and AKS microservices. Propagating W3C Trace Context (`traceparent`) via OpenTelemetry / Application Insights SDKs shares a single `operation_Id` across HTTP and Service Bus hops. W3C `traceparent` correlates distributed `AppRequests` and `AppDependencies` under a single `operation_Id` on the Application Map. Local study-map skill 5.4 (Analyze Metrics, Application Insights W3C Distributed Traces, and GitHub Copilot Agent Logs Using Natural Language and KQL), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/azure/sre-agent/overview & https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-overview
+
+- **A:** Incorrect for this requirement. Tiered retention controls storage billing while preserving compliance-mandated artifacts currently running in production. Why the keyed choice wins: Propagating W3C Trace Context (`traceparent`) via OpenTelemetry / Application Insights SDKs shares a single `operation_Id` across HTTP and Service Bus hops.
+- **B:** Incorrect for this requirement. AMA + DCRs replace retired MMA/OMS agents and filter noisy logs before Log Analytics ingestion charges apply. Why the keyed choice wins: Propagating W3C Trace Context (`traceparent`) via OpenTelemetry / Application Insights SDKs shares a single `operation_Id` across HTTP and Service Bus hops.
+- **C:** Incorrect for this requirement. Adaptive sampling controls ingestion cost under traffic bursts without losing error diagnostics or skewing telemetry counts. Why the keyed choice wins: Propagating W3C Trace Context (`traceparent`) via OpenTelemetry / Application Insights SDKs shares a single `operation_Id` across HTTP and Service Bus hops.
+- **D:** Correct. W3C `traceparent` correlates distributed `AppRequests` and `AppDependencies` under a single `operation_Id` on the Application Map. In this scenario: Propagating W3C Trace Context (`traceparent`) via OpenTelemetry / Application Insights SDKs shares a single `operation_Id` across HTTP and Service Bus hops.
+
+### Question 87 — B
+
+Answer: Inspect GitHub Copilot cloud agent session logs via the `Copilot` tab / verified commit trailer links (or `gh agent-task view --log`) to audit reasoning, MCP tool calls, and token usage. Copilot cloud agent signs its commits (`Verified`) with embedded session-log links accessible in the GitHub `Copilot` agent session viewer (and `gh agent-task view --log`). Every Copilot cloud agent session records full reasoning steps and tool invocations linked directly from its verified commits and PR timeline. Local study-map skill 5.4 (Analyze Metrics, Application Insights W3C Distributed Traces, and GitHub Copilot Agent Logs Using Natural Language and KQL), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/azure/sre-agent/overview & https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-overview
+
+- **A:** Incorrect for this requirement. `git reflog` records local HEAD/tip movements prior to garbage collection so accidentally dropped commits can be restored cleanly. Why the keyed choice wins: Copilot cloud agent signs its commits (`Verified`) with embedded session-log links accessible in the GitHub `Copilot` agent session viewer (and `gh agent-task view --log`).
+- **B:** Correct. Every Copilot cloud agent session records full reasoning steps and tool invocations linked directly from its verified commits and PR timeline. In this scenario: Copilot cloud agent signs its commits (`Verified`) with embedded session-log links accessible in the GitHub `Copilot` agent session viewer (and `gh agent-task view --log`).
+- **C:** Incorrect for this requirement. Slot-pinned settings prevent staging database URLs or canary flags from swapping into `Production`. Why the keyed choice wins: Copilot cloud agent signs its commits (`Verified`) with embedded session-log links accessible in the GitHub `Copilot` agent session viewer (and `gh agent-task view --log`).
+- **D:** Incorrect for this requirement. Universal Packages efficiently version and deduplicate large ML weights, simulation binaries, or SDK archives up to terabyte scale. Why the keyed choice wins: Copilot cloud agent signs its commits (`Verified`) with embedded session-log links accessible in the GitHub `Copilot` agent session viewer (and `gh agent-task view --log`).
+
+### Question 88 — C, D
+
+Answers: Interrogate Log Analytics and Application Insights via natural-language prompts in Azure Copilot / Observability Agent, inspecting and executing the generated KQL query; Emit Application Insights Release Annotations from CD pipelines on every ring promotion so Azure SRE Agent and performance charts correlate metric shifts with exact build versions. Natural-language-to-KQL queries in Azure Copilot/Observability Agent generate inspectable KQL, and CD-emitted Release Annotations mark exact build versions on timelines. Local study-map skill 5.4 (Analyze Metrics, Application Insights W3C Distributed Traces, and GitHub Copilot Agent Logs Using Natural Language and KQL), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/azure/sre-agent/overview & https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-overview
+
+- **A:** Incorrect for this requirement. Git Flow suits scheduled versioned shrink-wrap releases but slows high-frequency CI/CD compared to Trunk-Based Development or GitHub Flow. Why the keyed choice wins: Natural-language-to-KQL queries in Azure Copilot/Observability Agent generate inspectable KQL, and CD-emitted Release Annotations mark exact build versions on timelines.
+- **B:** Incorrect for this requirement. CalVer encodes release chronology directly in version identifiers when date freshness matters more than library API contracts. Why the keyed choice wins: Natural-language-to-KQL queries in Azure Copilot/Observability Agent generate inspectable KQL, and CD-emitted Release Annotations mark exact build versions on timelines.
+- **C:** Correct. Release Annotations mark deployment timestamps directly on latency, failure, and CPU timelines. In this scenario: Natural-language-to-KQL queries in Azure Copilot/Observability Agent generate inspectable KQL, and CD-emitted Release Annotations mark exact build versions on timelines.
+- **D:** Correct. Natural-language-to-KQL translation accelerates incident triage while keeping the exact underlying KQL query transparent and verifiable. In this scenario: Natural-language-to-KQL queries in Azure Copilot/Observability Agent generate inspectable KQL, and CD-emitted Release Annotations mark exact build versions on timelines.
+- **E:** Incorrect for this requirement. Stakeholder licenses cost $0 and allow Azure Boards collaboration while preventing source-code access in private projects. Why the keyed choice wins: Natural-language-to-KQL queries in Azure Copilot/Observability Agent generate inspectable KQL, and CD-emitted Release Annotations mark exact build versions on timelines.
+
+### Question 89 — B
+
+Answer: Include `Fixes AB#<WorkItemID>` in the GitHub pull request description or commit message with the Azure Boards GitHub App connected. Including `Fixes AB#4812` with the Azure Boards GitHub App connected links the PR and transitions the work item on merge to default branch. `Fixes AB#<ID>` links the GitHub commit/PR to the Azure Boards work item and automatically transitions its state when merged to the default branch. Local study-map skill 1.1 (Design Traceability, Feedback Cycles, Notifications, and Flow of Work Across Plan/Build/Deploy/Operate with Azure Boards), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/training/modules/manage-ado-mcp-server/ & https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers
+
+- **A:** Incorrect for this requirement. CalVer encodes release chronology directly in version identifiers when date freshness matters more than library API contracts. Why the keyed choice wins: Including `Fixes AB#4812` with the Azure Boards GitHub App connected links the PR and transitions the work item on merge to default branch.
+- **B:** Correct. `Fixes AB#<ID>` links the GitHub commit/PR to the Azure Boards work item and automatically transitions its state when merged to the default branch. In this scenario: Including `Fixes AB#4812` with the Azure Boards GitHub App connected links the PR and transitions the work item on merge to default branch.
+- **C:** Incorrect for this requirement. Stakeholder licenses cost $0 and allow Azure Boards collaboration while preventing source-code access in private projects. Why the keyed choice wins: Including `Fixes AB#4812` with the Azure Boards GitHub App connected links the PR and transitions the work item on merge to default branch.
+- **D:** Incorrect for this requirement. Git Flow suits scheduled versioned shrink-wrap releases but slows high-frequency CI/CD compared to Trunk-Based Development or GitHub Flow. Why the keyed choice wins: Including `Fixes AB#4812` with the Azure Boards GitHub App connected links the PR and transitions the work item on merge to default branch.
+
+### Question 90 — B
+
+Answer: `-a azcli` (authentication flag on `npx -y @azure-devops/mcp <org> -a azcli` reusing the OIDC Azure CLI session from `copilot-setup-steps`). Passing `-a azcli` tells `@azure-devops/mcp` to reuse tokens from the active headless Azure CLI OIDC session established in `copilot-setup-steps`. `-a azcli` instructs `@azure-devops/mcp` to obtain tokens from the pre-authenticated `az login` session without interactive browser prompts. Local study-map skill 1.4 (Configure Azure DevOps & GitHub MCP Servers, Webhook/Skill Integrations, and GitHub Copilot Cloud Agent for Azure Boards), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/training/modules/manage-ado-mcp-server/ & https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers
+
+- **A:** Incorrect for this requirement. `git worktree add ../agent-2 -b fix/auth` lets multiple local CLI agents edit and test independent branches simultaneously. Why the keyed choice wins: Passing `-a azcli` tells `@azure-devops/mcp` to reuse tokens from the active headless Azure CLI OIDC session established in `copilot-setup-steps`.
+- **B:** Correct. `-a azcli` instructs `@azure-devops/mcp` to obtain tokens from the pre-authenticated `az login` session without interactive browser prompts. In this scenario: Passing `-a azcli` tells `@azure-devops/mcp` to reuse tokens from the active headless Azure CLI OIDC session established in `copilot-setup-steps`.
+- **C:** Incorrect for this requirement. `git filter-repo` cleanly strips sensitive blobs from historical commits and tags. Why the keyed choice wins: Passing `-a azcli` tells `@azure-devops/mcp` to reuse tokens from the active headless Azure CLI OIDC session established in `copilot-setup-steps`.
+- **D:** Incorrect for this requirement. `--all` enables end-to-end migration rewiring across Repos, Boards, and Pipelines in `gh ado2gh generate-script`. Why the keyed choice wins: Passing `-a azcli` tells `@azure-devops/mcp` to reuse tokens from the active headless Azure CLI OIDC session established in `copilot-setup-steps`.
+
+### Question 91 — B
+
+Answer: `id-token: write` (GitHub Actions job permission required for `azure/login@v2` to request an OIDC JWT for Entra federation). `azure/login@v2` requires `id-token: write` to request a short-lived GitHub OIDC token for Entra Workload Identity Federation. Without `id-token: write`, the GitHub runner cannot mint an OIDC token for secretless Azure login. Local study-map skill 4.1 (Design Entra Managed Identities, Service Principals, GitHub Apps/Tokens, and Secretless OIDC Workload Identity Federation), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/defender-for-cloud/devops-security-overview & https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/customize-the-agent-environment
+
+- **A:** Incorrect for this requirement. `cancel-in-progress: true` stops stale PR runs automatically whenever a developer or agent pushes a newer commit. Why the keyed choice wins: `azure/login@v2` requires `id-token: write` to request a short-lived GitHub OIDC token for Entra Workload Identity Federation.
+- **B:** Correct. Without `id-token: write`, the GitHub runner cannot mint an OIDC token for secretless Azure login. In this scenario: `azure/login@v2` requires `id-token: write` to request a short-lived GitHub OIDC token for Entra Workload Identity Federation.
+- **C:** Incorrect for this requirement. `applyTo` scopes custom Copilot instruction files to matching repository file globs. Why the keyed choice wins: `azure/login@v2` requires `id-token: write` to request a short-lived GitHub OIDC token for Entra Workload Identity Federation.
+- **D:** Incorrect for this requirement. Omitting `isOutput=true` restricts `setvariable` scope to the current job only. Why the keyed choice wins: `azure/login@v2` requires `id-token: write` to request a short-lived GitHub OIDC token for Entra Workload Identity Federation.
+
+### Question 92 — A
+
+Answer: Associate the target Azure subscription with an Azure Monitor Workspace (AMW) so Azure Copilot Observability Agent can create and persist unified Azure Monitor Issues. Target Azure subscriptions must be associated with an Azure Monitor Workspace (AMW) to persist and view Azure Monitor Issues. Subscription association with an Azure Monitor Workspace (AMW) is mandatory to enable Azure Monitor Issues for Observability Agent investigations. Local study-map skill 5.2 (Deploy and Configure Azure Copilot Observability Agent (On-Demand RBAC Investigations, AMW Association, Autonomous Issues)), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/azure/sre-agent/overview & https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-overview
+
+- **A:** Correct. Subscription association with an Azure Monitor Workspace (AMW) is mandatory to enable Azure Monitor Issues for Observability Agent investigations. In this scenario: Target Azure subscriptions must be associated with an Azure Monitor Workspace (AMW) to persist and view Azure Monitor Issues.
+- **B:** Incorrect for this requirement. Cleaning up completed worktrees unlocks branch refs and keeps local developer workstations tidy after parallel agent sessions finish. Why the keyed choice wins: Target Azure subscriptions must be associated with an Azure Monitor Workspace (AMW) to persist and view Azure Monitor Issues.
+- **C:** Incorrect for this requirement. Upstream Sources cache external OSS dependencies inside your Azure Artifacts feed, protecting CI builds if public registries suffer outages or package yanks. Why the keyed choice wins: Target Azure subscriptions must be associated with an Azure Monitor Workspace (AMW) to persist and view Azure Monitor Issues.
+- **D:** Incorrect for this requirement. Stakeholder licenses cost $0 and allow Azure Boards collaboration while preventing source-code access in private projects. Why the keyed choice wins: Target Azure subscriptions must be associated with an Azure Monitor Workspace (AMW) to persist and view Azure Monitor Issues.
+
+### Question 93 — C
+
+Answer: Verify Azure Copilot access and telemetry RBAC → associate the subscription with an Azure Monitor Workspace (AMW) → provision an Observability Agent resource with instructions → enable autonomous Issues. Verifying Copilot/RBAC access -> associating the subscription with an Azure Monitor Workspace -> provisioning an Observability Agent resource with instructions -> enabling autonomous Issues is required. While on-demand chat works setup-free, autonomous alert correlation requires an AMW subscription association and an Observability Agent resource. Local study-map skill 5.2 (Deploy and Configure Azure Copilot Observability Agent (On-Demand RBAC Investigations, AMW Association, Autonomous Issues)), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/azure/sre-agent/overview & https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-overview
+
+- **A:** Incorrect for this requirement. Observability Agent strictly honors caller Azure RBAC, PIM, Policy, and locks, and requires an AMW association to persist Azure Monitor Issues. Why the keyed choice wins: Verifying Copilot/RBAC access -> associating the subscription with an Azure Monitor Workspace -> provisioning an Observability Agent resource with instructions -> enabling autonomous Issues is required.
+- **B:** Incorrect for this requirement. Users need Azure Copilot access, supported regional availability, active alerts, and AMW association for autonomous Issue creation. Why the keyed choice wins: Verifying Copilot/RBAC access -> associating the subscription with an Azure Monitor Workspace -> provisioning an Observability Agent resource with instructions -> enabling autonomous Issues is required.
+- **C:** Correct. While on-demand chat works setup-free, autonomous alert correlation requires an AMW subscription association and an Observability Agent resource. In this scenario: Verifying Copilot/RBAC access -> associating the subscription with an Azure Monitor Workspace -> provisioning an Observability Agent resource with instructions -> enabling autonomous Issues is required.
+- **D:** Incorrect for this requirement. Observability Agent never trains foundation models on customer prompts/data, and autonomous background correlation requires an Observability Agent resource. Why the keyed choice wins: Verifying Copilot/RBAC access -> associating the subscription with an Azure Monitor Workspace -> provisioning an Observability Agent resource with instructions -> enabling autonomous Issues is required.
+
+### Question 94 — B
+
+Answer: `percentile(DurationMs, 95)` (KQL aggregation function inside `summarize` calculating 95th-percentile request tail latency). `percentile(DurationMs, 95)` computes 95th-percentile request tail latency in KQL, catching outlier slowdowns hidden by arithmetic averages. KQL uses singular `percentile(expr, 95)` to compute a single numeric percentile column. Local study-map skill 5.4 (Analyze Metrics, Application Insights W3C Distributed Traces, and GitHub Copilot Agent Logs Using Natural Language and KQL), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/azure/sre-agent/overview & https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-overview
+
+- **A:** Incorrect for this requirement. `-a azcli` instructs `@azure-devops/mcp` to obtain tokens from the pre-authenticated `az login` session without interactive browser prompts. Why the keyed choice wins: `percentile(DurationMs, 95)` computes 95th-percentile request tail latency in KQL, catching outlier slowdowns hidden by arithmetic averages.
+- **B:** Correct. KQL uses singular `percentile(expr, 95)` to compute a single numeric percentile column. In this scenario: `percentile(DurationMs, 95)` computes 95th-percentile request tail latency in KQL, catching outlier slowdowns hidden by arithmetic averages.
+- **C:** Incorrect for this requirement. `echo "::add-mask::$VAL"` prevents dynamic secrets from printing in cleartext step logs. Why the keyed choice wins: `percentile(DurationMs, 95)` computes 95th-percentile request tail latency in KQL, catching outlier slowdowns hidden by arithmetic averages.
+- **D:** Incorrect for this requirement. `what-if` calculates live infrastructure diffs before applying Bicep templates. Why the keyed choice wins: `percentile(DurationMs, 95)` computes 95th-percentile request tail latency in KQL, catching outlier slowdowns hidden by arithmetic averages.
+
+### Question 95 — A
+
+Answer: `copilot-setup-steps` (single job name inside `.github/workflows/copilot-setup-steps.yml` on the default branch). GitHub Copilot cloud agent only recognizes and executes a single job named `copilot-setup-steps` inside `.github/workflows/copilot-setup-steps.yml` on the default branch. Local study-map skill 3.6 (Select Azure Pipelines vs. GitHub Actions and Design Hosted, Managed DevOps Pool, and Ephemeral ARC Runner Infrastructure), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Correct. In this scenario: GitHub Copilot cloud agent only recognizes and executes a single job named `copilot-setup-steps` inside `.github/workflows/copilot-setup-steps.yml` on the default branch.
+- **B:** Incorrect for this requirement. `extends:` locks downstream pipelines into a governed platform template contract. Why the keyed choice wins: GitHub Copilot cloud agent only recognizes and executes a single job named `copilot-setup-steps` inside `.github/workflows/copilot-setup-steps.yml` on the default branch.
+- **C:** Incorrect for this requirement. `safe-outputs` runs sanitized GitHub write operations in separate permission-scoped jobs outside the sandboxed LLM container. Why the keyed choice wins: GitHub Copilot cloud agent only recognizes and executes a single job named `copilot-setup-steps` inside `.github/workflows/copilot-setup-steps.yml` on the default branch.
+- **D:** Incorrect for this requirement. `applyTo` scopes custom Copilot instruction files to matching repository file globs. Why the keyed choice wins: GitHub Copilot cloud agent only recognizes and executes a single job named `copilot-setup-steps` inside `.github/workflows/copilot-setup-steps.yml` on the default branch.
+
+### Question 96 — B
+
+Answer: `what-if` (`az deployment group what-if` subcommand previewing ARM resource creations, modifications, and deletions). `az deployment group what-if` previews exact ARM resource creates, modifications, and deletions against live Azure state prior to deployment. `what-if` calculates live infrastructure diffs before applying Bicep templates. Local study-map skill 3.10 (Recommend and Implement IaC and Configuration Management (Bicep, ARM what-if, Deployment Stacks, ADE, Machine Configuration)), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Incorrect for this requirement. `safe-outputs` runs sanitized GitHub write operations in separate permission-scoped jobs outside the sandboxed LLM container. Why the keyed choice wins: `az deployment group what-if` previews exact ARM resource creates, modifications, and deletions against live Azure state prior to deployment.
+- **B:** Correct. `what-if` calculates live infrastructure diffs before applying Bicep templates. In this scenario: `az deployment group what-if` previews exact ARM resource creates, modifications, and deletions against live Azure state prior to deployment.
+- **C:** Incorrect for this requirement. `applyTo` scopes custom Copilot instruction files to matching repository file globs. Why the keyed choice wins: `az deployment group what-if` previews exact ARM resource creates, modifications, and deletions against live Azure state prior to deployment.
+- **D:** Incorrect for this requirement. `echo "::add-mask::$VAL"` prevents dynamic secrets from printing in cleartext step logs. Why the keyed choice wins: `az deployment group what-if` previews exact ARM resource creates, modifications, and deletions against live Azure state prior to deployment.
+
+### Question 97 — B
+
+Answer: `assignment_group` (mandatory ServiceNow filter field when connecting Azure SRE Agent to a ServiceNow instance). Specifying `assignment_group` is mandatory when configuring the ServiceNow connector in Azure SRE Agent so polling stays scoped to the owning team. Azure SRE Agent requires an explicit ServiceNow `assignment_group` so incident indexing stays scoped to the owning team. Local study-map skill 5.3 (Deploy, Configure, and Resolve Issues with Azure SRE Agent (Monitor/PagerDuty/ServiceNow, Response Plans, Autonomy & Cooldown)), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://learn.microsoft.com/en-us/azure/sre-agent/overview & https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-overview
+
+- **A:** Incorrect for this requirement. `applyTo` scopes custom Copilot instruction files to matching repository file globs. Why the keyed choice wins: Specifying `assignment_group` is mandatory when configuring the ServiceNow connector in Azure SRE Agent so polling stays scoped to the owning team.
+- **B:** Correct. Azure SRE Agent requires an explicit ServiceNow `assignment_group` so incident indexing stays scoped to the owning team. In this scenario: Specifying `assignment_group` is mandatory when configuring the ServiceNow connector in Azure SRE Agent so polling stays scoped to the owning team.
+- **C:** Incorrect for this requirement. `what-if` calculates live infrastructure diffs before applying Bicep templates. Why the keyed choice wins: Specifying `assignment_group` is mandatory when configuring the ServiceNow connector in Azure SRE Agent so polling stays scoped to the owning team.
+- **D:** Incorrect for this requirement. `safe-outputs` runs sanitized GitHub write operations in separate permission-scoped jobs outside the sandboxed LLM container. Why the keyed choice wins: Specifying `assignment_group` is mandatory when configuring the ServiceNow connector in Azure SRE Agent so polling stays scoped to the owning team.
+
+### Question 98 — C
+
+Answer: `--all` (flag on `gh ado2gh generate-script` that rewires pipelines, configures Azure Boards links, and maps teams/permissions). Passing `--all` instructs `gh ado2gh generate-script` to scaffold repository migration, team mapping, pipeline rewiring, and Azure Boards integration steps. `--all` enables end-to-end migration rewiring across Repos, Boards, and Pipelines in `gh ado2gh generate-script`. Local study-map skill 2.4 (Perform Azure DevOps-to-GitHub Repository Migrations (gh ado2gh) and Recover or Purge Git History Data), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://docs.github.com/en/migrations/ado/migrate-your-repositories-from-azure-devops-to-github & https://docs.github.com/en/copilot/concepts/security-governance-and-network-settings/risks-and-mitigations
+
+- **A:** Incorrect for this requirement. Without `id-token: write`, the GitHub runner cannot mint an OIDC token for secretless Azure login. Why the keyed choice wins: Passing `--all` instructs `gh ado2gh generate-script` to scaffold repository migration, team mapping, pipeline rewiring, and Azure Boards integration steps.
+- **B:** Incorrect for this requirement. `-a azcli` instructs `@azure-devops/mcp` to obtain tokens from the pre-authenticated `az login` session without interactive browser prompts. Why the keyed choice wins: Passing `--all` instructs `gh ado2gh generate-script` to scaffold repository migration, team mapping, pipeline rewiring, and Azure Boards integration steps.
+- **C:** Correct. `--all` enables end-to-end migration rewiring across Repos, Boards, and Pipelines in `gh ado2gh generate-script`. In this scenario: Passing `--all` instructs `gh ado2gh generate-script` to scaffold repository migration, team mapping, pipeline rewiring, and Azure Boards integration steps.
+- **D:** Incorrect for this requirement. `cancel-in-progress: true` stops stale PR runs automatically whenever a developer or agent pushes a newer commit. Why the keyed choice wins: Passing `--all` instructs `gh ado2gh generate-script` to scaffold repository migration, team mapping, pipeline rewiring, and Azure Boards integration steps.
+
+### Question 99 — A
+
+Answer: Run `gh ado2gh inventory-report` with scoped `ADO_PAT`/`GH_PAT` → run `gh ado2gh generate-script --all` and test in sandbox → freeze source writes (`lock-ado-repo`) → run cutover script and `download-logs`. Running `inventory-report` -> testing `generate-script --all` in sandbox -> locking source writes (since GEI lacks delta sync) -> executing cutover + `download-logs` prevents lost commits. GitHub Enterprise Importer (`gh ado2gh`) does not support delta migrations, so inventory -> sandbox trial -> write freeze -> scripted cutover + log review is best practice. Local study-map skill 2.4 (Perform Azure DevOps-to-GitHub Repository Migrations (gh ado2gh) and Recover or Purge Git History Data), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://docs.github.com/en/migrations/ado/migrate-your-repositories-from-azure-devops-to-github & https://docs.github.com/en/copilot/concepts/security-governance-and-network-settings/risks-and-mitigations
+
+- **A:** Correct. GitHub Enterprise Importer (`gh ado2gh`) does not support delta migrations, so inventory -> sandbox trial -> write freeze -> scripted cutover + log review is best practice. In this scenario: Running `inventory-report` -> testing `generate-script --all` in sandbox -> locking source writes (since GEI lacks delta sync) -> executing cutover + `download-logs` prevents lost commits.
+- **B:** Incorrect for this requirement. Emailing ZIP archives loses pull request history, review comments, branch protections, and automated Azure Boards/Pipelines rewiring (`--all`). Why the keyed choice wins: Running `inventory-report` -> testing `generate-script --all` in sandbox -> locking source writes (since GEI lacks delta sync) -> executing cutover + `download-logs` prevents lost commits.
+- **C:** Incorrect for this requirement. Deleting source repos destroys code, and GEI has no delta sync so mid-migration pushes are missed unless frozen or manually re-applied. Why the keyed choice wins: Running `inventory-report` -> testing `generate-script --all` in sandbox -> locking source writes (since GEI lacks delta sync) -> executing cutover + `download-logs` prevents lost commits.
+- **D:** Incorrect for this requirement. Migrating enterprise code into personal public repos leaks IP, and `gh ado2gh` requires scoped `ADO_PAT` and `GH_PAT` credentials. Why the keyed choice wins: Running `inventory-report` -> testing `generate-script --all` in sandbox -> locking source writes (since GEI lacks delta sync) -> executing cutover + `download-logs` prevents lost commits.
+
+### Question 100 — B
+
+Answer: `safe-outputs` (declarative frontmatter block in `gh-aw` `.md` workflows isolating write actions like `create-pull-request` and `add-comment`). `safe-outputs` executes validated GitHub writes (`add-comment`, `add-labels`, `create-pull-request`) in separate permission-scoped jobs outside the sandboxed agent container. `safe-outputs` runs sanitized GitHub write operations in separate permission-scoped jobs outside the sandboxed LLM container. Local study-map skill 3.8 (Design and Implement GitHub Agentic Workflows (gh-aw Markdown Frontmatter, gh aw compile, Read-Only Sandbox, safe-outputs)), aligned to the official AZ-401 study guide: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401 Primary reference: https://github.github.com/gh-aw/introduction/overview/ & https://learn.microsoft.com/en-us/azure/devops/pipelines/
+
+- **A:** Incorrect for this requirement. `applyTo` scopes custom Copilot instruction files to matching repository file globs. Why the keyed choice wins: `safe-outputs` executes validated GitHub writes (`add-comment`, `add-labels`, `create-pull-request`) in separate permission-scoped jobs outside the sandboxed agent container.
+- **B:** Correct. `safe-outputs` runs sanitized GitHub write operations in separate permission-scoped jobs outside the sandboxed LLM container. In this scenario: `safe-outputs` executes validated GitHub writes (`add-comment`, `add-labels`, `create-pull-request`) in separate permission-scoped jobs outside the sandboxed agent container.
+- **C:** Incorrect for this requirement. GitHub Copilot cloud agent executes only the job literally named `copilot-setup-steps` inside `.github/workflows/copilot-setup-steps.yml`. Why the keyed choice wins: `safe-outputs` executes validated GitHub writes (`add-comment`, `add-labels`, `create-pull-request`) in separate permission-scoped jobs outside the sandboxed agent container.
+- **D:** Incorrect for this requirement. `extends:` locks downstream pipelines into a governed platform template contract. Why the keyed choice wins: `safe-outputs` executes validated GitHub writes (`add-comment`, `add-labels`, `create-pull-request`) in separate permission-scoped jobs outside the sandboxed agent container.

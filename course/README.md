@@ -29,6 +29,7 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 | Microsoft PL-300 — Power BI Data Analyst Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
 | Microsoft AZ-204 — Developing Solutions for Microsoft Azure | 6 | 600 | Per-option explanations, Jan 2026 blueprint weighting, `____` SDK/CLI/XML/KQL fills, `→` sequences, 24 case studies, July 31, 2026 retirement / AI-200 notice |
 | Microsoft AZ-400 — Designing and Implementing Microsoft DevOps Solutions | 6 | 600 | Per-option explanations, Jul 2026 blueprint weighting, `____` YAML/CLI/Bicep/Git/KQL fills, `→` sequences, 24 case studies, AZ-104/AZ-204 prereq & Feb 1, 2027 retirement / AZ-401 notice |
+| Microsoft AZ-401 — Designing and Implementing Microsoft Agentic DevOps Solutions | 6 | 600 | Per-option explanations, Oct 2026 blueprint weighting (`17/13/38/16/16`), Copilot Agents, MCP, `gh-aw`, `gh ado2gh`, Azure SRE & Observability Agents, `____` fills, `→` sequences, 24 case studies, GH-300/AZ-104 prereq & beta notice |
 | PCEP™ – Certified Entry-Level Python Programmer (PCEP-30-02) | 6 | 360 | Per-option explanations, CPython-verified, `____` code-fill items, 2x live bank at live pace, no case studies |
 | PCEP™ – Certified Entry-Level Python Programmer (PCEP-30-03) | 6 | 360 | Per-option explanations, 360 fresh CPython-verified items, `____` code-fill items, 2x live bank at live pace, pre-release `PCEP-30-0x` baseline |
 
@@ -353,6 +354,17 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 - **Format boundary:** Interactive Pearson VUE drag-and-drop tiles, inline hot-area dropdowns, split-pane tabbed case exhibits, live labs, and locked non-returnable Yes/No series cannot be imported via Udemy CSV and are adapted into text-complete stems and explicit candidate options.
 - **Location:** [`course/AZ-400/`](AZ-400/README.md)
 - **Publication:** Expert DevOps engineering review and account-level Udemy import preview required; no platform publication performed.
+
+### Microsoft AZ-401 — Designing and Implementing Microsoft Agentic DevOps Solutions
+
+- **Status:** Six 100-item full-length mock exams; 600 original Agentic DevOps Engineer Expert items (0 overlap with AZ-400/AZ-204) with mixed formats, YAML/JSON/Bicep/KQL/CLI completions, ordered sequences, case studies, and per-option explanations.
+- **Includes:** Udemy CSVs (`practice-set-N.csv` and self-contained `case-embedded-set-N.csv`), offline Markdown review copies, a 12-question case-study sample upload, instructor landing page, 27-skill curriculum outline, case-study upload guide, sources/coverage, QA suite, and reproducible `AZ-401-6x100.zip`.
+- **Organization:** Every exam is weighted **17 / 13 / 38 / 16 / 16** across the five official October 13, 2026 AZ-401 functional groups (15–20% / 10–15% / 35–40% / 15–20% / 15–20% = 100%); all 27 local study-map skills (`17` official sub-skills) are practiced in every exam, covering Azure DevOps & GitHub MCP servers (`@azure-devops/mcp`, `mcp.dev.azure.com/{org}`, `github-mcp-server`, `COPILOT_MCP_*`), Copilot coding agent primitives (`copilot-instructions.md`, `SKILL.md`, `AGENTS.md`, `copilot-setup-steps.yml`), Git worktrees, Copilot branch rulesets & CLI hooks, `gh ado2gh` migrations, GitHub Agentic Workflows (`gh-aw`, `gh aw compile`, `safe-outputs`), Bicep Deployment Stacks/ADE, OIDC/GHAS/Defender DevOps, Azure SRE Agent, and Azure Copilot Observability Agent (AMW + Azure Monitor Issues).
+- **Item mix & pattern parity:** 84 exported `multiple-choice` items (76 single-answer + 8 four-step `→` sequence items, balanced 21 / 21 / 21 / 21 across slots A–D, including 15–25 `____` completion items and 6–8 `Proposed solution:` evaluations per set), 16 `multi-select` items (13 five-option `Select two.` + 3 six-option `Select three.`, spread 3 / 2 / 6 / 2 / 3 across Domains 1–5), and four 3-question original enterprise Agentic DevOps case studies per exam (24 scenarios total; zero Microsoft named scenarios).
+- **Beta, prerequisite & transition notice (checked October 29, 2026):** Exam AZ-401 entered public beta on October 15, 2026 (through November 9, 2026; GA targeted December 2026) and succeeds Exam AZ-400 (retiring February 1, 2027). Earning `Microsoft Certified: Agentic DevOps Engineer Expert` requires passing **AZ-401** (`700 / 1000` scaled score — never equated to a raw percentage) plus holding an active **GH-300 (`GitHub Copilot`)** or **AZ-104 (`Azure Administrator Associate`)** certification.
+- **Format boundary:** Interactive Pearson VUE drag-and-drop tiles, inline hot-area dropdowns, split-pane tabbed case exhibits, live labs, and locked non-returnable Yes/No series cannot be imported via Udemy CSV and are adapted into text-complete stems and explicit candidate options.
+- **Location:** [`course/AZ-401/`](AZ-401/README.md)
+- **Publication:** Expert Agentic DevOps engineering review and account-level Udemy import preview required; no platform publication performed.
 
 ---
 
