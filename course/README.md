@@ -27,6 +27,7 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 | Microsoft DP-700 — Fabric Data Engineer Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
 | Microsoft PL-300 — Power BI Data Analyst Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
 | PCEP™ – Certified Entry-Level Python Programmer (PCEP-30-02) | 6 | 360 | Per-option explanations, CPython-verified, `____` code-fill items, 2x live bank at live pace, no case studies |
+| PCEP™ – Certified Entry-Level Python Programmer (PCEP-30-03) | 6 | 360 | Per-option explanations, 360 fresh CPython-verified items, `____` code-fill items, 2x live bank at live pace, pre-release `PCEP-30-0x` baseline |
 
 ### Claude Certified Associate — Foundations (CCAO-F)
 
@@ -304,6 +305,18 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 - **Location:** [`course/PCEP-30-02/`](PCEP-30-02/README.md)
 - **Publication:** Expert technical review and account-level import preview required; no Udemy publication performed.
 
+### PCEP™ – Certified Entry-Level Python Programmer (PCEP-30-03)
+
+- **Status:** Six 60-item mock exams; **360 completely fresh original Python 3 items** (zero stem overlap with `PCEP-30-02`, asserted by `test_course.py`) with per-option explanations and all snippet outputs and exceptions verified on **CPython 3.11**.
+- **Includes:** Udemy CSVs, offline review copies, a 12-question mixed-format sample (3 items per block: plain `multiple-choice`, `____` gap-fill `multiple-choice`, and 5-option `multi-select`), instructor landing page with per-practice-test names and full/trimmed descriptions, curriculum, sources/coverage, QA suite, and reproducible ZIP (`PCEP-30-03-6x60.zip`).
+- **Pre-release & baseline notice (checked October 29, 2026):** OpenEDG Python Institute lists **PCEP-30-03** as **Pending Release (scheduled for October 31, 2026)** and explicitly describes it as a routine exam-version update under `PCEP-30-0x` that does not affect the five-year validity of credentials already earned. Because OpenEDG has not yet published a standalone `PCEP-30-03` syllabus table ahead of October 31, 2026, every exam baselines against the published `PCEP-30-0x` **18 / 29 / 25 / 28** percent syllabus (**11 / 17 / 15 / 17** items per exam, each within 0.4 items of its weight across 42 local study-map skills) and makes no claim about unpublished future blueprint changes.
+- **Item mix:** 45 `multiple-choice` (including 16–18 single-blank `____` code-fill / gap-fill items per exam, floor 15) and 15 five-option `multi-select` (`Select two.`, spread 3 / 4 / 4 / 4 across Blocks 1–4). Labelled as authoring choices because the Python Institute publishes no fixed split across item types.
+- **Expanded 2× bank at live per-item pace:** the published `PCEP-30-0x` exam delivers 30 items in 40 minutes (+5 minutes NDA/tutorial), or ~80 seconds per item; each mock exam delivers 60 items in 80 minutes so all 42 study-map skills are exercised per sitting at the live pace.
+- **Scoring & policies stated as published:** passing requires a **cumulative average score of at least 70% across all four blocks**, with no separate per-block pass minimum; TestNow™ browser delivery enforces a **7-day retake waiting period** with unlimited retakes.
+- **Format & scope boundary:** interactive drag-and-drop, sort, and multi-slot code-insertion widgets on OpenEDG TestNow™ cannot exist in a 17-column CSV and are excluded and disclosed; `PCEP-30-0x` has no case studies; PCAP-31-03 topics (classes/OOP, `pip`, file streams, closures) are kept out of scope.
+- **Location:** [`course/PCEP-30-03/`](PCEP-30-03/README.md)
+- **Publication:** Post-October 31, 2026 syllabus check, expert technical review, and account-level import preview required; no Udemy publication performed.
+
 ---
 
 ## 📂 Folder structure (per course)
@@ -352,9 +365,9 @@ Udemy will not publish a course until three questions are answered. Every landin
 
 Each field carries at least three concrete items, no placeholders, and course-specific content rather than boilerplate. Every course's `test_course.py` (or the repo-level check) fails if a field is missing, empty, or reduced to fewer than three items:
 
-**Bullet style.** Field 4 bullets are one idea per line, not a paragraph with a bullet in front of it. The newest courses (Google Professional Developer, Database Engineer and Network Engineer, plus AWS Cloud Practitioner, ML Engineer Associate, Generative AI Developer, and PCEP-30-02) use the short style the user asked for — roughly 60-70 characters per bullet, one decision each, no subordinate clauses. Older courses are being migrated to the same style as they are touched, so a long bullet in an untouched course is stale formatting rather than a different policy. When adding a course, write short bullets first; the trim is much cheaper than the rewrite.
+**Bullet style.** Field 4 bullets are one idea per line, not a paragraph with a bullet in front of it. The newest courses (Google Professional Developer, Database Engineer and Network Engineer, plus AWS Cloud Practitioner, ML Engineer Associate, Generative AI Developer, PCEP-30-02, and PCEP-30-03) use the short style the user asked for — roughly 60-70 characters per bullet, one decision each, no subordinate clauses. Older courses are being migrated to the same style as they are touched, so a long bullet in an untouched course is stale formatting rather than a different policy. When adding a course, write short bullets first; the trim is much cheaper than the rewrite.
 
 ```bash
-python3 course/check_landing_page_fields.py          # all courses: 22/22 PASS
+python3 course/check_landing_page_fields.py          # all courses: 23/23 PASS
 python3 course/check_landing_page_fields.py CCAO-F   # a single course
 ```
