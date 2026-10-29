@@ -1,6 +1,6 @@
 # 🎓 Practice Test Course Packages
 
-This directory contains Udemy practice-test course packages for Claude/Anthropic, AWS, Google Cloud, and Microsoft certifications.
+This directory contains Udemy practice-test course packages for Claude/Anthropic, AWS, Google Cloud, Microsoft, and OpenEDG Python Institute certifications.
 
 ## 📦 Courses available
 
@@ -26,6 +26,7 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 | Microsoft AB-410 — Intelligent Applications Builder Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
 | Microsoft DP-700 — Fabric Data Engineer Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
 | Microsoft PL-300 — Power BI Data Analyst Associate | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
+| PCEP™ – Certified Entry-Level Python Programmer (PCEP-30-02) | 6 | 360 | Per-option explanations, CPython-verified, `____` code-fill items, 2x live bank at live pace, no case studies |
 
 ### Claude Certified Associate — Foundations (CCAO-F)
 
@@ -290,6 +291,19 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 - **Location:** [`course/PL-300/`](PL-300/README.md)
 - **Publication:** Expert technical review and account-level import preview required; no Udemy publication performed.
 
+### PCEP™ – Certified Entry-Level Python Programmer (PCEP-30-02)
+
+- **Status:** Six 60-item mock exams; 360 original Python 3 items with CPython 3.11-verified outputs, single-blank `____` code-fill items, multiple-response items, and per-option explanations.
+- **Includes:** Udemy CSVs, offline review copies, a twelve-question mixed-format sample (three items per block: code-trace MC, `____` gap-fill MC, and 2-of-5 `multi-select`), instructor landing page with per-practice-test names and full/trimmed descriptions, curriculum, six-week schedule, scoring method, time budget, sources/coverage, QA suite, and reproducible ZIP.
+- **Organization:** Every exam is weighted **11 / 17 / 15 / 17** against the published **18 / 29 / 25 / 28 percent** across the four OpenEDG syllabus blocks (exact shares 10.8 / 17.4 / 15.0 / 16.8; largest-remainder rounding assigns the two spare items to Blocks 1 and 4, keeping every count within 0.4 items). 41 local study-map skills are mapped to syllabus objectives 1.1–1.5, 2.1–2.2, 3.1–3.4, and 4.1–4.4.
+- **Item mix:** 45 `multiple-choice` items (including at least 15 `____` single-blank gap-fill / code-fill items) and 15 five-option `multi-select` items per exam (spread 3 / 4 / 4 / 4 across Blocks 1–4). Because the Python Institute publishes no fixed split between item types, these counts are disclosed as authoring choices.
+- **Expanded 2× bank at live per-item pace:** the live PCEP-30-02 exam delivers 30 items in 40 minutes (+5 minutes NDA/tutorial), or ~80 seconds per item. Each mock exam here delivers 60 items in 80 minutes so all 41 syllabus skills are tested per sitting at the live ~80-second-per-item pace.
+- **Scoring stated as published:** passing requires a **cumulative average score of at least 70% across all four blocks**, with no separate per-block pass minimum (live items carry up to 40 points normalized to a percentage).
+- **Format & scope boundary:** interactive drag-and-drop, sort, and multi-slot code-insertion widgets on OpenEDG TestNow™ cannot exist in a 17-column CSV and are excluded and disclosed; PCEP-30-02 has no case studies; PCAP-31-03 topics (classes/OOP, `pip`, file streams, closures) are kept out of scope.
+- **Baseline & version notice:** OpenEDG Python Institute PCEP page and PCEP-30-02 syllabus retrieved October 2026 — 40 minutes (+5 min NDA/tutorial), from $69 USD ($86 with retake, $95 with retake + practice test), 30 questions, English / Spanish / Portuguese / Polish / Japanese, no prerequisites, five-year validity. **PCEP-30-03 is scheduled for release on October 31, 2026**; PCEP-30-02 remains active and earned credentials retain their five-year validity.
+- **Location:** [`course/PCEP-30-02/`](PCEP-30-02/README.md)
+- **Publication:** Expert technical review and account-level import preview required; no Udemy publication performed.
+
 ---
 
 ## 📂 Folder structure (per course)
@@ -338,9 +352,9 @@ Udemy will not publish a course until three questions are answered. Every landin
 
 Each field carries at least three concrete items, no placeholders, and course-specific content rather than boilerplate. Every course's `test_course.py` (or the repo-level check) fails if a field is missing, empty, or reduced to fewer than three items:
 
-**Bullet style.** Field 4 bullets are one idea per line, not a paragraph with a bullet in front of it. The newest courses (Google Professional Developer, Database Engineer and Network Engineer, plus AWS Cloud Practitioner, ML Engineer Associate and Generative AI Developer) use the short style the user asked for — roughly 60-70 characters per bullet, one decision each, no subordinate clauses. Older courses are being migrated to the same style as they are touched, so a long bullet in an untouched course is stale formatting rather than a different policy. When adding a course, write short bullets first; the trim is much cheaper than the rewrite.
+**Bullet style.** Field 4 bullets are one idea per line, not a paragraph with a bullet in front of it. The newest courses (Google Professional Developer, Database Engineer and Network Engineer, plus AWS Cloud Practitioner, ML Engineer Associate, Generative AI Developer, and PCEP-30-02) use the short style the user asked for — roughly 60-70 characters per bullet, one decision each, no subordinate clauses. Older courses are being migrated to the same style as they are touched, so a long bullet in an untouched course is stale formatting rather than a different policy. When adding a course, write short bullets first; the trim is much cheaper than the rewrite.
 
 ```bash
-python3 course/check_landing_page_fields.py          # all courses: 21/21 PASS
+python3 course/check_landing_page_fields.py          # all courses: 22/22 PASS
 python3 course/check_landing_page_fields.py CCAO-F   # a single course
 ```

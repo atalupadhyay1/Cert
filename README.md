@@ -1,6 +1,6 @@
 # Cert — Udemy Practice Test Course Packages
 
-This repository contains Udemy practice-test course packages for Claude/Anthropic, AWS, Google Cloud, and Microsoft certifications.
+This repository contains Udemy practice-test course packages for Claude/Anthropic, AWS, Google Cloud, Microsoft, and OpenEDG Python Institute certifications.
 
 ## 📦 Course packages
 
@@ -27,12 +27,13 @@ This repository contains Udemy practice-test course packages for Claude/Anthropi
 | **Microsoft AB-410: Building Intelligent Applications** | ✅ [6 blueprint-weighted 100-item app-builder exams, mixed item types](course/AB-410/README.md) | 6 | 600 |
 | **Microsoft DP-700: Implementing Data Engineering Solutions Using Microsoft Fabric** | ✅ [6 blueprint-weighted 100-item Fabric data-engineering exams, mixed item types](course/DP-700/README.md) | 6 | 600 |
 | **Microsoft PL-300: Power BI Data Analyst Associate** | ✅ [6 blueprint-weighted 100-item analyst exams, mixed item types](course/PL-300/README.md) | 6 | 600 |
+| **PCEP™ – Certified Entry-Level Python Programmer (PCEP-30-02)** | ✅ [6 blueprint-weighted 60-item Python 3 exams (2x live length at live ~80 s/item pace), CPython-verified, multiple-choice with `____` code-fill items and multiple-response](course/PCEP-30-02/README.md) | 6 | 360 |
 
 ## 📂 Structure
 
 ```
 course/
-├── AB-410/  AI-300/  DP-700/  PL-300/  CCAO-F/  CCDV-F/  CCAR-F/  AWS-Certified-Cloud-Practitioner/  AWS-Certified-Machine-Learning-Engineer-Associate/  AWS-Certified-Generative-AI-Developer-Professional/  Google-*/  Google-Professional-Cloud-Architect/  Google-Professional-ML-Engineer/  Google-Associate-Data-Practitioner/  Google-Professional-Cloud-Security-Engineer/  Google-Cloud-Digital-Leader/  Google-Professional-Cloud-DevOps-Engineer/  Google-Professional-Cloud-Database-Engineer/  Google-Professional-Cloud-Developer/  Google-Professional-Cloud-Network-Engineer/   ← one folder per certification
+├── AB-410/  AI-300/  DP-700/  PL-300/  CCAO-F/  CCDV-F/  CCAR-F/  AWS-Certified-Cloud-Practitioner/  AWS-Certified-Machine-Learning-Engineer-Associate/  AWS-Certified-Generative-AI-Developer-Professional/  PCEP-30-02/  Google-*/  Google-Professional-Cloud-Architect/  Google-Professional-ML-Engineer/  Google-Associate-Data-Practitioner/  Google-Professional-Cloud-Security-Engineer/  Google-Cloud-Digital-Leader/  Google-Professional-Cloud-DevOps-Engineer/  Google-Professional-Cloud-Database-Engineer/  Google-Professional-Cloud-Developer/  Google-Professional-Cloud-Network-Engineer/   ← one folder per certification
 │   ├── 01-landing-page/   — Udemy metadata, descriptions, landing page
 │   ├── 02-curriculum/     — Study arc and exam-by-exam plan
 │   ├── 03-practice-sets/  — set-1 … set-6: 65- or 100-item CSV, Markdown review, set README
