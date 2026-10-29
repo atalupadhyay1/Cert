@@ -9,6 +9,7 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 | Claude Certified Associate — Foundations (CCAO-F) | 6 | 600 | Per-option explanations, guide references |
 | Claude Certified Developer — Foundations (CCDV-F) | 6 | 600 | Per-option explanations, guide references |
 | Claude Certified Architect — Foundations (CCAR-F) | 6 | 600 | Per-option explanations, guide references |
+| Claude Certified Architect – Professional (CCAR-P) | 6 | 378 | Per-option explanations, live 63-item paper length, MC + Select-two/three + Hotspot adaptations, no case studies |
 | Google Cloud Professional Agentic Architect | 6 | 600 | Per-option explanations, guide references |
 | Google Professional Cloud Architect | 6 | 600 | Per-option explanations, blueprint weighting, case studies |
 | Google Associate Data Practitioner | 6 | 600 | Per-option explanations, exact blueprint weighting, no case studies |
@@ -58,6 +59,18 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 - **Scope:** Original architecture concept checks and production scenarios, not actual/recalled items or calibrated replicas. Concepts recur.
 - **Location:** [`course/CCAR-F/`](CCAR-F/README.md)
 - **Publication:** Final subject-matter and account-level import review required; no platform publication performed.
+
+### Claude Certified Architect – Professional (CCAR-P)
+
+- **Status:** Six 63-item full-length mock exams; 378 original architect items matching the live 63-question, 120-minute Pearson VUE paper with mixed formats and per-option explanations.
+- **Includes:** Udemy CSVs, offline Markdown review copies, a 14-question seven-domain mixed-format sample upload, instructor landing page with per-practice-test full/trimmed descriptions, curriculum, sources/coverage, QA suite, and reproducible ZIP.
+- **Organization:** Every exam is weighted **11 / 8 / 12 / 10 / 9 / 9 / 4** across the seven official CCAR-P domains (17% / 13% / 19% / 16% / 14% / 14% / 7% = 100%, every count within 0.41 items of its exact 63-item share); all 38 official objectives from Section 6 of the CCAR-P Exam Guide v1.0 are practiced in every exam.
+- **Item mix & pattern parity:** 48 four-option single-answer items (balanced 12 / 12 / 12 / 12 across slots A–D) and 15 multiple-response items (12 five-option `Select two.` and 3 six-option `Select three.` items, spread 3 / 2 / 3 / 2 / 2 / 2 / 1 across Domains 1–7), including 8 structured adaptations per exam of candidate use-case suitability, sound architectural practice evaluation, and `Pre-Processing / Model Stage / Post-Processing` execution-layer mapping.
+- **No case studies:** the published CCAR-P format is 63 standalone multiple-choice and multiple-response items in 120 minutes with no multi-question split-screen block; the builder and validator reject case-study wording.
+- **Baseline:** Official CCAR-P Exam Guide v1.0 (Effective July 2026) and Anthropic Partner Academy pages retrieved October 29, 2026 — 120 minutes, $175 USD (Claude Partner Network email required; partner-tier discounts apply), English and Japanese, scaled passing score 720 on 100–1,000, 12-month validity. Anthropic announced an exam update effective December 7, 2026 (revised guide due November 17, 2026); future-version coverage is not claimed.
+- **Format boundary:** Interactive Pearson VUE Hotspot / matrix table widgets cannot render natively in Udemy's 17-column CSV player and are adapted into structured MC and multi-select scenarios with explicit disclosure.
+- **Location:** [`course/CCAR-P/`](CCAR-P/README.md)
+- **Publication:** Expert architectural review and account-level Udemy import preview required; no platform publication performed.
 
 ### Google Cloud Professional Agentic Architect
 

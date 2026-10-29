@@ -1,0 +1,7 @@
+# Build & Audit Summary — Claude Certified Architect – Professional (CCAR-P)
+
+- **Sets / Items:** 6 full-length mock exams × 63 items = **378 original items** (120 minutes per exam, ~114 s/item).
+- **Blueprint parity:** `17 / 13 / 19 / 16 / 14 / 14 / 7%` -> **`11 / 8 / 12 / 10 / 9 / 9 / 4` items/exam** across Domains 1–7 (max rounding delta `0.41` items; all 38 official objectives practiced in every exam).
+- **Item-type & pattern parity:** `48` four-option `multiple-choice` (exact `12 / 12 / 12 / 12` answer-slot balance across `A–D`) + `15` `multi-select` (`12` five-option `Select two.` + `3` six-option `Select three.`, spread `3 / 2 / 3 / 2 / 2 / 2 / 1`), including `8` structured Hotspot/matrix adaptations per exam (`2` `Pre-Processing / Model Stage / Post-Processing` layer mappings, `2` candidate use-case suitability sets, and `4` sound-architectural-practice sets).
+- **Uniqueness & vocabulary hygiene:** `378 / 378` unique normalized stems; max content-word Jaccard similarity across all `71,253` stem pairs is **`0.619`** (gate `<= 0.72`); `106 / 106` case-insensitively unique `TERMS` labels, **100% exercised** (`0` unused keys).
+- **Baseline & disclosures:** Official CCAR-P Exam Guide v1.0 (July 2026); December 7, 2026 exam update (guide due November 17, 2026), interactive Hotspot widget adaptation, Partner Network registration eligibility, and 720 / 1,000 scaled-score non-equivalence disclosed across README and landing page.

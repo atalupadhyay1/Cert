@@ -9,6 +9,7 @@ This repository contains Udemy practice-test course packages for Claude/Anthropi
 | **Claude Certified Associate – Foundations (CCAO-F)** | ✅ [6 learning tests generated and structurally validated](course/CCAO-F/README.md) | 6 | 600 |
 | **Claude Certified Developer – Foundations (CCDV-F)** | ✅ [6 learning tests generated and structurally validated](course/CCDV-F/README.md) | 6 | 600 |
 | **Claude Certified Architect – Foundations (CCAR-F)** | ✅ [6 tests generated and structurally validated](course/CCAR-F/README.md) | 6 | 600 |
+| **Claude Certified Architect – Professional (CCAR-P)** | ✅ [6 exact-length 63-item architect exams matching the live paper, multiple-choice, Select-two/Select-three multiple-response, and structured Hotspot adaptations, no case studies](course/CCAR-P/README.md) | 6 | 378 |
 | **Google Cloud Professional Agentic Architect** | ✅ [6 learning tests generated and structurally validated](course/Google-Agentic-Architect/README.md) | 6 | 600 |
 | **Google Professional Cloud Architect** | ✅ [6 blueprint-weighted 100-item architect exams with case studies](course/Google-Professional-Cloud-Architect/README.md) | 6 | 600 |
 | **Google Professional Machine Learning Engineer** | ✅ [6 blueprint-weighted 100-item ML engineering exams, multiple-choice and multiple-select, no case studies](course/Google-Professional-ML-Engineer/README.md) | 6 | 600 |
@@ -34,7 +35,7 @@ This repository contains Udemy practice-test course packages for Claude/Anthropi
 
 ```
 course/
-├── AB-410/  AI-300/  DP-700/  PL-300/  CCAO-F/  CCDV-F/  CCAR-F/  AWS-Certified-Cloud-Practitioner/  AWS-Certified-Machine-Learning-Engineer-Associate/  AWS-Certified-Generative-AI-Developer-Professional/  PCEP-30-02/  PCEP-30-03/  Google-*/  Google-Professional-Cloud-Architect/  Google-Professional-ML-Engineer/  Google-Associate-Data-Practitioner/  Google-Professional-Cloud-Security-Engineer/  Google-Cloud-Digital-Leader/  Google-Professional-Cloud-DevOps-Engineer/  Google-Professional-Cloud-Database-Engineer/  Google-Professional-Cloud-Developer/  Google-Professional-Cloud-Network-Engineer/   ← one folder per certification
+├── AB-410/  AI-300/  DP-700/  PL-300/  CCAO-F/  CCDV-F/  CCAR-F/  CCAR-P/  AWS-Certified-Cloud-Practitioner/  AWS-Certified-Machine-Learning-Engineer-Associate/  AWS-Certified-Generative-AI-Developer-Professional/  PCEP-30-02/  PCEP-30-03/  Google-*/  Google-Professional-Cloud-Architect/  Google-Professional-ML-Engineer/  Google-Associate-Data-Practitioner/  Google-Professional-Cloud-Security-Engineer/  Google-Cloud-Digital-Leader/  Google-Professional-Cloud-DevOps-Engineer/  Google-Professional-Cloud-Database-Engineer/  Google-Professional-Cloud-Developer/  Google-Professional-Cloud-Network-Engineer/   ← one folder per certification
 │   ├── 01-landing-page/   — Udemy metadata, descriptions, landing page
 │   ├── 02-curriculum/     — Study arc and exam-by-exam plan
 │   ├── 03-practice-sets/  — set-1 … set-6: 65- or 100-item CSV, Markdown review, set README
