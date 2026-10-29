@@ -1,0 +1,354 @@
+{
+  "exam": "PL-400",
+  "title": "Microsoft Power Platform Developer",
+  "credential": "Microsoft Certified: Power Platform Developer Associate",
+  "study_guide_baseline": "October 16, 2026",
+  "retirement_and_transition": "PL-400 retires October 30, 2026 (registration closed October 16, 2026); replaced by Exam AB-400 on the identical October 16, 2026 4-domain skills outline",
+  "prerequisites": "None (Associate-level certification)",
+  "total_questions": 600,
+  "sets": 6,
+  "questions_per_set": 100,
+  "skills_covered": 36,
+  "domain_allocation_per_set": {
+    "Build Microsoft Power Platform solutions": 18,
+    "Extend the user experience": 28,
+    "Extend Microsoft Power Platform": 39,
+    "Develop integrations": 15
+  },
+  "export_type_plan": {
+    "multiple-choice": 84,
+    "multi-select": 16
+  },
+  "total_terms": 170,
+  "used_terms": 170,
+  "unused_terms": 0,
+  "total_cases": 24,
+  "max_stem_jaccard": 0.6818,
+  "max_jaccard_pair": [
+    "T4-Q016",
+    "T5-Q016"
+  ],
+  "set_reports": {
+    "set-1": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Build Microsoft Power Platform solutions": 18,
+          "Extend the user experience": 28,
+          "Extend Microsoft Power Platform": 39,
+          "Develop integrations": 15
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 433
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Build Microsoft Power Platform solutions": 18,
+          "Extend the user experience": 28,
+          "Extend Microsoft Power Platform": 39,
+          "Develop integrations": 15
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 672
+      },
+      "code_completion_items": 27,
+      "proposed_solution_items": 7,
+      "cases": [
+        "Crestline Commercial Bank",
+        "Kestrel Wealth Advisory",
+        "LoanBridge Underwriting",
+        "VaultSure Escrow"
+      ]
+    },
+    "set-2": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Build Microsoft Power Platform solutions": 18,
+          "Extend the user experience": 28,
+          "Extend Microsoft Power Platform": 39,
+          "Develop integrations": 15
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 327
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Build Microsoft Power Platform solutions": 18,
+          "Extend the user experience": 28,
+          "Extend Microsoft Power Platform": 39,
+          "Develop integrations": 15
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 578
+      },
+      "code_completion_items": 18,
+      "proposed_solution_items": 7,
+      "cases": [
+        "CarePath Triage",
+        "Veridian Health Network",
+        "OrthoPulse Clinics",
+        "BioLink Specialty Pharmacy"
+      ]
+    },
+    "set-3": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Build Microsoft Power Platform solutions": 18,
+          "Extend the user experience": 28,
+          "Extend Microsoft Power Platform": 39,
+          "Develop integrations": 15
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 367
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Build Microsoft Power Platform solutions": 18,
+          "Extend the user experience": 28,
+          "Extend Microsoft Power Platform": 39,
+          "Develop integrations": 15
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 575
+      },
+      "code_completion_items": 23,
+      "proposed_solution_items": 6,
+      "cases": [
+        "TurbineCare Energy",
+        "ApexGrid Field Robotics",
+        "MetroLift Elevators",
+        "CryoTech Fleet Services"
+      ]
+    },
+    "set-4": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Build Microsoft Power Platform solutions": 18,
+          "Extend the user experience": 28,
+          "Extend Microsoft Power Platform": 39,
+          "Develop integrations": 15
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 300
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Build Microsoft Power Platform solutions": 18,
+          "Extend the user experience": 28,
+          "Extend Microsoft Power Platform": 39,
+          "Develop integrations": 15
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 545
+      },
+      "code_completion_items": 19,
+      "proposed_solution_items": 7,
+      "cases": [
+        "Atelier Direct Brands",
+        "Lumina Luxe Retail",
+        "SwiftCart Returns",
+        "PalletCore Wholesale"
+      ]
+    },
+    "set-5": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Build Microsoft Power Platform solutions": 18,
+          "Extend the user experience": 28,
+          "Extend Microsoft Power Platform": 39,
+          "Develop integrations": 15
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 340
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Build Microsoft Power Platform solutions": 18,
+          "Extend the user experience": 28,
+          "Extend Microsoft Power Platform": 39,
+          "Develop integrations": 15
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 604
+      },
+      "code_completion_items": 28,
+      "proposed_solution_items": 7,
+      "cases": [
+        "CivicBridge Permitting",
+        "TransitLink Metro",
+        "HarborGate Port Authority",
+        "GreenPark Inspections"
+      ]
+    },
+    "set-6": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Build Microsoft Power Platform solutions": 18,
+          "Extend the user experience": 28,
+          "Extend Microsoft Power Platform": 39,
+          "Develop integrations": 15
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 342
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Build Microsoft Power Platform solutions": 18,
+          "Extend the user experience": 28,
+          "Extend Microsoft Power Platform": 39,
+          "Develop integrations": 15
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 566
+      },
+      "code_completion_items": 29,
+      "proposed_solution_items": 7,
+      "cases": [
+        "OrbitLine Defense Supply",
+        "StratosAero Manufacturing",
+        "Avionix Precision Parts",
+        "JetStream MRO Operations"
+      ]
+    },
+    "sample": {
+      "rows": 12,
+      "domains": {
+        "Build Microsoft Power Platform solutions": 5,
+        "Extend Microsoft Power Platform": 1,
+        "Extend the user experience": 3,
+        "Develop integrations": 3
+      },
+      "types": {
+        "multiple-choice": 12
+      },
+      "single_slots": {
+        "A": 3,
+        "B": 3,
+        "C": 3,
+        "D": 3
+      },
+      "max_question_chars": 672
+    }
+  },
+  "error_count": 0,
+  "errors": []
+}
