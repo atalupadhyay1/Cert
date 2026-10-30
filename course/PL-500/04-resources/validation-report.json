@@ -1,0 +1,340 @@
+{
+  "exam": "PL-500",
+  "title": "Microsoft Power Automate RPA Developer",
+  "credential": "Microsoft Certified: Power Automate RPA Developer Associate",
+  "study_guide_baseline": "July 8, 2024",
+  "retirement_and_transition": "Exam PL-500 retired June 30, 2026; No direct 1:1 replacement exam; Microsoft shifted Business Applications AI/developer skilling to Exams AB-400 / AB-410 and Power Automate Applied Skills",
+  "prerequisites": "None (Intermediate Associate-level developer exam; no prerequisite certification required)",
+  "total_questions": 600,
+  "sets": 6,
+  "questions_per_set": 100,
+  "skills_covered": 42,
+  "domain_allocation_per_set": {
+    "Design automations": 28,
+    "Develop automations": 48,
+    "Deploy and manage automations": 24
+  },
+  "export_type_plan": {
+    "multiple-choice": 84,
+    "multi-select": 16
+  },
+  "total_terms": 148,
+  "used_terms": 148,
+  "unused_terms": 0,
+  "total_cases": 24,
+  "max_stem_jaccard": 0.5556,
+  "max_jaccard_pair": [
+    "E1Q032",
+    "E4Q032"
+  ],
+  "set_reports": {
+    "set-1": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Design automations": 28,
+          "Develop automations": 48,
+          "Deploy and manage automations": 24
+        },
+        "types": {
+          "multi-select": 16,
+          "multiple-choice": 84
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 383
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Design automations": 28,
+          "Develop automations": 48,
+          "Deploy and manage automations": 24
+        },
+        "types": {
+          "multi-select": 16,
+          "multiple-choice": 84
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 629
+      },
+      "code_completion_items": 17,
+      "proposed_solution_items": 6,
+      "cases": [
+        "MeridianFirst Retail Bank",
+        "Crestline Mortgage Servicing",
+        "HarborTrust Custody Ops",
+        "SummitVault ATM Logistics"
+      ]
+    },
+    "set-2": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Develop automations": 48,
+          "Design automations": 28,
+          "Deploy and manage automations": 24
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 401
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Develop automations": 48,
+          "Design automations": 28,
+          "Deploy and manage automations": 24
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 722
+      },
+      "code_completion_items": 17,
+      "proposed_solution_items": 7,
+      "cases": [
+        "Clearview Regional Health",
+        "BioPulse Reference Labs",
+        "SilverOak Specialty Pharmacy",
+        "Beacon Care Network"
+      ]
+    },
+    "set-3": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Design automations": 28,
+          "Deploy and manage automations": 24,
+          "Develop automations": 48
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 374
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Design automations": 28,
+          "Deploy and manage automations": 24,
+          "Develop automations": 48
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 660
+      },
+      "code_completion_items": 18,
+      "proposed_solution_items": 7,
+      "cases": [
+        "Portside Customs Brokerage",
+        "IronRail Intermodal",
+        "AeroLink Cold Chain",
+        "PacificHarbor Terminal"
+      ]
+    },
+    "set-4": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Design automations": 28,
+          "Develop automations": 48,
+          "Deploy and manage automations": 24
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 375
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Design automations": 28,
+          "Develop automations": 48,
+          "Deploy and manage automations": 24
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 647
+      },
+      "code_completion_items": 19,
+      "proposed_solution_items": 6,
+      "cases": [
+        "ForgeLine Stamping Corp",
+        "VoltEdge Battery Systems",
+        "Kestrel Precision Castings",
+        "Titan Drivetrain Assembly"
+      ]
+    },
+    "set-5": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Deploy and manage automations": 24,
+          "Design automations": 28,
+          "Develop automations": 48
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 361
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Deploy and manage automations": 24,
+          "Design automations": 28,
+          "Develop automations": 48
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 657
+      },
+      "code_completion_items": 17,
+      "proposed_solution_items": 6,
+      "cases": [
+        "SunGrid Retail Energy",
+        "PeakPower Tariff Co",
+        "ClearCurrent Water & Gas",
+        "Horizon Grid Compliance"
+      ]
+    },
+    "set-6": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Develop automations": 48,
+          "Deploy and manage automations": 24,
+          "Design automations": 28
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 344
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Develop automations": 48,
+          "Deploy and manage automations": 24,
+          "Design automations": 28
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 704
+      },
+      "code_completion_items": 16,
+      "proposed_solution_items": 6,
+      "cases": [
+        "CivicBridge Revenue Agency",
+        "Atlas Municipal Procurement",
+        "Solstice Research Grants",
+        "Vanguard Civic Cloud"
+      ]
+    },
+    "sample": {
+      "rows": 12,
+      "domains": {
+        "Deploy and manage automations": 3,
+        "Design automations": 3,
+        "Develop automations": 6
+      },
+      "types": {
+        "multiple-choice": 12
+      },
+      "single_slots": {
+        "A": 4,
+        "B": 3,
+        "C": 3,
+        "D": 2
+      },
+      "max_question_chars": 629
+    }
+  },
+  "error_count": 0,
+  "errors": []
+}
