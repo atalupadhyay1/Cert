@@ -1,0 +1,188 @@
+{
+  "exam": "PL-900",
+  "title": "Microsoft Power Platform Fundamentals",
+  "study_guide_date": "July 24, 2026",
+  "status": "PASS",
+  "sets": 6,
+  "total_questions": 600,
+  "case_studies": 0,
+  "terms_defined": 106,
+  "terms_used": 106,
+  "max_stem_jaccard": 0.6562,
+  "max_stem_pair": [
+    "T4-Q063",
+    "T6-Q063"
+  ],
+  "files": [
+    {
+      "file": "03-practice-sets/set-1/practice-set-1.csv",
+      "rows": 100,
+      "domains": {
+        "Describe the business value of Microsoft Power Platform": 8,
+        "Manage the Microsoft Power Platform environment": 23,
+        "Demonstrate the capabilities of Power Apps": 23,
+        "Demonstrate the capabilities of Power Automate": 23,
+        "Describe features and capabilities of agents in Microsoft Copilot Studio": 23
+      },
+      "types": {
+        "multiple-choice": 84,
+        "multi-select": 16
+      },
+      "single_slots": {
+        "A": 21,
+        "B": 21,
+        "C": 21,
+        "D": 21
+      },
+      "max_question_chars": 357,
+      "max_option_chars": 244,
+      "max_overall_chars": 1242
+    },
+    {
+      "file": "03-practice-sets/set-2/practice-set-2.csv",
+      "rows": 100,
+      "domains": {
+        "Describe the business value of Microsoft Power Platform": 8,
+        "Manage the Microsoft Power Platform environment": 23,
+        "Demonstrate the capabilities of Power Apps": 23,
+        "Demonstrate the capabilities of Power Automate": 23,
+        "Describe features and capabilities of agents in Microsoft Copilot Studio": 23
+      },
+      "types": {
+        "multiple-choice": 84,
+        "multi-select": 16
+      },
+      "single_slots": {
+        "A": 21,
+        "B": 21,
+        "C": 21,
+        "D": 21
+      },
+      "max_question_chars": 316,
+      "max_option_chars": 244,
+      "max_overall_chars": 1270
+    },
+    {
+      "file": "03-practice-sets/set-3/practice-set-3.csv",
+      "rows": 100,
+      "domains": {
+        "Describe the business value of Microsoft Power Platform": 8,
+        "Manage the Microsoft Power Platform environment": 23,
+        "Demonstrate the capabilities of Power Apps": 23,
+        "Demonstrate the capabilities of Power Automate": 23,
+        "Describe features and capabilities of agents in Microsoft Copilot Studio": 23
+      },
+      "types": {
+        "multiple-choice": 84,
+        "multi-select": 16
+      },
+      "single_slots": {
+        "A": 21,
+        "B": 21,
+        "C": 21,
+        "D": 21
+      },
+      "max_question_chars": 319,
+      "max_option_chars": 244,
+      "max_overall_chars": 1275
+    },
+    {
+      "file": "03-practice-sets/set-4/practice-set-4.csv",
+      "rows": 100,
+      "domains": {
+        "Describe the business value of Microsoft Power Platform": 8,
+        "Manage the Microsoft Power Platform environment": 23,
+        "Demonstrate the capabilities of Power Apps": 23,
+        "Demonstrate the capabilities of Power Automate": 23,
+        "Describe features and capabilities of agents in Microsoft Copilot Studio": 23
+      },
+      "types": {
+        "multiple-choice": 84,
+        "multi-select": 16
+      },
+      "single_slots": {
+        "A": 21,
+        "B": 21,
+        "C": 21,
+        "D": 21
+      },
+      "max_question_chars": 358,
+      "max_option_chars": 244,
+      "max_overall_chars": 1243
+    },
+    {
+      "file": "03-practice-sets/set-5/practice-set-5.csv",
+      "rows": 100,
+      "domains": {
+        "Describe the business value of Microsoft Power Platform": 8,
+        "Manage the Microsoft Power Platform environment": 23,
+        "Demonstrate the capabilities of Power Apps": 23,
+        "Demonstrate the capabilities of Power Automate": 23,
+        "Describe features and capabilities of agents in Microsoft Copilot Studio": 23
+      },
+      "types": {
+        "multiple-choice": 84,
+        "multi-select": 16
+      },
+      "single_slots": {
+        "A": 21,
+        "B": 21,
+        "C": 21,
+        "D": 21
+      },
+      "max_question_chars": 352,
+      "max_option_chars": 244,
+      "max_overall_chars": 1265
+    },
+    {
+      "file": "03-practice-sets/set-6/practice-set-6.csv",
+      "rows": 100,
+      "domains": {
+        "Describe the business value of Microsoft Power Platform": 8,
+        "Manage the Microsoft Power Platform environment": 23,
+        "Demonstrate the capabilities of Power Apps": 23,
+        "Demonstrate the capabilities of Power Automate": 23,
+        "Describe features and capabilities of agents in Microsoft Copilot Studio": 23
+      },
+      "types": {
+        "multiple-choice": 84,
+        "multi-select": 16
+      },
+      "single_slots": {
+        "A": 21,
+        "B": 21,
+        "C": 21,
+        "D": 21
+      },
+      "max_question_chars": 354,
+      "max_option_chars": 244,
+      "max_overall_chars": 1276
+    }
+  ],
+  "sample_file": {
+    "file": "05-sample-upload/sample-upload.csv",
+    "rows": 10,
+    "domains": {
+      "Describe the business value of Microsoft Power Platform": 2,
+      "Manage the Microsoft Power Platform environment": 2,
+      "Demonstrate the capabilities of Power Apps": 2,
+      "Demonstrate the capabilities of Power Automate": 2,
+      "Describe features and capabilities of agents in Microsoft Copilot Studio": 2
+    },
+    "types": {
+      "multiple-choice": 5,
+      "multi-select": 5
+    },
+    "single_slots": {
+      "A": 1,
+      "B": 1,
+      "C": 2,
+      "D": 1
+    },
+    "max_question_chars": 296,
+    "max_option_chars": 241,
+    "max_overall_chars": 1020
+  },
+  "error_count": 0,
+  "errors": []
+}
