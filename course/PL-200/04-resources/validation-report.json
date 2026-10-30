@@ -1,0 +1,354 @@
+{
+  "exam": "PL-200",
+  "title": "Microsoft Power Platform Functional Consultant",
+  "credential": "Microsoft Certified: Power Platform Functional Consultant Associate",
+  "study_guide_baseline": "December 26, 2024",
+  "retirement_and_transition": "Exam PL-200 retired August 31, 2026; succeeded by Exam AB-410 (Microsoft Certified: Intelligent Applications Builder Associate)",
+  "prerequisites": "None (Associate-level certification; no mandatory prerequisite exam)",
+  "total_questions": 600,
+  "sets": 6,
+  "questions_per_set": 100,
+  "skills_covered": 43,
+  "domain_allocation_per_set": {
+    "Configure Microsoft Dataverse": 28,
+    "Create apps by using Microsoft Power Apps": 28,
+    "Create and manage logic and process automation": 27,
+    "Manage environments": 17
+  },
+  "export_type_plan": {
+    "multiple-choice": 84,
+    "multi-select": 16
+  },
+  "total_terms": 117,
+  "used_terms": 117,
+  "unused_terms": 0,
+  "total_cases": 24,
+  "max_stem_jaccard": 0.6522,
+  "max_jaccard_pair": [
+    "T4-Q038",
+    "T6-Q038"
+  ],
+  "set_reports": {
+    "set-1": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Create apps by using Microsoft Power Apps": 28,
+          "Create and manage logic and process automation": 27,
+          "Configure Microsoft Dataverse": 28,
+          "Manage environments": 17
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 449
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Create apps by using Microsoft Power Apps": 28,
+          "Create and manage logic and process automation": 27,
+          "Configure Microsoft Dataverse": 28,
+          "Manage environments": 17
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 717
+      },
+      "code_completion_items": 16,
+      "proposed_solution_items": 6,
+      "cases": [
+        "Harborstone Property Group",
+        "Vanguard Facility Maintenance",
+        "Crestview Tenant Portals",
+        "Oakridge Lease Renewals"
+      ]
+    },
+    "set-2": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Create and manage logic and process automation": 27,
+          "Create apps by using Microsoft Power Apps": 28,
+          "Configure Microsoft Dataverse": 28,
+          "Manage environments": 17
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 437
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Create and manage logic and process automation": 27,
+          "Create apps by using Microsoft Power Apps": 28,
+          "Configure Microsoft Dataverse": 28,
+          "Manage environments": 17
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 772
+      },
+      "code_completion_items": 16,
+      "proposed_solution_items": 7,
+      "cases": [
+        "Clearpath Specialty Clinics",
+        "Apex Medical Equipment",
+        "MedBridge Referral Portal",
+        "Beacon Clinical Trials"
+      ]
+    },
+    "set-3": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Configure Microsoft Dataverse": 28,
+          "Manage environments": 17,
+          "Create and manage logic and process automation": 27,
+          "Create apps by using Microsoft Power Apps": 28
+        },
+        "types": {
+          "multi-select": 16,
+          "multiple-choice": 84
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 457
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Configure Microsoft Dataverse": 28,
+          "Manage environments": 17,
+          "Create and manage logic and process automation": 27,
+          "Create apps by using Microsoft Power Apps": 28
+        },
+        "types": {
+          "multi-select": 16,
+          "multiple-choice": 84
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 826
+      },
+      "code_completion_items": 16,
+      "proposed_solution_items": 6,
+      "cases": [
+        "Rivergate Civic Permits",
+        "MetroWater Field Operations",
+        "Greenway Parks & Events",
+        "Summit Transit Claims"
+      ]
+    },
+    "set-4": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Manage environments": 17,
+          "Create apps by using Microsoft Power Apps": 28,
+          "Create and manage logic and process automation": 27,
+          "Configure Microsoft Dataverse": 28
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 437
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Manage environments": 17,
+          "Create apps by using Microsoft Power Apps": 28,
+          "Create and manage logic and process automation": 27,
+          "Configure Microsoft Dataverse": 28
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 710
+      },
+      "code_completion_items": 16,
+      "proposed_solution_items": 6,
+      "cases": [
+        "Ironclad Heavy Machinery",
+        "GearGrid Dealer Portal",
+        "Precision Quality Audits",
+        "Titan Spare Parts Supply"
+      ]
+    },
+    "set-5": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Create and manage logic and process automation": 27,
+          "Create apps by using Microsoft Power Apps": 28,
+          "Manage environments": 17,
+          "Configure Microsoft Dataverse": 28
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 499
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Create and manage logic and process automation": 27,
+          "Create apps by using Microsoft Power Apps": 28,
+          "Manage environments": 17,
+          "Configure Microsoft Dataverse": 28
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 922
+      },
+      "code_completion_items": 16,
+      "proposed_solution_items": 6,
+      "cases": [
+        "Sterling Surety Insurance",
+        "Kestrel Client Onboarding",
+        "Pinnacle Claims Resolution",
+        "Meridian Regulatory Filing"
+      ]
+    },
+    "set-6": {
+      "practice_csv": {
+        "rows": 100,
+        "domains": {
+          "Configure Microsoft Dataverse": 28,
+          "Manage environments": 17,
+          "Create and manage logic and process automation": 27,
+          "Create apps by using Microsoft Power Apps": 28
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 445
+      },
+      "case_embedded_csv": {
+        "rows": 100,
+        "domains": {
+          "Configure Microsoft Dataverse": 28,
+          "Manage environments": 17,
+          "Create and manage logic and process automation": 27,
+          "Create apps by using Microsoft Power Apps": 28
+        },
+        "types": {
+          "multiple-choice": 84,
+          "multi-select": 16
+        },
+        "single_slots": {
+          "A": 21,
+          "B": 21,
+          "C": 21,
+          "D": 21
+        },
+        "max_question_chars": 768
+      },
+      "code_completion_items": 15,
+      "proposed_solution_items": 6,
+      "cases": [
+        "Westbrook University Admissions",
+        "Horizon Alumni Engagement",
+        "Atlas Field Scholarships",
+        "GlobalAid Grant Portal"
+      ]
+    },
+    "sample": {
+      "rows": 12,
+      "domains": {
+        "Create apps by using Microsoft Power Apps": 5,
+        "Create and manage logic and process automation": 1,
+        "Configure Microsoft Dataverse": 3,
+        "Manage environments": 3
+      },
+      "types": {
+        "multiple-choice": 12
+      },
+      "single_slots": {
+        "A": 2,
+        "B": 3,
+        "C": 3,
+        "D": 4
+      },
+      "max_question_chars": 717
+    }
+  },
+  "error_count": 0,
+  "errors": []
+}
