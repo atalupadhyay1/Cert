@@ -1,0 +1,2265 @@
+# Microsoft Exam PL-200: Full-Length Mock Exam 2 — Reviewer Study Key
+
+**Theme:** Specialty Healthcare & Referrals — Dataverse Search, Multi-Step Forms, Embedded Canvas Apps & Minimal Sandbox Copy  
+**Credential:** Microsoft Certified: Power Platform Functional Consultant Associate  
+**Study guide baseline:** December 26, 2024 (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-200)  
+**Lifecycle notice:** Exam PL-200 retired on August 31, 2026 and was replaced by Exam AB-410 (Microsoft Certified: Intelligent Applications Builder Associate).  
+**Questions:** 100 (`84` multiple-choice + `16` multi-select; `4` case studies × `3` questions = `12` case-based items)
+
+> **Disclaimer:** Independent practice assessment authored from official Microsoft Learn documentation. Not affiliated with or endorsed by Microsoft Corporation. Practice scores do not equate to Microsoft’s 700/1000 scaled score.
+
+---
+
+### Q001 (`T2-Q060`) — Create and manage logic and process automation [3.2] · *Single-Answer Multiple Choice*
+
+An external lab vendor offers both a legacy SFTP folder checked every 15 minutes and an HTTPS webhook connector that pushes JSON payloads immediately when critical panic-value lab results post. Why should you prefer the webhook trigger?
+
+- **A.** Use a Dataverse Business Rule to hide an entire Main form `Tab` based on a `Choices (Multi-Select)` column and invoke an external REST webhook
+- **B.** `Lookup View` defines which columns display inside a Lookup field dropdown, `Associated View` defines columns when viewing related child records under the `Related` tab, and `Quick Find View` controls search & indexing
+- **C.** Dataverse `File`/`Image` columns and Timeline `Notes` store attachments in managed Dataverse `File` capacity honoring row-level Security Roles, whereas `SharePoint` integration offloads storage to SharePoint ACL-governed libraries
+- **D.** Webhook triggers register an instant callback firing immediately when an event occurs, whereas polling triggers query the data source on a scheduled interval determined by connector and Power Platform license tier
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `D` (`CSV: 4`)
+
+Correct answer: D (is correct). Webhook triggers push events immediately when they occur without burning wasted polling checks during quiet hours. [PL-200 Create and manage logic and process automation — Describe connector triggers, actions, polling/webhooks, and Connection References | Ref: Connectors, triggers, actions, and Connection References in Power Automate (https://learn.microsoft.com/en-us/power-automate/conn-ref-env-variables-build-automation)]
+
+- **A:** Incorrect — Business Rules cannot show/hide whole Tabs or Sections, cannot evaluate Multi-Select Choice columns, and cannot call external HTTP APIs.
+- **B:** Incorrect — Customizing the `Lookup View` (top 3 columns show inline in Unified Interface lookup pickers) lets users distinguish identically named parent rows.
+- **C:** Incorrect — When strict per-record Dataverse RBAC must automatically govern attachment access without custom permission sync flows, use Dataverse `File` columns or Timeline `Notes`.
+- **D:** Correct — The native Microsoft Dataverse connector triggers via near-real-time event webhooks rather than slow multi-minute polling.
+
+</details>
+
+### Q002 (`T2-Q034`) — Create apps by using Microsoft Power Apps [2.3] · *Single-Answer Multiple Choice*
+
+A triage lead creates a filtered grid view inside the `Clinical Referral Hub` app using `Edit filters` -> `Save as new view`, and wants two peer leads on her shift to see that view without deploying a solution. What kind of view did she create and how can peers access it?
+
+- **A.** `If(NewRecord.CreditHold = true && NewRecord.OrderTotal > 0, Error("Cannot submit order while account is on Credit Hold."))`
+- **B.** Copying Production to `Sandbox` offers `Full Copy` (all rows + schema) vs `Minimal Copy` (schema/customizations ONLY—excluding business data and disabling background flows/mailboxes), alongside system Backups and DLP policies
+- **C.** `Public` views appear in view pickers; `Quick Find` governs search columns/filters; `Lookup` sets columns in lookup dropdowns; `Associated` renders related grids; `Personal` views are user-saved and shareable
+- **D.** Add custom `Commission Split %` and `Effective Date` columns directly onto the hidden system intersect table of a native `N:N` relationship
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `C` (`CSV: 3`)
+
+Correct answer: C (is correct). She created a `Personal View` (`UserQuery`), which she can share directly with specific users or teams (`Read`, `Write`, `Share`, `Assign`) via `Manage and share views`. [PL-200 Create apps by using Microsoft Power Apps — Create and configure Dataverse Views (Public, Quick Find, Lookup, Associated, Personal) | Ref: Create and edit public, system, Quick Find, Lookup, and Associated views (https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/create-edit-views)]
+
+- **A:** Incorrect — In an Automated `Pre-operation` Dataverse low-code plug-in, comparing `NewRecord` values and calling `Error(...)` aborts the transaction with a clear user message.
+- **B:** Incorrect — `Minimal Copy` lets teams debug schema/forms fast without copying gigabytes of confidential rows or emailing live customers.
+- **C:** Correct — View Designer supports multi-column sorting and cross-table related filter clauses without duplicating columns across tables.
+- **D:** Incorrect — Native N:N system intersect tables cannot hold custom columns, forms, or workflows; create a manual intersect table with two 1:N relationships instead.
+
+</details>
+
+### Q003 (`T2-Q021`) — Configure Microsoft Dataverse [1.9] · *Single-Answer Multiple Choice*
+
+Oncology nurse navigators sit in the `Central Triage` Business Unit (which must remain the owning BU of cases they create), yet they also need Business-Unit-depth Read/Write access to referrals inside `Cardiology West` and `Neurology East` without parent-child BU inheritance exposing `Behavioral Health`. How should you configure this?
+
+- **A.** Modernized Business Units decouple a user’s owning BU from Security Role assignments, letting roles assigned across sibling Business Units grant matrix data access without moving the user
+- **B.** Toggle an existing Dataverse table’s Ownership property from `Organization` to `User or team` in Production without recreating the table
+- **C.** `Multi-Step Forms` chain wizard steps (`Load Form`, `Load Tab`, `Condition` branching, `Redirect`) with progress bars; Power Pages also supports SharePoint document subgrids, portal search, and Power BI with RLS
+- **D.** Dataverse Auditing requires three active switches—Environment `Start Auditing` in PPAC, Table `Audit changes to its data`, and Column `Enable auditing`—writing change history to `Log` storage
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `A` (`CSV: 1`)
+
+Correct answer: A (is correct). Enable `Modernized Business Units` and assign the appropriate Security Role directly to the navigators scoped to the `Cardiology West` and `Neurology East` Business Units. [PL-200 Configure Microsoft Dataverse — Manage Business Units and Modernized Business Units (matrix data access) | Ref: Security concepts in Microsoft Dataverse and Modernized Business Units (https://learn.microsoft.com/en-us/power-platform/admin/wp-security-cds)]
+
+- **A:** Correct — Enabling Modernized Business Units lets matrixed specialists access multiple regional BUs while keeping their primary home BU for record ownership.
+- **B:** Incorrect — Table Ownership (`Organization` vs `User or team`) and `Activity table` flags are immutable once the table is provisioned.
+- **C:** Incorrect — Multi-Step Form Condition steps evaluate Dataverse column values to route portal visitors dynamically across specialized form steps.
+- **D:** Incorrect — If any of the three auditing toggles (Environment, Table, or Column) is disabled, field value history is not recorded for that column.
+
+</details>
+
+### Q004 (`T2-Q061`) — Create and manage logic and process automation [3.3] · *Single-Answer Multiple Choice*
+
+In an `Prior Authorization` cloud flow, if the external payer API times out (`PT2M`) inside `Scope - Call Payer`, the flow must create a manual fallback task in Dataverse and mark the overall flow run status `Failed` so PPAC analytics alerts operations. Which control actions should follow `Scope - Call Payer`?
+
+- **A.** `Scope` blocks with `Configure run after` (`has failed`, `is skipped`, `has timed out`) build `Try/Catch` error blocks before `Terminate`, while `Apply to each` `Concurrency Control` (1–50) runs independent iterations in parallel
+- **B.** Set `Apply to each` `Concurrency Control` to `50` while mutating a shared top-level `Set variable` action inside the loop body to calculate per-row totals
+- **C.** Model-driven apps use `Main`, `Quick Create`, `Quick View`, and `Card` forms; assigning Security Roles to specialized Main forms plus setting `Form Order` and one `Fallback` Main form tailors UX safely
+- **D.** `Alternate Keys` (on `Single Line of Text`, `Whole Number`, or `Decimal`/`Date` columns) enforce database-level uniqueness and allow Dataflows, APIs, and imports to upsert/lookup rows using natural business keys instead of GUIDs
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `A` (`CSV: 1`)
+
+Correct answer: A (is correct). Configure `Scope - Handle Failure` with `Configure run after` = `has failed`, `is skipped`, and `has timed out` to create the fallback task, followed by `Terminate` with `Status = Failed`. [PL-200 Create and manage logic and process automation — Implement cloud flow logic controls (Conditions, Concurrency, Scope Configure run after, Terminate, variables) | Ref: Implement conditions, loops, concurrency, Scope Configure run after, and Terminate in cloud flows (https://learn.microsoft.com/en-us/power-automate/use-expressions-in-conditions)]
+
+- **A:** Correct — Avoid mutating shared `Set variable` actions inside a concurrent `Apply to each` loop; keep degree 1 or use `Compose` to prevent race conditions.
+- **B:** Incorrect — Mutating a shared flow variable inside a concurrent `Apply to each` loop causes race-condition overwrites across parallel iterations; use `Compose` or degree `1`.
+- **C:** Incorrect — At least one Main form must remain enabled for fallback so users whose Security Roles do not match specialized forms still open records.
+- **D:** Incorrect — Creating an Alternate Key builds a unique index asynchronously in Dataverse; verify its status reaches `Active` in the solution before running natural-key upserts.
+
+</details>
+
+### Q005 (`T2-Q058`) — Create and manage logic and process automation [3.1] · *Multi-Select (Select 2)*
+
+During solution architecture review, clinicians require pre-commit server-side validation on `Patient Referral` that works identically whether rows are saved via Model-driven apps, Canvas apps, Power Pages, or OData APIs. Which TWO options execute synchronously inside the Dataverse transaction? Select two.
+
+- **A.** Set `Apply to each` `Concurrency Control` to `50` while mutating a shared top-level `Set variable` action inside the loop body to calculate per-row totals
+- **B.** `Dataverse low-code plug-ins` (built in `Dataverse Accelerator` with `Power Fx`) execute server-side as `Instant` Custom APIs or `Automated` `Pre-operation`/`Post-operation` table rules (`ThisRecord`, `NewRecord`, `Error()`)
+- **C.** Assume enabling out-of-the-box Dataverse SharePoint Document Management automatically enforces Dataverse row-level Security Roles inside SharePoint Online libraries
+- **D.** Use a standard asynchronous Power Automate Automated cloud flow (`When a row is added`) to block an invalid user form save before Dataverse commits the transaction
+- **E.** `Automated`/`Instant`/`Scheduled` cloud flows run async cross-service integrations; `Business Process Flows` guide UI stages; `Real-time classic workflows` or `Low-code plug-ins` enforce synchronous transactional rollbacks
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `B, E` (`CSV: 2,5`)
+
+Correct answers: B and E (are correct). Both `Real-time (synchronous) classic Dataverse workflows` and `Automated Pre-operation Dataverse low-code plug-ins` (as well as Entity-scope Business Rules for simple field rules) run inside the SQL transaction across all callers. [PL-200 Create and manage logic and process automation — Select cloud flow types, classic Dataverse workflows, and Business Process Flows per use case | Ref: Compare cloud flows, Business Process Flows, and classic Dataverse workflows (https://learn.microsoft.com/en-us/power-automate/flow-types)]
+
+- **A:** Incorrect — Mutating a shared flow variable inside a concurrent `Apply to each` loop causes race-condition overwrites across parallel iterations; use `Compose` or degree `1`.
+- **B:** Correct — Automated Pre-operation low-code plug-ins validate or mutate column values inside the Dataverse transaction across every client app and API.
+- **C:** Incorrect — Out-of-the-box SharePoint Document Management creates folder links only; SharePoint permissions are NOT synchronized automatically from Dataverse row ACLs.
+- **D:** Incorrect — Automated cloud flows trigger asynchronously AFTER Dataverse commits the row; blocking a save transactionally requires a synchronous workflow, Business Rule, or pre-operation plug-in.
+- **E:** Correct — Asynchronous cloud flows run after database commit and cannot abort an invalid user save—use synchronous workflows or pre-operation plug-ins instead.
+
+</details>
+
+### Q006 (`T2-Q076`) — Create and manage logic and process automation [3.9] · *Single-Answer Multiple Choice*
+
+A standard `Intake Clerk` lacks `Write` privilege on the `Master Bed Capacity` table, yet when the clerk marks a `Patient Admission` row `Admitted`, Dataverse must synchronously decrement `AvailableBeds` on `Master Bed Capacity` inside the same transaction. How should you configure the classic workflow?
+
+- **A.** Use a standard asynchronous Power Automate Automated cloud flow (`When a row is added`) to block an invalid user form save before Dataverse commits the transaction
+- **B.** `Real-time (synchronous)` classic Dataverse workflows execute inside the SQL transaction (`Before` or `After` save) as `Calling User` or `Workflow Owner`, rolling back the entire save when `Stop workflow` = `Canceled`
+- **C.** Dataverse Search uses each enabled table’s `Quick Find View`: `Find Columns` define indexed/searched fields, `View Columns` define returned fields, and filter clauses exclude inactive rows
+- **D.** `Multi-Step Forms` chain wizard steps (`Load Form`, `Load Tab`, `Condition` branching, `Redirect`) with progress bars; Power Pages also supports SharePoint document subgrids, portal search, and Power BI with RLS
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `B` (`CSV: 2`)
+
+Correct answer: B (is correct). Configure a `Real-time (synchronous)` classic Dataverse workflow with `Execute as = The owner of the workflow` (assigned to a service/admin owner who holds `Write` privilege on `Master Bed Capacity`). [PL-200 Create and manage logic and process automation — Configure synchronous (Real-time) and asynchronous (Background) classic Dataverse workflows | Ref: Configure real-time (synchronous) and background classic Dataverse workflows (https://learn.microsoft.com/en-us/power-apps/maker/data-platform/overview-realtime-workflows)]
+
+- **A:** Incorrect — Automated cloud flows trigger asynchronously AFTER Dataverse commits the row; blocking a save transactionally requires a synchronous workflow, Business Rule, or pre-operation plug-in.
+- **B:** Correct — Background (asynchronous) classic workflows always run post-commit as Workflow Owner and cannot roll back the triggering save.
+- **C:** Incorrect — Administrators manage total indexed columns against the environment Dataverse Search index limit inside Power Platform Admin Center.
+- **D:** Incorrect — Multi-Step Form Condition steps evaluate Dataverse column values to route portal visitors dynamically across specialized form steps.
+
+</details>
+
+### Q007 (`T2-Q099`) — Manage environments [4.7] · *Single-Answer Multiple Choice*
+
+Clinicians generate a printable `Patient Discharge Summary.docx` Word Template from `Patient Case` listing parent demographics plus a repeating table of prescribed `Discharge Medication` child rows (`1:N`). Complete the Word desktop XML mapping step: ____.
+
+- **A.** `Table Permission` with `Access Type = Account` linked to the `Account` lookup relationship on `Warranty Claim`
+- **B.** `Select columns`: `orc_permitstatus,orc_district` and `Filter rows`: `orc_permitstatus eq 100000002 and statecode eq 0`
+- **C.** `ModelDrivenFormIntegration.Item`
+- **D.** `Developer` tab → `XML Mapping Pane` (`urn:microsoft-crm/document-template/...`) → insert `Repeating` content control around table row
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `D` (`CSV: 4`)
+
+Correct answer: D (is correct). Enable the `Developer` tab, open `XML Mapping Pane` (`urn:microsoft-crm/document-template/...`), and insert a `Repeating` content control around the medication table row. [PL-200 Manage environments — Configure SharePoint Document Management and Microsoft Word Templates | Ref: Configure SharePoint Document Management and Microsoft Word Templates in Power Platform (https://learn.microsoft.com/en-us/power-platform/admin/using-word-templates-dynamics-365)]
+
+- **A:** Incorrect — In Power Pages, `Access Type = Account` lets any authenticated Contact see/edit rows associated with their own parent `Account` (`parentcustomerid`) company.
+- **B:** Incorrect — On the Dataverse connector, `Select columns` restricts which modified fields fire the trigger (or return in `List rows`) while `Filter rows` applies server-side OData `$filter`.
+- **C:** Incorrect — Inside a Canvas app embedded on a model-driven Main form, `ModelDrivenFormIntegration.Item` exposes the host Dataverse record in context.
+- **D:** Correct — Microsoft Word Templates bind Dataverse columns via the `XML Mapping Pane` using `Plain Text` controls for fields and `Repeating` content controls for `1:N` child line items.
+
+</details>
+
+### Q008 (`T2-Q071`) — Create and manage logic and process automation [3.6] · *Multi-Select (Select 2)*
+
+You are optimizing and troubleshooting solution-aware Dataverse cloud flows. Which TWO practices align with Microsoft Power Automate guidance? Select two.
+
+- **A.** The Dataverse connector supports `Change type`, `Select columns`, OData `Filter rows`, `Row scope`, `Expand Query`, `Relate rows` / `Unrelate rows`, bound/unbound actions, and reusable solution `Child Flows`
+- **B.** Import a Managed Solution using `Update` (instead of `Upgrade`) expecting Dataverse to automatically remove retired columns and forms from Production
+- **C.** `Flow Checker` catches design/DLP issues; `Static Result` testing mocks action outputs or errors without live calls; `28-day Run History` enables payload inspection and `Resubmit`; `Run-only users` share manual flows safely
+- **D.** Use a Dataverse Business Rule to hide an entire Main form `Tab` based on a `Choices (Multi-Select)` column and invoke an external REST webhook
+- **E.** Assume enabling out-of-the-box Dataverse SharePoint Document Management automatically enforces Dataverse row-level Security Roles inside SharePoint Online libraries
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `A, C` (`CSV: 1,3`)
+
+Correct answers: A and C (are correct). Populate `Select columns`, `Filter rows`, `Row scope`, and `Expand Query` on Dataverse actions/triggers (or modularize reusable logic into solution `Child Flows`), and test failure branches safely using `Static Result` + `Flow Checker`. [PL-200 Create and manage logic and process automation — Manage, share (Run-only vs Co-owner), test with static results, and troubleshoot cloud flows | Ref: Manage, share, test with static results, and troubleshoot cloud flows (https://learn.microsoft.com/en-us/power-automate/fix-flow-failures)]
+
+- **A:** Correct — Setting both `Select columns` and `Filter rows` on Dataverse triggers avoids firing flows when unrelated columns change.
+- **B:** Incorrect — Managed `Update` adds and modifies components but NEVER deletes removed components; only `Upgrade` (`Stage for upgrade` / `Apply upgrade`) removes deleted items.
+- **C:** Correct — Static Result testing lets Functional Consultants verify `Catch` Scope error branches without forcing real downstream system outages.
+- **D:** Incorrect — Business Rules cannot show/hide whole Tabs or Sections, cannot evaluate Multi-Select Choice columns, and cannot call external HTTP APIs.
+- **E:** Incorrect — Out-of-the-box SharePoint Document Management creates folder links only; SharePoint permissions are NOT synchronized automatically from Dataverse row ACLs.
+
+</details>
+
+### Q009 (`T2-Q004`) — Configure Microsoft Dataverse [1.2] · *Single-Answer Multiple Choice*
+
+Each `Clinical Trial` enrolls many `Patient Contacts`, and each enrollment must capture `ConsentSignedDate`, `DosageCohort`, and `WithdrawalReason` on its own Main form with an approval workflow. Which relationship architecture must you build?
+
+- **A.** Add custom `Commission Split %` and `Effective Date` columns directly onto the hidden system intersect table of a native `N:N` relationship
+- **B.** `Rollup` columns aggregate child `1:N` rows asynchronously via system jobs (default every 12 hours, configurable down to 1 hour minimum, or refreshed manually on the form), whereas `Power Fx Formula` columns evaluate live
+- **C.** Native `N:N` relationships use a hidden intersect table with zero custom fields; when the link itself must store columns (like `Split %` or `Effective Date`), build a manual intersect table with two `1:N` lookups
+- **D.** `Modern Commanding` customizes `Main grid`, `Main form`, `Subgrid`, and `Associated` command bars using `Power Fx` (`Patch`, `Notify`, `Confirm`, `Navigate`, `Self.Selected.Item`) inside a managed `Component Library`
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `C` (`CSV: 3`)
+
+Correct answer: C (is correct). Build a manual intersect table (`Trial Enrollment`) with two `1:N` relationships to `Clinical Trial` and `Contact` so custom columns, forms, views, and workflows exist on the link record. [PL-200 Configure Microsoft Dataverse — Determine and implement 1:N and N:N (native vs manual intersect) relationships | Ref: Create 1:N (one-to-many) and N:N (many-to-many) table relationships in Dataverse (https://learn.microsoft.com/en-us/power-apps/maker/data-platform/create-edit-entity-relationships)]
+
+- **A:** Incorrect — Native N:N system intersect tables cannot hold custom columns, forms, or workflows; create a manual intersect table with two 1:N relationships instead.
+- **B:** Incorrect — Because Rollup columns run asynchronously on a scheduled system job (minimum 1-hour recurrence), totals do not recalculate instantaneously on child save unless manually refreshed.
+- **C:** Correct — A manual intersect entity with two 1:N Lookups is required whenever custom attributes, forms, views, or workflows belong on the association record itself.
+- **D:** Incorrect — Power Fx `Visible` formulas evaluate `Self.Selected.Item` columns or `CountRows(Self.Selected.AllItems)` without writing Ribbon XML.
+
+</details>
+
+### Q010 (`T2-Q085`) — Manage environments [4.1] · *Multi-Select (Select 2)*
+
+Before submitting a clinical release candidate solution to QA, which TWO ALM hygiene steps follow Microsoft Power Platform best practices? Select two.
+
+- **A.** `App Checker` inspects one open app in Studio (`Formulas`, `Accessibility`, delegation `Performance`), whereas `Solution Checker` runs deep static analysis across a whole Solution (`Critical`/`High`/`Medium`/`Low` severities)
+- **B.** Import a Managed Solution using `Update` (instead of `Upgrade`) expecting Dataverse to automatically remove retired columns and forms from Production
+- **C.** Use a standard asynchronous Power Automate Automated cloud flow (`When a row is added`) to block an invalid user form save before Dataverse commits the transaction
+- **D.** Assume enabling out-of-the-box Dataverse SharePoint Document Management automatically enforces Dataverse row-level Security Roles inside SharePoint Online libraries
+- **E.** Create custom Solutions under a dedicated `Solution Publisher` (custom prefix instead of `new_`) using `Segmented Solutions`—adding only modified forms, views, and columns rather than full monolithic table metadata
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `A, E` (`CSV: 1,5`)
+
+Correct answers: A and E (are correct). Run `Solution Checker` to catch high-severity static-analysis defects across flows/scripts/plug-ins, and package customizations inside a `Segmented Solution` under a dedicated custom `Solution Publisher`. [PL-200 Manage environments — Describe use cases and findings for App Checker and Solution Checker | Ref: Use App Checker and Solution Checker to validate Power Apps and Dataverse solutions (https://learn.microsoft.com/en-us/power-apps/maker/data-platform/use-powerapps-checker)]
+
+- **A:** Correct — Managed Environments can run Solution Checker automatically on solution import to warn on or block risky customizations.
+- **B:** Incorrect — Managed `Update` adds and modifies components but NEVER deletes removed components; only `Upgrade` (`Stage for upgrade` / `Apply upgrade`) removes deleted items.
+- **C:** Incorrect — Automated cloud flows trigger asynchronously AFTER Dataverse commits the row; blocking a save transactionally requires a synchronous workflow, Business Rule, or pre-operation plug-in.
+- **D:** Incorrect — Out-of-the-box SharePoint Document Management creates folder links only; SharePoint permissions are NOT synchronized automatically from Dataverse row ACLs.
+- **E:** Correct — `Clone a Patch` ships targeted minor-version hotfixes (`1.2.1.0`) that later roll up cleanly via `Clone to Solution` (`1.3.0.0`).
+
+</details>
+
+### Q011 (`T2-Q081`) — Create and manage logic and process automation [3.11] · *Single-Answer Multiple Choice*
+
+In an Automated `Pre-operation` low-code plug-in on `MedicalSupplyOrder`, you must block order creation whenever `CreditHold` is `true` and `OrderTotal > 0`. Complete the Power Fx expression: ____.
+
+- **A.** `If(NewRecord.CreditHold = true && NewRecord.OrderTotal > 0, Error("Cannot submit order while account is on Credit Hold."))`
+- **B.** `Patch(WorkOrders, Self.Selected.Item, {'Dispatch Status': 'Dispatch Status'.Dispatched})`
+- **C.** `formatDateTime(coalesce(triggerOutputs()?['body/orc_alternatedate'], triggerOutputs()?['body/orc_primarydate']), 'yyyy-MM-dd')`
+- **D.** `Table Permission` with `Access Type = Contact` linked to the `Referring Physician (Contact)` lookup relationship
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `A` (`CSV: 1`)
+
+Correct answer: A (is correct). `If(NewRecord.CreditHold = true && NewRecord.OrderTotal > 0, Error("Cannot submit order while account is on Credit Hold."))` aborts the save inside the Dataverse transaction. [PL-200 Create and manage logic and process automation — Configure Dataverse low-code plug-ins (Instant and Automated Power Fx plug-ins in Dataverse Accelerator) | Ref: Use Dataverse low-code plug-ins (Instant and Automated Power Fx plug-ins) (https://learn.microsoft.com/en-us/power-apps/maker/data-platform/low-code-plug-ins)]
+
+- **A:** Correct — In an Automated `Pre-operation` Dataverse low-code plug-in, comparing `NewRecord` values and calling `Error(...)` aborts the transaction with a clear user message.
+- **B:** Incorrect — `Patch(DataSource, BaseRecord, ChangeRecord)` updates the selected Dataverse record directly from a modern Power Fx command button or Canvas app.
+- **C:** Incorrect — `coalesce(arg1, arg2)` returns the first non-null date so `formatDateTime(...)` never fails on a null optional Dataverse column.
+- **D:** Incorrect — In Power Pages, `Access Type = Contact` restricts each signed-in external user strictly to Dataverse rows linked to their own `Contact` record.
+
+</details>
+
+### Q012 (`T2-Q091`) — Manage environments [4.3] · *Multi-Select (Select 2)*
+
+Your healthcare PMO is transitioning UAT and Production to strict Managed ALM governance. Which TWO capabilities strengthen Production hygiene? Select two.
+
+- **A.** Import a Managed Solution using `Update` (instead of `Upgrade`) expecting Dataverse to automatically remove retired columns and forms from Production
+- **B.** An `Unmanaged (Active)` edit in UAT/Prod sits atop `Solution Layers`, masking `Managed` updates until `Remove Active Customizations` runs; `Solution Upgrade` deletes retired components whereas `Update` never removes items
+- **C.** Add custom `Commission Split %` and `Effective Date` columns directly onto the hidden system intersect table of a native `N:N` relationship
+- **D.** `Managed Environments` provide built-in `Power Platform pipelines`, Canvas app `Sharing limits`, `Solution Checker` import gates (`Warn` or `Block`), `Maker welcome content`, and weekly admin governance digests
+- **E.** Set `Apply to each` `Concurrency Control` to `50` while mutating a shared top-level `Set variable` action inside the loop body to calculate per-row totals
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `B, D` (`CSV: 2,4`)
+
+Correct answers: B and D (are correct). Deploy only `Managed` solutions via `Power Platform pipelines` (with Managed Environment Solution Checker gates) and eliminate stray `Active` unmanaged layers via `See solution layers` + `Solution Upgrade`. [PL-200 Manage environments — Distinguish Managed vs Unmanaged Solutions, inspect Solution Layers, and apply Upgrade vs Update | Ref: Managed vs Unmanaged solutions, Solution Layers, and Upgrade vs Update (https://learn.microsoft.com/en-us/power-platform/alm/solution-layers-alm)]
+
+- **A:** Incorrect — Managed `Update` adds and modifies components but NEVER deletes removed components; only `Upgrade` (`Stage for upgrade` / `Apply upgrade`) removes deleted items.
+- **B:** Correct — Using `See solution layers` to clear stray Active layers and importing via `Stage for upgrade` -> `Apply upgrade` keeps Production clean.
+- **C:** Incorrect — Native N:N system intersect tables cannot hold custom columns, forms, or workflows; create a manual intersect table with two 1:N relationships instead.
+- **D:** Correct — Activating Managed Environments is required to enforce sharing caps, import-time Solution Checker blocking, and out-of-the-box ALM pipelines.
+- **E:** Incorrect — Mutating a shared flow variable inside a concurrent `Apply to each` loop causes race-condition overwrites across parallel iterations; use `Compose` or degree `1`.
+
+</details>
+
+### Q013 (`T2-Q031`) — Create apps by using Microsoft Power Apps [2.1] · *Multi-Select (Select 2)*
+
+You are selecting the appropriate model-driven form types (`Main`, `Quick Create`, `Quick View`, and `Card`) for a clinical referral app. Which TWO statements are true? Select two.
+
+- **A.** Model-driven apps use `Main`, `Quick Create`, `Quick View`, and `Card` forms; assigning Security Roles to specialized Main forms plus setting `Form Order` and one `Fallback` Main form tailors UX safely
+- **B.** A `Quick View` form displays read-only columns/subgrids from a parent Lookup table on a child Main form, whereas a `Form Component Control` embeds the parent Lookup table’s Main form for direct inline editing
+- **C.** Set `Apply to each` `Concurrency Control` to `50` while mutating a shared top-level `Set variable` action inside the loop body to calculate per-row totals
+- **D.** Assume enabling out-of-the-box Dataverse SharePoint Document Management automatically enforces Dataverse row-level Security Roles inside SharePoint Online libraries
+- **E.** Use a Dataverse Business Rule to hide an entire Main form `Tab` based on a `Choices (Multi-Select)` column and invoke an external REST webhook
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `A, B` (`CSV: 1,2`)
+
+Correct answers: A and B (are correct). Role-assigned `Main` forms use `Form Order` plus at least one `Fallback` form, `Quick Create` powers the `+ New` slide-out drawer, and `Quick View` displays read-only parent Lookup fields on child forms. [PL-200 Create apps by using Microsoft Power Apps — Create and configure model-driven sitemaps and multiple form types (form order & fallback) | Ref: Create and design model-driven app forms (Main, Quick Create, Quick View, Card & form order) (https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/create-design-forms)]
+
+- **A:** Correct — At least one Main form must remain enabled for fallback so users whose Security Roles do not match specialized forms still open records.
+- **B:** Correct — Choose Quick View when parent columns must stay read-only; choose Form Component Control when users must edit parent Lookup columns without navigating away.
+- **C:** Incorrect — Mutating a shared flow variable inside a concurrent `Apply to each` loop causes race-condition overwrites across parallel iterations; use `Compose` or degree `1`.
+- **D:** Incorrect — Out-of-the-box SharePoint Document Management creates folder links only; SharePoint permissions are NOT synchronized automatically from Dataverse row ACLs.
+- **E:** Incorrect — Business Rules cannot show/hide whole Tabs or Sections, cannot evaluate Multi-Select Choice columns, and cannot call external HTTP APIs.
+
+</details>
+
+### Q014 (`T2-Q013`) — Configure Microsoft Dataverse [1.5] · *Single-Answer Multiple Choice*
+
+In Power Platform Admin Center, the Dataverse Search index gauge approaches 95% of your environment’s indexed-column limit after makers checked dozens of unused text columns. How do you reduce indexed columns without disabling Dataverse Search on active tables?
+
+- **A.** Dataverse Search uses each enabled table’s `Quick Find View`: `Find Columns` define indexed/searched fields, `View Columns` define returned fields, and filter clauses exclude inactive rows
+- **B.** BPF stages trigger classic workflows (`Stage Entry`/`Exit`) or on-demand `Cloud Flow Steps`, and every BPF creates its own Dataverse table tracking active stage, `Active Stage Started On`, and status for views and charts
+- **C.** `Environment Variables` (`Text`, `Decimal`, `JSON`, `Data Source`, Azure Key Vault `Secret`) externalize stage settings; removing `Current Value` before export lets `Power Platform pipelines` or imports bind target values
+- **D.** Toggle an existing Dataverse table’s Ownership property from `Organization` to `User or team` in Production without recreating the table
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `A` (`CSV: 1`)
+
+Correct answer: A (is correct). Open the `Quick Find View` of over-indexed tables in your solution, remove unneeded columns from `Find Columns`, and publish customizations. [PL-200 Configure Microsoft Dataverse — Configure Dataverse search, Quick Find views, and search index columns | Ref: Configure Dataverse search to improve search results and performance (https://learn.microsoft.com/en-us/power-platform/admin/configure-relevance-search-organization)]
+
+- **A:** Correct — Administrators manage total indexed columns against the environment Dataverse Search index limit inside Power Platform Admin Center.
+- **B:** Incorrect — Building views and charts directly on the auto-created BPF Dataverse table measures stage dwell times and active pipeline bottlenecks.
+- **C:** Incorrect — Combining Environment Variables, Connection References, and Power Platform pipelines eliminates post-deployment manual edits in Production.
+- **D:** Incorrect — Table Ownership (`Organization` vs `User or team`) and `Activity table` flags are immutable once the table is provisioned.
+
+</details>
+
+### Q015 (`T2-Q094`) — Manage environments [4.5] · *Ordered Sequence (Multiple Choice)*
+
+You are promoting `SilverleafIntake` from Dev to HIPAA-compliant Production where HL7 endpoint URLs, Key Vault secrets, and service-principal Connections differ from Dev. Order the exact export and import steps.
+
+- **A.** Delete the Managed solution in Production every Friday (removing custom table data!) → Recreate tables manually → Re-import CSV backups → Reassign all Security Roles
+- **B.** Clear Dev Current Values on Environment Variables & run Solution Checker → Publish all customizations & Export as Managed → Import the Managed `.zip` into UAT/Production → Bind target Connection References & Environment Variable values
+- **C.** Export the entire Default Solution from Dev as Unmanaged → Import Unmanaged directly into Production → Hardcode Dev URLs inside flow steps → Share personal maker logins
+- **D.** Import an unvalidated solution into Production first → Run Solution Checker two weeks later → Create Environment Variables directly inside Production Default Solution → Skip publishing
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `B` (`CSV: 2`)
+
+Correct answer: B (is correct). Clear Dev `Current Values` on Environment Variables and run Solution Checker, Publish all customizations and Export as `Managed`, Import the Managed `.zip` into UAT/Production, and bind target Connection References and Environment Variables. [PL-200 Manage environments — Import and export Dataverse Solutions with Environment Variables, Connection References, and pipelines | Ref: Use Environment Variables, Connection References, and Power Platform pipelines in ALM (https://learn.microsoft.com/en-us/power-apps/maker/data-platform/environmentvariables)]
+
+- **A:** Incorrect — Deleting a Managed solution that defines custom tables permanently deletes those tables and their Production data; use Managed Upgrade (`Stage for upgrade`) instead.
+- **B:** Correct — Healthy ALM runs Solution Checker, publishes customizations, exports as Managed, and binds target-stage Connection References and Environment Variables at import.
+- **C:** Incorrect — Never export the Default Solution or import Unmanaged solutions into Production; use segmented Managed solutions with Connection References and Environment Variables.
+- **D:** Incorrect — Unpublished changes in Dev are excluded from exported solutions, and Solution Checker should gate packages before Production import.
+
+</details>
+
+### Q016 (`T2-Q068`) — Create and manage logic and process automation [3.5] · *Single-Answer Multiple Choice*
+
+A nightly claims reconciliation flow uses Dataverse `List rows` to retrieve 600 `Claim` records and must include `orc_policynumber` and `orc_deductible` from the parent `orc_PrimaryPolicyId` Lookup in a single query. Complete the `Expand Query` setting: ____.
+
+- **A.** `orc_PrimaryPolicyId($select=orc_policynumber,orc_deductible)`
+- **B.** `@and(equals(triggerOutputs()?['body/orc_permitstatus'], 100000002), equals(triggerOutputs()?['body/orc_district'], 'Downtown'))`
+- **C.** `ClearCollect(colOfflineValves, Filter(Valves, District = ddDistrict.Selected.Value))`
+- **D.** `Developer` tab → `XML Mapping Pane` (`urn:microsoft-crm/document-template/...`) → insert `Repeating` content control around table row
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `A` (`CSV: 1`)
+
+Correct answer: A (is correct). `orc_PrimaryPolicyId($select=orc_policynumber,orc_deductible)` expands the parent Lookup inline without N+1 `Get a row by ID` calls. [PL-200 Create and manage logic and process automation — Work with the Microsoft Dataverse connector (Select columns, Filter rows, Expand Query, Relate rows, child flows) | Ref: Use the Microsoft Dataverse connector in Power Automate cloud flows (https://learn.microsoft.com/en-us/power-automate/dataverse/overview)]
+
+- **A:** Correct — Configuring `Expand Query` on Dataverse `List rows` retrieves parent Lookup columns (`$select=...`) in the same single API call without an extra `Get a row by ID` inside a loop.
+- **B:** Incorrect — Adding an `@and(...)` `Trigger Condition` in trigger settings prevents the cloud flow from firing at all unless both field criteria match.
+- **C:** Incorrect — `ClearCollect(Collection, Table)` clears any prior cached items and loads the delegable `Filter(...)` result into an in-memory Canvas collection.
+- **D:** Incorrect — Microsoft Word Templates bind Dataverse columns via the `XML Mapping Pane` using `Plain Text` controls for fields and `Repeating` content controls for `1:N` child line items.
+
+</details>
+
+## Case Study Vignette — Beacon Clinical Trials
+
+> [Scenario: Beacon Clinical Trials runs regulated Dataverse environments (`Dev`, `UAT Sandbox`, `Production`). To investigate a production flow bug without copying 400 GB of patient rows or firing live outbound webhooks, admins refresh a clean metadata-only Sandbox and route trial-coordinator emails from Exchange Online into a shared Dataverse Queue via Server-Side Sync.]
+
+### Q017 (`T2-Q086`) — Manage environments [4.2] · *Single-Answer Multiple Choice*
+
+Case study — Beacon Clinical Trials: Beacon’s Production environment runs Managed solution `SilverleafIntake` `3.1.0.0`, and an urgent typo fix on a single Quick Create form must ship tonight as `3.1.1.0` without including half-built Q4 tables, then roll into `3.2.0.0` next sprint. Which workflow should you use?
+
+- **A.** Import a Managed Solution using `Update` (instead of `Upgrade`) expecting Dataverse to automatically remove retired columns and forms from Production
+- **B.** `Custom Pages` bring responsive Canvas containers (`Horizontal`/`Vertical`) and Power Fx into model-driven full pages, centered dialogs, or side panes—reading context via `Param("recordId")`
+- **C.** `Clone a Patch` creates a lightweight hotfix solution (`Major.Minor.Build.Revision` increment) while locking the base solution until `Clone to Solution` rolls all patches into a clean consolidated version
+- **D.** Dataverse Auditing requires three active switches—Environment `Start Auditing` in PPAC, Table `Audit changes to its data`, and Column `Enable auditing`—writing change history to `Log` storage
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `C` (`CSV: 3`)
+
+Correct answer: C (is correct). Run `Clone a Patch` on `SilverleafIntake` (`3.1.0.0`) containing only the Quick Create form (`3.1.1.0`), deploy Managed to Prod, and later run `Clone to Solution` (`3.2.0.0`) to consolidate all patches. [PL-200 Manage environments — Create and manage Dataverse Solutions (custom Publishers, segmented tables, patches/clones) | Ref: Solutions overview, custom publishers, segmented tables, and patches in Power Platform (https://learn.microsoft.com/en-us/power-platform/alm/solution-concepts-alm)]
+
+- **A:** Incorrect — Managed `Update` adds and modifies components but NEVER deletes removed components; only `Upgrade` (`Stage for upgrade` / `Apply upgrade`) removes deleted items.
+- **B:** Incorrect — Custom Pages are solution-aware and supersede legacy embedded canvas controls when launching modal dialogs or side panes from command bars.
+- **C:** Correct — While a parent Unmanaged solution has child Patches, components cannot be added/removed in the parent until `Clone to Solution` merges them.
+- **D:** Incorrect — If any of the three auditing toggles (Environment, Table, or Column) is disabled, field value history is not recorded for that column.
+
+</details>
+
+### Q018 (`T2-Q092`) — Manage environments [4.4] · *Single-Answer Multiple Choice*
+
+Case study — Beacon Clinical Trials: Beacon must refresh its `Dev-Schema` Sandbox from Production to debug a Business Process Flow WITHOUT copying any Protected Health Information (`PHI`) patient rows into Dev and ensuring outbound Exchange mailboxes stay disabled. Which PPAC operation must you execute?
+
+- **A.** Assume enabling out-of-the-box Dataverse SharePoint Document Management automatically enforces Dataverse row-level Security Roles inside SharePoint Online libraries
+- **B.** Business Process Flows support up to `30 stages`, up to `5 related tables`, `If/Else` conditional branching from columns in the immediately preceding stage, role-based access, and `Order Process Flow` default priority
+- **C.** Copying Production to `Sandbox` offers `Full Copy` (all rows + schema) vs `Minimal Copy` (schema/customizations ONLY—excluding business data and disabling background flows/mailboxes), alongside system Backups and DLP policies
+- **D.** `formatDateTime(coalesce(triggerOutputs()?['body/orc_alternatedate'], triggerOutputs()?['body/orc_primarydate']), 'yyyy-MM-dd')`
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `C` (`CSV: 3`)
+
+Correct answer: C (is correct). Run `Copy` from Production to `Dev-Schema` with Copy level set to `Minimal Copy`—copying customizations/schema only, zero business rows, and leaving background processes/mailboxes disabled in administration mode. [PL-200 Manage environments — Manage Sandbox environments (Full vs Minimal Copy, Reset), Backups, DLP, and Managed Environments | Ref: Manage Sandbox environments (Copy Full vs Minimal, Reset), Backups, DLP, and Managed Environments (https://learn.microsoft.com/en-us/power-platform/admin/copy-environment)]
+
+- **A:** Incorrect — Out-of-the-box SharePoint Document Management creates folder links only; SharePoint permissions are NOT synchronized automatically from Dataverse row ACLs.
+- **B:** Incorrect — When multiple BPFs apply to a table, the highest-ranked BPF in `Order Process Flow` accessible to the user’s Security Role opens by default.
+- **C:** Correct — `Minimal Copy` lets teams debug schema/forms fast without copying gigabytes of confidential rows or emailing live customers.
+- **D:** Incorrect — `coalesce(arg1, arg2)` returns the first non-null date so `formatDateTime(...)` never fails on a null optional Dataverse column.
+
+</details>
+
+### Q019 (`T2-Q097`) — Manage environments [4.6] · *Ordered Sequence (Multiple Choice)*
+
+Case study — Beacon Clinical Trials: Beacon wants trial inquiries emailed to `IntakeTriage@silverleafhealth.example` to route via Exchange Online Server-Side Synchronization into a `Private` Dataverse Queue visible only to 12 licensed triage clinicians. Put the mailbox and queue setup steps in exact order.
+
+- **A.** Open Outlook in a browser on a developer laptop → Record mouse coordinates with Power Automate for desktop → Copy email text into Notepad → Import CSV nightly
+- **B.** Create a Personal View on the Contact table → Upload a Word Template → Run Bulk Record Deletion on ActivityPointer → Share the Queue via Anonymous Web Role
+- **C.** Verify Exchange Online Email Server Profile & Server-Side Sync defaults in PPAC → Create a Dataverse Queue with the shared email → Open the Queue Mailbox & select Approve Email → Run Test & Enable Mailbox until status = Success
+- **D.** Install deprecated Dynamics 365 Email Router on a Windows 7 PC → Skip Approve Email and Test & Enable Mailbox → Expect unapproved mailboxes to sync automatically → Disable Queues
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `C` (`CSV: 3`)
+
+Correct answer: C (is correct). Verify the Exchange Online `Email Server Profile` and Server-Side Sync defaults in PPAC, create the `Private` Dataverse Queue with its email address and members, `Approve Email` on the Queue Mailbox, and run `Test & Enable Mailbox` until status = `Success`. [PL-200 Manage environments — Configure Email Integration (Server-Side Synchronization, Mailboxes, Queues, App for Outlook) | Ref: Server-Side Synchronization, Mailboxes, Queues, and Dynamics 365 App for Outlook (https://learn.microsoft.com/en-us/power-platform/admin/server-side-synchronization)]
+
+- **A:** Incorrect — Dataverse includes native Exchange Server-Side Synchronization and Dynamics 365 App for Outlook without brittle UI screen-scraping.
+- **B:** Incorrect — Views, Word Templates, and Bulk Deletion do not configure Exchange Server-Side Synchronization or Queue mailboxes.
+- **C:** Correct — Routing shared-inbox emails into a Dataverse Queue via Server-Side Sync requires an Email Server Profile, a Queue with email address, Email Approval, and Test & Enable Mailbox.
+- **D:** Incorrect — The legacy Email Router is deprecated; Server-Side Synchronization requires mailbox approval (when configured) and Test & Enable Mailbox succeeding.
+
+</details>
+
+### Q020 (`T2-Q063`) — Create and manage logic and process automation [3.3] · *Multi-Select (Select 2)*
+
+You are reviewing an `Apply to each` loop in Power Automate with a junior consultant. Which TWO statements accurately describe `Concurrency Control` and loop variables? Select two.
+
+- **A.** Assume enabling out-of-the-box Dataverse SharePoint Document Management automatically enforces Dataverse row-level Security Roles inside SharePoint Online libraries
+- **B.** Toggle an existing Dataverse table’s Ownership property from `Organization` to `User or team` in Production without recreating the table
+- **C.** Add custom `Commission Split %` and `Effective Date` columns directly onto the hidden system intersect table of a native `N:N` relationship
+- **D.** Set `Apply to each` `Concurrency Control` to `50` while mutating a shared top-level `Set variable` action inside the loop body to calculate per-row totals
+- **E.** `Scope` blocks with `Configure run after` (`has failed`, `is skipped`, `has timed out`) build `Try/Catch` error blocks before `Terminate`, while `Apply to each` `Concurrency Control` (1–50) runs independent iterations in parallel
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `D, E` (`CSV: 4,5`)
+
+Correct answers: D and E (are correct). Enabling `Concurrency Control` (`1–50`) accelerates independent iterations, whereas mutating a shared top-level `Set variable` inside a concurrent loop causes race-condition overwrites across parallel threads. [PL-200 Create and manage logic and process automation — Implement cloud flow logic controls (Conditions, Concurrency, Scope Configure run after, Terminate, variables) | Ref: Implement conditions, loops, concurrency, Scope Configure run after, and Terminate in cloud flows (https://learn.microsoft.com/en-us/power-automate/use-expressions-in-conditions)]
+
+- **A:** Incorrect — Out-of-the-box SharePoint Document Management creates folder links only; SharePoint permissions are NOT synchronized automatically from Dataverse row ACLs.
+- **B:** Incorrect — Table Ownership (`Organization` vs `User or team`) and `Activity table` flags are immutable once the table is provisioned.
+- **C:** Incorrect — Native N:N system intersect tables cannot hold custom columns, forms, or workflows; create a manual intersect table with two 1:N relationships instead.
+- **D:** Correct — Mutating a shared flow variable inside a concurrent `Apply to each` loop causes race-condition overwrites across parallel iterations; use `Compose` or degree `1`.
+- **E:** Correct — Avoid mutating shared `Set variable` actions inside a concurrent `Apply to each` loop; keep degree 1 or use `Compose` to prevent race conditions.
+
+</details>
+
+### Q021 (`T2-Q023`) — Configure Microsoft Dataverse [1.10] · *Single-Answer Multiple Choice*
+
+You assign a custom `Referral Intake Role` to an `Microsoft Entra ID Security Group Team`, yet team members receive permission errors when creating rows owned by themselves (`User` depth) because the role’s `Member’s privilege inheritance` is still set to `Team privileges only`. What must you change on the Security Role?
+
+- **A.** `Public` views appear in view pickers; `Quick Find` governs search columns/filters; `Lookup` sets columns in lookup dropdowns; `Associated` renders related grids; `Personal` views are user-saved and shareable
+- **B.** Copy a minimal role (`Basic User`), set `User`/`BU`/`Parent: Child`/`Org` depths, pair `Append` (child) + `Append To` (parent) for Lookups, and use `Direct User (Basic) access level and Team privileges` inheritance
+- **C.** Toggle an existing Dataverse table’s Ownership property from `Organization` to `User or team` in Production without recreating the table
+- **D.** Classic workflows log runs in `System Jobs` (`ProcessSession`), auto-terminate recursive loops exceeding depth limits, and purge succeeded background logs when `Automatically delete completed workflow jobs` is enabled
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `B` (`CSV: 2`)
+
+Correct answer: B (is correct). Set `Member’s privilege inheritance` on the custom Security Role to `Direct User (Basic) access level and Team privileges` so team members inherit User-level ownership rights for their own rows. [PL-200 Configure Microsoft Dataverse — Create and manage custom Security Roles (privilege depth, Append/Append To, inheritance) | Ref: Security roles and privileges (Append vs Append To, inheritance) in Dataverse (https://learn.microsoft.com/en-us/power-platform/admin/security-roles-privileges)]
+
+- **A:** Incorrect — View Designer supports multi-column sorting and cross-table related filter clauses without duplicating columns across tables.
+- **B:** Correct — Populating a Lookup requires BOTH Append on the child record AND Append To on the target parent record.
+- **C:** Incorrect — Table Ownership (`Organization` vs `User or team`) and `Activity table` flags are immutable once the table is provisioned.
+- **D:** Incorrect — Enabling `Automatically delete completed workflow jobs` prevents millions of succeeded `ProcessSession` rows from exhausting Dataverse storage.
+
+</details>
+
+### Q022 (`T2-Q028`) — Configure Microsoft Dataverse [1.12] · *Single-Answer Multiple Choice*
+
+A maker suggests hiding `SSNLastFour` via a client-side `Business Rule` (`Hide Field`) or hiding an entire form tab instead of configuring a `Column Security Profile`. Why is this both insecure and unsupported for tab hiding?
+
+- **A.** `Owner Teams` own rows and hold Security Roles; `Access Team Templates` grant lightweight per-record Read/Write/Share without owning rows; `Microsoft Entra ID Group Teams` map Entra groups dynamically to Security Roles
+- **B.** Copy a minimal role (`Basic User`), set `User`/`BU`/`Parent: Child`/`Org` depths, pair `Append` (child) + `Append To` (parent) for Lookups, and use `Direct User (Basic) access level and Team privileges` inheritance
+- **C.** Use a Dataverse Business Rule to hide an entire Main form `Tab` based on a `Choices (Multi-Select)` column and invoke an external REST webhook
+- **D.** `Column Security Profiles` enforce server-side field masking and Read/Update/Create rights, while `Hierarchy Security` (`Manager` direct-report chain vs `Position` job tree) grants hierarchical access within set depth
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `C` (`CSV: 3`)
+
+Correct answer: C (is correct). Client-side form hiding never blocks Advanced Find, Views, Excel exports, or API queries—and Business Rules cannot hide whole Tabs/Sections or evaluate Multi-Select Choices anyway. [PL-200 Configure Microsoft Dataverse — Configure Column Security Profiles and Hierarchy Security (Manager vs Position) | Ref: Column-level security to control access and Hierarchy security (Manager vs Position) (https://learn.microsoft.com/en-us/power-platform/admin/field-level-security)]
+
+- **A:** Incorrect — Access Team Templates shine when ad-hoc collaborators vary per record, whereas Entra Group Teams automate enterprise RBAC lifecycle at scale.
+- **B:** Incorrect — Populating a Lookup requires BOTH Append on the child record AND Append To on the target parent record.
+- **C:** Correct — Business Rules cannot show/hide whole Tabs or Sections, cannot evaluate Multi-Select Choice columns, and cannot call external HTTP APIs.
+- **D:** Incorrect — Manager hierarchy grants Read/Write/Update/Append/Append To on direct reports and Read-only on indirect reports within the configured depth.
+
+</details>
+
+### Q023 (`T2-Q049`) — Create apps by using Microsoft Power Apps [2.9] · *Single-Answer Multiple Choice*
+
+When sharing the `Verify Insurance Eligibility` Canvas app and its backing `Power Apps (V2)` cloud flow with 220 front-desk clerks, how do you allow clerks to invoke the flow using a central service-account EDI connection without exposing the EDI credentials or flow edit rights?
+
+- **A.** `Lookup View` defines which columns display inside a Lookup field dropdown, `Associated View` defines columns when viewing related child records under the `Related` tab, and `Quick Find View` controls search & indexing
+- **B.** Scheduled `Bulk Record Deletion` jobs run recurring background queries (for example every 7 or 30 days) to purge stale staging, integration-log, or canceled activity rows without custom code or API loops
+- **C.** Sharing an Instant or `Power Apps (V2)` flow via `Run-only users` lets business users invoke the flow (using a pre-bound service connection or their own) without granting `Co-owner` rights to edit logic or view all run history
+- **D.** Set `Apply to each` `Concurrency Control` to `50` while mutating a shared top-level `Set variable` action inside the loop body to calculate per-row totals
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `C` (`CSV: 3`)
+
+Correct answer: C (is correct). Configure `Run-only users` on the cloud flow and set the EDI connector to `Use this connection (<Service Account>)` rather than `Provided by run-only user` or `Co-owner`. [PL-200 Create apps by using Microsoft Power Apps — Call Microsoft Power Automate cloud flows from a Canvas app and handle responses | Ref: Start a Power Automate cloud flow from a canvas app and return values (https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/using-logic-flows)]
+
+- **A:** Incorrect — Customizing the `Lookup View` (top 3 columns show inline in Unified Interface lookup pickers) lets users distinguish identically named parent rows.
+- **B:** Incorrect — Bulk Record Deletion jobs use saved query filter criteria and send optional completion emails while preserving active business records.
+- **C:** Correct — Never make hundreds of end users Co-owners of a flow—Co-owners can modify actions, inspect every user’s payloads, or delete the flow.
+- **D:** Incorrect — Mutating a shared flow variable inside a concurrent `Apply to each` loop causes race-condition overwrites across parallel iterations; use `Compose` or degree `1`.
+
+</details>
+
+### Q024 (`T2-Q077`) — Create and manage logic and process automation [3.9] · *Single-Answer Multiple Choice*
+
+Clinicians must be prevented from saving a `Prescription Order` if `PatientWeightKg <= 0`. Proposed solution: Create only a Scheduled cloud flow running every 15 minutes to scan `Prescription Order` rows and email clinicians whose saved orders have `PatientWeightKg <= 0`. Does this prevent invalid saves at commit time?
+
+- **A.** `Real-time (synchronous)` classic Dataverse workflows execute inside the SQL transaction (`Before` or `After` save) as `Calling User` or `Workflow Owner`, rolling back the entire save when `Stop workflow` = `Canceled`
+- **B.** Dataverse `Business Rules` run server-side (`Entity` scope) or on model-driven forms (`All Forms` / single Main form), but cannot hide Tabs/Sections, evaluate `MultiSelect Choice` columns, or call external connectors
+- **C.** Use a standard asynchronous Power Automate Automated cloud flow (`When a row is added`) to block an invalid user form save before Dataverse commits the transaction
+- **D.** `Dataverse low-code plug-ins` (built in `Dataverse Accelerator` with `Power Fx`) execute server-side as `Instant` Custom APIs or `Automated` `Pre-operation`/`Post-operation` table rules (`ThisRecord`, `NewRecord`, `Error()`)
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `C` (`CSV: 3`)
+
+Correct answer: C (is correct). No—a Scheduled or Automated cloud flow runs asynchronously AFTER invalid rows have already been saved; use an `Entity`-scope Business Rule, Real-time workflow, or Pre-operation low-code plug-in to block invalid saves synchronously. [PL-200 Create and manage logic and process automation — Configure synchronous (Real-time) and asynchronous (Background) classic Dataverse workflows | Ref: Configure real-time (synchronous) and background classic Dataverse workflows (https://learn.microsoft.com/en-us/power-apps/maker/data-platform/overview-realtime-workflows)]
+
+- **A:** Incorrect — Background (asynchronous) classic workflows always run post-commit as Workflow Owner and cannot roll back the triggering save.
+- **B:** Incorrect — Remember Business Rule boundaries: tab/section visibility and MultiSelect Choice logic require client scripts/PCF or server plug-ins.
+- **C:** Correct — Automated cloud flows trigger asynchronously AFTER Dataverse commits the row; blocking a save transactionally requires a synchronous workflow, Business Rule, or pre-operation plug-in.
+- **D:** Incorrect — Automated Pre-operation low-code plug-ins validate or mutate column values inside the Dataverse transaction across every client app and API.
+
+</details>
+
+### Q025 (`T2-Q035`) — Create apps by using Microsoft Power Apps [2.3] · *Multi-Select (Select 2)*
+
+You are customizing Dataverse views for the `Surgical Case` table. Which TWO view capabilities are natively supported in the modern View Designer? Select two.
+
+- **A.** Use a standard asynchronous Power Automate Automated cloud flow (`When a row is added`) to block an invalid user form save before Dataverse commits the transaction
+- **B.** `Lookup View` defines which columns display inside a Lookup field dropdown, `Associated View` defines columns when viewing related child records under the `Related` tab, and `Quick Find View` controls search & indexing
+- **C.** Use a Dataverse Business Rule to hide an entire Main form `Tab` based on a `Choices (Multi-Select)` column and invoke an external REST webhook
+- **D.** Import a Managed Solution using `Update` (instead of `Upgrade`) expecting Dataverse to automatically remove retired columns and forms from Production
+- **E.** `Public` views appear in view pickers; `Quick Find` governs search columns/filters; `Lookup` sets columns in lookup dropdowns; `Associated` renders related grids; `Personal` views are user-saved and shareable
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `B, E` (`CSV: 2,5`)
+
+Correct answers: B and E (are correct). Public views support adding columns from related parent Lookup tables (`N:1`) plus multi-column sorting and cross-table filters, while `Lookup` and `Associated` views control lookup dropdowns and Related-tab grids. [PL-200 Create apps by using Microsoft Power Apps — Create and configure Dataverse Views (Public, Quick Find, Lookup, Associated, Personal) | Ref: Create and edit public, system, Quick Find, Lookup, and Associated views (https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/create-edit-views)]
+
+- **A:** Incorrect — Automated cloud flows trigger asynchronously AFTER Dataverse commits the row; blocking a save transactionally requires a synchronous workflow, Business Rule, or pre-operation plug-in.
+- **B:** Correct — Customizing the `Lookup View` (top 3 columns show inline in Unified Interface lookup pickers) lets users distinguish identically named parent rows.
+- **C:** Incorrect — Business Rules cannot show/hide whole Tabs or Sections, cannot evaluate Multi-Select Choice columns, and cannot call external HTTP APIs.
+- **D:** Incorrect — Managed `Update` adds and modifies components but NEVER deletes removed components; only `Upgrade` (`Stage for upgrade` / `Apply upgrade`) removes deleted items.
+- **E:** Correct — View Designer supports multi-column sorting and cross-table related filter clauses without duplicating columns across tables.
+
+</details>
+
+### Q026 (`T2-Q051`) — Create apps by using Microsoft Power Apps [2.10] · *Single-Answer Multiple Choice*
+
+After configuring custom `List` OData feed settings and `Basic Form Metadata` field overrides inside the `Power Pages Management` model-driven app, why must a Functional Consultant select `Sync` inside Power Pages Design Studio before editing pages?
+
+- **A.** Business Process Flows support up to `30 stages`, up to `5 related tables`, `If/Else` conditional branching from columns in the immediately preceding stage, role-based access, and `Order Process Flow` default priority
+- **B.** `If(Confirm("Dispatch this technician now?"), Patch(WorkOrders, Self.Selected.Item, {Status: Status.Dispatched}))`
+- **C.** Add custom `Commission Split %` and `Effective Date` columns directly onto the hidden system intersect table of a native `N:N` relationship
+- **D.** Portal metadata edited inside the `Power Pages Management` model-driven app (such as advanced Basic Form Metadata, List filters, or Redirects) requires selecting `Sync` in Power Pages Design Studio to pull changes
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `D` (`CSV: 4`)
+
+Correct answer: D (is correct). Design Studio caches website configuration; clicking `Sync` pulls metadata changes made in the `Power Pages Management` app so subsequent Studio saves do not overwrite or miss them. [PL-200 Create apps by using Microsoft Power Apps — Configure Power Pages webpages, Basic Forms, Lists, navigation, and Design Studio workspaces | Ref: Create and customize webpages, Basic Forms, Lists, and navigation in Power Pages (https://learn.microsoft.com/en-us/power-pages/getting-started/design-studio)]
+
+- **A:** Incorrect — When multiple BPFs apply to a table, the highest-ranked BPF in `Order Process Flow` accessible to the user’s Security Role opens by default.
+- **B:** Incorrect — `Confirm(Message)` opens a native confirmation dialog in Model-driven Modern Commanding or Custom Pages and returns `true` only when confirmed.
+- **C:** Incorrect — Native N:N system intersect tables cannot hold custom columns, forms, or workflows; create a manual intersect table with two 1:N relationships instead.
+- **D:** Correct — Selecting `Sync` reconciles Dataverse website configuration tables with Design Studio before `Preview` clears the server cache.
+
+</details>
+
+### Q027 (`T2-Q006`) — Configure Microsoft Dataverse [1.3] · *Single-Answer Multiple Choice*
+
+When a `Patient Referral` record is deleted during test-data cleanup, every child `Triage Checklist Item` belonging exclusively to that referral should also be deleted automatically, and sharing or reassigning the referral should cascade to all checklist items. Which relationship behavior provides this out of the box?
+
+- **A.** `Set()` sets global variables, `UpdateContext()` sets screen variables, `ClearCollect()` caches local rows, delegable `Filter`/`LookUp` push queries server-side past 500/2,000 rows, and `IfError()` traps runtime errors
+- **B.** Toggle an existing Dataverse table’s Ownership property from `Organization` to `User or team` in Production without recreating the table
+- **C.** Copying Production to `Sandbox` offers `Full Copy` (all rows + schema) vs `Minimal Copy` (schema/customizations ONLY—excluding business data and disabling background flows/mailboxes), alongside system Backups and DLP policies
+- **D.** `Parental` cascades all actions (`Assign`, `Share`, `Delete`, `Reparent`); `Referential` clears lookups on delete; `Referential, Restrict Delete` blocks parent deletion when children exist; `Custom` tunes each rule
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `D` (`CSV: 4`)
+
+Correct answer: D (is correct). A `Parental` `1:N` relationship cascades `Assign`, `Share`, `Unshare`, `Reparent`, and `Delete` operations from the parent row to all child rows. [PL-200 Configure Microsoft Dataverse — Configure table relationship behaviors and cascading rules | Ref: Configure table relationship behavior and cascading rules in Dataverse (https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-entity-lookup#table-relationship-behavior)]
+
+- **A:** Incorrect — Non-delegable formulas trigger blue delegation warnings in App Checker and silently cap processed rows at the client limit (500 default, 2,000 max).
+- **B:** Incorrect — Table Ownership (`Organization` vs `User or team`) and `Activity table` flags are immutable once the table is provisioned.
+- **C:** Incorrect — `Minimal Copy` lets teams debug schema/forms fast without copying gigabytes of confidential rows or emailing live customers.
+- **D:** Correct — Choosing Custom cascading with Assign = Cascade Active reassigns only open child records, while Restrict Delete prevents deleting parents with active children.
+
+</details>
+
+### Q028 (`T2-Q003`) — Configure Microsoft Dataverse [1.1] · *Multi-Select (Select 2)*
+
+You are comparing `Custom Activity` tables, `Standard` tables with Timeline notes/queues, and `Virtual` tables for a patient-care intake solution. Which TWO architectural statements are accurate? Select two.
+
+- **A.** Toggle an existing Dataverse table’s Ownership property from `Organization` to `User or team` in Production without recreating the table
+- **B.** `Activity` tables inherit `Subject`, `Regarding`, and `Timeline` support with shared `Activity` privileges, whereas `Virtual` tables project live external OData/SQL data without local row storage
+- **C.** Use a Dataverse Business Rule to hide an entire Main form `Tab` based on a `Choices (Multi-Select)` column and invoke an external REST webhook
+- **D.** Enabling `Enable attachments (notes and files)`, `Leverage Quick-Create form`, `Can be added to a queue`, and `Track changes` activates Timeline notes, Quick Create, Queues, and delta sync
+- **E.** Import a Managed Solution using `Update` (instead of `Upgrade`) expecting Dataverse to automatically remove retired columns and forms from Production
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `B, D` (`CSV: 2,4`)
+
+Correct answers: B and D (are correct). Custom `Activity` tables share unified `Activity` privileges and `Timeline` support while `Virtual` tables project external data without local storage, and enabling `Queues` or `Attachments` activates triage routing and Timeline notes. [PL-200 Configure Microsoft Dataverse — Create or modify standard, activity, or virtual tables and configure table properties | Ref: Create and edit tables in Microsoft Dataverse (Standard, Activity, Virtual & Ownership) (https://learn.microsoft.com/en-us/power-apps/maker/data-platform/entity-overview)]
+
+- **A:** Incorrect — Table Ownership (`Organization` vs `User or team`) and `Activity table` flags are immutable once the table is provisioned.
+- **B:** Correct — Custom Activity tables share the unified Activity security privilege bucket and appear natively in Timeline walls across related tables.
+- **C:** Incorrect — Business Rules cannot show/hide whole Tabs or Sections, cannot evaluate Multi-Select Choice columns, and cannot call external HTTP APIs.
+- **D:** Correct — Functional Consultants toggle table-level flags carefully—several flags (such as queues or notes/attachments) cannot be disabled once saved.
+- **E:** Incorrect — Managed `Update` adds and modifies components but NEVER deletes removed components; only `Upgrade` (`Stage for upgrade` / `Apply upgrade`) removes deleted items.
+
+</details>
+
+### Q029 (`T2-Q078`) — Create and manage logic and process automation [3.10] · *Single-Answer Multiple Choice*
+
+Where in Power Platform Admin Center / Advanced Settings should a Functional Consultant inspect failed classic background workflow runs, stack messages, and `Waiting for resources` queues—and how do you keep succeeded runs from filling storage?
+
+- **A.** Use a Dataverse Business Rule to hide an entire Main form `Tab` based on a `Choices (Multi-Select)` column and invoke an external REST webhook
+- **B.** `Modern Commanding` customizes `Main grid`, `Main form`, `Subgrid`, and `Associated` command bars using `Power Fx` (`Patch`, `Notify`, `Confirm`, `Navigate`, `Self.Selected.Item`) inside a managed `Component Library`
+- **C.** `Environment Variables` (`Text`, `Decimal`, `JSON`, `Data Source`, Azure Key Vault `Secret`) externalize stage settings; removing `Current Value` before export lets `Power Platform pipelines` or imports bind target values
+- **D.** Classic workflows log runs in `System Jobs` (`ProcessSession`), auto-terminate recursive loops exceeding depth limits, and purge succeeded background logs when `Automatically delete completed workflow jobs` is enabled
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `D` (`CSV: 4`)
+
+Correct answer: D (is correct). Inspect `System Jobs` (`ProcessSession`) filtered to the workflow, and check `Automatically delete completed workflow jobs (to save disk space)` on the workflow definition so only failed/in-progress jobs persist. [PL-200 Create and manage logic and process automation — Troubleshoot classic workflows (System Jobs, loops) and manage workflow job log retention | Ref: Monitor and manage background and real-time classic workflow processes and logs (https://learn.microsoft.com/en-us/power-apps/maker/data-platform/monitor-manage-processes)]
+
+- **A:** Incorrect — Business Rules cannot show/hide whole Tabs or Sections, cannot evaluate Multi-Select Choice columns, and cannot call external HTTP APIs.
+- **B:** Incorrect — Power Fx `Visible` formulas evaluate `Self.Selected.Item` columns or `CountRows(Self.Selected.AllItems)` without writing Ribbon XML.
+- **C:** Incorrect — Combining Environment Variables, Connection References, and Power Platform pipelines eliminates post-deployment manual edits in Production.
+- **D:** Correct — Enabling `Automatically delete completed workflow jobs` prevents millions of succeeded `ProcessSession` rows from exhausting Dataverse storage.
+
+</details>
+
+### Q030 (`T2-Q066`) — Create and manage logic and process automation [3.4] · *Single-Answer Multiple Choice*
+
+In a cloud flow calculating statutory prior-authorization SLA deadlines (`7 calendar days` after `CreatedOn`), which WDL date function adds 7 days and formats the result as ISO `yyyy-MM-dd`?
+
+- **A.** Use a Dataverse Business Rule to hide an entire Main form `Tab` based on a `Choices (Multi-Select)` column and invoke an external REST webhook
+- **B.** Modernized Business Units decouple a user’s owning BU from Security Role assignments, letting roles assigned across sibling Business Units grant matrix data access without moving the user
+- **C.** `Clone a Patch` creates a lightweight hotfix solution (`Major.Minor.Build.Revision` increment) while locking the base solution until `Clone to Solution` rolls all patches into a clean consolidated version
+- **D.** WDL expressions transform payloads safely—using `coalesce()` for null fallbacks, `empty()` for blank checks, `formatDateTime()` / `addDays()` for dates, `length()` for counts, and `@equals(...)` `Trigger Conditions`
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `D` (`CSV: 4`)
+
+Correct answer: D (is correct). Using `addDays(triggerOutputs()?['body/createdon'], 7, 'yyyy-MM-dd')` (alongside `coalesce`/`empty` guards) computes the target SLA date cleanly in WDL. [PL-200 Create and manage logic and process automation — Implement Dynamic Content, WDL expressions, and Trigger Conditions | Ref: Reference guide for Workflow Definition Language expressions in Power Automate (https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference)]
+
+- **A:** Incorrect — Business Rules cannot show/hide whole Tabs or Sections, cannot evaluate Multi-Select Choice columns, and cannot call external HTTP APIs.
+- **B:** Incorrect — Enabling Modernized Business Units lets matrixed specialists access multiple regional BUs while keeping their primary home BU for record ownership.
+- **C:** Incorrect — While a parent Unmanaged solution has child Patches, components cannot be added/removed in the parent until `Clone to Solution` merges them.
+- **D:** Correct — Trigger Conditions filter events before a flow run starts, conserving API requests and keeping Run History clean.
+
+</details>
+
+### Q031 (`T2-Q070`) — Create and manage logic and process automation [3.6] · *Single-Answer Multiple Choice*
+
+Five `Send HL7 Referral` cloud flow runs failed overnight while a hospital firewall maintenance window blocked outbound HTTPS for 12 minutes, and the firewall is now restored. How can an administrator reprocess those exact 5 failed payloads without asking clerks to re-edit Dataverse rows?
+
+- **A.** `Rollup` columns aggregate child `1:N` rows asynchronously via system jobs (default every 12 hours, configurable down to 1 hour minimum, or refreshed manually on the form), whereas `Power Fx Formula` columns evaluate live
+- **B.** Toggle an existing Dataverse table’s Ownership property from `Organization` to `User or team` in Production without recreating the table
+- **C.** A `Quick View` form displays read-only columns/subgrids from a parent Lookup table on a child Main form, whereas a `Form Component Control` embeds the parent Lookup table’s Main form for direct inline editing
+- **D.** `Flow Checker` catches design/DLP issues; `Static Result` testing mocks action outputs or errors without live calls; `28-day Run History` enables payload inspection and `Resubmit`; `Run-only users` share manual flows safely
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `D` (`CSV: 4`)
+
+Correct answer: D (is correct). Open the flow’s `28-day Run History`, inspect the failed runs, and select `Resubmit` on each failed trigger instance (being mindful not to duplicate already-completed actions prior to the failure step). [PL-200 Create and manage logic and process automation — Manage, share (Run-only vs Co-owner), test with static results, and troubleshoot cloud flows | Ref: Manage, share, test with static results, and troubleshoot cloud flows (https://learn.microsoft.com/en-us/power-automate/fix-flow-failures)]
+
+- **A:** Incorrect — Because Rollup columns run asynchronously on a scheduled system job (minimum 1-hour recurrence), totals do not recalculate instantaneously on child save unless manually refreshed.
+- **B:** Incorrect — Table Ownership (`Organization` vs `User or team`) and `Activity table` flags are immutable once the table is provisioned.
+- **C:** Incorrect — Choose Quick View when parent columns must stay read-only; choose Form Component Control when users must edit parent Lookup columns without navigating away.
+- **D:** Correct — Static Result testing lets Functional Consultants verify `Catch` Scope error branches without forcing real downstream system outages.
+
+</details>
+
+### Q032 (`T2-Q001`) — Configure Microsoft Dataverse [1.1] · *Single-Answer Multiple Choice*
+
+A clinical systems analyst needs a reference table `ICD10 Diagnosis Code` shared identically by every clinic user across the organization with zero need for user, team, or Business Unit row ownership. Which table `Ownership` type should you select when creating the table?
+
+- **A.** Classic workflows log runs in `System Jobs` (`ProcessSession`), auto-terminate recursive loops exceeding depth limits, and purge succeeded background logs when `Automatically delete completed workflow jobs` is enabled
+- **B.** Toggle an existing Dataverse table’s Ownership property from `Organization` to `User or team` in Production without recreating the table
+- **C.** Table Ownership (`User or team` vs `Organization`) and `Activity table` status are permanent creation-time settings; `User or team` enables Business Unit, Team, and User row security
+- **D.** Power Pages Design Studio provides `Pages`, `Styling`, `Data`, and `Set up` workspaces, surfacing Dataverse views via `Lists` and Dataverse forms via `Basic Forms` (`Insert`, `Edit`, `ReadOnly` modes)
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `C` (`CSV: 3`)
+
+Correct answer: C (is correct). Selecting `Organization` ownership at creation time fits global reference tables that never require User, Team, or Business Unit row-level ownership. [PL-200 Configure Microsoft Dataverse — Create or modify standard, activity, or virtual tables and configure table properties | Ref: Create and edit tables in Microsoft Dataverse (Standard, Activity, Virtual & Ownership) (https://learn.microsoft.com/en-us/power-apps/maker/data-platform/entity-overview)]
+
+- **A:** Incorrect — Enabling `Automatically delete completed workflow jobs` prevents millions of succeeded `ProcessSession` rows from exhausting Dataverse storage.
+- **B:** Incorrect — Table Ownership (`Organization` vs `User or team`) and `Activity table` flags are immutable once the table is provisioned.
+- **C:** Correct — Once a Dataverse table is created, Ownership type and Activity status cannot be changed; choose User or team whenever row-level ownership or BU security is needed.
+- **D:** Incorrect — Metadata changes made in the Power Pages Management model-driven app require selecting `Sync` in Design Studio before previewing.
+
+</details>
+
+### Q033 (`T2-Q056`) — Create apps by using Microsoft Power Apps [2.12] · *Single-Answer Multiple Choice*
+
+For large partner `Imaging Centers` (`Account`), any authenticated technologist employed under that `Imaging Center` `Account` must view and upload reports on `Diagnostic Order` rows assigned to their parent `Account`. Complete the Power Pages security setting: ____.
+
+- **A.** `Table Permission` with `Access Type = Account` linked to the `Account` lookup relationship on `Warranty Claim`
+- **B.** `Table Permission` with `Access Type = Contact` linked to the `Referring Physician (Contact)` lookup relationship
+- **C.** `If(NewRecord.CreditHold = true && NewRecord.OrderTotal > 0, Error("Cannot submit order while account is on Credit Hold."))`
+- **D.** `formatDateTime(coalesce(triggerOutputs()?['body/orc_alternatedate'], triggerOutputs()?['body/orc_primarydate']), 'yyyy-MM-dd')`
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `A` (`CSV: 1`)
+
+Correct answer: A (is correct). Configure a `Table Permission` with `Access Type = Account` linked to the `Assigned Imaging Center (Account)` lookup relationship. [PL-200 Create apps by using Microsoft Power Apps — Configure Power Pages website security (Table Permissions, Web Roles, Page Access Rules) and authentication | Ref: Configure Table Permissions, Web Roles, Page Access Rules, templates, and authentication in Power Pages (https://learn.microsoft.com/en-us/power-pages/security/security-overview)]
+
+- **A:** Correct — In Power Pages, `Access Type = Account` lets any authenticated Contact see/edit rows associated with their own parent `Account` (`parentcustomerid`) company.
+- **B:** Incorrect — In Power Pages, `Access Type = Contact` restricts each signed-in external user strictly to Dataverse rows linked to their own `Contact` record.
+- **C:** Incorrect — In an Automated `Pre-operation` Dataverse low-code plug-in, comparing `NewRecord` values and calling `Error(...)` aborts the transaction with a clear user message.
+- **D:** Incorrect — `coalesce(arg1, arg2)` returns the first non-null date so `formatDateTime(...)` never fails on a null optional Dataverse column.
+
+</details>
+
+### Q034 (`T2-Q079`) — Create and manage logic and process automation [3.10] · *Single-Answer Multiple Choice*
+
+When troubleshooting a `Real-time (synchronous)` classic workflow versus a `Background (asynchronous)` classic workflow, how does error visibility differ for an interactive model-driven form user?
+
+- **A.** `Real-time (synchronous)` classic Dataverse workflows execute inside the SQL transaction (`Before` or `After` save) as `Calling User` or `Workflow Owner`, rolling back the entire save when `Stop workflow` = `Canceled`
+- **B.** Assume enabling out-of-the-box Dataverse SharePoint Document Management automatically enforces Dataverse row-level Security Roles inside SharePoint Online libraries
+- **C.** Responsive Canvas apps turn off `Scale to fit` and nest `Horizontal`/`Vertical` auto-layout containers alongside shared `Component Libraries` exposing custom input/output properties across apps
+- **D.** `Owner Teams` own rows and hold Security Roles; `Access Team Templates` grant lightweight per-record Read/Write/Share without owning rows; `Microsoft Entra ID Group Teams` map Entra groups dynamically to Security Roles
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `A` (`CSV: 1`)
+
+Correct answer: A (is correct). When a Real-time workflow fails or hits `Stop workflow = Canceled`, the transaction rolls back immediately with an on-screen error dialog, whereas Background workflow failures appear asynchronously in `System Jobs`. [PL-200 Create and manage logic and process automation — Troubleshoot classic workflows (System Jobs, loops) and manage workflow job log retention | Ref: Monitor and manage background and real-time classic workflow processes and logs (https://learn.microsoft.com/en-us/power-apps/maker/data-platform/monitor-manage-processes)]
+
+- **A:** Correct — Background (asynchronous) classic workflows always run post-commit as Workflow Owner and cannot roll back the triggering save.
+- **B:** Incorrect — Out-of-the-box SharePoint Document Management creates folder links only; SharePoint permissions are NOT synchronized automatically from Dataverse row ACLs.
+- **C:** Incorrect — Component Libraries provide centralized ALM versioning for shared headers, menus, and dialogs across multiple Canvas apps.
+- **D:** Incorrect — Access Team Templates shine when ad-hoc collaborators vary per record, whereas Entra Group Teams automate enterprise RBAC lifecycle at scale.
+
+</details>
+
+### Q035 (`T2-Q087`) — Manage environments [4.2] · *Single-Answer Multiple Choice*
+
+Two vendor consulting teams accidentally left their solutions bound to the `Default Publisher` (`new_` prefix), causing schema-name collisions (`new_status`) and option-set integer value clashes (`100000000`) when importing into UAT. How do you prevent this?
+
+- **A.** Toggle an existing Dataverse table’s Ownership property from `Organization` to `User or team` in Production without recreating the table
+- **B.** Classic workflows log runs in `System Jobs` (`ProcessSession`), auto-terminate recursive loops exceeding depth limits, and purge succeeded background logs when `Automatically delete completed workflow jobs` is enabled
+- **C.** Create custom Solutions under a dedicated `Solution Publisher` (custom prefix instead of `new_`) using `Segmented Solutions`—adding only modified forms, views, and columns rather than full monolithic table metadata
+- **D.** `orc_PrimaryPolicyId($select=orc_policynumber,orc_deductible)`
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `C` (`CSV: 3`)
+
+Correct answer: C (is correct). Assign each vendor a distinct custom `Solution Publisher` with its own unique customization prefix (such as `slb_` and `pin_`) and distinct `Option Value Prefix` number range before creating components. [PL-200 Manage environments — Create and manage Dataverse Solutions (custom Publishers, segmented tables, patches/clones) | Ref: Solutions overview, custom publishers, segmented tables, and patches in Power Platform (https://learn.microsoft.com/en-us/power-platform/alm/solution-concepts-alm)]
+
+- **A:** Incorrect — Table Ownership (`Organization` vs `User or team`) and `Activity table` flags are immutable once the table is provisioned.
+- **B:** Incorrect — Enabling `Automatically delete completed workflow jobs` prevents millions of succeeded `ProcessSession` rows from exhausting Dataverse storage.
+- **C:** Correct — `Clone a Patch` ships targeted minor-version hotfixes (`1.2.1.0`) that later roll up cleanly via `Clone to Solution` (`1.3.0.0`).
+- **D:** Incorrect — Configuring `Expand Query` on Dataverse `List rows` retrieves parent Lookup columns (`$select=...`) in the same single API call without an extra `Get a row by ID` inside a loop.
+
+</details>
+
+### Q036 (`T2-Q036`) — Create apps by using Microsoft Power Apps [2.4] · *Single-Answer Multiple Choice*
+
+A `Schedule Implant Vendor` modern command button opens a `Custom Page` centered modal dialog passing the active `SurgicalCase` GUID in `recordId`. Complete the Power Fx formula inside the Custom Page to load that specific record: ____.
+
+- **A.** `formatDateTime(coalesce(triggerOutputs()?['body/orc_alternatedate'], triggerOutputs()?['body/orc_primarydate']), 'yyyy-MM-dd')`
+- **B.** `Developer` tab → `XML Mapping Pane` (`urn:microsoft-crm/document-template/...`) → insert `Repeating` content control around table row
+- **C.** `Table Permission` with `Access Type = Contact` linked to the `Referring Physician (Contact)` lookup relationship
+- **D.** `LookUp(WorkOrders, WorkOrder = GUID(Param("recordId")))`
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `D` (`CSV: 4`)
+
+Correct answer: D (is correct). `LookUp(WorkOrders, WorkOrder = GUID(Param("recordId")))` (using `GUID(Param("recordId"))`) parses the string parameter passed by `Navigate` into a typed Dataverse GUID for `LookUp`. [PL-200 Create apps by using Microsoft Power Apps — Configure Custom Pages in model-driven apps (responsive containers & Param("recordId")) | Ref: Overview of custom pages for model-driven apps (https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/model-app-page-overview)]
+
+- **A:** Incorrect — `coalesce(arg1, arg2)` returns the first non-null date so `formatDateTime(...)` never fails on a null optional Dataverse column.
+- **B:** Incorrect — Microsoft Word Templates bind Dataverse columns via the `XML Mapping Pane` using `Plain Text` controls for fields and `Repeating` content controls for `1:N` child line items.
+- **C:** Incorrect — In Power Pages, `Access Type = Contact` restricts each signed-in external user strictly to Dataverse rows linked to their own `Contact` record.
+- **D:** Correct — When a model-driven command opens a Custom Page passing record context, `GUID(Param("recordId"))` converts the passed string ID into a typed GUID for `LookUp`.
+
+</details>
+
+### Q037 (`T2-Q045`) — Create apps by using Microsoft Power Apps [2.8] · *Single-Answer Multiple Choice*
+
+Mobile home-health nurses select their `District` before driving into rural clinics and cache active `Valves` / oxygen-regulator inspection rows into a local collection `colOfflineValves`. Complete the Power Fx `OnSelect` formula: ____.
+
+- **A.** `Developer` tab → `XML Mapping Pane` (`urn:microsoft-crm/document-template/...`) → insert `Repeating` content control around table row
+- **B.** `formatDateTime(coalesce(triggerOutputs()?['body/orc_alternatedate'], triggerOutputs()?['body/orc_primarydate']), 'yyyy-MM-dd')`
+- **C.** `ClearCollect(colOfflineValves, Filter(Valves, District = ddDistrict.Selected.Value))`
+- **D.** `Select columns`: `orc_permitstatus,orc_district` and `Filter rows`: `orc_permitstatus eq 100000002 and statecode eq 0`
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `C` (`CSV: 3`)
+
+Correct answer: C (is correct). `ClearCollect(colOfflineValves, Filter(Valves, District = ddDistrict.Selected.Value))` clears stale items and populates `colOfflineValves` via a delegable `Filter(...)` call. [PL-200 Create apps by using Microsoft Power Apps — Configure Canvas navigation, Power Fx formulas, variables, collections, delegation, and error handling | Ref: Canvas app formulas, variables, collections, delegation, and IfError / App.OnError handling (https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/delegation-overview)]
+
+- **A:** Incorrect — Microsoft Word Templates bind Dataverse columns via the `XML Mapping Pane` using `Plain Text` controls for fields and `Repeating` content controls for `1:N` child line items.
+- **B:** Incorrect — `coalesce(arg1, arg2)` returns the first non-null date so `formatDateTime(...)` never fails on a null optional Dataverse column.
+- **C:** Correct — `ClearCollect(Collection, Table)` clears any prior cached items and loads the delegable `Filter(...)` result into an in-memory Canvas collection.
+- **D:** Incorrect — On the Dataverse connector, `Select columns` restricts which modified fields fire the trigger (or return in `List rows`) while `Filter rows` applies server-side OData `$filter`.
+
+</details>
+
+### Q038 (`T2-Q069`) — Create and manage logic and process automation [3.5] · *Single-Answer Multiple Choice*
+
+When an `Attending Physician` completes onboarding, a cloud flow must associate their `Physician` row with three `Hospital Privilege` rows across a native `N:N` relationship. Complete the Dataverse connector step: ____.
+
+- **A.** `formatDateTime(coalesce(triggerOutputs()?['body/orc_alternatedate'], triggerOutputs()?['body/orc_primarydate']), 'yyyy-MM-dd')`
+- **B.** `Table Permission` with `Access Type = Contact` linked to the `Referring Physician (Contact)` lookup relationship
+- **C.** Dataverse `Relate rows` action using the `N:N` relationship name and target row `@odata.id` (`OData Id`)
+- **D.** `If(Confirm("Dispatch this technician now?"), Patch(WorkOrders, Self.Selected.Item, {Status: Status.Dispatched}))`
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `C` (`CSV: 3`)
+
+Correct answer: C (is correct). Use the Dataverse `Relate rows` action passing the `N:N` relationship schema name and the target record’s `@odata.id` (`OData Id`). [PL-200 Create and manage logic and process automation — Work with the Microsoft Dataverse connector (Select columns, Filter rows, Expand Query, Relate rows, child flows) | Ref: Use the Microsoft Dataverse connector in Power Automate cloud flows (https://learn.microsoft.com/en-us/power-automate/dataverse/overview)]
+
+- **A:** Incorrect — `coalesce(arg1, arg2)` returns the first non-null date so `formatDateTime(...)` never fails on a null optional Dataverse column.
+- **B:** Incorrect — In Power Pages, `Access Type = Contact` restricts each signed-in external user strictly to Dataverse rows linked to their own `Contact` record.
+- **C:** Correct — Associating two existing Dataverse rows across a native `N:N` (or `1:N`) relationship in Power Automate uses the `Relate rows` action with the target record’s `OData Id`.
+- **D:** Incorrect — `Confirm(Message)` opens a native confirmation dialog in Model-driven Modern Commanding or Custom Pages and returns `true` only when confirmed.
+
+</details>
+
+### Q039 (`T2-Q057`) — Create and manage logic and process automation [3.1] · *Single-Answer Multiple Choice*
+
+Clinicians need a visual stage bar across the top of `Patient Referral` (`Intake` -> `Clinical Triage` -> `Insurance Auth` -> `Scheduled`) PLUS an automated overnight scheduled summary digest emailed via Office 365 Outlook at 06:00 daily. Which two automation types should you combine?
+
+- **A.** `Open in Excel Online` edits rows inline inside the browser; `Dynamic Worksheet` / `Dynamic PivotTable` refreshes live Dataverse data honoring each viewer’s Security Roles; `Static Worksheet` exports a fixed point-in-time copy
+- **B.** `Automated`/`Instant`/`Scheduled` cloud flows run async cross-service integrations; `Business Process Flows` guide UI stages; `Real-time classic workflows` or `Low-code plug-ins` enforce synchronous transactional rollbacks
+- **C.** Model-driven `Sitemap` navigation organizes `Areas`, `Groups`, and `Subareas` pointing to Dataverse tables, Dashboards, Custom Pages, or Web Resources—automatically hiding table subareas when a user lacks `Read` privilege
+- **D.** Use a standard asynchronous Power Automate Automated cloud flow (`When a row is added`) to block an invalid user form save before Dataverse commits the transaction
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `B` (`CSV: 2`)
+
+Correct answer: B (is correct). Build a `Business Process Flow` for the interactive stage bar on `Patient Referral` and a `Scheduled cloud flow` (`Recurrence` trigger) for the 06:00 daily email digest. [PL-200 Create and manage logic and process automation — Select cloud flow types, classic Dataverse workflows, and Business Process Flows per use case | Ref: Compare cloud flows, Business Process Flows, and classic Dataverse workflows (https://learn.microsoft.com/en-us/power-automate/flow-types)]
+
+- **A:** Incorrect — Dynamic Excel exports require recipients to have Dataverse access and appropriate table Read privileges; Static exports embed the exporter’s snapshot rows directly.
+- **B:** Correct — Asynchronous cloud flows run after database commit and cannot abort an invalid user save—use synchronous workflows or pre-operation plug-ins instead.
+- **C:** Incorrect — Table-bound Sitemap subareas automatically honor Dataverse Security Role Read privileges without custom JavaScript.
+- **D:** Incorrect — Automated cloud flows trigger asynchronously AFTER Dataverse commits the row; blocking a save transactionally requires a synchronous workflow, Business Rule, or pre-operation plug-in.
+
+</details>
+
+### Q040 (`T2-Q033`) — Create apps by using Microsoft Power Apps [2.2] · *Single-Answer Multiple Choice*
+
+On `Surgical Case`, you also need a `Select Primary Anesthesiologist` Lookup picker that displays ONLY `Physician` rows whose `HospitalPrivilegeSite` matches the `SurgicalFacility` selected on the same form. Which native Lookup property achieves this without JavaScript?
+
+- **A.** Toggle an existing Dataverse table’s Ownership property from `Organization` to `User or team` in Production without recreating the table
+- **B.** A `Quick View` form displays read-only columns/subgrids from a parent Lookup table on a child Main form, whereas a `Form Component Control` embeds the parent Lookup table’s Main form for direct inline editing
+- **C.** `Dataverse low-code plug-ins` (built in `Dataverse Accelerator` with `Power Fx`) execute server-side as `Instant` Custom APIs or `Automated` `Pre-operation`/`Post-operation` table rules (`ThisRecord`, `NewRecord`, `Error()`)
+- **D.** `Alternate Keys` (on `Single Line of Text`, `Whole Number`, or `Decimal`/`Date` columns) enforce database-level uniqueness and allow Dataflows, APIs, and imports to upsert/lookup rows using natural business keys instead of GUIDs
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `B` (`CSV: 2`)
+
+Correct answer: B (is correct). Enable `Filter by related rows` (`Related Records Filtering`) on the `Primary Anesthesiologist` Lookup control in the form designer (while using `Quick View` whenever read-only parent details are needed). [PL-200 Create apps by using Microsoft Power Apps — Use specialized controls in the modern form designer (Editable Grid, Form Component Control, Subgrids) | Ref: Use modern controls, Editable Grids, Subgrids, and Form Component controls on forms (https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/form-component-control)]
+
+- **A:** Incorrect — Table Ownership (`Organization` vs `User or team`) and `Activity table` flags are immutable once the table is provisioned.
+- **B:** Correct — Choose Quick View when parent columns must stay read-only; choose Form Component Control when users must edit parent Lookup columns without navigating away.
+- **C:** Incorrect — Automated Pre-operation low-code plug-ins validate or mutate column values inside the Dataverse transaction across every client app and API.
+- **D:** Incorrect — Creating an Alternate Key builds a unique index asynchronously in Dataverse; verify its status reaches `Active` in the solution before running natural-key upserts.
+
+</details>
+
+### Q041 (`T2-Q054`) — Create apps by using Microsoft Power Apps [2.12] · *Ordered Sequence (Multiple Choice)*
+
+Clearwater enabled `Enable Table Permissions` on its `Submit Specialist Referral` Basic Form, and external physicians now see an access-denied banner because Table Permissions and Web Roles are not yet wired. Put the remaining security steps in exact order.
+
+- **A.** Share the internal Model-Driven App URL publicly → Disable SSL certificates in Set up workspace → Hardcode an API admin token in client JavaScript → Skip Page Access Rules
+- **B.** Assign Dataverse internal Security Roles directly to anonymous web visitors → Skip Web Roles entirely → Add a Business Rule on Form load → Restart the portal without syncing
+- **C.** Enable Table Permissions on the Power Pages Basic Form or List → Create a Table Permission scoped to Contact/Account with required privileges → Assign it to a custom Web Role → Associate authenticated Contacts with that Web Role
+- **D.** Leave Enable Table Permissions unchecked → Assign Global Delete privilege to the Anonymous Users Web Role → Enable deprecated local password login → Publish to internet
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `C` (`CSV: 3`)
+
+Correct answer: C (is correct). Confirm `Enable Table Permissions` on the Form/List, create the scoped `Table Permission` (`Contact`/`Account`), assign it to a custom `Web Role`, and associate authenticated Physician Contacts with that Web Role. [PL-200 Create apps by using Microsoft Power Apps — Configure Power Pages website security (Table Permissions, Web Roles, Page Access Rules) and authentication | Ref: Configure Table Permissions, Web Roles, Page Access Rules, templates, and authentication in Power Pages (https://learn.microsoft.com/en-us/power-pages/security/security-overview)]
+
+- **A:** Incorrect — Exposing admin tokens in browser JavaScript or sharing internal model-driven URLs violates Power Pages security architecture.
+- **B:** Incorrect — External Power Pages Contacts do not use internal Dataverse Security Roles; portal authorization uses Table Permissions mapped to Web Roles.
+- **C:** Correct — Power Pages secures Dataverse Lists/Forms by enabling Table Permissions on the component, defining row-access scope (Global/Contact/Account/Parent/Self), and binding to Web Roles.
+- **D:** Incorrect — Granting Global Delete to Anonymous Users exposes every Dataverse row to public deletion, and Microsoft recommends external IdPs (Entra External ID) over local auth.
+
+</details>
+
+## Case Study Vignette — MedBridge Referral Portal
+
+> [Scenario: MedBridge Referral Portal lets external referring physicians submit multi-page clinical referrals on Microsoft Power Pages. Step 1 captures patient demographics, Step 2 branches conditionally to Cardiology or Oncology questions based on Specialty, and external physicians authenticate via Microsoft Entra External ID while seeing only referrals they submitted (`Contact` scope).]
+
+### Q042 (`T2-Q050`) — Create apps by using Microsoft Power Apps [2.10] · *Single-Answer Multiple Choice*
+
+Case study — MedBridge Referral Portal: External referring physicians signing into MedBridge’s Power Pages portal need a page displaying a read-only summary form of a submitted `Patient Referral` when clicking a row in their `My Referrals` grid. Which components should you configure in Design Studio?
+
+- **A.** Power Pages Design Studio provides `Pages`, `Styling`, `Data`, and `Set up` workspaces, surfacing Dataverse views via `Lists` and Dataverse forms via `Basic Forms` (`Insert`, `Edit`, `ReadOnly` modes)
+- **B.** Copying Production to `Sandbox` offers `Full Copy` (all rows + schema) vs `Minimal Copy` (schema/customizations ONLY—excluding business data and disabling background flows/mailboxes), alongside system Backups and DLP policies
+- **C.** Toggle an existing Dataverse table’s Ownership property from `Organization` to `User or team` in Production without recreating the table
+- **D.** `Real-time (synchronous)` classic Dataverse workflows execute inside the SQL transaction (`Before` or `After` save) as `Calling User` or `Workflow Owner`, rolling back the entire save when `Stop workflow` = `Canceled`
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `A` (`CSV: 1`)
+
+Correct answer: A (is correct). Configure a Power Pages `List` with a `View details` row action pointing to a target webpage hosting a `Basic Form` configured in `ReadOnly` mode (`Record Source Type = Query String`). [PL-200 Create apps by using Microsoft Power Apps — Configure Power Pages webpages, Basic Forms, Lists, navigation, and Design Studio workspaces | Ref: Create and customize webpages, Basic Forms, Lists, and navigation in Power Pages (https://learn.microsoft.com/en-us/power-pages/getting-started/design-studio)]
+
+- **A:** Correct — Metadata changes made in the Power Pages Management model-driven app require selecting `Sync` in Design Studio before previewing.
+- **B:** Incorrect — `Minimal Copy` lets teams debug schema/forms fast without copying gigabytes of confidential rows or emailing live customers.
+- **C:** Incorrect — Table Ownership (`Organization` vs `User or team`) and `Activity table` flags are immutable once the table is provisioned.
+- **D:** Incorrect — Background (asynchronous) classic workflows always run post-commit as Workflow Owner and cannot roll back the triggering save.
+
+</details>
+
+### Q043 (`T2-Q052`) — Create apps by using Microsoft Power Apps [2.11] · *Single-Answer Multiple Choice*
+
+Case study — MedBridge Referral Portal: MedBridge’s `Submit Specialist Referral` portal wizard spans 3 steps (`Patient Demographics` -> `Condition Branch` -> `Clinical Specialty Questions` -> `Upload Diagnostic PDFs to SharePoint`). Which Power Pages feature supports multi-screen branching plus SharePoint document uploads?
+
+- **A.** `Rollup` columns aggregate child `1:N` rows asynchronously via system jobs (default every 12 hours, configurable down to 1 hour minimum, or refreshed manually on the form), whereas `Power Fx Formula` columns evaluate live
+- **B.** Create custom Solutions under a dedicated `Solution Publisher` (custom prefix instead of `new_`) using `Segmented Solutions`—adding only modified forms, views, and columns rather than full monolithic table metadata
+- **C.** `Multi-Step Forms` chain wizard steps (`Load Form`, `Load Tab`, `Condition` branching, `Redirect`) with progress bars; Power Pages also supports SharePoint document subgrids, portal search, and Power BI with RLS
+- **D.** Use a Dataverse Business Rule to hide an entire Main form `Tab` based on a `Choices (Multi-Select)` column and invoke an external REST webhook
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `C` (`CSV: 3`)
+
+Correct answer: C (is correct). Configure a Power Pages `Multi-Step Form` with `Load Form` steps, a `Condition` branching step, and a SharePoint document subgrid step enabled with appropriate `Append`/`Append To` and SharePoint Table Permissions. [PL-200 Create apps by using Microsoft Power Apps — Configure advanced Power Pages features (Multi-Step Forms, SharePoint documents, search, Power BI) | Ref: Configure Multi-Step Forms, SharePoint documents, search, and Power BI in Power Pages (https://learn.microsoft.com/en-us/power-pages/configure/configure-multistep-form-subgrid)]
+
+- **A:** Incorrect — Because Rollup columns run asynchronously on a scheduled system job (minimum 1-hour recurrence), totals do not recalculate instantaneously on child save unless manually refreshed.
+- **B:** Incorrect — `Clone a Patch` ships targeted minor-version hotfixes (`1.2.1.0`) that later roll up cleanly via `Clone to Solution` (`1.3.0.0`).
+- **C:** Correct — Multi-Step Form Condition steps evaluate Dataverse column values to route portal visitors dynamically across specialized form steps.
+- **D:** Incorrect — Business Rules cannot show/hide whole Tabs or Sections, cannot evaluate Multi-Select Choice columns, and cannot call external HTTP APIs.
+
+</details>
+
+### Q044 (`T2-Q055`) — Create apps by using Microsoft Power Apps [2.12] · *Single-Answer Multiple Choice*
+
+Case study — MedBridge Referral Portal: Independent solo-practice physicians signing into MedBridge’s portal must see ONLY `Patient Referral` rows where they themselves are selected in the `Referring Physician (Contact)` Lookup—never seeing referrals from other doctors at shared hospital addresses. Complete the Power Pages security setting: ____.
+
+- **A.** Relationship behavior `Custom` with `Assign = Cascade Active` and `Delete = Restrict`
+- **B.** `Table Permission` with `Access Type = Account` linked to the `Account` lookup relationship on `Warranty Claim`
+- **C.** `Table Permission` with `Access Type = Contact` linked to the `Referring Physician (Contact)` lookup relationship
+- **D.** Dataverse `Relate rows` action using the `N:N` relationship name and target row `@odata.id` (`OData Id`)
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `C` (`CSV: 3`)
+
+Correct answer: C (is correct). Create a `Table Permission` with `Access Type = Contact` linked to the `Referring Physician (Contact)` lookup relationship and assign it to the `Referring Physicians` Web Role. [PL-200 Create apps by using Microsoft Power Apps — Configure Power Pages website security (Table Permissions, Web Roles, Page Access Rules) and authentication | Ref: Configure Table Permissions, Web Roles, Page Access Rules, templates, and authentication in Power Pages (https://learn.microsoft.com/en-us/power-pages/security/security-overview)]
+
+- **A:** Incorrect — Setting relationship behavior to `Custom` with `Assign = Cascade Active` reassigns only open child records when the parent owner changes, leaving historical closed rows untouched.
+- **B:** Incorrect — In Power Pages, `Access Type = Account` lets any authenticated Contact see/edit rows associated with their own parent `Account` (`parentcustomerid`) company.
+- **C:** Correct — In Power Pages, `Access Type = Contact` restricts each signed-in external user strictly to Dataverse rows linked to their own `Contact` record.
+- **D:** Incorrect — Associating two existing Dataverse rows across a native `N:N` (or `1:N`) relationship in Power Automate uses the `Relate rows` action with the target record’s `OData Id`.
+
+</details>
+
+### Q045 (`T2-Q008`) — Configure Microsoft Dataverse [1.3] · *Multi-Select (Select 2)*
+
+You are auditing `1:N` relationship behaviors across `Patient`, `Referral`, and `Clinical Encounter` tables. Which TWO configurations behave as stated? Select two.
+
+- **A.** `Parental` cascades all actions (`Assign`, `Share`, `Delete`, `Reparent`); `Referential` clears lookups on delete; `Referential, Restrict Delete` blocks parent deletion when children exist; `Custom` tunes each rule
+- **B.** Add custom `Commission Split %` and `Effective Date` columns directly onto the hidden system intersect table of a native `N:N` relationship
+- **C.** Use a standard asynchronous Power Automate Automated cloud flow (`When a row is added`) to block an invalid user form save before Dataverse commits the transaction
+- **D.** Assume enabling out-of-the-box Dataverse SharePoint Document Management automatically enforces Dataverse row-level Security Roles inside SharePoint Online libraries
+- **E.** Relationship behavior `Custom` with `Assign = Cascade Active` and `Delete = Restrict`
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `A, E` (`CSV: 1,5`)
+
+Correct answers: A and E (are correct). `Referential` clears child lookup values when a parent is deleted while `Referential, Restrict Delete` blocks parent deletion, and `Custom` (`Assign = Cascade Active`, `Delete = Restrict`) scopes cascading per action. [PL-200 Configure Microsoft Dataverse — Configure table relationship behaviors and cascading rules | Ref: Configure table relationship behavior and cascading rules in Dataverse (https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-entity-lookup#table-relationship-behavior)]
+
+- **A:** Correct — Choosing Custom cascading with Assign = Cascade Active reassigns only open child records, while Restrict Delete prevents deleting parents with active children.
+- **B:** Incorrect — Native N:N system intersect tables cannot hold custom columns, forms, or workflows; create a manual intersect table with two 1:N relationships instead.
+- **C:** Incorrect — Automated cloud flows trigger asynchronously AFTER Dataverse commits the row; blocking a save transactionally requires a synchronous workflow, Business Rule, or pre-operation plug-in.
+- **D:** Incorrect — Out-of-the-box SharePoint Document Management creates folder links only; SharePoint permissions are NOT synchronized automatically from Dataverse row ACLs.
+- **E:** Correct — Setting relationship behavior to `Custom` with `Assign = Cascade Active` reassigns only open child records when the parent owner changes, leaving historical closed rows untouched.
+
+</details>
+
+### Q046 (`T2-Q015`) — Configure Microsoft Dataverse [1.6] · *Multi-Select (Select 3)*
+
+You are configuring clinical data-hygiene and compliance controls in Dataverse for Alderbrook Specialty Clinics. Which THREE capabilities match their native Dataverse behavior? Select three.
+
+- **A.** `Duplicate Detection` rules (published per table, up to 5 published rules/table) warn users on save or import, while scheduled `Bulk Record Deletion` system jobs purge stale rows matching saved query criteria
+- **B.** Dataverse Auditing requires three active switches—Environment `Start Auditing` in PPAC, Table `Audit changes to its data`, and Column `Enable auditing`—writing change history to `Log` storage
+- **C.** Set `Apply to each` `Concurrency Control` to `50` while mutating a shared top-level `Set variable` action inside the loop body to calculate per-row totals
+- **D.** Add custom `Commission Split %` and `Effective Date` columns directly onto the hidden system intersect table of a native `N:N` relationship
+- **E.** Toggle an existing Dataverse table’s Ownership property from `Organization` to `User or team` in Production without recreating the table
+- **F.** Scheduled `Bulk Record Deletion` jobs run recurring background queries (for example every 7 or 30 days) to purge stale staging, integration-log, or canceled activity rows without custom code or API loops
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `A, B, F` (`CSV: 1,2,6`)
+
+Correct answers: A, B, and F (are correct). Three-tier Auditing writes field history to `Log` storage with configurable retention, published `Duplicate Detection` rules warn on save/import, and scheduled `Bulk Record Deletion` jobs purge expired rows via saved queries. [PL-200 Configure Microsoft Dataverse — Manage environment, table, and column-level auditing and retention | Ref: Manage Dataverse auditing (environment, table, column, and log retention) (https://learn.microsoft.com/en-us/power-platform/admin/manage-dataverse-auditing)]
+
+- **A:** Correct — Duplicate Detection rules must be explicitly Published and warn interactive users rather than silently purging existing rows.
+- **B:** Correct — If any of the three auditing toggles (Environment, Table, or Column) is disabled, field value history is not recorded for that column.
+- **C:** Incorrect — Mutating a shared flow variable inside a concurrent `Apply to each` loop causes race-condition overwrites across parallel iterations; use `Compose` or degree `1`.
+- **D:** Incorrect — Native N:N system intersect tables cannot hold custom columns, forms, or workflows; create a manual intersect table with two 1:N relationships instead.
+- **E:** Incorrect — Table Ownership (`Organization` vs `User or team`) and `Activity table` flags are immutable once the table is provisioned.
+- **F:** Correct — Bulk Record Deletion jobs use saved query filter criteria and send optional completion emails while preserving active business records.
+
+</details>
+
+### Q047 (`T2-Q046`) — Create apps by using Microsoft Power Apps [2.8] · *Single-Answer Multiple Choice*
+
+When biomedical scrub techs save pressure readings in a Canvas app, Dataverse server-side plug-in errors must be caught gracefully and displayed via `Notify(...)` using `FirstError.Message`. Complete the Power Fx formula: ____.
+
+- **A.** `IfError(Patch(Valves, ThisItem, {Pressure: Value(txtPsi.Text)}), Notify("Save failed: " & FirstError.Message, NotificationType.Error))`
+- **B.** `ModelDrivenFormIntegration.Item`
+- **C.** `Table Permission` with `Access Type = Contact` linked to the `Referring Physician (Contact)` lookup relationship
+- **D.** `orc_PrimaryPolicyId($select=orc_policynumber,orc_deductible)`
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `A` (`CSV: 1`)
+
+Correct answer: A (is correct). `IfError(Patch(Valves, ThisItem, {Pressure: Value(txtPsi.Text)}), Notify("Save failed: " & FirstError.Message, NotificationType.Error))` catches runtime write errors cleanly. [PL-200 Create apps by using Microsoft Power Apps — Configure Canvas navigation, Power Fx formulas, variables, collections, delegation, and error handling | Ref: Canvas app formulas, variables, collections, delegation, and IfError / App.OnError handling (https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/delegation-overview)]
+
+- **A:** Correct — `IfError(Value, Fallback)` catches Dataverse/network write errors cleanly and surfaces `FirstError.Message` without crashing the Canvas screen.
+- **B:** Incorrect — Inside a Canvas app embedded on a model-driven Main form, `ModelDrivenFormIntegration.Item` exposes the host Dataverse record in context.
+- **C:** Incorrect — In Power Pages, `Access Type = Contact` restricts each signed-in external user strictly to Dataverse rows linked to their own `Contact` record.
+- **D:** Incorrect — Configuring `Expand Query` on Dataverse `List rows` retrieves parent Lookup columns (`$select=...`) in the same single API call without an extra `Get a row by ID` inside a loop.
+
+</details>
+
+### Q048 (`T2-Q048`) — Create apps by using Microsoft Power Apps [2.9] · *Ordered Sequence (Multiple Choice)*
+
+From a `Verify Insurance Eligibility` Canvas app button, intake staff pass `MemberID` and `ServiceDate` to a cloud flow that calls an EDI payer gateway and returns `EligibilityStatus` synchronously to display on screen. Order the exact build steps.
+
+- **A.** Build a solution flow with the Power Apps (V2) trigger & typed inputs → End with Respond to a Power App or flow → Add the flow in Canvas Studio Power Automate pane → Call Set(varOut, FlowName.Run(...)) & set Run-only users
+- **B.** Create a classic Background Dataverse workflow → Embed an iframe pointing to flow.microsoft.com → Store maker passwords inside a Canvas text label → Poll Run History manually
+- **C.** Use a Scheduled Recurrence trigger first → Omit Respond to a Power App or flow → Hardcode FlowName.Run() before adding the flow to the app → Grant Co-owner rights to all 500 end users
+- **D.** Remove all triggers from the cloud flow → Export the flow outside any Solution → Bind a Quick View form to the button → Expect synchronous values after 45-minute waits
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `A` (`CSV: 1`)
+
+Correct answer: A (is correct). Build a solution flow with `Power Apps (V2)` typed inputs, finish with `Respond to a Power App or flow`, add it in Canvas Studio, and invoke `Set(varOut, FlowName.Run(...))` with `Run-only users`. [PL-200 Create apps by using Microsoft Power Apps — Call Microsoft Power Automate cloud flows from a Canvas app and handle responses | Ref: Start a Power Automate cloud flow from a canvas app and return values (https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/using-logic-flows)]
+
+- **A:** Correct — Canvas-invoked flows define typed inputs on Power Apps (V2), return outputs via Respond to a Power App or flow, bind in Studio, and capture outputs via FlowName.Run(...).
+- **B:** Incorrect — Canvas apps invoke cloud flows natively through the Power Apps (V2) trigger and FlowName.Run() connector bridge, never via iframes or plaintext credentials.
+- **C:** Incorrect — Scheduled flows cannot be invoked synchronously via FlowName.Run(), and end users need Run-only user permissions rather than Co-owner edit rights.
+- **D:** Incorrect — Every cloud flow requires a trigger, and Respond to a Power App or flow must return within the synchronous HTTP timeout window (~120 seconds).
+
+</details>
+
+### Q049 (`T2-Q098`) — Manage environments [4.6] · *Single-Answer Multiple Choice*
+
+Why should Silverleaf configure its `Behavioral Intake Triage` Queue with `Type = Private` rather than `Public` when handling sensitive patient referral emails?
+
+- **A.** Add custom `Commission Split %` and `Effective Date` columns directly onto the hidden system intersect table of a native `N:N` relationship
+- **B.** `Dataverse low-code plug-ins` (built in `Dataverse Accelerator` with `Power Fx`) execute server-side as `Instant` Custom APIs or `Automated` `Pre-operation`/`Post-operation` table rules (`ThisRecord`, `NewRecord`, `Error()`)
+- **C.** `Patch(WorkOrders, Self.Selected.Item, {'Dispatch Status': 'Dispatch Status'.Dispatched})`
+- **D.** `Server-Side Synchronization` links Dataverse to Exchange Online via an `Email Server Profile`; user and `Queue` (`Private` vs `Public`) mailboxes require `Approve Email` and `Test & Enable Mailbox` = `Success`
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `D` (`CSV: 4`)
+
+Correct answer: D (is correct). A `Private` Queue restricts viewing, picking, working on, and releasing Queue Items exclusively to explicit Queue members (unlike a `Public` Queue visible across users with Queue Read privileges). [PL-200 Manage environments — Configure Email Integration (Server-Side Synchronization, Mailboxes, Queues, App for Outlook) | Ref: Server-Side Synchronization, Mailboxes, Queues, and Dynamics 365 App for Outlook (https://learn.microsoft.com/en-us/power-platform/admin/server-side-synchronization)]
+
+- **A:** Incorrect — Native N:N system intersect tables cannot hold custom columns, forms, or workflows; create a manual intersect table with two 1:N relationships instead.
+- **B:** Incorrect — Automated Pre-operation low-code plug-ins validate or mutate column values inside the Dataverse transaction across every client app and API.
+- **C:** Incorrect — `Patch(DataSource, BaseRecord, ChangeRecord)` updates the selected Dataverse record directly from a modern Power Fx command button or Canvas app.
+- **D:** Correct — Private Queues restrict item visibility and work-picking to explicit Queue members, supporting Dynamics 365 App for Outlook tracking.
+
+</details>
+
+### Q050 (`T2-Q090`) — Manage environments [4.3] · *Single-Answer Multiple Choice*
+
+An administrator wants to retire two deprecated custom forms from Production without losing data in existing tables. Proposed solution: Delete the entire Managed solution directly in Production (which also owns custom clinical tables!) or import a new version using `Update` instead of `Upgrade`. Why are BOTH ideas wrong?
+
+- **A.** An `Unmanaged (Active)` edit in UAT/Prod sits atop `Solution Layers`, masking `Managed` updates until `Remove Active Customizations` runs; `Solution Upgrade` deletes retired components whereas `Update` never removes items
+- **B.** `Environment Variables` (`Text`, `Decimal`, `JSON`, `Data Source`, Azure Key Vault `Secret`) externalize stage settings; removing `Current Value` before export lets `Power Platform pipelines` or imports bind target values
+- **C.** Copying Production to `Sandbox` offers `Full Copy` (all rows + schema) vs `Minimal Copy` (schema/customizations ONLY—excluding business data and disabling background flows/mailboxes), alongside system Backups and DLP policies
+- **D.** Import a Managed Solution using `Update` (instead of `Upgrade`) expecting Dataverse to automatically remove retired columns and forms from Production
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `D` (`CSV: 4`)
+
+Correct answer: D (is correct). Deleting a Managed solution that created custom tables permanently destroys its tables and Production data, while `Update` never removes deleted forms—only Managed `Upgrade` (`Stage for upgrade` -> `Apply upgrade`) safely removes retired forms while preserving remaining tables. [PL-200 Manage environments — Distinguish Managed vs Unmanaged Solutions, inspect Solution Layers, and apply Upgrade vs Update | Ref: Managed vs Unmanaged solutions, Solution Layers, and Upgrade vs Update (https://learn.microsoft.com/en-us/power-platform/alm/solution-layers-alm)]
+
+- **A:** Incorrect — Using `See solution layers` to clear stray Active layers and importing via `Stage for upgrade` -> `Apply upgrade` keeps Production clean.
+- **B:** Incorrect — Combining Environment Variables, Connection References, and Power Platform pipelines eliminates post-deployment manual edits in Production.
+- **C:** Incorrect — `Minimal Copy` lets teams debug schema/forms fast without copying gigabytes of confidential rows or emailing live customers.
+- **D:** Correct — Managed `Update` adds and modifies components but NEVER deletes removed components; only `Upgrade` (`Stage for upgrade` / `Apply upgrade`) removes deleted items.
+
+</details>
+
+### Q051 (`T2-Q011`) — Configure Microsoft Dataverse [1.4] · *Single-Answer Multiple Choice*
+
+An HL7 integration Dataflow upserts `Patient Contact` rows every 30 minutes using `MedicalRecordNumber` (`MRN`) + `IssuingFacilityCode` instead of Dataverse GUIDs and must enforce database uniqueness across both columns. What should you configure?
+
+- **A.** Dataverse Search uses each enabled table’s `Quick Find View`: `Find Columns` define indexed/searched fields, `View Columns` define returned fields, and filter clauses exclude inactive rows
+- **B.** `Custom Pages` bring responsive Canvas containers (`Horizontal`/`Vertical`) and Power Fx into model-driven full pages, centered dialogs, or side panes—reading context via `Param("recordId")`
+- **C.** Import a Managed Solution using `Update` (instead of `Upgrade`) expecting Dataverse to automatically remove retired columns and forms from Production
+- **D.** `Alternate Keys` (on `Single Line of Text`, `Whole Number`, or `Decimal`/`Date` columns) enforce database-level uniqueness and allow Dataflows, APIs, and imports to upsert/lookup rows using natural business keys instead of GUIDs
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `D` (`CSV: 4`)
+
+Correct answer: D (is correct). Create a composite `Alternate Key` on `MedicalRecordNumber` and `IssuingFacilityCode` and verify its system index job reaches `Active` status. [PL-200 Configure Microsoft Dataverse — Create or modify columns, Alternate Keys, Rollup columns, and Power Fx Formula columns | Ref: Create and edit columns, Alternate Keys, Rollup, and Power Fx Formula columns in Dataverse (https://learn.microsoft.com/en-us/power-apps/maker/data-platform/formula-columns)]
+
+- **A:** Incorrect — Administrators manage total indexed columns against the environment Dataverse Search index limit inside Power Platform Admin Center.
+- **B:** Incorrect — Custom Pages are solution-aware and supersede legacy embedded canvas controls when launching modal dialogs or side panes from command bars.
+- **C:** Incorrect — Managed `Update` adds and modifies components but NEVER deletes removed components; only `Upgrade` (`Stage for upgrade` / `Apply upgrade`) removes deleted items.
+- **D:** Correct — Creating an Alternate Key builds a unique index asynchronously in Dataverse; verify its status reaches `Active` in the solution before running natural-key upserts.
+
+</details>
+
+### Q052 (`T2-Q084`) — Manage environments [4.1] · *Single-Answer Multiple Choice*
+
+While editing a mobile `Phlebotomy Check-In` Canvas app in Power Apps Studio, you want to find missing `AccessibleLabel` properties for screen-reader users and blue non-delegable Dataverse `Filter` warnings immediately. Which tool surfaces both categories live?
+
+- **A.** `App Checker` inspects one open app in Studio (`Formulas`, `Accessibility`, delegation `Performance`), whereas `Solution Checker` runs deep static analysis across a whole Solution (`Critical`/`High`/`Medium`/`Low` severities)
+- **B.** Modernized Business Units decouple a user’s owning BU from Security Role assignments, letting roles assigned across sibling Business Units grant matrix data access without moving the user
+- **C.** Add custom `Commission Split %` and `Effective Date` columns directly onto the hidden system intersect table of a native `N:N` relationship
+- **D.** Power Pages Design Studio provides `Pages`, `Styling`, `Data`, and `Set up` workspaces, surfacing Dataverse views via `Lists` and Dataverse forms via `Basic Forms` (`Insert`, `Edit`, `ReadOnly` modes)
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `A` (`CSV: 1`)
+
+Correct answer: A (is correct). Open `App Checker` inside Power Apps Studio—its `Accessibility` and `Performance` tabs flag missing screen-reader labels and delegation warnings interactively. [PL-200 Manage environments — Describe use cases and findings for App Checker and Solution Checker | Ref: Use App Checker and Solution Checker to validate Power Apps and Dataverse solutions (https://learn.microsoft.com/en-us/power-apps/maker/data-platform/use-powerapps-checker)]
+
+- **A:** Correct — Managed Environments can run Solution Checker automatically on solution import to warn on or block risky customizations.
+- **B:** Incorrect — Enabling Modernized Business Units lets matrixed specialists access multiple regional BUs while keeping their primary home BU for record ownership.
+- **C:** Incorrect — Native N:N system intersect tables cannot hold custom columns, forms, or workflows; create a manual intersect table with two 1:N relationships instead.
+- **D:** Incorrect — Metadata changes made in the Power Pages Management model-driven app require selecting `Sync` in Design Studio before previewing.
+
+</details>
+
+### Q053 (`T2-Q053`) — Create apps by using Microsoft Power Apps [2.11] · *Multi-Select (Select 3)*
+
+You are reviewing Clearwater Outpatient Network’s Power Pages architecture before external penetration testing. Which THREE statements accurately describe Power Pages features and security? Select three.
+
+- **A.** Use a standard asynchronous Power Automate Automated cloud flow (`When a row is added`) to block an invalid user form save before Dataverse commits the transaction
+- **B.** Portal metadata edited inside the `Power Pages Management` model-driven app (such as advanced Basic Form Metadata, List filters, or Redirects) requires selecting `Sync` in Power Pages Design Studio to pull changes
+- **C.** Import a Managed Solution using `Update` (instead of `Upgrade`) expecting Dataverse to automatically remove retired columns and forms from Production
+- **D.** Power Pages secures rows via `Table Permissions` (`Global`, `Contact`, `Account`, `Parent`, `Self`) mapped to `Web Roles`, pages via `Page Access Control Rules`, and identity via `Microsoft Entra External ID` / OIDC
+- **E.** Assume enabling out-of-the-box Dataverse SharePoint Document Management automatically enforces Dataverse row-level Security Roles inside SharePoint Online libraries
+- **F.** `Multi-Step Forms` chain wizard steps (`Load Form`, `Load Tab`, `Condition` branching, `Redirect`) with progress bars; Power Pages also supports SharePoint document subgrids, portal search, and Power BI with RLS
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `B, D, F` (`CSV: 2,4,6`)
+
+Correct answers: B, D, and F (are correct). `Multi-Step Forms` support conditional step branching and SharePoint/Power BI RLS integration, `Table Permissions` + `Web Roles` + `Microsoft Entra External ID` govern external access, and `Sync` reconciles `Power Pages Management` metadata in Design Studio. [PL-200 Create apps by using Microsoft Power Apps — Configure advanced Power Pages features (Multi-Step Forms, SharePoint documents, search, Power BI) | Ref: Configure Multi-Step Forms, SharePoint documents, search, and Power BI in Power Pages (https://learn.microsoft.com/en-us/power-pages/configure/configure-multistep-form-subgrid)]
+
+- **A:** Incorrect — Automated cloud flows trigger asynchronously AFTER Dataverse commits the row; blocking a save transactionally requires a synchronous workflow, Business Rule, or pre-operation plug-in.
+- **B:** Correct — Selecting `Sync` reconciles Dataverse website configuration tables with Design Studio before `Preview` clears the server cache.
+- **C:** Incorrect — Managed `Update` adds and modifies components but NEVER deletes removed components; only `Upgrade` (`Stage for upgrade` / `Apply upgrade`) removes deleted items.
+- **D:** Correct — `Contact` scope restricts portal users to their own Contact-linked rows, whereas `Account` scope shares rows across coworkers under the same parent Account.
+- **E:** Incorrect — Out-of-the-box SharePoint Document Management creates folder links only; SharePoint permissions are NOT synchronized automatically from Dataverse row ACLs.
+- **F:** Correct — Multi-Step Form Condition steps evaluate Dataverse column values to route portal visitors dynamically across specialized form steps.
+
+</details>
+
+### Q054 (`T2-Q083`) — Create and manage logic and process automation [3.12] · *Multi-Select (Select 3)*
+
+You are training new Functional Consultants on Dataverse `Business Rules` and `Power Fx Functions`. Which THREE statements are accurate? Select three.
+
+- **A.** Import a Managed Solution using `Update` (instead of `Upgrade`) expecting Dataverse to automatically remove retired columns and forms from Production
+- **B.** Toggle an existing Dataverse table’s Ownership property from `Organization` to `User or team` in Production without recreating the table
+- **C.** Set `Apply to each` `Concurrency Control` to `50` while mutating a shared top-level `Set variable` action inside the loop body to calculate per-row totals
+- **D.** Solution-aware `Power Fx Functions` define reusable server-side low-code formulas with typed inputs and outputs callable from Canvas apps and Power Automate flows, eliminating copy-pasted business math across apps
+- **E.** Dataverse `Business Rules` run server-side (`Entity` scope) or on model-driven forms (`All Forms` / single Main form), but cannot hide Tabs/Sections, evaluate `MultiSelect Choice` columns, or call external connectors
+- **F.** Use a Dataverse Business Rule to hide an entire Main form `Tab` based on a `Choices (Multi-Select)` column and invoke an external REST webhook
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `D, E, F` (`CSV: 4,5,6`)
+
+Correct answers: D, E, and F (are correct). Business Rules support `Entity` (server), `All Forms`, and specific Main Form scopes; Business Rules CANNOT hide Tabs/Sections or evaluate Multi-Select Choices; and reusable `Power Fx Functions` centralize server-side formulas across apps and flows. [PL-200 Create and manage logic and process automation — Create and configure Dataverse Business Rules (scopes & limitations) and Power Fx functions | Ref: Create Business Rules and Power Fx functions/formulas in Microsoft Dataverse (https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-create-business-rule)]
+
+- **A:** Incorrect — Managed `Update` adds and modifies components but NEVER deletes removed components; only `Upgrade` (`Stage for upgrade` / `Apply upgrade`) removes deleted items.
+- **B:** Incorrect — Table Ownership (`Organization` vs `User or team`) and `Activity table` flags are immutable once the table is provisioned.
+- **C:** Incorrect — Mutating a shared flow variable inside a concurrent `Apply to each` loop causes race-condition overwrites across parallel iterations; use `Compose` or degree `1`.
+- **D:** Correct — Centralizing complex fee, tax, or SLA formulas in a reusable Power Fx Function ensures a single governed update updates every consuming app and flow.
+- **E:** Correct — Remember Business Rule boundaries: tab/section visibility and MultiSelect Choice logic require client scripts/PCF or server plug-ins.
+- **F:** Correct — Business Rules cannot show/hide whole Tabs or Sections, cannot evaluate Multi-Select Choice columns, and cannot call external HTTP APIs.
+
+</details>
+
+### Q055 (`T2-Q016`) — Configure Microsoft Dataverse [1.7] · *Single-Answer Multiple Choice*
+
+Every night at 02:00, your clinic must extract CSV provider rosters from Azure Data Lake, split full names, standardize state codes via `Power Query`, and upsert rows into the Dataverse `Referring Physician` table on a recurring schedule. Which low-code tool fits best?
+
+- **A.** Excel/CSV templates handle ad-hoc imports; Power Platform Dataflows (`Power Query`) schedule ETL loads; `Azure Synapse Link` / `Fabric Link` streams continuous analytics; Dynamic Excel refreshes live Dataverse queries
+- **B.** Use a Dataverse Business Rule to hide an entire Main form `Tab` based on a `Choices (Multi-Select)` column and invoke an external REST webhook
+- **C.** `Modern Commanding` customizes `Main grid`, `Main form`, `Subgrid`, and `Associated` command bars using `Power Fx` (`Patch`, `Notify`, `Confirm`, `Navigate`, `Self.Selected.Item`) inside a managed `Component Library`
+- **D.** `Real-time (synchronous)` classic Dataverse workflows execute inside the SQL transaction (`Before` or `After` save) as `Calling User` or `Workflow Owner`, rolling back the entire save when `Stop workflow` = `Canceled`
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `A` (`CSV: 1`)
+
+Correct answer: A (is correct). Configure a scheduled `Power Platform Dataflow` (`Power Query`) mapping transformed columns to the Dataverse `Referring Physician` table using an Alternate Key. [PL-200 Configure Microsoft Dataverse — Describe and configure options for importing and exporting data (Excel, Dataflows, Synapse/Fabric Link) | Ref: Import and export data in Microsoft Dataverse (Excel, CSV, Dataflows, Synapse/Fabric Link) (https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-import-export)]
+
+- **A:** Correct — Export to Excel Online edits in place, Dynamic Worksheet/PivotTable refreshes live rows for licensed users, and Static Worksheet exports a snapshot.
+- **B:** Incorrect — Business Rules cannot show/hide whole Tabs or Sections, cannot evaluate Multi-Select Choice columns, and cannot call external HTTP APIs.
+- **C:** Incorrect — Power Fx `Visible` formulas evaluate `Self.Selected.Item` columns or `CountRows(Self.Selected.AllItems)` without writing Ribbon XML.
+- **D:** Incorrect — Background (asynchronous) classic workflows always run post-commit as Workflow Owner and cannot roll back the triggering save.
+
+</details>
+
+### Q056 (`T2-Q088`) — Manage environments [4.2] · *Single-Answer Multiple Choice*
+
+While `SilverleafIntake` `3.1.0.0` has an open child Patch `3.1.1.0` in Dev, a developer tries to add a brand-new column directly to the parent `SilverleafIntake` `3.1.0.0` solution and finds the parent solution locked. Why?
+
+- **A.** An `Unmanaged (Active)` edit in UAT/Prod sits atop `Solution Layers`, masking `Managed` updates until `Remove Active Customizations` runs; `Solution Upgrade` deletes retired components whereas `Update` never removes items
+- **B.** Use a Dataverse Business Rule to hide an entire Main form `Tab` based on a `Choices (Multi-Select)` column and invoke an external REST webhook
+- **C.** Canvas apps trigger solution-aware `Power Apps (V2)` cloud flows via `FlowName.Run(...)`, capturing synchronous outputs from `Respond to a Power App or flow` while sharing via `Run-only users` permissions
+- **D.** `Open in Excel Online` edits rows inline inside the browser; `Dynamic Worksheet` / `Dynamic PivotTable` refreshes live Dataverse data honoring each viewer’s Security Roles; `Static Worksheet` exports a fixed point-in-time copy
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `A` (`CSV: 1`)
+
+Correct answer: A (is correct). Whenever a parent Unmanaged solution has one or more child Patches, the parent solution is locked against adding/removing components until `Clone to Solution` rolls the patches into a new base version. [PL-200 Manage environments — Create and manage Dataverse Solutions (custom Publishers, segmented tables, patches/clones) | Ref: Solutions overview, custom publishers, segmented tables, and patches in Power Platform (https://learn.microsoft.com/en-us/power-platform/alm/solution-concepts-alm)]
+
+- **A:** Correct — Using `See solution layers` to clear stray Active layers and importing via `Stage for upgrade` -> `Apply upgrade` keeps Production clean.
+- **B:** Incorrect — Business Rules cannot show/hide whole Tabs or Sections, cannot evaluate Multi-Select Choice columns, and cannot call external HTTP APIs.
+- **C:** Incorrect — `Power Apps (V2)` defines explicit typed inputs and avoids granting end users dangerous Co-owner edit rights on the flow.
+- **D:** Incorrect — Dynamic Excel exports require recipients to have Dataverse access and appropriate table Read privileges; Static exports embed the exporter’s snapshot rows directly.
+
+</details>
+
+### Q057 (`T2-Q029`) — Create apps by using Microsoft Power Apps [2.1] · *Single-Answer Multiple Choice*
+
+In your `Clinical Referral Hub` model-driven app, `Surgical Nurses` see the `Cardiology Triage Form` instead of the `Surgical Prep Form` whenever they open a `Patient Referral` because both forms are assigned to their roles. Where do you control which Main form opens by default?
+
+- **A.** Classic workflows log runs in `System Jobs` (`ProcessSession`), auto-terminate recursive loops exceeding depth limits, and purge succeeded background logs when `Automatically delete completed workflow jobs` is enabled
+- **B.** Scheduled `Bulk Record Deletion` jobs run recurring background queries (for example every 7 or 30 days) to purge stale staging, integration-log, or canceled activity rows without custom code or API loops
+- **C.** Model-driven apps use `Main`, `Quick Create`, `Quick View`, and `Card` forms; assigning Security Roles to specialized Main forms plus setting `Form Order` and one `Fallback` Main form tailors UX safely
+- **D.** Toggle an existing Dataverse table’s Ownership property from `Organization` to `User or team` in Production without recreating the table
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `C` (`CSV: 3`)
+
+Correct answer: C (is correct). Configure `Form Order` (`Form Settings` -> `Form Order` -> `Main Form Set`) so `Surgical Prep Form` ranks higher than `Cardiology Triage Form`, while keeping one default Main form enabled for fallback. [PL-200 Create apps by using Microsoft Power Apps — Create and configure model-driven sitemaps and multiple form types (form order & fallback) | Ref: Create and design model-driven app forms (Main, Quick Create, Quick View, Card & form order) (https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/create-design-forms)]
+
+- **A:** Incorrect — Enabling `Automatically delete completed workflow jobs` prevents millions of succeeded `ProcessSession` rows from exhausting Dataverse storage.
+- **B:** Incorrect — Bulk Record Deletion jobs use saved query filter criteria and send optional completion emails while preserving active business records.
+- **C:** Correct — At least one Main form must remain enabled for fallback so users whose Security Roles do not match specialized forms still open records.
+- **D:** Incorrect — Table Ownership (`Organization` vs `User or team`) and `Activity table` flags are immutable once the table is provisioned.
+
+</details>
+
+### Q058 (`T2-Q082`) — Create and manage logic and process automation [3.12] · *Single-Answer Multiple Choice*
+
+You configure a Dataverse `Business Rule` on `Patient Referral` setting `UrgencyReason` to `Business Required` when `UrgencyTier = Emergent`, and it works on Main forms yet does NOT fire when rows are imported via Excel or updated via Power Automate. What must you change on the Business Rule?
+
+- **A.** Copying Production to `Sandbox` offers `Full Copy` (all rows + schema) vs `Minimal Copy` (schema/customizations ONLY—excluding business data and disabling background flows/mailboxes), alongside system Backups and DLP policies
+- **B.** Use a Dataverse Business Rule to hide an entire Main form `Tab` based on a `Choices (Multi-Select)` column and invoke an external REST webhook
+- **C.** `Alternate Keys` (on `Single Line of Text`, `Whole Number`, or `Decimal`/`Date` columns) enforce database-level uniqueness and allow Dataflows, APIs, and imports to upsert/lookup rows using natural business keys instead of GUIDs
+- **D.** Dataverse `Business Rules` run server-side (`Entity` scope) or on model-driven forms (`All Forms` / single Main form), but cannot hide Tabs/Sections, evaluate `MultiSelect Choice` columns, or call external connectors
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `D` (`CSV: 4`)
+
+Correct answer: D (is correct). Change the Business Rule `Scope` in the upper-right corner from `All Forms` (or a single form) to `Entity` so Dataverse enforces the rule server-side across forms, Excel imports, and API/flow updates. [PL-200 Create and manage logic and process automation — Create and configure Dataverse Business Rules (scopes & limitations) and Power Fx functions | Ref: Create Business Rules and Power Fx functions/formulas in Microsoft Dataverse (https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-create-business-rule)]
+
+- **A:** Incorrect — `Minimal Copy` lets teams debug schema/forms fast without copying gigabytes of confidential rows or emailing live customers.
+- **B:** Incorrect — Business Rules cannot show/hide whole Tabs or Sections, cannot evaluate Multi-Select Choice columns, and cannot call external HTTP APIs.
+- **C:** Incorrect — Creating an Alternate Key builds a unique index asynchronously in Dataverse; verify its status reaches `Active` in the solution before running natural-key upserts.
+- **D:** Correct — Remember Business Rule boundaries: tab/section visibility and MultiSelect Choice logic require client scripts/PCF or server plug-ins.
+
+</details>
+
+### Q059 (`T2-Q005`) — Configure Microsoft Dataverse [1.2] · *Single-Answer Multiple Choice*
+
+A junior consultant created a native `N:N` relationship between `Physician` and `Specialty Clinic` and now tries to add `CredentialExpiryDate` and `PrimaryClinicFlag` columns directly onto the native `N:N` intersect entity. Why does Maker Portal prevent this?
+
+- **A.** Native `N:N` relationships use a hidden intersect table with zero custom fields; when the link itself must store columns (like `Split %` or `Effective Date`), build a manual intersect table with two `1:N` lookups
+- **B.** `Owner Teams` own rows and hold Security Roles; `Access Team Templates` grant lightweight per-record Read/Write/Share without owning rows; `Microsoft Entra ID Group Teams` map Entra groups dynamically to Security Roles
+- **C.** `Parental` cascades all actions (`Assign`, `Share`, `Delete`, `Reparent`); `Referential` clears lookups on delete; `Referential, Restrict Delete` blocks parent deletion when children exist; `Custom` tunes each rule
+- **D.** Add custom `Commission Split %` and `Effective Date` columns directly onto the hidden system intersect table of a native `N:N` relationship
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `D` (`CSV: 4`)
+
+Correct answer: D (is correct). Hidden system intersect tables created by native `N:N` relationships cannot hold custom columns, custom forms, or workflows. [PL-200 Configure Microsoft Dataverse — Determine and implement 1:N and N:N (native vs manual intersect) relationships | Ref: Create 1:N (one-to-many) and N:N (many-to-many) table relationships in Dataverse (https://learn.microsoft.com/en-us/power-apps/maker/data-platform/create-edit-entity-relationships)]
+
+- **A:** Incorrect — A manual intersect entity with two 1:N Lookups is required whenever custom attributes, forms, views, or workflows belong on the association record itself.
+- **B:** Incorrect — Access Team Templates shine when ad-hoc collaborators vary per record, whereas Entra Group Teams automate enterprise RBAC lifecycle at scale.
+- **C:** Incorrect — Choosing Custom cascading with Assign = Cascade Active reassigns only open child records, while Restrict Delete prevents deleting parents with active children.
+- **D:** Correct — Native N:N system intersect tables cannot hold custom columns, forms, or workflows; create a manual intersect table with two 1:N relationships instead.
+
+</details>
+
+### Q060 (`T2-Q065`) — Create and manage logic and process automation [3.4] · *Single-Answer Multiple Choice*
+
+A municipal health inspection flow must suppress flow runs completely unless `orc_permitstatus` equals `100000002` and `orc_district` equals `'Downtown'`. Complete the `Trigger Condition` expression: ____.
+
+- **A.** Dataverse `Relate rows` action using the `N:N` relationship name and target row `@odata.id` (`OData Id`)
+- **B.** `@and(equals(triggerOutputs()?['body/orc_permitstatus'], 100000002), equals(triggerOutputs()?['body/orc_district'], 'Downtown'))`
+- **C.** Relationship behavior `Custom` with `Assign = Cascade Active` and `Delete = Restrict`
+- **D.** `ModelDrivenFormIntegration.Item`
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `B` (`CSV: 2`)
+
+Correct answer: B (is correct). `@and(equals(triggerOutputs()?['body/orc_permitstatus'], 100000002), equals(triggerOutputs()?['body/orc_district'], 'Downtown'))` filters out non-matching updates before a flow run starts. [PL-200 Create and manage logic and process automation — Implement Dynamic Content, WDL expressions, and Trigger Conditions | Ref: Reference guide for Workflow Definition Language expressions in Power Automate (https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference)]
+
+- **A:** Incorrect — Associating two existing Dataverse rows across a native `N:N` (or `1:N`) relationship in Power Automate uses the `Relate rows` action with the target record’s `OData Id`.
+- **B:** Correct — Adding an `@and(...)` `Trigger Condition` in trigger settings prevents the cloud flow from firing at all unless both field criteria match.
+- **C:** Incorrect — Setting relationship behavior to `Custom` with `Assign = Cascade Active` reassigns only open child records when the parent owner changes, leaving historical closed rows untouched.
+- **D:** Incorrect — Inside a Canvas app embedded on a model-driven Main form, `ModelDrivenFormIntegration.Item` exposes the host Dataverse record in context.
+
+</details>
+
+### Q061 (`T2-Q002`) — Configure Microsoft Dataverse [1.1] · *Single-Answer Multiple Choice*
+
+Your hospital network stores 4 million real-time `Lab Analyzer Result` rows inside an external Azure SQL system exposed via an OData v4 / SQL connector, and clinicians must view live results inside model-driven subgrids without copying data into Dataverse storage. Which table type should you configure?
+
+- **A.** `Activity` tables inherit `Subject`, `Regarding`, and `Timeline` support with shared `Activity` privileges, whereas `Virtual` tables project live external OData/SQL data without local row storage
+- **B.** `Clone a Patch` creates a lightweight hotfix solution (`Major.Minor.Build.Revision` increment) while locking the base solution until `Clone to Solution` rolls all patches into a clean consolidated version
+- **C.** Add custom `Commission Split %` and `Effective Date` columns directly onto the hidden system intersect table of a native `N:N` relationship
+- **D.** Scheduled `Bulk Record Deletion` jobs run recurring background queries (for example every 7 or 30 days) to purge stale staging, integration-log, or canceled activity rows without custom code or API loops
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `A` (`CSV: 1`)
+
+Correct answer: A (is correct). Configuring a `Virtual table` surfaces external SQL/OData records live inside Dataverse forms and views without duplicating storage locally. [PL-200 Configure Microsoft Dataverse — Create or modify standard, activity, or virtual tables and configure table properties | Ref: Create and edit tables in Microsoft Dataverse (Standard, Activity, Virtual & Ownership) (https://learn.microsoft.com/en-us/power-apps/maker/data-platform/entity-overview)]
+
+- **A:** Correct — Custom Activity tables share the unified Activity security privilege bucket and appear natively in Timeline walls across related tables.
+- **B:** Incorrect — While a parent Unmanaged solution has child Patches, components cannot be added/removed in the parent until `Clone to Solution` merges them.
+- **C:** Incorrect — Native N:N system intersect tables cannot hold custom columns, forms, or workflows; create a manual intersect table with two 1:N relationships instead.
+- **D:** Incorrect — Bulk Record Deletion jobs use saved query filter criteria and send optional completion emails while preserving active business records.
+
+</details>
+
+### Q062 (`T2-Q047`) — Create apps by using Microsoft Power Apps [2.8] · *Single-Answer Multiple Choice*
+
+A Canvas maker uses 28 global `Set(...)` variables to pass temporary modal flags on a single screen and experiences stale state when navigating back and forth. Proposed solution: Replace single-screen flags with screen-scoped `UpdateContext({locShowModal: true})` or pass target record IDs via the third argument of `Navigate(DetailScreen, ScreenTransition.None, {locPermitId: ThisItem.Permit})`. Does this resolve screen-scope coupling?
+
+- **A.** Use a standard asynchronous Power Automate Automated cloud flow (`When a row is added`) to block an invalid user form save before Dataverse commits the transaction
+- **B.** `Navigate(TargetScreen, ScreenTransition.None, {locPermitId: ThisItem.Permit})` passes a screen-scoped context variable, whereas `Set(gblCurrentUser, User())` in `App.OnStart` / `App.Formulas` sets app-wide state
+- **C.** `Server-Side Synchronization` links Dataverse to Exchange Online via an `Email Server Profile`; user and `Queue` (`Private` vs `Public`) mailboxes require `Approve Email` and `Test & Enable Mailbox` = `Success`
+- **D.** Modernized Business Units decouple a user’s owning BU from Security Role assignments, letting roles assigned across sibling Business Units grant matrix data access without moving the user
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `B` (`CSV: 2`)
+
+Correct answer: B (is correct). Yes—`UpdateContext` and `Navigate` context records scope state cleanly to a single screen, reserving `Set()` or declarative `App.Formulas` for genuinely app-wide state. [PL-200 Create apps by using Microsoft Power Apps — Configure Canvas navigation, Power Fx formulas, variables, collections, delegation, and error handling | Ref: Canvas app formulas, variables, collections, delegation, and IfError / App.OnError handling (https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/delegation-overview)]
+
+- **A:** Incorrect — Automated cloud flows trigger asynchronously AFTER Dataverse commits the row; blocking a save transactionally requires a synchronous workflow, Business Rule, or pre-operation plug-in.
+- **B:** Correct — Prefer declarative `Named Formulas` (`App.Formulas`) or `UpdateContext` / `Navigate` context variables over overusing mutable global `Set()` variables.
+- **C:** Incorrect — Private Queues restrict item visibility and work-picking to explicit Queue members, supporting Dynamics 365 App for Outlook tracking.
+- **D:** Incorrect — Enabling Modernized Business Units lets matrixed specialists access multiple regional BUs while keeping their primary home BU for record ownership.
+
+</details>
+
+### Q063 (`T2-Q062`) — Create and manage logic and process automation [3.3] · *Single-Answer Multiple Choice*
+
+A cloud flow loops over 300 `Appointment` rows in `Apply to each` (`Concurrency Control = 25`) to format a clinic reminder string per patient. Proposed solution: Replace an in-loop `Set variable` action with a `Compose` action inside the loop so each parallel iteration keeps its own isolated formatted string without overwriting sibling iterations. Does this solve the concurrency race condition?
+
+- **A.** `Compose` evaluates an expression once into an immutable step output that is safe inside parallel `Apply to each` runs, whereas `Set variable` mutates state across iterations and forces sequential execution (`Concurrency = 1`)
+- **B.** Set `Apply to each` `Concurrency Control` to `50` while mutating a shared top-level `Set variable` action inside the loop body to calculate per-row totals
+- **C.** Import a Managed Solution using `Update` (instead of `Upgrade`) expecting Dataverse to automatically remove retired columns and forms from Production
+- **D.** `Server-Side Synchronization` links Dataverse to Exchange Online via an `Email Server Profile`; user and `Queue` (`Private` vs `Public`) mailboxes require `Approve Email` and `Test & Enable Mailbox` = `Success`
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `A` (`CSV: 1`)
+
+Correct answer: A (is correct). Yes—`Compose` outputs are immutable and scoped safely to each individual parallel loop iteration, unlike `Set variable` which mutates shared flow-wide state. [PL-200 Create and manage logic and process automation — Implement cloud flow logic controls (Conditions, Concurrency, Scope Configure run after, Terminate, variables) | Ref: Implement conditions, loops, concurrency, Scope Configure run after, and Terminate in cloud flows (https://learn.microsoft.com/en-us/power-automate/use-expressions-in-conditions)]
+
+- **A:** Correct — Replacing an in-loop `Set variable` with `Compose` allows `Apply to each` Concurrency Control (up to 50) without cross-iteration data corruption.
+- **B:** Incorrect — Mutating a shared flow variable inside a concurrent `Apply to each` loop causes race-condition overwrites across parallel iterations; use `Compose` or degree `1`.
+- **C:** Incorrect — Managed `Update` adds and modifies components but NEVER deletes removed components; only `Upgrade` (`Stage for upgrade` / `Apply upgrade`) removes deleted items.
+- **D:** Incorrect — Private Queues restrict item visibility and work-picking to explicit Queue members, supporting Dynamics 365 App for Outlook tracking.
+
+</details>
+
+### Q064 (`T2-Q096`) — Manage environments [4.5] · *Multi-Select (Select 2)*
+
+You are configuring automated Dev -> UAT -> Production deployments using `Power Platform pipelines`. Which TWO platform features integrate natively during pipeline deployment? Select two.
+
+- **A.** `Managed Environments` provide built-in `Power Platform pipelines`, Canvas app `Sharing limits`, `Solution Checker` import gates (`Warn` or `Block`), `Maker welcome content`, and weekly admin governance digests
+- **B.** Assume enabling out-of-the-box Dataverse SharePoint Document Management automatically enforces Dataverse row-level Security Roles inside SharePoint Online libraries
+- **C.** Use a standard asynchronous Power Automate Automated cloud flow (`When a row is added`) to block an invalid user form save before Dataverse commits the transaction
+- **D.** `Environment Variables` (`Text`, `Decimal`, `JSON`, `Data Source`, Azure Key Vault `Secret`) externalize stage settings; removing `Current Value` before export lets `Power Platform pipelines` or imports bind target values
+- **E.** Use a Dataverse Business Rule to hide an entire Main form `Tab` based on a `Choices (Multi-Select)` column and invoke an external REST webhook
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `A, D` (`CSV: 1,4`)
+
+Correct answers: A and D (are correct). Power Platform pipelines (in `Managed Environments`) prompt for and pre-validate target `Connection References` and `Environment Variables` (including Key Vault `Secret` and SharePoint `Data Source` variables) during Managed deployment. [PL-200 Manage environments — Import and export Dataverse Solutions with Environment Variables, Connection References, and pipelines | Ref: Use Environment Variables, Connection References, and Power Platform pipelines in ALM (https://learn.microsoft.com/en-us/power-apps/maker/data-platform/environmentvariables)]
+
+- **A:** Correct — Activating Managed Environments is required to enforce sharing caps, import-time Solution Checker blocking, and out-of-the-box ALM pipelines.
+- **B:** Incorrect — Out-of-the-box SharePoint Document Management creates folder links only; SharePoint permissions are NOT synchronized automatically from Dataverse row ACLs.
+- **C:** Incorrect — Automated cloud flows trigger asynchronously AFTER Dataverse commits the row; blocking a save transactionally requires a synchronous workflow, Business Rule, or pre-operation plug-in.
+- **D:** Correct — Combining Environment Variables, Connection References, and Power Platform pipelines eliminates post-deployment manual edits in Production.
+- **E:** Incorrect — Business Rules cannot show/hide whole Tabs or Sections, cannot evaluate Multi-Select Choice columns, and cannot call external HTTP APIs.
+
+</details>
+
+### Q065 (`T2-Q093`) — Manage environments [4.4] · *Single-Answer Multiple Choice*
+
+Before running a risky bulk Dataflow transformation in Production at 20:00, your release lead creates an on-demand Manual Backup in PPAC and asks how long system and manual backups are retained for Production Dataverse environments. What is the standard backup retention window?
+
+- **A.** Copying Production to `Sandbox` offers `Full Copy` (all rows + schema) vs `Minimal Copy` (schema/customizations ONLY—excluding business data and disabling background flows/mailboxes), alongside system Backups and DLP policies
+- **B.** Toggle an existing Dataverse table’s Ownership property from `Organization` to `User or team` in Production without recreating the table
+- **C.** `Lookup View` defines which columns display inside a Lookup field dropdown, `Associated View` defines columns when viewing related child records under the `Related` tab, and `Quick Find View` controls search & indexing
+- **D.** Sharing an Instant or `Power Apps (V2)` flow via `Run-only users` lets business users invoke the flow (using a pre-bound service connection or their own) without granting `Co-owner` rights to edit logic or view all run history
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `A` (`CSV: 1`)
+
+Correct answer: A (is correct). Production Dataverse environments retain continuous system/manual backups for up to `28 days` (whereas standard non-Managed Sandbox backups retain for `7 days`). [PL-200 Manage environments — Manage Sandbox environments (Full vs Minimal Copy, Reset), Backups, DLP, and Managed Environments | Ref: Manage Sandbox environments (Copy Full vs Minimal, Reset), Backups, DLP, and Managed Environments (https://learn.microsoft.com/en-us/power-platform/admin/copy-environment)]
+
+- **A:** Correct — `Minimal Copy` lets teams debug schema/forms fast without copying gigabytes of confidential rows or emailing live customers.
+- **B:** Incorrect — Table Ownership (`Organization` vs `User or team`) and `Activity table` flags are immutable once the table is provisioned.
+- **C:** Incorrect — Customizing the `Lookup View` (top 3 columns show inline in Unified Interface lookup pickers) lets users distinguish identically named parent rows.
+- **D:** Incorrect — Never make hundreds of end users Co-owners of a flow—Co-owners can modify actions, inspect every user’s payloads, or delete the flow.
+
+</details>
+
+### Q066 (`T2-Q100`) — Manage environments [4.7] · *Single-Answer Multiple Choice*
+
+Silverleaf’s Chief Privacy Officer mandates that uploaded psychiatric evaluation PDFs MUST automatically inherit exact per-record Dataverse `User/Team` Security Roles and `Access Team` shares with zero risk of broader SharePoint site viewers opening files. Where should you store those files?
+
+- **A.** Classic workflows log runs in `System Jobs` (`ProcessSession`), auto-terminate recursive loops exceeding depth limits, and purge succeeded background logs when `Automatically delete completed workflow jobs` is enabled
+- **B.** Dataverse `File`/`Image` columns and Timeline `Notes` store attachments in managed Dataverse `File` capacity honoring row-level Security Roles, whereas `SharePoint` integration offloads storage to SharePoint ACL-governed libraries
+- **C.** Modernized Business Units decouple a user’s owning BU from Security Role assignments, letting roles assigned across sibling Business Units grant matrix data access without moving the user
+- **D.** Assume enabling out-of-the-box Dataverse SharePoint Document Management automatically enforces Dataverse row-level Security Roles inside SharePoint Online libraries
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `B` (`CSV: 2`)
+
+Correct answer: B (is correct). Store them in a Dataverse `File` column or Timeline `Notes` attachment (managed Dataverse `File` storage honoring row-level Dataverse RBAC), because native SharePoint Document Management does NOT auto-sync Dataverse row ACLs. [PL-200 Manage environments — Configure SharePoint Document Management and Microsoft Word Templates | Ref: Configure SharePoint Document Management and Microsoft Word Templates in Power Platform (https://learn.microsoft.com/en-us/power-platform/admin/using-word-templates-dynamics-365)]
+
+- **A:** Incorrect — Enabling `Automatically delete completed workflow jobs` prevents millions of succeeded `ProcessSession` rows from exhausting Dataverse storage.
+- **B:** Correct — When strict per-record Dataverse RBAC must automatically govern attachment access without custom permission sync flows, use Dataverse `File` columns or Timeline `Notes`.
+- **C:** Incorrect — Enabling Modernized Business Units lets matrixed specialists access multiple regional BUs while keeping their primary home BU for record ownership.
+- **D:** Incorrect — Out-of-the-box SharePoint Document Management creates folder links only; SharePoint permissions are NOT synchronized automatically from Dataverse row ACLs.
+
+</details>
+
+## Case Study Vignette — Apex Medical Equipment
+
+> [Scenario: Apex Medical Equipment tracks infusion pumps in a model-driven app. Biomed engineers want inline editing of Calibration Logs inside a parent Pump Main form without opening child pages, an embedded Canvas calibration calculator reading the current host Pump record live, and a cross-table Business Process Flow spanning Triage to Repair Order.]
+
+### Q067 (`T2-Q032`) — Create apps by using Microsoft Power Apps [2.2] · *Single-Answer Multiple Choice*
+
+Case study — Apex Medical Equipment: Pre-op nurses working inside the `Surgical Case` Main form need to edit the parent `Patient Contact`’s `Allergy Summary` and `Emergency Contact Phone` inline inside a tab without leaving `Surgical Case`. Which control should you configure on the `Patient Contact` Lookup?
+
+- **A.** `Editable Grid` enables inline grid editing; `Form Component Control` embeds a related Lookup record’s editable Main form directly inside a parent form tab; Lookup `Filter by related rows` narrows picker choices
+- **B.** Import a Managed Solution using `Update` (instead of `Upgrade`) expecting Dataverse to automatically remove retired columns and forms from Production
+- **C.** A `Quick View` form displays read-only columns/subgrids from a parent Lookup table on a child Main form, whereas a `Form Component Control` embeds the parent Lookup table’s Main form for direct inline editing
+- **D.** Webhook triggers register an instant callback firing immediately when an event occurs, whereas polling triggers query the data source on a scheduled interval determined by connector and Power Platform license tier
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `A` (`CSV: 1`)
+
+Correct answer: A (is correct). Configure the `Form Component Control` bound to the `Patient Contact` Lookup column and point it to a tailored `Contact` Main form. [PL-200 Create apps by using Microsoft Power Apps — Use specialized controls in the modern form designer (Editable Grid, Form Component Control, Subgrids) | Ref: Use modern controls, Editable Grids, Subgrids, and Form Component controls on forms (https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/form-component-control)]
+
+- **A:** Correct — Unlike a read-only Quick View form, the Form Component Control lets users edit fields of a related parent Lookup record inline on the host Main form.
+- **B:** Incorrect — Managed `Update` adds and modifies components but NEVER deletes removed components; only `Upgrade` (`Stage for upgrade` / `Apply upgrade`) removes deleted items.
+- **C:** Incorrect — Choose Quick View when parent columns must stay read-only; choose Form Component Control when users must edit parent Lookup columns without navigating away.
+- **D:** Incorrect — The native Microsoft Dataverse connector triggers via near-real-time event webhooks rather than slow multi-minute polling.
+
+</details>
+
+### Q068 (`T2-Q041`) — Create apps by using Microsoft Power Apps [2.6] · *Single-Answer Multiple Choice*
+
+Case study — Apex Medical Equipment: Apex embedded an interactive `OR Tray Sterilization` Canvas app directly onto a section of the `Surgical Case` Main form. Which object inside that embedded Canvas app exposes the currently open `Surgical Case` record? Complete the reference: ____.
+
+- **A.** `LookUp(WorkOrders, WorkOrder = GUID(Param("recordId")))`
+- **B.** `ModelDrivenFormIntegration.Item`
+- **C.** `@and(equals(triggerOutputs()?['body/orc_permitstatus'], 100000002), equals(triggerOutputs()?['body/orc_district'], 'Downtown'))`
+- **D.** `If(NewRecord.CreditHold = true && NewRecord.OrderTotal > 0, Error("Cannot submit order while account is on Credit Hold."))`
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `B` (`CSV: 2`)
+
+Correct answer: B (is correct). `ModelDrivenFormIntegration.Item` binds the embedded Canvas app control to the live host Main form record (and `ModelDrivenFormIntegration.RefreshForm(false)` refreshes the host form). [PL-200 Create apps by using Microsoft Power Apps — Embed a Canvas app in a model-driven form and add Power BI dashboards and reports | Ref: Embed a canvas app on a model-driven form and add Power BI reports/dashboards (https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/embed-canvas-app-in-form)]
+
+- **A:** Incorrect — When a model-driven command opens a Custom Page passing record context, `GUID(Param("recordId"))` converts the passed string ID into a typed GUID for `LookUp`.
+- **B:** Correct — Inside a Canvas app embedded on a model-driven Main form, `ModelDrivenFormIntegration.Item` exposes the host Dataverse record in context.
+- **C:** Incorrect — Adding an `@and(...)` `Trigger Condition` in trigger settings prevents the cloud flow from firing at all unless both field criteria match.
+- **D:** Incorrect — In an Automated `Pre-operation` Dataverse low-code plug-in, comparing `NewRecord` values and calling `Error(...)` aborts the transaction with a clear user message.
+
+</details>
+
+### Q069 (`T2-Q042`) — Create apps by using Microsoft Power Apps [2.6] · *Single-Answer Multiple Choice*
+
+Case study — Apex Medical Equipment: Apex’s Biomedical Director wants a Power BI `OR Turnover Utilization` report embedded inside a tab on the `Surgical Facility` Main form filtered automatically to the open facility’s GUID. How is this configured?
+
+- **A.** `Real-time (synchronous)` classic Dataverse workflows execute inside the SQL transaction (`Before` or `After` save) as `Calling User` or `Workflow Owner`, rolling back the entire save when `Stop workflow` = `Canceled`
+- **B.** Import a Managed Solution using `Update` (instead of `Upgrade`) expecting Dataverse to automatically remove retired columns and forms from Production
+- **C.** An embedded Canvas app on a Main form reads the live host record via `ModelDrivenFormIntegration.Item`, while Power BI dashboards, reports, and tiles embed as system dashboards or contextual form visuals
+- **D.** `Alternate Keys` (on `Single Line of Text`, `Whole Number`, or `Decimal`/`Date` columns) enforce database-level uniqueness and allow Dataflows, APIs, and imports to upsert/lookup rows using natural business keys instead of GUIDs
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `C` (`CSV: 3`)
+
+Correct answer: C (is correct). Enable Power BI visualization embedding in environment settings and add the Power BI report control on the `Surgical Facility` Main form with contextual JSON column filtering bound to the facility ID. [PL-200 Create apps by using Microsoft Power Apps — Embed a Canvas app in a model-driven form and add Power BI dashboards and reports | Ref: Embed a canvas app on a model-driven form and add Power BI reports/dashboards (https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/embed-canvas-app-in-form)]
+
+- **A:** Incorrect — Background (asynchronous) classic workflows always run post-commit as Workflow Owner and cannot roll back the triggering save.
+- **B:** Incorrect — Managed `Update` adds and modifies components but NEVER deletes removed components; only `Upgrade` (`Stage for upgrade` / `Apply upgrade`) removes deleted items.
+- **C:** Correct — `ModelDrivenFormIntegration.RefreshForm(false)` refreshes the host model-driven form after an embedded Canvas control commits changes.
+- **D:** Incorrect — Creating an Alternate Key builds a unique index asynchronously in Dataverse; verify its status reaches `Active` in the solution before running natural-key upserts.
+
+</details>
+
+### Q070 (`T2-Q017`) — Configure Microsoft Dataverse [1.7] · *Single-Answer Multiple Choice*
+
+A clinic manager wants to update `TriagePriority` across 85 open `Patient Referral` rows quickly inside a spreadsheet grid directly inside her browser tab without downloading a local `.xlsx` file and re-importing a template. Which model-driven command-bar option should she use?
+
+- **A.** `Server-Side Synchronization` links Dataverse to Exchange Online via an `Email Server Profile`; user and `Queue` (`Private` vs `Public`) mailboxes require `Approve Email` and `Test & Enable Mailbox` = `Success`
+- **B.** `Open in Excel Online` edits rows inline inside the browser; `Dynamic Worksheet` / `Dynamic PivotTable` refreshes live Dataverse data honoring each viewer’s Security Roles; `Static Worksheet` exports a fixed point-in-time copy
+- **C.** `LookUp(WorkOrders, WorkOrder = GUID(Param("recordId")))`
+- **D.** Import a Managed Solution using `Update` (instead of `Upgrade`) expecting Dataverse to automatically remove retired columns and forms from Production
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `B` (`CSV: 2`)
+
+Correct answer: B (is correct). Selecting `Export to Excel` -> `Open in Excel Online` opens an inline editable spreadsheet overlay directly inside the model-driven browser window and saves edits back to Dataverse. [PL-200 Configure Microsoft Dataverse — Describe and configure options for importing and exporting data (Excel, Dataflows, Synapse/Fabric Link) | Ref: Import and export data in Microsoft Dataverse (Excel, CSV, Dataflows, Synapse/Fabric Link) (https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-import-export)]
+
+- **A:** Incorrect — Private Queues restrict item visibility and work-picking to explicit Queue members, supporting Dynamics 365 App for Outlook tracking.
+- **B:** Correct — Dynamic Excel exports require recipients to have Dataverse access and appropriate table Read privileges; Static exports embed the exporter’s snapshot rows directly.
+- **C:** Incorrect — When a model-driven command opens a Custom Page passing record context, `GUID(Param("recordId"))` converts the passed string ID into a typed GUID for `LookUp`.
+- **D:** Incorrect — Managed `Update` adds and modifies components but NEVER deletes removed components; only `Upgrade` (`Stage for upgrade` / `Apply upgrade`) removes deleted items.
+
+</details>
+
+### Q071 (`T2-Q095`) — Manage environments [4.5] · *Single-Answer Multiple Choice*
+
+A maker forgot to select `Remove from this solution` on the Dev `Current Value` of an `HL7EndpointUrl` Environment Variable before exporting the Managed solution, and after importing into UAT the UAT flow suddenly called the Dev HL7 server! Why did that happen?
+
+- **A.** `Environment Variables` (`Text`, `Decimal`, `JSON`, `Data Source`, Azure Key Vault `Secret`) externalize stage settings; removing `Current Value` before export lets `Power Platform pipelines` or imports bind target values
+- **B.** `Navigate(TargetScreen, ScreenTransition.None, {locPermitId: ThisItem.Permit})` passes a screen-scoped context variable, whereas `Set(gblCurrentUser, User())` in `App.OnStart` / `App.Formulas` sets app-wide state
+- **C.** Import a Managed Solution using `Update` (instead of `Upgrade`) expecting Dataverse to automatically remove retired columns and forms from Production
+- **D.** Dataverse Search uses each enabled table’s `Quick Find View`: `Find Columns` define indexed/searched fields, `View Columns` define returned fields, and filter clauses exclude inactive rows
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `A` (`CSV: 1`)
+
+Correct answer: A (is correct). Including a `Current Value` inside an exported solution overrides or seeds that Dev value in the target environment unless overridden during pipeline/import deployment; clearing `Current Value` before export forces clean target binding. [PL-200 Manage environments — Import and export Dataverse Solutions with Environment Variables, Connection References, and pipelines | Ref: Use Environment Variables, Connection References, and Power Platform pipelines in ALM (https://learn.microsoft.com/en-us/power-apps/maker/data-platform/environmentvariables)]
+
+- **A:** Correct — Combining Environment Variables, Connection References, and Power Platform pipelines eliminates post-deployment manual edits in Production.
+- **B:** Incorrect — Prefer declarative `Named Formulas` (`App.Formulas`) or `UpdateContext` / `Navigate` context variables over overusing mutable global `Set()` variables.
+- **C:** Incorrect — Managed `Update` adds and modifies components but NEVER deletes removed components; only `Upgrade` (`Stage for upgrade` / `Apply upgrade`) removes deleted items.
+- **D:** Incorrect — Administrators manage total indexed columns against the environment Dataverse Search index limit inside Power Platform Admin Center.
+
+</details>
+
+### Q072 (`T2-Q040`) — Create apps by using Microsoft Power Apps [2.5] · *Multi-Select (Select 2)*
+
+You are configuring `Visible` and `OnSelect` Power Fx formulas on buttons in the modern command designer. Which TWO facts apply to Modern Commanding? Select two.
+
+- **A.** Add custom `Commission Split %` and `Effective Date` columns directly onto the hidden system intersect table of a native `N:N` relationship
+- **B.** Use a Dataverse Business Rule to hide an entire Main form `Tab` based on a `Choices (Multi-Select)` column and invoke an external REST webhook
+- **C.** `Modern Commanding` customizes `Main grid`, `Main form`, `Subgrid`, and `Associated` command bars using `Power Fx` (`Patch`, `Notify`, `Confirm`, `Navigate`, `Self.Selected.Item`) inside a managed `Component Library`
+- **D.** Toggle an existing Dataverse table’s Ownership property from `Organization` to `User or team` in Production without recreating the table
+- **E.** `Patch(WorkOrders, Self.Selected.Item, {'Dispatch Status': 'Dispatch Status'.Dispatched})`
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `C, E` (`CSV: 3,5`)
+
+Correct answers: C and E (are correct). Modern Commanding stores button formulas inside a solution `Component Library`, evaluates `Self.Selected.Item` / `Self.Selected.AllItems` for `Visible` and `Patch(...)`, and applies to `Main grid`, `Main form`, `Subgrid`, and `Associated` bars. [PL-200 Create apps by using Microsoft Power Apps — Configure Modern Commanding by using Power Fx and Component Libraries | Ref: Use Power Fx with modern commanding in model-driven apps (https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/command-designer-powerfx)]
+
+- **A:** Incorrect — Native N:N system intersect tables cannot hold custom columns, forms, or workflows; create a manual intersect table with two 1:N relationships instead.
+- **B:** Incorrect — Business Rules cannot show/hide whole Tabs or Sections, cannot evaluate Multi-Select Choice columns, and cannot call external HTTP APIs.
+- **C:** Correct — Power Fx `Visible` formulas evaluate `Self.Selected.Item` columns or `CountRows(Self.Selected.AllItems)` without writing Ribbon XML.
+- **D:** Incorrect — Table Ownership (`Organization` vs `User or team`) and `Activity table` flags are immutable once the table is provisioned.
+- **E:** Correct — `Patch(DataSource, BaseRecord, ChangeRecord)` updates the selected Dataverse record directly from a modern Power Fx command button or Canvas app.
+
+</details>
+
+### Q073 (`T2-Q009`) — Configure Microsoft Dataverse [1.4] · *Single-Answer Multiple Choice*
+
+On `Surgical Estimate`, you need a column `EstimatedPatientCoPay` that immediately multiplies `ApprovedProcedureFee * CoPayPercentage` in real time using `Power Fx` syntax (supporting `Switch`, `If`, and string/date functions) without saving child rows. Which column type should you create?
+
+- **A.** Classic workflows log runs in `System Jobs` (`ProcessSession`), auto-terminate recursive loops exceeding depth limits, and purge succeeded background logs when `Automatically delete completed workflow jobs` is enabled
+- **B.** `Customer` lookups bind to `Account` or `Contact`; `Alternate Keys` enforce natural-key uniqueness/upserts; `Power Fx Formula` columns compute live values on read while `Rollup` columns aggregate child rows on a schedule
+- **C.** Deploying `Dynamics 365 App for Outlook` requires Exchange Online, `Server-Side Synchronization` tested and enabled (`Success`) on each user’s Mailbox, and assigning the `Dynamics 365 App for Outlook User` security role
+- **D.** Use a Dataverse Business Rule to hide an entire Main form `Tab` based on a `Choices (Multi-Select)` column and invoke an external REST webhook
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `B` (`CSV: 2`)
+
+Correct answer: B (is correct). Creating a `Power Fx Formula` column computes live read-time values using rich Power Fx functions directly inside Dataverse. [PL-200 Configure Microsoft Dataverse — Create or modify columns, Alternate Keys, Rollup columns, and Power Fx Formula columns | Ref: Create and edit columns, Alternate Keys, Rollup, and Power Fx Formula columns in Dataverse (https://learn.microsoft.com/en-us/power-apps/maker/data-platform/formula-columns)]
+
+- **A:** Incorrect — Enabling `Automatically delete completed workflow jobs` prevents millions of succeeded `ProcessSession` rows from exhausting Dataverse storage.
+- **B:** Correct — Rollup columns recalculate asynchronously (default hourly, minimum 1 hour, or manual refresh) whereas Power Fx Formula columns evaluate immediately.
+- **C:** Incorrect — Once prerequisites pass, administrators push the add-in to eligible users from PPAC / App for Outlook settings without local MSI installers.
+- **D:** Incorrect — Business Rules cannot show/hide whole Tabs or Sections, cannot evaluate Multi-Select Choice columns, and cannot call external HTTP APIs.
+
+</details>
+
+### Q074 (`T2-Q039`) — Create apps by using Microsoft Power Apps [2.5] · *Single-Answer Multiple Choice*
+
+To prevent accidental clicks on the `Dispatch Now` modern command button, nurses want a native browser/Unified Interface confirmation prompt before `Patch(...)` executes. Complete the Power Fx formula: ____.
+
+- **A.** `ClearCollect(colOfflineValves, Filter(Valves, District = ddDistrict.Selected.Value))`
+- **B.** `If(Confirm("Dispatch this technician now?"), Patch(WorkOrders, Self.Selected.Item, {Status: Status.Dispatched}))`
+- **C.** Dataverse `Relate rows` action using the `N:N` relationship name and target row `@odata.id` (`OData Id`)
+- **D.** Relationship behavior `Custom` with `Assign = Cascade Active` and `Delete = Restrict`
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `B` (`CSV: 2`)
+
+Correct answer: B (is correct). `If(Confirm("Dispatch this technician now?"), Patch(WorkOrders, Self.Selected.Item, {Status: Status.Dispatched}))` invokes `Confirm(...)` and patches only when the user selects OK. [PL-200 Create apps by using Microsoft Power Apps — Configure Modern Commanding by using Power Fx and Component Libraries | Ref: Use Power Fx with modern commanding in model-driven apps (https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/command-designer-powerfx)]
+
+- **A:** Incorrect — `ClearCollect(Collection, Table)` clears any prior cached items and loads the delegable `Filter(...)` result into an in-memory Canvas collection.
+- **B:** Correct — `Confirm(Message)` opens a native confirmation dialog in Model-driven Modern Commanding or Custom Pages and returns `true` only when confirmed.
+- **C:** Incorrect — Associating two existing Dataverse rows across a native `N:N` (or `1:N`) relationship in Power Automate uses the `Relate rows` action with the target record’s `OData Id`.
+- **D:** Incorrect — Setting relationship behavior to `Custom` with `Assign = Cascade Active` reassigns only open child records when the parent owner changes, leaving historical closed rows untouched.
+
+</details>
+
+### Q075 (`T2-Q059`) — Create and manage logic and process automation [3.2] · *Single-Answer Multiple Choice*
+
+Your solution contains 9 Power Automate cloud flows that all connect to Dataverse and Microsoft Teams. How many `Connection References` should you create in the solution if every flow should run under the same `svc-clinical-automation` service account in Production?
+
+- **A.** Dataverse Search uses each enabled table’s `Quick Find View`: `Find Columns` define indexed/searched fields, `View Columns` define returned fields, and filter clauses exclude inactive rows
+- **B.** Power Pages Design Studio provides `Pages`, `Styling`, `Data`, and `Set up` workspaces, surfacing Dataverse views via `Lists` and Dataverse forms via `Basic Forms` (`Insert`, `Edit`, `ReadOnly` modes)
+- **C.** Connectors expose webhook/polling `Triggers` and `Actions` over `Connections`, while solution `Connection References` decouple flows from maker accounts so ALM imports bind target service credentials cleanly
+- **D.** Toggle an existing Dataverse table’s Ownership property from `Organization` to `User or team` in Production without recreating the table
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `C` (`CSV: 3`)
+
+Correct answer: C (is correct). Create one `Connection Reference` for Dataverse and one for Microsoft Teams inside the solution and bind all 9 flows to those shared Connection References. [PL-200 Create and manage logic and process automation — Describe connector triggers, actions, polling/webhooks, and Connection References | Ref: Connectors, triggers, actions, and Connection References in Power Automate (https://learn.microsoft.com/en-us/power-automate/conn-ref-env-variables-build-automation)]
+
+- **A:** Incorrect — Administrators manage total indexed columns against the environment Dataverse Search index limit inside Power Platform Admin Center.
+- **B:** Incorrect — Metadata changes made in the Power Pages Management model-driven app require selecting `Sync` in Design Studio before previewing.
+- **C:** Correct — Multiple solution-aware cloud flows reuse a single Connection Reference per connector, preventing flows from turning off during deployment.
+- **D:** Incorrect — Table Ownership (`Organization` vs `User or team`) and `Activity table` flags are immutable once the table is provisioned.
+
+</details>
+
+### Q076 (`T2-Q022`) — Configure Microsoft Dataverse [1.9] · *Single-Answer Multiple Choice*
+
+At a multi-specialty medical group, Chief Medical Officers supervise Clinical Directors who supervise Attending Physicians across different Business Units—meaning the supervision tree follows clinical job positions rather than the HR `Manager` column on `User`. Which Dataverse security model fits?
+
+- **A.** Use a Dataverse Business Rule to hide an entire Main form `Tab` based on a `Choices (Multi-Select)` column and invoke an external REST webhook
+- **B.** Copying Production to `Sandbox` offers `Full Copy` (all rows + schema) vs `Minimal Copy` (schema/customizations ONLY—excluding business data and disabling background flows/mailboxes), alongside system Backups and DLP policies
+- **C.** Modernized Business Units decouple a user’s owning BU from Security Role assignments, letting roles assigned across sibling Business Units grant matrix data access without moving the user
+- **D.** `Column Security Profiles` enforce server-side field masking and Read/Update/Create rights, while `Hierarchy Security` (`Manager` direct-report chain vs `Position` job tree) grants hierarchical access within set depth
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `D` (`CSV: 4`)
+
+Correct answer: D (is correct). Configure `Hierarchy Security` using a `Custom Position Hierarchy` (`Position` tree) rather than `Manager` hierarchy so access follows clinical job positions across Business Units. [PL-200 Configure Microsoft Dataverse — Manage Business Units and Modernized Business Units (matrix data access) | Ref: Security concepts in Microsoft Dataverse and Modernized Business Units (https://learn.microsoft.com/en-us/power-platform/admin/wp-security-cds)]
+
+- **A:** Incorrect — Business Rules cannot show/hide whole Tabs or Sections, cannot evaluate Multi-Select Choice columns, and cannot call external HTTP APIs.
+- **B:** Incorrect — `Minimal Copy` lets teams debug schema/forms fast without copying gigabytes of confidential rows or emailing live customers.
+- **C:** Incorrect — Enabling Modernized Business Units lets matrixed specialists access multiple regional BUs while keeping their primary home BU for record ownership.
+- **D:** Correct — Manager hierarchy grants Read/Write/Update/Append/Append To on direct reports and Read-only on indirect reports within the configured depth.
+
+</details>
+
+### Q077 (`T2-Q044`) — Create apps by using Microsoft Power Apps [2.7] · *Multi-Select (Select 2)*
+
+You are reviewing a Canvas app built for mobile phlebotomists against `App Checker` warnings. Which TWO architectural recommendations improve responsiveness, reusability, and large-table scale? Select two.
+
+- **A.** Responsive Canvas apps turn off `Scale to fit` and nest `Horizontal`/`Vertical` auto-layout containers alongside shared `Component Libraries` exposing custom input/output properties across apps
+- **B.** Set `Apply to each` `Concurrency Control` to `50` while mutating a shared top-level `Set variable` action inside the loop body to calculate per-row totals
+- **C.** Toggle an existing Dataverse table’s Ownership property from `Organization` to `User or team` in Production without recreating the table
+- **D.** `Set()` sets global variables, `UpdateContext()` sets screen variables, `ClearCollect()` caches local rows, delegable `Filter`/`LookUp` push queries server-side past 500/2,000 rows, and `IfError()` traps runtime errors
+- **E.** Use a Dataverse Business Rule to hide an entire Main form `Tab` based on a `Choices (Multi-Select)` column and invoke an external REST webhook
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `A, D` (`CSV: 1,4`)
+
+Correct answers: A and D (are correct). Use nested responsive containers + `Component Libraries` for shared UI components, and replace non-delegable gallery formulas so `Filter`/`LookUp` execute server-side on Dataverse past the 500/2,000 row limit. [PL-200 Create apps by using Microsoft Power Apps — Describe Canvas app structure, responsive containers, galleries, forms, themes, and components | Ref: Build responsive canvas apps with layout containers, galleries, forms, and components (https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/create-responsive-layout)]
+
+- **A:** Correct — Component Libraries provide centralized ALM versioning for shared headers, menus, and dialogs across multiple Canvas apps.
+- **B:** Incorrect — Mutating a shared flow variable inside a concurrent `Apply to each` loop causes race-condition overwrites across parallel iterations; use `Compose` or degree `1`.
+- **C:** Incorrect — Table Ownership (`Organization` vs `User or team`) and `Activity table` flags are immutable once the table is provisioned.
+- **D:** Correct — Non-delegable formulas trigger blue delegation warnings in App Checker and silently cap processed rows at the client limit (500 default, 2,000 max).
+- **E:** Incorrect — Business Rules cannot show/hide whole Tabs or Sections, cannot evaluate Multi-Select Choice columns, and cannot call external HTTP APIs.
+
+</details>
+
+### Q078 (`T2-Q075`) — Create and manage logic and process automation [3.8] · *Single-Answer Multiple Choice*
+
+You add a new mandatory data step to Stage 2 of an already-active Business Process Flow and deploy the update to Production. How can you build a view identifying which existing in-flight `Patient Referral` records are still sitting in Stage 1 or Stage 2?
+
+- **A.** Dataverse `File`/`Image` columns and Timeline `Notes` store attachments in managed Dataverse `File` capacity honoring row-level Security Roles, whereas `SharePoint` integration offloads storage to SharePoint ACL-governed libraries
+- **B.** `IfError(Patch(Valves, ThisItem, {Pressure: Value(txtPsi.Text)}), Notify("Save failed: " & FirstError.Message, NotificationType.Error))`
+- **C.** Toggle an existing Dataverse table’s Ownership property from `Organization` to `User or team` in Production without recreating the table
+- **D.** BPF stages trigger classic workflows (`Stage Entry`/`Exit`) or on-demand `Cloud Flow Steps`, and every BPF creates its own Dataverse table tracking active stage, `Active Stage Started On`, and status for views and charts
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `D` (`CSV: 4`)
+
+Correct answer: D (is correct). Query the auto-created `Business Process Flow` Dataverse table directly in a Public View or Dashboard using its `Active Stage`, `Active Stage Started On`, and `Status` columns. [PL-200 Create and manage logic and process automation — Add classic workflows and cloud flow steps to a BPF and manage the BPF Dataverse table | Ref: Add instant/action flows and classic workflows to BPFs and manage the BPF table (https://learn.microsoft.com/en-us/power-automate/Trigger-flow-business-process-flow)]
+
+- **A:** Incorrect — When strict per-record Dataverse RBAC must automatically govern attachment access without custom permission sync flows, use Dataverse `File` columns or Timeline `Notes`.
+- **B:** Incorrect — `IfError(Value, Fallback)` catches Dataverse/network write errors cleanly and surfaces `FirstError.Message` without crashing the Canvas screen.
+- **C:** Incorrect — Table Ownership (`Organization` vs `User or team`) and `Activity table` flags are immutable once the table is provisioned.
+- **D:** Correct — Building views and charts directly on the auto-created BPF Dataverse table measures stage dwell times and active pipeline bottlenecks.
+
+</details>
+
+### Q079 (`T2-Q080`) — Create and manage logic and process automation [3.11] · *Ordered Sequence (Multiple Choice)*
+
+Your clinical engineering team wants an `Instant` server-side Power Fx calculation (`CalculateBMIRiskScore`) callable as a Custom API from both Canvas apps and Power Automate without writing C#. Order the steps to build and test this low-code plug-in.
+
+- **A.** Turn off Dataverse database in PPAC → Create a classic 2010 workflow first → Convert the workflow into HTML → Upload as a Power Pages web file
+- **B.** Open the Dataverse Accelerator app → Select Instant (typed parameters) or Automated (table Create/Update/Delete Pre/Post-op) plug-in → Write the Power Fx formula & pick a Solution → Save and test in the Accelerator canvas or app/flow
+- **C.** Write client-only Navigate() and Notify() UI calls inside an Automated Pre-operation plug-in → Skip Solution selection → Bind to an Excel file on OneDrive → Run offline
+- **D.** Open Visual Studio 2022 & compile a C# .NET assembly → Register via Plug-in Registration Tool in Production Default Solution → Disable Power Fx → Reboot Dataverse
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `B` (`CSV: 2`)
+
+Correct answer: B (is correct). Open the `Dataverse Accelerator` app, choose `Instant` (with typed input/output parameters), write the Power Fx formula and select a custom Solution, then save and test in the Accelerator test canvas. [PL-200 Create and manage logic and process automation — Configure Dataverse low-code plug-ins (Instant and Automated Power Fx plug-ins in Dataverse Accelerator) | Ref: Use Dataverse low-code plug-ins (Instant and Automated Power Fx plug-ins) (https://learn.microsoft.com/en-us/power-apps/maker/data-platform/low-code-plug-ins)]
+
+- **A:** Incorrect — Low-code plug-ins require a Dataverse database and are stored as Custom APIs / plug-in steps, not Power Pages HTML files.
+- **B:** Correct — Dataverse low-code plug-ins are authored in the Dataverse Accelerator app using Power Fx, saved into a Solution as Instant or Automated server-side plug-ins, and tested inline.
+- **C:** Incorrect — Server-side Dataverse low-code plug-ins execute in the Dataverse event pipeline and cannot invoke client screen functions like Navigate().
+- **D:** Incorrect — Low-code plug-ins use Power Fx inside the Dataverse Accelerator app rather than pro-code C# DLL compilation.
+
+</details>
+
+### Q080 (`T2-Q027`) — Configure Microsoft Dataverse [1.12] · *Ordered Sequence (Multiple Choice)*
+
+Only members of the `Behavioral Health Billing` team may view or update the sensitive `SubstanceAbuseFlag` and `SSNLastFour` columns on `Patient Contact`, while all other clinicians must see masked values across forms, views, Power BI, and Excel exports. Order the exact configuration steps.
+
+- **A.** Delete Organization Read from all Security Roles first → Add users to an empty Business Unit → Hide the column via JavaScript on one Main form → Leave Enable column security unchecked
+- **B.** Enable column security on the sensitive Dataverse column & save → Create a Column Security Profile in the solution/PPAC → Set Read, Read Unmasked, Update, and Create permissions → Add authorized teams or users to the profile
+- **C.** Create an Access Team Template first → Turn off Microsoft Entra authentication → Mark the column as Business Required in a Business Rule → Publish without a Column Security Profile
+- **D.** Create a Blocked DLP policy in PPAC → Export table rows to SharePoint → Assign System Administrator to all clerks → Enable Duplicate Detection on the column
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `B` (`CSV: 2`)
+
+Correct answer: B (is correct). Enable column security on the sensitive columns, create a `Column Security Profile`, configure Read/Read Unmasked/Update/Create permissions, and add the `Behavioral Health Billing` team. [PL-200 Configure Microsoft Dataverse — Configure Column Security Profiles and Hierarchy Security (Manager vs Position) | Ref: Column-level security to control access and Hierarchy security (Manager vs Position) (https://learn.microsoft.com/en-us/power-platform/admin/field-level-security)]
+
+- **A:** Incorrect — Hiding a field on a form does not secure API, Excel export, or view access; Enable column security + a Column Security Profile enforces server-side field security.
+- **B:** Correct — Securing a sensitive column requires enabling column security on the column definition, creating a Column Security Profile, configuring field permissions, and adding users/teams.
+- **C:** Incorrect — Access Team Templates share record-level rows, whereas field-level masking and Read/Update control require Column Security Profiles.
+- **D:** Incorrect — DLP policies govern connectors rather than Dataverse field-level authorization, and System Administrator bypasses restrictions entirely.
+
+</details>
+
+### Q081 (`T2-Q067`) — Create and manage logic and process automation [3.5] · *Single-Answer Multiple Choice*
+
+To prevent a Dataverse `Modified` trigger from firing whenever audit timestamps or unrelated notes fields change on `Permit` / `Referral`, restrict the trigger strictly to modifications on `orc_permitstatus` or `orc_district` for active rows (`statecode eq 0`) matching `100000002`. Complete the Dataverse trigger settings: ____.
+
+- **A.** `If(NewRecord.CreditHold = true && NewRecord.OrderTotal > 0, Error("Cannot submit order while account is on Credit Hold."))`
+- **B.** `Select columns`: `orc_permitstatus,orc_district` and `Filter rows`: `orc_permitstatus eq 100000002 and statecode eq 0`
+- **C.** `LookUp(WorkOrders, WorkOrder = GUID(Param("recordId")))`
+- **D.** `Table Permission` with `Access Type = Account` linked to the `Account` lookup relationship on `Warranty Claim`
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `B` (`CSV: 2`)
+
+Correct answer: B (is correct). Configure `Select columns`: `orc_permitstatus,orc_district` and `Filter rows`: `orc_permitstatus eq 100000002 and statecode eq 0`. [PL-200 Create and manage logic and process automation — Work with the Microsoft Dataverse connector (Select columns, Filter rows, Expand Query, Relate rows, child flows) | Ref: Use the Microsoft Dataverse connector in Power Automate cloud flows (https://learn.microsoft.com/en-us/power-automate/dataverse/overview)]
+
+- **A:** Incorrect — In an Automated `Pre-operation` Dataverse low-code plug-in, comparing `NewRecord` values and calling `Error(...)` aborts the transaction with a clear user message.
+- **B:** Correct — On the Dataverse connector, `Select columns` restricts which modified fields fire the trigger (or return in `List rows`) while `Filter rows` applies server-side OData `$filter`.
+- **C:** Incorrect — When a model-driven command opens a Custom Page passing record context, `GUID(Param("recordId"))` converts the passed string ID into a typed GUID for `LookUp`.
+- **D:** Incorrect — In Power Pages, `Access Type = Account` lets any authenticated Contact see/edit rows associated with their own parent `Account` (`parentcustomerid`) company.
+
+</details>
+
+### Q082 (`T2-Q089`) — Manage environments [4.3] · *Single-Answer Multiple Choice*
+
+In UAT, a newly imported Managed solution updated the `Patient Referral` Quick Find View filter, yet UAT searches still apply an emergency ad-hoc filter someone edited directly in UAT two months ago. Proposed solution: Open `See solution layers` on the Quick Find View in UAT and select `Remove Active Customizations`. Does this expose the updated Managed view?
+
+- **A.** Import a Managed Solution using `Update` (instead of `Upgrade`) expecting Dataverse to automatically remove retired columns and forms from Production
+- **B.** `Rollup` columns aggregate child `1:N` rows asynchronously via system jobs (default every 12 hours, configurable down to 1 hour minimum, or refreshed manually on the form), whereas `Power Fx Formula` columns evaluate live
+- **C.** Portal metadata edited inside the `Power Pages Management` model-driven app (such as advanced Basic Form Metadata, List filters, or Redirects) requires selecting `Sync` in Power Pages Design Studio to pull changes
+- **D.** An `Unmanaged (Active)` edit in UAT/Prod sits atop `Solution Layers`, masking `Managed` updates until `Remove Active Customizations` runs; `Solution Upgrade` deletes retired components whereas `Update` never removes items
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `D` (`CSV: 4`)
+
+Correct answer: D (is correct). Yes—removing the top `Unmanaged (Active)` layer immediately exposes the highest-priority `Managed` solution layer beneath it. [PL-200 Manage environments — Distinguish Managed vs Unmanaged Solutions, inspect Solution Layers, and apply Upgrade vs Update | Ref: Managed vs Unmanaged solutions, Solution Layers, and Upgrade vs Update (https://learn.microsoft.com/en-us/power-platform/alm/solution-layers-alm)]
+
+- **A:** Incorrect — Managed `Update` adds and modifies components but NEVER deletes removed components; only `Upgrade` (`Stage for upgrade` / `Apply upgrade`) removes deleted items.
+- **B:** Incorrect — Because Rollup columns run asynchronously on a scheduled system job (minimum 1-hour recurrence), totals do not recalculate instantaneously on child save unless manually refreshed.
+- **C:** Incorrect — Selecting `Sync` reconciles Dataverse website configuration tables with Design Studio before `Preview` clears the server cache.
+- **D:** Correct — Using `See solution layers` to clear stray Active layers and importing via `Stage for upgrade` -> `Apply upgrade` keeps Production clean.
+
+</details>
+
+### Q083 (`T2-Q024`) — Configure Microsoft Dataverse [1.10] · *Multi-Select (Select 2)*
+
+You are troubleshooting Security Role privilege depths and Lookup errors for regional healthcare coordinators. Which TWO Dataverse security rules are accurate? Select two.
+
+- **A.** Toggle an existing Dataverse table’s Ownership property from `Organization` to `User or team` in Production without recreating the table
+- **B.** Assume enabling out-of-the-box Dataverse SharePoint Document Management automatically enforces Dataverse row-level Security Roles inside SharePoint Online libraries
+- **C.** Modernized Business Units decouple a user’s owning BU from Security Role assignments, letting roles assigned across sibling Business Units grant matrix data access without moving the user
+- **D.** Copy a minimal role (`Basic User`), set `User`/`BU`/`Parent: Child`/`Org` depths, pair `Append` (child) + `Append To` (parent) for Lookups, and use `Direct User (Basic) access level and Team privileges` inheritance
+- **E.** Import a Managed Solution using `Update` (instead of `Upgrade`) expecting Dataverse to automatically remove retired columns and forms from Production
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `C, D` (`CSV: 3,4`)
+
+Correct answers: C and D (are correct). Linking a child row to a parent Lookup requires `Append` on the child + `Append To` on the parent, and `Modernized Business Units` allow assigning roles across sibling Business Units without changing a user’s owning BU. [PL-200 Configure Microsoft Dataverse — Create and manage custom Security Roles (privilege depth, Append/Append To, inheritance) | Ref: Security roles and privileges (Append vs Append To, inheritance) in Dataverse (https://learn.microsoft.com/en-us/power-platform/admin/security-roles-privileges)]
+
+- **A:** Incorrect — Table Ownership (`Organization` vs `User or team`) and `Activity table` flags are immutable once the table is provisioned.
+- **B:** Incorrect — Out-of-the-box SharePoint Document Management creates folder links only; SharePoint permissions are NOT synchronized automatically from Dataverse row ACLs.
+- **C:** Correct — Enabling Modernized Business Units lets matrixed specialists access multiple regional BUs while keeping their primary home BU for record ownership.
+- **D:** Correct — Populating a Lookup requires BOTH Append on the child record AND Append To on the target parent record.
+- **E:** Incorrect — Managed `Update` adds and modifies components but NEVER deletes removed components; only `Upgrade` (`Stage for upgrade` / `Apply upgrade`) removes deleted items.
+
+</details>
+
+### Q084 (`T2-Q064`) — Create and manage logic and process automation [3.4] · *Single-Answer Multiple Choice*
+
+When formatting a surgery appointment notice in Power Automate, `orc_alternatedate` may be null and must fall back cleanly to `orc_primarydate` formatted as `yyyy-MM-dd`. Complete the WDL expression: ____.
+
+- **A.** `Developer` tab → `XML Mapping Pane` (`urn:microsoft-crm/document-template/...`) → insert `Repeating` content control around table row
+- **B.** `Patch(WorkOrders, Self.Selected.Item, {'Dispatch Status': 'Dispatch Status'.Dispatched})`
+- **C.** `formatDateTime(coalesce(triggerOutputs()?['body/orc_alternatedate'], triggerOutputs()?['body/orc_primarydate']), 'yyyy-MM-dd')`
+- **D.** `Table Permission` with `Access Type = Contact` linked to the `Referring Physician (Contact)` lookup relationship
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `C` (`CSV: 3`)
+
+Correct answer: C (is correct). `formatDateTime(coalesce(triggerOutputs()?['body/orc_alternatedate'], triggerOutputs()?['body/orc_primarydate']), 'yyyy-MM-dd')` picks the first non-null date and formats it safely. [PL-200 Create and manage logic and process automation — Implement Dynamic Content, WDL expressions, and Trigger Conditions | Ref: Reference guide for Workflow Definition Language expressions in Power Automate (https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference)]
+
+- **A:** Incorrect — Microsoft Word Templates bind Dataverse columns via the `XML Mapping Pane` using `Plain Text` controls for fields and `Repeating` content controls for `1:N` child line items.
+- **B:** Incorrect — `Patch(DataSource, BaseRecord, ChangeRecord)` updates the selected Dataverse record directly from a modern Power Fx command button or Canvas app.
+- **C:** Correct — `coalesce(arg1, arg2)` returns the first non-null date so `formatDateTime(...)` never fails on a null optional Dataverse column.
+- **D:** Incorrect — In Power Pages, `Access Type = Contact` restricts each signed-in external user strictly to Dataverse rows linked to their own `Contact` record.
+
+</details>
+
+### Q085 (`T2-Q025`) — Configure Microsoft Dataverse [1.11] · *Single-Answer Multiple Choice*
+
+Hospital IT manages 1,800 nurses inside Microsoft Entra ID security groups (`SG-Clinic-Cardiology`, `SG-Clinic-Ortho`) and wants nurses to gain Dataverse access dynamically at first sign-in—and lose access immediately when removed from the Entra group—without manual Dataverse user-role maintenance. What should you configure?
+
+- **A.** Canvas apps trigger solution-aware `Power Apps (V2)` cloud flows via `FlowName.Run(...)`, capturing synchronous outputs from `Respond to a Power App or flow` while sharing via `Run-only users` permissions
+- **B.** `Rollup` columns aggregate child `1:N` rows asynchronously via system jobs (default every 12 hours, configurable down to 1 hour minimum, or refreshed manually on the form), whereas `Power Fx Formula` columns evaluate live
+- **C.** Add custom `Commission Split %` and `Effective Date` columns directly onto the hidden system intersect table of a native `N:N` relationship
+- **D.** `Owner Teams` own rows and hold Security Roles; `Access Team Templates` grant lightweight per-record Read/Write/Share without owning rows; `Microsoft Entra ID Group Teams` map Entra groups dynamically to Security Roles
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `D` (`CSV: 4`)
+
+Correct answer: D (is correct). Create `Microsoft Entra ID Security Group Teams` in Dataverse mapped to each Entra group object ID and assign custom Dataverse Security Roles to those teams. [PL-200 Configure Microsoft Dataverse — Create and manage Users, Owner Teams, Access Team Templates, and Microsoft Entra ID Group Teams | Ref: Manage Owner Teams, Access Team Templates, and Microsoft Entra ID Group Teams (https://learn.microsoft.com/en-us/power-platform/admin/manage-teams)]
+
+- **A:** Incorrect — `Power Apps (V2)` defines explicit typed inputs and avoids granting end users dangerous Co-owner edit rights on the flow.
+- **B:** Incorrect — Because Rollup columns run asynchronously on a scheduled system job (minimum 1-hour recurrence), totals do not recalculate instantaneously on child save unless manually refreshed.
+- **C:** Incorrect — Native N:N system intersect tables cannot hold custom columns, forms, or workflows; create a manual intersect table with two 1:N relationships instead.
+- **D:** Correct — Access Team Templates shine when ad-hoc collaborators vary per record, whereas Entra Group Teams automate enterprise RBAC lifecycle at scale.
+
+</details>
+
+### Q086 (`T2-Q007`) — Configure Microsoft Dataverse [1.3] · *Single-Answer Multiple Choice*
+
+When a `Care Coordinator` transfers clinics and their `Patient Case` parent rows are reassigned, only open (`Active`) child `Follow-Up Visit` rows should transfer to the new coordinator while completed historical visits keep their original owner, and deleting a `Patient Case` with visits must be blocked. Complete the relationship configuration: ____.
+
+- **A.** `@and(equals(triggerOutputs()?['body/orc_permitstatus'], 100000002), equals(triggerOutputs()?['body/orc_district'], 'Downtown'))`
+- **B.** Relationship behavior `Custom` with `Assign = Cascade Active` and `Delete = Restrict`
+- **C.** `Table Permission` with `Access Type = Account` linked to the `Account` lookup relationship on `Warranty Claim`
+- **D.** `Developer` tab → `XML Mapping Pane` (`urn:microsoft-crm/document-template/...`) → insert `Repeating` content control around table row
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `B` (`CSV: 2`)
+
+Correct answer: B (is correct). Configuring `Custom` relationship behavior with `Assign = Cascade Active` and `Delete = Restrict` transfers only open child visits and blocks deleting parent cases with child history. [PL-200 Configure Microsoft Dataverse — Configure table relationship behaviors and cascading rules | Ref: Configure table relationship behavior and cascading rules in Dataverse (https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-entity-lookup#table-relationship-behavior)]
+
+- **A:** Incorrect — Adding an `@and(...)` `Trigger Condition` in trigger settings prevents the cloud flow from firing at all unless both field criteria match.
+- **B:** Correct — Setting relationship behavior to `Custom` with `Assign = Cascade Active` reassigns only open child records when the parent owner changes, leaving historical closed rows untouched.
+- **C:** Incorrect — In Power Pages, `Access Type = Account` lets any authenticated Contact see/edit rows associated with their own parent `Account` (`parentcustomerid`) company.
+- **D:** Incorrect — Microsoft Word Templates bind Dataverse columns via the `XML Mapping Pane` using `Plain Text` controls for fields and `Repeating` content controls for `1:N` child line items.
+
+</details>
+
+### Q087 (`T2-Q043`) — Create apps by using Microsoft Power Apps [2.7] · *Single-Answer Multiple Choice*
+
+Rounding physicians open a `Bedside Vitals` Canvas app in both portrait and landscape orientations on iPads, and elements currently stretch and distort instead of reflowing cleanly into two columns. What should you change?
+
+- **A.** Responsive Canvas apps turn off `Scale to fit` and nest `Horizontal`/`Vertical` auto-layout containers alongside shared `Component Libraries` exposing custom input/output properties across apps
+- **B.** Assume enabling out-of-the-box Dataverse SharePoint Document Management automatically enforces Dataverse row-level Security Roles inside SharePoint Online libraries
+- **C.** Dataverse Auditing requires three active switches—Environment `Start Auditing` in PPAC, Table `Audit changes to its data`, and Column `Enable auditing`—writing change history to `Log` storage
+- **D.** Classic workflows log runs in `System Jobs` (`ProcessSession`), auto-terminate recursive loops exceeding depth limits, and purge succeeded background logs when `Automatically delete completed workflow jobs` is enabled
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `A` (`CSV: 1`)
+
+Correct answer: A (is correct). Turn off `Scale to fit` in Display settings and place controls inside nested `Horizontal` and `Vertical` auto-layout containers using flexible width, `Fill portions`, and `Wrap`. [PL-200 Create apps by using Microsoft Power Apps — Describe Canvas app structure, responsive containers, galleries, forms, themes, and components | Ref: Build responsive canvas apps with layout containers, galleries, forms, and components (https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/create-responsive-layout)]
+
+- **A:** Correct — Component Libraries provide centralized ALM versioning for shared headers, menus, and dialogs across multiple Canvas apps.
+- **B:** Incorrect — Out-of-the-box SharePoint Document Management creates folder links only; SharePoint permissions are NOT synchronized automatically from Dataverse row ACLs.
+- **C:** Incorrect — If any of the three auditing toggles (Environment, Table, or Column) is disabled, field value history is not recorded for that column.
+- **D:** Incorrect — Enabling `Automatically delete completed workflow jobs` prevents millions of succeeded `ProcessSession` rows from exhausting Dataverse storage.
+
+</details>
+
+### Q088 (`T2-Q019`) — Configure Microsoft Dataverse [1.8] · *Single-Answer Multiple Choice*
+
+A clinic architect wants to warn users interactively BEFORE a duplicate `Patient Referral` row is committed on a model-driven form. Proposed solution: Disable Dataverse Duplicate Detection and instead trigger a background Power Automate cloud flow (`When a row is added`) 30 seconds after commit. Does this prompt the user before commit?
+
+- **A.** `Real-time (synchronous)` classic Dataverse workflows execute inside the SQL transaction (`Before` or `After` save) as `Calling User` or `Workflow Owner`, rolling back the entire save when `Stop workflow` = `Canceled`
+- **B.** `Alternate Keys` (on `Single Line of Text`, `Whole Number`, or `Decimal`/`Date` columns) enforce database-level uniqueness and allow Dataflows, APIs, and imports to upsert/lookup rows using natural business keys instead of GUIDs
+- **C.** `Duplicate Detection` rules (published per table, up to 5 published rules/table) warn users on save or import, while scheduled `Bulk Record Deletion` system jobs purge stale rows matching saved query criteria
+- **D.** Use a standard asynchronous Power Automate Automated cloud flow (`When a row is added`) to block an invalid user form save before Dataverse commits the transaction
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `D` (`CSV: 4`)
+
+Correct answer: D (is correct). No—an Automated cloud flow executes asynchronously AFTER the row is already saved and cannot display a pre-save interactive dialog on the model-driven form. [PL-200 Configure Microsoft Dataverse — Configure duplicate detection rules and scheduled bulk record deletion jobs | Ref: Detect duplicate data and remove bulk amounts of data with bulk deletion jobs (https://learn.microsoft.com/en-us/power-platform/admin/set-up-duplicate-detection-rules-keep-data-clean)]
+
+- **A:** Incorrect — Background (asynchronous) classic workflows always run post-commit as Workflow Owner and cannot roll back the triggering save.
+- **B:** Incorrect — Creating an Alternate Key builds a unique index asynchronously in Dataverse; verify its status reaches `Active` in the solution before running natural-key upserts.
+- **C:** Incorrect — Duplicate Detection rules must be explicitly Published and warn interactive users rather than silently purging existing rows.
+- **D:** Correct — Automated cloud flows trigger asynchronously AFTER Dataverse commits the row; blocking a save transactionally requires a synchronous workflow, Business Rule, or pre-operation plug-in.
+
+</details>
+
+### Q089 (`T2-Q020`) — Configure Microsoft Dataverse [1.8] · *Single-Answer Multiple Choice*
+
+Temporary `HL7 Inbound Message` rows with `Status Reason = Parsed` accumulate at 50,000 rows per week and must be deleted automatically once `Modified On` is older than 30 days. Which built-in Dataverse tool handles this without custom code?
+
+- **A.** Add custom `Commission Split %` and `Effective Date` columns directly onto the hidden system intersect table of a native `N:N` relationship
+- **B.** Deploying `Dynamics 365 App for Outlook` requires Exchange Online, `Server-Side Synchronization` tested and enabled (`Success`) on each user’s Mailbox, and assigning the `Dynamics 365 App for Outlook User` security role
+- **C.** A `Quick View` form displays read-only columns/subgrids from a parent Lookup table on a child Main form, whereas a `Form Component Control` embeds the parent Lookup table’s Main form for direct inline editing
+- **D.** Scheduled `Bulk Record Deletion` jobs run recurring background queries (for example every 7 or 30 days) to purge stale staging, integration-log, or canceled activity rows without custom code or API loops
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `D` (`CSV: 4`)
+
+Correct answer: D (is correct). Create a recurring `Bulk Record Deletion` job filtered to `Status Reason = Parsed` and `Modified On Older Than X Days = 30`. [PL-200 Configure Microsoft Dataverse — Configure duplicate detection rules and scheduled bulk record deletion jobs | Ref: Detect duplicate data and remove bulk amounts of data with bulk deletion jobs (https://learn.microsoft.com/en-us/power-platform/admin/set-up-duplicate-detection-rules-keep-data-clean)]
+
+- **A:** Incorrect — Native N:N system intersect tables cannot hold custom columns, forms, or workflows; create a manual intersect table with two 1:N relationships instead.
+- **B:** Incorrect — Once prerequisites pass, administrators push the add-in to eligible users from PPAC / App for Outlook settings without local MSI installers.
+- **C:** Incorrect — Choose Quick View when parent columns must stay read-only; choose Form Component Control when users must edit parent Lookup columns without navigating away.
+- **D:** Correct — Bulk Record Deletion jobs use saved query filter criteria and send optional completion emails while preserving active business records.
+
+</details>
+
+## Case Study Vignette — Clearpath Specialty Clinics
+
+> [Scenario: Clearpath Specialty Clinics operates 45 outpatient centers in Dataverse. Referral coordinators need fast typist-tolerant search across Patient, Referral, and Provider tables, column-level audit history on Narcotic Schedule changes, and nightly cleanup of unverified web inquiry rows older than 90 days without custom code.]
+
+### Q090 (`T2-Q012`) — Configure Microsoft Dataverse [1.5] · *Ordered Sequence (Multiple Choice)*
+
+Case study — Clearpath Specialty Clinics: Intake nurses want global Dataverse Search in the model-driven header to find `Patient Referral` rows by `NPI Number` or `MedicalRecordNumber` and show `UrgencyTier` in search cards. Order the exact configuration steps.
+
+- **A.** Connect SSMS directly to Dataverse SQL → Create custom clustered T-SQL indexes on base tables → Restart IIS on the Dataverse server → Clear local browser cache
+- **B.** Enable Dataverse Search in PPAC environment Features → Open the table Quick Find View in the solution → Add Find Columns (indexed) and View Columns (returned) → Save and publish all customizations
+- **C.** Delete the table Quick Find View first → Disable Dataverse Search in PPAC → Add columns only to a Personal View → Export an Unmanaged solution without publishing
+- **D.** Turn on Column-Level Security for every text column → Create a Bulk Record Deletion job → Configure a Business Rule on Form load → Share the Personal View
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `B` (`CSV: 2`)
+
+Correct answer: B (is correct). Enable Dataverse Search in PPAC environment Features, open the `Patient Referral` Quick Find View in your solution, add `Find Columns` and `View Columns`, and publish all customizations. [PL-200 Configure Microsoft Dataverse — Configure Dataverse search, Quick Find views, and search index columns | Ref: Configure Dataverse search to improve search results and performance (https://learn.microsoft.com/en-us/power-platform/admin/configure-relevance-search-organization)]
+
+- **A:** Incorrect — Dataverse is SaaS-managed; makers cannot create raw T-SQL indexes or restart IIS—search indexing is governed through PPAC and Quick Find Views.
+- **B:** Correct — Dataverse Search requires enabling the environment feature in PPAC and configuring each table’s Quick Find View Find Columns (search index) and View Columns.
+- **C:** Incorrect — Personal views never control Dataverse Search indexing, and disabling Dataverse Search turns off Relevance Search across the environment.
+- **D:** Incorrect — Column Security, Bulk Deletion, and Business Rules do not index tables or fields for Dataverse Search.
+
+</details>
+
+### Q091 (`T2-Q014`) — Configure Microsoft Dataverse [1.6] · *Single-Answer Multiple Choice*
+
+Case study — Clearpath Specialty Clinics: HIPAA compliance officers turned on Environment `Start Auditing` in PPAC and enabled `Enable auditing` on the `DiagnosisNotes` column, yet field value edits on `Patient Referral` still fail to log in `Audit History`. Which middle switch was overlooked?
+
+- **A.** Assume enabling out-of-the-box Dataverse SharePoint Document Management automatically enforces Dataverse row-level Security Roles inside SharePoint Online libraries
+- **B.** Dataverse Auditing requires three active switches—Environment `Start Auditing` in PPAC, Table `Audit changes to its data`, and Column `Enable auditing`—writing change history to `Log` storage
+- **C.** `Navigate(TargetScreen, ScreenTransition.None, {locPermitId: ThisItem.Permit})` passes a screen-scoped context variable, whereas `Set(gblCurrentUser, User())` in `App.OnStart` / `App.Formulas` sets app-wide state
+- **D.** Webhook triggers register an instant callback firing immediately when an event occurs, whereas polling triggers query the data source on a scheduled interval determined by connector and Power Platform license tier
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `B` (`CSV: 2`)
+
+Correct answer: B (is correct). Table-level `Audit changes to its data` on `Patient Referral` must ALSO be enabled—Dataverse Auditing requires Environment, Table, AND Column auditing switches active simultaneously. [PL-200 Configure Microsoft Dataverse — Manage environment, table, and column-level auditing and retention | Ref: Manage Dataverse auditing (environment, table, column, and log retention) (https://learn.microsoft.com/en-us/power-platform/admin/manage-dataverse-auditing)]
+
+- **A:** Incorrect — Out-of-the-box SharePoint Document Management creates folder links only; SharePoint permissions are NOT synchronized automatically from Dataverse row ACLs.
+- **B:** Correct — If any of the three auditing toggles (Environment, Table, or Column) is disabled, field value history is not recorded for that column.
+- **C:** Incorrect — Prefer declarative `Named Formulas` (`App.Formulas`) or `UpdateContext` / `Navigate` context variables over overusing mutable global `Set()` variables.
+- **D:** Incorrect — The native Microsoft Dataverse connector triggers via near-real-time event webhooks rather than slow multi-minute polling.
+
+</details>
+
+### Q092 (`T2-Q018`) — Configure Microsoft Dataverse [1.8] · *Single-Answer Multiple Choice*
+
+Case study — Clearpath Specialty Clinics: Front-desk staff frequently create duplicate `Patient Contact` records sharing the same `DateOfBirth` and first 6 characters of `LastName`. Proposed solution: Create a Dataverse `Duplicate Detection Rule` on `Contact` combining `DateOfBirth` (Exact Match) and `LastName` (Same First Characters = 6), save it, and select `Publish` so interactive saves warn intake clerks. Does this meet the goal?
+
+- **A.** `Clone a Patch` creates a lightweight hotfix solution (`Major.Minor.Build.Revision` increment) while locking the base solution until `Clone to Solution` rolls all patches into a clean consolidated version
+- **B.** Power Pages secures rows via `Table Permissions` (`Global`, `Contact`, `Account`, `Parent`, `Self`) mapped to `Web Roles`, pages via `Page Access Control Rules`, and identity via `Microsoft Entra External ID` / OIDC
+- **C.** Use a standard asynchronous Power Automate Automated cloud flow (`When a row is added`) to block an invalid user form save before Dataverse commits the transaction
+- **D.** `Duplicate Detection` rules (published per table, up to 5 published rules/table) warn users on save or import, while scheduled `Bulk Record Deletion` system jobs purge stale rows matching saved query criteria
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `D` (`CSV: 4`)
+
+Correct answer: D (is correct). Yes—explicitly publishing a `Duplicate Detection Rule` on `Contact` triggers the interactive duplicate warning dialog on form save and flags duplicates during imports. [PL-200 Configure Microsoft Dataverse — Configure duplicate detection rules and scheduled bulk record deletion jobs | Ref: Detect duplicate data and remove bulk amounts of data with bulk deletion jobs (https://learn.microsoft.com/en-us/power-platform/admin/set-up-duplicate-detection-rules-keep-data-clean)]
+
+- **A:** Incorrect — While a parent Unmanaged solution has child Patches, components cannot be added/removed in the parent until `Clone to Solution` merges them.
+- **B:** Incorrect — `Contact` scope restricts portal users to their own Contact-linked rows, whereas `Account` scope shares rows across coworkers under the same parent Account.
+- **C:** Incorrect — Automated cloud flows trigger asynchronously AFTER Dataverse commits the row; blocking a save transactionally requires a synchronous workflow, Business Rule, or pre-operation plug-in.
+- **D:** Correct — Duplicate Detection rules must be explicitly Published and warn interactive users rather than silently purging existing rows.
+
+</details>
+
+### Q093 (`T2-Q073`) — Create and manage logic and process automation [3.7] · *Single-Answer Multiple Choice*
+
+A hospital operations analyst attempts to add a 6th related Dataverse table (`Patient` -> `Referral` -> `Triage` -> `Auth` -> `Surgery` -> `PostOpBilling`) inside a single Business Process Flow and receives a validation error. Why?
+
+- **A.** Portal metadata edited inside the `Power Pages Management` model-driven app (such as advanced Basic Form Metadata, List filters, or Redirects) requires selecting `Sync` in Power Pages Design Studio to pull changes
+- **B.** Use a standard asynchronous Power Automate Automated cloud flow (`When a row is added`) to block an invalid user form save before Dataverse commits the transaction
+- **C.** BPF stages trigger classic workflows (`Stage Entry`/`Exit`) or on-demand `Cloud Flow Steps`, and every BPF creates its own Dataverse table tracking active stage, `Active Stage Started On`, and status for views and charts
+- **D.** `Open in Excel Online` edits rows inline inside the browser; `Dynamic Worksheet` / `Dynamic PivotTable` refreshes live Dataverse data honoring each viewer’s Security Roles; `Static Worksheet` exports a fixed point-in-time copy
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `C` (`CSV: 3`)
+
+Correct answer: C (is correct). A single Business Process Flow supports at most `5` distinct Dataverse tables (and up to `30` stages total), while tracking active stage metrics in its dedicated BPF Dataverse table. [PL-200 Create and manage logic and process automation — Configure Business Process Flows (stages, branching, up to 5 cross-tables, roles, ordering) | Ref: Create and configure a Business Process Flow in Microsoft Dataverse (https://learn.microsoft.com/en-us/power-automate/business-process-flows-overview)]
+
+- **A:** Incorrect — Selecting `Sync` reconciles Dataverse website configuration tables with Design Studio before `Preview` clears the server cache.
+- **B:** Incorrect — Automated cloud flows trigger asynchronously AFTER Dataverse commits the row; blocking a save transactionally requires a synchronous workflow, Business Rule, or pre-operation plug-in.
+- **C:** Correct — Building views and charts directly on the auto-created BPF Dataverse table measures stage dwell times and active pipeline bottlenecks.
+- **D:** Incorrect — Dynamic Excel exports require recipients to have Dataverse access and appropriate table Read privileges; Static exports embed the exporter’s snapshot rows directly.
+
+</details>
+
+### Q094 (`T2-Q030`) — Create apps by using Microsoft Power Apps [2.1] · *Single-Answer Multiple Choice*
+
+You want the `Clinical Referral Hub` model-driven app to offer three distinct bottom-left workspace switchers—`Triage Desk`, `Physician Scheduling`, and `Clinic Administration`—each containing grouped links to tables, dashboards, and Custom Pages. Which Sitemap hierarchy elements represent those three switchers?
+
+- **A.** `Clone a Patch` creates a lightweight hotfix solution (`Major.Minor.Build.Revision` increment) while locking the base solution until `Clone to Solution` rolls all patches into a clean consolidated version
+- **B.** Add custom `Commission Split %` and `Effective Date` columns directly onto the hidden system intersect table of a native `N:N` relationship
+- **C.** Model-driven `Sitemap` navigation organizes `Areas`, `Groups`, and `Subareas` pointing to Dataverse tables, Dashboards, Custom Pages, or Web Resources—automatically hiding table subareas when a user lacks `Read` privilege
+- **D.** `formatDateTime(coalesce(triggerOutputs()?['body/orc_alternatedate'], triggerOutputs()?['body/orc_primarydate']), 'yyyy-MM-dd')`
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `C` (`CSV: 3`)
+
+Correct answer: C (is correct). Model-driven Sitemap `Areas` create the workspace switcher entries, each containing `Groups` and `Subareas`. [PL-200 Create apps by using Microsoft Power Apps — Create and configure model-driven sitemaps and multiple form types (form order & fallback) | Ref: Create and design model-driven app forms (Main, Quick Create, Quick View, Card & form order) (https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/create-design-forms)]
+
+- **A:** Incorrect — While a parent Unmanaged solution has child Patches, components cannot be added/removed in the parent until `Clone to Solution` merges them.
+- **B:** Incorrect — Native N:N system intersect tables cannot hold custom columns, forms, or workflows; create a manual intersect table with two 1:N relationships instead.
+- **C:** Correct — Table-bound Sitemap subareas automatically honor Dataverse Security Role Read privileges without custom JavaScript.
+- **D:** Incorrect — `coalesce(arg1, arg2)` returns the first non-null date so `formatDateTime(...)` never fails on a null optional Dataverse column.
+
+</details>
+
+### Q095 (`T2-Q072`) — Create and manage logic and process automation [3.7] · *Single-Answer Multiple Choice*
+
+Two active Business Process Flows exist on `Patient Referral`: `Urgent Oncology Triage BPF` (assigned only to the `Oncology Nurse` Security Role) and `Standard Outpatient BPF` (assigned to all clinical roles). Oncology nurses currently open new referrals with `Standard Outpatient BPF` selected first. How do you make `Urgent Oncology Triage BPF` open by default for Oncology nurses?
+
+- **A.** Add custom `Commission Split %` and `Effective Date` columns directly onto the hidden system intersect table of a native `N:N` relationship
+- **B.** Business Process Flows support up to `30 stages`, up to `5 related tables`, `If/Else` conditional branching from columns in the immediately preceding stage, role-based access, and `Order Process Flow` default priority
+- **C.** Deploying `Dynamics 365 App for Outlook` requires Exchange Online, `Server-Side Synchronization` tested and enabled (`Success`) on each user’s Mailbox, and assigning the `Dynamics 365 App for Outlook User` security role
+- **D.** `Navigate(TargetScreen, ScreenTransition.None, {locPermitId: ThisItem.Permit})` passes a screen-scoped context variable, whereas `Set(gblCurrentUser, User())` in `App.OnStart` / `App.Formulas` sets app-wide state
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `B` (`CSV: 2`)
+
+Correct answer: B (is correct). Open `Order Process Flow` in the BPF designer and move `Urgent Oncology Triage BPF` above `Standard Outpatient BPF`—users automatically get the highest-ordered BPF enabled for their Security Role. [PL-200 Create and manage logic and process automation — Configure Business Process Flows (stages, branching, up to 5 cross-tables, roles, ordering) | Ref: Create and configure a Business Process Flow in Microsoft Dataverse (https://learn.microsoft.com/en-us/power-automate/business-process-flows-overview)]
+
+- **A:** Incorrect — Native N:N system intersect tables cannot hold custom columns, forms, or workflows; create a manual intersect table with two 1:N relationships instead.
+- **B:** Correct — When multiple BPFs apply to a table, the highest-ranked BPF in `Order Process Flow` accessible to the user’s Security Role opens by default.
+- **C:** Incorrect — Once prerequisites pass, administrators push the add-in to eligible users from PPAC / App for Outlook settings without local MSI installers.
+- **D:** Incorrect — Prefer declarative `Named Formulas` (`App.Formulas`) or `UpdateContext` / `Navigate` context variables over overusing mutable global `Set()` variables.
+
+</details>
+
+### Q096 (`T2-Q038`) — Create apps by using Microsoft Power Apps [2.5] · *Single-Answer Multiple Choice*
+
+On a `WorkOrders` subgrid inside `Surgical Equipment Maintenance`, technicians select a modern command button `Mark Dispatched` to update the selected row’s `Dispatch Status` column directly via Power Fx. Complete the command `OnSelect` formula: ____.
+
+- **A.** `orc_PrimaryPolicyId($select=orc_policynumber,orc_deductible)`
+- **B.** `Table Permission` with `Access Type = Account` linked to the `Account` lookup relationship on `Warranty Claim`
+- **C.** `@and(equals(triggerOutputs()?['body/orc_permitstatus'], 100000002), equals(triggerOutputs()?['body/orc_district'], 'Downtown'))`
+- **D.** `Patch(WorkOrders, Self.Selected.Item, {'Dispatch Status': 'Dispatch Status'.Dispatched})`
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `D` (`CSV: 4`)
+
+Correct answer: D (is correct). `Patch(WorkOrders, Self.Selected.Item, {'Dispatch Status': 'Dispatch Status'.Dispatched})` updates `Self.Selected.Item` directly from the modern command bar. [PL-200 Create apps by using Microsoft Power Apps — Configure Modern Commanding by using Power Fx and Component Libraries | Ref: Use Power Fx with modern commanding in model-driven apps (https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/command-designer-powerfx)]
+
+- **A:** Incorrect — Configuring `Expand Query` on Dataverse `List rows` retrieves parent Lookup columns (`$select=...`) in the same single API call without an extra `Get a row by ID` inside a loop.
+- **B:** Incorrect — In Power Pages, `Access Type = Account` lets any authenticated Contact see/edit rows associated with their own parent `Account` (`parentcustomerid`) company.
+- **C:** Incorrect — Adding an `@and(...)` `Trigger Condition` in trigger settings prevents the cloud flow from firing at all unless both field criteria match.
+- **D:** Correct — `Patch(DataSource, BaseRecord, ChangeRecord)` updates the selected Dataverse record directly from a modern Power Fx command button or Canvas app.
+
+</details>
+
+### Q097 (`T2-Q037`) — Create apps by using Microsoft Power Apps [2.4] · *Single-Answer Multiple Choice*
+
+Why do Microsoft Functional Consultants prefer adding a `Custom Page` over a legacy embedded Canvas app control when launching a multi-source modal dialog from a model-driven Main grid command bar?
+
+- **A.** Assume enabling out-of-the-box Dataverse SharePoint Document Management automatically enforces Dataverse row-level Security Roles inside SharePoint Online libraries
+- **B.** `Custom Pages` bring responsive Canvas containers (`Horizontal`/`Vertical`) and Power Fx into model-driven full pages, centered dialogs, or side panes—reading context via `Param("recordId")`
+- **C.** Scheduled `Bulk Record Deletion` jobs run recurring background queries (for example every 7 or 30 days) to purge stale staging, integration-log, or canceled activity rows without custom code or API loops
+- **D.** Classic workflows log runs in `System Jobs` (`ProcessSession`), auto-terminate recursive loops exceeding depth limits, and purge succeeded background logs when `Automatically delete completed workflow jobs` is enabled
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `B` (`CSV: 2`)
+
+Correct answer: B (is correct). Custom Pages open natively as full pages, centered dialogs, or side panes from command bars via `Navigate()`, use responsive Canvas containers, and read context via `Param("recordId")`. [PL-200 Create apps by using Microsoft Power Apps — Configure Custom Pages in model-driven apps (responsive containers & Param("recordId")) | Ref: Overview of custom pages for model-driven apps (https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/model-app-page-overview)]
+
+- **A:** Incorrect — Out-of-the-box SharePoint Document Management creates folder links only; SharePoint permissions are NOT synchronized automatically from Dataverse row ACLs.
+- **B:** Correct — Custom Pages are solution-aware and supersede legacy embedded canvas controls when launching modal dialogs or side panes from command bars.
+- **C:** Incorrect — Bulk Record Deletion jobs use saved query filter criteria and send optional completion emails while preserving active business records.
+- **D:** Incorrect — Enabling `Automatically delete completed workflow jobs` prevents millions of succeeded `ProcessSession` rows from exhausting Dataverse storage.
+
+</details>
+
+### Q098 (`T2-Q074`) — Create and manage logic and process automation [3.8] · *Ordered Sequence (Multiple Choice)*
+
+Inside the `Insurance Auth` stage of the `Standard Outpatient BPF`, triage specialists need an interactive `Request EDI Auth` button inside the BPF stage flyout that triggers a solution cloud flow passing the referral context. Put the build steps in exact order.
+
+- **A.** Build a personal My Flows cloud flow outside any Solution → Use an Outlook email trigger → Paste the flow URL into a BPF text column → Leave the BPF in Draft state
+- **B.** Create a solution Instant flow using When a flow step is run from a business process flow → Open the BPF designer in the same Solution → Add a Flow Step inside the target Stage & bind the flow → Validate, save, and Activate the BPF
+- **C.** Delete the BPF underlying Dataverse table → Record a desktop flow on a local laptop → Disable BPF security roles → Overwrite Active BPF instances manually in SQL
+- **D.** Add 12 stages across 9 unrelated tables in one BPF → Skip Lookup relationships between tables → Trigger an Unattended RPA flow directly without a gateway/machine → Save without validation
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `B` (`CSV: 2`)
+
+Correct answer: B (is correct). Build a solution Instant flow with `When a flow step is run from a business process flow`, open the BPF in the same Solution, add a Flow Step inside `Insurance Auth`, and Validate/Save/Activate the BPF. [PL-200 Create and manage logic and process automation — Add classic workflows and cloud flow steps to a BPF and manage the BPF Dataverse table | Ref: Add instant/action flows and classic workflows to BPFs and manage the BPF table (https://learn.microsoft.com/en-us/power-automate/Trigger-flow-business-process-flow)]
+
+- **A:** Incorrect — Non-solution flows and non-BPF triggers cannot be bound as BPF Flow Steps, and Draft BPFs do not render for users.
+- **B:** Correct — To run a cloud flow from a BPF stage button, both the BPF and the flow (using the BPF flow-step trigger) must reside in a Solution before binding and activating.
+- **C:** Incorrect — Every BPF automatically maintains its own Dataverse table for stage tracking and requires security role enablement rather than SQL manipulation.
+- **D:** Incorrect — A Business Process Flow supports at most 30 stages and at most 5 related tables connected via 1:N relationships.
+
+</details>
+
+### Q099 (`T2-Q026`) — Configure Microsoft Dataverse [1.11] · *Single-Answer Multiple Choice*
+
+Under `Manager` Hierarchy Security configured with `Depth = 3`, Dr. Rao manages Dr. Lin (direct report, level 1), who manages Resident Patel (indirect report, level 2). What exact access does Dr. Rao gain on `Patient Case` rows owned by Resident Patel?
+
+- **A.** `Column Security Profiles` enforce server-side field masking and Read/Update/Create rights, while `Hierarchy Security` (`Manager` direct-report chain vs `Position` job tree) grants hierarchical access within set depth
+- **B.** Use a Dataverse Business Rule to hide an entire Main form `Tab` based on a `Choices (Multi-Select)` column and invoke an external REST webhook
+- **C.** Sharing an Instant or `Power Apps (V2)` flow via `Run-only users` lets business users invoke the flow (using a pre-bound service connection or their own) without granting `Co-owner` rights to edit logic or view all run history
+- **D.** Portal metadata edited inside the `Power Pages Management` model-driven app (such as advanced Basic Form Metadata, List filters, or Redirects) requires selecting `Sync` in Power Pages Design Studio to pull changes
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `A` (`CSV: 1`)
+
+Correct answer: A (is correct). Under Manager Hierarchy Security, a manager receives Read/Write/Update/Append/Append To on direct reports (level 1) and strictly `Read-only` access on indirect reports (levels 2..Depth). [PL-200 Configure Microsoft Dataverse — Create and manage Users, Owner Teams, Access Team Templates, and Microsoft Entra ID Group Teams | Ref: Manage Owner Teams, Access Team Templates, and Microsoft Entra ID Group Teams (https://learn.microsoft.com/en-us/power-platform/admin/manage-teams)]
+
+- **A:** Correct — Manager hierarchy grants Read/Write/Update/Append/Append To on direct reports and Read-only on indirect reports within the configured depth.
+- **B:** Incorrect — Business Rules cannot show/hide whole Tabs or Sections, cannot evaluate Multi-Select Choice columns, and cannot call external HTTP APIs.
+- **C:** Incorrect — Never make hundreds of end users Co-owners of a flow—Co-owners can modify actions, inspect every user’s payloads, or delete the flow.
+- **D:** Incorrect — Selecting `Sync` reconciles Dataverse website configuration tables with Design Studio before `Preview` clears the server cache.
+
+</details>
+
+### Q100 (`T2-Q010`) — Configure Microsoft Dataverse [1.4] · *Single-Answer Multiple Choice*
+
+A clinic billing lead configures a `TotalBilledYTD` Rollup column on `Patient Contact` summing `Amount` across child `Encounter Claim` rows and asks what the shortest automatic system recalculation interval is in Dataverse. What should you tell her?
+
+- **A.** `Rollup` columns aggregate child `1:N` rows asynchronously via system jobs (default every 12 hours, configurable down to 1 hour minimum, or refreshed manually on the form), whereas `Power Fx Formula` columns evaluate live
+- **B.** Portal metadata edited inside the `Power Pages Management` model-driven app (such as advanced Basic Form Metadata, List filters, or Redirects) requires selecting `Sync` in Power Pages Design Studio to pull changes
+- **C.** `Alternate Keys` (on `Single Line of Text`, `Whole Number`, or `Decimal`/`Date` columns) enforce database-level uniqueness and allow Dataflows, APIs, and imports to upsert/lookup rows using natural business keys instead of GUIDs
+- **D.** Sharing an Instant or `Power Apps (V2)` flow via `Run-only users` lets business users invoke the flow (using a pre-bound service connection or their own) without granting `Co-owner` rights to edit logic or view all run history
+
+<details><summary><strong>Answer &amp; Explanation</strong></summary>
+
+**Correct:** `A` (`CSV: 1`)
+
+Correct answer: A (is correct). Rollup columns recalculate asynchronously via a scheduled system job whose recurrence can be shortened down to a `1-hour` minimum (default 12 hours), or users can refresh an individual row on demand on the form. [PL-200 Configure Microsoft Dataverse — Create or modify columns, Alternate Keys, Rollup columns, and Power Fx Formula columns | Ref: Create and edit columns, Alternate Keys, Rollup, and Power Fx Formula columns in Dataverse (https://learn.microsoft.com/en-us/power-apps/maker/data-platform/formula-columns)]
+
+- **A:** Correct — Because Rollup columns run asynchronously on a scheduled system job (minimum 1-hour recurrence), totals do not recalculate instantaneously on child save unless manually refreshed.
+- **B:** Incorrect — Selecting `Sync` reconciles Dataverse website configuration tables with Design Studio before `Preview` clears the server cache.
+- **C:** Incorrect — Creating an Alternate Key builds a unique index asynchronously in Dataverse; verify its status reaches `Active` in the solution before running natural-key upserts.
+- **D:** Incorrect — Never make hundreds of end users Co-owners of a flow—Co-owners can modify actions, inspect every user’s payloads, or delete the flow.
+
+</details>
