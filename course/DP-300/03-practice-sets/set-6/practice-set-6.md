@@ -1,0 +1,1887 @@
+# Microsoft Exam DP-300: Administering Microsoft Azure SQL Solutions — Full-Length Mock Exam 6
+
+Exam DP-300 (Public Transit, Energy Grids, Hybrid Always On, and Cloud Backup/Restore) · 100 questions · 100-minute recommended timing · Microsoft scaled passing score 700 / 1000
+
+> **Blueprint & Credential Notice:** Aligned to the official **October 27, 2026** DP-300 study guide (`Microsoft Certified: Azure Database Administrator Associate`). Associate-level certification with **no prerequisite exam required**, free online annual renewal on Microsoft Learn, split-screen `learn.microsoft.com` access during non-lab exam sections, and hands-on coverage across **T-SQL**, **Azure PowerShell**, **Azure CLI**, **Bicep**, and **KQL**.
+
+Blueprint-weighted mock exam: 84 `multiple-choice` items (including 8 four-step `→` sequence items, `____` T-SQL/PowerShell/CLI/Bicep/KQL completion items, and `Proposed solution:` evaluations), 16 `multi-select` items (`Select two.` / `Select three.`), and 4 original 3-question enterprise Azure SQL case studies (12 case items).
+
+Platform fidelity note: Udemy CSV imports support `multiple-choice` and `multi-select` only. Interactive Microsoft exam widgets (drag-and-drop sequence tiles, inline hot-area T-SQL/CLI dropdowns, split-pane tabbed case exhibits, live labs, and locked non-returnable Yes/No problem-solution series) are adapted into text-complete stems and explicit candidate options. Raw practice percentages do not convert to Microsoft scaled scores (`100–1000`, pass `700`).
+
+100% original educational content authored from official Microsoft Learn Azure SQL and SQL Server documentation — never recalled live items or copied Microsoft sample case studies.
+
+## Questions
+
+### 1. A smart-meter grid database in Azure SQL Database ingests 38 TB of interval readings and needs instant PITR clones for tariff simulations plus three isolated read-scale compute replicas for regulator portals. Which tier fits best?
+
+Domain: Plan and implement data platform resources
+
+- A. Azure SQL Database Hyperscale tier with compute-isolated Named Replicas
+- B. SQL Server on Azure Virtual Machines (`Ebdsv5` series) with full OS and engine version control
+- C. Azure SQL Database vCore Serverless compute tier with Auto-pause delay enabled
+- D. Azure SQL Database DTU `Basic` or `Standard S0` tier with a single shared primary replica
+
+### 2. A municipal transit scheduling suite requires SQL Server Agent jobs, native `.bak` restores from Blob URL, and cross-database stored procedures across 12 databases with PaaS automated patching. Which Azure SQL service should you recommend?
+
+Domain: Plan and implement data platform resources
+
+- A. Azure SQL Managed Instance (Next-gen General Purpose) with decoupled IOPS and storage sliders
+- B. SQL database in Microsoft Fabric (`Database` workload with automatic OneLake Delta mirroring)
+- C. Azure SQL Database vCore Elastic Pool with per-database min and max vCore limits
+- D. Azure SQL Database vCore Serverless compute tier with Auto-pause delay enabled
+
+### 3. Your grid infrastructure team automates VNet subnet creation for an Azure SQL Managed Instance in `vnet-grid-centralus`. Which two subnet requirements must be satisfied? Select two.
+
+Domain: Plan and implement data platform resources
+
+- A. Associate a User-Defined Route (`UDR`) table (`0.0.0.0/0` -> `Internet` for management plane) and required NSG rules with the SQL MI subnet
+- B. Switch eligible hybrid SQL Server instances to hourly Azure Arc pay-as-you-go billing instead of upfront core licenses
+- C. Create a dedicated VNet subnet (`/28` or larger) with no other cloud resources and delegate it to `Microsoft.Sql/managedInstances`
+- D. Place SQL Server `.mdf`, `.ldf`, and `tempdb` files together on the Azure VM OS disk (`C:`) with `ReadWrite` host caching
+- E. Add server-level firewall rule `0.0.0.0` to `255.255.255.255` and disable TLS encryption on client connections
+
+### 4. Why do enterprise cloud DBA teams standardize on declarative Bicep / ARM templates in Git over manual Azure portal provisioning for multi-environment (`Dev`, `Test`, `Prod`) SQL deployments?
+
+Domain: Plan and implement data platform resources
+
+- A. Attach legacy SQL Server Profiler GUI (`sp_trace_create`) interactively against peak production OLTP servers 24x7
+- B. Enable Mixed Mode, share the `sa` login password in plaintext pipeline variables, and add monitoring users to `sysadmin`
+- C. Download and run standalone Microsoft Data Migration Assistant (`DMA`) with Stretch Database enabled for warm archive tables
+- D. Declarative Bicep / ARM templates (`Microsoft.Sql/servers`) referencing Azure Key Vault secrets via `@secure()` parameters and validated with `az deployment group what-if`
+
+### 5. A commuter-rail analytics team creates a `SQL database` item in Microsoft Fabric to record station faregate maintenance tickets and join them directly with Lakehouse train-delay Delta tables. Which two native behaviors apply? Select two.
+
+Domain: Plan and implement data platform resources
+
+- A. Query automatically replicated OneLake Delta Parquet tables and the read-only SQL analytics endpoint from Spark and Direct Lake
+- B. Enable Mixed Mode, share the `sa` login password in plaintext pipeline variables, and add monitoring users to `sysadmin`
+- C. Authenticate applications and users exclusively with Microsoft Entra ID identities, service principals, or workspace roles
+- D. Download and run standalone Microsoft Data Migration Assistant (`DMA`) with Stretch Database enabled for warm archive tables
+- E. Configure SQL Server password logins (`CREATE LOGIN ... WITH PASSWORD`) and T-SQL `BACKUP DATABASE ... TO DISK` inside SQL database in Microsoft Fabric
+
+### 6. Forty regional electrical substations run SQL Server 2022 on local air-gapped-adjacent edge servers with outbound HTTPS proxies to Azure. Onboarding them as SQL Server enabled by Azure Arc provides which automated configuration health check?
+
+Domain: Plan and implement data platform resources
+
+- A. Azure SQL Database DTU `Basic` or `Standard S0` tier with a single shared primary replica
+- B. SQL database in Microsoft Fabric (`Database` workload with automatic OneLake Delta mirroring)
+- C. SQL Server enabled by Azure Arc (`Microsoft.AzureArcData/sqlServerInstances`)
+- D. Azure SQL Database vCore Serverless compute tier with Auto-pause delay enabled
+
+### 7. A transit `FareCardTaps` table partitions monthly taps by `TapTimestampUTC`. On the first of each month, you must open next month's partition and move the 25th-month partition into `FareCardTaps_Stage` instantaneously without blocking commuter gates. Which four-step sequence applies?
+
+Domain: Plan and implement data platform resources
+
+- A. SPLIT partition function for incoming future boundary → Create empty staging table on same filegroup with matching schema/indexes → ALTER TABLE ... SWITCH oldest partition to staging → Archive staging data & MERGE retired boundary
+- B. Create staging table without matching CHECK constraints → SWITCH partition across two separate Azure SQL Databases → MERGE future boundary → Truncate production table
+- C. MERGE oldest partition boundary first → Run row-by-row DELETE on 80M rows → Create unindexed staging table on a different filegroup → SPLIT partition function
+- D. ALTER TABLE ... SWITCH oldest partition directly to Azure Blob Storage → SPLIT partition function → Rebuild entire table offline → MERGE all boundaries
+
+### 8. In an Azure SQL Database sharded transit ticketing architecture using `ShardMapManager`, a single metropolitan transit authority grows so large that its `RangeShardMap` range `[1000, 2000)` must be divided into `[1000, 1500)` and `[1500, 2000)` across two shards. Which official tool moves data and updates shard mappings safely?
+
+Domain: Plan and implement data platform resources
+
+- A. Azure SQL Database DTU `Basic` or `Standard S0` tier with a single shared primary replica
+- B. Horizontal sharding using the Elastic Database Client Library (`ShardMapManager` with `ListShardMap` or `RangeShardMap`)
+- C. Table partitioning using `CREATE PARTITION FUNCTION ... AS RANGE RIGHT` with aligned indexes and `ALTER TABLE ... SWITCH`
+- D. Evaluate `sp_estimate_data_compression_savings` and apply `ROW`, `PAGE`, or `COLUMNSTORE_ARCHIVE` compression per partition
+
+### 9. Twelve utility SCADA archive SQL Server 2022 Windows VMs in Azure must coordinate OS and SQL updates strictly on the third Saturday 01:00–04:00 via Azure Update Manager while tracking PAYG vs AHB SQL licensing centrally. What must be installed on all 12 VMs?
+
+Domain: Plan and implement data platform resources
+
+- A. SQL IaaS Agent Extension in Full management mode paired with Azure Update Manager / Automated Patching
+- B. SQL database in Microsoft Fabric (`Database` workload with automatic OneLake Delta mirroring)
+- C. Azure SQL Database vCore Serverless compute tier with Auto-pause delay enabled
+- D. Schedule nightly `DBCC SHRINKDATABASE` and `AUTO_SHRINK = ON` across all production OLTP databases
+
+### 10. You configure Active Directory / Kerberos authentication for SQL Server 2022 running on Red Hat Enterprise Linux (`RHEL 9`) using `adutil` (`____ keytab create ...`) and `mssql-conf`. Which command-line utility Microsoft ships for Linux SQL AD keytab setup?
+
+Domain: Plan and implement data platform resources
+
+- A. Download and run standalone Microsoft Data Migration Assistant (`DMA`) with Stretch Database enabled for warm archive tables
+- B. SQL Server on Linux configured via `mssql-conf` or Linux container images for consistent CI/CD dev-test parity
+- C. Place SQL Server `.mdf`, `.ldf`, and `tempdb` files together on the Azure VM OS disk (`C:`) with `ReadWrite` host caching
+- D. Azure SQL Database Hyperscale tier with compute-isolated Named Replicas
+
+### 11. A seasonal storm-outage simulation database in Azure SQL Database sits completely unused 26 days per month, yet requires 24 vCores instantly during storm emergency exercises. What happens on the very first SQL connection while a Serverless database is `Paused`?
+
+Domain: Plan and implement data platform resources
+
+- A. Azure SQL Database Hyperscale tier with compute-isolated Named Replicas
+- B. Azure SQL Database vCore Serverless compute tier with Auto-pause delay enabled
+- C. Azure SQL Managed Instance Business Critical tier with local SSD storage and built-in read-scale replica
+- D. Azure SQL Database DTU `Basic` or `Standard S0` tier with a single shared primary replica
+
+### 12. On Azure SQL Managed Instance, you want scheduled platform hardware/engine updates to occur exclusively on Sundays 22:00–06:00 local grid time rather than weekday business hours (`az sql mi update ... --maintenance-configuration-id ____`). Which SQL MI feature controls platform update timing?
+
+Domain: Plan and implement data platform resources
+
+- A. SQL database in Microsoft Fabric (`Database` workload with automatic OneLake Delta mirroring)
+- B. Azure SQL Database DTU `Basic` or `Standard S0` tier with a single shared primary replica
+- C. Azure SQL Managed Instance (Next-gen General Purpose) with decoupled IOPS and storage sliders
+- D. Azure SQL Database vCore Serverless compute tier with Auto-pause delay enabled
+
+### 13. You review the Azure VM disk architecture for a high-throughput transit ticketing SQL Server 2022 VM (`E32bds_v5`). Which three disk caching and placement rules maximize IOPS and latency safely? Select three.
+
+Domain: Plan and implement data platform resources
+
+- A. Place `tempdb` data and log files (8 equal-sized `.mdf`/`.ndf` files) on the ephemeral local NVMe SSD volume with a startup folder-creation script
+- B. Schedule nightly `DBCC SHRINKDATABASE` and `AUTO_SHRINK = ON` across all production OLTP databases
+- C. Configure `None` Azure host caching on dedicated managed disks hosting `.ldf` SQL Server transaction log files
+- D. Place SQL Server `.mdf`, `.ldf`, and `tempdb` files together on the Azure VM OS disk (`C:`) with `ReadWrite` host caching
+- E. Configure `ReadOnly` Azure host caching on Premium SSD data disks hosting `.mdf` and `.ndf` database files
+- F. Add server-level firewall rule `0.0.0.0` to `255.255.255.255` and disable TLS encryption on client connections
+
+### 14. On a Windows Server SQL Server 2022 VM, memory pressure from a temporary OS file copy causes Windows to trim 40 GB out of SQL Server's `sqlservr.exe` working set to the pagefile. Granting which local security policy right to the SQL service account prevents Windows from paging out buffer pool RAM?
+
+Domain: Plan and implement data platform resources
+
+- A. Run `DBCC FREEPROCCACHE` every 5 minutes via a cron job and disable `AUTO_CREATE_STATISTICS` across the database
+- B. Place SQL Server `.mdf`, `.ldf`, and `tempdb` files together on the Azure VM OS disk (`C:`) with `ReadWrite` host caching
+- C. Grant `Perform volume maintenance tasks` (Instant File Initialization) and `Lock pages in memory` to the SQL Server service account
+- D. Schedule nightly `DBCC SHRINKDATABASE` and `AUTO_SHRINK = ON` across all production OLTP databases
+
+### 15. You must move `GridTelemetryIndexDB` online from `sqlmi-substation-01` to `sqlmi-regional-02` across peered VNets with zero data loss, automatically retiring the source copy once complete. Which four-step workflow applies?
+
+Domain: Plan and implement data platform resources
+
+- A. Stop source SQL Managed Instance compute → Detach user database via sp_detach_db → Copy files over port 1433 → Reattach database on target SQL MI
+- B. Start online Database Move → Wait 72 hours in Ready for completion state → Open TCP 5022 + 11000-11999 rules → Expect PITR backups from source MI to transfer automatically
+- C. Export `.bacpac` to Azure Table storage → Import `.bacpac` onto target SQL MI → Complete move after 48 hours → Retain source database online automatically
+- D. Verify VNet peering & TCP 5022 + 11000-11999 rules → Start online Database Move from source to target SQL MI → Wait for seeding to reach Ready for completion → Complete move within 24 hours so target comes online
+
+### 16. NERC-CIP auditors require proving that legacy password-based SQL logins cannot authenticate to `sql-gridharbor-prod` even if someone runs `CREATE LOGIN ... WITH PASSWORD`. Which server setting guarantees this?
+
+Domain: Implement a secure environment
+
+- A. Enable Microsoft Entra-only authentication (`azuread_authentication_only`) on the logical SQL server or SQL Managed Instance
+- B. Dynamic Data Masking (`default()`, `email()`, `partial()`, `random()`) with `GRANT UNMASK` scoped to authorized roles or schemas
+- C. Database-level IP firewall rules (`sys.sp_set_database_firewall_rule`) stored inside the user database
+- D. Enable Mixed Mode, share the `sa` login password in plaintext pipeline variables, and add monitoring users to `sysadmin`
+
+### 17. A transit GTFS real-time feed service runs in Azure Functions with System-Assigned Managed Identity `func-gtfs-prod`. Which T-SQL DDL inside `TransitDB` grants it passwordless read access: `CREATE USER [func-gtfs-prod] FROM EXTERNAL PROVIDER; ALTER ROLE ____ ADD MEMBER [func-gtfs-prod];`?
+
+Domain: Implement a secure environment
+
+- A. Database-level IP firewall rules (`sys.sp_set_database_firewall_rule`) stored inside the user database
+- B. Back up the TDE encryption certificate and private key (`BACKUP CERTIFICATE ... WITH PRIVATE KEY`) from `master` before restoring onto another SQL Server
+- C. Enable Mixed Mode, share the `sa` login password in plaintext pipeline variables, and add monitoring users to `sysadmin`
+- D. Contained database user mapped to a Microsoft Entra security group (`CREATE USER [Group] FROM EXTERNAL PROVIDER`)
+
+### 18. Control-room dispatchers sign into Entra-joined Windows consoles running legacy SCADA trending software that requires `Integrated Security=SSPI` Kerberos authentication to Azure SQL Managed Instance without AD DS VMs in Azure. What should you configure?
+
+Domain: Implement a secure environment
+
+- A. Windows Authentication for Azure SQL Managed Instance backed by Microsoft Entra Kerberos (`Incoming Trust`-based or `Entra Kerberos`)
+- B. Enable Mixed Mode, share the `sa` login password in plaintext pipeline variables, and add monitoring users to `sysadmin`
+- C. Dynamic Data Masking (`default()`, `email()`, `partial()`, `random()`) with `GRANT UNMASK` scoped to authorized roles or schemas
+- D. Add server-level firewall rule `0.0.0.0` to `255.255.255.255` and disable TLS encryption on client connections
+
+### 19. On SQL Server 2022 VMs, you enable `sp_configure 'contained database authentication', 1; RECONFIGURE;` and create `ALTER DATABASE DispatchDB SET ____ = PARTIAL;`. How does a Partially Contained Database simplify Always On AG failover?
+
+Domain: Implement a secure environment
+
+- A. Remap orphaned database users (`ALTER USER [u] WITH LOGIN = [u]`) and inspect explicit `DENY` permissions via `sys.database_permissions`
+- B. Enable Mixed Mode, share the `sa` login password in plaintext pipeline variables, and add monitoring users to `sysadmin`
+- C. Database-level IP firewall rules (`sys.sp_set_database_firewall_rule`) stored inside the user database
+- D. Contained database user mapped to a Microsoft Entra security group (`CREATE USER [Group] FROM EXTERNAL PROVIDER`)
+
+### 20. On an Azure SQL logical server, you want a security-governance service principal to manage server-level logins/roles (`##MS_LoginManager##` / security metadata) or inspect server security state without granting `Server Admin`. Which principle applies?
+
+Domain: Implement a secure environment
+
+- A. Built-in granular server-level roles (`##MS_ServerStateReader##`, `##MS_DefinitionReader##`) or `GRANT VIEW DATABASE PERFORMANCE STATE`
+- B. Dynamic Data Masking (`default()`, `email()`, `partial()`, `random()`) with `GRANT UNMASK` scoped to authorized roles or schemas
+- C. Row-Level Security (`CREATE SECURITY POLICY`) binding a `SCHEMABINDING` inline TVF as both `FILTER PREDICATE` and `BLOCK PREDICATE`
+- D. Enable Mixed Mode, share the `sa` login password in plaintext pipeline variables, and add monitoring users to `sysadmin`
+
+### 21. Substation gateways call `Grid.usp_LogBreakerTrip` to insert rows into `Grid.BreakerEvents`. You revoke all direct `SELECT`/`INSERT`/`UPDATE`/`DELETE` rights from `[RoleGateways]` on `Grid.BreakerEvents` and grant only `EXECUTE ON OBJECT::Grid.usp_LogBreakerTrip`. Why is this secure?
+
+Domain: Implement a secure environment
+
+- A. Add server-level firewall rule `0.0.0.0` to `255.255.255.255` and disable TLS encryption on client connections
+- B. Stored procedure encapsulation using schema ownership chaining, `EXECUTE AS OWNER`, or certificate module signing
+- C. Add `WITH (NOLOCK)` or `READ UNCOMMITTED` table hints to every financial and clinical `SELECT` query to eliminate blocking
+- D. Enable Mixed Mode, share the `sa` login password in plaintext pipeline variables, and add monitoring users to `sysadmin`
+
+### 22. Critical-infrastructure contractors have ad-hoc `SELECT` access on `Substations` and must never store plaintext `MasterOverrideCode` on disk or infer codes via `WHERE MasterOverrideCode LIKE '9%'`. Proposed solution: Add Dynamic Data Masking (`default()`) on `MasterOverrideCode` only. Does the solution meet the goal?
+
+Domain: Implement a secure environment
+
+- A. Yes — the proposed configuration satisfies every stated technical, security, and availability requirement
+- B. No — Dynamic Data Masking only obfuscates query output and does not encrypt data on disk or block brute-force inference
+- C. No — server-level firewall rules live in `master` and do not replicate automatically to a failover secondary server
+- D. No — exporting a `.bacpac` directly from an active OLTP database without copying first is not transactionally consistent
+
+### 23. You configure Customer-Managed Key (`CMK`) TDE in Azure Key Vault for `GridHarbor`'s Azure SQL Databases. Which two Key Vault settings are mandatory before setting the TDE protector? Select two.
+
+Domain: Implement a secure environment
+
+- A. Enable both `Soft Delete` and `Purge Protection` on the Azure Key Vault or Managed HSM storing the TDE protector key
+- B. Enable Mixed Mode, share the `sa` login password in plaintext pipeline variables, and add monitoring users to `sysadmin`
+- C. Configure `None` Azure host caching on dedicated managed disks hosting `.ldf` SQL Server transaction log files
+- D. Grant the SQL server Managed Identity `Key Vault Crypto Service Encryption User` (`get`, `wrapKey`, `unwrapKey`) on the Key Vault
+- E. Add server-level firewall rule `0.0.0.0` to `255.255.255.255` and disable TLS encryption on client connections
+
+### 24. When decrypting a column encrypted with `EncryptByKey()` inside T-SQL on SQL Server 2022 (`SELECT CONVERT(VARCHAR(50), ____(EncryptedPin)) FROM CrewBadges`), what must the session execute first before `DecryptByKey()` returns non-`NULL` values?
+
+Domain: Implement a secure environment
+
+- A. Dynamic Data Masking (`default()`, `email()`, `partial()`, `random()`) with `GRANT UNMASK` scoped to authorized roles or schemas
+- B. Add server-level firewall rule `0.0.0.0` to `255.255.255.255` and disable TLS encryption on client connections
+- C. Column-level encryption (`CREATE MASTER KEY` -> `CREATE CERTIFICATE` -> `CREATE SYMMETRIC KEY` -> `EncryptByKey`) plus `Minimal TLS version = 1.2`
+- D. Database-level IP firewall rules (`sys.sp_set_database_firewall_rule`) stored inside the user database
+
+### 25. A regional fare-collection vendor connects from `203.0.113.55` to `FareDB` on `sql-rail-east`, which replicates to `sql-rail-central`. Proposed solution: Configure `Allow Azure services and resources to access this server` (`0.0.0.0`–`0.0.0.0`) and add `203.0.113.55` in `master` on `sql-rail-east` only. Does this both follow least privilege and survive failover to `sql-rail-central`?
+
+Domain: Implement a secure environment
+
+- A. No — Dynamic Data Masking only obfuscates query output and does not encrypt data on disk or block brute-force inference
+- B. No — exporting a `.bacpac` directly from an active OLTP database without copying first is not transactionally consistent
+- C. Yes — the proposed configuration satisfies every stated technical, security, and availability requirement
+- D. No — server-level firewall rules live in `master` and do not replicate automatically to a failover secondary server
+
+### 26. Transit HR must encrypt `Operators.DriverLicenseNo` in-place on Azure SQL Database using VBS secure enclaves so safety checks can run `LIKE` queries without exposing plaintext to DBAs. Which four-step sequence applies?
+
+Domain: Implement a secure environment
+
+- A. Grant Azure SQL DBA `unwrapKey` on CMK inside T-SQL → Decrypt column via server stored procedure → Apply Dynamic Data Masking → Enable VBS enclave
+- B. Disable TLS on client connection string → Set `Column Encryption Setting=Disabled` → Create Deterministic CEK without CMK → Run `LIKE` wildcard queries
+- C. Run in-place column encryption first → Create non-enclave CEK without ENCLAVE_COMPUTATIONS → Store plaintext CMK inside sys.configurations → Enable VBS enclave last
+- D. Enable VBS enclave on Azure SQL Database → Provision Key Vault CMK & enclave-enabled CEK (`ENCLAVE_COMPUTATIONS`) → Grant client Key Vault key permissions & attestation → Run in-place `ALTER TABLE` encryption
+
+### 27. A smart-grid billing application queries `WHERE MeterSerial LIKE 'SM-99%'` over an Always Encrypted column using secure enclaves. Which two configurations are mandatory? Select two.
+
+Domain: Implement a secure environment
+
+- A. Add `WITH (NOLOCK)` or `READ UNCOMMITTED` table hints to every financial and clinical `SELECT` query to eliminate blocking
+- B. Provision a Column Master Key in Key Vault and create a Column Encryption Key with `ENCLAVE_COMPUTATIONS` enabled
+- C. Add server-level firewall rule `0.0.0.0` to `255.255.255.255` and disable TLS encryption on client connections
+- D. Enable `Column Encryption Setting=Enabled` and pass the `Enclave Attestation Url` (or VBS zero-attestation setting) in client drivers
+- E. Configure `ReadOnly` Azure host caching on Premium SSD data disks hosting `.mdf` and `.ndf` database files
+
+### 28. You audit NERC-CIP Private Link configuration on `sql-gridharbor.database.windows.net`. Which two settings guarantee VNet resolution to the Private Endpoint IP and zero internet reachability? Select two.
+
+Domain: Implement a secure environment
+
+- A. Add server-level firewall rule `0.0.0.0` to `255.255.255.255` and disable TLS encryption on client connections
+- B. Switch eligible hybrid SQL Server instances to hourly Azure Arc pay-as-you-go billing instead of upfront core licenses
+- C. Set `Public network access = Disabled` (`publicNetworkAccess: Disabled`) on the logical SQL server so internet connections are rejected
+- D. Link Private DNS Zone `privatelink.database.windows.net` (or forward on-premises DNS) to resolve `<server>.database.windows.net` to the private IP
+- E. Place `tempdb` data and log files (8 equal-sized `.mdf`/`.ndf` files) on the ephemeral local NVMe SSD volume with a startup folder-creation script
+
+### 29. You classify commuter payment columns in Azure SQL Database and integrate **Microsoft Purview** sensitivity labels. Besides `ADD SENSITIVITY CLASSIFICATION` in T-SQL, how does Azure SQL Auditing help incident responders investigate a suspected insider query?
+
+Domain: Implement a secure environment
+
+- A. Change Tracking (`CHANGETABLE(CHANGES ...)`) for lightweight net PK sync; Change Data Capture (`sys.sp_cdc_enable_table`) for full intermediate before/after history
+- B. SQL Data Discovery & Classification (`ADD SENSITIVITY CLASSIFICATION`) integrated with Azure SQL Auditing to Log Analytics / immutable Storage
+- C. Attach legacy SQL Server Profiler GUI (`sp_trace_create`) interactively against peak production OLTP servers 24x7
+- D. Dynamic Data Masking (`default()`, `email()`, `partial()`, `random()`) with `GRANT UNMASK` scoped to authorized roles or schemas
+
+### 30. On SQL Server 2022 VMs, `CREATE SERVER AUDIT [GridAudit] TO FILE (FILEPATH = 'E:\Audit\', ____ = SHUTDOWN)` halts the SQL Server instance immediately if the audit drive fills up or becomes unwritable (`strict high-security NERC/DoD requirement`). Which `ON_FAILURE` option enforces fail-closed auditing?
+
+Domain: Implement a secure environment
+
+- A. Run `DBCC FREEPROCCACHE` every 5 minutes via a cron job and disable `AUTO_CREATE_STATISTICS` across the database
+- B. Schedule nightly `DBCC SHRINKDATABASE` and `AUTO_SHRINK = ON` across all production OLTP databases
+- C. Enable Mixed Mode, share the `sa` login password in plaintext pipeline variables, and add monitoring users to `sysadmin`
+- D. SQL Data Discovery & Classification (`ADD SENSITIVITY CLASSIFICATION`) integrated with Azure SQL Auditing to Log Analytics / immutable Storage
+
+### 31. A grid outage map service syncs changed `FeederStatus` rows every 30 seconds (`only current latest state needed per FeederId`), while a separate regulatory historian needs **every intermediate state transition** captured asynchronously from the log. How should you pair Change Tracking and CDC?
+
+Domain: Implement a secure environment
+
+- A. Change Tracking (`CHANGETABLE(CHANGES ...)`) for lightweight net PK sync; Change Data Capture (`sys.sp_cdc_enable_table`) for full intermediate before/after history
+- B. Dynamic Data Masking (`default()`, `email()`, `partial()`, `random()`) with `GRANT UNMASK` scoped to authorized roles or schemas
+- C. Enable Change Data Capture (`CDC`) on DTU `Basic`/`S0–S2` databases or expect Change Tracking (`CT`) to retain every intermediate `UPDATE` value
+- D. Database-level IP firewall rules (`sys.sp_set_database_firewall_rule`) stored inside the user database
+
+### 32. Which Dynamic Data Masking function masks a `DATETIME2` column (`BirthDate`) to `'1900-01-01 00:00:00.0000000'` and a `VARCHAR` column to `'xxxx'` automatically based on column data type: `ADD MASKED WITH (FUNCTION = '____()')`?
+
+Domain: Implement a secure environment
+
+- A. Row-Level Security (`CREATE SECURITY POLICY`) binding a `SCHEMABINDING` inline TVF as both `FILTER PREDICATE` and `BLOCK PREDICATE`
+- B. Transparent Data Encryption (TDE) with a Customer-Managed Key (`CMK`) in Azure Key Vault (`Soft Delete` + `Purge Protection`)
+- C. Dynamic Data Masking (`default()`, `email()`, `partial()`, `random()`) with `GRANT UNMASK` scoped to authorized roles or schemas
+- D. Always Encrypted with VBS or Intel SGX secure enclaves (`ALLOW_ENCLAVE_COMPUTATIONS` + `Column Encryption Setting=Enabled`)
+
+### 33. Eight regional transit agencies share `RidershipTrips` (`AgencyCode`) in Azure SQL Database. Which three Row-Level Security components ensure each agency reads and writes only its own `AgencyCode` rows? Select three.
+
+Domain: Implement a secure environment
+
+- A. Add server-level firewall rule `0.0.0.0` to `255.255.255.255` and disable TLS encryption on client connections
+- B. Add `AFTER INSERT` and `AFTER UPDATE` / `BEFORE UPDATE` `BLOCK PREDICATE` clauses in `CREATE SECURITY POLICY` (`STATE = ON`)
+- C. Create an inline table-valued function `WITH SCHEMABINDING` evaluating `SESSION_CONTEXT()` or `DATABASE_PRINCIPAL_ID()`
+- D. Add a `FILTER PREDICATE` in `CREATE SECURITY POLICY` to hide non-matching rows silently from `SELECT`, `UPDATE`, and `DELETE`
+- E. Truncate or `DELETE` historical rows from an append-only Ledger table (`LEDGER = ON (APPEND_ONLY = ON)`) to purge audit history in place
+- F. Dynamic Data Masking (`default()`, `email()`, `partial()`, `random()`) with `GRANT UNMASK` scoped to authorized roles or schemas
+
+### 34. You are deploying Row-Level Security on `Grid.OutageTickets` for a pooled `.NET` API setting `SESSION_CONTEXT(N'UtilityRegion')`. Which four-step implementation sequence applies?
+
+Domain: Implement a secure environment
+
+- A. Create `SECURITY POLICY` with `STATE = ON` first → Create multi-statement TVF without `SCHEMABINDING` → Grant tenants `ALTER ANY SECURITY POLICY` → Store `TenantId` in a global temp table
+- B. Apply `ADD MASKED WITH (FUNCTION = 'default()')` on `TenantId` → Create `AFTER INSERT` trigger → Grant `UNMASK` to shared app login → Expect row filtering
+- C. Create dedicated `Security` schema → Create `SCHEMABINDING` inline TVF reading `SESSION_CONTEXT(N'TenantId')` → Create `SECURITY POLICY` with `FILTER` & `BLOCK` predicates (`STATE = ON`) → Set read-only `sp_set_session_context` on connect
+- D. Create non-schema-bound scalar UDF → Attach UDF to `sys.sp_set_firewall_rule` → Enable Change Tracking → Set `SESSION_CONTEXT` with `@read_only = 0` so users can switch tenants
+
+### 35. During morning rush hour on a commuter ticketing Azure SQL Database (`vCore General Purpose`), `avg_log_write_percent` hits `100%` in `sys.dm_db_resource_stats` while `avg_cpu_percent` is `19%`. Which workload anti-pattern or tier constraint typically drives `100%` log write throttling?
+
+Domain: Monitor, configure, and optimize database resources
+
+- A. Attach legacy SQL Server Profiler GUI (`sp_trace_create`) interactively against peak production OLTP servers 24x7
+- B. Run `DBCC FREEPROCCACHE` every 5 minutes via a cron job and disable `AUTO_CREATE_STATISTICS` across the database
+- C. Azure Monitor metrics paired with `sys.dm_db_resource_stats` (single DB) or `sys.server_resource_stats` (SQL MI) for 15-second CPU, data I/O, log write, and memory baselines
+- D. Schedule nightly `DBCC SHRINKDATABASE` and `AUTO_SHRINK = ON` across all production OLTP databases
+
+### 36. On a SQL Server 2022 Azure VM, `sys.dm_os_wait_stats` shows high `RESOURCE_SEMAPHORE` waits during peak utility billing runs. What resource are queries waiting for when `RESOURCE_SEMAPHORE` spikes?
+
+Domain: Monitor, configure, and optimize database resources
+
+- A. Add `WITH (NOLOCK)` or `READ UNCOMMITTED` table hints to every financial and clinical `SELECT` query to eliminate blocking
+- B. Schedule nightly `DBCC SHRINKDATABASE` and `AUTO_SHRINK = ON` across all production OLTP databases
+- C. Query `sys.dm_os_wait_stats` / `sys.dm_db_wait_stats`, `sys.dm_exec_requests`, `sys.dm_tran_locks`, and `sys.dm_db_tempdb_space_usage`
+- D. Dynamic Data Masking (`default()`, `email()`, `partial()`, `random()`) with `GRANT UNMASK` scoped to authorized roles or schemas
+
+### 37. You configure Azure Monitor Diagnostic Settings on `sql-railvantage` to export `Timeouts`, `Errors`, `Blocks`, and `Deadlocks` into Log Analytics with 90-day retention, and query `AzureDiagnostics | summarize count() by Category, bin(TimeGenerated, 5m)`. What operational advantage does this provide over local `ring_buffer` polling?
+
+Domain: Monitor, configure, and optimize database resources
+
+- A. Back up the TDE encryption certificate and private key (`BACKUP CERTIFICATE ... WITH PRIVATE KEY`) from `master` before restoring onto another SQL Server
+- B. Attach legacy SQL Server Profiler GUI (`sp_trace_create`) interactively against peak production OLTP servers 24x7
+- C. Database-level IP firewall rules (`sys.sp_set_database_firewall_rule`) stored inside the user database
+- D. Azure Monitor Diagnostic Settings streaming `SQLInsights`, `QueryStoreRuntimeStatistics`, `Errors`, and `Blocks` to a Log Analytics workspace (`KQL`)
+
+### 38. Your grid DBA team deploys `database watcher` across 15 Azure SQL Databases and 2 SQL Managed Instances writing into a Fabric Eventhouse KQL store. Which four-step workflow provisions the watcher?
+
+Domain: Monitor, configure, and optimize database resources
+
+- A. Create database watcher targeting Azure Cosmos DB for Gremlin → Store metrics in Azure Table storage → Authenticate via anonymous public SAS → Query dashboards via Gremlin
+- B. Install third-party kernel drivers inside Azure SQL Database PaaS OS → Configure SMB share on domain controller → Export `.trc` files via `sp_trace_create` → Query via MDX
+- C. Provision Azure Data Explorer or Fabric Eventhouse store → Create database watcher with Managed Identity → Add SQL targets & grant `VIEW SERVER PERFORMANCE STATE` + ingest roles → Start watcher & open portal dashboards
+- D. Start database watcher before selecting data store or SQL targets → Grant `sysadmin` via blank-password `sa` login → Store time-series telemetry in Azure Queue Storage → Enable SQL Profiler trace
+
+### 39. You configure Managed Identity access for `database watcher` monitoring transit SQL Managed Instances into Azure Data Explorer (while documenting migration to Database Hub in Fabric prior to April 30, 2027). Which two permissions are required? Select two.
+
+Domain: Monitor, configure, and optimize database resources
+
+- A. Grant the database watcher Managed Identity `VIEW SERVER PERFORMANCE STATE` (or `VIEW DATABASE PERFORMANCE STATE`) on SQL targets
+- B. Grant the database watcher Managed Identity database `Admin` / ingest permissions on the Azure Data Explorer or Fabric Eventhouse store
+- C. Place `tempdb` data and log files (8 equal-sized `.mdf`/`.ndf` files) on the ephemeral local NVMe SSD volume with a startup folder-creation script
+- D. Enable Mixed Mode, share the `sa` login password in plaintext pipeline variables, and add monitoring users to `sysadmin`
+- E. Attach legacy SQL Server Profiler GUI (`sp_trace_create`) interactively against peak production OLTP servers 24x7
+
+### 40. You configure persistent Extended Events `.xel` capture for `lock_deadlock` and `rpc_completed` (`duration > 3s`) on `DispatchDB` in Azure SQL Database. Which two steps are required? Select two.
+
+Domain: Monitor, configure, and optimize database resources
+
+- A. Enable both `Soft Delete` and `Purge Protection` on the Azure Key Vault or Managed HSM storing the TDE protector key
+- B. Run `DBCC FREEPROCCACHE` every 5 minutes via a cron job and disable `AUTO_CREATE_STATISTICS` across the database
+- C. Attach legacy SQL Server Profiler GUI (`sp_trace_create`) interactively against peak production OLTP servers 24x7
+- D. Create a `DATABASE SCOPED CREDENTIAL` (`Managed Identity` or `SHARED ACCESS SIGNATURE` with `rwl` permissions) for the Azure Blob container
+- E. Define `CREATE EVENT SESSION ... ON DATABASE ADD TARGET package0.event_file(SET filename = N'https://...xel')` and start the session
+
+### 41. A senior DBA notices a colleague left `SQL Server Profiler` connected over VPN to a busy substation SQL Server 2022 VM filtering `TextData LIKE '%Breaker%'` client-side. Why is Extended Events vastly lighter than Profiler here?
+
+Domain: Monitor, configure, and optimize database resources
+
+- A. Extended Events (`CREATE EVENT SESSION ... ON DATABASE` in SQL DB or `ON SERVER` in SQL MI/VMs) writing to an `event_file` target in Azure Blob Storage
+- B. Schedule nightly `DBCC SHRINKDATABASE` and `AUTO_SHRINK = ON` across all production OLTP databases
+- C. Attach legacy SQL Server Profiler GUI (`sp_trace_create`) interactively against peak production OLTP servers 24x7
+- D. Run `DBCC FREEPROCCACHE` every 5 minutes via a cron job and disable `AUTO_CREATE_STATISTICS` across the database
+
+### 42. A compiled C++ train-signaling service executes a parameterized T-SQL query that regresses during storm reroutes, and you cannot touch the C++ binary. Which two Query Store procedures let you fix the plan or inject query hints immediately? Select two.
+
+Domain: Monitor, configure, and optimize database resources
+
+- A. Run `DBCC FREEPROCCACHE` every 5 minutes via a cron job and disable `AUTO_CREATE_STATISTICS` across the database
+- B. Schedule nightly `DBCC SHRINKDATABASE` and `AUTO_SHRINK = ON` across all production OLTP databases
+- C. Execute `sys.sp_query_store_force_plan @query_id, @plan_id` to pin the historical low-latency execution plan immediately
+- D. Add `WITH (NOLOCK)` or `READ UNCOMMITTED` table hints to every financial and clinical `SELECT` query to eliminate blocking
+- E. Execute `sys.sp_query_store_set_hints @query_id, N'OPTION (RECOMPILE)'` (or `MAXDOP` / memory grant hints) without redeploying code
+
+### 43. During morning peak commute, `usp_NextTrainArrival` regresses from 3 ms (`plan_id = 22`) to 1,400 ms (`plan_id = 91`). Which four-step Query Store workflow restores 3 ms latency immediately?
+
+Domain: Monitor, configure, and optimize database resources
+
+- A. Confirm Query Store is `READ_WRITE` with wait capture → Compare plan IDs in Regressed Queries (`sys.query_store_runtime_stats`) → Force prior plan via `sp_query_store_force_plan` → Monitor `force_failure_count` & latency
+- B. Run `ALTER DATABASE ... SET QUERY_STORE CLEAR ALL` first → Inspect Regressed Queries history → Force new regressed plan ID → Set `OPERATION_MODE = OFF`
+- C. Restart SQL Server production instance during peak traffic → Rebuild every index with `ONLINE = OFF` → Enable `AUTO_CLOSE = ON` → Check Query Store
+- D. Set Query Store `OPERATION_MODE = READ_ONLY` → Modify `sys.query_store_plan` system catalog via `UPDATE` → Run `DBCC FREEPROCCACHE` every minute → Disable statistics
+
+### 44. In Azure SQL Database, how does Transaction ID (`TID`) locking inside **Optimized Locking** dramatically shrink lock-manager RAM consumption during a 2-million-row `UPDATE MeterReadings SET Billed = 1` batch?
+
+Domain: Monitor, configure, and optimize database resources
+
+- A. Schedule nightly `DBCC SHRINKDATABASE` and `AUTO_SHRINK = ON` across all production OLTP databases
+- B. Add `WITH (NOLOCK)` or `READ UNCOMMITTED` table hints to every financial and clinical `SELECT` query to eliminate blocking
+- C. Read Committed Snapshot Isolation (`READ_COMMITTED_SNAPSHOT = ON`) combined with Optimized Locking (`TID` locking + Lock After Qualification `LAQ`)
+- D. Run `DBCC FREEPROCCACHE` every 5 minutes via a cron job and disable `AUTO_CREATE_STATISTICS` across the database
+
+### 45. You want to inspect live active T-SQL text, current wait type, elapsed milliseconds, and execution plan XML for every currently running request on SQL Managed Instance. Which three DMVs/DMFs join together cleanly?
+
+Domain: Monitor, configure, and optimize database resources
+
+- A. Attach legacy SQL Server Profiler GUI (`sp_trace_create`) interactively against peak production OLTP servers 24x7
+- B. Dynamic Data Masking (`default()`, `email()`, `partial()`, `random()`) with `GRANT UNMASK` scoped to authorized roles or schemas
+- C. Schedule nightly `DBCC SHRINKDATABASE` and `AUTO_SHRINK = ON` across all production OLTP databases
+- D. Query `sys.dm_os_wait_stats` / `sys.dm_db_wait_stats`, `sys.dm_exec_requests`, `sys.dm_tran_locks`, and `sys.dm_db_tempdb_space_usage`
+
+### 46. On SQL Server 2022, which DMV reports current memory clerk allocations (`MEMORYCLERK_SQLBUFFERPOOL`, `CACHESTORE_OBJCP` ad-hoc plan bloat) via `SELECT TOP 10 type, pages_kb FROM sys.____ ORDER BY pages_kb DESC`?
+
+Domain: Monitor, configure, and optimize database resources
+
+- A. Run `DBCC FREEPROCCACHE` every 5 minutes via a cron job and disable `AUTO_CREATE_STATISTICS` across the database
+- B. Schedule nightly `DBCC SHRINKDATABASE` and `AUTO_SHRINK = ON` across all production OLTP databases
+- C. Query `sys.dm_os_wait_stats` / `sys.dm_db_wait_stats`, `sys.dm_exec_requests`, `sys.dm_tran_locks`, and `sys.dm_db_tempdb_space_usage`
+- D. Add `WITH (NOLOCK)` or `READ UNCOMMITTED` table hints to every financial and clinical `SELECT` query to eliminate blocking
+
+### 47. A substation voltage alert query `WHERE ABS(VoltageKV - 138.0) > 5.0` scans 400M rows of `IX_VoltageKV`. How do you rewrite this arithmetic predicate into a SARGable range seek on `IX_VoltageKV`?
+
+Domain: Monitor, configure, and optimize database resources
+
+- A. Add `WITH (NOLOCK)` or `READ UNCOMMITTED` table hints to every financial and clinical `SELECT` query to eliminate blocking
+- B. Replace set-based `JOIN` queries with nested `FAST_FORWARD` T-SQL cursors calling multi-statement table-valued functions per row under compat `100`
+- C. Create 25 overlapping single-column nonclustered indexes on every table column and rebuild all indexes with `ONLINE = OFF` at noon
+- D. Create a selective nonclustered covering index (`CREATE NONCLUSTERED INDEX ... INCLUDE (...)`) and rewrite predicates to be SARGable without implicit type conversions
+
+### 48. Why is a narrow monotonically increasing key (e.g., `BIGINT IDENTITY` or `SEQUENCE`, 8 bytes) generally preferred over a random `UNIQUEIDENTIFIER` (`NEWID()`, 16 bytes) as the **Clustered Index** key on a heavy-insert OLTP table?
+
+Domain: Monitor, configure, and optimize database resources
+
+- A. Schedule nightly `DBCC SHRINKDATABASE` and `AUTO_SHRINK = ON` across all production OLTP databases
+- B. Create a selective nonclustered covering index (`CREATE NONCLUSTERED INDEX ... INCLUDE (...)`) and rewrite predicates to be SARGable without implicit type conversions
+- C. Create 25 overlapping single-column nonclustered indexes on every table column and rebuild all indexes with `ONLINE = OFF` at noon
+- D. Replace set-based `JOIN` queries with nested `FAST_FORWARD` T-SQL cursors calling multi-statement table-valued functions per row under compat `100`
+
+### 49. In an Actual Execution Plan, a `Table Spool (Eager Spool)` or `Index Spool` operator appears with high `tempdb` worktable reads during an `UPDATE` statement. Why does the optimizer insert an Eager Spool on certain `UPDATE` plans?
+
+Domain: Monitor, configure, and optimize database resources
+
+- A. Attach legacy SQL Server Profiler GUI (`sp_trace_create`) interactively against peak production OLTP servers 24x7
+- B. Run `DBCC FREEPROCCACHE` every 5 minutes via a cron job and disable `AUTO_CREATE_STATISTICS` across the database
+- C. Add `WITH (NOLOCK)` or `READ UNCOMMITTED` table hints to every financial and clinical `SELECT` query to eliminate blocking
+- D. Inspect Actual Execution Plans (`Key Lookup`, `TempDB` sort/hash spill warnings, cardinality skew) alongside SQL Intelligent Insights (`SQLInsights`)
+
+### 50. Which lightweight SQL Server 2019+/Azure SQL database-scoped feature (`ALTER DATABASE SCOPED CONFIGURATION SET ____ = ON`) lets you retrieve the **last known Actual Execution Plan** (`row counts` included!) for cached queries via `sys.dm_exec_query_plan_stats` with minimal ~2% overhead?
+
+Domain: Monitor, configure, and optimize database resources
+
+- A. Transparent Data Encryption (TDE) with a Customer-Managed Key (`CMK`) in Azure Key Vault (`Soft Delete` + `Purge Protection`)
+- B. Attach legacy SQL Server Profiler GUI (`sp_trace_create`) interactively against peak production OLTP servers 24x7
+- C. Inspect Actual Execution Plans (`Key Lookup`, `TempDB` sort/hash spill warnings, cardinality skew) alongside SQL Intelligent Insights (`SQLInsights`)
+- D. Download and run standalone Microsoft Data Migration Assistant (`DMA`) with Stretch Database enabled for warm archive tables
+
+### 51. You are creating a brand-new 400 GB nonclustered index on a 24x7 grid database within a 45-minute maintenance window. Proposed solution: Execute `CREATE NONCLUSTERED INDEX IX_Grid_Meter ON dbo.Readings (MeterId, ReadTime) WITH (ONLINE = ON, RESUMABLE = ON, MAX_DURATION = 45 MINUTES);`. Does `CREATE INDEX` (not just `ALTER INDEX REBUILD`) support `ONLINE = ON, RESUMABLE = ON` in Azure SQL / SQL 2019+?
+
+Domain: Monitor, configure, and optimize database resources
+
+- A. Yes — the proposed configuration satisfies every stated technical, security, and availability requirement
+- B. No — exporting a `.bacpac` directly from an active OLTP database without copying first is not transactionally consistent
+- C. No — Dynamic Data Masking only obfuscates query output and does not encrypt data on disk or block brute-force inference
+- D. No — transaction log managed disks on SQL Server Azure VMs must use host caching `None`, never `ReadOnly` or `ReadWrite`
+
+### 52. On Azure SQL Managed Instance, which Automatic Tuning option is supported (`FORCE_LAST_GOOD_PLAN = ON`) versus which two index options (`CREATE_INDEX`, `DROP_INDEX`) are exclusive to Azure SQL Database?
+
+Domain: Monitor, configure, and optimize database resources
+
+- A. Run `DBCC FREEPROCCACHE` every 5 minutes via a cron job and disable `AUTO_CREATE_STATISTICS` across the database
+- B. Azure SQL Database Automatic Tuning (`FORCE_LAST_GOOD_PLAN = ON`, `CREATE_INDEX = ON`, `DROP_INDEX = ON`)
+- C. Schedule nightly `DBCC SHRINKDATABASE` and `AUTO_SHRINK = ON` across all production OLTP databases
+- D. Create 25 overlapping single-column nonclustered indexes on every table column and rebuild all indexes with `ONLINE = OFF` at noon
+
+### 53. On a SQL Server 2022 VM receiving 80,000 unparameterized literal queries per minute (`SELECT * FROM Stops WHERE StopId = 84912`), `CACHESTORE_OBJCP` consumes 28 GB of single-use plan cache RAM. Which `sp_configure` option (`sp_configure '____', 1`) stores only a tiny ~300-byte compiled plan stub on first execution?
+
+Domain: Monitor, configure, and optimize database resources
+
+- A. Schedule nightly `DBCC SHRINKDATABASE` and `AUTO_SHRINK = ON` across all production OLTP databases
+- B. Configure `cost threshold for parallelism`, `MAXDOP`, `max server memory (MB)`, and Resource Governor (`WORKLOAD GROUP` + `RESOURCE POOL` + classifier UDF) on SQL MI / VMs
+- C. No — Resource Governor is supported on SQL Server and Azure SQL Managed Instance, not single Azure SQL Databases
+- D. Run `DBCC FREEPROCCACHE` every 5 minutes via a cron job and disable `AUTO_CREATE_STATISTICS` across the database
+
+### 54. You upgrade `RailVantage`'s core Azure SQL Databases from compatibility level `130` to `160`. Which three Intelligent Query Processing (`IQP`) features optimize skewed parameter plans, `tempdb` hash spills, and scalar T-SQL UDF calls automatically? Select three.
+
+Domain: Monitor, configure, and optimize database resources
+
+- A. Replace set-based `JOIN` queries with nested `FAST_FORWARD` T-SQL cursors calling multi-statement table-valued functions per row under compat `100`
+- B. Run `DBCC FREEPROCCACHE` every 5 minutes via a cron job and disable `AUTO_CREATE_STATISTICS` across the database
+- C. Leverage Percentile and Persistence Memory Grant Feedback (`compat 160`) to eliminate recurring `tempdb` sort/hash spills and wasted RAM
+- D. Add `WITH (NOLOCK)` or `READ UNCOMMITTED` table hints to every financial and clinical `SELECT` query to eliminate blocking
+- E. Leverage Scalar UDF Inlining (`compat 150+`) so eligible T-SQL scalar functions fold into relational subqueries enabling parallel plans
+- F. Leverage Parameter Sensitive Plan (`PSP`) optimization under compatibility level `160` to cache separate plans for skewed parameter sizes
+
+### 55. On `GridHarbor`'s NERC-CIP SQL Server 2022 VMs, non-`sysadmin` schedules run PowerShell exports and DBAs require immediate email paging on Severity `19–25` / Error `823–825` hardware faults. Which two SQL Agent features must be configured? Select two.
+
+Domain: Configure and manage automation of tasks
+
+- A. Enable Mixed Mode, share the `sa` login password in plaintext pipeline variables, and add monitoring users to `sysadmin`
+- B. Add server-level firewall rule `0.0.0.0` to `255.255.255.255` and disable TLS encryption on client connections
+- C. Configure Database Mail, define an Agent Operator, and create SQL Server Agent Alerts for Severity `19–25` and Errors `823`, `824`, and `825`
+- D. Schedule nightly `DBCC SHRINKDATABASE` and `AUTO_SHRINK = ON` across all production OLTP databases
+- E. Create a Windows/SQL Credential and map it to a SQL Server Agent Subsystem Proxy (`CmdExec` / `PowerShell`) instead of granting `sysadmin`
+
+### 56. In SQL Server Agent on an Azure VM, you create a `Fail-safe operator` (`dba-pager@gridharbor.com`) under `SQL Server Agent Properties -> Alert System`. When does SQL Server Agent notify the fail-safe operator?
+
+Domain: Configure and manage automation of tasks
+
+- A. Start the built-in `SQLServerAgent` Windows service inside a single Azure SQL Database and store target server passwords in a public GitHub repo
+- B. SQL Server Agent multi-step jobs using Credentials + Subsystem Proxies, Severity `19–25` / Error `823–825` Alerts, and Database Mail Operators
+- C. Enable Mixed Mode, share the `sa` login password in plaintext pipeline variables, and add monitoring users to `sysadmin`
+- D. Schedule nightly `DBCC SHRINKDATABASE` and `AUTO_SHRINK = ON` across all production OLTP databases
+
+### 57. You want a single `NightlyIndexAndStats` schedule object (`02:00 Daily`) shared across six separate SQL Server Agent jobs on SQL Managed Instance so shifting the window to `03:00` updates all six jobs in one edit. How do you configure this?
+
+Domain: Configure and manage automation of tasks
+
+- A. SQL Server Agent multi-step jobs using Credentials + Subsystem Proxies, Severity `19–25` / Error `823–825` Alerts, and Database Mail Operators
+- B. Attach legacy SQL Server Profiler GUI (`sp_trace_create`) interactively against peak production OLTP servers 24x7
+- C. Enable Mixed Mode, share the `sa` login password in plaintext pipeline variables, and add monitoring users to `sysadmin`
+- D. Run `DBCC FREEPROCCACHE` every 5 minutes via a cron job and disable `AUTO_CREATE_STATISTICS` across the database
+
+### 58. A SQL Server Agent PowerShell job step using `Invoke-Sqlcmd` on a SQL Server 2022 VM fails after TLS 1.2 enforcement with `A connection was successfully established with the server, but then an error occurred during the login process (SSL Provider: certificate chain was issued by an authority that is not trusted)`. How do you fix internal self-signed TLS trust cleanly?
+
+Domain: Configure and manage automation of tasks
+
+- A. Inspect `msdb.dbo.sysjobhistory` / `sp_help_jobhistory`, verify proxy/credential permissions, and account for SQL Managed Instance Agent subsystem boundaries
+- B. Download and run standalone Microsoft Data Migration Assistant (`DMA`) with Stretch Database enabled for warm archive tables
+- C. Start the built-in `SQLServerAgent` Windows service inside a single Azure SQL Database and store target server passwords in a public GitHub repo
+- D. Enable Mixed Mode, share the `sa` login password in plaintext pipeline variables, and add monitoring users to `sysadmin`
+
+### 59. On Azure SQL Managed Instance, a SQL Server Agent job step archives rows and wants to write a `.csv` file directly to Azure Blob Storage without OS `CmdExec`. Which native SQL MI T-SQL feature exports/queries Parquet or CSV files on Azure Data Lake / Blob Storage directly?
+
+Domain: Configure and manage automation of tasks
+
+- A. Run `DBCC FREEPROCCACHE` every 5 minutes via a cron job and disable `AUTO_CREATE_STATISTICS` across the database
+- B. Schedule nightly `DBCC SHRINKDATABASE` and `AUTO_SHRINK = ON` across all production OLTP databases
+- C. Transparent Data Encryption (TDE) with a Customer-Managed Key (`CMK`) in Azure Key Vault (`Soft Delete` + `Purge Protection`)
+- D. Inspect `msdb.dbo.sysjobhistory` / `sp_help_jobhistory`, verify proxy/credential permissions, and account for SQL Managed Instance Agent subsystem boundaries
+
+### 60. Transit DevOps pipelines deploy Azure SQL Failover Groups and Private Endpoints via Bicep. Which two pipeline safeguards prevent secret leaks in deployment history and preview resource mutations before execution? Select two.
+
+Domain: Configure and manage automation of tasks
+
+- A. Schedule nightly `DBCC SHRINKDATABASE` and `AUTO_SHRINK = ON` across all production OLTP databases
+- B. Add server-level firewall rule `0.0.0.0` to `255.255.255.255` and disable TLS encryption on client connections
+- C. Enable Mixed Mode, share the `sa` login password in plaintext pipeline variables, and add monitoring users to `sysadmin`
+- D. Run `az deployment group what-if` (or `New-AzResourceGroupDeployment -WhatIf`) as a pull-request gate before applying template changes
+- E. Mark sensitive parameters with `@secure()` in Bicep and pass Key Vault secret references from the parameter file rather than cleartext values
+
+### 61. To prevent accidental `az group delete` or Bicep `Complete`-mode accidents from ever deleting production `sql-railvantage-prod`, which Azure Resource Manager resource (`Microsoft.Authorization/locks`) should your Bicep template attach to the logical SQL server?
+
+Domain: Configure and manage automation of tasks
+
+- A. Enable Mixed Mode, share the `sa` login password in plaintext pipeline variables, and add monitoring users to `sysadmin`
+- B. Add server-level firewall rule `0.0.0.0` to `255.255.255.255` and disable TLS encryption on client connections
+- C. Download and run standalone Microsoft Data Migration Assistant (`DMA`) with Stretch Database enabled for warm archive tables
+- D. Declarative Bicep / ARM templates (`Microsoft.Sql/servers`) referencing Azure Key Vault secrets via `@secure()` parameters and validated with `az deployment group what-if`
+
+### 62. You write an Azure CLI script to configure Long-Term Retention (`LTR`) keeping weekly backups 12 weeks, monthly backups 12 months, and yearly backups 7 years (week 52) on `FareDB`: `az sql db ltr-policy ____ -g rg-rail -s sql-rail -n FareDB --weekly-retention P12W --monthly-retention P12M --yearly-retention P7Y --week-of-year 52`. Which verb sets the policy?
+
+Domain: Configure and manage automation of tasks
+
+- A. Idempotent day-2 scripting with Azure PowerShell (`New-AzSqlDatabase`, `Set-AzSqlElasticPool`) or Azure CLI (`az sql db update`, `az sql mi update`)
+- B. Attach legacy SQL Server Profiler GUI (`sp_trace_create`) interactively against peak production OLTP servers 24x7
+- C. Download and run standalone Microsoft Data Migration Assistant (`DMA`) with Stretch Database enabled for warm archive tables
+- D. Back up the TDE encryption certificate and private key (`BACKUP CERTIFICATE ... WITH PRIVATE KEY`) from `master` before restoring onto another SQL Server
+
+### 63. Which Azure PowerShell cmdlet initiates a Point-in-Time Restore of an Azure SQL Managed Instance database `GridTelemetry` to `GridTelemetry_PITR`: `____ -ResourceGroupName "rg-grid" -InstanceName "sqlmi-grid" -Name "GridTelemetry" -PointInTime "2026-11-01T06:00:00Z" -TargetInstanceDatabaseName "GridTelemetry_PITR"`?
+
+Domain: Configure and manage automation of tasks
+
+- A. Schedule nightly `DBCC SHRINKDATABASE` and `AUTO_SHRINK = ON` across all production OLTP databases
+- B. Add server-level firewall rule `0.0.0.0` to `255.255.255.255` and disable TLS encryption on client connections
+- C. Idempotent day-2 scripting with Azure PowerShell (`New-AzSqlDatabase`, `Set-AzSqlElasticPool`) or Azure CLI (`az sql db update`, `az sql mi update`)
+- D. Enable Mixed Mode, share the `sa` login password in plaintext pipeline variables, and add monitoring users to `sysadmin`
+
+### 64. An ARM deployment creating a Private Endpoint for `sql-gridharbor` inside `snet-pe` fails with `PrivateEndpointCannotBeCreatedInSubnetThatHasNetworkPoliciesEnabled` (on older API templates) or NSG confusion. Which subnet property controls whether NSG rules apply to Private Endpoint IPs?
+
+Domain: Configure and manage automation of tasks
+
+- A. Add server-level firewall rule `0.0.0.0` to `255.255.255.255` and disable TLS encryption on client connections
+- B. Dynamic Data Masking (`default()`, `email()`, `partial()`, `random()`) with `GRANT UNMASK` scoped to authorized roles or schemas
+- C. Run `DBCC FREEPROCCACHE` every 5 minutes via a cron job and disable `AUTO_CREATE_STATISTICS` across the database
+- D. Diagnose deployment failures via `Get-AzResourceGroupDeploymentOperation` / Activity Log `CorrelationId`, checking regional vCore quotas and SQL MI subnet delegation/NSG/UDR rules
+
+### 65. An automated PowerShell post-deployment script targets a newly provisioned single Azure SQL Database (`HS_Gen5_8`) to throttle reporting logins. Proposed solution: Have the script execute `ALTER RESOURCE GOVERNOR RECONFIGURE;` inside that single Hyperscale Azure SQL Database. Does the solution succeed?
+
+Domain: Configure and manage automation of tasks
+
+- A. No — exporting a `.bacpac` directly from an active OLTP database without copying first is not transactionally consistent
+- B. Yes — the proposed configuration satisfies every stated technical, security, and availability requirement
+- C. No — Resource Governor is supported on SQL Server and Azure SQL Managed Instance, not single Azure SQL Databases
+- D. No — Dynamic Data Masking only obfuscates query output and does not encrypt data on disk or block brute-force inference
+
+### 66. You deploy an Azure SQL Elastic Job Agent using a User-Assigned Managed Identity (`UAMI`) to run nightly partition `SWITCH` maintenance across 22 transit agency Azure SQL Databases. Which four-step setup sequence applies?
+
+Domain: Configure and manage automation of tasks
+
+- A. Provision Elastic Job Agent inside Azure Blob Storage → Store plaintext admin password in Git repo → Add Cosmos DB containers to Target Group → Trigger via `DBCC SHRINKDATABASE`
+- B. Create Elastic Job Agent on Basic tier DB → Run `jobs.sp_add_job` before creating Target Group → Authenticate across servers with Windows NTLM local accounts → Schedule via `msdb.dbo.sp_add_job`
+- C. Create S1+ Job Database & Elastic Job Agent with UAMI → Create contained UAMI user on target DBs with needed permissions → Define Target Group (`jobs.sp_add_target_group_member`) → Add T-SQL steps & schedule (`jobs.sp_add_job`)
+- D. Enable SQL Server Agent inside single Azure SQL Database → Create linked servers to 480 tenant DBs → Loop synchronously inside a scalar UDF → Grant `CONTROL SERVER` to `guest`
+
+### 67. When an Azure SQL Elastic Job Agent resides inside a locked-down architecture where target Azure SQL logical servers have `Public network access = Disabled`, which Elastic Job Agent feature allows private network connectivity to target servers?
+
+Domain: Configure and manage automation of tasks
+
+- A. Enable Mixed Mode, share the `sa` login password in plaintext pipeline variables, and add monitoring users to `sysadmin`
+- B. Azure SQL Database Elastic Job Agent (`jobs.sp_add_job`) authenticating to Target Groups across servers/pools via a User-Assigned Managed Identity (`UAMI`)
+- C. Download and run standalone Microsoft Data Migration Assistant (`DMA`) with Stretch Database enabled for warm archive tables
+- D. Start the built-in `SQLServerAgent` Windows service inside a single Azure SQL Database and store target server passwords in a public GitHub repo
+
+### 68. A utility DBA team wants an automated weekly runbook that checks Azure Key Vault TDE certificate/key expiration dates, rotates nearing-expiry keys, and logs audit records to Log Analytics without running a dedicated VM. Which Azure service fits best?
+
+Domain: Configure and manage automation of tasks
+
+- A. Schedule nightly `DBCC SHRINKDATABASE` and `AUTO_SHRINK = ON` across all production OLTP databases
+- B. Azure Automation PowerShell / Python runbooks (or Azure Functions / Logic Apps) using a System-Assigned Managed Identity on a recurring schedule
+- C. Start the built-in `SQLServerAgent` Windows service inside a single Azure SQL Database and store target server passwords in a public GitHub repo
+- D. Enable Mixed Mode, share the `sa` login password in plaintext pipeline variables, and add monitoring users to `sysadmin`
+
+### 69. Why must you replace legacy **Azure Automation Run As Accounts** (certificate-based service principals, retired by Microsoft) with **System-Assigned or User-Assigned Managed Identities** in all SQL maintenance runbooks?
+
+Domain: Configure and manage automation of tasks
+
+- A. Add server-level firewall rule `0.0.0.0` to `255.255.255.255` and disable TLS encryption on client connections
+- B. Azure Automation PowerShell / Python runbooks (or Azure Functions / Logic Apps) using a System-Assigned Managed Identity on a recurring schedule
+- C. Back up the TDE encryption certificate and private key (`BACKUP CERTIFICATE ... WITH PRIVATE KEY`) from `master` before restoring onto another SQL Server
+- D. Download and run standalone Microsoft Data Migration Assistant (`DMA`) with Stretch Database enabled for warm archive tables
+
+### 70. You want an automated alert whenever any Azure Automation runbook job scaling `RailVantage` SQL databases enters `Failed` or `Suspended` state. How do you wire this end to end?
+
+Domain: Configure and manage automation of tasks
+
+- A. Attach legacy SQL Server Profiler GUI (`sp_trace_create`) interactively against peak production OLTP servers 24x7
+- B. Run `DBCC FREEPROCCACHE` every 5 minutes via a cron job and disable `AUTO_CREATE_STATISTICS` across the database
+- C. Add server-level firewall rule `0.0.0.0` to `255.255.255.255` and disable TLS encryption on client connections
+- D. Configure Azure Monitor Metric / Log Alert rules routed to Action Groups and query `jobs.job_executions` in the Elastic Job database to diagnose step failures
+
+### 71. A commuter train-control database in Azure SQL Database requires intra-region zero-data-loss protection against datacenter fire/flood (`RPO = 0`) AND automatic cross-region failover (`RPO <= 5s`, `RTO <= 1h` SLA). Which architecture meets both targets?
+
+Domain: Plan and configure a high availability and disaster recovery (HA/DR) environment
+
+- A. Azure SQL Database DTU `Basic` or `Standard S0` tier with a single shared primary replica
+- B. Align tiers to RPO/RTO: `Zone Redundant` (`RPO = 0` intra-region HA), `Failover Groups` (`RPO = 5s`, `RTO = 1h` SLA cross-region DR), vs `Geo-Restore` (`RPO = 1h`, `RTO = 12h`)
+- C. Rely solely on Geo-Restore from `RA-GRS` automated backups to meet a 5-second RPO and 60-second automatic failover RTO SLA
+- D. Azure SQL Database vCore Serverless compute tier with Auto-pause delay enabled
+
+### 72. A municipal water utility needs point-in-time recovery to any exact second over the past 14 days (`RPO = 0` for accidental table truncation) on a 1,500-TPS Azure SQL Database. Proposed solution: Disable PITR to save storage and export nightly `.bacpac` files to Blob Storage at 00:00. Does the solution meet the goal?
+
+Domain: Plan and configure a high availability and disaster recovery (HA/DR) environment
+
+- A. No — Dynamic Data Masking only obfuscates query output and does not encrypt data on disk or block brute-force inference
+- B. No — exporting a `.bacpac` directly from an active OLTP database without copying first is not transactionally consistent
+- C. No — server-level firewall rules live in `master` and do not replicate automatically to a failover secondary server
+- D. Yes — the proposed configuration satisfies every stated technical, security, and availability requirement
+
+### 73. Grid control headquarters runs SQL Server 2022 Enterprise on-premises and replicates to Azure SQL Managed Instance via Managed Instance link. Can headquarters use the cloud SQL Managed Instance replica for **read-only BI reporting** while on-premises SQL Server 2022 remains the read-write primary?
+
+Domain: Plan and configure a high availability and disaster recovery (HA/DR) environment
+
+- A. Hybrid DR using Managed Instance link with bidirectional online failover between SQL Server 2022 and Azure SQL Managed Instance
+- B. Expect online bidirectional planned failback from Azure SQL Managed Instance directly back to on-premises SQL Server 2016 without downtime
+- C. Download and run standalone Microsoft Data Migration Assistant (`DMA`) with Stretch Database enabled for warm archive tables
+- D. Create a transactionally consistent database copy (`CREATE DATABASE ... AS COPY OF`), export `.bacpac` via `SqlPackage`, then remove the copy
+
+### 74. When deploying a 2-node Always On Availability Group on SQL Server Azure VMs across Availability Zones 1 and 2 (`~1–2 ms` inter-zone latency), which commit mode gives `RPO = 0` automatic zone failover versus which commit mode should be used for a 3rd DR replica 2,000 miles away (`~65 ms` latency)?
+
+Domain: Plan and configure a high availability and disaster recovery (HA/DR) environment
+
+- A. Deploy a 2-node Always On Availability Group in a single Availability Set without any quorum witness and block TCP `59999` on the NSG
+- B. Align tiers to RPO/RTO: `Zone Redundant` (`RPO = 0` intra-region HA), `Failover Groups` (`RPO = 5s`, `RTO = 1h` SLA cross-region DR), vs `Geo-Restore` (`RPO = 1h`, `RTO = 12h`)
+- C. Place SQL Server `.mdf`, `.ldf`, and `tempdb` files together on the Azure VM OS disk (`C:`) with `ReadWrite` host caching
+- D. Add server-level firewall rule `0.0.0.0` to `255.255.255.255` and disable TLS encryption on client connections
+
+### 75. NERC-CIP continuity rules mandate a semi-annual zero-data-loss regional failover drill for five coupled grid telemetry databases in `fog-gridharbor` without editing SCADA connection strings. Which four-step Failover Group drill workflow applies?
+
+Domain: Plan and configure a high availability and disaster recovery (HA/DR) environment
+
+- A. Create Failover Group between two servers in the exact same datacenter rack → Add `tempdb` and `master` to Failover Group → Point OLTP writes to `.secondary.database.windows.net` → Disable Geo-Replication
+- B. Provision secondary SQL server with matching firewall/Private Link & Entra admin → Create Failover Group with coupled DBs → Point apps to `<fog>.database.windows.net` & `.secondary` → Run planned `Switch-AzSqlDatabaseFailoverGroup` drill
+- C. Export nightly `.bacpac` to local laptop → Delete production database to test restore → Manually edit 50 microservice connection strings → Re-enable TDE after 6 hours
+- D. Execute unplanned `AllowDataLoss` forced failover during peak checkout → Create secondary logical SQL server afterward → Hardcode regional server names in app connection strings → Skip firewall rules on secondary
+
+### 76. Before executing a planned DR failover of an Azure SQL Database using Customer-Managed Key (`CMK`) TDE in Key Vault, why should your DR drill verify Key Vault regional availability if the primary region goes completely dark?
+
+Domain: Plan and configure a high availability and disaster recovery (HA/DR) environment
+
+- A. Add server-level firewall rule `0.0.0.0` to `255.255.255.255` and disable TLS encryption on client connections
+- B. Schedule nightly `DBCC SHRINKDATABASE` and `AUTO_SHRINK = ON` across all production OLTP databases
+- C. Rely solely on Geo-Restore from `RA-GRS` automated backups to meet a 5-second RPO and 60-second automatic failover RTO SLA
+- D. Non-disruptive DR readiness drill executing a planned zero-data-loss Failover Group switch (`Switch-AzSqlDatabaseFailoverGroup`), validating app listeners, and failing back
+
+### 77. On `HydroCrest`'s SQL Server 2022 VM, Sunday Full + Mon–Sat Differential + 10-min Log backups run automatically. Proposed solution: On Wednesday afternoon an auditor runs `BACKUP DATABASE [DamTelemetry] TO URL = '...'` (omitting `WITH COPY_ONLY`) to archive a regulatory snapshot. Does Thursday's Differential still restore cleanly onto Sunday's Full backup?
+
+Domain: Plan and configure a high availability and disaster recovery (HA/DR) environment
+
+- A. No — server-level firewall rules live in `master` and do not replicate automatically to a failover secondary server
+- B. Yes — the proposed configuration satisfies every stated technical, security, and availability requirement
+- C. No — taking an ad-hoc non-`COPY_ONLY` full backup resets the differential base and breaks downstream differential restores
+- D. No — Dynamic Data Masking only obfuscates query output and does not encrypt data on disk or block brute-force inference
+
+### 78. When using **Azure Backup** (`Recovery Services Vault`) to protect SQL Server 2022 databases inside an Always On Availability Group on Azure VMs, how does Azure Backup handle AG failovers automatically?
+
+Domain: Plan and configure a high availability and disaster recovery (HA/DR) environment
+
+- A. Schedule nightly `DBCC SHRINKDATABASE` and `AUTO_SHRINK = ON` across all production OLTP databases
+- B. Place SQL Server `.mdf`, `.ldf`, and `tempdb` files together on the Azure VM OS disk (`C:`) with `ReadWrite` host caching
+- C. Back up a 6 TB database to a single unstriped Azure Page Blob URL (`WITH CREDENTIAL` omitted) using anonymous public container access
+- D. Use `BACKUP DATABASE ... WITH COPY_ONLY` for ad-hoc exports on SQL MI / AGs, and Azure Backup Recovery Services Vault SQL-aware policies (`15-min` log RPO) on SQL VMs
+
+### 79. On a SQL Server 2022 VM, `DamTelemetry` suffers corruption only on read-write filegroup `FG_CurrentMonth`, while historical read-only filegroups `FG_2020..FG_2025` (`9 TB`) are healthy and `PRIMARY` is intact. Which Enterprise T-SQL restore strategy (`RESTORE DATABASE ... FILEGROUP = 'PRIMARY', FILEGROUP = 'FG_CurrentMonth' WITH ____, NORECOVERY`) brings `PRIMARY` + `FG_CurrentMonth` online in minutes while restoring archive filegroups later?
+
+Domain: Plan and configure a high availability and disaster recovery (HA/DR) environment
+
+- A. Create a transactionally consistent database copy (`CREATE DATABASE ... AS COPY OF`), export `.bacpac` via `SqlPackage`, then remove the copy
+- B. Schedule nightly `DBCC SHRINKDATABASE` and `AUTO_SHRINK = ON` across all production OLTP databases
+- C. Automated Point-in-Time Restore (`1–35` days PITR), Deleted-Database restore from the logical server, and Accelerated Database Recovery (`ADR`) instant rollback
+- D. Set Short-Term PITR retention to `3,650` days (`10 years`) and grant developers Subscription Contributor to prevent backup deletion
+
+### 80. At `13:00 UTC` you finish moving `FareSettlementDB` online from `sqlmi-east` to `sqlmi-central` via Database Move. At `14:30 UTC` accounting asks to restore `FareSettlementDB` to `09:00 UTC` via PITR on `sqlmi-central`. Proposed solution: Run `Restore-AzSqlInstanceDatabase -PointInTime 09:00Z` on `sqlmi-central`. Does the solution meet the goal?
+
+Domain: Plan and configure a high availability and disaster recovery (HA/DR) environment
+
+- A. No — server-level firewall rules live in `master` and do not replicate automatically to a failover secondary server
+- B. Yes — the proposed configuration satisfies every stated technical, security, and availability requirement
+- C. No — moving a database across SQL Managed Instances starts a fresh backup chain and does not carry over prior PITR backups
+- D. No — Dynamic Data Masking only obfuscates query output and does not encrypt data on disk or block brute-force inference
+
+### 81. Federal energy regulators require retaining annual `GridLoadDB` backups for 10 years with locked time-based WORM immutability. Which two Azure SQL backup settings satisfy this mandate? Select two.
+
+Domain: Plan and configure a high availability and disaster recovery (HA/DR) environment
+
+- A. Enable and lock time-based immutability (`WORM`) on the LTR backup policy so nobody can shorten retention or delete compliance backups early
+- B. Add server-level firewall rule `0.0.0.0` to `255.255.255.255` and disable TLS encryption on client connections
+- C. Schedule nightly `DBCC SHRINKDATABASE` and `AUTO_SHRINK = ON` across all production OLTP databases
+- D. Set Short-Term PITR retention to `3,650` days (`10 years`) and grant developers Subscription Contributor to prevent backup deletion
+- E. Configure an Azure SQL Long-Term Retention (`LTR`) policy (`WeeklyRetention`, `MonthlyRetention`, `YearlyRetention`, `WeekOfYear`) up to 10 years
+
+### 82. Before locking time-based immutability (`WORM`) on an Azure SQL Long-Term Retention (`LTR`) backup policy, what happens if you leave immutability in **Unlocked** state during initial testing versus **Locked** state in production?
+
+Domain: Plan and configure a high availability and disaster recovery (HA/DR) environment
+
+- A. Set Short-Term PITR retention to `3,650` days (`10 years`) and grant developers Subscription Contributor to prevent backup deletion
+- B. Dynamic Data Masking (`default()`, `email()`, `partial()`, `random()`) with `GRANT UNMASK` scoped to authorized roles or schemas
+- C. Azure SQL Database vCore Serverless compute tier with Auto-pause delay enabled
+- D. Long-Term Retention (`LTR`) weekly/monthly/yearly backups up to `10 years` protected by a locked time-based immutable (`WORM`) policy and `RA-GRS` / `ZRS` backup storage
+
+### 83. Why does `BACKUP DATABASE [Dam] TO URL = 'https://.../Dam.bak' WITH CREDENTIAL = 'MyCred'` **fail with a syntax error** on SQL Server 2022 when backing up to **Block Blobs** (using SAS or Managed Identity)?
+
+Domain: Plan and configure a high availability and disaster recovery (HA/DR) environment
+
+- A. Striped T-SQL `BACKUP DATABASE ... TO URL = ...` across up to 64 block blobs (`MAXTRANSFERSIZE`, `COMPRESSION`) authenticated via `Managed Identity` or `SHARED ACCESS SIGNATURE` Credential
+- B. Back up a 6 TB database to a single unstriped Azure Page Blob URL (`WITH CREDENTIAL` omitted) using anonymous public container access
+- C. Create a transactionally consistent database copy (`CREATE DATABASE ... AS COPY OF`), export `.bacpac` via `SqlPackage`, then remove the copy
+- D. Download and run standalone Microsoft Data Migration Assistant (`DMA`) with Stretch Database enabled for warm archive tables
+
+### 84. You configure Failover Group `fog-railvantage` across Central US and East US 2. Which two settings ensure automatic client redirection and controlled automatic failover behavior? Select two.
+
+Domain: Plan and configure a high availability and disaster recovery (HA/DR) environment
+
+- A. Add server-level firewall rule `0.0.0.0` to `255.255.255.255` and disable TLS encryption on client connections
+- B. Place `tempdb` data and log files (8 equal-sized `.mdf`/`.ndf` files) on the ephemeral local NVMe SSD volume with a startup folder-creation script
+- C. Rely solely on Geo-Restore from `RA-GRS` automated backups to meet a 5-second RPO and 60-second automatic failover RTO SLA
+- D. Connect OLTP write traffic to `<fog>.database.windows.net` and read-only analytics to `<fog>.secondary.database.windows.net`
+- E. Configure `ReadWriteFailoverPolicy = Automatic` with `GracePeriodWithDataLossHours >= 1` so transient blips do not trigger premature lossy failover
+
+### 85. In Azure SQL Database, can you initiate **Geo-Replication** or a **Failover Group** pairing a `Hyperscale` primary database with a `General Purpose` secondary database?
+
+Domain: Plan and configure a high availability and disaster recovery (HA/DR) environment
+
+- A. Rely solely on Geo-Restore from `RA-GRS` automated backups to meet a 5-second RPO and 60-second automatic failover RTO SLA
+- B. Failover Groups for automatic multi-database failover behind stable `<fog>.database.windows.net` / `.secondary` listeners vs Active Geo-Replication for up to 4 readable secondaries
+- C. Azure SQL Database DTU `Basic` or `Standard S0` tier with a single shared primary replica
+- D. Azure SQL Database vCore Serverless compute tier with Auto-pause delay enabled
+
+### 86. On a 2-node Windows Server Failover Cluster (`WSFC`) spanning two Azure regions (`Central US` and `East US 2`) with an Azure Cloud Witness in `Central US`, what happens if `Central US` goes completely offline (taking down **both** Node 1 and the Cloud Witness simultaneously)?
+
+Domain: Plan and configure a high availability and disaster recovery (HA/DR) environment
+
+- A. Deploy a 2-node Always On Availability Group in a single Availability Set without any quorum witness and block TCP `59999` on the NSG
+- B. SQL database in Microsoft Fabric (`Database` workload with automatic OneLake Delta mirroring)
+- C. Always On Availability Group on Azure VMs using WSFC with Azure Cloud Witness, Distributed Network Name (`DNN`) or Internal Load Balancer (`ILB` port `59999`), and `MultiSubnetFailover=True`
+- D. Azure SQL Database vCore Serverless compute tier with Auto-pause delay enabled
+
+### 87. Which TCP port does an Always On Availability Group database mirroring endpoint use by default between SQL Server Azure VMs (`CREATE ENDPOINT [Hadr_endpoint] AS TCP (LISTENER_PORT = ____)`), which must be permitted in subnet NSGs and Windows Firewall?
+
+Domain: Plan and configure a high availability and disaster recovery (HA/DR) environment
+
+- A. Add server-level firewall rule `0.0.0.0` to `255.255.255.255` and disable TLS encryption on client connections
+- B. Always On Availability Group on Azure VMs using WSFC with Azure Cloud Witness, Distributed Network Name (`DNN`) or Internal Load Balancer (`ILB` port `59999`), and `MultiSubnetFailover=True`
+- C. Deploy a 2-node Always On Availability Group in a single Availability Set without any quorum witness and block TCP `59999` on the NSG
+- D. Place SQL Server `.mdf`, `.ldf`, and `tempdb` files together on the Azure VM OS disk (`C:`) with `ReadWrite` host caching
+
+### 88. Can `HydroCrest`'s 2-node multi-zone Always On Failover Cluster Instance (`FCI`) **also** participate as the primary replica of an asynchronous Always On Availability Group (`FCI + AG`) replicating to a remote DR region?
+
+Domain: Plan and configure a high availability and disaster recovery (HA/DR) environment
+
+- A. Rely solely on Geo-Restore from `RA-GRS` automated backups to meet a 5-second RPO and 60-second automatic failover RTO SLA
+- B. Azure SQL Database vCore Serverless compute tier with Auto-pause delay enabled
+- C. Schedule nightly `DBCC SHRINKDATABASE` and `AUTO_SHRINK = ON` across all production OLTP databases
+- D. Always On Failover Cluster Instance (`FCI`) on Azure VMs backed by `ZRS` Premium SSD Azure Shared Disks (or `S2D`), or Log Shipping (`BACKUP LOG` -> copy -> `RESTORE LOG WITH NORECOVERY`/`STANDBY`)
+
+---
+
+## Case study — GridHarbor Utilities
+
+GridHarbor Utilities operates NERC-CIP regulated SQL Server VMs and Azure SQL Databases. On-premises apps over ExpressRoute must resolve SQL DB to private VNet IPs, a TDE-protected VM database is moving to a new host, and an auditor still cannot `SELECT` from a table despite being added to `db_datareader`.
+
+The next 3 questions refer to **GridHarbor Utilities**. Read the scenario brief once, then answer each item independently.
+
+### 89. Why can the auditor still not `SELECT` from `Grid.TransformerLoad` despite being added to `db_datareader`, and which catalog query confirms the block?
+
+Domain: Implement a secure environment
+
+- A. Change Tracking (`CHANGETABLE(CHANGES ...)`) for lightweight net PK sync; Change Data Capture (`sys.sp_cdc_enable_table`) for full intermediate before/after history
+- B. Dynamic Data Masking (`default()`, `email()`, `partial()`, `random()`) with `GRANT UNMASK` scoped to authorized roles or schemas
+- C. Remap orphaned database users (`ALTER USER [u] WITH LOGIN = [u]`) and inspect explicit `DENY` permissions via `sys.database_permissions`
+- D. Enable Mixed Mode, share the `sa` login password in plaintext pipeline variables, and add monitoring users to `sysadmin`
+
+### 90. What mandatory step (`BACKUP ____ [TDECert] TO FILE = '...' WITH PRIVATE KEY (...)`) must you perform in `master` on the source SQL Server VM **before** moving or restoring the TDE-protected database onto the new host VM?
+
+Domain: Implement a secure environment
+
+- A. Add server-level firewall rule `0.0.0.0` to `255.255.255.255` and disable TLS encryption on client connections
+- B. Database-level IP firewall rules (`sys.sp_set_database_firewall_rule`) stored inside the user database
+- C. Back up the TDE encryption certificate and private key (`BACKUP CERTIFICATE ... WITH PRIVATE KEY`) from `master` before restoring onto another SQL Server
+- D. Dynamic Data Masking (`default()`, `email()`, `partial()`, `random()`) with `GRANT UNMASK` scoped to authorized roles or schemas
+
+### 91. How must DNS be configured so on-premises apps over ExpressRoute resolve `<server>.database.windows.net` to the Private Endpoint IP inside the Azure VNet?
+
+Domain: Implement a secure environment
+
+- A. Azure Private Endpoint (`Microsoft.Network/privateEndpoints`) paired with `privatelink.database.windows.net` Private DNS and `publicNetworkAccess = Disabled`
+- B. Add server-level firewall rule `0.0.0.0` to `255.255.255.255` and disable TLS encryption on client connections
+- C. Virtual Network Service Endpoints (`Microsoft.Sql`) with outbound storage firewall rules, or dedicated `/28+` delegated subnet for SQL MI
+- D. Database-level IP firewall rules (`sys.sp_set_database_firewall_rule`) stored inside the user database
+
+---
+
+## Case study — HydroCrest Dam Control
+
+HydroCrest Dam Control requires instance-level shared-storage failover (`Always On FCI`) across Availability Zones on Azure VMs for an app that does not support AG listeners, multi-TB native T-SQL backups directly to Azure Blob Storage above 200 GB per file, and troubleshooting growing AG secondary redo queues.
+
+The next 3 questions refer to **HydroCrest Dam Control**. Read the scenario brief once, then answer each item independently.
+
+### 92. Which two T-SQL backup configurations allow native multi-TB `BACKUP DATABASE` directly to Azure Blob Storage exceeding 200 GB per file without SAS secrets? Select two.
+
+Domain: Plan and configure a high availability and disaster recovery (HA/DR) environment
+
+- A. Stripe `BACKUP DATABASE` across multiple `TO URL = 'https://...bak'` block blob targets with `COMPRESSION` and `MAXTRANSFERSIZE = 4194304`
+- B. Back up a 6 TB database to a single unstriped Azure Page Blob URL (`WITH CREDENTIAL` omitted) using anonymous public container access
+- C. Place `tempdb` data and log files (8 equal-sized `.mdf`/`.ndf` files) on the ephemeral local NVMe SSD volume with a startup folder-creation script
+- D. Create a SQL Server `CREDENTIAL` (`IDENTITY = 'Managed Identity'` or `'SHARED ACCESS SIGNATURE'`) matching the Azure Blob container URL
+- E. Add server-level firewall rule `0.0.0.0` to `255.255.255.255` and disable TLS encryption on client connections
+
+### 93. Which shared-storage configuration enables a 2-node Always On Failover Cluster Instance (`FCI`) across Availability Zones on Azure VMs for the dam-control application that does not support AG listeners?
+
+Domain: Plan and configure a high availability and disaster recovery (HA/DR) environment
+
+- A. Azure SQL Database Hyperscale tier with compute-isolated Named Replicas
+- B. Always On Failover Cluster Instance (`FCI`) on Azure VMs backed by `ZRS` Premium SSD Azure Shared Disks (or `S2D`), or Log Shipping (`BACKUP LOG` -> copy -> `RESTORE LOG WITH NORECOVERY`/`STANDBY`)
+- C. Place SQL Server `.mdf`, `.ldf`, and `tempdb` files together on the Azure VM OS disk (`C:`) with `ReadWrite` host caching
+- D. SQL database in Microsoft Fabric (`Database` workload with automatic OneLake Delta mirroring)
+
+### 94. `sys.dm_hadr_database_replica_states` shows `redo_queue_size` growing steadily on the AG secondary while `log_send_queue_size` is tiny, and `sys.dm_exec_requests` on the secondary shows `DB_STARTUP` / `REDO` blocked on `LCK_M_SCH_M` behind a 45-minute BI `SELECT` query (`LCK_M_SCH_S`). What happened?
+
+Domain: Plan and configure a high availability and disaster recovery (HA/DR) environment
+
+- A. Query `sys.dm_hadr_database_replica_states` (`synchronization_state_desc`, `log_send_queue_size`, `redo_queue_size`) and `sys.dm_geo_replication_link_status`, plus verify NSG probe port `59999`
+- B. Deploy a 2-node Always On Availability Group in a single Availability Set without any quorum witness and block TCP `59999` on the NSG
+- C. Run `DBCC FREEPROCCACHE` every 5 minutes via a cron job and disable `AUTO_CREATE_STATISTICS` across the database
+- D. Add `WITH (NOLOCK)` or `READ UNCOMMITTED` table hints to every financial and clinical `SELECT` query to eliminate blocking
+
+---
+
+## Case study — RailVantage Transit
+
+RailVantage Transit is assessing 85 on-premises SQL Server 2016–2022 instances for Azure readiness, feature blockers, and right-sized vCore SKUs after Microsoft retired DMA, exporting a live 450 GB Azure SQL Database to `.bacpac` with transactional consistency, and evaluating `ROW` vs `PAGE` compression.
+
+The next 3 questions refer to **RailVantage Transit**. Read the scenario brief once, then answer each item independently.
+
+### 95. Which stored procedure (`EXEC sys.____ @schema_name = 'dbo', @object_name = 'Timetables', @index_id = NULL, @partition_number = NULL, @data_compression = 'PAGE'`) lets DBAs compare projected disk savings between `ROW` and `PAGE` compression before rebuilding?
+
+Domain: Plan and implement data platform resources
+
+- A. Create 25 overlapping single-column nonclustered indexes on every table column and rebuild all indexes with `ONLINE = OFF` at noon
+- B. Evaluate `sp_estimate_data_compression_savings` and apply `ROW`, `PAGE`, or `COLUMNSTORE_ARCHIVE` compression per partition
+- C. Replace set-based `JOIN` queries with nested `FAST_FORWARD` T-SQL cursors calling multi-statement table-valued functions per row under compat `100`
+- D. Schedule nightly `DBCC SHRINKDATABASE` and `AUTO_SHRINK = ON` across all production OLTP databases
+
+### 96. Which modern Microsoft assessment toolset should you use across all 85 on-premises SQL Server 2016–2022 instances to identify compatibility blockers and right-sized vCore SKUs now that DMA is retired?
+
+Domain: Plan and implement data platform resources
+
+- A. Attach legacy SQL Server Profiler GUI (`sp_trace_create`) interactively against peak production OLTP servers 24x7
+- B. Back up the TDE encryption certificate and private key (`BACKUP CERTIFICATE ... WITH PRIVATE KEY`) from `master` before restoring onto another SQL Server
+- C. Download and run standalone Microsoft Data Migration Assistant (`DMA`) with Stretch Database enabled for warm archive tables
+- D. Azure Migrate (`Azure SQL` assessment) and the Azure SQL Migration extension for Azure Data Studio / VS Code
+
+### 97. How do you export a 100% transactionally consistent `.bacpac` archive of the live 450 GB Azure SQL Database (`CREATE DATABASE [Ticketing_Copy] AS ____ OF [Ticketing];` -> `SqlPackage /Action:Export`) without halting commuter ticketing writes?
+
+Domain: Plan and implement data platform resources
+
+- A. Download and run standalone Microsoft Data Migration Assistant (`DMA`) with Stretch Database enabled for warm archive tables
+- B. Log Replay Service (`LRS`) streaming Full, Differential, and Tail-Log backups from Azure Blob Storage into SQL Managed Instance
+- C. Online Azure SQL Managed Instance Database Move / Copy (`TCP 5022` & `11000–11999`, 24-hour manual completion window)
+- D. Create a transactionally consistent database copy (`CREATE DATABASE ... AS COPY OF`), export `.bacpac` via `SqlPackage`, then remove the copy
+
+---
+
+## Case study — SolarisSpan Dispatch
+
+SolarisSpan Dispatch experiences frequent HTTP 500 errors from `1205` deadlocks between two stored procedures updating `CrewAssignments` and `Vehicles`, 250 ms compile pauses when synchronous statistics refreshes block peak dispatch queries, and a post-upgrade cardinality regression on one database.
+
+The next 3 questions refer to **SolarisSpan Dispatch**. Read the scenario brief once, then answer each item independently.
+
+### 98. How should you eliminate the `1205` deadlocks occurring between the two stored procedures updating `CrewAssignments` and `Vehicles`?
+
+Domain: Monitor, configure, and optimize database resources
+
+- A. Capture `xml_deadlock_report` via Extended Events or `sys.event_log`, align table modification order across transactions, and add covering indexes
+- B. Run `DBCC FREEPROCCACHE` every 5 minutes via a cron job and disable `AUTO_CREATE_STATISTICS` across the database
+- C. Create 25 overlapping single-column nonclustered indexes on every table column and rebuild all indexes with `ONLINE = OFF` at noon
+- D. Add `WITH (NOLOCK)` or `READ UNCOMMITTED` table hints to every financial and clinical `SELECT` query to eliminate blocking
+
+### 99. Which database setting (`ALTER DATABASE DispatchDB SET ____ ON`) eliminates the 250 ms synchronous query-compile pauses when stale statistics trigger auto-updates during peak dispatch traffic?
+
+Domain: Monitor, configure, and optimize database resources
+
+- A. Fragmentation-aware index maintenance (`REORGANIZE` 5–30%, `REBUILD WITH (ONLINE = ON, RESUMABLE = ON)` >30%), `UPDATE STATISTICS`, and `DBCC CHECKDB WITH PHYSICAL_ONLY`
+- B. Schedule nightly `DBCC SHRINKDATABASE` and `AUTO_SHRINK = ON` across all production OLTP databases
+- C. Add `WITH (NOLOCK)` or `READ UNCOMMITTED` table hints to every financial and clinical `SELECT` query to eliminate blocking
+- D. Run `DBCC FREEPROCCACHE` every 5 minutes via a cron job and disable `AUTO_CREATE_STATISTICS` across the database
+
+### 100. Which single T-SQL statement (`ALTER DATABASE SCOPED CONFIGURATION SET ____ = ON;`) reverts **only** the upgraded dispatch database to the SQL Server 2012 (`70`) Cardinality Estimator without lowering database compatibility level below `160`?
+
+Domain: Monitor, configure, and optimize database resources
+
+- A. Use `ALTER DATABASE SCOPED CONFIGURATION` (`MAXDOP`, `LEGACY_CARDINALITY_ESTIMATION`, `PARAMETER_SNIFFING`, `OPTIMIZED_PLAN_FORCING`) per database
+- B. Run `DBCC FREEPROCCACHE` every 5 minutes via a cron job and disable `AUTO_CREATE_STATISTICS` across the database
+- C. Add `WITH (NOLOCK)` or `READ UNCOMMITTED` table hints to every financial and clinical `SELECT` query to eliminate blocking
+- D. Schedule nightly `DBCC SHRINKDATABASE` and `AUTO_SHRINK = ON` across all production OLTP databases
+
+---
+
+## Answer key and explanations
+
+### Question 1 — A
+
+Answer: Azure SQL Database Hyperscale tier with compute-isolated Named Replicas. Azure SQL Database Hyperscale scales up to 100 TB via distributed page servers, performs fast snapshot restores, and attaches compute-isolated Named Replicas. Hyperscale scales up to 100 TB via distributed page servers, performs constant-time log restores, and attaches up to 30 Named Replicas with independent vCore compute over shared storage. Local study-map skill 1.1 (Recommend an Azure SQL Offering (SQL Database, SQL Managed Instance, or SQL Server on Azure VMs)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Compare Azure SQL Database, Azure SQL Managed Instance, and SQL Server on Azure VMs (https://learn.microsoft.com/en-us/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview).
+
+- **A:** Correct. Hyperscale scales up to 100 TB via distributed page servers, performs constant-time log restores, and attaches up to 30 Named Replicas with independent vCore compute over shared storage. In this scenario: Azure SQL Database Hyperscale scales up to 100 TB via distributed page servers, performs fast snapshot restores, and attaches compute-isolated Named Replicas.
+- **B:** Incorrect for this requirement. SQL Server on Azure VMs (IaaS) provides full OS access, custom third-party drivers, legacy SQL Server version pinning, SSIS/SSRS/SSAS co-hosting, and `Ebdsv5` high remote storage throughput. Why the keyed choice wins: Azure SQL Database Hyperscale scales up to 100 TB via distributed page servers, performs fast snapshot restores, and attaches compute-isolated Named Replicas.
+- **C:** Incorrect for this requirement. Serverless auto-scales compute between configured min and max vCores per second and pauses compute billing during idle periods (minimum 1-hour auto-pause delay), charging only storage. Why the keyed choice wins: Azure SQL Database Hyperscale scales up to 100 TB via distributed page servers, performs fast snapshot restores, and attaches compute-isolated Named Replicas.
+- **D:** Incorrect for this requirement. DTU Basic supports max 2 GB and Standard S0–S2 max 250 GB without compute-isolated read replicas, making them incapable of hosting multi-TB OLTP workloads. Why the keyed choice wins: Azure SQL Database Hyperscale scales up to 100 TB via distributed page servers, performs fast snapshot restores, and attaches compute-isolated Named Replicas.
+
+### Question 2 — A
+
+Answer: Azure SQL Managed Instance (Next-gen General Purpose) with decoupled IOPS and storage sliders. Azure SQL Managed Instance (General Purpose / Next-gen General Purpose) supports native `.bak` restores from URL, SQL Agent, and cross-database T-SQL in a fully managed PaaS model. SQL Managed Instance provides near-100% SQL Server engine compatibility (cross-DB queries, SQL Agent, CLR, Service Broker), and Next-gen GP scales IOPS independently of storage up to 500 DBs. Local study-map skill 1.1 (Recommend an Azure SQL Offering (SQL Database, SQL Managed Instance, or SQL Server on Azure VMs)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Compare Azure SQL Database, Azure SQL Managed Instance, and SQL Server on Azure VMs (https://learn.microsoft.com/en-us/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview).
+
+- **A:** Correct. SQL Managed Instance provides near-100% SQL Server engine compatibility (cross-DB queries, SQL Agent, CLR, Service Broker), and Next-gen GP scales IOPS independently of storage up to 500 DBs. In this scenario: Azure SQL Managed Instance (General Purpose / Next-gen General Purpose) supports native `.bak` restores from URL, SQL Agent, and cross-database T-SQL in a fully managed PaaS model.
+- **B:** Incorrect for this requirement. SQL database in Microsoft Fabric runs the Azure SQL engine for OLTP with Microsoft Entra-only auth, automatic near-real-time OneLake Delta Parquet replication, and a read-only SQL analytics endpoint. Why the keyed choice wins: Azure SQL Managed Instance (General Purpose / Next-gen General Purpose) supports native `.bak` restores from URL, SQL Agent, and cross-database T-SQL in a fully managed PaaS model.
+- **C:** Incorrect for this requirement. Elastic Pools share a pooled vCore/storage envelope across many multi-tenant databases with staggered peaks while capping per-database max vCores to stop noisy-neighbor starvation. Why the keyed choice wins: Azure SQL Managed Instance (General Purpose / Next-gen General Purpose) supports native `.bak` restores from URL, SQL Agent, and cross-database T-SQL in a fully managed PaaS model.
+- **D:** Incorrect for this requirement. Serverless auto-scales compute between configured min and max vCores per second and pauses compute billing during idle periods (minimum 1-hour auto-pause delay), charging only storage. Why the keyed choice wins: Azure SQL Managed Instance (General Purpose / Next-gen General Purpose) supports native `.bak` restores from URL, SQL Agent, and cross-database T-SQL in a fully managed PaaS model.
+
+### Question 3 — A, C
+
+Answers: Create a dedicated VNet subnet (`/28` or larger) with no other cloud resources and delegate it to `Microsoft.Sql/managedInstances`; Associate a User-Defined Route (`UDR`) table (`0.0.0.0/0` -> `Internet` for management plane) and required NSG rules with the SQL MI subnet. Create an exclusive `/28+` subnet delegated to `Microsoft.Sql/managedInstances`, and attach a compliant User-Defined Route (`UDR`) table and NSG. Local study-map skill 1.2 (Choose Automated Deployment Methods and Deploy SQL Offerings Across Windows, Linux, and Containers), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Automated deployment options for Azure SQL and SQL Server on Linux/containers (https://learn.microsoft.com/en-us/azure/azure-sql/database/arm-templates-content-guide).
+
+- **A:** Correct. SQL Managed Instance requires an explicit route table and NSG bound to its delegated subnet so Azure management traffic is never blackholed by forced tunneling. In this scenario: Create an exclusive `/28+` subnet delegated to `Microsoft.Sql/managedInstances`, and attach a compliant User-Defined Route (`UDR`) table and NSG.
+- **B:** Incorrect for this requirement. Azure Arc allows variable-workload or seasonal SQL Server hosts outside Azure to be billed hourly through an Azure subscription. Why the keyed choice wins: Create an exclusive `/28+` subnet delegated to `Microsoft.Sql/managedInstances`, and attach a compliant User-Defined Route (`UDR`) table and NSG.
+- **C:** Correct. Azure SQL Managed Instance requires an exclusive subnet delegated to `Microsoft.Sql/managedInstances` sized for current and future instance vCore/node counts. In this scenario: Create an exclusive `/28+` subnet delegated to `Microsoft.Sql/managedInstances`, and attach a compliant User-Defined Route (`UDR`) table and NSG.
+- **D:** Incorrect for this requirement. Placing database or log files on `C:` or enabling `ReadWrite` caching risks data corruption during host crashes and exhausts OS disk IOPS caps. Why the keyed choice wins: Create an exclusive `/28+` subnet delegated to `Microsoft.Sql/managedInstances`, and attach a compliant User-Defined Route (`UDR`) table and NSG.
+- **E:** Incorrect for this requirement. Opening `0.0.0.0–255.255.255.255` exposes the SQL endpoint to the entire public internet rather than isolating traffic via Private Endpoints or scoped IP rules. Why the keyed choice wins: Create an exclusive `/28+` subnet delegated to `Microsoft.Sql/managedInstances`, and attach a compliant User-Defined Route (`UDR`) table and NSG.
+
+### Question 4 — D
+
+Answer: Declarative Bicep / ARM templates (`Microsoft.Sql/servers`) referencing Azure Key Vault secrets via `@secure()` parameters and validated with `az deployment group what-if`. Declarative Bicep templates guarantee repeatable, peer-reviewed, idempotent parity across environments and eliminate manual portal configuration drift. Bicep compiles to idempotent ARM JSON, injects secrets directly from Key Vault without exposing plaintext in CI logs, and previews resource mutations safely via `what-if` before execution. Local study-map skill 1.2 (Choose Automated Deployment Methods and Deploy SQL Offerings Across Windows, Linux, and Containers), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Automated deployment options for Azure SQL and SQL Server on Linux/containers (https://learn.microsoft.com/en-us/azure/azure-sql/database/arm-templates-content-guide).
+
+- **A:** Incorrect for this requirement. Interactive SQL Server Profiler GUI tracing imposes heavy observer overhead and is deprecated in favor of lightweight Extended Events and Query Store. Why the keyed choice wins: Declarative Bicep templates guarantee repeatable, peer-reviewed, idempotent parity across environments and eliminate manual portal configuration drift.
+- **B:** Incorrect for this requirement. Sharing `sa` credentials or granting `sysadmin` violates least privilege, bypasses auditing attribution, and fails Microsoft Entra-only zero-password compliance. Why the keyed choice wins: Declarative Bicep templates guarantee repeatable, peer-reviewed, idempotent parity across environments and eliminate manual portal configuration drift.
+- **C:** Incorrect for this requirement. Both standalone Data Migration Assistant (retired July 2025) and SQL Server Stretch Database (retired) are deprecated; use Azure Migrate / Azure SQL Migration extension and partitioning/Fabric/Blob tiering. Why the keyed choice wins: Declarative Bicep templates guarantee repeatable, peer-reviewed, idempotent parity across environments and eliminate manual portal configuration drift.
+- **D:** Correct. Bicep compiles to idempotent ARM JSON, injects secrets directly from Key Vault without exposing plaintext in CI logs, and previews resource mutations safely via `what-if` before execution. In this scenario: Declarative Bicep templates guarantee repeatable, peer-reviewed, idempotent parity across environments and eliminate manual portal configuration drift.
+
+### Question 5 — A, C
+
+Answers: Authenticate applications and users exclusively with Microsoft Entra ID identities, service principals, or workspace roles; Query automatically replicated OneLake Delta Parquet tables and the read-only SQL analytics endpoint from Spark and Direct Lake. SQL database in Microsoft Fabric enforces Microsoft Entra-only authentication and automatically mirrors operational tables into OneLake as Delta Parquet with a SQL analytics endpoint. Local study-map skill 1.3 (Identify Use Cases for SQL Server Enabled by Azure Arc and SQL Database in Microsoft Fabric), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: SQL Server enabled by Azure Arc and SQL database in Microsoft Fabric (https://learn.microsoft.com/en-us/fabric/database/sql/overview).
+
+- **A:** Correct. In this scenario: SQL database in Microsoft Fabric enforces Microsoft Entra-only authentication and automatically mirrors operational tables into OneLake as Delta Parquet with a SQL analytics endpoint.
+- **B:** Incorrect for this requirement. Sharing `sa` credentials or granting `sysadmin` violates least privilege, bypasses auditing attribution, and fails Microsoft Entra-only zero-password compliance. Why the keyed choice wins: SQL database in Microsoft Fabric enforces Microsoft Entra-only authentication and automatically mirrors operational tables into OneLake as Delta Parquet with a SQL analytics endpoint.
+- **C:** Correct. SQL database in Microsoft Fabric relies exclusively on Microsoft Entra authentication and workspace/item permissions rather than SQL logins. In this scenario: SQL database in Microsoft Fabric enforces Microsoft Entra-only authentication and automatically mirrors operational tables into OneLake as Delta Parquet with a SQL analytics endpoint.
+- **D:** Incorrect for this requirement. Both standalone Data Migration Assistant (retired July 2025) and SQL Server Stretch Database (retired) are deprecated; use Azure Migrate / Azure SQL Migration extension and partitioning/Fabric/Blob tiering. Why the keyed choice wins: SQL database in Microsoft Fabric enforces Microsoft Entra-only authentication and automatically mirrors operational tables into OneLake as Delta Parquet with a SQL analytics endpoint.
+- **E:** Incorrect for this requirement. SQL database in Microsoft Fabric enforces Microsoft Entra authentication exclusively (SQL logins are unsupported) and manages backups/OneLake mirroring automatically as SaaS. Why the keyed choice wins: SQL database in Microsoft Fabric enforces Microsoft Entra-only authentication and automatically mirrors operational tables into OneLake as Delta Parquet with a SQL analytics endpoint.
+
+### Question 6 — C
+
+Answer: SQL Server enabled by Azure Arc (`Microsoft.AzureArcData/sqlServerInstances`). Azure Arc runs recurring **SQL Best Practices Assessments** against Microsoft Support rules (surfacing trace-flag, `tempdb`, memory, and security recommendations directly in the Azure portal). Azure Arc projects on-premises and multicloud SQL Server instances into Azure for Resource Graph inventory, automated Best Practices Assessments, Entra auth (SQL 2022+), Defender, and PAYG billing. Local study-map skill 1.3 (Identify Use Cases for SQL Server Enabled by Azure Arc and SQL Database in Microsoft Fabric), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: SQL Server enabled by Azure Arc and SQL database in Microsoft Fabric (https://learn.microsoft.com/en-us/fabric/database/sql/overview).
+
+- **A:** Incorrect for this requirement. DTU Basic supports max 2 GB and Standard S0–S2 max 250 GB without compute-isolated read replicas, making them incapable of hosting multi-TB OLTP workloads. Why the keyed choice wins: Azure Arc runs recurring **SQL Best Practices Assessments** against Microsoft Support rules (surfacing trace-flag, `tempdb`, memory, and security recommendations directly in the Azure portal).
+- **B:** Incorrect for this requirement. SQL database in Microsoft Fabric runs the Azure SQL engine for OLTP with Microsoft Entra-only auth, automatic near-real-time OneLake Delta Parquet replication, and a read-only SQL analytics endpoint. Why the keyed choice wins: Azure Arc runs recurring **SQL Best Practices Assessments** against Microsoft Support rules (surfacing trace-flag, `tempdb`, memory, and security recommendations directly in the Azure portal).
+- **C:** Correct. Azure Arc projects on-premises and multicloud SQL Server instances into Azure for Resource Graph inventory, automated Best Practices Assessments, Entra auth (SQL 2022+), Defender, and PAYG billing. In this scenario: Azure Arc runs recurring **SQL Best Practices Assessments** against Microsoft Support rules (surfacing trace-flag, `tempdb`, memory, and security recommendations directly in the Azure portal).
+- **D:** Incorrect for this requirement. Serverless auto-scales compute between configured min and max vCores per second and pauses compute billing during idle periods (minimum 1-hour auto-pause delay), charging only storage. Why the keyed choice wins: Azure Arc runs recurring **SQL Best Practices Assessments** against Microsoft Support rules (surfacing trace-flag, `tempdb`, memory, and security recommendations directly in the Azure portal).
+
+### Question 7 — A
+
+Answer: SPLIT partition function for incoming future boundary → Create empty staging table on same filegroup with matching schema/indexes → ALTER TABLE ... SWITCH oldest partition to staging → Archive staging data & MERGE retired boundary. Split next month's `TapTimestampUTC` boundary first, build the aligned `FareCardTaps_Stage` staging table on the same filegroup, execute metadata-only `ALTER TABLE ... SWITCH` for the 25th-month partition, and merge the retired tap boundary. Sliding-window partitioning splits a new empty future range first, performs a metadata-only `ALTER TABLE ... SWITCH` into an aligned staging table, and merges the retired boundary. Local study-map skill 1.4 (Plan for Table Partitioning (`RANGE RIGHT` / `SWITCH`) and Horizontal Database Sharding (`ShardMapManager`)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Table partitioning and scaling out with Azure SQL Database sharding (https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-introduction).
+
+- **A:** Correct. Sliding-window partitioning splits a new empty future range first, performs a metadata-only `ALTER TABLE ... SWITCH` into an aligned staging table, and merges the retired boundary. In this scenario: Split next month's `TapTimestampUTC` boundary first, build the aligned `FareCardTaps_Stage` staging table on the same filegroup, execute metadata-only `ALTER TABLE ... SWITCH` for the 25th-month partition, and merge the retired tap boundary.
+- **B:** Incorrect for this requirement. Incorrect workflow: `SWITCH` is strictly an intra-database metadata operation requiring identical schema, filegroup alignment, and trusted constraints—never cross-database. Why the keyed choice wins: Split next month's `TapTimestampUTC` boundary first, build the aligned `FareCardTaps_Stage` staging table on the same filegroup, execute metadata-only `ALTER TABLE ... SWITCH` for the 25th-month partition, and merge the retired tap boundary.
+- **C:** Incorrect for this requirement. Incorrect workflow: row-by-row `DELETE` bloats the transaction log and locks tables, and `SWITCH` fails if the staging table resides on a different filegroup or lacks aligned indexes. Why the keyed choice wins: Split next month's `TapTimestampUTC` boundary first, build the aligned `FareCardTaps_Stage` staging table on the same filegroup, execute metadata-only `ALTER TABLE ... SWITCH` for the 25th-month partition, and merge the retired tap boundary.
+- **D:** Incorrect for this requirement. Incorrect workflow: `ALTER TABLE ... SWITCH` swaps metadata between two tables in the same database/filegroup rather than writing directly to Azure Blob Storage. Why the keyed choice wins: Split next month's `TapTimestampUTC` boundary first, build the aligned `FareCardTaps_Stage` staging table on the same filegroup, execute metadata-only `ALTER TABLE ... SWITCH` for the 25th-month partition, and merge the retired tap boundary.
+
+### Question 8 — B
+
+Answer: Horizontal sharding using the Elastic Database Client Library (`ShardMapManager` with `ListShardMap` or `RangeShardMap`). The **Elastic Database Split-Merge tool** splits a multi-tenant shard into two shards (or merges sparse shards) while keeping `ShardMapManager` metadata synchronized. `ListShardMap` maps discrete `TenantId` keys and `RangeShardMap` maps contiguous ID spans to independent Azure SQL Databases, routing data-dependent connections directly from the app tier. Local study-map skill 1.4 (Plan for Table Partitioning (`RANGE RIGHT` / `SWITCH`) and Horizontal Database Sharding (`ShardMapManager`)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Table partitioning and scaling out with Azure SQL Database sharding (https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-scale-introduction).
+
+- **A:** Incorrect for this requirement. DTU Basic supports max 2 GB and Standard S0–S2 max 250 GB without compute-isolated read replicas, making them incapable of hosting multi-TB OLTP workloads. Why the keyed choice wins: The **Elastic Database Split-Merge tool** splits a multi-tenant shard into two shards (or merges sparse shards) while keeping `ShardMapManager` metadata synchronized.
+- **B:** Correct. `ListShardMap` maps discrete `TenantId` keys and `RangeShardMap` maps contiguous ID spans to independent Azure SQL Databases, routing data-dependent connections directly from the app tier. In this scenario: The **Elastic Database Split-Merge tool** splits a multi-tenant shard into two shards (or merges sparse shards) while keeping `ShardMapManager` metadata synchronized.
+- **C:** Incorrect for this requirement. `RANGE RIGHT` places each upper-boundary date value cleanly as the lower bound of its own monthly/daily partition, enabling metadata-only `SWITCH` archival when indexes are aligned. Why the keyed choice wins: The **Elastic Database Split-Merge tool** splits a multi-tenant shard into two shards (or merges sparse shards) while keeping `ShardMapManager` metadata synchronized.
+- **D:** Incorrect for this requirement. `sp_estimate_data_compression_savings` models space gains before compressing; `ROW`/`PAGE` shrink OLTP B-trees while `COLUMNSTORE` / `COLUMNSTORE_ARCHIVE` achieves up to 10x analytics compression. Why the keyed choice wins: The **Elastic Database Split-Merge tool** splits a multi-tenant shard into two shards (or merges sparse shards) while keeping `ShardMapManager` metadata synchronized.
+
+### Question 9 — A
+
+Answer: SQL IaaS Agent Extension in Full management mode paired with Azure Update Manager / Automated Patching. Register all 12 VMs with the **SQL IaaS Agent Extension** (`Full` mode) and bind them to an Azure Update Manager maintenance configuration. The SQL IaaS Agent Extension unlocks portal license conversion (AHB/PAYG), Automated Backup, Automated Patching windows, Key Vault integration, and storage pool management on SQL VMs. Local study-map skill 1.5 (Deploy Hybrid SQL Server Solutions and Manage Patching (`SQL IaaS Agent Extension` & `Azure Update Manager`)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: SQL Server IaaS Agent Extension, Automated Patching, and Azure Update Manager (https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-agent-extension-manually-register-single-vm).
+
+- **A:** Correct. The SQL IaaS Agent Extension unlocks portal license conversion (AHB/PAYG), Automated Backup, Automated Patching windows, Key Vault integration, and storage pool management on SQL VMs. In this scenario: Register all 12 VMs with the **SQL IaaS Agent Extension** (`Full` mode) and bind them to an Azure Update Manager maintenance configuration.
+- **B:** Incorrect for this requirement. SQL database in Microsoft Fabric runs the Azure SQL engine for OLTP with Microsoft Entra-only auth, automatic near-real-time OneLake Delta Parquet replication, and a read-only SQL analytics endpoint. Why the keyed choice wins: Register all 12 VMs with the **SQL IaaS Agent Extension** (`Full` mode) and bind them to an Azure Update Manager maintenance configuration.
+- **C:** Incorrect for this requirement. Serverless auto-scales compute between configured min and max vCores per second and pauses compute billing during idle periods (minimum 1-hour auto-pause delay), charging only storage. Why the keyed choice wins: Register all 12 VMs with the **SQL IaaS Agent Extension** (`Full` mode) and bind them to an Azure Update Manager maintenance configuration.
+- **D:** Incorrect for this requirement. `DBCC SHRINKDATABASE` and `AUTO_SHRINK` cause massive physical index fragmentation (`>90%`), heavy transaction log generation, and immediate file regrow stalls. Why the keyed choice wins: Register all 12 VMs with the **SQL IaaS Agent Extension** (`Full` mode) and bind them to an Azure Update Manager maintenance configuration.
+
+### Question 10 — B
+
+Answer: SQL Server on Linux configured via `mssql-conf` or Linux container images for consistent CI/CD dev-test parity. `adutil` (Active Directory utility for SQL Server on Linux, paired with `mssql-conf`) joins/creates AD accounts and keytab files for Kerberos authentication on Linux SQL hosts. `mssql-conf` configures memory, trace flags, Entra auth, and HA on Linux SQL Server VMs, while official Linux container images spin up fast disposable SQL instances in CI pipelines. Local study-map skill 1.5 (Deploy Hybrid SQL Server Solutions and Manage Patching (`SQL IaaS Agent Extension` & `Azure Update Manager`)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: SQL Server IaaS Agent Extension, Automated Patching, and Azure Update Manager (https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-agent-extension-manually-register-single-vm).
+
+- **A:** Incorrect for this requirement. Both standalone Data Migration Assistant (retired July 2025) and SQL Server Stretch Database (retired) are deprecated; use Azure Migrate / Azure SQL Migration extension and partitioning/Fabric/Blob tiering. Why the keyed choice wins: `adutil` (Active Directory utility for SQL Server on Linux, paired with `mssql-conf`) joins/creates AD accounts and keytab files for Kerberos authentication on Linux SQL hosts.
+- **B:** Correct. `mssql-conf` configures memory, trace flags, Entra auth, and HA on Linux SQL Server VMs, while official Linux container images spin up fast disposable SQL instances in CI pipelines. In this scenario: `adutil` (Active Directory utility for SQL Server on Linux, paired with `mssql-conf`) joins/creates AD accounts and keytab files for Kerberos authentication on Linux SQL hosts.
+- **C:** Incorrect for this requirement. Placing database or log files on `C:` or enabling `ReadWrite` caching risks data corruption during host crashes and exhausts OS disk IOPS caps. Why the keyed choice wins: `adutil` (Active Directory utility for SQL Server on Linux, paired with `mssql-conf`) joins/creates AD accounts and keytab files for Kerberos authentication on Linux SQL hosts.
+- **D:** Incorrect for this requirement. Hyperscale scales up to 100 TB via distributed page servers, performs constant-time log restores, and attaches up to 30 Named Replicas with independent vCore compute over shared storage. Why the keyed choice wins: `adutil` (Active Directory utility for SQL Server on Linux, paired with `mssql-conf`) joins/creates AD accounts and keytab files for Kerberos authentication on Linux SQL hosts.
+
+### Question 11 — B
+
+Answer: Azure SQL Database vCore Serverless compute tier with Auto-pause delay enabled. The very first connection triggers automatic resume (`~30–60 seconds`, returning transient error `40613 Database unavailable` if timeout is tiny, handled seamlessly by standard client retry logic), resuming up to 24 vCores automatically. Serverless auto-scales compute between configured min and max vCores per second and pauses compute billing during idle periods (minimum 1-hour auto-pause delay), charging only storage. Local study-map skill 1.6 (Configure Azure SQL Database for Scale and Performance (`Serverless`, `Hyperscale` Named Replicas, `Elastic Pools`)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Azure SQL Database vCore, Serverless, Hyperscale, and Elastic Pools (https://learn.microsoft.com/en-us/azure/azure-sql/database/service-tiers-vcore).
+
+- **A:** Incorrect for this requirement. Hyperscale scales up to 100 TB via distributed page servers, performs constant-time log restores, and attaches up to 30 Named Replicas with independent vCore compute over shared storage. Why the keyed choice wins: The very first connection triggers automatic resume (`~30–60 seconds`, returning transient error `40613 Database unavailable` if timeout is tiny, handled seamlessly by standard client retry logic), resuming up to 24 vCores automatically.
+- **B:** Correct. Serverless auto-scales compute between configured min and max vCores per second and pauses compute billing during idle periods (minimum 1-hour auto-pause delay), charging only storage. In this scenario: The very first connection triggers automatic resume (`~30–60 seconds`, returning transient error `40613 Database unavailable` if timeout is tiny, handled seamlessly by standard client retry logic), resuming up to 24 vCores automatically.
+- **C:** Incorrect for this requirement. Business Critical SQL MI uses local NVMe SSDs on an Always On availability group quorum for lowest I/O latency, highest IOPS, and one free readable secondary replica. Why the keyed choice wins: The very first connection triggers automatic resume (`~30–60 seconds`, returning transient error `40613 Database unavailable` if timeout is tiny, handled seamlessly by standard client retry logic), resuming up to 24 vCores automatically.
+- **D:** Incorrect for this requirement. DTU Basic supports max 2 GB and Standard S0–S2 max 250 GB without compute-isolated read replicas, making them incapable of hosting multi-TB OLTP workloads. Why the keyed choice wins: The very first connection triggers automatic resume (`~30–60 seconds`, returning transient error `40613 Database unavailable` if timeout is tiny, handled seamlessly by standard client retry logic), resuming up to 24 vCores automatically.
+
+### Question 12 — C
+
+Answer: Azure SQL Managed Instance (Next-gen General Purpose) with decoupled IOPS and storage sliders. Configuring a custom **Maintenance Window** (`Weekend` slot vs default `5pm–8am`) schedules Azure SQL Managed Instance and Azure SQL Database platform updates during approved off-peak hours. SQL Managed Instance provides near-100% SQL Server engine compatibility (cross-DB queries, SQL Agent, CLR, Service Broker), and Next-gen GP scales IOPS independently of storage up to 500 DBs. Local study-map skill 1.7 (Configure Azure SQL Managed Instance for Scale and Performance (`Next-gen GP` Sliders & `Business Critical`)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Azure SQL Managed Instance service tiers and Next-gen General Purpose scaling (https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview).
+
+- **A:** Incorrect for this requirement. SQL database in Microsoft Fabric runs the Azure SQL engine for OLTP with Microsoft Entra-only auth, automatic near-real-time OneLake Delta Parquet replication, and a read-only SQL analytics endpoint. Why the keyed choice wins: Configuring a custom **Maintenance Window** (`Weekend` slot vs default `5pm–8am`) schedules Azure SQL Managed Instance and Azure SQL Database platform updates during approved off-peak hours.
+- **B:** Incorrect for this requirement. DTU Basic supports max 2 GB and Standard S0–S2 max 250 GB without compute-isolated read replicas, making them incapable of hosting multi-TB OLTP workloads. Why the keyed choice wins: Configuring a custom **Maintenance Window** (`Weekend` slot vs default `5pm–8am`) schedules Azure SQL Managed Instance and Azure SQL Database platform updates during approved off-peak hours.
+- **C:** Correct. SQL Managed Instance provides near-100% SQL Server engine compatibility (cross-DB queries, SQL Agent, CLR, Service Broker), and Next-gen GP scales IOPS independently of storage up to 500 DBs. In this scenario: Configuring a custom **Maintenance Window** (`Weekend` slot vs default `5pm–8am`) schedules Azure SQL Managed Instance and Azure SQL Database platform updates during approved off-peak hours.
+- **D:** Incorrect for this requirement. Serverless auto-scales compute between configured min and max vCores per second and pauses compute billing during idle periods (minimum 1-hour auto-pause delay), charging only storage. Why the keyed choice wins: Configuring a custom **Maintenance Window** (`Weekend` slot vs default `5pm–8am`) schedules Azure SQL Managed Instance and Azure SQL Database platform updates during approved off-peak hours.
+
+### Question 13 — A, C, E
+
+Answers: Configure `ReadOnly` Azure host caching on Premium SSD data disks hosting `.mdf` and `.ndf` database files; Configure `None` Azure host caching on dedicated managed disks hosting `.ldf` SQL Server transaction log files; Place `tempdb` data and log files (8 equal-sized `.mdf`/`.ndf` files) on the ephemeral local NVMe SSD volume with a startup folder-creation script. Configure `ReadOnly` host caching on `.mdf`/`.ndf` data disks, `None` host caching on `.ldf` transaction log disks, and place `tempdb` on the ephemeral local NVMe SSD volume. Local study-map skill 1.8 (Configure SQL Server on Azure VMs for Scale and Performance (`ReadOnly`/`None` Host Caching, `tempdb` NVMe, `IFI`/`LPIM`)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Performance best practices for SQL Server on Azure Virtual Machines (https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/performance-guidelines-best-practices-checklist).
+
+- **A:** Correct. Local ephemeral NVMe storage delivers ultra-low latency for `tempdb` spills and version stores without consuming remote disk IOPS bandwidth. In this scenario: Configure `ReadOnly` host caching on `.mdf`/`.ndf` data disks, `None` host caching on `.ldf` transaction log disks, and place `tempdb` on the ephemeral local NVMe SSD volume.
+- **B:** Incorrect for this requirement. `DBCC SHRINKDATABASE` and `AUTO_SHRINK` cause massive physical index fragmentation (`>90%`), heavy transaction log generation, and immediate file regrow stalls. Why the keyed choice wins: Configure `ReadOnly` host caching on `.mdf`/`.ndf` data disks, `None` host caching on `.ldf` transaction log disks, and place `tempdb` on the ephemeral local NVMe SSD volume.
+- **C:** Correct. Transaction log files perform sequential write-through flushes that do not benefit from read caching and must use `None` host caching. In this scenario: Configure `ReadOnly` host caching on `.mdf`/`.ndf` data disks, `None` host caching on `.ldf` transaction log disks, and place `tempdb` on the ephemeral local NVMe SSD volume.
+- **D:** Incorrect for this requirement. Placing database or log files on `C:` or enabling `ReadWrite` caching risks data corruption during host crashes and exhausts OS disk IOPS caps. Why the keyed choice wins: Configure `ReadOnly` host caching on `.mdf`/`.ndf` data disks, `None` host caching on `.ldf` transaction log disks, and place `tempdb` on the ephemeral local NVMe SSD volume.
+- **E:** Correct. `ReadOnly` host caching serves random OLTP data-page reads directly from Azure hypervisor RAM/SSD cache without consuming disk IOPS. In this scenario: Configure `ReadOnly` host caching on `.mdf`/`.ndf` data disks, `None` host caching on `.ldf` transaction log disks, and place `tempdb` on the ephemeral local NVMe SSD volume.
+- **F:** Incorrect for this requirement. Opening `0.0.0.0–255.255.255.255` exposes the SQL endpoint to the entire public internet rather than isolating traffic via Private Endpoints or scoped IP rules. Why the keyed choice wins: Configure `ReadOnly` host caching on `.mdf`/`.ndf` data disks, `None` host caching on `.ldf` transaction log disks, and place `tempdb` on the ephemeral local NVMe SSD volume.
+
+### Question 14 — C
+
+Answer: Grant `Perform volume maintenance tasks` (Instant File Initialization) and `Lock pages in memory` to the SQL Server service account. Granting **`Lock pages in memory`** (`LPIM`) in Local Security Policy (`secpol.msc`) lets SQL Server allocate non-pageable AWE/locked physical RAM for the buffer pool. Instant File Initialization skips zeroing `.mdf`/`.ndf` data file growth (never `.ldf`), while Lock Pages in Memory prevents Windows from paging the SQL buffer pool to disk. Local study-map skill 1.8 (Configure SQL Server on Azure VMs for Scale and Performance (`ReadOnly`/`None` Host Caching, `tempdb` NVMe, `IFI`/`LPIM`)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Performance best practices for SQL Server on Azure Virtual Machines (https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/performance-guidelines-best-practices-checklist).
+
+- **A:** Incorrect for this requirement. Flushing the entire plan cache repeatedly causes CPU compilation storms across all queries, and disabling statistics forces blind cardinality guesses. Why the keyed choice wins: Granting **`Lock pages in memory`** (`LPIM`) in Local Security Policy (`secpol.msc`) lets SQL Server allocate non-pageable AWE/locked physical RAM for the buffer pool.
+- **B:** Incorrect for this requirement. Placing database or log files on `C:` or enabling `ReadWrite` caching risks data corruption during host crashes and exhausts OS disk IOPS caps. Why the keyed choice wins: Granting **`Lock pages in memory`** (`LPIM`) in Local Security Policy (`secpol.msc`) lets SQL Server allocate non-pageable AWE/locked physical RAM for the buffer pool.
+- **C:** Correct. Instant File Initialization skips zeroing `.mdf`/`.ndf` data file growth (never `.ldf`), while Lock Pages in Memory prevents Windows from paging the SQL buffer pool to disk. In this scenario: Granting **`Lock pages in memory`** (`LPIM`) in Local Security Policy (`secpol.msc`) lets SQL Server allocate non-pageable AWE/locked physical RAM for the buffer pool.
+- **D:** Incorrect for this requirement. `DBCC SHRINKDATABASE` and `AUTO_SHRINK` cause massive physical index fragmentation (`>90%`), heavy transaction log generation, and immediate file regrow stalls. Why the keyed choice wins: Granting **`Lock pages in memory`** (`LPIM`) in Local Security Policy (`secpol.msc`) lets SQL Server allocate non-pageable AWE/locked physical RAM for the buffer pool.
+
+### Question 15 — D
+
+Answer: Verify VNet peering & TCP 5022 + 11000-11999 rules → Start online Database Move from source to target SQL MI → Wait for seeding to reach Ready for completion → Complete move within 24 hours so target comes online. Confirm VNet peering and TCP `5022` + `11000–11999` NSG rules between `sqlmi-substation-01` and `sqlmi-regional-02`, start online Database Move for `GridTelemetryIndexDB`, wait for `Ready for completion`, and complete the cutover within 24 hours. Online SQL MI database move requires bidirectional TCP 5022 and 11000–11999 connectivity, seeds asynchronously until Ready for completion, and must be manually completed within 24 hours. Local study-map skill 1.12 (Implement Azure SQL Managed Instance Online Database Copy and Move (`24h` Completion, `TCP 5022`/`11000-11999`)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Copy or move a database online across Azure SQL Managed Instances (https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/database-copy-move-how-to).
+
+- **A:** Incorrect for this requirement. Incorrect workflow: `sp_detach_db` is unsupported in Azure SQL Managed Instance and online Database Move replicates via Always On availability group seeding without stopping compute. Why the keyed choice wins: Confirm VNet peering and TCP `5022` + `11000–11999` NSG rules between `sqlmi-substation-01` and `sqlmi-regional-02`, start online Database Move for `GridTelemetryIndexDB`, wait for `Ready for completion`, and complete the cutover within 24 hours.
+- **B:** Incorrect for this requirement. Incorrect workflow: network ports must be open before seeding, operations uncompleted after 24 hours auto-cancel, and source PITR history never transfers with a moved database. Why the keyed choice wins: Confirm VNet peering and TCP `5022` + `11000–11999` NSG rules between `sqlmi-substation-01` and `sqlmi-regional-02`, start online Database Move for `GridTelemetryIndexDB`, wait for `Ready for completion`, and complete the cutover within 24 hours.
+- **C:** Incorrect for this requirement. Incorrect workflow: `.bacpac` files are stored in Blob storage rather than Table storage, the completion window is 24 hours, and Move removes the source DB upon completion. Why the keyed choice wins: Confirm VNet peering and TCP `5022` + `11000–11999` NSG rules between `sqlmi-substation-01` and `sqlmi-regional-02`, start online Database Move for `GridTelemetryIndexDB`, wait for `Ready for completion`, and complete the cutover within 24 hours.
+- **D:** Correct. Online SQL MI database move requires bidirectional TCP 5022 and 11000–11999 connectivity, seeds asynchronously until Ready for completion, and must be manually completed within 24 hours. In this scenario: Confirm VNet peering and TCP `5022` + `11000–11999` NSG rules between `sqlmi-substation-01` and `sqlmi-regional-02`, start online Database Move for `GridTelemetryIndexDB`, wait for `Ready for completion`, and complete the cutover within 24 hours.
+
+### Question 16 — A
+
+Answer: Enable Microsoft Entra-only authentication (`azuread_authentication_only`) on the logical SQL server or SQL Managed Instance. Enabling **Microsoft Entra-only authentication** (`azuread_authentication_only`) disables SQL password authentication across the entire logical server or SQL Managed Instance. Microsoft Entra-only authentication disables legacy SQL Server logins (`sa` and password auth) completely, enforcing centralized MFA, Conditional Access, and token-based Managed Identities. Local study-map skill 2.1 (Configure Microsoft Entra ID and Microsoft Entra-Only Authentication Across SQL DB, SQL MI, and SQL Server), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Configure and manage Microsoft Entra authentication with Azure SQL and SQL Server (https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-overview).
+
+- **A:** Correct. Microsoft Entra-only authentication disables legacy SQL Server logins (`sa` and password auth) completely, enforcing centralized MFA, Conditional Access, and token-based Managed Identities. In this scenario: Enabling **Microsoft Entra-only authentication** (`azuread_authentication_only`) disables SQL password authentication across the entire logical server or SQL Managed Instance.
+- **B:** Incorrect for this requirement. DDM masks query result columns on the fly for non-privileged callers (`db_owner` and `UNMASK` holders see cleartext) using built-in masking functions without altering stored values. Why the keyed choice wins: Enabling **Microsoft Entra-only authentication** (`azuread_authentication_only`) disables SQL password authentication across the entire logical server or SQL Managed Instance.
+- **C:** Incorrect for this requirement. Unlike server-level rules stored in `master`, database-level IP firewall rules travel inside the user database across Active Geo-Replication and Failover Group failovers. Why the keyed choice wins: Enabling **Microsoft Entra-only authentication** (`azuread_authentication_only`) disables SQL password authentication across the entire logical server or SQL Managed Instance.
+- **D:** Incorrect for this requirement. Sharing `sa` credentials or granting `sysadmin` violates least privilege, bypasses auditing attribution, and fails Microsoft Entra-only zero-password compliance. Why the keyed choice wins: Enabling **Microsoft Entra-only authentication** (`azuread_authentication_only`) disables SQL password authentication across the entire logical server or SQL Managed Instance.
+
+### Question 17 — D
+
+Answer: Contained database user mapped to a Microsoft Entra security group (`CREATE USER [Group] FROM EXTERNAL PROVIDER`). Adding the contained Managed Identity user to `db_datareader` (`ALTER ROLE db_datareader ADD MEMBER [func-gtfs-prod]`) grants least-privilege `SELECT` access across `TransitDB`. Contained Entra group users authenticate directly at the user database without `master` SID mappings, automatically surviving Failover Group / Geo-Replication failovers and onboarding group members. Local study-map skill 2.1 (Configure Microsoft Entra ID and Microsoft Entra-Only Authentication Across SQL DB, SQL MI, and SQL Server), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Configure and manage Microsoft Entra authentication with Azure SQL and SQL Server (https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-overview).
+
+- **A:** Incorrect for this requirement. Unlike server-level rules stored in `master`, database-level IP firewall rules travel inside the user database across Active Geo-Replication and Failover Group failovers. Why the keyed choice wins: Adding the contained Managed Identity user to `db_datareader` (`ALTER ROLE db_datareader ADD MEMBER [func-gtfs-prod]`) grants least-privilege `SELECT` access across `TransitDB`.
+- **B:** Incorrect for this requirement. Without the original TDE certificate and private key restored into the target SQL Server `master` database, a TDE-encrypted `.bak` or detached `.mdf` cannot be decrypted anywhere. Why the keyed choice wins: Adding the contained Managed Identity user to `db_datareader` (`ALTER ROLE db_datareader ADD MEMBER [func-gtfs-prod]`) grants least-privilege `SELECT` access across `TransitDB`.
+- **C:** Incorrect for this requirement. Sharing `sa` credentials or granting `sysadmin` violates least privilege, bypasses auditing attribution, and fails Microsoft Entra-only zero-password compliance. Why the keyed choice wins: Adding the contained Managed Identity user to `db_datareader` (`ALTER ROLE db_datareader ADD MEMBER [func-gtfs-prod]`) grants least-privilege `SELECT` access across `TransitDB`.
+- **D:** Correct. Contained Entra group users authenticate directly at the user database without `master` SID mappings, automatically surviving Failover Group / Geo-Replication failovers and onboarding group members. In this scenario: Adding the contained Managed Identity user to `db_datareader` (`ALTER ROLE db_datareader ADD MEMBER [func-gtfs-prod]`) grants least-privilege `SELECT` access across `TransitDB`.
+
+### Question 18 — A
+
+Answer: Windows Authentication for Azure SQL Managed Instance backed by Microsoft Entra Kerberos (`Incoming Trust`-based or `Entra Kerberos`). Configure Windows Authentication for Azure SQL Managed Instance backed by **Microsoft Entra Kerberos**. Microsoft Entra Kerberos issues Kerberos tickets for SQL Managed Instance without requiring customer-managed Active Directory Domain Services domain controllers inside Azure. Local study-map skill 2.2 (Configure Authentication for SQL Server on Azure VMs and SQL MI (`Microsoft Entra Kerberos` & AD Trusts)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Windows Authentication for Azure SQL Managed Instance using Microsoft Entra Kerberos and AD (https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-overview).
+
+- **A:** Correct. Microsoft Entra Kerberos issues Kerberos tickets for SQL Managed Instance without requiring customer-managed Active Directory Domain Services domain controllers inside Azure. In this scenario: Configure Windows Authentication for Azure SQL Managed Instance backed by **Microsoft Entra Kerberos**.
+- **B:** Incorrect for this requirement. Sharing `sa` credentials or granting `sysadmin` violates least privilege, bypasses auditing attribution, and fails Microsoft Entra-only zero-password compliance. Why the keyed choice wins: Configure Windows Authentication for Azure SQL Managed Instance backed by **Microsoft Entra Kerberos**.
+- **C:** Incorrect for this requirement. DDM masks query result columns on the fly for non-privileged callers (`db_owner` and `UNMASK` holders see cleartext) using built-in masking functions without altering stored values. Why the keyed choice wins: Configure Windows Authentication for Azure SQL Managed Instance backed by **Microsoft Entra Kerberos**.
+- **D:** Incorrect for this requirement. Opening `0.0.0.0–255.255.255.255` exposes the SQL endpoint to the entire public internet rather than isolating traffic via Private Endpoints or scoped IP rules. Why the keyed choice wins: Configure Windows Authentication for Azure SQL Managed Instance backed by **Microsoft Entra Kerberos**.
+
+### Question 19 — D
+
+Answer: Contained database user mapped to a Microsoft Entra security group (`CREATE USER [Group] FROM EXTERNAL PROVIDER`). Contained users authenticate directly inside `DispatchDB` (`CONTAINMENT = PARTIAL`) rather than looking up SIDs in each VM's independent `master` database, eliminating orphaned-login failures on AG failover. Contained Entra group users authenticate directly at the user database without `master` SID mappings, automatically surviving Failover Group / Geo-Replication failovers and onboarding group members. Local study-map skill 2.3 (Configure Security Principals and Portable Contained Microsoft Entra Users (`FROM EXTERNAL PROVIDER`)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Contained database users and Microsoft Entra security principals in Azure SQL (https://learn.microsoft.com/en-us/azure/azure-sql/database/logins-create-manage).
+
+- **A:** Incorrect for this requirement. Restoring a `.bak` onto another instance mismatches login SIDs (fixed via `ALTER USER ... WITH LOGIN`), while an explicit table/schema `DENY` always overrides `db_datareader` role `GRANT`s. Why the keyed choice wins: Contained users authenticate directly inside `DispatchDB` (`CONTAINMENT = PARTIAL`) rather than looking up SIDs in each VM's independent `master` database, eliminating orphaned-login failures on AG failover.
+- **B:** Incorrect for this requirement. Sharing `sa` credentials or granting `sysadmin` violates least privilege, bypasses auditing attribution, and fails Microsoft Entra-only zero-password compliance. Why the keyed choice wins: Contained users authenticate directly inside `DispatchDB` (`CONTAINMENT = PARTIAL`) rather than looking up SIDs in each VM's independent `master` database, eliminating orphaned-login failures on AG failover.
+- **C:** Incorrect for this requirement. Unlike server-level rules stored in `master`, database-level IP firewall rules travel inside the user database across Active Geo-Replication and Failover Group failovers. Why the keyed choice wins: Contained users authenticate directly inside `DispatchDB` (`CONTAINMENT = PARTIAL`) rather than looking up SIDs in each VM's independent `master` database, eliminating orphaned-login failures on AG failover.
+- **D:** Correct. Contained Entra group users authenticate directly at the user database without `master` SID mappings, automatically surviving Failover Group / Geo-Replication failovers and onboarding group members. In this scenario: Contained users authenticate directly inside `DispatchDB` (`CONTAINMENT = PARTIAL`) rather than looking up SIDs in each VM's independent `master` database, eliminating orphaned-login failures on AG failover.
+
+### Question 20 — A
+
+Answer: Built-in granular server-level roles (`##MS_ServerStateReader##`, `##MS_DefinitionReader##`) or `GRANT VIEW DATABASE PERFORMANCE STATE`. Use built-in granular server-level roles (`##MS_ServerStateReader##`, `##MS_DefinitionReader##`, `##MS_LoginManager##`, `##MS_DatabaseConnector##`) instead of sharing the logical Server Admin account. Modern granular server roles and state permissions let monitoring accounts inspect DMVs and metadata without granting `sysadmin`, `db_owner`, or `SELECT` access to user tables. Local study-map skill 2.3 (Configure Security Principals and Portable Contained Microsoft Entra Users (`FROM EXTERNAL PROVIDER`)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Contained database users and Microsoft Entra security principals in Azure SQL (https://learn.microsoft.com/en-us/azure/azure-sql/database/logins-create-manage).
+
+- **A:** Correct. Modern granular server roles and state permissions let monitoring accounts inspect DMVs and metadata without granting `sysadmin`, `db_owner`, or `SELECT` access to user tables. In this scenario: Use built-in granular server-level roles (`##MS_ServerStateReader##`, `##MS_DefinitionReader##`, `##MS_LoginManager##`, `##MS_DatabaseConnector##`) instead of sharing the logical Server Admin account.
+- **B:** Incorrect for this requirement. DDM masks query result columns on the fly for non-privileged callers (`db_owner` and `UNMASK` holders see cleartext) using built-in masking functions without altering stored values. Why the keyed choice wins: Use built-in granular server-level roles (`##MS_ServerStateReader##`, `##MS_DefinitionReader##`, `##MS_LoginManager##`, `##MS_DatabaseConnector##`) instead of sharing the logical Server Admin account.
+- **C:** Incorrect for this requirement. RLS transparently filters `SELECT`/`UPDATE`/`DELETE` rows via `FILTER PREDICATE` and blocks unauthorized cross-tenant `INSERT`/`UPDATE` writes via `BLOCK PREDICATE` inside the engine. Why the keyed choice wins: Use built-in granular server-level roles (`##MS_ServerStateReader##`, `##MS_DefinitionReader##`, `##MS_LoginManager##`, `##MS_DatabaseConnector##`) instead of sharing the logical Server Admin account.
+- **D:** Incorrect for this requirement. Sharing `sa` credentials or granting `sysadmin` violates least privilege, bypasses auditing attribution, and fails Microsoft Entra-only zero-password compliance. Why the keyed choice wins: Use built-in granular server-level roles (`##MS_ServerStateReader##`, `##MS_DefinitionReader##`, `##MS_LoginManager##`, `##MS_DatabaseConnector##`) instead of sharing the logical Server Admin account.
+
+### Question 21 — B
+
+Answer: Stored procedure encapsulation using schema ownership chaining, `EXECUTE AS OWNER`, or certificate module signing. Because both objects share schema owner `dbo`, unbroken ownership chaining lets `usp_LogBreakerTrip` insert validated parameters while blocking `[RoleGateways]` from running ad-hoc `SELECT` or `DELETE` queries on `Grid.BreakerEvents`. Granting `EXECUTE` on a schema-owned or certificate-signed stored procedure lets callers run controlled DML/DDL workflows without direct table-level `SELECT`, `UPDATE`, or `IMPERSONATE` rights. Local study-map skill 2.4 (Apply Least Privilege Using Granular Server/Database Roles, Schema Chaining, `EXECUTE AS`, and T-SQL/GUI Tools), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Permissions hierarchy, server-level roles, and principle of least privilege in SQL (https://learn.microsoft.com/en-us/azure/azure-sql/database/security-server-roles).
+
+- **A:** Incorrect for this requirement. Opening `0.0.0.0–255.255.255.255` exposes the SQL endpoint to the entire public internet rather than isolating traffic via Private Endpoints or scoped IP rules. Why the keyed choice wins: Because both objects share schema owner `dbo`, unbroken ownership chaining lets `usp_LogBreakerTrip` insert validated parameters while blocking `[RoleGateways]` from running ad-hoc `SELECT` or `DELETE` queries on `Grid.BreakerEvents`.
+- **B:** Correct. Granting `EXECUTE` on a schema-owned or certificate-signed stored procedure lets callers run controlled DML/DDL workflows without direct table-level `SELECT`, `UPDATE`, or `IMPERSONATE` rights. In this scenario: Because both objects share schema owner `dbo`, unbroken ownership chaining lets `usp_LogBreakerTrip` insert validated parameters while blocking `[RoleGateways]` from running ad-hoc `SELECT` or `DELETE` queries on `Grid.BreakerEvents`.
+- **C:** Incorrect for this requirement. `NOLOCK` (`READ UNCOMMITTED`) permits dirty reads of uncommitted rolled-back rows, double-counting rows, or skipping committed rows during page splits—unacceptable for accurate OLTP. Why the keyed choice wins: Because both objects share schema owner `dbo`, unbroken ownership chaining lets `usp_LogBreakerTrip` insert validated parameters while blocking `[RoleGateways]` from running ad-hoc `SELECT` or `DELETE` queries on `Grid.BreakerEvents`.
+- **D:** Incorrect for this requirement. Sharing `sa` credentials or granting `sysadmin` violates least privilege, bypasses auditing attribution, and fails Microsoft Entra-only zero-password compliance. Why the keyed choice wins: Because both objects share schema owner `dbo`, unbroken ownership chaining lets `usp_LogBreakerTrip` insert validated parameters while blocking `[RoleGateways]` from running ad-hoc `SELECT` or `DELETE` queries on `Grid.BreakerEvents`.
+
+### Question 22 — B
+
+Answer: No — Dynamic Data Masking only obfuscates query output and does not encrypt data on disk or block brute-force inference. No — Dynamic Data Masking leaves data unencrypted on disk/memory and does not block `WHERE LIKE` inference by ad-hoc `SELECT` callers; use Always Encrypted or revoke column access. Dynamic Data Masking is not encryption at rest or row-level access control; users with ad-hoc `WHERE` privileges can still infer masked values unless RLS or encryption is applied. Local study-map skill 2.4 (Apply Least Privilege Using Granular Server/Database Roles, Schema Chaining, `EXECUTE AS`, and T-SQL/GUI Tools), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Permissions hierarchy, server-level roles, and principle of least privilege in SQL (https://learn.microsoft.com/en-us/azure/azure-sql/database/security-server-roles).
+
+- **A:** Incorrect for this requirement. The proposed solution fails at least one stated technical, security, or availability requirement. Why the keyed choice wins: No — Dynamic Data Masking leaves data unencrypted on disk/memory and does not block `WHERE LIKE` inference by ad-hoc `SELECT` callers; use Always Encrypted or revoke column access.
+- **B:** Correct. Dynamic Data Masking is not encryption at rest or row-level access control; users with ad-hoc `WHERE` privileges can still infer masked values unless RLS or encryption is applied. In this scenario: No — Dynamic Data Masking leaves data unencrypted on disk/memory and does not block `WHERE LIKE` inference by ad-hoc `SELECT` callers; use Always Encrypted or revoke column access.
+- **C:** Incorrect for this requirement. Server-level IP firewall rules reside in the logical `master` database and must either be recreated on the DR logical server or replaced with portable database-level rules where appropriate. Why the keyed choice wins: No — Dynamic Data Masking leaves data unencrypted on disk/memory and does not block `WHERE LIKE` inference by ad-hoc `SELECT` callers; use Always Encrypted or revoke column access.
+- **D:** Incorrect for this requirement. `SqlPackage` exports tables sequentially rather than at a single LSN, so exporting a live write-heavy database without creating a point-in-time copy produces torn foreign-key state. Why the keyed choice wins: No — Dynamic Data Masking leaves data unencrypted on disk/memory and does not block `WHERE LIKE` inference by ad-hoc `SELECT` callers; use Always Encrypted or revoke column access.
+
+### Question 23 — A, D
+
+Answers: Enable both `Soft Delete` and `Purge Protection` on the Azure Key Vault or Managed HSM storing the TDE protector key; Grant the SQL server Managed Identity `Key Vault Crypto Service Encryption User` (`get`, `wrapKey`, `unwrapKey`) on the Key Vault. Enable both `Soft Delete` and `Purge Protection` on the Key Vault, and grant the SQL server's Managed Identity `get`, `wrapKey`, and `unwrapKey` (`Key Vault Crypto Service Encryption User`). Local study-map skill 2.6 (Implement Transparent Data Encryption (`TDE`) with Service-Managed Keys, Key Vault `CMK`, and VM Cert Backups), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Transparent Data Encryption (TDE) with service-managed and customer-managed keys in Key Vault (https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-overview).
+
+- **A:** Correct. Azure SQL requires both Soft Delete and Purge Protection on Key Vault so accidental or malicious key deletion can never permanently brick encrypted databases. In this scenario: Enable both `Soft Delete` and `Purge Protection` on the Key Vault, and grant the SQL server's Managed Identity `get`, `wrapKey`, and `unwrapKey` (`Key Vault Crypto Service Encryption User`).
+- **B:** Incorrect for this requirement. Sharing `sa` credentials or granting `sysadmin` violates least privilege, bypasses auditing attribution, and fails Microsoft Entra-only zero-password compliance. Why the keyed choice wins: Enable both `Soft Delete` and `Purge Protection` on the Key Vault, and grant the SQL server's Managed Identity `get`, `wrapKey`, and `unwrapKey` (`Key Vault Crypto Service Encryption User`).
+- **C:** Incorrect for this requirement. Transaction log files perform sequential write-through flushes that do not benefit from read caching and must use `None` host caching. Why the keyed choice wins: Enable both `Soft Delete` and `Purge Protection` on the Key Vault, and grant the SQL server's Managed Identity `get`, `wrapKey`, and `unwrapKey` (`Key Vault Crypto Service Encryption User`).
+- **D:** Correct. The logical SQL server or SQL MI Managed Identity requires `get`, `wrapKey`, and `unwrapKey` permissions to wrap and unwrap the Database Encryption Key (`DEK`). In this scenario: Enable both `Soft Delete` and `Purge Protection` on the Key Vault, and grant the SQL server's Managed Identity `get`, `wrapKey`, and `unwrapKey` (`Key Vault Crypto Service Encryption User`).
+- **E:** Incorrect for this requirement. Opening `0.0.0.0–255.255.255.255` exposes the SQL endpoint to the entire public internet rather than isolating traffic via Private Endpoints or scoped IP rules. Why the keyed choice wins: Enable both `Soft Delete` and `Purge Protection` on the Key Vault, and grant the SQL server's Managed Identity `get`, `wrapKey`, and `unwrapKey` (`Key Vault Crypto Service Encryption User`).
+
+### Question 24 — C
+
+Answer: Column-level encryption (`CREATE MASTER KEY` -> `CREATE CERTIFICATE` -> `CREATE SYMMETRIC KEY` -> `EncryptByKey`) plus `Minimal TLS version = 1.2`. The session must first open the symmetric key (`OPEN SYMMETRIC KEY BadgeKey DECRYPTION BY CERTIFICATE BadgeCert;`); otherwise `DecryptByKey()` silently returns `NULL`! T-SQL cell-level symmetric key encryption protects specific columns inside the engine while enforcing TLS 1.2+ encrypts all TDS client traffic in transit. Local study-map skill 2.7 (Implement Object/Column-Level Encryption (`Symmetric Keys` / `Certificates`) and Enforce `Minimal TLS 1.2`), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Column-level symmetric key encryption and TLS 1.2 in-transit encryption (https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/encrypt-a-column-of-data).
+
+- **A:** Incorrect for this requirement. DDM masks query result columns on the fly for non-privileged callers (`db_owner` and `UNMASK` holders see cleartext) using built-in masking functions without altering stored values. Why the keyed choice wins: The session must first open the symmetric key (`OPEN SYMMETRIC KEY BadgeKey DECRYPTION BY CERTIFICATE BadgeCert;`); otherwise `DecryptByKey()` silently returns `NULL`!
+- **B:** Incorrect for this requirement. Opening `0.0.0.0–255.255.255.255` exposes the SQL endpoint to the entire public internet rather than isolating traffic via Private Endpoints or scoped IP rules. Why the keyed choice wins: The session must first open the symmetric key (`OPEN SYMMETRIC KEY BadgeKey DECRYPTION BY CERTIFICATE BadgeCert;`); otherwise `DecryptByKey()` silently returns `NULL`!
+- **C:** Correct. T-SQL cell-level symmetric key encryption protects specific columns inside the engine while enforcing TLS 1.2+ encrypts all TDS client traffic in transit. In this scenario: The session must first open the symmetric key (`OPEN SYMMETRIC KEY BadgeKey DECRYPTION BY CERTIFICATE BadgeCert;`); otherwise `DecryptByKey()` silently returns `NULL`!
+- **D:** Incorrect for this requirement. Unlike server-level rules stored in `master`, database-level IP firewall rules travel inside the user database across Active Geo-Replication and Failover Group failovers. Why the keyed choice wins: The session must first open the symmetric key (`OPEN SYMMETRIC KEY BadgeKey DECRYPTION BY CERTIFICATE BadgeCert;`); otherwise `DecryptByKey()` silently returns `NULL`!
+
+### Question 25 — D
+
+Answer: No — server-level firewall rules live in `master` and do not replicate automatically to a failover secondary server. No — `0.0.0.0` allows **any** Azure tenant's compute to reach the public endpoint, and `master` server firewall rules on `sql-rail-east` do not replicate automatically to `sql-rail-central`. Server-level IP firewall rules reside in the logical `master` database and must either be recreated on the DR logical server or replaced with portable database-level rules where appropriate. Local study-map skill 2.8 (Configure Server-Level (`master`) vs Portable Database-Level IP Firewall Rules (`sp_set_database_firewall_rule`)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Server-level and database-level IP firewall rules in Azure SQL Database (https://learn.microsoft.com/en-us/azure/azure-sql/database/firewall-configure).
+
+- **A:** Incorrect for this requirement. Dynamic Data Masking is not encryption at rest or row-level access control; users with ad-hoc `WHERE` privileges can still infer masked values unless RLS or encryption is applied. Why the keyed choice wins: No — `0.0.0.0` allows **any** Azure tenant's compute to reach the public endpoint, and `master` server firewall rules on `sql-rail-east` do not replicate automatically to `sql-rail-central`.
+- **B:** Incorrect for this requirement. `SqlPackage` exports tables sequentially rather than at a single LSN, so exporting a live write-heavy database without creating a point-in-time copy produces torn foreign-key state. Why the keyed choice wins: No — `0.0.0.0` allows **any** Azure tenant's compute to reach the public endpoint, and `master` server firewall rules on `sql-rail-east` do not replicate automatically to `sql-rail-central`.
+- **C:** Incorrect for this requirement. The proposed solution fails at least one stated technical, security, or availability requirement. Why the keyed choice wins: No — `0.0.0.0` allows **any** Azure tenant's compute to reach the public endpoint, and `master` server firewall rules on `sql-rail-east` do not replicate automatically to `sql-rail-central`.
+- **D:** Correct. Server-level IP firewall rules reside in the logical `master` database and must either be recreated on the DR logical server or replaced with portable database-level rules where appropriate. In this scenario: No — `0.0.0.0` allows **any** Azure tenant's compute to reach the public endpoint, and `master` server firewall rules on `sql-rail-east` do not replicate automatically to `sql-rail-central`.
+
+### Question 26 — D
+
+Answer: Enable VBS enclave on Azure SQL Database → Provision Key Vault CMK & enclave-enabled CEK (`ENCLAVE_COMPUTATIONS`) → Grant client Key Vault key permissions & attestation → Run in-place `ALTER TABLE` encryption. Enable a VBS enclave on the transit HR Azure SQL Database, provision a Key Vault CMK and enclave-enabled CEK (`ENCLAVE_COMPUTATIONS`), configure HR safety-app Key Vault/attestation access, and encrypt `Operators.DriverLicenseNo` in place via `ALTER TABLE`. In-place Always Encrypted with VBS enclaves requires enabling a VBS enclave on the DB, creating an enclave-enabled CEK (`ALLOW_ENCLAVE_COMPUTATIONS`), and running cryptographic operations inside the enclave. Local study-map skill 2.9 (Implement Always Encrypted (`Deterministic` vs `Randomized`) and Always Encrypted with VBS/SGX Secure Enclaves), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Always Encrypted and Always Encrypted with secure enclaves (https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-enclaves).
+
+- **A:** Incorrect for this requirement. Incorrect workflow: Always Encrypted keeps CMKs out of SQL engine T-SQL reach so DBAs cannot decrypt data; enclaves process keys only inside attested enclave memory. Why the keyed choice wins: Enable a VBS enclave on the transit HR Azure SQL Database, provision a Key Vault CMK and enclave-enabled CEK (`ENCLAVE_COMPUTATIONS`), configure HR safety-app Key Vault/attestation access, and encrypt `Operators.DriverLicenseNo` in place via `ALTER TABLE`.
+- **B:** Incorrect for this requirement. Incorrect workflow: `LIKE` pattern queries on Always Encrypted columns require `Column Encryption Setting=Enabled`, enclave attestation, and Randomized/enclave-enabled encryption. Why the keyed choice wins: Enable a VBS enclave on the transit HR Azure SQL Database, provision a Key Vault CMK and enclave-enabled CEK (`ENCLAVE_COMPUTATIONS`), configure HR safety-app Key Vault/attestation access, and encrypt `Operators.DriverLicenseNo` in place via `ALTER TABLE`.
+- **C:** Incorrect for this requirement. Incorrect workflow: in-place encryption fails unless the database enclave is active and the CEK was created with `ENCLAVE_COMPUTATIONS` beforehand; CMKs never live in `sys.configurations`. Why the keyed choice wins: Enable a VBS enclave on the transit HR Azure SQL Database, provision a Key Vault CMK and enclave-enabled CEK (`ENCLAVE_COMPUTATIONS`), configure HR safety-app Key Vault/attestation access, and encrypt `Operators.DriverLicenseNo` in place via `ALTER TABLE`.
+- **D:** Correct. In-place Always Encrypted with VBS enclaves requires enabling a VBS enclave on the DB, creating an enclave-enabled CEK (`ALLOW_ENCLAVE_COMPUTATIONS`), and running cryptographic operations inside the enclave. In this scenario: Enable a VBS enclave on the transit HR Azure SQL Database, provision a Key Vault CMK and enclave-enabled CEK (`ENCLAVE_COMPUTATIONS`), configure HR safety-app Key Vault/attestation access, and encrypt `Operators.DriverLicenseNo` in place via `ALTER TABLE`.
+
+### Question 27 — B, D
+
+Answers: Provision a Column Master Key in Key Vault and create a Column Encryption Key with `ENCLAVE_COMPUTATIONS` enabled; Enable `Column Encryption Setting=Enabled` and pass the `Enclave Attestation Url` (or VBS zero-attestation setting) in client drivers. Provision a Key Vault CMK + CEK configured with `ENCLAVE_COMPUTATIONS`, and set `Column Encryption Setting=Enabled` (with enclave attestation) in client connection strings. Local study-map skill 2.9 (Implement Always Encrypted (`Deterministic` vs `Randomized`) and Always Encrypted with VBS/SGX Secure Enclaves), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Always Encrypted and Always Encrypted with secure enclaves (https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-enclaves).
+
+- **A:** Incorrect for this requirement. `NOLOCK` (`READ UNCOMMITTED`) permits dirty reads of uncommitted rolled-back rows, double-counting rows, or skipping committed rows during page splits—unacceptable for accurate OLTP. Why the keyed choice wins: Provision a Key Vault CMK + CEK configured with `ENCLAVE_COMPUTATIONS`, and set `Column Encryption Setting=Enabled` (with enclave attestation) in client connection strings.
+- **B:** Correct. Rich confidential queries (`LIKE`, `<`, `>`, sorting) and in-place encryption require a CEK explicitly marked to permit enclave computations. In this scenario: Provision a Key Vault CMK + CEK configured with `ENCLAVE_COMPUTATIONS`, and set `Column Encryption Setting=Enabled` (with enclave attestation) in client connection strings.
+- **C:** Incorrect for this requirement. Opening `0.0.0.0–255.255.255.255` exposes the SQL endpoint to the entire public internet rather than isolating traffic via Private Endpoints or scoped IP rules. Why the keyed choice wins: Provision a Key Vault CMK + CEK configured with `ENCLAVE_COMPUTATIONS`, and set `Column Encryption Setting=Enabled` (with enclave attestation) in client connection strings.
+- **D:** Correct. Client drivers must enable Always Encrypted and verify enclave attestation before transmitting CEKs over TLS into the SQL secure enclave. In this scenario: Provision a Key Vault CMK + CEK configured with `ENCLAVE_COMPUTATIONS`, and set `Column Encryption Setting=Enabled` (with enclave attestation) in client connection strings.
+- **E:** Incorrect for this requirement. `ReadOnly` host caching serves random OLTP data-page reads directly from Azure hypervisor RAM/SSD cache without consuming disk IOPS. Why the keyed choice wins: Provision a Key Vault CMK + CEK configured with `ENCLAVE_COMPUTATIONS`, and set `Column Encryption Setting=Enabled` (with enclave attestation) in client connection strings.
+
+### Question 28 — C, D
+
+Answers: Link Private DNS Zone `privatelink.database.windows.net` (or forward on-premises DNS) to resolve `<server>.database.windows.net` to the private IP; Set `Public network access = Disabled` (`publicNetworkAccess: Disabled`) on the logical SQL server so internet connections are rejected. Link Private DNS Zone `privatelink.database.windows.net` to the VNet/DNS resolver, and set `Public network access = Disabled` on the logical SQL server. Local study-map skill 2.10 (Configure Azure Private Link (`privatelink.database.windows.net`), Service Endpoints, and SQL MI Subnet Security), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Azure Private Link, Virtual Network service endpoints, and SQL MI VNet security (https://learn.microsoft.com/en-us/azure/azure-sql/database/private-endpoint-overview).
+
+- **A:** Incorrect for this requirement. Opening `0.0.0.0–255.255.255.255` exposes the SQL endpoint to the entire public internet rather than isolating traffic via Private Endpoints or scoped IP rules. Why the keyed choice wins: Link Private DNS Zone `privatelink.database.windows.net` to the VNet/DNS resolver, and set `Public network access = Disabled` on the logical SQL server.
+- **B:** Incorrect for this requirement. Azure Arc allows variable-workload or seasonal SQL Server hosts outside Azure to be billed hourly through an Azure subscription. Why the keyed choice wins: Link Private DNS Zone `privatelink.database.windows.net` to the VNet/DNS resolver, and set `Public network access = Disabled` on the logical SQL server.
+- **C:** Correct. Creating a Private Endpoint alone leaves the public endpoint reachable unless `Public network access` is explicitly disabled on the server. In this scenario: Link Private DNS Zone `privatelink.database.windows.net` to the VNet/DNS resolver, and set `Public network access = Disabled` on the logical SQL server.
+- **D:** Correct. Clients still validate the TLS certificate for `<server>.database.windows.net`, so split-brain DNS must map the canonical FQDN via CNAME to `privatelink.database.windows.net`. In this scenario: Link Private DNS Zone `privatelink.database.windows.net` to the VNet/DNS resolver, and set `Public network access = Disabled` on the logical SQL server.
+- **E:** Incorrect for this requirement. Local ephemeral NVMe storage delivers ultra-low latency for `tempdb` spills and version stores without consuming remote disk IOPS bandwidth. Why the keyed choice wins: Link Private DNS Zone `privatelink.database.windows.net` to the VNet/DNS resolver, and set `Public network access = Disabled` on the logical SQL server.
+
+### Question 29 — B
+
+Answer: SQL Data Discovery & Classification (`ADD SENSITIVITY CLASSIFICATION`) integrated with Azure SQL Auditing to Log Analytics / immutable Storage. Azure SQL Auditing logs every batch's `statement`, `client_ip`, `application_name`, `server_principal_name`, and `data_sensitivity_information` into tamper-protected Log Analytics / Blob Storage for forensic triage. `ADD SENSITIVITY CLASSIFICATION` tags columns with `LABEL` and `INFORMATION_TYPE`, populating `data_sensitivity_information` in SQL Audit logs whenever classified columns are queried. Local study-map skill 2.11 (Apply SQL Data Discovery & Classification (`ADD SENSITIVITY CLASSIFICATION`) and Server/Database Auditing), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: SQL Data Discovery and Classification and Azure SQL Auditing (https://learn.microsoft.com/en-us/azure/azure-sql/database/auditing-overview).
+
+- **A:** Incorrect for this requirement. Change Tracking records only which primary keys changed with minimal overhead, whereas CDC reads the transaction log asynchronously to retain every intermediate `INSERT`/`UPDATE`/`DELETE` payload. Why the keyed choice wins: Azure SQL Auditing logs every batch's `statement`, `client_ip`, `application_name`, `server_principal_name`, and `data_sensitivity_information` into tamper-protected Log Analytics / Blob Storage for forensic triage.
+- **B:** Correct. `ADD SENSITIVITY CLASSIFICATION` tags columns with `LABEL` and `INFORMATION_TYPE`, populating `data_sensitivity_information` in SQL Audit logs whenever classified columns are queried. In this scenario: Azure SQL Auditing logs every batch's `statement`, `client_ip`, `application_name`, `server_principal_name`, and `data_sensitivity_information` into tamper-protected Log Analytics / Blob Storage for forensic triage.
+- **C:** Incorrect for this requirement. Interactive SQL Server Profiler GUI tracing imposes heavy observer overhead and is deprecated in favor of lightweight Extended Events and Query Store. Why the keyed choice wins: Azure SQL Auditing logs every batch's `statement`, `client_ip`, `application_name`, `server_principal_name`, and `data_sensitivity_information` into tamper-protected Log Analytics / Blob Storage for forensic triage.
+- **D:** Incorrect for this requirement. DDM masks query result columns on the fly for non-privileged callers (`db_owner` and `UNMASK` holders see cleartext) using built-in masking functions without altering stored values. Why the keyed choice wins: Azure SQL Auditing logs every batch's `statement`, `client_ip`, `application_name`, `server_principal_name`, and `data_sensitivity_information` into tamper-protected Log Analytics / Blob Storage for forensic triage.
+
+### Question 30 — D
+
+Answer: SQL Data Discovery & Classification (`ADD SENSITIVITY CLASSIFICATION`) integrated with Azure SQL Auditing to Log Analytics / immutable Storage. Setting `ON_FAILURE = SHUTDOWN` (requires `CONTROL SERVER` / `SHUTDOWN` permission) stops SQL Server if audit records cannot be written, guaranteeing zero unaudited queries execute. `ADD SENSITIVITY CLASSIFICATION` tags columns with `LABEL` and `INFORMATION_TYPE`, populating `data_sensitivity_information` in SQL Audit logs whenever classified columns are queried. Local study-map skill 2.11 (Apply SQL Data Discovery & Classification (`ADD SENSITIVITY CLASSIFICATION`) and Server/Database Auditing), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: SQL Data Discovery and Classification and Azure SQL Auditing (https://learn.microsoft.com/en-us/azure/azure-sql/database/auditing-overview).
+
+- **A:** Incorrect for this requirement. Flushing the entire plan cache repeatedly causes CPU compilation storms across all queries, and disabling statistics forces blind cardinality guesses. Why the keyed choice wins: Setting `ON_FAILURE = SHUTDOWN` (requires `CONTROL SERVER` / `SHUTDOWN` permission) stops SQL Server if audit records cannot be written, guaranteeing zero unaudited queries execute.
+- **B:** Incorrect for this requirement. `DBCC SHRINKDATABASE` and `AUTO_SHRINK` cause massive physical index fragmentation (`>90%`), heavy transaction log generation, and immediate file regrow stalls. Why the keyed choice wins: Setting `ON_FAILURE = SHUTDOWN` (requires `CONTROL SERVER` / `SHUTDOWN` permission) stops SQL Server if audit records cannot be written, guaranteeing zero unaudited queries execute.
+- **C:** Incorrect for this requirement. Sharing `sa` credentials or granting `sysadmin` violates least privilege, bypasses auditing attribution, and fails Microsoft Entra-only zero-password compliance. Why the keyed choice wins: Setting `ON_FAILURE = SHUTDOWN` (requires `CONTROL SERVER` / `SHUTDOWN` permission) stops SQL Server if audit records cannot be written, guaranteeing zero unaudited queries execute.
+- **D:** Correct. `ADD SENSITIVITY CLASSIFICATION` tags columns with `LABEL` and `INFORMATION_TYPE`, populating `data_sensitivity_information` in SQL Audit logs whenever classified columns are queried. In this scenario: Setting `ON_FAILURE = SHUTDOWN` (requires `CONTROL SERVER` / `SHUTDOWN` permission) stops SQL Server if audit records cannot be written, guaranteeing zero unaudited queries execute.
+
+### Question 31 — A
+
+Answer: Change Tracking (`CHANGETABLE(CHANGES ...)`) for lightweight net PK sync; Change Data Capture (`sys.sp_cdc_enable_table`) for full intermediate before/after history. Use **Change Tracking** (`CHANGETABLE(CHANGES ...)`) for lightweight net-state `FeederStatus` sync, and **Change Data Capture (`CDC`)** for full historical state-transition logging into the regulatory historian. Change Tracking records only which primary keys changed with minimal overhead, whereas CDC reads the transaction log asynchronously to retain every intermediate `INSERT`/`UPDATE`/`DELETE` payload. Local study-map skill 2.12 (Implement Change Tracking (`CHANGETABLE`) vs Change Data Capture (`CDC`) for Downstream Data Changes), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Track data changes with Change Tracking (CT) and Change Data Capture (CDC) (https://learn.microsoft.com/en-us/sql/relational-databases/track-changes/track-data-changes-sql-server).
+
+- **A:** Correct. Change Tracking records only which primary keys changed with minimal overhead, whereas CDC reads the transaction log asynchronously to retain every intermediate `INSERT`/`UPDATE`/`DELETE` payload. In this scenario: Use **Change Tracking** (`CHANGETABLE(CHANGES ...)`) for lightweight net-state `FeederStatus` sync, and **Change Data Capture (`CDC`)** for full historical state-transition logging into the regulatory historian.
+- **B:** Incorrect for this requirement. DDM masks query result columns on the fly for non-privileged callers (`db_owner` and `UNMASK` holders see cleartext) using built-in masking functions without altering stored values. Why the keyed choice wins: Use **Change Tracking** (`CHANGETABLE(CHANGES ...)`) for lightweight net-state `FeederStatus` sync, and **Change Data Capture (`CDC`)** for full historical state-transition logging into the regulatory historian.
+- **C:** Incorrect for this requirement. CDC requires `S3+` or `vCore` tiers in Azure SQL Database, and Change Tracking stores only net version numbers/PKs—never intermediate before/after column values. Why the keyed choice wins: Use **Change Tracking** (`CHANGETABLE(CHANGES ...)`) for lightweight net-state `FeederStatus` sync, and **Change Data Capture (`CDC`)** for full historical state-transition logging into the regulatory historian.
+- **D:** Incorrect for this requirement. Unlike server-level rules stored in `master`, database-level IP firewall rules travel inside the user database across Active Geo-Replication and Failover Group failovers. Why the keyed choice wins: Use **Change Tracking** (`CHANGETABLE(CHANGES ...)`) for lightweight net-state `FeederStatus` sync, and **Change Data Capture (`CDC`)** for full historical state-transition logging into the regulatory historian.
+
+### Question 32 — C
+
+Answer: Dynamic Data Masking (`default()`, `email()`, `partial()`, `random()`) with `GRANT UNMASK` scoped to authorized roles or schemas. The `default()` masking function applies type-aware default masks (`'xxxx'` for strings, `0` for numerics, `'1900-01-01'` for dates, `0x00` for binary). DDM masks query result columns on the fly for non-privileged callers (`db_owner` and `UNMASK` holders see cleartext) using built-in masking functions without altering stored values. Local study-map skill 2.13 (Implement Dynamic Data Masking (`default`, `email`, `partial`, `random`) and Scoped `UNMASK` Permissions), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Dynamic Data Masking (DDM) in Azure SQL Database, SQL Managed Instance, and SQL Server (https://learn.microsoft.com/en-us/azure/azure-sql/database/dynamic-data-masking-overview).
+
+- **A:** Incorrect for this requirement. RLS transparently filters `SELECT`/`UPDATE`/`DELETE` rows via `FILTER PREDICATE` and blocks unauthorized cross-tenant `INSERT`/`UPDATE` writes via `BLOCK PREDICATE` inside the engine. Why the keyed choice wins: The `default()` masking function applies type-aware default masks (`'xxxx'` for strings, `0` for numerics, `'1900-01-01'` for dates, `0x00` for binary).
+- **B:** Incorrect for this requirement. BYOK TDE wraps the symmetric Database Encryption Key (`DEK`) with an asymmetric RSA key in Key Vault or Managed HSM so security admins control key rotation and instant revocation. Why the keyed choice wins: The `default()` masking function applies type-aware default masks (`'xxxx'` for strings, `0` for numerics, `'1900-01-01'` for dates, `0x00` for binary).
+- **C:** Correct. DDM masks query result columns on the fly for non-privileged callers (`db_owner` and `UNMASK` holders see cleartext) using built-in masking functions without altering stored values. In this scenario: The `default()` masking function applies type-aware default masks (`'xxxx'` for strings, `0` for numerics, `'1900-01-01'` for dates, `0x00` for binary).
+- **D:** Incorrect for this requirement. Secure enclaves delegate column decryption into an isolated memory region inside SQL, unlocking `LIKE`, `<`, `>`, `ORDER BY`, and fast in-place initial encryption without exposing plaintext to DBAs. Why the keyed choice wins: The `default()` masking function applies type-aware default masks (`'xxxx'` for strings, `0` for numerics, `'1900-01-01'` for dates, `0x00` for binary).
+
+### Question 33 — B, C, D
+
+Answers: Create an inline table-valued function `WITH SCHEMABINDING` evaluating `SESSION_CONTEXT()` or `DATABASE_PRINCIPAL_ID()`; Add a `FILTER PREDICATE` in `CREATE SECURITY POLICY` to hide non-matching rows silently from `SELECT`, `UPDATE`, and `DELETE`; Add `AFTER INSERT` and `AFTER UPDATE` / `BEFORE UPDATE` `BLOCK PREDICATE` clauses in `CREATE SECURITY POLICY` (`STATE = ON`). Create a `SCHEMABINDING` inline TVF predicate and bind both `FILTER PREDICATE` and `BLOCK PREDICATE` inside `CREATE SECURITY POLICY ... WITH (STATE = ON)`. Local study-map skill 2.14 (Implement Cryptographic Ledger in Azure SQL (`Azure Confidential Ledger`) and Row-Level Security (`FILTER`/`BLOCK`)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Ledger cryptographic tamper-evidence and Row-Level Security (RLS) in Azure SQL (https://learn.microsoft.com/en-us/sql/relational-databases/security/ledger/ledger-overview).
+
+- **A:** Incorrect for this requirement. Opening `0.0.0.0–255.255.255.255` exposes the SQL endpoint to the entire public internet rather than isolating traffic via Private Endpoints or scoped IP rules. Why the keyed choice wins: Create a `SCHEMABINDING` inline TVF predicate and bind both `FILTER PREDICATE` and `BLOCK PREDICATE` inside `CREATE SECURITY POLICY ... WITH (STATE = ON)`.
+- **B:** Correct. `BLOCK PREDICATE` raises an error if a shared application login attempts to insert or update a row carrying another tenant's identifier. In this scenario: Create a `SCHEMABINDING` inline TVF predicate and bind both `FILTER PREDICATE` and `BLOCK PREDICATE` inside `CREATE SECURITY POLICY ... WITH (STATE = ON)`.
+- **C:** Correct. RLS predicate functions must be inline TVFs bound with `SCHEMABINDING` so underlying columns cannot be altered silently and query plans inline cleanly. In this scenario: Create a `SCHEMABINDING` inline TVF predicate and bind both `FILTER PREDICATE` and `BLOCK PREDICATE` inside `CREATE SECURITY POLICY ... WITH (STATE = ON)`.
+- **D:** Correct. `FILTER PREDICATE` injects the security TVF into read, update, and delete operators transparently without changing application `SELECT` statements. In this scenario: Create a `SCHEMABINDING` inline TVF predicate and bind both `FILTER PREDICATE` and `BLOCK PREDICATE` inside `CREATE SECURITY POLICY ... WITH (STATE = ON)`.
+- **E:** Incorrect for this requirement. Append-only Ledger tables strictly block `UPDATE`, `DELETE`, and `TRUNCATE` statements in the SQL engine so cryptographic audit trails cannot be altered. Why the keyed choice wins: Create a `SCHEMABINDING` inline TVF predicate and bind both `FILTER PREDICATE` and `BLOCK PREDICATE` inside `CREATE SECURITY POLICY ... WITH (STATE = ON)`.
+- **F:** Incorrect for this requirement. DDM masks query result columns on the fly for non-privileged callers (`db_owner` and `UNMASK` holders see cleartext) using built-in masking functions without altering stored values. Why the keyed choice wins: Create a `SCHEMABINDING` inline TVF predicate and bind both `FILTER PREDICATE` and `BLOCK PREDICATE` inside `CREATE SECURITY POLICY ... WITH (STATE = ON)`.
+
+### Question 34 — C
+
+Answer: Create dedicated `Security` schema → Create `SCHEMABINDING` inline TVF reading `SESSION_CONTEXT(N'TenantId')` → Create `SECURITY POLICY` with `FILTER` & `BLOCK` predicates (`STATE = ON`) → Set read-only `sp_set_session_context` on connect. Create a dedicated `Security` schema, author a `SCHEMABINDING` inline TVF checking `SESSION_CONTEXT(N'UtilityRegion')`, create an active `SECURITY POLICY` with `FILTER` + `BLOCK` predicates, and set read-only `sp_set_session_context` on connect. Best-practice multi-tenant RLS isolates objects in a dedicated schema, uses a schema-bound inline TVF predicate over read-only `SESSION_CONTEXT`, and enforces both `FILTER` and `BLOCK` predicates. Local study-map skill 2.14 (Implement Cryptographic Ledger in Azure SQL (`Azure Confidential Ledger`) and Row-Level Security (`FILTER`/`BLOCK`)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Ledger cryptographic tamper-evidence and Row-Level Security (RLS) in Azure SQL (https://learn.microsoft.com/en-us/sql/relational-databases/security/ledger/ledger-overview).
+
+- **A:** Incorrect for this requirement. Incorrect workflow: RLS requires an existing `SCHEMABINDING` inline TVF before creating the security policy, and granting `ALTER ANY SECURITY POLICY` lets tenants bypass isolation. Why the keyed choice wins: Create a dedicated `Security` schema, author a `SCHEMABINDING` inline TVF checking `SESSION_CONTEXT(N'UtilityRegion')`, create an active `SECURITY POLICY` with `FILTER` + `BLOCK` predicates, and set read-only `sp_set_session_context` on connect.
+- **B:** Incorrect for this requirement. Incorrect workflow: Dynamic Data Masking obfuscates column output in result sets and never filters rows or blocks cross-tenant writes. Why the keyed choice wins: Create a dedicated `Security` schema, author a `SCHEMABINDING` inline TVF checking `SESSION_CONTEXT(N'UtilityRegion')`, create an active `SECURITY POLICY` with `FILTER` + `BLOCK` predicates, and set read-only `sp_set_session_context` on connect.
+- **C:** Correct. Best-practice multi-tenant RLS isolates objects in a dedicated schema, uses a schema-bound inline TVF predicate over read-only `SESSION_CONTEXT`, and enforces both `FILTER` and `BLOCK` predicates. In this scenario: Create a dedicated `Security` schema, author a `SCHEMABINDING` inline TVF checking `SESSION_CONTEXT(N'UtilityRegion')`, create an active `SECURITY POLICY` with `FILTER` + `BLOCK` predicates, and set read-only `sp_set_session_context` on connect.
+- **D:** Incorrect for this requirement. Incorrect workflow: RLS predicates must be schema-bound inline TVFs attached to a `SECURITY POLICY`, and `@read_only = 1` prevents SQL injection from changing `TenantId` mid-session. Why the keyed choice wins: Create a dedicated `Security` schema, author a `SCHEMABINDING` inline TVF checking `SESSION_CONTEXT(N'UtilityRegion')`, create an active `SECURITY POLICY` with `FILTER` + `BLOCK` predicates, and set read-only `sp_set_session_context` on connect.
+
+### Question 35 — C
+
+Answer: Azure Monitor metrics paired with `sys.dm_db_resource_stats` (single DB) or `sys.server_resource_stats` (SQL MI) for 15-second CPU, data I/O, log write, and memory baselines. Issuing thousands of tiny row-by-row autocommit `INSERT`s instead of batched transactions (or hitting General Purpose remote-storage log write throughput limits, mitigated by batching commits or moving to Business Critical / Hyperscale). `sys.dm_db_resource_stats` retains 14 days of 15-second resource averages (`avg_cpu_percent`, `avg_data_io_percent`, `avg_log_write_percent`) to compare current peaks against normal baselines. Local study-map skill 3.1 (Establish Performance Baselines and Interpret CPU, Memory, Data I/O, Log Write, and `tempdb` Metrics), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Monitor Azure SQL resource utilization and establish performance baselines (https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-sql-database-azure-monitor).
+
+- **A:** Incorrect for this requirement. Interactive SQL Server Profiler GUI tracing imposes heavy observer overhead and is deprecated in favor of lightweight Extended Events and Query Store. Why the keyed choice wins: Issuing thousands of tiny row-by-row autocommit `INSERT`s instead of batched transactions (or hitting General Purpose remote-storage log write throughput limits, mitigated by batching commits or moving to Business Critical / Hyperscale).
+- **B:** Incorrect for this requirement. Flushing the entire plan cache repeatedly causes CPU compilation storms across all queries, and disabling statistics forces blind cardinality guesses. Why the keyed choice wins: Issuing thousands of tiny row-by-row autocommit `INSERT`s instead of batched transactions (or hitting General Purpose remote-storage log write throughput limits, mitigated by batching commits or moving to Business Critical / Hyperscale).
+- **C:** Correct. `sys.dm_db_resource_stats` retains 14 days of 15-second resource averages (`avg_cpu_percent`, `avg_data_io_percent`, `avg_log_write_percent`) to compare current peaks against normal baselines. In this scenario: Issuing thousands of tiny row-by-row autocommit `INSERT`s instead of batched transactions (or hitting General Purpose remote-storage log write throughput limits, mitigated by batching commits or moving to Business Critical / Hyperscale).
+- **D:** Incorrect for this requirement. `DBCC SHRINKDATABASE` and `AUTO_SHRINK` cause massive physical index fragmentation (`>90%`), heavy transaction log generation, and immediate file regrow stalls. Why the keyed choice wins: Issuing thousands of tiny row-by-row autocommit `INSERT`s instead of batched transactions (or hitting General Purpose remote-storage log write throughput limits, mitigated by batching commits or moving to Business Critical / Hyperscale).
+
+### Question 36 — C
+
+Answer: Query `sys.dm_os_wait_stats` / `sys.dm_db_wait_stats`, `sys.dm_exec_requests`, `sys.dm_tran_locks`, and `sys.dm_db_tempdb_space_usage`. Queries requiring large `Sort` or `Hash Match` workspace memory grants cannot obtain RAM from the query memory semaphore and are queued waiting for concurrent memory-heavy queries to finish! Wait categories pinpoint root causes: `PAGEIOLATCH_*` indicates storage data reads, `WRITELOG` indicates log flush latency, `SOS_SCHEDULER_YIELD` indicates CPU pressure, and `LCK_M_*` indicates blocking. Local study-map skill 3.1 (Establish Performance Baselines and Interpret CPU, Memory, Data I/O, Log Write, and `tempdb` Metrics), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Monitor Azure SQL resource utilization and establish performance baselines (https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-sql-database-azure-monitor).
+
+- **A:** Incorrect for this requirement. `NOLOCK` (`READ UNCOMMITTED`) permits dirty reads of uncommitted rolled-back rows, double-counting rows, or skipping committed rows during page splits—unacceptable for accurate OLTP. Why the keyed choice wins: Queries requiring large `Sort` or `Hash Match` workspace memory grants cannot obtain RAM from the query memory semaphore and are queued waiting for concurrent memory-heavy queries to finish!
+- **B:** Incorrect for this requirement. `DBCC SHRINKDATABASE` and `AUTO_SHRINK` cause massive physical index fragmentation (`>90%`), heavy transaction log generation, and immediate file regrow stalls. Why the keyed choice wins: Queries requiring large `Sort` or `Hash Match` workspace memory grants cannot obtain RAM from the query memory semaphore and are queued waiting for concurrent memory-heavy queries to finish!
+- **C:** Correct. Wait categories pinpoint root causes: `PAGEIOLATCH_*` indicates storage data reads, `WRITELOG` indicates log flush latency, `SOS_SCHEDULER_YIELD` indicates CPU pressure, and `LCK_M_*` indicates blocking. In this scenario: Queries requiring large `Sort` or `Hash Match` workspace memory grants cannot obtain RAM from the query memory semaphore and are queued waiting for concurrent memory-heavy queries to finish!
+- **D:** Incorrect for this requirement. DDM masks query result columns on the fly for non-privileged callers (`db_owner` and `UNMASK` holders see cleartext) using built-in masking functions without altering stored values. Why the keyed choice wins: Queries requiring large `Sort` or `Hash Match` workspace memory grants cannot obtain RAM from the query memory semaphore and are queued waiting for concurrent memory-heavy queries to finish!
+
+### Question 37 — D
+
+Answer: Azure Monitor Diagnostic Settings streaming `SQLInsights`, `QueryStoreRuntimeStatistics`, `Errors`, and `Blocks` to a Log Analytics workspace (`KQL`). Log Analytics correlates multi-database anomalies over 90 days in KQL, survives failovers/restarts, and powers native Azure Monitor Log Alerts without placing polling load on SQL engines. Diagnostic Settings export telemetry across hundreds of databases into Log Analytics so DBAs can correlate `SQLInsights`, wait stats, deadlocks, and timeouts via KQL queries and alerts. Local study-map skill 3.2 (Configure Azure Monitor Diagnostic Settings (`SQLInsights`, `AzureDiagnostics` KQL) and Resource Monitoring), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Azure Monitor diagnostic settings, SQLInsights logs, and metric alerts (https://learn.microsoft.com/en-us/azure/azure-sql/database/metrics-diagnostic-telemetry-logging-streaming-export-configure).
+
+- **A:** Incorrect for this requirement. Without the original TDE certificate and private key restored into the target SQL Server `master` database, a TDE-encrypted `.bak` or detached `.mdf` cannot be decrypted anywhere. Why the keyed choice wins: Log Analytics correlates multi-database anomalies over 90 days in KQL, survives failovers/restarts, and powers native Azure Monitor Log Alerts without placing polling load on SQL engines.
+- **B:** Incorrect for this requirement. Interactive SQL Server Profiler GUI tracing imposes heavy observer overhead and is deprecated in favor of lightweight Extended Events and Query Store. Why the keyed choice wins: Log Analytics correlates multi-database anomalies over 90 days in KQL, survives failovers/restarts, and powers native Azure Monitor Log Alerts without placing polling load on SQL engines.
+- **C:** Incorrect for this requirement. Unlike server-level rules stored in `master`, database-level IP firewall rules travel inside the user database across Active Geo-Replication and Failover Group failovers. Why the keyed choice wins: Log Analytics correlates multi-database anomalies over 90 days in KQL, survives failovers/restarts, and powers native Azure Monitor Log Alerts without placing polling load on SQL engines.
+- **D:** Correct. Diagnostic Settings export telemetry across hundreds of databases into Log Analytics so DBAs can correlate `SQLInsights`, wait stats, deadlocks, and timeouts via KQL queries and alerts. In this scenario: Log Analytics correlates multi-database anomalies over 90 days in KQL, survives failovers/restarts, and powers native Azure Monitor Log Alerts without placing polling load on SQL engines.
+
+### Question 38 — C
+
+Answer: Provision Azure Data Explorer or Fabric Eventhouse store → Create database watcher with Managed Identity → Add SQL targets & grant `VIEW SERVER PERFORMANCE STATE` + ingest roles → Start watcher & open portal dashboards. Provision the grid team's Fabric Eventhouse KQL store first, create the database watcher with Managed Identity, grant `VIEW SERVER PERFORMANCE STATE` on the 15 SQL DBs and 2 SQL MIs plus Eventhouse ingest roles, and start collection. Database watcher streams SQL telemetry into an Azure Data Explorer or Fabric Eventhouse/KQL store using Managed Identity granted least-privilege `VIEW SERVER PERFORMANCE STATE` on SQL targets. Local study-map skill 3.3 (Monitor Workloads Using Database Watcher (ADX / Fabric Eventhouse) and Plan Fabric Database Hub Transition), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Monitor Azure SQL workloads with database watcher and Database Hub in Microsoft Fabric (https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-overview).
+
+- **A:** Incorrect for this requirement. Incorrect workflow: database watcher monitors Azure SQL Database, Elastic Pools, and SQL Managed Instance and stores telemetry in Azure Data Explorer or Fabric KQL databases. Why the keyed choice wins: Provision the grid team's Fabric Eventhouse KQL store first, create the database watcher with Managed Identity, grant `VIEW SERVER PERFORMANCE STATE` on the 15 SQL DBs and 2 SQL MIs plus Eventhouse ingest roles, and start collection.
+- **B:** Incorrect for this requirement. Incorrect workflow: Azure SQL Database PaaS exposes no underlying OS for agents, `sp_trace_create` is deprecated, and database watcher is agentless. Why the keyed choice wins: Provision the grid team's Fabric Eventhouse KQL store first, create the database watcher with Managed Identity, grant `VIEW SERVER PERFORMANCE STATE` on the 15 SQL DBs and 2 SQL MIs plus Eventhouse ingest roles, and start collection.
+- **C:** Correct. Database watcher streams SQL telemetry into an Azure Data Explorer or Fabric Eventhouse/KQL store using Managed Identity granted least-privilege `VIEW SERVER PERFORMANCE STATE` on SQL targets. In this scenario: Provision the grid team's Fabric Eventhouse KQL store first, create the database watcher with Managed Identity, grant `VIEW SERVER PERFORMANCE STATE` on the 15 SQL DBs and 2 SQL MIs plus Eventhouse ingest roles, and start collection.
+- **D:** Incorrect for this requirement. Incorrect workflow: watcher requires an Azure Data Explorer or Fabric Real-Time Analytics store and SQL targets configured first, and uses least-privilege Managed Identity rather than `sa` or Profiler. Why the keyed choice wins: Provision the grid team's Fabric Eventhouse KQL store first, create the database watcher with Managed Identity, grant `VIEW SERVER PERFORMANCE STATE` on the 15 SQL DBs and 2 SQL MIs plus Eventhouse ingest roles, and start collection.
+
+### Question 39 — A, B
+
+Answers: Grant the database watcher Managed Identity `VIEW SERVER PERFORMANCE STATE` (or `VIEW DATABASE PERFORMANCE STATE`) on SQL targets; Grant the database watcher Managed Identity database `Admin` / ingest permissions on the Azure Data Explorer or Fabric Eventhouse store. Grant `VIEW SERVER PERFORMANCE STATE` to the watcher Managed Identity on SQL targets, and grant database `Admin` / ingestion permissions on the Azure Data Explorer / Fabric Eventhouse database. Local study-map skill 3.3 (Monitor Workloads Using Database Watcher (ADX / Fabric Eventhouse) and Plan Fabric Database Hub Transition), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Monitor Azure SQL workloads with database watcher and Database Hub in Microsoft Fabric (https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-overview).
+
+- **A:** Correct. Database watcher collects DMVs and system catalogs using least-privilege performance-state permissions rather than `sysadmin` or data-read rights. In this scenario: Grant `VIEW SERVER PERFORMANCE STATE` to the watcher Managed Identity on SQL targets, and grant database `Admin` / ingestion permissions on the Azure Data Explorer / Fabric Eventhouse database.
+- **B:** Correct. Database watcher creates tables, retention policies, and ingestion mappings inside the target Azure Data Explorer or Fabric Real-Time Analytics KQL database. In this scenario: Grant `VIEW SERVER PERFORMANCE STATE` to the watcher Managed Identity on SQL targets, and grant database `Admin` / ingestion permissions on the Azure Data Explorer / Fabric Eventhouse database.
+- **C:** Incorrect for this requirement. Local ephemeral NVMe storage delivers ultra-low latency for `tempdb` spills and version stores without consuming remote disk IOPS bandwidth. Why the keyed choice wins: Grant `VIEW SERVER PERFORMANCE STATE` to the watcher Managed Identity on SQL targets, and grant database `Admin` / ingestion permissions on the Azure Data Explorer / Fabric Eventhouse database.
+- **D:** Incorrect for this requirement. Sharing `sa` credentials or granting `sysadmin` violates least privilege, bypasses auditing attribution, and fails Microsoft Entra-only zero-password compliance. Why the keyed choice wins: Grant `VIEW SERVER PERFORMANCE STATE` to the watcher Managed Identity on SQL targets, and grant database `Admin` / ingestion permissions on the Azure Data Explorer / Fabric Eventhouse database.
+- **E:** Incorrect for this requirement. Interactive SQL Server Profiler GUI tracing imposes heavy observer overhead and is deprecated in favor of lightweight Extended Events and Query Store. Why the keyed choice wins: Grant `VIEW SERVER PERFORMANCE STATE` to the watcher Managed Identity on SQL targets, and grant database `Admin` / ingestion permissions on the Azure Data Explorer / Fabric Eventhouse database.
+
+### Question 40 — D, E
+
+Answers: Create a `DATABASE SCOPED CREDENTIAL` (`Managed Identity` or `SHARED ACCESS SIGNATURE` with `rwl` permissions) for the Azure Blob container; Define `CREATE EVENT SESSION ... ON DATABASE ADD TARGET package0.event_file(SET filename = N'https://...xel')` and start the session. Create a `DATABASE SCOPED CREDENTIAL` (`Managed Identity` or `rwl` SAS) for the Azure Blob container, and create an `ON DATABASE` Extended Events session targeting `package0.event_file`. Local study-map skill 3.4 (Monitor Workloads Using Extended Events (`ON DATABASE` vs `ON SERVER` & Persistent Blob `event_file` Targets)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Extended Events in Azure SQL Database and Azure SQL Managed Instance (https://learn.microsoft.com/en-us/azure/azure-sql/database/xevent-db-diff-from-svr).
+
+- **A:** Incorrect for this requirement. Azure SQL requires both Soft Delete and Purge Protection on Key Vault so accidental or malicious key deletion can never permanently brick encrypted databases. Why the keyed choice wins: Create a `DATABASE SCOPED CREDENTIAL` (`Managed Identity` or `rwl` SAS) for the Azure Blob container, and create an `ON DATABASE` Extended Events session targeting `package0.event_file`.
+- **B:** Incorrect for this requirement. Flushing the entire plan cache repeatedly causes CPU compilation storms across all queries, and disabling statistics forces blind cardinality guesses. Why the keyed choice wins: Create a `DATABASE SCOPED CREDENTIAL` (`Managed Identity` or `rwl` SAS) for the Azure Blob container, and create an `ON DATABASE` Extended Events session targeting `package0.event_file`.
+- **C:** Incorrect for this requirement. Interactive SQL Server Profiler GUI tracing imposes heavy observer overhead and is deprecated in favor of lightweight Extended Events and Query Store. Why the keyed choice wins: Create a `DATABASE SCOPED CREDENTIAL` (`Managed Identity` or `rwl` SAS) for the Azure Blob container, and create an `ON DATABASE` Extended Events session targeting `package0.event_file`.
+- **D:** Correct. Extended Events in Azure SQL Database requires a `DATABASE SCOPED CREDENTIAL` with Read, Write, and List rights on the target Blob Storage container. In this scenario: Create a `DATABASE SCOPED CREDENTIAL` (`Managed Identity` or `rwl` SAS) for the Azure Blob container, and create an `ON DATABASE` Extended Events session targeting `package0.event_file`.
+- **E:** Correct. Azure SQL Database scopes Extended Event sessions `ON DATABASE` and streams persistent `.xel` ring-rotated files to the Blob container URL. In this scenario: Create a `DATABASE SCOPED CREDENTIAL` (`Managed Identity` or `rwl` SAS) for the Azure Blob container, and create an `ON DATABASE` Extended Events session targeting `package0.event_file`.
+
+### Question 41 — A
+
+Answer: Extended Events (`CREATE EVENT SESSION ... ON DATABASE` in SQL DB or `ON SERVER` in SQL MI/VMs) writing to an `event_file` target in Azure Blob Storage. Extended Events runs inside the SQL OS engine and evaluates predicates synchronously in-process before materializing payloads, whereas Profiler streams heavy trace rows across IPC/network buffers. Unlike ephemeral in-memory `ring_buffer` targets, the `event_file` target persists `.xel` trace files durably in Azure Blob Storage using a database-scoped credential (Managed Identity or SAS). Local study-map skill 3.4 (Monitor Workloads Using Extended Events (`ON DATABASE` vs `ON SERVER` & Persistent Blob `event_file` Targets)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Extended Events in Azure SQL Database and Azure SQL Managed Instance (https://learn.microsoft.com/en-us/azure/azure-sql/database/xevent-db-diff-from-svr).
+
+- **A:** Correct. Unlike ephemeral in-memory `ring_buffer` targets, the `event_file` target persists `.xel` trace files durably in Azure Blob Storage using a database-scoped credential (Managed Identity or SAS). In this scenario: Extended Events runs inside the SQL OS engine and evaluates predicates synchronously in-process before materializing payloads, whereas Profiler streams heavy trace rows across IPC/network buffers.
+- **B:** Incorrect for this requirement. `DBCC SHRINKDATABASE` and `AUTO_SHRINK` cause massive physical index fragmentation (`>90%`), heavy transaction log generation, and immediate file regrow stalls. Why the keyed choice wins: Extended Events runs inside the SQL OS engine and evaluates predicates synchronously in-process before materializing payloads, whereas Profiler streams heavy trace rows across IPC/network buffers.
+- **C:** Incorrect for this requirement. Interactive SQL Server Profiler GUI tracing imposes heavy observer overhead and is deprecated in favor of lightweight Extended Events and Query Store. Why the keyed choice wins: Extended Events runs inside the SQL OS engine and evaluates predicates synchronously in-process before materializing payloads, whereas Profiler streams heavy trace rows across IPC/network buffers.
+- **D:** Incorrect for this requirement. Flushing the entire plan cache repeatedly causes CPU compilation storms across all queries, and disabling statistics forces blind cardinality guesses. Why the keyed choice wins: Extended Events runs inside the SQL OS engine and evaluates predicates synchronously in-process before materializing payloads, whereas Profiler streams heavy trace rows across IPC/network buffers.
+
+### Question 42 — C, E
+
+Answers: Execute `sys.sp_query_store_force_plan @query_id, @plan_id` to pin the historical low-latency execution plan immediately; Execute `sys.sp_query_store_set_hints @query_id, N'OPTION (RECOMPILE)'` (or `MAXDOP` / memory grant hints) without redeploying code. Use `sys.sp_query_store_force_plan` to pin a known-good `plan_id` or `sys.sp_query_store_set_hints` to apply `OPTION (...)` query hints directly to the `query_id`. Local study-map skill 3.5 (Configure and Monitor Query Store, Force Regressed Plans (`sp_query_store_force_plan`), and Set Query Store Hints), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Monitor performance by using the Query Store, plan forcing, and Query Store hints (https://learn.microsoft.com/en-us/sql/relational-databases/performance/monitoring-performance-by-using-the-query-store).
+
+- **A:** Incorrect for this requirement. Flushing the entire plan cache repeatedly causes CPU compilation storms across all queries, and disabling statistics forces blind cardinality guesses. Why the keyed choice wins: Use `sys.sp_query_store_force_plan` to pin a known-good `plan_id` or `sys.sp_query_store_set_hints` to apply `OPTION (...)` query hints directly to the `query_id`.
+- **B:** Incorrect for this requirement. `DBCC SHRINKDATABASE` and `AUTO_SHRINK` cause massive physical index fragmentation (`>90%`), heavy transaction log generation, and immediate file regrow stalls. Why the keyed choice wins: Use `sys.sp_query_store_force_plan` to pin a known-good `plan_id` or `sys.sp_query_store_set_hints` to apply `OPTION (...)` query hints directly to the `query_id`.
+- **C:** Correct. `sp_query_store_force_plan` instructs the optimizer to compile plans matching the forced `plan_id` shape without modifying application T-SQL. In this scenario: Use `sys.sp_query_store_force_plan` to pin a known-good `plan_id` or `sys.sp_query_store_set_hints` to apply `OPTION (...)` query hints directly to the `query_id`.
+- **D:** Incorrect for this requirement. `NOLOCK` (`READ UNCOMMITTED`) permits dirty reads of uncommitted rolled-back rows, double-counting rows, or skipping committed rows during page splits—unacceptable for accurate OLTP. Why the keyed choice wins: Use `sys.sp_query_store_force_plan` to pin a known-good `plan_id` or `sys.sp_query_store_set_hints` to apply `OPTION (...)` query hints directly to the `query_id`.
+- **E:** Correct. Query Store hints attach `OPTION (...)` query hints directly to a `query_id` in Azure SQL DB, SQL MI, and SQL Server 2022+ when app code cannot be edited. In this scenario: Use `sys.sp_query_store_force_plan` to pin a known-good `plan_id` or `sys.sp_query_store_set_hints` to apply `OPTION (...)` query hints directly to the `query_id`.
+
+### Question 43 — A
+
+Answer: Confirm Query Store is `READ_WRITE` with wait capture → Compare plan IDs in Regressed Queries (`sys.query_store_runtime_stats`) → Force prior plan via `sp_query_store_force_plan` → Monitor `force_failure_count` & latency. Confirm Query Store is `READ_WRITE` with wait capture, compare plan metrics in Regressed Queries (`sys.query_store_runtime_stats`), force `plan_id = 22` via `sp_query_store_force_plan`, and monitor `force_failure_count`. Resolving a parameter-sensitive plan regression uses Query Store runtime/wait history to identify the prior known-good `plan_id`, forces it immediately without code changes, and verifies forcing health. Local study-map skill 3.5 (Configure and Monitor Query Store, Force Regressed Plans (`sp_query_store_force_plan`), and Set Query Store Hints), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Monitor performance by using the Query Store, plan forcing, and Query Store hints (https://learn.microsoft.com/en-us/sql/relational-databases/performance/monitoring-performance-by-using-the-query-store).
+
+- **A:** Correct. Resolving a parameter-sensitive plan regression uses Query Store runtime/wait history to identify the prior known-good `plan_id`, forces it immediately without code changes, and verifies forcing health. In this scenario: Confirm Query Store is `READ_WRITE` with wait capture, compare plan metrics in Regressed Queries (`sys.query_store_runtime_stats`), force `plan_id = 22` via `sp_query_store_force_plan`, and monitor `force_failure_count`.
+- **B:** Incorrect for this requirement. Incorrect workflow: purging Query Store erases the historical baseline and prior good plan needed to diagnose and force the healthy execution plan. Why the keyed choice wins: Confirm Query Store is `READ_WRITE` with wait capture, compare plan metrics in Regressed Queries (`sys.query_store_runtime_stats`), force `plan_id = 22` via `sp_query_store_force_plan`, and monitor `force_failure_count`.
+- **C:** Incorrect for this requirement. Incorrect workflow: restarting SQL or running offline index rebuilds causes severe production outage and does not prevent parameter-sensitive plan regressions. Why the keyed choice wins: Confirm Query Store is `READ_WRITE` with wait capture, compare plan metrics in Regressed Queries (`sys.query_store_runtime_stats`), force `plan_id = 22` via `sp_query_store_force_plan`, and monitor `force_failure_count`.
+- **D:** Incorrect for this requirement. Incorrect workflow: system catalog tables cannot be updated directly and flushing the plan cache every minute spikes CPU compilations across the entire workload. Why the keyed choice wins: Confirm Query Store is `READ_WRITE` with wait capture, compare plan metrics in Regressed Queries (`sys.query_store_runtime_stats`), force `plan_id = 22` via `sp_query_store_force_plan`, and monitor `force_failure_count`.
+
+### Question 44 — C
+
+Answer: Read Committed Snapshot Isolation (`READ_COMMITTED_SNAPSHOT = ON`) combined with Optimized Locking (`TID` locking + Lock After Qualification `LAQ`). Instead of holding 2 million separate 96-byte `KEY`/`RID` locks in RAM until commit, rows stamp their row header with the modifying `TID` and release page/row locks as soon as each row is updated, holding only **one** `X` lock on the `TID` itself! `RCSI` uses row versioning so readers never block writers (`LCK_M_S`), while Optimized Locking in Azure SQL DB replaces thousands of row/page locks with a single Transaction ID lock and `LAQ`. Local study-map skill 3.6 (Identify and Resolve Session Blocking (`RCSI`, `Optimized Locking` `TID`/`LAQ`) and Deadlocks (`xml_deadlock_report`)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Understand and resolve Azure SQL blocking problems, deadlocks, RCSI, and Optimized Locking (https://learn.microsoft.com/en-us/azure/azure-sql/database/analyze-prevent-deadlocks).
+
+- **A:** Incorrect for this requirement. `DBCC SHRINKDATABASE` and `AUTO_SHRINK` cause massive physical index fragmentation (`>90%`), heavy transaction log generation, and immediate file regrow stalls. Why the keyed choice wins: Instead of holding 2 million separate 96-byte `KEY`/`RID` locks in RAM until commit, rows stamp their row header with the modifying `TID` and release page/row locks as soon as each row is updated, holding only **one** `X` lock on the `TID` itself!
+- **B:** Incorrect for this requirement. `NOLOCK` (`READ UNCOMMITTED`) permits dirty reads of uncommitted rolled-back rows, double-counting rows, or skipping committed rows during page splits—unacceptable for accurate OLTP. Why the keyed choice wins: Instead of holding 2 million separate 96-byte `KEY`/`RID` locks in RAM until commit, rows stamp their row header with the modifying `TID` and release page/row locks as soon as each row is updated, holding only **one** `X` lock on the `TID` itself!
+- **C:** Correct. `RCSI` uses row versioning so readers never block writers (`LCK_M_S`), while Optimized Locking in Azure SQL DB replaces thousands of row/page locks with a single Transaction ID lock and `LAQ`. In this scenario: Instead of holding 2 million separate 96-byte `KEY`/`RID` locks in RAM until commit, rows stamp their row header with the modifying `TID` and release page/row locks as soon as each row is updated, holding only **one** `X` lock on the `TID` itself!
+- **D:** Incorrect for this requirement. Flushing the entire plan cache repeatedly causes CPU compilation storms across all queries, and disabling statistics forces blind cardinality guesses. Why the keyed choice wins: Instead of holding 2 million separate 96-byte `KEY`/`RID` locks in RAM until commit, rows stamp their row header with the modifying `TID` and release page/row locks as soon as each row is updated, holding only **one** `X` lock on the `TID` itself!
+
+### Question 45 — D
+
+Answer: Query `sys.dm_os_wait_stats` / `sys.dm_db_wait_stats`, `sys.dm_exec_requests`, `sys.dm_tran_locks`, and `sys.dm_db_tempdb_space_usage`. Join `sys.dm_exec_requests` (`sql_handle`, `plan_handle`, `wait_type`, `blocking_session_id`) with `CROSS APPLY sys.dm_exec_sql_text(r.sql_handle)` and `CROSS APPLY sys.dm_exec_query_plan(r.plan_handle)`. Wait categories pinpoint root causes: `PAGEIOLATCH_*` indicates storage data reads, `WRITELOG` indicates log flush latency, `SOS_SCHEDULER_YIELD` indicates CPU pressure, and `LCK_M_*` indicates blocking. Local study-map skill 3.7 (Identify Performance Bottlenecks Using Dynamic Management Views (`sys.dm_os_wait_stats`, `sys.dm_exec_requests`)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Monitor performance using Dynamic Management Views (DMVs) and wait statistics (https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-with-dmvs).
+
+- **A:** Incorrect for this requirement. Interactive SQL Server Profiler GUI tracing imposes heavy observer overhead and is deprecated in favor of lightweight Extended Events and Query Store. Why the keyed choice wins: Join `sys.dm_exec_requests` (`sql_handle`, `plan_handle`, `wait_type`, `blocking_session_id`) with `CROSS APPLY sys.dm_exec_sql_text(r.sql_handle)` and `CROSS APPLY sys.dm_exec_query_plan(r.plan_handle)`.
+- **B:** Incorrect for this requirement. DDM masks query result columns on the fly for non-privileged callers (`db_owner` and `UNMASK` holders see cleartext) using built-in masking functions without altering stored values. Why the keyed choice wins: Join `sys.dm_exec_requests` (`sql_handle`, `plan_handle`, `wait_type`, `blocking_session_id`) with `CROSS APPLY sys.dm_exec_sql_text(r.sql_handle)` and `CROSS APPLY sys.dm_exec_query_plan(r.plan_handle)`.
+- **C:** Incorrect for this requirement. `DBCC SHRINKDATABASE` and `AUTO_SHRINK` cause massive physical index fragmentation (`>90%`), heavy transaction log generation, and immediate file regrow stalls. Why the keyed choice wins: Join `sys.dm_exec_requests` (`sql_handle`, `plan_handle`, `wait_type`, `blocking_session_id`) with `CROSS APPLY sys.dm_exec_sql_text(r.sql_handle)` and `CROSS APPLY sys.dm_exec_query_plan(r.plan_handle)`.
+- **D:** Correct. Wait categories pinpoint root causes: `PAGEIOLATCH_*` indicates storage data reads, `WRITELOG` indicates log flush latency, `SOS_SCHEDULER_YIELD` indicates CPU pressure, and `LCK_M_*` indicates blocking. In this scenario: Join `sys.dm_exec_requests` (`sql_handle`, `plan_handle`, `wait_type`, `blocking_session_id`) with `CROSS APPLY sys.dm_exec_sql_text(r.sql_handle)` and `CROSS APPLY sys.dm_exec_query_plan(r.plan_handle)`.
+
+### Question 46 — C
+
+Answer: Query `sys.dm_os_wait_stats` / `sys.dm_db_wait_stats`, `sys.dm_exec_requests`, `sys.dm_tran_locks`, and `sys.dm_db_tempdb_space_usage`. `sys.dm_os_memory_clerks` breaks down SQL Server memory usage by internal clerk, immediately exposing whether ad-hoc single-use plan bloat (`optimize for ad hoc workloads`) or buffer pool dominates RAM. Wait categories pinpoint root causes: `PAGEIOLATCH_*` indicates storage data reads, `WRITELOG` indicates log flush latency, `SOS_SCHEDULER_YIELD` indicates CPU pressure, and `LCK_M_*` indicates blocking. Local study-map skill 3.7 (Identify Performance Bottlenecks Using Dynamic Management Views (`sys.dm_os_wait_stats`, `sys.dm_exec_requests`)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Monitor performance using Dynamic Management Views (DMVs) and wait statistics (https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-with-dmvs).
+
+- **A:** Incorrect for this requirement. Flushing the entire plan cache repeatedly causes CPU compilation storms across all queries, and disabling statistics forces blind cardinality guesses. Why the keyed choice wins: `sys.dm_os_memory_clerks` breaks down SQL Server memory usage by internal clerk, immediately exposing whether ad-hoc single-use plan bloat (`optimize for ad hoc workloads`) or buffer pool dominates RAM.
+- **B:** Incorrect for this requirement. `DBCC SHRINKDATABASE` and `AUTO_SHRINK` cause massive physical index fragmentation (`>90%`), heavy transaction log generation, and immediate file regrow stalls. Why the keyed choice wins: `sys.dm_os_memory_clerks` breaks down SQL Server memory usage by internal clerk, immediately exposing whether ad-hoc single-use plan bloat (`optimize for ad hoc workloads`) or buffer pool dominates RAM.
+- **C:** Correct. Wait categories pinpoint root causes: `PAGEIOLATCH_*` indicates storage data reads, `WRITELOG` indicates log flush latency, `SOS_SCHEDULER_YIELD` indicates CPU pressure, and `LCK_M_*` indicates blocking. In this scenario: `sys.dm_os_memory_clerks` breaks down SQL Server memory usage by internal clerk, immediately exposing whether ad-hoc single-use plan bloat (`optimize for ad hoc workloads`) or buffer pool dominates RAM.
+- **D:** Incorrect for this requirement. `NOLOCK` (`READ UNCOMMITTED`) permits dirty reads of uncommitted rolled-back rows, double-counting rows, or skipping committed rows during page splits—unacceptable for accurate OLTP. Why the keyed choice wins: `sys.dm_os_memory_clerks` breaks down SQL Server memory usage by internal clerk, immediately exposing whether ad-hoc single-use plan bloat (`optimize for ad hoc workloads`) or buffer pool dominates RAM.
+
+### Question 47 — D
+
+Answer: Create a selective nonclustered covering index (`CREATE NONCLUSTERED INDEX ... INCLUDE (...)`) and rewrite predicates to be SARGable without implicit type conversions. Rewrite `ABS(VoltageKV - 138.0) > 5.0` as `WHERE VoltageKV < 133.0 OR VoltageKV > 143.0` so the optimizer performs two clean `Index Seek` range scans at the low and high ends of `IX_VoltageKV`! Adding `INCLUDE` columns eliminates expensive `Key Lookup` operators, while removing functions (`YEAR(col)`) and `VARCHAR`/`NVARCHAR` mismatches turns full index scans into fast index seeks. Local study-map skill 3.8 (Design Covering/Filtered/Columnstore Indexes and Rewrite Non-SARGable or Implicit-Conversion T-SQL Constructs), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: SQL Server and Azure SQL index design guide and SARGable T-SQL tuning (https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-index-design-guide).
+
+- **A:** Incorrect for this requirement. `NOLOCK` (`READ UNCOMMITTED`) permits dirty reads of uncommitted rolled-back rows, double-counting rows, or skipping committed rows during page splits—unacceptable for accurate OLTP. Why the keyed choice wins: Rewrite `ABS(VoltageKV - 138.0) > 5.0` as `WHERE VoltageKV < 133.0 OR VoltageKV > 143.0` so the optimizer performs two clean `Index Seek` range scans at the low and high ends of `IX_VoltageKV`!
+- **B:** Incorrect for this requirement. Row-by-row cursors and multi-statement TVFs under legacy compatibility levels execute thousands of iterative context switches and 1-row cardinality guesses. Why the keyed choice wins: Rewrite `ABS(VoltageKV - 138.0) > 5.0` as `WHERE VoltageKV < 133.0 OR VoltageKV > 143.0` so the optimizer performs two clean `Index Seek` range scans at the low and high ends of `IX_VoltageKV`!
+- **C:** Incorrect for this requirement. Over-indexing inflates every `INSERT`/`UPDATE`/`DELETE` write and log flush, while `ONLINE = OFF` holds exclusive schema/table locks that block production traffic. Why the keyed choice wins: Rewrite `ABS(VoltageKV - 138.0) > 5.0` as `WHERE VoltageKV < 133.0 OR VoltageKV > 143.0` so the optimizer performs two clean `Index Seek` range scans at the low and high ends of `IX_VoltageKV`!
+- **D:** Correct. Adding `INCLUDE` columns eliminates expensive `Key Lookup` operators, while removing functions (`YEAR(col)`) and `VARCHAR`/`NVARCHAR` mismatches turns full index scans into fast index seeks. In this scenario: Rewrite `ABS(VoltageKV - 138.0) > 5.0` as `WHERE VoltageKV < 133.0 OR VoltageKV > 143.0` so the optimizer performs two clean `Index Seek` range scans at the low and high ends of `IX_VoltageKV`!
+
+### Question 48 — B
+
+Answer: Create a selective nonclustered covering index (`CREATE NONCLUSTERED INDEX ... INCLUDE (...)`) and rewrite predicates to be SARGable without implicit type conversions. Random `NEWID()` inserts scatter across every leaf page causing constant 50/50 page splits, fragmentation, and wider 16-byte clustering keys duplicated into **every** nonclustered index leaf row (use `IDENTITY` or `OPTIMIZE_FOR_SEQUENTIAL_KEY` / sequential keys). Adding `INCLUDE` columns eliminates expensive `Key Lookup` operators, while removing functions (`YEAR(col)`) and `VARCHAR`/`NVARCHAR` mismatches turns full index scans into fast index seeks. Local study-map skill 3.8 (Design Covering/Filtered/Columnstore Indexes and Rewrite Non-SARGable or Implicit-Conversion T-SQL Constructs), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: SQL Server and Azure SQL index design guide and SARGable T-SQL tuning (https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-index-design-guide).
+
+- **A:** Incorrect for this requirement. `DBCC SHRINKDATABASE` and `AUTO_SHRINK` cause massive physical index fragmentation (`>90%`), heavy transaction log generation, and immediate file regrow stalls. Why the keyed choice wins: Random `NEWID()` inserts scatter across every leaf page causing constant 50/50 page splits, fragmentation, and wider 16-byte clustering keys duplicated into **every** nonclustered index leaf row (use `IDENTITY` or `OPTIMIZE_FOR_SEQUENTIAL_KEY` / sequential keys).
+- **B:** Correct. Adding `INCLUDE` columns eliminates expensive `Key Lookup` operators, while removing functions (`YEAR(col)`) and `VARCHAR`/`NVARCHAR` mismatches turns full index scans into fast index seeks. In this scenario: Random `NEWID()` inserts scatter across every leaf page causing constant 50/50 page splits, fragmentation, and wider 16-byte clustering keys duplicated into **every** nonclustered index leaf row (use `IDENTITY` or `OPTIMIZE_FOR_SEQUENTIAL_KEY` / sequential keys).
+- **C:** Incorrect for this requirement. Over-indexing inflates every `INSERT`/`UPDATE`/`DELETE` write and log flush, while `ONLINE = OFF` holds exclusive schema/table locks that block production traffic. Why the keyed choice wins: Random `NEWID()` inserts scatter across every leaf page causing constant 50/50 page splits, fragmentation, and wider 16-byte clustering keys duplicated into **every** nonclustered index leaf row (use `IDENTITY` or `OPTIMIZE_FOR_SEQUENTIAL_KEY` / sequential keys).
+- **D:** Incorrect for this requirement. Row-by-row cursors and multi-statement TVFs under legacy compatibility levels execute thousands of iterative context switches and 1-row cardinality guesses. Why the keyed choice wins: Random `NEWID()` inserts scatter across every leaf page causing constant 50/50 page splits, fragmentation, and wider 16-byte clustering keys duplicated into **every** nonclustered index leaf row (use `IDENTITY` or `OPTIMIZE_FOR_SEQUENTIAL_KEY` / sequential keys).
+
+### Question 49 — D
+
+Answer: Inspect Actual Execution Plans (`Key Lookup`, `TempDB` sort/hash spill warnings, cardinality skew) alongside SQL Intelligent Insights (`SQLInsights`). To prevent the **Halloween Problem** (reading the same updated row twice when an `UPDATE` modifies an index key column being scanned), SQL spools qualifying rows into `tempdb` first unless a non-mutated index drives the scan. Actual Execution Plans expose runtime row vs estimated row skews and `tempdb` spills, while SQL Intelligent Insights automatically compares a 7-day rolling baseline to diagnose regressions. Local study-map skill 3.9 (Analyze Execution Plans (`Key Lookup`, `TempDB` Spills, Row Skew) and Monitor via SQL Intelligent Insights), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Execution plans and SQL Intelligent Insights automated performance diagnostics (https://learn.microsoft.com/en-us/azure/azure-sql/database/intelligent-insights-overview).
+
+- **A:** Incorrect for this requirement. Interactive SQL Server Profiler GUI tracing imposes heavy observer overhead and is deprecated in favor of lightweight Extended Events and Query Store. Why the keyed choice wins: To prevent the **Halloween Problem** (reading the same updated row twice when an `UPDATE` modifies an index key column being scanned), SQL spools qualifying rows into `tempdb` first unless a non-mutated index drives the scan.
+- **B:** Incorrect for this requirement. Flushing the entire plan cache repeatedly causes CPU compilation storms across all queries, and disabling statistics forces blind cardinality guesses. Why the keyed choice wins: To prevent the **Halloween Problem** (reading the same updated row twice when an `UPDATE` modifies an index key column being scanned), SQL spools qualifying rows into `tempdb` first unless a non-mutated index drives the scan.
+- **C:** Incorrect for this requirement. `NOLOCK` (`READ UNCOMMITTED`) permits dirty reads of uncommitted rolled-back rows, double-counting rows, or skipping committed rows during page splits—unacceptable for accurate OLTP. Why the keyed choice wins: To prevent the **Halloween Problem** (reading the same updated row twice when an `UPDATE` modifies an index key column being scanned), SQL spools qualifying rows into `tempdb` first unless a non-mutated index drives the scan.
+- **D:** Correct. Actual Execution Plans expose runtime row vs estimated row skews and `tempdb` spills, while SQL Intelligent Insights automatically compares a 7-day rolling baseline to diagnose regressions. In this scenario: To prevent the **Halloween Problem** (reading the same updated row twice when an `UPDATE` modifies an index key column being scanned), SQL spools qualifying rows into `tempdb` first unless a non-mutated index drives the scan.
+
+### Question 50 — C
+
+Answer: Inspect Actual Execution Plans (`Key Lookup`, `TempDB` sort/hash spill warnings, cardinality skew) alongside SQL Intelligent Insights (`SQLInsights`). Enabling `ALTER DATABASE SCOPED CONFIGURATION SET LAST_QUERY_PLAN_STATS = ON` captures lightweight actual row-count execution plans on demand without running heavy live Extended Events `query_post_execution_showplan` traces! Actual Execution Plans expose runtime row vs estimated row skews and `tempdb` spills, while SQL Intelligent Insights automatically compares a 7-day rolling baseline to diagnose regressions. Local study-map skill 3.9 (Analyze Execution Plans (`Key Lookup`, `TempDB` Spills, Row Skew) and Monitor via SQL Intelligent Insights), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Execution plans and SQL Intelligent Insights automated performance diagnostics (https://learn.microsoft.com/en-us/azure/azure-sql/database/intelligent-insights-overview).
+
+- **A:** Incorrect for this requirement. BYOK TDE wraps the symmetric Database Encryption Key (`DEK`) with an asymmetric RSA key in Key Vault or Managed HSM so security admins control key rotation and instant revocation. Why the keyed choice wins: Enabling `ALTER DATABASE SCOPED CONFIGURATION SET LAST_QUERY_PLAN_STATS = ON` captures lightweight actual row-count execution plans on demand without running heavy live Extended Events `query_post_execution_showplan` traces!
+- **B:** Incorrect for this requirement. Interactive SQL Server Profiler GUI tracing imposes heavy observer overhead and is deprecated in favor of lightweight Extended Events and Query Store. Why the keyed choice wins: Enabling `ALTER DATABASE SCOPED CONFIGURATION SET LAST_QUERY_PLAN_STATS = ON` captures lightweight actual row-count execution plans on demand without running heavy live Extended Events `query_post_execution_showplan` traces!
+- **C:** Correct. Actual Execution Plans expose runtime row vs estimated row skews and `tempdb` spills, while SQL Intelligent Insights automatically compares a 7-day rolling baseline to diagnose regressions. In this scenario: Enabling `ALTER DATABASE SCOPED CONFIGURATION SET LAST_QUERY_PLAN_STATS = ON` captures lightweight actual row-count execution plans on demand without running heavy live Extended Events `query_post_execution_showplan` traces!
+- **D:** Incorrect for this requirement. Both standalone Data Migration Assistant (retired July 2025) and SQL Server Stretch Database (retired) are deprecated; use Azure Migrate / Azure SQL Migration extension and partitioning/Fabric/Blob tiering. Why the keyed choice wins: Enabling `ALTER DATABASE SCOPED CONFIGURATION SET LAST_QUERY_PLAN_STATS = ON` captures lightweight actual row-count execution plans on demand without running heavy live Extended Events `query_post_execution_showplan` traces!
+
+### Question 51 — A
+
+Answer: Yes — the proposed configuration satisfies every stated technical, security, and availability requirement. Yes — SQL Server 2019/2022 and Azure SQL support **resumable online index creation** (`CREATE INDEX ... WITH (ONLINE = ON, RESUMABLE = ON)`) in addition to resumable index rebuilds! The proposed architecture, T-SQL syntax, and operational parameters satisfy every requirement without violating Azure SQL platform constraints. Local study-map skill 3.10 (Implement Fragmentation-Aware Index Rebuilds (`ONLINE`, `RESUMABLE`), Async Statistics, and `DBCC CHECKDB`), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Optimize index maintenance, statistics updates, and DBCC CHECKDB integrity checks (https://learn.microsoft.com/en-us/sql/relational-databases/indexes/reorganize-and-rebuild-indexes).
+
+- **A:** Correct. The proposed architecture, T-SQL syntax, and operational parameters satisfy every requirement without violating Azure SQL platform constraints. In this scenario: Yes — SQL Server 2019/2022 and Azure SQL support **resumable online index creation** (`CREATE INDEX ... WITH (ONLINE = ON, RESUMABLE = ON)`) in addition to resumable index rebuilds!
+- **B:** Incorrect for this requirement. `SqlPackage` exports tables sequentially rather than at a single LSN, so exporting a live write-heavy database without creating a point-in-time copy produces torn foreign-key state. Why the keyed choice wins: Yes — SQL Server 2019/2022 and Azure SQL support **resumable online index creation** (`CREATE INDEX ... WITH (ONLINE = ON, RESUMABLE = ON)`) in addition to resumable index rebuilds!
+- **C:** Incorrect for this requirement. Dynamic Data Masking is not encryption at rest or row-level access control; users with ad-hoc `WHERE` privileges can still infer masked values unless RLS or encryption is applied. Why the keyed choice wins: Yes — SQL Server 2019/2022 and Azure SQL support **resumable online index creation** (`CREATE INDEX ... WITH (ONLINE = ON, RESUMABLE = ON)`) in addition to resumable index rebuilds!
+- **D:** Incorrect for this requirement. SQL Server write-ahead logging performs sequential unbuffered writes; enabling `ReadOnly` or `ReadWrite` host caching on `.ldf` disks degrades throughput or risks corruption. Why the keyed choice wins: Yes — SQL Server 2019/2022 and Azure SQL support **resumable online index creation** (`CREATE INDEX ... WITH (ONLINE = ON, RESUMABLE = ON)`) in addition to resumable index rebuilds!
+
+### Question 52 — B
+
+Answer: Azure SQL Database Automatic Tuning (`FORCE_LAST_GOOD_PLAN = ON`, `CREATE_INDEX = ON`, `DROP_INDEX = ON`). Azure SQL Managed Instance (and SQL Server 2017+) supports `FORCE_LAST_GOOD_PLAN = ON` Automatic Plan Correction, whereas automated `CREATE_INDEX` and `DROP_INDEX` are specific to Azure SQL Database. Automatic Tuning continuously monitors Query Store, automatically forces prior plans when regressions occur, creates validated missing nonclustered indexes, and removes unused duplicate indexes. Local study-map skill 3.11 (Configure Azure SQL Database Automatic Tuning (`FORCE_LAST_GOOD_PLAN`, `CREATE_INDEX`, `DROP_INDEX`)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Automatic tuning in Azure SQL Database and Azure SQL Managed Instance (https://learn.microsoft.com/en-us/azure/azure-sql/database/automatic-tuning-overview).
+
+- **A:** Incorrect for this requirement. Flushing the entire plan cache repeatedly causes CPU compilation storms across all queries, and disabling statistics forces blind cardinality guesses. Why the keyed choice wins: Azure SQL Managed Instance (and SQL Server 2017+) supports `FORCE_LAST_GOOD_PLAN = ON` Automatic Plan Correction, whereas automated `CREATE_INDEX` and `DROP_INDEX` are specific to Azure SQL Database.
+- **B:** Correct. Automatic Tuning continuously monitors Query Store, automatically forces prior plans when regressions occur, creates validated missing nonclustered indexes, and removes unused duplicate indexes. In this scenario: Azure SQL Managed Instance (and SQL Server 2017+) supports `FORCE_LAST_GOOD_PLAN = ON` Automatic Plan Correction, whereas automated `CREATE_INDEX` and `DROP_INDEX` are specific to Azure SQL Database.
+- **C:** Incorrect for this requirement. `DBCC SHRINKDATABASE` and `AUTO_SHRINK` cause massive physical index fragmentation (`>90%`), heavy transaction log generation, and immediate file regrow stalls. Why the keyed choice wins: Azure SQL Managed Instance (and SQL Server 2017+) supports `FORCE_LAST_GOOD_PLAN = ON` Automatic Plan Correction, whereas automated `CREATE_INDEX` and `DROP_INDEX` are specific to Azure SQL Database.
+- **D:** Incorrect for this requirement. Over-indexing inflates every `INSERT`/`UPDATE`/`DELETE` write and log flush, while `ONLINE = OFF` holds exclusive schema/table locks that block production traffic. Why the keyed choice wins: Azure SQL Managed Instance (and SQL Server 2017+) supports `FORCE_LAST_GOOD_PLAN = ON` Automatic Plan Correction, whereas automated `CREATE_INDEX` and `DROP_INDEX` are specific to Azure SQL Database.
+
+### Question 53 — B
+
+Answer: Configure `cost threshold for parallelism`, `MAXDOP`, `max server memory (MB)`, and Resource Governor (`WORKLOAD GROUP` + `RESOURCE POOL` + classifier UDF) on SQL MI / VMs. Enabling `sp_configure 'optimize for ad hoc workloads', 1; RECONFIGURE;` caches a tiny plan stub on first execution and stores the full compiled plan only if the exact batch executes a second time. Tuning `cost threshold for parallelism` (e.g., 50) and `MAXDOP` curbs OLTP `CXPACKET` waits, while Resource Governor throttles reporting CPU/memory caps on SQL Server and SQL Managed Instance. Local study-map skill 3.12 (Configure Server Performance Settings (`MAXDOP`, `cost threshold`, `max server memory`) and Resource Governor), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Server configuration options (MAXDOP, memory) and Resource Governor workload isolation (https://learn.microsoft.com/en-us/sql/relational-databases/resource-governor/resource-governor).
+
+- **A:** Incorrect for this requirement. `DBCC SHRINKDATABASE` and `AUTO_SHRINK` cause massive physical index fragmentation (`>90%`), heavy transaction log generation, and immediate file regrow stalls. Why the keyed choice wins: Enabling `sp_configure 'optimize for ad hoc workloads', 1; RECONFIGURE;` caches a tiny plan stub on first execution and stores the full compiled plan only if the exact batch executes a second time.
+- **B:** Correct. Tuning `cost threshold for parallelism` (e.g., 50) and `MAXDOP` curbs OLTP `CXPACKET` waits, while Resource Governor throttles reporting CPU/memory caps on SQL Server and SQL Managed Instance. In this scenario: Enabling `sp_configure 'optimize for ad hoc workloads', 1; RECONFIGURE;` caches a tiny plan stub on first execution and stores the full compiled plan only if the exact batch executes a second time.
+- **C:** Incorrect for this requirement. Single Azure SQL Databases do not expose `CREATE WORKLOAD GROUP` or Resource Governor; compute isolation in SQL Database uses Elastic Pools, Hyperscale named replicas, or separate DBs. Why the keyed choice wins: Enabling `sp_configure 'optimize for ad hoc workloads', 1; RECONFIGURE;` caches a tiny plan stub on first execution and stores the full compiled plan only if the exact batch executes a second time.
+- **D:** Incorrect for this requirement. Flushing the entire plan cache repeatedly causes CPU compilation storms across all queries, and disabling statistics forces blind cardinality guesses. Why the keyed choice wins: Enabling `sp_configure 'optimize for ad hoc workloads', 1; RECONFIGURE;` caches a tiny plan stub on first execution and stores the full compiled plan only if the exact batch executes a second time.
+
+### Question 54 — C, E, F
+
+Answers: Leverage Parameter Sensitive Plan (`PSP`) optimization under compatibility level `160` to cache separate plans for skewed parameter sizes; Leverage Percentile and Persistence Memory Grant Feedback (`compat 160`) to eliminate recurring `tempdb` sort/hash spills and wasted RAM; Leverage Scalar UDF Inlining (`compat 150+`) so eligible T-SQL scalar functions fold into relational subqueries enabling parallel plans. Parameter Sensitive Plan (`PSP`) optimization, Percentile & Persistence Memory Grant Feedback, and Scalar UDF Inlining operate automatically under compatibility level `160`. Local study-map skill 3.14 (Identify Use Cases for Intelligent Query Processing (`PSP` Optimization, Memory Grant Feedback, Scalar UDF Inlining)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Intelligent Query Processing (IQP) features in SQL databases (https://learn.microsoft.com/en-us/sql/relational-databases/performance/intelligent-query-processing).
+
+- **A:** Incorrect for this requirement. Row-by-row cursors and multi-statement TVFs under legacy compatibility levels execute thousands of iterative context switches and 1-row cardinality guesses. Why the keyed choice wins: Parameter Sensitive Plan (`PSP`) optimization, Percentile & Persistence Memory Grant Feedback, and Scalar UDF Inlining operate automatically under compatibility level `160`.
+- **B:** Incorrect for this requirement. Flushing the entire plan cache repeatedly causes CPU compilation storms across all queries, and disabling statistics forces blind cardinality guesses. Why the keyed choice wins: Parameter Sensitive Plan (`PSP`) optimization, Percentile & Persistence Memory Grant Feedback, and Scalar UDF Inlining operate automatically under compatibility level `160`.
+- **C:** Correct. Memory Grant Feedback adjusts overestimated or underestimated query memory grants across executions and persists learned grants in Query Store. In this scenario: Parameter Sensitive Plan (`PSP`) optimization, Percentile & Persistence Memory Grant Feedback, and Scalar UDF Inlining operate automatically under compatibility level `160`.
+- **D:** Incorrect for this requirement. `NOLOCK` (`READ UNCOMMITTED`) permits dirty reads of uncommitted rolled-back rows, double-counting rows, or skipping committed rows during page splits—unacceptable for accurate OLTP. Why the keyed choice wins: Parameter Sensitive Plan (`PSP`) optimization, Percentile & Persistence Memory Grant Feedback, and Scalar UDF Inlining operate automatically under compatibility level `160`.
+- **E:** Correct. Scalar UDF Inlining transforms row-by-row T-SQL scalar function invocations into set-based relational operators that no longer block parallelism. In this scenario: Parameter Sensitive Plan (`PSP`) optimization, Percentile & Persistence Memory Grant Feedback, and Scalar UDF Inlining operate automatically under compatibility level `160`.
+- **F:** Correct. PSP optimization generates up to three active dispatcher query variants so small lookups use Index Seeks while massive skews use Parallel Scans. In this scenario: Parameter Sensitive Plan (`PSP`) optimization, Percentile & Persistence Memory Grant Feedback, and Scalar UDF Inlining operate automatically under compatibility level `160`.
+
+### Question 55 — C, E
+
+Answers: Create a Windows/SQL Credential and map it to a SQL Server Agent Subsystem Proxy (`CmdExec` / `PowerShell`) instead of granting `sysadmin`; Configure Database Mail, define an Agent Operator, and create SQL Server Agent Alerts for Severity `19–25` and Errors `823`, `824`, and `825`. Create Credential-backed Subsystem Proxies for non-`sysadmin` job steps, and attach Database Mail Operators to Severity `19–25` and Error `823–825` Alerts. Local study-map skill 4.1 (Create and Schedule SQL Server Agent Maintenance Jobs, Proxies, Severity `19–25` Alerts, and Database Mail), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: SQL Server Agent jobs, schedules, alerts, and Database Mail operators (https://learn.microsoft.com/en-us/sql/ssms/agent/sql-server-agent).
+
+- **A:** Incorrect for this requirement. Sharing `sa` credentials or granting `sysadmin` violates least privilege, bypasses auditing attribution, and fails Microsoft Entra-only zero-password compliance. Why the keyed choice wins: Create Credential-backed Subsystem Proxies for non-`sysadmin` job steps, and attach Database Mail Operators to Severity `19–25` and Error `823–825` Alerts.
+- **B:** Incorrect for this requirement. Opening `0.0.0.0–255.255.255.255` exposes the SQL endpoint to the entire public internet rather than isolating traffic via Private Endpoints or scoped IP rules. Why the keyed choice wins: Create Credential-backed Subsystem Proxies for non-`sysadmin` job steps, and attach Database Mail Operators to Severity `19–25` and Error `823–825` Alerts.
+- **C:** Correct. Severity `19–25` and I/O errors `823–825` indicate critical resource exhaustion or storage corruption requiring immediate DBA notification. In this scenario: Create Credential-backed Subsystem Proxies for non-`sysadmin` job steps, and attach Database Mail Operators to Severity `19–25` and Error `823–825` Alerts.
+- **D:** Incorrect for this requirement. `DBCC SHRINKDATABASE` and `AUTO_SHRINK` cause massive physical index fragmentation (`>90%`), heavy transaction log generation, and immediate file regrow stalls. Why the keyed choice wins: Create Credential-backed Subsystem Proxies for non-`sysadmin` job steps, and attach Database Mail Operators to Severity `19–25` and Error `823–825` Alerts.
+- **E:** Correct. SQL Server Agent proxies let non-`sysadmin` job owners execute external subsystem steps under a scoped least-privilege identity. In this scenario: Create Credential-backed Subsystem Proxies for non-`sysadmin` job steps, and attach Database Mail Operators to Severity `19–25` and Error `823–825` Alerts.
+
+### Question 56 — B
+
+Answer: SQL Server Agent multi-step jobs using Credentials + Subsystem Proxies, Severity `19–25` / Error `823–825` Alerts, and Database Mail Operators. Whenever the primary assigned Operator cannot be reached (for example, outside their configured pager on-duty weekday/hour schedule or if notification delivery to primary operators fails). Least-privilege Agent steps run under Credential-backed Proxies rather than `sysadmin`, while SQL Agent Alerts notify Operators immediately via Database Mail on fatal engine/I/O errors. Local study-map skill 4.1 (Create and Schedule SQL Server Agent Maintenance Jobs, Proxies, Severity `19–25` Alerts, and Database Mail), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: SQL Server Agent jobs, schedules, alerts, and Database Mail operators (https://learn.microsoft.com/en-us/sql/ssms/agent/sql-server-agent).
+
+- **A:** Incorrect for this requirement. Single Azure SQL Databases do not expose `SQLServerAgent`; cross-database PaaS scheduling uses Elastic Job Agents with Managed Identity or Azure Automation. Why the keyed choice wins: Whenever the primary assigned Operator cannot be reached (for example, outside their configured pager on-duty weekday/hour schedule or if notification delivery to primary operators fails).
+- **B:** Correct. Least-privilege Agent steps run under Credential-backed Proxies rather than `sysadmin`, while SQL Agent Alerts notify Operators immediately via Database Mail on fatal engine/I/O errors. In this scenario: Whenever the primary assigned Operator cannot be reached (for example, outside their configured pager on-duty weekday/hour schedule or if notification delivery to primary operators fails).
+- **C:** Incorrect for this requirement. Sharing `sa` credentials or granting `sysadmin` violates least privilege, bypasses auditing attribution, and fails Microsoft Entra-only zero-password compliance. Why the keyed choice wins: Whenever the primary assigned Operator cannot be reached (for example, outside their configured pager on-duty weekday/hour schedule or if notification delivery to primary operators fails).
+- **D:** Incorrect for this requirement. `DBCC SHRINKDATABASE` and `AUTO_SHRINK` cause massive physical index fragmentation (`>90%`), heavy transaction log generation, and immediate file regrow stalls. Why the keyed choice wins: Whenever the primary assigned Operator cannot be reached (for example, outside their configured pager on-duty weekday/hour schedule or if notification delivery to primary operators fails).
+
+### Question 57 — A
+
+Answer: SQL Server Agent multi-step jobs using Credentials + Subsystem Proxies, Severity `19–25` / Error `823–825` Alerts, and Database Mail Operators. Create a **Shared Schedule** (`sp_add_schedule` -> attach via `sp_attach_schedule` to all six jobs) in `msdb` so modifying one schedule updates every attached job simultaneously. Least-privilege Agent steps run under Credential-backed Proxies rather than `sysadmin`, while SQL Agent Alerts notify Operators immediately via Database Mail on fatal engine/I/O errors. Local study-map skill 4.1 (Create and Schedule SQL Server Agent Maintenance Jobs, Proxies, Severity `19–25` Alerts, and Database Mail), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: SQL Server Agent jobs, schedules, alerts, and Database Mail operators (https://learn.microsoft.com/en-us/sql/ssms/agent/sql-server-agent).
+
+- **A:** Correct. Least-privilege Agent steps run under Credential-backed Proxies rather than `sysadmin`, while SQL Agent Alerts notify Operators immediately via Database Mail on fatal engine/I/O errors. In this scenario: Create a **Shared Schedule** (`sp_add_schedule` -> attach via `sp_attach_schedule` to all six jobs) in `msdb` so modifying one schedule updates every attached job simultaneously.
+- **B:** Incorrect for this requirement. Interactive SQL Server Profiler GUI tracing imposes heavy observer overhead and is deprecated in favor of lightweight Extended Events and Query Store. Why the keyed choice wins: Create a **Shared Schedule** (`sp_add_schedule` -> attach via `sp_attach_schedule` to all six jobs) in `msdb` so modifying one schedule updates every attached job simultaneously.
+- **C:** Incorrect for this requirement. Sharing `sa` credentials or granting `sysadmin` violates least privilege, bypasses auditing attribution, and fails Microsoft Entra-only zero-password compliance. Why the keyed choice wins: Create a **Shared Schedule** (`sp_add_schedule` -> attach via `sp_attach_schedule` to all six jobs) in `msdb` so modifying one schedule updates every attached job simultaneously.
+- **D:** Incorrect for this requirement. Flushing the entire plan cache repeatedly causes CPU compilation storms across all queries, and disabling statistics forces blind cardinality guesses. Why the keyed choice wins: Create a **Shared Schedule** (`sp_add_schedule` -> attach via `sp_attach_schedule` to all six jobs) in `msdb` so modifying one schedule updates every attached job simultaneously.
+
+### Question 58 — A
+
+Answer: Inspect `msdb.dbo.sysjobhistory` / `sp_help_jobhistory`, verify proxy/credential permissions, and account for SQL Managed Instance Agent subsystem boundaries. Install a trusted internal CA certificate bound to SQL Server Configuration Manager (`Force Encryption`) or pass `-Encrypt Mandatory -TrustServerCertificate` only where internal loopback policy permits, rather than disabling TLS 1.2. Job step failures surface in `msdb.dbo.sysjobhistory`; on SQL Managed Instance, Agent runs inside PaaS boundaries where host OS `CmdExec`/ActiveX access is restricted compared to IaaS VMs. Local study-map skill 4.2 (Troubleshoot SQL Server Agent Job Histories, Credential/Proxy Permissions, and SQL MI Subsystem Boundaries), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Troubleshoot SQL Server Agent jobs, proxies, and SQL Managed Instance Agent differences (https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/transact-sql-tsql-differences-sql-server).
+
+- **A:** Correct. Job step failures surface in `msdb.dbo.sysjobhistory`; on SQL Managed Instance, Agent runs inside PaaS boundaries where host OS `CmdExec`/ActiveX access is restricted compared to IaaS VMs. In this scenario: Install a trusted internal CA certificate bound to SQL Server Configuration Manager (`Force Encryption`) or pass `-Encrypt Mandatory -TrustServerCertificate` only where internal loopback policy permits, rather than disabling TLS 1.2.
+- **B:** Incorrect for this requirement. Both standalone Data Migration Assistant (retired July 2025) and SQL Server Stretch Database (retired) are deprecated; use Azure Migrate / Azure SQL Migration extension and partitioning/Fabric/Blob tiering. Why the keyed choice wins: Install a trusted internal CA certificate bound to SQL Server Configuration Manager (`Force Encryption`) or pass `-Encrypt Mandatory -TrustServerCertificate` only where internal loopback policy permits, rather than disabling TLS 1.2.
+- **C:** Incorrect for this requirement. Single Azure SQL Databases do not expose `SQLServerAgent`; cross-database PaaS scheduling uses Elastic Job Agents with Managed Identity or Azure Automation. Why the keyed choice wins: Install a trusted internal CA certificate bound to SQL Server Configuration Manager (`Force Encryption`) or pass `-Encrypt Mandatory -TrustServerCertificate` only where internal loopback policy permits, rather than disabling TLS 1.2.
+- **D:** Incorrect for this requirement. Sharing `sa` credentials or granting `sysadmin` violates least privilege, bypasses auditing attribution, and fails Microsoft Entra-only zero-password compliance. Why the keyed choice wins: Install a trusted internal CA certificate bound to SQL Server Configuration Manager (`Force Encryption`) or pass `-Encrypt Mandatory -TrustServerCertificate` only where internal loopback policy permits, rather than disabling TLS 1.2.
+
+### Question 59 — D
+
+Answer: Inspect `msdb.dbo.sysjobhistory` / `sp_help_jobhistory`, verify proxy/credential permissions, and account for SQL Managed Instance Agent subsystem boundaries. Use **CETAS** (`CREATE EXTERNAL TABLE AS SELECT` on SQL Server 2022 / SQL MI where enabled with `DATABASE SCOPED CREDENTIAL` and `EXTERNAL DATA SOURCE`) or orchestrate Blob exports via Azure Data Factory / Azure Automation. Job step failures surface in `msdb.dbo.sysjobhistory`; on SQL Managed Instance, Agent runs inside PaaS boundaries where host OS `CmdExec`/ActiveX access is restricted compared to IaaS VMs. Local study-map skill 4.2 (Troubleshoot SQL Server Agent Job Histories, Credential/Proxy Permissions, and SQL MI Subsystem Boundaries), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Troubleshoot SQL Server Agent jobs, proxies, and SQL Managed Instance Agent differences (https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/transact-sql-tsql-differences-sql-server).
+
+- **A:** Incorrect for this requirement. Flushing the entire plan cache repeatedly causes CPU compilation storms across all queries, and disabling statistics forces blind cardinality guesses. Why the keyed choice wins: Use **CETAS** (`CREATE EXTERNAL TABLE AS SELECT` on SQL Server 2022 / SQL MI where enabled with `DATABASE SCOPED CREDENTIAL` and `EXTERNAL DATA SOURCE`) or orchestrate Blob exports via Azure Data Factory / Azure Automation.
+- **B:** Incorrect for this requirement. `DBCC SHRINKDATABASE` and `AUTO_SHRINK` cause massive physical index fragmentation (`>90%`), heavy transaction log generation, and immediate file regrow stalls. Why the keyed choice wins: Use **CETAS** (`CREATE EXTERNAL TABLE AS SELECT` on SQL Server 2022 / SQL MI where enabled with `DATABASE SCOPED CREDENTIAL` and `EXTERNAL DATA SOURCE`) or orchestrate Blob exports via Azure Data Factory / Azure Automation.
+- **C:** Incorrect for this requirement. BYOK TDE wraps the symmetric Database Encryption Key (`DEK`) with an asymmetric RSA key in Key Vault or Managed HSM so security admins control key rotation and instant revocation. Why the keyed choice wins: Use **CETAS** (`CREATE EXTERNAL TABLE AS SELECT` on SQL Server 2022 / SQL MI where enabled with `DATABASE SCOPED CREDENTIAL` and `EXTERNAL DATA SOURCE`) or orchestrate Blob exports via Azure Data Factory / Azure Automation.
+- **D:** Correct. Job step failures surface in `msdb.dbo.sysjobhistory`; on SQL Managed Instance, Agent runs inside PaaS boundaries where host OS `CmdExec`/ActiveX access is restricted compared to IaaS VMs. In this scenario: Use **CETAS** (`CREATE EXTERNAL TABLE AS SELECT` on SQL Server 2022 / SQL MI where enabled with `DATABASE SCOPED CREDENTIAL` and `EXTERNAL DATA SOURCE`) or orchestrate Blob exports via Azure Data Factory / Azure Automation.
+
+### Question 60 — D, E
+
+Answers: Mark sensitive parameters with `@secure()` in Bicep and pass Key Vault secret references from the parameter file rather than cleartext values; Run `az deployment group what-if` (or `New-AzResourceGroupDeployment -WhatIf`) as a pull-request gate before applying template changes. Mark sensitive Bicep parameters with `@secure()` backed by Key Vault secret references, and run `az deployment group what-if` before deployment. Local study-map skill 4.3 (Automate Idempotent Deployment Using Bicep and ARM Templates with `@secure()` Key Vault References & `what-if`), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Deploy Azure SQL resources using Bicep and Azure Resource Manager (ARM) templates (https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-Quickstart-bicep).
+
+- **A:** Incorrect for this requirement. `DBCC SHRINKDATABASE` and `AUTO_SHRINK` cause massive physical index fragmentation (`>90%`), heavy transaction log generation, and immediate file regrow stalls. Why the keyed choice wins: Mark sensitive Bicep parameters with `@secure()` backed by Key Vault secret references, and run `az deployment group what-if` before deployment.
+- **B:** Incorrect for this requirement. Opening `0.0.0.0–255.255.255.255` exposes the SQL endpoint to the entire public internet rather than isolating traffic via Private Endpoints or scoped IP rules. Why the keyed choice wins: Mark sensitive Bicep parameters with `@secure()` backed by Key Vault secret references, and run `az deployment group what-if` before deployment.
+- **C:** Incorrect for this requirement. Sharing `sa` credentials or granting `sysadmin` violates least privilege, bypasses auditing attribution, and fails Microsoft Entra-only zero-password compliance. Why the keyed choice wins: Mark sensitive Bicep parameters with `@secure()` backed by Key Vault secret references, and run `az deployment group what-if` before deployment.
+- **D:** Correct. `what-if` calculates predicted `Create`, `Modify`, `Delete`, and `Ignore` operations against live Azure SQL resources to catch destructive config drift. In this scenario: Mark sensitive Bicep parameters with `@secure()` backed by Key Vault secret references, and run `az deployment group what-if` before deployment.
+- **E:** Correct. `@secure()` prevents secret logging in deployment history, while Key Vault references resolve secrets inside ARM at deploy time without exposing them to CI runners. In this scenario: Mark sensitive Bicep parameters with `@secure()` backed by Key Vault secret references, and run `az deployment group what-if` before deployment.
+
+### Question 61 — D
+
+Answer: Declarative Bicep / ARM templates (`Microsoft.Sql/servers`) referencing Azure Key Vault secrets via `@secure()` parameters and validated with `az deployment group what-if`. Deploy a `CanNotDelete` (`Delete` lock) `Microsoft.Authorization/locks@2020-05-01` child resource on the production logical SQL server and resource group. Bicep compiles to idempotent ARM JSON, injects secrets directly from Key Vault without exposing plaintext in CI logs, and previews resource mutations safely via `what-if` before execution. Local study-map skill 4.3 (Automate Idempotent Deployment Using Bicep and ARM Templates with `@secure()` Key Vault References & `what-if`), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Deploy Azure SQL resources using Bicep and Azure Resource Manager (ARM) templates (https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-Quickstart-bicep).
+
+- **A:** Incorrect for this requirement. Sharing `sa` credentials or granting `sysadmin` violates least privilege, bypasses auditing attribution, and fails Microsoft Entra-only zero-password compliance. Why the keyed choice wins: Deploy a `CanNotDelete` (`Delete` lock) `Microsoft.Authorization/locks@2020-05-01` child resource on the production logical SQL server and resource group.
+- **B:** Incorrect for this requirement. Opening `0.0.0.0–255.255.255.255` exposes the SQL endpoint to the entire public internet rather than isolating traffic via Private Endpoints or scoped IP rules. Why the keyed choice wins: Deploy a `CanNotDelete` (`Delete` lock) `Microsoft.Authorization/locks@2020-05-01` child resource on the production logical SQL server and resource group.
+- **C:** Incorrect for this requirement. Both standalone Data Migration Assistant (retired July 2025) and SQL Server Stretch Database (retired) are deprecated; use Azure Migrate / Azure SQL Migration extension and partitioning/Fabric/Blob tiering. Why the keyed choice wins: Deploy a `CanNotDelete` (`Delete` lock) `Microsoft.Authorization/locks@2020-05-01` child resource on the production logical SQL server and resource group.
+- **D:** Correct. Bicep compiles to idempotent ARM JSON, injects secrets directly from Key Vault without exposing plaintext in CI logs, and previews resource mutations safely via `what-if` before execution. In this scenario: Deploy a `CanNotDelete` (`Delete` lock) `Microsoft.Authorization/locks@2020-05-01` child resource on the production logical SQL server and resource group.
+
+### Question 62 — A
+
+Answer: Idempotent day-2 scripting with Azure PowerShell (`New-AzSqlDatabase`, `Set-AzSqlElasticPool`) or Azure CLI (`az sql db update`, `az sql mi update`). `az sql db ltr-policy set` configures weekly, monthly, and yearly ISO-8601 LTR retention durations on the target Azure SQL Database. `Az.Sql` cmdlets and `az sql` CLI commands automate repeatable provisioning, tier/vCore scaling, failover triggers, and firewall/backup updates from DevOps pipelines or shell scripts. Local study-map skill 4.4 (Automate Azure SQL Provisioning and Day-2 Management Using Azure PowerShell (`Az.Sql`) and Azure CLI (`az sql`)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Automate Azure SQL management using Azure PowerShell and Azure CLI (https://learn.microsoft.com/en-us/azure/azure-sql/database/scripts/create-and-configure-database-powershell).
+
+- **A:** Correct. `Az.Sql` cmdlets and `az sql` CLI commands automate repeatable provisioning, tier/vCore scaling, failover triggers, and firewall/backup updates from DevOps pipelines or shell scripts. In this scenario: `az sql db ltr-policy set` configures weekly, monthly, and yearly ISO-8601 LTR retention durations on the target Azure SQL Database.
+- **B:** Incorrect for this requirement. Interactive SQL Server Profiler GUI tracing imposes heavy observer overhead and is deprecated in favor of lightweight Extended Events and Query Store. Why the keyed choice wins: `az sql db ltr-policy set` configures weekly, monthly, and yearly ISO-8601 LTR retention durations on the target Azure SQL Database.
+- **C:** Incorrect for this requirement. Both standalone Data Migration Assistant (retired July 2025) and SQL Server Stretch Database (retired) are deprecated; use Azure Migrate / Azure SQL Migration extension and partitioning/Fabric/Blob tiering. Why the keyed choice wins: `az sql db ltr-policy set` configures weekly, monthly, and yearly ISO-8601 LTR retention durations on the target Azure SQL Database.
+- **D:** Incorrect for this requirement. Without the original TDE certificate and private key restored into the target SQL Server `master` database, a TDE-encrypted `.bak` or detached `.mdf` cannot be decrypted anywhere. Why the keyed choice wins: `az sql db ltr-policy set` configures weekly, monthly, and yearly ISO-8601 LTR retention durations on the target Azure SQL Database.
+
+### Question 63 — C
+
+Answer: Idempotent day-2 scripting with Azure PowerShell (`New-AzSqlDatabase`, `Set-AzSqlElasticPool`) or Azure CLI (`az sql db update`, `az sql mi update`). `Restore-AzSqlInstanceDatabase` performs Point-in-Time Restore (`-PointInTime`), Deleted-Database restore, or Geo-Restore for Azure SQL Managed Instance databases. `Az.Sql` cmdlets and `az sql` CLI commands automate repeatable provisioning, tier/vCore scaling, failover triggers, and firewall/backup updates from DevOps pipelines or shell scripts. Local study-map skill 4.4 (Automate Azure SQL Provisioning and Day-2 Management Using Azure PowerShell (`Az.Sql`) and Azure CLI (`az sql`)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Automate Azure SQL management using Azure PowerShell and Azure CLI (https://learn.microsoft.com/en-us/azure/azure-sql/database/scripts/create-and-configure-database-powershell).
+
+- **A:** Incorrect for this requirement. `DBCC SHRINKDATABASE` and `AUTO_SHRINK` cause massive physical index fragmentation (`>90%`), heavy transaction log generation, and immediate file regrow stalls. Why the keyed choice wins: `Restore-AzSqlInstanceDatabase` performs Point-in-Time Restore (`-PointInTime`), Deleted-Database restore, or Geo-Restore for Azure SQL Managed Instance databases.
+- **B:** Incorrect for this requirement. Opening `0.0.0.0–255.255.255.255` exposes the SQL endpoint to the entire public internet rather than isolating traffic via Private Endpoints or scoped IP rules. Why the keyed choice wins: `Restore-AzSqlInstanceDatabase` performs Point-in-Time Restore (`-PointInTime`), Deleted-Database restore, or Geo-Restore for Azure SQL Managed Instance databases.
+- **C:** Correct. `Az.Sql` cmdlets and `az sql` CLI commands automate repeatable provisioning, tier/vCore scaling, failover triggers, and firewall/backup updates from DevOps pipelines or shell scripts. In this scenario: `Restore-AzSqlInstanceDatabase` performs Point-in-Time Restore (`-PointInTime`), Deleted-Database restore, or Geo-Restore for Azure SQL Managed Instance databases.
+- **D:** Incorrect for this requirement. Sharing `sa` credentials or granting `sysadmin` violates least privilege, bypasses auditing attribution, and fails Microsoft Entra-only zero-password compliance. Why the keyed choice wins: `Restore-AzSqlInstanceDatabase` performs Point-in-Time Restore (`-PointInTime`), Deleted-Database restore, or Geo-Restore for Azure SQL Managed Instance databases.
+
+### Question 64 — D
+
+Answer: Diagnose deployment failures via `Get-AzResourceGroupDeploymentOperation` / Activity Log `CorrelationId`, checking regional vCore quotas and SQL MI subnet delegation/NSG/UDR rules. Setting `privateEndpointNetworkPolicies` (`Enabled` vs `Disabled`) on the Private Endpoint subnet controls whether NSGs filter inbound traffic destined for Private Endpoint NICs. SQL Managed Instance deployments fail most commonly when the subnet lacks `/28+` IP space, `Microsoft.Sql/managedInstances` delegation, route table (`0.0.0.0/0` NextHop `Internet`), or regional vCore quota. Local study-map skill 4.5 (Monitor and Troubleshoot Automated Deployments (`CorrelationId`, Quota, SQL MI Subnet Delegation/UDR/NSG)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Troubleshoot ARM/Bicep template and SQL Managed Instance subnet deployment errors (https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/common-deployment-errors).
+
+- **A:** Incorrect for this requirement. Opening `0.0.0.0–255.255.255.255` exposes the SQL endpoint to the entire public internet rather than isolating traffic via Private Endpoints or scoped IP rules. Why the keyed choice wins: Setting `privateEndpointNetworkPolicies` (`Enabled` vs `Disabled`) on the Private Endpoint subnet controls whether NSGs filter inbound traffic destined for Private Endpoint NICs.
+- **B:** Incorrect for this requirement. DDM masks query result columns on the fly for non-privileged callers (`db_owner` and `UNMASK` holders see cleartext) using built-in masking functions without altering stored values. Why the keyed choice wins: Setting `privateEndpointNetworkPolicies` (`Enabled` vs `Disabled`) on the Private Endpoint subnet controls whether NSGs filter inbound traffic destined for Private Endpoint NICs.
+- **C:** Incorrect for this requirement. Flushing the entire plan cache repeatedly causes CPU compilation storms across all queries, and disabling statistics forces blind cardinality guesses. Why the keyed choice wins: Setting `privateEndpointNetworkPolicies` (`Enabled` vs `Disabled`) on the Private Endpoint subnet controls whether NSGs filter inbound traffic destined for Private Endpoint NICs.
+- **D:** Correct. SQL Managed Instance deployments fail most commonly when the subnet lacks `/28+` IP space, `Microsoft.Sql/managedInstances` delegation, route table (`0.0.0.0/0` NextHop `Internet`), or regional vCore quota. In this scenario: Setting `privateEndpointNetworkPolicies` (`Enabled` vs `Disabled`) on the Private Endpoint subnet controls whether NSGs filter inbound traffic destined for Private Endpoint NICs.
+
+### Question 65 — C
+
+Answer: No — Resource Governor is supported on SQL Server and Azure SQL Managed Instance, not single Azure SQL Databases. No — Resource Governor is unsupported in single Azure SQL Databases (including Hyperscale); route reporting logins to a Hyperscale **Named Replica** for compute isolation instead! Single Azure SQL Databases do not expose `CREATE WORKLOAD GROUP` or Resource Governor; compute isolation in SQL Database uses Elastic Pools, Hyperscale named replicas, or separate DBs. Local study-map skill 4.5 (Monitor and Troubleshoot Automated Deployments (`CorrelationId`, Quota, SQL MI Subnet Delegation/UDR/NSG)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Troubleshoot ARM/Bicep template and SQL Managed Instance subnet deployment errors (https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/common-deployment-errors).
+
+- **A:** Incorrect for this requirement. `SqlPackage` exports tables sequentially rather than at a single LSN, so exporting a live write-heavy database without creating a point-in-time copy produces torn foreign-key state. Why the keyed choice wins: No — Resource Governor is unsupported in single Azure SQL Databases (including Hyperscale); route reporting logins to a Hyperscale **Named Replica** for compute isolation instead!
+- **B:** Incorrect for this requirement. The proposed solution fails at least one stated technical, security, or availability requirement. Why the keyed choice wins: No — Resource Governor is unsupported in single Azure SQL Databases (including Hyperscale); route reporting logins to a Hyperscale **Named Replica** for compute isolation instead!
+- **C:** Correct. Single Azure SQL Databases do not expose `CREATE WORKLOAD GROUP` or Resource Governor; compute isolation in SQL Database uses Elastic Pools, Hyperscale named replicas, or separate DBs. In this scenario: No — Resource Governor is unsupported in single Azure SQL Databases (including Hyperscale); route reporting logins to a Hyperscale **Named Replica** for compute isolation instead!
+- **D:** Incorrect for this requirement. Dynamic Data Masking is not encryption at rest or row-level access control; users with ad-hoc `WHERE` privileges can still infer masked values unless RLS or encryption is applied. Why the keyed choice wins: No — Resource Governor is unsupported in single Azure SQL Databases (including Hyperscale); route reporting logins to a Hyperscale **Named Replica** for compute isolation instead!
+
+### Question 66 — C
+
+Answer: Create S1+ Job Database & Elastic Job Agent with UAMI → Create contained UAMI user on target DBs with needed permissions → Define Target Group (`jobs.sp_add_target_group_member`) → Add T-SQL steps & schedule (`jobs.sp_add_job`). Provision an S1+ Job Database and Elastic Job Agent with UAMI, create contained UAMI users across all 22 transit agency DBs, register the 22 DBs in a Target Group (`jobs.sp_add_target_group_member`), and schedule the nightly partition `SWITCH` job (`jobs.sp_add_job`). Modern Elastic Jobs use a dedicated S1+ job database, an Elastic Job Agent assigned a User-Assigned Managed Identity (UAMI) authorized on target databases, a target group, and scheduled T-SQL steps. Local study-map skill 4.6 (Create and Configure Azure SQL Database Elastic Jobs Across Target Groups Using User-Assigned Managed Identity), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Elastic jobs in Azure SQL Database with Managed Identity authentication (https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-jobs-overview).
+
+- **A:** Incorrect for this requirement. Incorrect workflow: Elastic Job Agents target Azure SQL servers, elastic pools, and databases using Managed Identity—never Cosmos DB containers or hardcoded Git secrets. Why the keyed choice wins: Provision an S1+ Job Database and Elastic Job Agent with UAMI, create contained UAMI users across all 22 transit agency DBs, register the 22 DBs in a Target Group (`jobs.sp_add_target_group_member`), and schedule the nightly partition `SWITCH` job (`jobs.sp_add_job`).
+- **B:** Incorrect for this requirement. Incorrect workflow: Elastic Job databases require S1 or higher, target groups must exist before binding executions, NTLM local accounts are invalid in SQL DB, and `msdb` belongs to SQL Agent. Why the keyed choice wins: Provision an S1+ Job Database and Elastic Job Agent with UAMI, create contained UAMI users across all 22 transit agency DBs, register the 22 DBs in a Target Group (`jobs.sp_add_target_group_member`), and schedule the nightly partition `SWITCH` job (`jobs.sp_add_job`).
+- **C:** Correct. Modern Elastic Jobs use a dedicated S1+ job database, an Elastic Job Agent assigned a User-Assigned Managed Identity (UAMI) authorized on target databases, a target group, and scheduled T-SQL steps. In this scenario: Provision an S1+ Job Database and Elastic Job Agent with UAMI, create contained UAMI users across all 22 transit agency DBs, register the 22 DBs in a Target Group (`jobs.sp_add_target_group_member`), and schedule the nightly partition `SWITCH` job (`jobs.sp_add_job`).
+- **D:** Incorrect for this requirement. Incorrect workflow: single Azure SQL Databases do not have SQL Server Agent or cross-DB linked servers in the same way as SQL MI; Elastic Jobs fan out T-SQL asynchronously. Why the keyed choice wins: Provision an S1+ Job Database and Elastic Job Agent with UAMI, create contained UAMI users across all 22 transit agency DBs, register the 22 DBs in a Target Group (`jobs.sp_add_target_group_member`), and schedule the nightly partition `SWITCH` job (`jobs.sp_add_job`).
+
+### Question 67 — B
+
+Answer: Azure SQL Database Elastic Job Agent (`jobs.sp_add_job`) authenticating to Target Groups across servers/pools via a User-Assigned Managed Identity (`UAMI`). Configuring **Private Endpoints** (`Managed Private Endpoints` inside the Elastic Job Agent) establishes private Link connections from the Job Agent directly to private target Azure SQL logical servers! Elastic Jobs fan out T-SQL maintenance and schema scripts asynchronously across hundreds of Azure SQL Databases, elastic pools, and subscriptions using passwordless UAMI authentication. Local study-map skill 4.6 (Create and Configure Azure SQL Database Elastic Jobs Across Target Groups Using User-Assigned Managed Identity), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Elastic jobs in Azure SQL Database with Managed Identity authentication (https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-jobs-overview).
+
+- **A:** Incorrect for this requirement. Sharing `sa` credentials or granting `sysadmin` violates least privilege, bypasses auditing attribution, and fails Microsoft Entra-only zero-password compliance. Why the keyed choice wins: Configuring **Private Endpoints** (`Managed Private Endpoints` inside the Elastic Job Agent) establishes private Link connections from the Job Agent directly to private target Azure SQL logical servers!
+- **B:** Correct. Elastic Jobs fan out T-SQL maintenance and schema scripts asynchronously across hundreds of Azure SQL Databases, elastic pools, and subscriptions using passwordless UAMI authentication. In this scenario: Configuring **Private Endpoints** (`Managed Private Endpoints` inside the Elastic Job Agent) establishes private Link connections from the Job Agent directly to private target Azure SQL logical servers!
+- **C:** Incorrect for this requirement. Both standalone Data Migration Assistant (retired July 2025) and SQL Server Stretch Database (retired) are deprecated; use Azure Migrate / Azure SQL Migration extension and partitioning/Fabric/Blob tiering. Why the keyed choice wins: Configuring **Private Endpoints** (`Managed Private Endpoints` inside the Elastic Job Agent) establishes private Link connections from the Job Agent directly to private target Azure SQL logical servers!
+- **D:** Incorrect for this requirement. Single Azure SQL Databases do not expose `SQLServerAgent`; cross-database PaaS scheduling uses Elastic Job Agents with Managed Identity or Azure Automation. Why the keyed choice wins: Configuring **Private Endpoints** (`Managed Private Endpoints` inside the Elastic Job Agent) establishes private Link connections from the Job Agent directly to private target Azure SQL logical servers!
+
+### Question 68 — B
+
+Answer: Azure Automation PowerShell / Python runbooks (or Azure Functions / Logic Apps) using a System-Assigned Managed Identity on a recurring schedule. An Azure Automation PowerShell runbook authenticating with a Managed Identity (`Connect-AzAccount -Identity`) schedules key checks/rotations and writes custom logs serverlessly. Azure Automation runbooks authenticate via Managed Identity (`Connect-AzAccount -Identity`) to scale vCores/Elastic Pools on schedule, rotate keys, or orchestrate hybrid maintenance via Hybrid Workers. Local study-map skill 4.7 (Automate Database Maintenance and Scaling Using Azure Automation Runbooks, Logic Apps, and Azure Functions), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Automate Azure SQL maintenance tasks with Azure Automation, Logic Apps, and Functions (https://learn.microsoft.com/en-us/azure/automation/overview).
+
+- **A:** Incorrect for this requirement. `DBCC SHRINKDATABASE` and `AUTO_SHRINK` cause massive physical index fragmentation (`>90%`), heavy transaction log generation, and immediate file regrow stalls. Why the keyed choice wins: An Azure Automation PowerShell runbook authenticating with a Managed Identity (`Connect-AzAccount -Identity`) schedules key checks/rotations and writes custom logs serverlessly.
+- **B:** Correct. Azure Automation runbooks authenticate via Managed Identity (`Connect-AzAccount -Identity`) to scale vCores/Elastic Pools on schedule, rotate keys, or orchestrate hybrid maintenance via Hybrid Workers. In this scenario: An Azure Automation PowerShell runbook authenticating with a Managed Identity (`Connect-AzAccount -Identity`) schedules key checks/rotations and writes custom logs serverlessly.
+- **C:** Incorrect for this requirement. Single Azure SQL Databases do not expose `SQLServerAgent`; cross-database PaaS scheduling uses Elastic Job Agents with Managed Identity or Azure Automation. Why the keyed choice wins: An Azure Automation PowerShell runbook authenticating with a Managed Identity (`Connect-AzAccount -Identity`) schedules key checks/rotations and writes custom logs serverlessly.
+- **D:** Incorrect for this requirement. Sharing `sa` credentials or granting `sysadmin` violates least privilege, bypasses auditing attribution, and fails Microsoft Entra-only zero-password compliance. Why the keyed choice wins: An Azure Automation PowerShell runbook authenticating with a Managed Identity (`Connect-AzAccount -Identity`) schedules key checks/rotations and writes custom logs serverlessly.
+
+### Question 69 — B
+
+Answer: Azure Automation PowerShell / Python runbooks (or Azure Functions / Logic Apps) using a System-Assigned Managed Identity on a recurring schedule. Managed Identities eliminate manual `.pfx` certificate renewal outages in Azure Automation and scope least-privilege Azure RBAC / contained Entra SQL permissions cleanly via Microsoft Entra ID. Azure Automation runbooks authenticate via Managed Identity (`Connect-AzAccount -Identity`) to scale vCores/Elastic Pools on schedule, rotate keys, or orchestrate hybrid maintenance via Hybrid Workers. Local study-map skill 4.7 (Automate Database Maintenance and Scaling Using Azure Automation Runbooks, Logic Apps, and Azure Functions), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Automate Azure SQL maintenance tasks with Azure Automation, Logic Apps, and Functions (https://learn.microsoft.com/en-us/azure/automation/overview).
+
+- **A:** Incorrect for this requirement. Opening `0.0.0.0–255.255.255.255` exposes the SQL endpoint to the entire public internet rather than isolating traffic via Private Endpoints or scoped IP rules. Why the keyed choice wins: Managed Identities eliminate manual `.pfx` certificate renewal outages in Azure Automation and scope least-privilege Azure RBAC / contained Entra SQL permissions cleanly via Microsoft Entra ID.
+- **B:** Correct. Azure Automation runbooks authenticate via Managed Identity (`Connect-AzAccount -Identity`) to scale vCores/Elastic Pools on schedule, rotate keys, or orchestrate hybrid maintenance via Hybrid Workers. In this scenario: Managed Identities eliminate manual `.pfx` certificate renewal outages in Azure Automation and scope least-privilege Azure RBAC / contained Entra SQL permissions cleanly via Microsoft Entra ID.
+- **C:** Incorrect for this requirement. Without the original TDE certificate and private key restored into the target SQL Server `master` database, a TDE-encrypted `.bak` or detached `.mdf` cannot be decrypted anywhere. Why the keyed choice wins: Managed Identities eliminate manual `.pfx` certificate renewal outages in Azure Automation and scope least-privilege Azure RBAC / contained Entra SQL permissions cleanly via Microsoft Entra ID.
+- **D:** Incorrect for this requirement. Both standalone Data Migration Assistant (retired July 2025) and SQL Server Stretch Database (retired) are deprecated; use Azure Migrate / Azure SQL Migration extension and partitioning/Fabric/Blob tiering. Why the keyed choice wins: Managed Identities eliminate manual `.pfx` certificate renewal outages in Azure Automation and scope least-privilege Azure RBAC / contained Entra SQL permissions cleanly via Microsoft Entra ID.
+
+### Question 70 — D
+
+Answer: Configure Azure Monitor Metric / Log Alert rules routed to Action Groups and query `jobs.job_executions` in the Elastic Job database to diagnose step failures. Stream Azure Automation `JobLogs` and `JobStreams` (or configure an Azure Monitor Metric Alert on `Total Jobs` filtered by `Status = Failed/Suspended`) into an Azure Monitor Action Group notifying on-call DBAs. Action Groups dispatch email/SMS/webhook/Logic App notifications when alert thresholds fire, while `jobs.job_executions` exposes per-target error messages, retries, and timeouts for Elastic Jobs. Local study-map skill 4.8 (Configure Azure Monitor Action Group Alerts on Database Tasks and Troubleshoot `jobs.job_executions`), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Configure Azure Monitor alerts and troubleshoot Elastic Jobs and automated runbooks (https://learn.microsoft.com/en-us/azure/azure-sql/database/alerts-insights-configure-portal).
+
+- **A:** Incorrect for this requirement. Interactive SQL Server Profiler GUI tracing imposes heavy observer overhead and is deprecated in favor of lightweight Extended Events and Query Store. Why the keyed choice wins: Stream Azure Automation `JobLogs` and `JobStreams` (or configure an Azure Monitor Metric Alert on `Total Jobs` filtered by `Status = Failed/Suspended`) into an Azure Monitor Action Group notifying on-call DBAs.
+- **B:** Incorrect for this requirement. Flushing the entire plan cache repeatedly causes CPU compilation storms across all queries, and disabling statistics forces blind cardinality guesses. Why the keyed choice wins: Stream Azure Automation `JobLogs` and `JobStreams` (or configure an Azure Monitor Metric Alert on `Total Jobs` filtered by `Status = Failed/Suspended`) into an Azure Monitor Action Group notifying on-call DBAs.
+- **C:** Incorrect for this requirement. Opening `0.0.0.0–255.255.255.255` exposes the SQL endpoint to the entire public internet rather than isolating traffic via Private Endpoints or scoped IP rules. Why the keyed choice wins: Stream Azure Automation `JobLogs` and `JobStreams` (or configure an Azure Monitor Metric Alert on `Total Jobs` filtered by `Status = Failed/Suspended`) into an Azure Monitor Action Group notifying on-call DBAs.
+- **D:** Correct. Action Groups dispatch email/SMS/webhook/Logic App notifications when alert thresholds fire, while `jobs.job_executions` exposes per-target error messages, retries, and timeouts for Elastic Jobs. In this scenario: Stream Azure Automation `JobLogs` and `JobStreams` (or configure an Azure Monitor Metric Alert on `Total Jobs` filtered by `Status = Failed/Suspended`) into an Azure Monitor Action Group notifying on-call DBAs.
+
+### Question 71 — B
+
+Answer: Align tiers to RPO/RTO: `Zone Redundant` (`RPO = 0` intra-region HA), `Failover Groups` (`RPO = 5s`, `RTO = 1h` SLA cross-region DR), vs `Geo-Restore` (`RPO = 1h`, `RTO = 12h`). Enable `Zone Redundant` HA on the primary and secondary Azure SQL Databases and link both regional logical servers via an automatic **Failover Group**. Zone Redundancy survives datacenter zone loss with zero data loss; Failover Groups / Active Geo-Replication provide low-RPO/RTO regional DR; Geo-Restore is lowest-cost DR from RA-GRS backups. Local study-map skill 5.1 (Recommend HA/DR Architectures Based on RPO and RTO (`Zone Redundant`, `Failover Groups`, `Geo-Restore`)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Business continuity, RPO/RTO targets, and high availability in Azure SQL (https://learn.microsoft.com/en-us/azure/azure-sql/database/business-continuity-high-availability-disaster-recovery-hadr-overview).
+
+- **A:** Incorrect for this requirement. DTU Basic supports max 2 GB and Standard S0–S2 max 250 GB without compute-isolated read replicas, making them incapable of hosting multi-TB OLTP workloads. Why the keyed choice wins: Enable `Zone Redundant` HA on the primary and secondary Azure SQL Databases and link both regional logical servers via an automatic **Failover Group**.
+- **B:** Correct. Zone Redundancy survives datacenter zone loss with zero data loss; Failover Groups / Active Geo-Replication provide low-RPO/RTO regional DR; Geo-Restore is lowest-cost DR from RA-GRS backups. In this scenario: Enable `Zone Redundant` HA on the primary and secondary Azure SQL Databases and link both regional logical servers via an automatic **Failover Group**.
+- **C:** Incorrect for this requirement. Geo-Restore downloads and restores geo-replicated backups into a new server with an RPO of up to 1 hour and RTO of up to 12 hours, never automatic 5-second RPO failover. Why the keyed choice wins: Enable `Zone Redundant` HA on the primary and secondary Azure SQL Databases and link both regional logical servers via an automatic **Failover Group**.
+- **D:** Incorrect for this requirement. Serverless auto-scales compute between configured min and max vCores per second and pauses compute billing during idle periods (minimum 1-hour auto-pause delay), charging only storage. Why the keyed choice wins: Enable `Zone Redundant` HA on the primary and secondary Azure SQL Databases and link both regional logical servers via an automatic **Failover Group**.
+
+### Question 72 — B
+
+Answer: No — exporting a `.bacpac` directly from an active OLTP database without copying first is not transactionally consistent. No — nightly `.bacpac` exports lose up to 24 hours of transactions (`cannot replay transaction logs to an arbitrary second`) and are inconsistent on active databases without a copy; keep 14-day automated PITR enabled. `SqlPackage` exports tables sequentially rather than at a single LSN, so exporting a live write-heavy database without creating a point-in-time copy produces torn foreign-key state. Local study-map skill 5.1 (Recommend HA/DR Architectures Based on RPO and RTO (`Zone Redundant`, `Failover Groups`, `Geo-Restore`)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Business continuity, RPO/RTO targets, and high availability in Azure SQL (https://learn.microsoft.com/en-us/azure/azure-sql/database/business-continuity-high-availability-disaster-recovery-hadr-overview).
+
+- **A:** Incorrect for this requirement. Dynamic Data Masking is not encryption at rest or row-level access control; users with ad-hoc `WHERE` privileges can still infer masked values unless RLS or encryption is applied. Why the keyed choice wins: No — nightly `.bacpac` exports lose up to 24 hours of transactions (`cannot replay transaction logs to an arbitrary second`) and are inconsistent on active databases without a copy; keep 14-day automated PITR enabled.
+- **B:** Correct. `SqlPackage` exports tables sequentially rather than at a single LSN, so exporting a live write-heavy database without creating a point-in-time copy produces torn foreign-key state. In this scenario: No — nightly `.bacpac` exports lose up to 24 hours of transactions (`cannot replay transaction logs to an arbitrary second`) and are inconsistent on active databases without a copy; keep 14-day automated PITR enabled.
+- **C:** Incorrect for this requirement. Server-level IP firewall rules reside in the logical `master` database and must either be recreated on the DR logical server or replaced with portable database-level rules where appropriate. Why the keyed choice wins: No — nightly `.bacpac` exports lose up to 24 hours of transactions (`cannot replay transaction logs to an arbitrary second`) and are inconsistent on active databases without a copy; keep 14-day automated PITR enabled.
+- **D:** Incorrect for this requirement. The proposed solution fails at least one stated technical, security, or availability requirement. Why the keyed choice wins: No — nightly `.bacpac` exports lose up to 24 hours of transactions (`cannot replay transaction logs to an arbitrary second`) and are inconsistent on active databases without a copy; keep 14-day automated PITR enabled.
+
+### Question 73 — A
+
+Answer: Hybrid DR using Managed Instance link with bidirectional online failover between SQL Server 2022 and Azure SQL Managed Instance. Yes — the Azure SQL Managed Instance secondary in a Managed Instance link distributed Availability Group is readable (`read-only`) for cloud analytics/BI offloading while replicating continuously from SQL Server! SQL Server 2022 supports two-way online planned failover back and forth with Azure SQL Managed Instance via Managed Instance link (whereas SQL Server 2016–2019 link failover is one-way to Azure). Local study-map skill 5.2 (Evaluate Hybrid HA/DR (`Managed Instance Link` Bidirectional SQL 2022 Failover) and Azure-Specific HA Tiers), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Hybrid HA/DR with Managed Instance link and distributed Availability Groups (https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-disaster-recovery).
+
+- **A:** Correct. SQL Server 2022 supports two-way online planned failover back and forth with Azure SQL Managed Instance via Managed Instance link (whereas SQL Server 2016–2019 link failover is one-way to Azure). In this scenario: Yes — the Azure SQL Managed Instance secondary in a Managed Instance link distributed Availability Group is readable (`read-only`) for cloud analytics/BI offloading while replicating continuously from SQL Server!
+- **B:** Incorrect for this requirement. Managed Instance link online failback from SQL MI to SQL Server requires SQL Server 2022 or later; SQL Server 2016 and 2019 support one-way migration into SQL MI only. Why the keyed choice wins: Yes — the Azure SQL Managed Instance secondary in a Managed Instance link distributed Availability Group is readable (`read-only`) for cloud analytics/BI offloading while replicating continuously from SQL Server!
+- **C:** Incorrect for this requirement. Both standalone Data Migration Assistant (retired July 2025) and SQL Server Stretch Database (retired) are deprecated; use Azure Migrate / Azure SQL Migration extension and partitioning/Fabric/Blob tiering. Why the keyed choice wins: Yes — the Azure SQL Managed Instance secondary in a Managed Instance link distributed Availability Group is readable (`read-only`) for cloud analytics/BI offloading while replicating continuously from SQL Server!
+- **D:** Incorrect for this requirement. Creating a point-in-time database copy isolates active OLTP writes so `SqlPackage /Action:Export` produces a foreign-key-consistent `.bacpac` archive in Azure Blob Storage. Why the keyed choice wins: Yes — the Azure SQL Managed Instance secondary in a Managed Instance link distributed Availability Group is readable (`read-only`) for cloud analytics/BI offloading while replicating continuously from SQL Server!
+
+### Question 74 — B
+
+Answer: Align tiers to RPO/RTO: `Zone Redundant` (`RPO = 0` intra-region HA), `Failover Groups` (`RPO = 5s`, `RTO = 1h` SLA cross-region DR), vs `Geo-Restore` (`RPO = 1h`, `RTO = 12h`). Use **Synchronous-commit** mode (`AUTOMATIC` failover) between Zones 1 and 2 for `RPO = 0` HA without perceptible latency, and **Asynchronous-commit** mode (`MANUAL` failover) to the distant cross-region DR replica so 65 ms WAN RTT never slows primary commits. Zone Redundancy survives datacenter zone loss with zero data loss; Failover Groups / Active Geo-Replication provide low-RPO/RTO regional DR; Geo-Restore is lowest-cost DR from RA-GRS backups. Local study-map skill 5.2 (Evaluate Hybrid HA/DR (`Managed Instance Link` Bidirectional SQL 2022 Failover) and Azure-Specific HA Tiers), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Hybrid HA/DR with Managed Instance link and distributed Availability Groups (https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-disaster-recovery).
+
+- **A:** Incorrect for this requirement. A 2-node WSFC without a Cloud/File-Share Witness loses quorum if one node fails, and blocking Azure ILB health-probe port `59999` blackholes AG listener connections. Why the keyed choice wins: Use **Synchronous-commit** mode (`AUTOMATIC` failover) between Zones 1 and 2 for `RPO = 0` HA without perceptible latency, and **Asynchronous-commit** mode (`MANUAL` failover) to the distant cross-region DR replica so 65 ms WAN RTT never slows primary commits.
+- **B:** Correct. Zone Redundancy survives datacenter zone loss with zero data loss; Failover Groups / Active Geo-Replication provide low-RPO/RTO regional DR; Geo-Restore is lowest-cost DR from RA-GRS backups. In this scenario: Use **Synchronous-commit** mode (`AUTOMATIC` failover) between Zones 1 and 2 for `RPO = 0` HA without perceptible latency, and **Asynchronous-commit** mode (`MANUAL` failover) to the distant cross-region DR replica so 65 ms WAN RTT never slows primary commits.
+- **C:** Incorrect for this requirement. Placing database or log files on `C:` or enabling `ReadWrite` caching risks data corruption during host crashes and exhausts OS disk IOPS caps. Why the keyed choice wins: Use **Synchronous-commit** mode (`AUTOMATIC` failover) between Zones 1 and 2 for `RPO = 0` HA without perceptible latency, and **Asynchronous-commit** mode (`MANUAL` failover) to the distant cross-region DR replica so 65 ms WAN RTT never slows primary commits.
+- **D:** Incorrect for this requirement. Opening `0.0.0.0–255.255.255.255` exposes the SQL endpoint to the entire public internet rather than isolating traffic via Private Endpoints or scoped IP rules. Why the keyed choice wins: Use **Synchronous-commit** mode (`AUTOMATIC` failover) between Zones 1 and 2 for `RPO = 0` HA without perceptible latency, and **Asynchronous-commit** mode (`MANUAL` failover) to the distant cross-region DR replica so 65 ms WAN RTT never slows primary commits.
+
+### Question 75 — B
+
+Answer: Provision secondary SQL server with matching firewall/Private Link & Entra admin → Create Failover Group with coupled DBs → Point apps to `<fog>.database.windows.net` & `.secondary` → Run planned `Switch-AzSqlDatabaseFailoverGroup` drill. Verify matching network/Private Link/Entra settings on the secondary server, confirm all five DBs belong to the Failover Group, point SCADA apps to `<fog>.database.windows.net` / `.secondary`, and run planned `Switch-AzSqlDatabaseFailoverGroup` failover and failback. A resilient Failover Group mirrors security/network configs on the secondary server, groups coupled databases under stable read-write and read-only listeners, and validates readiness via planned zero-data-loss failover. Local study-map skill 5.3 (Plan Non-Disruptive HA/DR Failover Drills, Listener Redirection Validation, and Read-Only Secondary Testing), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Disaster recovery drills and failover testing for Azure SQL solutions (https://learn.microsoft.com/en-us/azure/azure-sql/database/disaster-recovery-drills).
+
+- **A:** Incorrect for this requirement. Incorrect workflow: Failover Groups span distinct regions, replicate user databases rather than `master`/`tempdb`, and `.secondary.database.windows.net` is strictly read-only. Why the keyed choice wins: Verify matching network/Private Link/Entra settings on the secondary server, confirm all five DBs belong to the Failover Group, point SCADA apps to `<fog>.database.windows.net` / `.secondary`, and run planned `Switch-AzSqlDatabaseFailoverGroup` failover and failback.
+- **B:** Correct. A resilient Failover Group mirrors security/network configs on the secondary server, groups coupled databases under stable read-write and read-only listeners, and validates readiness via planned zero-data-loss failover. In this scenario: Verify matching network/Private Link/Entra settings on the secondary server, confirm all five DBs belong to the Failover Group, point SCADA apps to `<fog>.database.windows.net` / `.secondary`, and run planned `Switch-AzSqlDatabaseFailoverGroup` failover and failback.
+- **C:** Incorrect for this requirement. Incorrect workflow: deleting production databases and manually rewriting connection strings causes hours of avoidable downtime instead of testing non-disruptive Failover Group listener failover. Why the keyed choice wins: Verify matching network/Private Link/Entra settings on the secondary server, confirm all five DBs belong to the Failover Group, point SCADA apps to `<fog>.database.windows.net` / `.secondary`, and run planned `Switch-AzSqlDatabaseFailoverGroup` failover and failback.
+- **D:** Incorrect for this requirement. Incorrect workflow: forced failover with `AllowDataLoss` risks dropping uncommitted transactions during drills, and hardcoding regional server names breaks automatic client redirection. Why the keyed choice wins: Verify matching network/Private Link/Entra settings on the secondary server, confirm all five DBs belong to the Failover Group, point SCADA apps to `<fog>.database.windows.net` / `.secondary`, and run planned `Switch-AzSqlDatabaseFailoverGroup` failover and failback.
+
+### Question 76 — D
+
+Answer: Non-disruptive DR readiness drill executing a planned zero-data-loss Failover Group switch (`Switch-AzSqlDatabaseFailoverGroup`), validating app listeners, and failing back. If the primary Key Vault lives only in a region without geo-replication or Managed HSM multi-region replication and becomes unreachable during a true regional disaster, the secondary server should also have its own regional Key Vault CMK configured! Planned failover synchronizes pending log records before switching roles (`RPO = 0`), validating secondary firewall/Entra configs and `<fog>.database.windows.net` DNS redirection safely. Local study-map skill 5.3 (Plan Non-Disruptive HA/DR Failover Drills, Listener Redirection Validation, and Read-Only Secondary Testing), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Disaster recovery drills and failover testing for Azure SQL solutions (https://learn.microsoft.com/en-us/azure/azure-sql/database/disaster-recovery-drills).
+
+- **A:** Incorrect for this requirement. Opening `0.0.0.0–255.255.255.255` exposes the SQL endpoint to the entire public internet rather than isolating traffic via Private Endpoints or scoped IP rules. Why the keyed choice wins: If the primary Key Vault lives only in a region without geo-replication or Managed HSM multi-region replication and becomes unreachable during a true regional disaster, the secondary server should also have its own regional Key Vault CMK configured!
+- **B:** Incorrect for this requirement. `DBCC SHRINKDATABASE` and `AUTO_SHRINK` cause massive physical index fragmentation (`>90%`), heavy transaction log generation, and immediate file regrow stalls. Why the keyed choice wins: If the primary Key Vault lives only in a region without geo-replication or Managed HSM multi-region replication and becomes unreachable during a true regional disaster, the secondary server should also have its own regional Key Vault CMK configured!
+- **C:** Incorrect for this requirement. Geo-Restore downloads and restores geo-replicated backups into a new server with an RPO of up to 1 hour and RTO of up to 12 hours, never automatic 5-second RPO failover. Why the keyed choice wins: If the primary Key Vault lives only in a region without geo-replication or Managed HSM multi-region replication and becomes unreachable during a true regional disaster, the secondary server should also have its own regional Key Vault CMK configured!
+- **D:** Correct. Planned failover synchronizes pending log records before switching roles (`RPO = 0`), validating secondary firewall/Entra configs and `<fog>.database.windows.net` DNS redirection safely. In this scenario: If the primary Key Vault lives only in a region without geo-replication or Managed HSM multi-region replication and becomes unreachable during a true regional disaster, the secondary server should also have its own regional Key Vault CMK configured!
+
+### Question 77 — C
+
+Answer: No — taking an ad-hoc non-`COPY_ONLY` full backup resets the differential base and breaks downstream differential restores. No — omitting `WITH COPY_ONLY` updates `differential_base_lsn` to Wednesday's snapshot, breaking Thursday's Differential restore against Sunday's Full backup. A standard `BACKUP DATABASE` updates the differential base LSN; ad-hoc exports on SQL Managed Instance or Availability Groups must specify `WITH COPY_ONLY` to preserve the backup chain. Local study-map skill 5.4 (Recommend Backup & Restore Strategies (`COPY_ONLY` on MI/AGs and Azure Backup SQL-Aware Policies on VMs)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Automated backups, COPY_ONLY backups, and Azure Backup for SQL Server in Azure VMs (https://learn.microsoft.com/en-us/azure/azure-sql/database/automated-backups-overview).
+
+- **A:** Incorrect for this requirement. Server-level IP firewall rules reside in the logical `master` database and must either be recreated on the DR logical server or replaced with portable database-level rules where appropriate. Why the keyed choice wins: No — omitting `WITH COPY_ONLY` updates `differential_base_lsn` to Wednesday's snapshot, breaking Thursday's Differential restore against Sunday's Full backup.
+- **B:** Incorrect for this requirement. The proposed solution fails at least one stated technical, security, or availability requirement. Why the keyed choice wins: No — omitting `WITH COPY_ONLY` updates `differential_base_lsn` to Wednesday's snapshot, breaking Thursday's Differential restore against Sunday's Full backup.
+- **C:** Correct. A standard `BACKUP DATABASE` updates the differential base LSN; ad-hoc exports on SQL Managed Instance or Availability Groups must specify `WITH COPY_ONLY` to preserve the backup chain. In this scenario: No — omitting `WITH COPY_ONLY` updates `differential_base_lsn` to Wednesday's snapshot, breaking Thursday's Differential restore against Sunday's Full backup.
+- **D:** Incorrect for this requirement. Dynamic Data Masking is not encryption at rest or row-level access control; users with ad-hoc `WHERE` privileges can still infer masked values unless RLS or encryption is applied. Why the keyed choice wins: No — omitting `WITH COPY_ONLY` updates `differential_base_lsn` to Wednesday's snapshot, breaking Thursday's Differential restore against Sunday's Full backup.
+
+### Question 78 — D
+
+Answer: Use `BACKUP DATABASE ... WITH COPY_ONLY` for ad-hoc exports on SQL MI / AGs, and Azure Backup Recovery Services Vault SQL-aware policies (`15-min` log RPO) on SQL VMs. Azure Backup registers all AG nodes, honors the AG's backup preference (`Prefer Secondary` / `Primary`), converts full backups on secondaries to `COPY_ONLY` as needed, and seamlessly continues log backups across AG failovers under one continuous restore chain! `COPY_ONLY` preserves the differential and log backup chain, while Azure Backup for SQL Server in Azure VMs automates application-consistent Full, Differential, and 15-minute Transaction Log backups. Local study-map skill 5.4 (Recommend Backup & Restore Strategies (`COPY_ONLY` on MI/AGs and Azure Backup SQL-Aware Policies on VMs)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Automated backups, COPY_ONLY backups, and Azure Backup for SQL Server in Azure VMs (https://learn.microsoft.com/en-us/azure/azure-sql/database/automated-backups-overview).
+
+- **A:** Incorrect for this requirement. `DBCC SHRINKDATABASE` and `AUTO_SHRINK` cause massive physical index fragmentation (`>90%`), heavy transaction log generation, and immediate file regrow stalls. Why the keyed choice wins: Azure Backup registers all AG nodes, honors the AG's backup preference (`Prefer Secondary` / `Primary`), converts full backups on secondaries to `COPY_ONLY` as needed, and seamlessly continues log backups across AG failovers under one continuous restore chain!
+- **B:** Incorrect for this requirement. Placing database or log files on `C:` or enabling `ReadWrite` caching risks data corruption during host crashes and exhausts OS disk IOPS caps. Why the keyed choice wins: Azure Backup registers all AG nodes, honors the AG's backup preference (`Prefer Secondary` / `Primary`), converts full backups on secondaries to `COPY_ONLY` as needed, and seamlessly continues log backups across AG failovers under one continuous restore chain!
+- **C:** Incorrect for this requirement. A single Page Blob `BACKUP TO URL` maxes out at 1 TB and requires a SQL Credential; multi-TB cloud backups must stripe across multiple Block Blob URLs. Why the keyed choice wins: Azure Backup registers all AG nodes, honors the AG's backup preference (`Prefer Secondary` / `Primary`), converts full backups on secondaries to `COPY_ONLY` as needed, and seamlessly continues log backups across AG failovers under one continuous restore chain!
+- **D:** Correct. `COPY_ONLY` preserves the differential and log backup chain, while Azure Backup for SQL Server in Azure VMs automates application-consistent Full, Differential, and 15-minute Transaction Log backups. In this scenario: Azure Backup registers all AG nodes, honors the AG's backup preference (`Prefer Secondary` / `Primary`), converts full backups on secondaries to `COPY_ONLY` as needed, and seamlessly continues log backups across AG failovers under one continuous restore chain!
+
+### Question 79 — C
+
+Answer: Automated Point-in-Time Restore (`1–35` days PITR), Deleted-Database restore from the logical server, and Accelerated Database Recovery (`ADR`) instant rollback. A **Piecemeal Restore** (`RESTORE DATABASE ... FILEGROUP = 'PRIMARY', FILEGROUP = 'FG_CurrentMonth' WITH PARTIAL, NORECOVERY` -> restore logs `WITH RECOVERY`) brings critical filegroups online first while remaining filegroups stay offline until needed! Azure SQL DB/MI retains automated backups for `1–35` days (`STOPAT`-equivalent PITR even if a DB was deleted within retention), while `ADR` uses a Persistent Version Store for instant rollback. Local study-map skill 5.5 (Perform Native Restores, Point-in-Time Restore (`1–35d` PITR), Deleted-DB Restore, and `ADR` Instant Rollback), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Point-in-time restore (PITR), Accelerated Database Recovery (ADR), and deleted DB restore (https://learn.microsoft.com/en-us/azure/azure-sql/database/recovery-using-backups).
+
+- **A:** Incorrect for this requirement. Creating a point-in-time database copy isolates active OLTP writes so `SqlPackage /Action:Export` produces a foreign-key-consistent `.bacpac` archive in Azure Blob Storage. Why the keyed choice wins: A **Piecemeal Restore** (`RESTORE DATABASE ... FILEGROUP = 'PRIMARY', FILEGROUP = 'FG_CurrentMonth' WITH PARTIAL, NORECOVERY` -> restore logs `WITH RECOVERY`) brings critical filegroups online first while remaining filegroups stay offline until needed!
+- **B:** Incorrect for this requirement. `DBCC SHRINKDATABASE` and `AUTO_SHRINK` cause massive physical index fragmentation (`>90%`), heavy transaction log generation, and immediate file regrow stalls. Why the keyed choice wins: A **Piecemeal Restore** (`RESTORE DATABASE ... FILEGROUP = 'PRIMARY', FILEGROUP = 'FG_CurrentMonth' WITH PARTIAL, NORECOVERY` -> restore logs `WITH RECOVERY`) brings critical filegroups online first while remaining filegroups stay offline until needed!
+- **C:** Correct. Azure SQL DB/MI retains automated backups for `1–35` days (`STOPAT`-equivalent PITR even if a DB was deleted within retention), while `ADR` uses a Persistent Version Store for instant rollback. In this scenario: A **Piecemeal Restore** (`RESTORE DATABASE ... FILEGROUP = 'PRIMARY', FILEGROUP = 'FG_CurrentMonth' WITH PARTIAL, NORECOVERY` -> restore logs `WITH RECOVERY`) brings critical filegroups online first while remaining filegroups stay offline until needed!
+- **D:** Incorrect for this requirement. Short-Term PITR caps at `35` days (`1–35` days); multi-year retention up to `10 years` with WORM deletion lock requires Long-Term Retention (`LTR`) with time-based immutability. Why the keyed choice wins: A **Piecemeal Restore** (`RESTORE DATABASE ... FILEGROUP = 'PRIMARY', FILEGROUP = 'FG_CurrentMonth' WITH PARTIAL, NORECOVERY` -> restore logs `WITH RECOVERY`) brings critical filegroups online first while remaining filegroups stay offline until needed!
+
+### Question 80 — C
+
+Answer: No — moving a database across SQL Managed Instances starts a fresh backup chain and does not carry over prior PITR backups. No — online SQL MI Database Move starts a brand-new backup chain on `sqlmi-central` at `13:00 UTC`, and historical PITR backups from `sqlmi-east` do not move with the database. Online SQL Managed Instance Database Move replicates current data with zero loss, but historical PITR backups remain tied to the source instance and are unavailable on the destination. Local study-map skill 5.5 (Perform Native Restores, Point-in-Time Restore (`1–35d` PITR), Deleted-DB Restore, and `ADR` Instant Rollback), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Point-in-time restore (PITR), Accelerated Database Recovery (ADR), and deleted DB restore (https://learn.microsoft.com/en-us/azure/azure-sql/database/recovery-using-backups).
+
+- **A:** Incorrect for this requirement. Server-level IP firewall rules reside in the logical `master` database and must either be recreated on the DR logical server or replaced with portable database-level rules where appropriate. Why the keyed choice wins: No — online SQL MI Database Move starts a brand-new backup chain on `sqlmi-central` at `13:00 UTC`, and historical PITR backups from `sqlmi-east` do not move with the database.
+- **B:** Incorrect for this requirement. The proposed solution fails at least one stated technical, security, or availability requirement. Why the keyed choice wins: No — online SQL MI Database Move starts a brand-new backup chain on `sqlmi-central` at `13:00 UTC`, and historical PITR backups from `sqlmi-east` do not move with the database.
+- **C:** Correct. Online SQL Managed Instance Database Move replicates current data with zero loss, but historical PITR backups remain tied to the source instance and are unavailable on the destination. In this scenario: No — online SQL MI Database Move starts a brand-new backup chain on `sqlmi-central` at `13:00 UTC`, and historical PITR backups from `sqlmi-east` do not move with the database.
+- **D:** Incorrect for this requirement. Dynamic Data Masking is not encryption at rest or row-level access control; users with ad-hoc `WHERE` privileges can still infer masked values unless RLS or encryption is applied. Why the keyed choice wins: No — online SQL MI Database Move starts a brand-new backup chain on `sqlmi-central` at `13:00 UTC`, and historical PITR backups from `sqlmi-east` do not move with the database.
+
+### Question 81 — A, E
+
+Answers: Configure an Azure SQL Long-Term Retention (`LTR`) policy (`WeeklyRetention`, `MonthlyRetention`, `YearlyRetention`, `WeekOfYear`) up to 10 years; Enable and lock time-based immutability (`WORM`) on the LTR backup policy so nobody can shorten retention or delete compliance backups early. Set a Long-Term Retention (`LTR`) policy on `GridLoadDB` (`YearlyRetention = P10Y`, `WeekOfYear`) and lock time-based WORM immutability so annual regulatory archives cannot be purged early. Local study-map skill 5.6 (Configure Long-Term Backup Retention (`LTR` up to `10y`), Time-Based Immutable WORM Locks, and Storage Redundancy), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Long-term backup retention (LTR) and time-based immutable WORM backups in Azure SQL (https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-retention-overview).
+
+- **A:** Correct. Once locked, time-based LTR immutability enforces write-once-read-many protection against ransomware or rogue privileged admins. In this scenario: Set a Long-Term Retention (`LTR`) policy on `GridLoadDB` (`YearlyRetention = P10Y`, `WeekOfYear`) and lock time-based WORM immutability so annual regulatory archives cannot be purged early.
+- **B:** Incorrect for this requirement. Opening `0.0.0.0–255.255.255.255` exposes the SQL endpoint to the entire public internet rather than isolating traffic via Private Endpoints or scoped IP rules. Why the keyed choice wins: Set a Long-Term Retention (`LTR`) policy on `GridLoadDB` (`YearlyRetention = P10Y`, `WeekOfYear`) and lock time-based WORM immutability so annual regulatory archives cannot be purged early.
+- **C:** Incorrect for this requirement. `DBCC SHRINKDATABASE` and `AUTO_SHRINK` cause massive physical index fragmentation (`>90%`), heavy transaction log generation, and immediate file regrow stalls. Why the keyed choice wins: Set a Long-Term Retention (`LTR`) policy on `GridLoadDB` (`YearlyRetention = P10Y`, `WeekOfYear`) and lock time-based WORM immutability so annual regulatory archives cannot be purged early.
+- **D:** Incorrect for this requirement. Short-Term PITR caps at `35` days (`1–35` days); multi-year retention up to `10 years` with WORM deletion lock requires Long-Term Retention (`LTR`) with time-based immutability. Why the keyed choice wins: Set a Long-Term Retention (`LTR`) policy on `GridLoadDB` (`YearlyRetention = P10Y`, `WeekOfYear`) and lock time-based WORM immutability so annual regulatory archives cannot be purged early.
+- **E:** Correct. LTR copies full backups into separate geo-redundant/zone-redundant Azure Blob tiers according to ISO-8601 duration policies (e.g., `P7Y`). In this scenario: Set a Long-Term Retention (`LTR`) policy on `GridLoadDB` (`YearlyRetention = P10Y`, `WeekOfYear`) and lock time-based WORM immutability so annual regulatory archives cannot be purged early.
+
+### Question 82 — D
+
+Answer: Long-Term Retention (`LTR`) weekly/monthly/yearly backups up to `10 years` protected by a locked time-based immutable (`WORM`) policy and `RA-GRS` / `ZRS` backup storage. While `Unlocked`, a privileged admin can still disable immutability or shorten retention; once **Locked**, immutability is irreversible—retention can be extended, never shortened or turned off! LTR retains compliance backups up to 10 years independently of PITR, and locking time-based immutability prevents even Subscription Owners from deleting backups before expiry. Local study-map skill 5.6 (Configure Long-Term Backup Retention (`LTR` up to `10y`), Time-Based Immutable WORM Locks, and Storage Redundancy), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Long-term backup retention (LTR) and time-based immutable WORM backups in Azure SQL (https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-retention-overview).
+
+- **A:** Incorrect for this requirement. Short-Term PITR caps at `35` days (`1–35` days); multi-year retention up to `10 years` with WORM deletion lock requires Long-Term Retention (`LTR`) with time-based immutability. Why the keyed choice wins: While `Unlocked`, a privileged admin can still disable immutability or shorten retention; once **Locked**, immutability is irreversible—retention can be extended, never shortened or turned off!
+- **B:** Incorrect for this requirement. DDM masks query result columns on the fly for non-privileged callers (`db_owner` and `UNMASK` holders see cleartext) using built-in masking functions without altering stored values. Why the keyed choice wins: While `Unlocked`, a privileged admin can still disable immutability or shorten retention; once **Locked**, immutability is irreversible—retention can be extended, never shortened or turned off!
+- **C:** Incorrect for this requirement. Serverless auto-scales compute between configured min and max vCores per second and pauses compute billing during idle periods (minimum 1-hour auto-pause delay), charging only storage. Why the keyed choice wins: While `Unlocked`, a privileged admin can still disable immutability or shorten retention; once **Locked**, immutability is irreversible—retention can be extended, never shortened or turned off!
+- **D:** Correct. LTR retains compliance backups up to 10 years independently of PITR, and locking time-based immutability prevents even Subscription Owners from deleting backups before expiry. In this scenario: While `Unlocked`, a privileged admin can still disable immutability or shorten retention; once **Locked**, immutability is irreversible—retention can be extended, never shortened or turned off!
+
+### Question 83 — A
+
+Answer: Striped T-SQL `BACKUP DATABASE ... TO URL = ...` across up to 64 block blobs (`MAXTRANSFERSIZE`, `COMPRESSION`) authenticated via `Managed Identity` or `SHARED ACCESS SIGNATURE` Credential. With Block Blobs (`SHARED ACCESS SIGNATURE` or `Managed Identity` where the credential name itself equals the container URL), you **omit** `WITH CREDENTIAL` (`WITH CREDENTIAL` was legacy Page Blob Storage-Key syntax and conflicts with SAS/MI URL matching)! Backing up to multiple URLs creates block blobs supporting up to ~12.8 TB striped backups (`200 GB+` per blob, unlike legacy single-page-blob 1 TB limits) using `CREATE CREDENTIAL`. Local study-map skill 5.7 (Back Up to and Restore from Azure Blob Storage URL Using T-SQL Stripes (`TO URL`) and Managed Identity / SAS), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: SQL Server backup to URL and restore from Azure Blob Storage with Managed Identity or SAS (https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/sql-server-backup-to-url-azure-blob-storage).
+
+- **A:** Correct. Backing up to multiple URLs creates block blobs supporting up to ~12.8 TB striped backups (`200 GB+` per blob, unlike legacy single-page-blob 1 TB limits) using `CREATE CREDENTIAL`. In this scenario: With Block Blobs (`SHARED ACCESS SIGNATURE` or `Managed Identity` where the credential name itself equals the container URL), you **omit** `WITH CREDENTIAL` (`WITH CREDENTIAL` was legacy Page Blob Storage-Key syntax and conflicts with SAS/MI URL matching)!
+- **B:** Incorrect for this requirement. A single Page Blob `BACKUP TO URL` maxes out at 1 TB and requires a SQL Credential; multi-TB cloud backups must stripe across multiple Block Blob URLs. Why the keyed choice wins: With Block Blobs (`SHARED ACCESS SIGNATURE` or `Managed Identity` where the credential name itself equals the container URL), you **omit** `WITH CREDENTIAL` (`WITH CREDENTIAL` was legacy Page Blob Storage-Key syntax and conflicts with SAS/MI URL matching)!
+- **C:** Incorrect for this requirement. Creating a point-in-time database copy isolates active OLTP writes so `SqlPackage /Action:Export` produces a foreign-key-consistent `.bacpac` archive in Azure Blob Storage. Why the keyed choice wins: With Block Blobs (`SHARED ACCESS SIGNATURE` or `Managed Identity` where the credential name itself equals the container URL), you **omit** `WITH CREDENTIAL` (`WITH CREDENTIAL` was legacy Page Blob Storage-Key syntax and conflicts with SAS/MI URL matching)!
+- **D:** Incorrect for this requirement. Both standalone Data Migration Assistant (retired July 2025) and SQL Server Stretch Database (retired) are deprecated; use Azure Migrate / Azure SQL Migration extension and partitioning/Fabric/Blob tiering. Why the keyed choice wins: With Block Blobs (`SHARED ACCESS SIGNATURE` or `Managed Identity` where the credential name itself equals the container URL), you **omit** `WITH CREDENTIAL` (`WITH CREDENTIAL` was legacy Page Blob Storage-Key syntax and conflicts with SAS/MI URL matching)!
+
+### Question 84 — D, E
+
+Answers: Connect OLTP write traffic to `<fog>.database.windows.net` and read-only analytics to `<fog>.secondary.database.windows.net`; Configure `ReadWriteFailoverPolicy = Automatic` with `GracePeriodWithDataLossHours >= 1` so transient blips do not trigger premature lossy failover. Direct read-write apps to `fog-railvantage.database.windows.net` and read-only apps to `fog-railvantage.secondary.database.windows.net`, and configure `GracePeriodWithDataLossHours >= 1`. Local study-map skill 5.8 (Configure Failover Groups (`<fog>.database.windows.net`, Grace Period) vs Active Geo-Replication (`4` Replicas)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Failover groups and active geo-replication in Azure SQL Database and SQL Managed Instance (https://learn.microsoft.com/en-us/azure/azure-sql/database/failover-group-sql-db).
+
+- **A:** Incorrect for this requirement. Opening `0.0.0.0–255.255.255.255` exposes the SQL endpoint to the entire public internet rather than isolating traffic via Private Endpoints or scoped IP rules. Why the keyed choice wins: Direct read-write apps to `fog-railvantage.database.windows.net` and read-only apps to `fog-railvantage.secondary.database.windows.net`, and configure `GracePeriodWithDataLossHours >= 1`.
+- **B:** Incorrect for this requirement. Local ephemeral NVMe storage delivers ultra-low latency for `tempdb` spills and version stores without consuming remote disk IOPS bandwidth. Why the keyed choice wins: Direct read-write apps to `fog-railvantage.database.windows.net` and read-only apps to `fog-railvantage.secondary.database.windows.net`, and configure `GracePeriodWithDataLossHours >= 1`.
+- **C:** Incorrect for this requirement. Geo-Restore downloads and restores geo-replicated backups into a new server with an RPO of up to 1 hour and RTO of up to 12 hours, never automatic 5-second RPO failover. Why the keyed choice wins: Direct read-write apps to `fog-railvantage.database.windows.net` and read-only apps to `fog-railvantage.secondary.database.windows.net`, and configure `GracePeriodWithDataLossHours >= 1`.
+- **D:** Correct. Failover Group listener endpoints abstract underlying regional server names and automatically redirect read-write and read-only connections after failover. In this scenario: Direct read-write apps to `fog-railvantage.database.windows.net` and read-only apps to `fog-railvantage.secondary.database.windows.net`, and configure `GracePeriodWithDataLossHours >= 1`.
+- **E:** Correct. The grace period controls how long Azure waits during an unrecoverable primary region outage before forcing an automatic failover if async log lag remains. In this scenario: Direct read-write apps to `fog-railvantage.database.windows.net` and read-only apps to `fog-railvantage.secondary.database.windows.net`, and configure `GracePeriodWithDataLossHours >= 1`.
+
+### Question 85 — B
+
+Answer: Failover Groups for automatic multi-database failover behind stable `<fog>.database.windows.net` / `.secondary` listeners vs Active Geo-Replication for up to 4 readable secondaries. No — Geo-Replication and Failover Groups require the secondary database to match the service tier (`Hyperscale -> Hyperscale`, `General Purpose -> General Purpose`, `Business Critical -> Business Critical`), and recommended identical vCore compute size to sustain failover load! Failover Groups fail over coupled databases together and redirect connection strings automatically (`GracePeriodWithDataLossHours >= 1`), whereas Active Geo-Replication supports up to 4 secondaries per DB without automatic listener redirection. Local study-map skill 5.8 (Configure Failover Groups (`<fog>.database.windows.net`, Grace Period) vs Active Geo-Replication (`4` Replicas)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Failover groups and active geo-replication in Azure SQL Database and SQL Managed Instance (https://learn.microsoft.com/en-us/azure/azure-sql/database/failover-group-sql-db).
+
+- **A:** Incorrect for this requirement. Geo-Restore downloads and restores geo-replicated backups into a new server with an RPO of up to 1 hour and RTO of up to 12 hours, never automatic 5-second RPO failover. Why the keyed choice wins: No — Geo-Replication and Failover Groups require the secondary database to match the service tier (`Hyperscale -> Hyperscale`, `General Purpose -> General Purpose`, `Business Critical -> Business Critical`), and recommended identical vCore compute size to sustain failover load!
+- **B:** Correct. Failover Groups fail over coupled databases together and redirect connection strings automatically (`GracePeriodWithDataLossHours >= 1`), whereas Active Geo-Replication supports up to 4 secondaries per DB without automatic listener redirection. In this scenario: No — Geo-Replication and Failover Groups require the secondary database to match the service tier (`Hyperscale -> Hyperscale`, `General Purpose -> General Purpose`, `Business Critical -> Business Critical`), and recommended identical vCore compute size to sustain failover load!
+- **C:** Incorrect for this requirement. DTU Basic supports max 2 GB and Standard S0–S2 max 250 GB without compute-isolated read replicas, making them incapable of hosting multi-TB OLTP workloads. Why the keyed choice wins: No — Geo-Replication and Failover Groups require the secondary database to match the service tier (`Hyperscale -> Hyperscale`, `General Purpose -> General Purpose`, `Business Critical -> Business Critical`), and recommended identical vCore compute size to sustain failover load!
+- **D:** Incorrect for this requirement. Serverless auto-scales compute between configured min and max vCores per second and pauses compute billing during idle periods (minimum 1-hour auto-pause delay), charging only storage. Why the keyed choice wins: No — Geo-Replication and Failover Groups require the secondary database to match the service tier (`Hyperscale -> Hyperscale`, `General Purpose -> General Purpose`, `Business Critical -> Business Critical`), and recommended identical vCore compute size to sustain failover load!
+
+### Question 86 — C
+
+Answer: Always On Availability Group on Azure VMs using WSFC with Azure Cloud Witness, Distributed Network Name (`DNN`) or Internal Load Balancer (`ILB` port `59999`), and `MultiSubnetFailover=True`. Node 2 in `East US 2` loses quorum (`1` remaining vote out of `3`) and shuts down the cluster role to prevent split-brain, requiring manual **forced quorum** (`Start-ClusterNode -FixQuorum` + `FORCE_FAILOVER_ALLOW_DATA_LOSS`) by the DR admin (or placing the Cloud Witness in a **third** independent region!). Cloud Witness provides low-cost Blob quorum without a third VM; `DNN` routes multi-subnet AG traffic via DNS without ILB failover delay (requiring `MultiSubnetFailover=True` in client drivers). Local study-map skill 5.9 (Configure Always On Availability Groups on SQL MI and Azure VMs (`Cloud Witness`, `DNN`, `ILB` Port `59999`)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Always On availability groups on SQL Server on Azure VMs (Cloud Witness, DNN, ILB) (https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-overview).
+
+- **A:** Incorrect for this requirement. A 2-node WSFC without a Cloud/File-Share Witness loses quorum if one node fails, and blocking Azure ILB health-probe port `59999` blackholes AG listener connections. Why the keyed choice wins: Node 2 in `East US 2` loses quorum (`1` remaining vote out of `3`) and shuts down the cluster role to prevent split-brain, requiring manual **forced quorum** (`Start-ClusterNode -FixQuorum` + `FORCE_FAILOVER_ALLOW_DATA_LOSS`) by the DR admin (or placing the Cloud Witness in a **third** independent region!).
+- **B:** Incorrect for this requirement. SQL database in Microsoft Fabric runs the Azure SQL engine for OLTP with Microsoft Entra-only auth, automatic near-real-time OneLake Delta Parquet replication, and a read-only SQL analytics endpoint. Why the keyed choice wins: Node 2 in `East US 2` loses quorum (`1` remaining vote out of `3`) and shuts down the cluster role to prevent split-brain, requiring manual **forced quorum** (`Start-ClusterNode -FixQuorum` + `FORCE_FAILOVER_ALLOW_DATA_LOSS`) by the DR admin (or placing the Cloud Witness in a **third** independent region!).
+- **C:** Correct. Cloud Witness provides low-cost Blob quorum without a third VM; `DNN` routes multi-subnet AG traffic via DNS without ILB failover delay (requiring `MultiSubnetFailover=True` in client drivers). In this scenario: Node 2 in `East US 2` loses quorum (`1` remaining vote out of `3`) and shuts down the cluster role to prevent split-brain, requiring manual **forced quorum** (`Start-ClusterNode -FixQuorum` + `FORCE_FAILOVER_ALLOW_DATA_LOSS`) by the DR admin (or placing the Cloud Witness in a **third** independent region!).
+- **D:** Incorrect for this requirement. Serverless auto-scales compute between configured min and max vCores per second and pauses compute billing during idle periods (minimum 1-hour auto-pause delay), charging only storage. Why the keyed choice wins: Node 2 in `East US 2` loses quorum (`1` remaining vote out of `3`) and shuts down the cluster role to prevent split-brain, requiring manual **forced quorum** (`Start-ClusterNode -FixQuorum` + `FORCE_FAILOVER_ALLOW_DATA_LOSS`) by the DR admin (or placing the Cloud Witness in a **third** independent region!).
+
+### Question 87 — B
+
+Answer: Always On Availability Group on Azure VMs using WSFC with Azure Cloud Witness, Distributed Network Name (`DNN`) or Internal Load Balancer (`ILB` port `59999`), and `MultiSubnetFailover=True`. Default TCP port **`5022`** carries Always On Availability Group log transport, heartbeats, and automatic seeding traffic between replicas. Cloud Witness provides low-cost Blob quorum without a third VM; `DNN` routes multi-subnet AG traffic via DNS without ILB failover delay (requiring `MultiSubnetFailover=True` in client drivers). Local study-map skill 5.9 (Configure Always On Availability Groups on SQL MI and Azure VMs (`Cloud Witness`, `DNN`, `ILB` Port `59999`)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Always On availability groups on SQL Server on Azure VMs (Cloud Witness, DNN, ILB) (https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-overview).
+
+- **A:** Incorrect for this requirement. Opening `0.0.0.0–255.255.255.255` exposes the SQL endpoint to the entire public internet rather than isolating traffic via Private Endpoints or scoped IP rules. Why the keyed choice wins: Default TCP port **`5022`** carries Always On Availability Group log transport, heartbeats, and automatic seeding traffic between replicas.
+- **B:** Correct. Cloud Witness provides low-cost Blob quorum without a third VM; `DNN` routes multi-subnet AG traffic via DNS without ILB failover delay (requiring `MultiSubnetFailover=True` in client drivers). In this scenario: Default TCP port **`5022`** carries Always On Availability Group log transport, heartbeats, and automatic seeding traffic between replicas.
+- **C:** Incorrect for this requirement. A 2-node WSFC without a Cloud/File-Share Witness loses quorum if one node fails, and blocking Azure ILB health-probe port `59999` blackholes AG listener connections. Why the keyed choice wins: Default TCP port **`5022`** carries Always On Availability Group log transport, heartbeats, and automatic seeding traffic between replicas.
+- **D:** Incorrect for this requirement. Placing database or log files on `C:` or enabling `ReadWrite` caching risks data corruption during host crashes and exhausts OS disk IOPS caps. Why the keyed choice wins: Default TCP port **`5022`** carries Always On Availability Group log transport, heartbeats, and automatic seeding traffic between replicas.
+
+### Question 88 — D
+
+Answer: Always On Failover Cluster Instance (`FCI`) on Azure VMs backed by `ZRS` Premium SSD Azure Shared Disks (or `S2D`), or Log Shipping (`BACKUP LOG` -> copy -> `RESTORE LOG WITH NORECOVERY`/`STANDBY`). Yes — combining `FCI` (for local shared-disk whole-instance HA) with an asynchronous `AG` to a remote DR VM is a supported enterprise pattern (noting automatic AG failover between an FCI and standalone node is unsupported—use manual DR failover). Azure Shared Disks provide native SCSI PR shared block storage across Availability Zones for instance-level FCI failover, whereas Log Shipping maintains warm DR secondaries via scheduled `.trn` restores. Local study-map skill 5.10 (Configure Always On Failover Cluster Instances (`Azure Shared Disks` `ZRS`) and T-SQL Log Shipping on Azure VMs), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Always On Failover Cluster Instances (Azure Shared Disks) and Log Shipping on Azure VMs (https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-overview).
+
+- **A:** Incorrect for this requirement. Geo-Restore downloads and restores geo-replicated backups into a new server with an RPO of up to 1 hour and RTO of up to 12 hours, never automatic 5-second RPO failover. Why the keyed choice wins: Yes — combining `FCI` (for local shared-disk whole-instance HA) with an asynchronous `AG` to a remote DR VM is a supported enterprise pattern (noting automatic AG failover between an FCI and standalone node is unsupported—use manual DR failover).
+- **B:** Incorrect for this requirement. Serverless auto-scales compute between configured min and max vCores per second and pauses compute billing during idle periods (minimum 1-hour auto-pause delay), charging only storage. Why the keyed choice wins: Yes — combining `FCI` (for local shared-disk whole-instance HA) with an asynchronous `AG` to a remote DR VM is a supported enterprise pattern (noting automatic AG failover between an FCI and standalone node is unsupported—use manual DR failover).
+- **C:** Incorrect for this requirement. `DBCC SHRINKDATABASE` and `AUTO_SHRINK` cause massive physical index fragmentation (`>90%`), heavy transaction log generation, and immediate file regrow stalls. Why the keyed choice wins: Yes — combining `FCI` (for local shared-disk whole-instance HA) with an asynchronous `AG` to a remote DR VM is a supported enterprise pattern (noting automatic AG failover between an FCI and standalone node is unsupported—use manual DR failover).
+- **D:** Correct. Azure Shared Disks provide native SCSI PR shared block storage across Availability Zones for instance-level FCI failover, whereas Log Shipping maintains warm DR secondaries via scheduled `.trn` restores. In this scenario: Yes — combining `FCI` (for local shared-disk whole-instance HA) with an asynchronous `AG` to a remote DR VM is a supported enterprise pattern (noting automatic AG failover between an FCI and standalone node is unsupported—use manual DR failover).
+
+### Question 89 — C
+
+Answer: Remap orphaned database users (`ALTER USER [u] WITH LOGIN = [u]`) and inspect explicit `DENY` permissions via `sys.database_permissions`. An explicit `DENY SELECT` on the table, schema, or another role membership overrides `db_datareader`'s `GRANT`; query `sys.database_permissions` (or run `EXECUTE AS USER = 'auditor'; SELECT * FROM fn_my_permissions(...)`) to locate and `REVOKE` the `DENY`. Restoring a `.bak` onto another instance mismatches login SIDs (fixed via `ALTER USER ... WITH LOGIN`), while an explicit table/schema `DENY` always overrides `db_datareader` role `GRANT`s. Local study-map skill 2.5 (Troubleshoot Authentication and Authorization Issues (Orphaned Users `ALTER USER WITH LOGIN` & `DENY` Precedence)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Troubleshoot SQL login, orphaned user, and Microsoft Entra authorization issues (https://learn.microsoft.com/en-us/sql/sql-server/failover-clusters/troubleshoot-orphaned-users-sql-server).
+
+- **A:** Incorrect for this requirement. Change Tracking records only which primary keys changed with minimal overhead, whereas CDC reads the transaction log asynchronously to retain every intermediate `INSERT`/`UPDATE`/`DELETE` payload. Why the keyed choice wins: An explicit `DENY SELECT` on the table, schema, or another role membership overrides `db_datareader`'s `GRANT`; query `sys.database_permissions` (or run `EXECUTE AS USER = 'auditor'; SELECT * FROM fn_my_permissions(...)`) to locate and `REVOKE` the `DENY`.
+- **B:** Incorrect for this requirement. DDM masks query result columns on the fly for non-privileged callers (`db_owner` and `UNMASK` holders see cleartext) using built-in masking functions without altering stored values. Why the keyed choice wins: An explicit `DENY SELECT` on the table, schema, or another role membership overrides `db_datareader`'s `GRANT`; query `sys.database_permissions` (or run `EXECUTE AS USER = 'auditor'; SELECT * FROM fn_my_permissions(...)`) to locate and `REVOKE` the `DENY`.
+- **C:** Correct. Restoring a `.bak` onto another instance mismatches login SIDs (fixed via `ALTER USER ... WITH LOGIN`), while an explicit table/schema `DENY` always overrides `db_datareader` role `GRANT`s. In this scenario: An explicit `DENY SELECT` on the table, schema, or another role membership overrides `db_datareader`'s `GRANT`; query `sys.database_permissions` (or run `EXECUTE AS USER = 'auditor'; SELECT * FROM fn_my_permissions(...)`) to locate and `REVOKE` the `DENY`.
+- **D:** Incorrect for this requirement. Sharing `sa` credentials or granting `sysadmin` violates least privilege, bypasses auditing attribution, and fails Microsoft Entra-only zero-password compliance. Why the keyed choice wins: An explicit `DENY SELECT` on the table, schema, or another role membership overrides `db_datareader`'s `GRANT`; query `sys.database_permissions` (or run `EXECUTE AS USER = 'auditor'; SELECT * FROM fn_my_permissions(...)`) to locate and `REVOKE` the `DENY`.
+
+### Question 90 — C
+
+Answer: Back up the TDE encryption certificate and private key (`BACKUP CERTIFICATE ... WITH PRIVATE KEY`) from `master` before restoring onto another SQL Server. Back up the TDE encryption certificate **and its private key** (`BACKUP CERTIFICATE [TDECert] TO FILE = '...' WITH PRIVATE KEY (...)`) from the source `master` database and `CREATE CERTIFICATE ... FROM FILE` in the target `master` database before restoring! Without the original TDE certificate and private key restored into the target SQL Server `master` database, a TDE-encrypted `.bak` or detached `.mdf` cannot be decrypted anywhere. Local study-map skill 2.6 (Implement Transparent Data Encryption (`TDE`) with Service-Managed Keys, Key Vault `CMK`, and VM Cert Backups), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Transparent Data Encryption (TDE) with service-managed and customer-managed keys in Key Vault (https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-byok-overview).
+
+- **A:** Incorrect for this requirement. Opening `0.0.0.0–255.255.255.255` exposes the SQL endpoint to the entire public internet rather than isolating traffic via Private Endpoints or scoped IP rules. Why the keyed choice wins: Back up the TDE encryption certificate **and its private key** (`BACKUP CERTIFICATE [TDECert] TO FILE = '...' WITH PRIVATE KEY (...)`) from the source `master` database and `CREATE CERTIFICATE ... FROM FILE` in the target `master` database before restoring!
+- **B:** Incorrect for this requirement. Unlike server-level rules stored in `master`, database-level IP firewall rules travel inside the user database across Active Geo-Replication and Failover Group failovers. Why the keyed choice wins: Back up the TDE encryption certificate **and its private key** (`BACKUP CERTIFICATE [TDECert] TO FILE = '...' WITH PRIVATE KEY (...)`) from the source `master` database and `CREATE CERTIFICATE ... FROM FILE` in the target `master` database before restoring!
+- **C:** Correct. Without the original TDE certificate and private key restored into the target SQL Server `master` database, a TDE-encrypted `.bak` or detached `.mdf` cannot be decrypted anywhere. In this scenario: Back up the TDE encryption certificate **and its private key** (`BACKUP CERTIFICATE [TDECert] TO FILE = '...' WITH PRIVATE KEY (...)`) from the source `master` database and `CREATE CERTIFICATE ... FROM FILE` in the target `master` database before restoring!
+- **D:** Incorrect for this requirement. DDM masks query result columns on the fly for non-privileged callers (`db_owner` and `UNMASK` holders see cleartext) using built-in masking functions without altering stored values. Why the keyed choice wins: Back up the TDE encryption certificate **and its private key** (`BACKUP CERTIFICATE [TDECert] TO FILE = '...' WITH PRIVATE KEY (...)`) from the source `master` database and `CREATE CERTIFICATE ... FROM FILE` in the target `master` database before restoring!
+
+### Question 91 — A
+
+Answer: Azure Private Endpoint (`Microsoft.Network/privateEndpoints`) paired with `privatelink.database.windows.net` Private DNS and `publicNetworkAccess = Disabled`. Deploy an **Azure Private DNS Resolver** (or DNS forwarder VM in the hub VNet) linked to Private DNS Zone `privatelink.database.windows.net`, and add a conditional forwarder on on-premises DNS servers for `database.windows.net` pointing to that Azure resolver IP. Private Link maps the SQL server to a private RFC 1918 IP inside your VNet accessible over VPN/ExpressRoute, blocking public internet exposure and cross-tenant data exfiltration. Local study-map skill 2.10 (Configure Azure Private Link (`privatelink.database.windows.net`), Service Endpoints, and SQL MI Subnet Security), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Azure Private Link, Virtual Network service endpoints, and SQL MI VNet security (https://learn.microsoft.com/en-us/azure/azure-sql/database/private-endpoint-overview).
+
+- **A:** Correct. Private Link maps the SQL server to a private RFC 1918 IP inside your VNet accessible over VPN/ExpressRoute, blocking public internet exposure and cross-tenant data exfiltration. In this scenario: Deploy an **Azure Private DNS Resolver** (or DNS forwarder VM in the hub VNet) linked to Private DNS Zone `privatelink.database.windows.net`, and add a conditional forwarder on on-premises DNS servers for `database.windows.net` pointing to that Azure resolver IP.
+- **B:** Incorrect for this requirement. Opening `0.0.0.0–255.255.255.255` exposes the SQL endpoint to the entire public internet rather than isolating traffic via Private Endpoints or scoped IP rules. Why the keyed choice wins: Deploy an **Azure Private DNS Resolver** (or DNS forwarder VM in the hub VNet) linked to Private DNS Zone `privatelink.database.windows.net`, and add a conditional forwarder on on-premises DNS servers for `database.windows.net` pointing to that Azure resolver IP.
+- **C:** Incorrect for this requirement. VNet Service Endpoints restrict Azure SQL public endpoint traffic to a specific VNet subnet without private IPs, whereas SQL Managed Instance deploys directly into a dedicated delegated VNet subnet. Why the keyed choice wins: Deploy an **Azure Private DNS Resolver** (or DNS forwarder VM in the hub VNet) linked to Private DNS Zone `privatelink.database.windows.net`, and add a conditional forwarder on on-premises DNS servers for `database.windows.net` pointing to that Azure resolver IP.
+- **D:** Incorrect for this requirement. Unlike server-level rules stored in `master`, database-level IP firewall rules travel inside the user database across Active Geo-Replication and Failover Group failovers. Why the keyed choice wins: Deploy an **Azure Private DNS Resolver** (or DNS forwarder VM in the hub VNet) linked to Private DNS Zone `privatelink.database.windows.net`, and add a conditional forwarder on on-premises DNS servers for `database.windows.net` pointing to that Azure resolver IP.
+
+### Question 92 — A, D
+
+Answers: Create a SQL Server `CREDENTIAL` (`IDENTITY = 'Managed Identity'` or `'SHARED ACCESS SIGNATURE'`) matching the Azure Blob container URL; Stripe `BACKUP DATABASE` across multiple `TO URL = 'https://...bak'` block blob targets with `COMPRESSION` and `MAXTRANSFERSIZE = 4194304`. Create a server `CREDENTIAL` with `IDENTITY = 'Managed Identity'` matching the Blob Storage container URL, and stripe `BACKUP DATABASE` across multiple `TO URL` block blob targets with `COMPRESSION` and `MAXTRANSFERSIZE`. Local study-map skill 5.7 (Back Up to and Restore from Azure Blob Storage URL Using T-SQL Stripes (`TO URL`) and Managed Identity / SAS), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: SQL Server backup to URL and restore from Azure Blob Storage with Managed Identity or SAS (https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/sql-server-backup-to-url-azure-blob-storage).
+
+- **A:** Correct. Multiple `URL` targets write to Azure Block Blobs in parallel, scaling single backups up to ~12.8 TB (`64` stripes) with maximum throughput. In this scenario: Create a server `CREDENTIAL` with `IDENTITY = 'Managed Identity'` matching the Blob Storage container URL, and stripe `BACKUP DATABASE` across multiple `TO URL` block blob targets with `COMPRESSION` and `MAXTRANSFERSIZE`.
+- **B:** Incorrect for this requirement. A single Page Blob `BACKUP TO URL` maxes out at 1 TB and requires a SQL Credential; multi-TB cloud backups must stripe across multiple Block Blob URLs. Why the keyed choice wins: Create a server `CREDENTIAL` with `IDENTITY = 'Managed Identity'` matching the Blob Storage container URL, and stripe `BACKUP DATABASE` across multiple `TO URL` block blob targets with `COMPRESSION` and `MAXTRANSFERSIZE`.
+- **C:** Incorrect for this requirement. Local ephemeral NVMe storage delivers ultra-low latency for `tempdb` spills and version stores without consuming remote disk IOPS bandwidth. Why the keyed choice wins: Create a server `CREDENTIAL` with `IDENTITY = 'Managed Identity'` matching the Blob Storage container URL, and stripe `BACKUP DATABASE` across multiple `TO URL` block blob targets with `COMPRESSION` and `MAXTRANSFERSIZE`.
+- **D:** Correct. SQL Server and SQL MI authenticate `BACKUP TO URL` / `RESTORE FROM URL` requests to Azure Storage via a server-level credential. In this scenario: Create a server `CREDENTIAL` with `IDENTITY = 'Managed Identity'` matching the Blob Storage container URL, and stripe `BACKUP DATABASE` across multiple `TO URL` block blob targets with `COMPRESSION` and `MAXTRANSFERSIZE`.
+- **E:** Incorrect for this requirement. Opening `0.0.0.0–255.255.255.255` exposes the SQL endpoint to the entire public internet rather than isolating traffic via Private Endpoints or scoped IP rules. Why the keyed choice wins: Create a server `CREDENTIAL` with `IDENTITY = 'Managed Identity'` matching the Blob Storage container URL, and stripe `BACKUP DATABASE` across multiple `TO URL` block blob targets with `COMPRESSION` and `MAXTRANSFERSIZE`.
+
+### Question 93 — B
+
+Answer: Always On Failover Cluster Instance (`FCI`) on Azure VMs backed by `ZRS` Premium SSD Azure Shared Disks (or `S2D`), or Log Shipping (`BACKUP LOG` -> copy -> `RESTORE LOG WITH NORECOVERY`/`STANDBY`). Deploy a 2-node Windows Server Failover Cluster across Availability Zones backed by **`ZRS` Premium SSD Azure Shared Disks** (`maxShares = 2`) hosting the shared SQL Server FCI instance. Azure Shared Disks provide native SCSI PR shared block storage across Availability Zones for instance-level FCI failover, whereas Log Shipping maintains warm DR secondaries via scheduled `.trn` restores. Local study-map skill 5.10 (Configure Always On Failover Cluster Instances (`Azure Shared Disks` `ZRS`) and T-SQL Log Shipping on Azure VMs), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Always On Failover Cluster Instances (Azure Shared Disks) and Log Shipping on Azure VMs (https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-overview).
+
+- **A:** Incorrect for this requirement. Hyperscale scales up to 100 TB via distributed page servers, performs constant-time log restores, and attaches up to 30 Named Replicas with independent vCore compute over shared storage. Why the keyed choice wins: Deploy a 2-node Windows Server Failover Cluster across Availability Zones backed by **`ZRS` Premium SSD Azure Shared Disks** (`maxShares = 2`) hosting the shared SQL Server FCI instance.
+- **B:** Correct. Azure Shared Disks provide native SCSI PR shared block storage across Availability Zones for instance-level FCI failover, whereas Log Shipping maintains warm DR secondaries via scheduled `.trn` restores. In this scenario: Deploy a 2-node Windows Server Failover Cluster across Availability Zones backed by **`ZRS` Premium SSD Azure Shared Disks** (`maxShares = 2`) hosting the shared SQL Server FCI instance.
+- **C:** Incorrect for this requirement. Placing database or log files on `C:` or enabling `ReadWrite` caching risks data corruption during host crashes and exhausts OS disk IOPS caps. Why the keyed choice wins: Deploy a 2-node Windows Server Failover Cluster across Availability Zones backed by **`ZRS` Premium SSD Azure Shared Disks** (`maxShares = 2`) hosting the shared SQL Server FCI instance.
+- **D:** Incorrect for this requirement. SQL database in Microsoft Fabric runs the Azure SQL engine for OLTP with Microsoft Entra-only auth, automatic near-real-time OneLake Delta Parquet replication, and a read-only SQL analytics endpoint. Why the keyed choice wins: Deploy a 2-node Windows Server Failover Cluster across Availability Zones backed by **`ZRS` Premium SSD Azure Shared Disks** (`maxShares = 2`) hosting the shared SQL Server FCI instance.
+
+### Question 94 — A
+
+Answer: Query `sys.dm_hadr_database_replica_states` (`synchronization_state_desc`, `log_send_queue_size`, `redo_queue_size`) and `sys.dm_geo_replication_link_status`, plus verify NSG probe port `59999`. Long-running read-only reporting queries on an AG secondary hold schema-stability (`LCK_M_SCH_S`) locks that block DDL/index-rebuild redo (`LCK_M_SCH_M`), stalling the entire secondary redo queue until the blocking report finishes or is killed! High `log_send_queue_size` indicates network bottlenecks between primary and secondary, high `redo_queue_size` indicates slow redo I/O/CPU or long-running read queries on the secondary, and blocked ILB probe port `59999` breaks AG listener routing. Local study-map skill 5.11 (Monitor and Troubleshoot HA/DR Health (`sys.dm_hadr_database_replica_states`, `redo_queue_size`, `log_send_queue_size`)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Monitor and troubleshoot Always On availability groups and geo-replication health (https://learn.microsoft.com/en-us/sql/database-engine/availability-groups/windows/monitor-availability-groups-transact-sql).
+
+- **A:** Correct. High `log_send_queue_size` indicates network bottlenecks between primary and secondary, high `redo_queue_size` indicates slow redo I/O/CPU or long-running read queries on the secondary, and blocked ILB probe port `59999` breaks AG listener routing. In this scenario: Long-running read-only reporting queries on an AG secondary hold schema-stability (`LCK_M_SCH_S`) locks that block DDL/index-rebuild redo (`LCK_M_SCH_M`), stalling the entire secondary redo queue until the blocking report finishes or is killed!
+- **B:** Incorrect for this requirement. A 2-node WSFC without a Cloud/File-Share Witness loses quorum if one node fails, and blocking Azure ILB health-probe port `59999` blackholes AG listener connections. Why the keyed choice wins: Long-running read-only reporting queries on an AG secondary hold schema-stability (`LCK_M_SCH_S`) locks that block DDL/index-rebuild redo (`LCK_M_SCH_M`), stalling the entire secondary redo queue until the blocking report finishes or is killed!
+- **C:** Incorrect for this requirement. Flushing the entire plan cache repeatedly causes CPU compilation storms across all queries, and disabling statistics forces blind cardinality guesses. Why the keyed choice wins: Long-running read-only reporting queries on an AG secondary hold schema-stability (`LCK_M_SCH_S`) locks that block DDL/index-rebuild redo (`LCK_M_SCH_M`), stalling the entire secondary redo queue until the blocking report finishes or is killed!
+- **D:** Incorrect for this requirement. `NOLOCK` (`READ UNCOMMITTED`) permits dirty reads of uncommitted rolled-back rows, double-counting rows, or skipping committed rows during page splits—unacceptable for accurate OLTP. Why the keyed choice wins: Long-running read-only reporting queries on an AG secondary hold schema-stability (`LCK_M_SCH_S`) locks that block DDL/index-rebuild redo (`LCK_M_SCH_M`), stalling the entire secondary redo queue until the blocking report finishes or is killed!
+
+### Question 95 — B
+
+Answer: Evaluate `sp_estimate_data_compression_savings` and apply `ROW`, `PAGE`, or `COLUMNSTORE_ARCHIVE` compression per partition. Executing `sys.sp_estimate_data_compression_savings` samples table/index pages safely in `tempdb` and reports projected size savings for `ROW` vs `PAGE` compression before touching production pages. `sp_estimate_data_compression_savings` models space gains before compressing; `ROW`/`PAGE` shrink OLTP B-trees while `COLUMNSTORE` / `COLUMNSTORE_ARCHIVE` achieves up to 10x analytics compression. Local study-map skill 1.9 (Configure Table Partitioning Alignment and Data Compression (`ROW`, `PAGE`, `COLUMNSTORE`, `COLUMNSTORE_ARCHIVE`)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Configure table partitioning and row/page/columnstore data compression (https://learn.microsoft.com/en-us/sql/relational-databases/data-compression/data-compression).
+
+- **A:** Incorrect for this requirement. Over-indexing inflates every `INSERT`/`UPDATE`/`DELETE` write and log flush, while `ONLINE = OFF` holds exclusive schema/table locks that block production traffic. Why the keyed choice wins: Executing `sys.sp_estimate_data_compression_savings` samples table/index pages safely in `tempdb` and reports projected size savings for `ROW` vs `PAGE` compression before touching production pages.
+- **B:** Correct. `sp_estimate_data_compression_savings` models space gains before compressing; `ROW`/`PAGE` shrink OLTP B-trees while `COLUMNSTORE` / `COLUMNSTORE_ARCHIVE` achieves up to 10x analytics compression. In this scenario: Executing `sys.sp_estimate_data_compression_savings` samples table/index pages safely in `tempdb` and reports projected size savings for `ROW` vs `PAGE` compression before touching production pages.
+- **C:** Incorrect for this requirement. Row-by-row cursors and multi-statement TVFs under legacy compatibility levels execute thousands of iterative context switches and 1-row cardinality guesses. Why the keyed choice wins: Executing `sys.sp_estimate_data_compression_savings` samples table/index pages safely in `tempdb` and reports projected size savings for `ROW` vs `PAGE` compression before touching production pages.
+- **D:** Incorrect for this requirement. `DBCC SHRINKDATABASE` and `AUTO_SHRINK` cause massive physical index fragmentation (`>90%`), heavy transaction log generation, and immediate file regrow stalls. Why the keyed choice wins: Executing `sys.sp_estimate_data_compression_savings` samples table/index pages safely in `tempdb` and reports projected size savings for `ROW` vs `PAGE` compression before touching production pages.
+
+### Question 96 — D
+
+Answer: Azure Migrate (`Azure SQL` assessment) and the Azure SQL Migration extension for Azure Data Studio / VS Code. Use **Azure Migrate** (`Azure SQL` discovery and assessment) and the **Azure SQL Migration extension** for Azure Data Studio / VS Code. Following Data Migration Assistant (DMA) retirement, Azure Migrate and the Azure SQL Migration extension assess compatibility blockers, feature parity, and performance-based vCore SKU right-sizing. Local study-map skill 1.10 (Evaluate Migration Requirements, Offline vs Online Strategies, and SKU Sizing via Azure Migrate & ADS), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Assess and plan SQL Server migrations using Azure Migrate and Azure SQL Migration extension (https://learn.microsoft.com/en-us/data-migration/sql-server/managed-instance/overview).
+
+- **A:** Incorrect for this requirement. Interactive SQL Server Profiler GUI tracing imposes heavy observer overhead and is deprecated in favor of lightweight Extended Events and Query Store. Why the keyed choice wins: Use **Azure Migrate** (`Azure SQL` discovery and assessment) and the **Azure SQL Migration extension** for Azure Data Studio / VS Code.
+- **B:** Incorrect for this requirement. Without the original TDE certificate and private key restored into the target SQL Server `master` database, a TDE-encrypted `.bak` or detached `.mdf` cannot be decrypted anywhere. Why the keyed choice wins: Use **Azure Migrate** (`Azure SQL` discovery and assessment) and the **Azure SQL Migration extension** for Azure Data Studio / VS Code.
+- **C:** Incorrect for this requirement. Both standalone Data Migration Assistant (retired July 2025) and SQL Server Stretch Database (retired) are deprecated; use Azure Migrate / Azure SQL Migration extension and partitioning/Fabric/Blob tiering. Why the keyed choice wins: Use **Azure Migrate** (`Azure SQL` discovery and assessment) and the **Azure SQL Migration extension** for Azure Data Studio / VS Code.
+- **D:** Correct. Following Data Migration Assistant (DMA) retirement, Azure Migrate and the Azure SQL Migration extension assess compatibility blockers, feature parity, and performance-based vCore SKU right-sizing. In this scenario: Use **Azure Migrate** (`Azure SQL` discovery and assessment) and the **Azure SQL Migration extension** for Azure Data Studio / VS Code.
+
+### Question 97 — D
+
+Answer: Create a transactionally consistent database copy (`CREATE DATABASE ... AS COPY OF`), export `.bacpac` via `SqlPackage`, then remove the copy. First create a transactionally consistent point-in-time database copy (`CREATE DATABASE [Ticketing_Copy] AS COPY OF [Ticketing];` or `az sql db copy`), run `SqlPackage /Action:Export` against `[Ticketing_Copy]`, and remove `[Ticketing_Copy]` once finished. Creating a point-in-time database copy isolates active OLTP writes so `SqlPackage /Action:Export` produces a foreign-key-consistent `.bacpac` archive in Azure Blob Storage. Local study-map skill 1.11 (Implement Online and Offline Migrations to and Between Azure SQL Services (`MI Link`, `LRS`, `SqlPackage` Copy)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Online and offline SQL migrations with Managed Instance link, Log Replay Service, and SqlPackage (https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/managed-instance-link-feature-overview).
+
+- **A:** Incorrect for this requirement. Both standalone Data Migration Assistant (retired July 2025) and SQL Server Stretch Database (retired) are deprecated; use Azure Migrate / Azure SQL Migration extension and partitioning/Fabric/Blob tiering. Why the keyed choice wins: First create a transactionally consistent point-in-time database copy (`CREATE DATABASE [Ticketing_Copy] AS COPY OF [Ticketing];` or `az sql db copy`), run `SqlPackage /Action:Export` against `[Ticketing_Copy]`, and remove `[Ticketing_Copy]` once finished.
+- **B:** Incorrect for this requirement. `Start-AzSqlInstanceDatabaseLogReplay` continuously replays `.bak`/`.trn` files from Blob storage until `Complete-AzSqlInstanceDatabaseLogReplay` restores the final tail-log backup. Why the keyed choice wins: First create a transactionally consistent point-in-time database copy (`CREATE DATABASE [Ticketing_Copy] AS COPY OF [Ticketing];` or `az sql db copy`), run `SqlPackage /Action:Export` against `[Ticketing_Copy]`, and remove `[Ticketing_Copy]` once finished.
+- **C:** Incorrect for this requirement. Online MI Database Copy/Move uses Always On seeding across instances/subscriptions; once `Ready for completion`, you have 24 hours to complete (`Move` removes source DB with zero data loss; `Copy` keeps both). Why the keyed choice wins: First create a transactionally consistent point-in-time database copy (`CREATE DATABASE [Ticketing_Copy] AS COPY OF [Ticketing];` or `az sql db copy`), run `SqlPackage /Action:Export` against `[Ticketing_Copy]`, and remove `[Ticketing_Copy]` once finished.
+- **D:** Correct. Creating a point-in-time database copy isolates active OLTP writes so `SqlPackage /Action:Export` produces a foreign-key-consistent `.bacpac` archive in Azure Blob Storage. In this scenario: First create a transactionally consistent point-in-time database copy (`CREATE DATABASE [Ticketing_Copy] AS COPY OF [Ticketing];` or `az sql db copy`), run `SqlPackage /Action:Export` against `[Ticketing_Copy]`, and remove `[Ticketing_Copy]` once finished.
+
+### Question 98 — A
+
+Answer: Capture `xml_deadlock_report` via Extended Events or `sys.event_log`, align table modification order across transactions, and add covering indexes. Capture the `xml_deadlock_report` graph, refactor both stored procedures so they always access and update `Vehicles` and `CrewAssignments` in the **exact same table order**, and add narrow covering indexes so updates seek single rows rather than scanning ranges. Cycle deadlocks (`Error 1205`) occur when concurrent transactions lock objects in opposite order or scan wide ranges; accessing tables in identical order with narrow index seeks eliminates cycles. Local study-map skill 3.6 (Identify and Resolve Session Blocking (`RCSI`, `Optimized Locking` `TID`/`LAQ`) and Deadlocks (`xml_deadlock_report`)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Understand and resolve Azure SQL blocking problems, deadlocks, RCSI, and Optimized Locking (https://learn.microsoft.com/en-us/azure/azure-sql/database/analyze-prevent-deadlocks).
+
+- **A:** Correct. Cycle deadlocks (`Error 1205`) occur when concurrent transactions lock objects in opposite order or scan wide ranges; accessing tables in identical order with narrow index seeks eliminates cycles. In this scenario: Capture the `xml_deadlock_report` graph, refactor both stored procedures so they always access and update `Vehicles` and `CrewAssignments` in the **exact same table order**, and add narrow covering indexes so updates seek single rows rather than scanning ranges.
+- **B:** Incorrect for this requirement. Flushing the entire plan cache repeatedly causes CPU compilation storms across all queries, and disabling statistics forces blind cardinality guesses. Why the keyed choice wins: Capture the `xml_deadlock_report` graph, refactor both stored procedures so they always access and update `Vehicles` and `CrewAssignments` in the **exact same table order**, and add narrow covering indexes so updates seek single rows rather than scanning ranges.
+- **C:** Incorrect for this requirement. Over-indexing inflates every `INSERT`/`UPDATE`/`DELETE` write and log flush, while `ONLINE = OFF` holds exclusive schema/table locks that block production traffic. Why the keyed choice wins: Capture the `xml_deadlock_report` graph, refactor both stored procedures so they always access and update `Vehicles` and `CrewAssignments` in the **exact same table order**, and add narrow covering indexes so updates seek single rows rather than scanning ranges.
+- **D:** Incorrect for this requirement. `NOLOCK` (`READ UNCOMMITTED`) permits dirty reads of uncommitted rolled-back rows, double-counting rows, or skipping committed rows during page splits—unacceptable for accurate OLTP. Why the keyed choice wins: Capture the `xml_deadlock_report` graph, refactor both stored procedures so they always access and update `Vehicles` and `CrewAssignments` in the **exact same table order**, and add narrow covering indexes so updates seek single rows rather than scanning ranges.
+
+### Question 99 — A
+
+Answer: Fragmentation-aware index maintenance (`REORGANIZE` 5–30%, `REBUILD WITH (ONLINE = ON, RESUMABLE = ON)` >30%), `UPDATE STATISTICS`, and `DBCC CHECKDB WITH PHYSICAL_ONLY`. Enabling `ALTER DATABASE DispatchDB SET AUTO_UPDATE_STATISTICS_ASYNC ON` lets peak dispatch queries compile immediately using current statistics while a background thread refreshes stale histograms asynchronously. `RESUMABLE = ON` lets large online index rebuilds pause and resume across maintenance windows; `AUTO_UPDATE_STATISTICS_ASYNC` avoids compile stalls; `PHYSICAL_ONLY` reduces `CHECKDB` I/O overhead. Local study-map skill 3.10 (Implement Fragmentation-Aware Index Rebuilds (`ONLINE`, `RESUMABLE`), Async Statistics, and `DBCC CHECKDB`), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: Optimize index maintenance, statistics updates, and DBCC CHECKDB integrity checks (https://learn.microsoft.com/en-us/sql/relational-databases/indexes/reorganize-and-rebuild-indexes).
+
+- **A:** Correct. `RESUMABLE = ON` lets large online index rebuilds pause and resume across maintenance windows; `AUTO_UPDATE_STATISTICS_ASYNC` avoids compile stalls; `PHYSICAL_ONLY` reduces `CHECKDB` I/O overhead. In this scenario: Enabling `ALTER DATABASE DispatchDB SET AUTO_UPDATE_STATISTICS_ASYNC ON` lets peak dispatch queries compile immediately using current statistics while a background thread refreshes stale histograms asynchronously.
+- **B:** Incorrect for this requirement. `DBCC SHRINKDATABASE` and `AUTO_SHRINK` cause massive physical index fragmentation (`>90%`), heavy transaction log generation, and immediate file regrow stalls. Why the keyed choice wins: Enabling `ALTER DATABASE DispatchDB SET AUTO_UPDATE_STATISTICS_ASYNC ON` lets peak dispatch queries compile immediately using current statistics while a background thread refreshes stale histograms asynchronously.
+- **C:** Incorrect for this requirement. `NOLOCK` (`READ UNCOMMITTED`) permits dirty reads of uncommitted rolled-back rows, double-counting rows, or skipping committed rows during page splits—unacceptable for accurate OLTP. Why the keyed choice wins: Enabling `ALTER DATABASE DispatchDB SET AUTO_UPDATE_STATISTICS_ASYNC ON` lets peak dispatch queries compile immediately using current statistics while a background thread refreshes stale histograms asynchronously.
+- **D:** Incorrect for this requirement. Flushing the entire plan cache repeatedly causes CPU compilation storms across all queries, and disabling statistics forces blind cardinality guesses. Why the keyed choice wins: Enabling `ALTER DATABASE DispatchDB SET AUTO_UPDATE_STATISTICS_ASYNC ON` lets peak dispatch queries compile immediately using current statistics while a background thread refreshes stale histograms asynchronously.
+
+### Question 100 — A
+
+Answer: Use `ALTER DATABASE SCOPED CONFIGURATION` (`MAXDOP`, `LEGACY_CARDINALITY_ESTIMATION`, `PARAMETER_SNIFFING`, `OPTIMIZED_PLAN_FORCING`) per database. Execute `ALTER DATABASE SCOPED CONFIGURATION SET LEGACY_CARDINALITY_ESTIMATION = ON;` inside the dispatch database so `compat 160` features remain active while fixing the post-upgrade CE regression. Database-scoped configurations isolate optimizer settings (`MAXDOP`, CE version, parameter sniffing) to a single database without affecting sibling databases on SQL MI/VMs or requiring server access. Local study-map skill 3.13 (Implement `ALTER DATABASE SCOPED CONFIGURATION` (`MAXDOP`, `LEGACY_CARDINALITY_ESTIMATION`, `PARAMETER_SNIFFING`)), aligned to the official DP-300 study guide (https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300). Primary reference: ALTER DATABASE SCOPED CONFIGURATION and dynamic compute/storage scaling (https://learn.microsoft.com/en-us/sql/t-sql/statements/alter-database-scoped-configuration-transact-sql).
+
+- **A:** Correct. Database-scoped configurations isolate optimizer settings (`MAXDOP`, CE version, parameter sniffing) to a single database without affecting sibling databases on SQL MI/VMs or requiring server access. In this scenario: Execute `ALTER DATABASE SCOPED CONFIGURATION SET LEGACY_CARDINALITY_ESTIMATION = ON;` inside the dispatch database so `compat 160` features remain active while fixing the post-upgrade CE regression.
+- **B:** Incorrect for this requirement. Flushing the entire plan cache repeatedly causes CPU compilation storms across all queries, and disabling statistics forces blind cardinality guesses. Why the keyed choice wins: Execute `ALTER DATABASE SCOPED CONFIGURATION SET LEGACY_CARDINALITY_ESTIMATION = ON;` inside the dispatch database so `compat 160` features remain active while fixing the post-upgrade CE regression.
+- **C:** Incorrect for this requirement. `NOLOCK` (`READ UNCOMMITTED`) permits dirty reads of uncommitted rolled-back rows, double-counting rows, or skipping committed rows during page splits—unacceptable for accurate OLTP. Why the keyed choice wins: Execute `ALTER DATABASE SCOPED CONFIGURATION SET LEGACY_CARDINALITY_ESTIMATION = ON;` inside the dispatch database so `compat 160` features remain active while fixing the post-upgrade CE regression.
+- **D:** Incorrect for this requirement. `DBCC SHRINKDATABASE` and `AUTO_SHRINK` cause massive physical index fragmentation (`>90%`), heavy transaction log generation, and immediate file regrow stalls. Why the keyed choice wins: Execute `ALTER DATABASE SCOPED CONFIGURATION SET LEGACY_CARDINALITY_ESTIMATION = ON;` inside the dispatch database so `compat 160` features remain active while fixing the post-upgrade CE regression.
