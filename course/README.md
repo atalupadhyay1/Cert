@@ -1,6 +1,6 @@
 # 🎓 Practice Test Course Packages
 
-This directory contains Udemy practice-test course packages for Claude/Anthropic, AWS, Google Cloud, Microsoft / GitHub, and OpenEDG Python Institute certifications.
+This directory contains Udemy practice-test course packages for Forward Deployed Engineer (CFDE / Enterprise AI), Claude/Anthropic, AWS, Google Cloud, Microsoft / GitHub, and OpenEDG Python Institute certifications.
 
 ## 📦 Courses available
 
@@ -45,6 +45,7 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 | Microsoft AZ-401 — Designing and Implementing Microsoft Agentic DevOps Solutions | 6 | 600 | Per-option explanations, Oct 2026 blueprint weighting (`17/13/38/16/16`), Copilot Agents, MCP, `gh-aw`, `gh ado2gh`, Azure SRE & Observability Agents, `____` fills, `→` sequences, 24 case studies, GH-300/AZ-104 prereq & beta notice |
 | PCEP™ – Certified Entry-Level Python Programmer (PCEP-30-02) | 6 | 360 | Per-option explanations, CPython-verified, `____` code-fill items, 2x live bank at live pace, no case studies |
 | PCEP™ – Certified Entry-Level Python Programmer (PCEP-30-03) | 6 | 360 | Per-option explanations, 360 fresh CPython-verified items, `____` code-fill items, 2x live bank at live pace, pre-release `PCEP-30-0x` baseline |
+| Forward Deployed Engineer (`CFDE` / Enterprise Agentic AI Delivery) | 6 | 600 | Per-option explanations, Nov 2026 blueprint weighting (`15/16/18/20/15/16` across 37 skills: GSDC CFDE 13-Module Syllabus, AWS Partner FDE `Ground/Orchestrate/Prove` Pathways & Anthropic Frontier Academy), no case studies, 6 vertical client engagements (`Customs AS/400`, `HIPAA HL7 FHIR`, `SR 11-7 Banking`, `Semiconductor SAP/OPC-UA`, `NERC CIP Grid Kafka`, `Air-Gapped ITAR MRO`), FastAPI/Pydantic v2, legacy ACLs/Strangler Fig, `OAuth 2.0 OBO` & Workload Identity, domain ontologies, multimodal table hybrid `BM25`+dense `RRF` RAG, pre-retrieval ACL & bitemporal grounding, `MCP` servers, `Temporal` sagas, `PrivateLink`/`vLLM` KV-cache sizing, `OpenTelemetry` GenAI spans, `Cohen's kappa` calibrated judges, `OWASP LLM Top 10`, `NIST AI RMF 1.0`, `ADKAR` & SRE handover, `____` fills, `→` sequences |
 
 ### Claude Certified Associate — Foundations (CCAO-F)
 
@@ -513,6 +514,17 @@ This directory contains Udemy practice-test course packages for Claude/Anthropic
 - **Blueprint, closed-book & 2-year validity notice (checked November 3, 2026):** Aligned to the July 2026 (`Last updated 05/14/2026`) Microsoft Learn GH-500 study guide (Active — Retirement date: none; `$99 USD` via Pearson VUE; offered in `English, Spanish, Portuguese (Brazil), Korean, and Japanese`; `100 minutes` exam time / `120 minutes` total seat duration; `700 / 1000` scaled score — never equated to a raw percentage). **GitHub Advanced Security** is **valid for 2 years** (with a 6-month transition extension toward Microsoft Learn online recertification) and **is strictly closed-book** (Microsoft Learn / GitHub Docs split-screen access is NOT available on GitHub exams).
 - **Location:** [`course/GH-500/`](GH-500/README.md)
 - **Publication:** Expert GitHub Advanced Security review and account-level Udemy import preview required; no platform publication performed.
+
+### Forward Deployed Engineer (`CFDE` / Enterprise Agentic AI Delivery)
+
+- **Status:** Six 100-question customer-embedded engineering mock exams; 600 original scenarios with per-option explanations and zero artificial case studies.
+- **Includes:** Udemy CSVs, offline Markdown review keys, an 18-question six-domain mixed-format sample upload, complete instructor landing page (with 2026 credential landscape table, 12 `61–67` char Field 4 bullets, Welcome & Congratulations messages, and per-exam Full/Trimmed descriptions), 37-skill curriculum outline, QA/validation suite, and deterministic `Forward-Deployed-Engineer-6x100.zip`.
+- **Organization:** Every exam is weighted **15 / 16 / 18 / 20 / 15 / 16** across six domains (`37` skills `1.1`–`6.6`), progressing across six distinct regulated customer engagements (`KestrelFreight Global`, `VeridianCare Health`, `AureliaBank Markets`, `CinderPeak Manufacturing`, `SolaraGrid Utilities`, and `BorealAero Defense & Maintenance`).
+- **Item mix & pattern parity:** 84 four-option `multiple-choice` items (`76 S + 8 O`, balanced `21 / 21 / 21 / 21` across A–D) and 16 `multi-select` items (`13 Select two.` + `3 Select three.`, spread `2 / 3 / 3 / 3 / 2 / 3`), including `30–32` `____` slot completions and `8–9` `Proposed solution:` architecture evaluations per exam.
+- **Baseline:** November 2026 synthesis of the GSDC Certified Forward Deployed Engineer (`CFDE`) 13-module closed-book exam (`40 MCQs / 90 min / 65% pass / 5-year validity`), AWS Partner FDE `Ground / Orchestrate / Prove` pathways (`FDE Validated` & `FDE Advanced`, Oct 2026), Anthropic Claude Frontier Academy (`Resident` & `Frontier Deployed Engineer`, Oct 2026), `MCP`, `OpenTelemetry` GenAI semantic conventions, `NIST AI RMF 1.0`, and `OWASP Top 10 for LLM Applications`.
+- **Format boundary:** Live hands-on residency capstones, cloud sandbox labs, and stakeholder roleplays cannot run inside Udemy's CSV engine and are adapted into structured code/architecture scenarios with explicit disclosure.
+- **Location:** [`course/Forward-Deployed-Engineer/`](Forward-Deployed-Engineer/README.md)
+- **Publication:** Expert architectural review and account-level Udemy import preview required; no platform publication performed.
 
 ---
 

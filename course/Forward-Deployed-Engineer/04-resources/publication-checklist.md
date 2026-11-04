@@ -1,0 +1,7 @@
+# Udemy Publication Checklist — Forward Deployed Engineer (`6 × 100 = 600 Qs`)
+
+- [x] **Landing Page (`01-landing-page/landing-page.md`):** Title (`<= 60` chars), Subtitle (`<= 120` chars), honest 2026 FDE credential comparison (`GSDC CFDE`, `AWS Partner FDE Ground/Orchestrate/Prove`, `Anthropic Frontier Academy`, `ADaSci CFDE`), Course Description, 12 crisp `What will students learn` bullets (`61–67` chars each), Requirements, Target Audience, 6 Full + Trimmed Practice Test descriptions, Welcome Message, and Congratulations Message.
+- [x] **Smoke-Test Upload (`05-sample-upload/sample-upload.csv`):** `18` rows (`2 MC + 1 MS` across all `6` domains) to verify Udemy CSV import formatting in seconds before uploading all 600 items.
+- [x] **Six Full-Length Practice Sets (`03-practice-sets/set-{1..6}/practice-set-{1..6}.csv`):** `100` questions each (`15 / 16 / 18 / 20 / 15 / 16`), UTF-8 BOM, LF line endings, `84` MC balanced `21 A / 21 B / 21 C / 21 D` + `16` MS (`13 Select two.` + `3 Select three.`), `30–32` `____` completions, `8–9` `Proposed solution:` evaluations, and `0` artificial case studies.
+- [x] **Automated Gates:** `validate.py` (`0` errors, `141/141` terms used, max Jaccard `0.50 <= 0.72`, `0` collisions across all `30` sibling courses / `180` CSVs), `test_course.py` (`6/6` unit tests), `course/check_csv_upload.py`, and `course/check_landing_page_fields.py`.
+- [x] **Deterministic Archive (`Forward-Deployed-Engineer-6x100.zip`):** Packaged reproducibly via `04-resources/package.py`.
