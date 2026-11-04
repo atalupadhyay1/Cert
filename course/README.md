@@ -1,6 +1,6 @@
 # 🎓 Practice Test Course Packages
 
-This directory contains Udemy practice-test course packages for Forward Deployed Engineer (CFDE / Enterprise AI), Claude/Anthropic, AWS, Google Cloud, Microsoft / GitHub, and OpenEDG Python Institute certifications.
+This directory contains Udemy practice-test course packages for Agentic AI (`NCP-AAI` / `AAIF` `MCP` & `A2A` / `OWASP ASI`), Forward Deployed Engineer (CFDE / Enterprise AI), Claude/Anthropic, AWS, Google Cloud, Microsoft / GitHub, and OpenEDG Python Institute certifications.
 
 ## 📦 Courses available
 
@@ -46,6 +46,7 @@ This directory contains Udemy practice-test course packages for Forward Deployed
 | PCEP™ – Certified Entry-Level Python Programmer (PCEP-30-02) | 6 | 360 | Per-option explanations, CPython-verified, `____` code-fill items, 2x live bank at live pace, no case studies |
 | PCEP™ – Certified Entry-Level Python Programmer (PCEP-30-03) | 6 | 360 | Per-option explanations, 360 fresh CPython-verified items, `____` code-fill items, 2x live bank at live pace, pre-release `PCEP-30-0x` baseline |
 | Forward Deployed Engineer (`CFDE` / Enterprise Agentic AI Delivery) | 6 | 600 | Per-option explanations, Nov 2026 blueprint weighting (`15/16/18/20/15/16` across 37 skills: GSDC CFDE 13-Module Syllabus, AWS Partner FDE `Ground/Orchestrate/Prove` Pathways & Anthropic Frontier Academy), no case studies, 6 vertical client engagements (`Customs AS/400`, `HIPAA HL7 FHIR`, `SR 11-7 Banking`, `Semiconductor SAP/OPC-UA`, `NERC CIP Grid Kafka`, `Air-Gapped ITAR MRO`), FastAPI/Pydantic v2, legacy ACLs/Strangler Fig, `OAuth 2.0 OBO` & Workload Identity, domain ontologies, multimodal table hybrid `BM25`+dense `RRF` RAG, pre-retrieval ACL & bitemporal grounding, `MCP` servers, `Temporal` sagas, `PrivateLink`/`vLLM` KV-cache sizing, `OpenTelemetry` GenAI spans, `Cohen's kappa` calibrated judges, `OWASP LLM Top 10`, `NIST AI RMF 1.0`, `ADKAR` & SRE handover, `____` fills, `→` sequences |
+| Agentic AI (`NCP-AAI` / `AAIF` `MCP` & `A2A` / `OWASP ASI`) | 6 | 600 | Per-option explanations, Nov 2026 blueprint weighting (`18/20/16/16/15/15` across 34 skills: NVIDIA `NCP-AAI` 10-Domain Blueprint, Linux Foundation `AAIF` `MCP 2026-07-28`, `A2A v1.0`, `AGENTS.md`, `Agent Skills`, `OpenSandbox` & `OpenEnv`, `LangGraph 1.x`, and `OWASP Top 10 for Agentic Applications ASI01–ASI10`), no case studies, 6 enterprise worlds (`QuantaPay Fintech`, `HelixVax Biopharma`, `CloudPulse SRE`, `StrataLaw M&A`, `VeloceCart Retail`, `AegisCyber SOC`), `ReAct`/`Plan-and-Execute`/`Reflexion`/`Tree-of-Thoughts`, `Supervisor`/`Swarm`/`Blackboard`, signed `A2A` `Agent Card`s, `MCP` OAuth 2.1 + `RFC 9207` + `CIMD`, `LangGraph` `interrupt()`/`Send()`/time-travel, `OpenSandbox` microVMs, 4-tier memory, `CRAG`/`GraphRAG`, `OpenEnv` `Pass^k`, `LoRA SFT`/`DPO`/`RFT`, `NVIDIA NIM`/`vLLM` disaggregation/prefix cache/speculative decode, `KEDA` & `OTel` GenAI Agent spans, `NeMo Guardrails`, `RFC 8693 OBO`, `MCP` rug-pull pinning & kill-switches, `____` fills, `→` sequences |
 
 ### Claude Certified Associate — Foundations (CCAO-F)
 
@@ -524,6 +525,17 @@ This directory contains Udemy practice-test course packages for Forward Deployed
 - **Baseline:** November 2026 synthesis of the GSDC Certified Forward Deployed Engineer (`CFDE`) 13-module closed-book exam (`40 MCQs / 90 min / 65% pass / 5-year validity`), AWS Partner FDE `Ground / Orchestrate / Prove` pathways (`FDE Validated` & `FDE Advanced`, Oct 2026), Anthropic Claude Frontier Academy (`Resident` & `Frontier Deployed Engineer`, Oct 2026), `MCP`, `OpenTelemetry` GenAI semantic conventions, `NIST AI RMF 1.0`, and `OWASP Top 10 for LLM Applications`.
 - **Format boundary:** Live hands-on residency capstones, cloud sandbox labs, and stakeholder roleplays cannot run inside Udemy's CSV engine and are adapted into structured code/architecture scenarios with explicit disclosure.
 - **Location:** [`course/Forward-Deployed-Engineer/`](Forward-Deployed-Engineer/README.md)
+- **Publication:** Expert architectural review and account-level Udemy import preview required; no platform publication performed.
+
+### Agentic AI (`NCP-AAI` / `AAIF` `MCP` & `A2A` / `OWASP ASI`)
+
+- **Status:** Six 100-question enterprise multi-agent mock exams; 600 original scenarios (`0` collisions across all 31 sibling courses / 186 CSVs; max pairwise Jaccard `0.4118`) with per-option explanations and zero artificial case studies.
+- **Includes:** Udemy CSVs (`practice-set-{1..6}.csv`), offline Markdown review keys (`practice-set-{1..6}.md`), an 18-question six-domain mixed-format sample upload (`05-sample-upload/sample-upload.csv`), complete instructor landing page (with 2026 Agentic AI credential & standards table, 12 `60–64` char Field 4 bullets, Welcome & Congratulations messages, and per-exam Full/Trimmed descriptions), 34-skill curriculum outline & `NCP-AAI` 10-domain crosswalk, QA/validation suite, and deterministic `Agentic-AI-6x100.zip`.
+- **Organization:** Every exam is weighted **18 / 20 / 16 / 16 / 15 / 15** across six consolidated domains (`34` skills `1.1`–`6.5`), progressing across six distinct enterprise environments (`QuantaPay Autonomous Disputes`, `HelixVax Discovery Labs`, `CloudPulse Autonomous SRE`, `StrataLaw Contract Intelligence`, `VeloceCart Commerce Concierge`, and `AegisCyber SOC Copilot`).
+- **Item mix & pattern parity:** 84 four-option `multiple-choice` items (`76 S + 8 O`, balanced `21 / 21 / 21 / 21` across A–D) and 16 `multi-select` items (`13 Select two.` + `3 Select three.`, spread `3 / 3 / 3 / 2 / 2 / 3`), including `23–31` `____` slot completions and `6–8` `Proposed solution:` architecture evaluations per exam.
+- **Baseline:** November 2026 synthesis of the **NVIDIA-Certified Professional: Agentic AI (`NCP-AAI`)** 10-domain exam guide (`60–70 Qs / 120 min / $200 USD / 2-year validity`), **Linux Foundation Agentic AI Foundation (`AAIF`)** standards (`MCP 2026-07-28`, `A2A v1.0`, `AGENTS.md`, `Agent Skills`, `OpenSandbox`, `OpenEnv`, `agentgateway`), **OWASP Top 10 for Agentic Applications (`ASI01:2026`–`ASI10:2026`)**, **GitHub `GH-600`**, **LangGraph `1.x`**, and **OpenTelemetry GenAI Agent Spans**.
+- **Format boundary:** Live coding sandboxes and interactive UI widgets cannot run inside Udemy's CSV player and are adapted into `____` code/protocol completions, `→` sequences, and `Proposed solution:` evaluations with explicit disclosure.
+- **Location:** [`course/Agentic-AI/`](Agentic-AI/README.md)
 - **Publication:** Expert architectural review and account-level Udemy import preview required; no platform publication performed.
 
 ---
